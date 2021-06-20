@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__session" kind="struct" language="C++" prot="public">
+    <compoundname>discord_session</compoundname>
+    <includes refid="discord_8h" local="no">discord.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__session_1a648a47e6677960d196bd2211befdb386" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_session::url[1024]</definition>
+        <argsstring>[1024]</argsstring>
+        <name>url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The WSS URL that can be used for connecting to the gateway </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="283" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1aafff4dd17b58a28dcced218bff221c28" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_session::shards</definition>
+        <argsstring></argsstring>
+        <name>shards</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The recommended number of shards to use when connecting </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="284" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1a0fac573c0cf60f932efe8d9af3f9090c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_session::total</definition>
+        <argsstring></argsstring>
+        <name>total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the total number of session starts the current user is allowed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="286" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1a4e89634b6ecce479d6facd1818368570" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_session::remaining</definition>
+        <argsstring></argsstring>
+        <name>remaining</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the remaining number of session starts the current user is allowed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="287" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1a3cf47a1d9b25f83c9595005c650cb2a6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_session::reset_after</definition>
+        <argsstring></argsstring>
+        <name>reset_after</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the number of milliseconds after which the limit resets </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="288" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1a2eca2c731838c17b07d3dd4e6748e55a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_session::max_concurrency</definition>
+        <argsstring></argsstring>
+        <name>max_concurrency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the number of identify requests allowed per 5 seconds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="289" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1a7858f2e7d038285ba3ba9cb17bdd7f78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_session::concurrent</definition>
+        <argsstring></argsstring>
+        <name>concurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>active concurrent sessions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="291" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1a19fe3e6bdb53524d79d1d135205b31aa" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_session::identify_tstamp</definition>
+        <argsstring></argsstring>
+        <name>identify_tstamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last succesful identify request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="292" column="17" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1a45d1d545d8e6970ec32be7e8f28e188a" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_session::event_tstamp</definition>
+        <argsstring></argsstring>
+        <name>event_tstamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last succesful event timestamp in ms (resets every 60s) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="294" column="17" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__session_1a75c02a30d5568a1ddcea46feef45583e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_session::event_count</definition>
+        <argsstring></argsstring>
+        <name>event_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>event counter to avoid reaching limit of 120 events per 60 sec </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="296" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="todo_1_todo000006"><xreftitle>Todo</xreftitle><xrefdescription><para>make this specs generated code </para>
+</xrefdescription></xrefsect><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway#get-gateway-bot-json-response">https://discord.com/developers/docs/topics/gateway#get-gateway-bot-json-response</ulink> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway#session-start-limit-object">https://discord.com/developers/docs/topics/gateway#session-start-limit-object</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/lucasmull/Trabalho/orca/discord.h" line="282" column="22" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="282" bodyend="297"/>
+    <listofallmembers>
+      <member refid="structdiscord__session_1a7858f2e7d038285ba3ba9cb17bdd7f78" prot="public" virt="non-virtual"><scope>discord_session</scope><name>concurrent</name></member>
+      <member refid="structdiscord__session_1a75c02a30d5568a1ddcea46feef45583e" prot="public" virt="non-virtual"><scope>discord_session</scope><name>event_count</name></member>
+      <member refid="structdiscord__session_1a45d1d545d8e6970ec32be7e8f28e188a" prot="public" virt="non-virtual"><scope>discord_session</scope><name>event_tstamp</name></member>
+      <member refid="structdiscord__session_1a19fe3e6bdb53524d79d1d135205b31aa" prot="public" virt="non-virtual"><scope>discord_session</scope><name>identify_tstamp</name></member>
+      <member refid="structdiscord__session_1a2eca2c731838c17b07d3dd4e6748e55a" prot="public" virt="non-virtual"><scope>discord_session</scope><name>max_concurrency</name></member>
+      <member refid="structdiscord__session_1a4e89634b6ecce479d6facd1818368570" prot="public" virt="non-virtual"><scope>discord_session</scope><name>remaining</name></member>
+      <member refid="structdiscord__session_1a3cf47a1d9b25f83c9595005c650cb2a6" prot="public" virt="non-virtual"><scope>discord_session</scope><name>reset_after</name></member>
+      <member refid="structdiscord__session_1aafff4dd17b58a28dcced218bff221c28" prot="public" virt="non-virtual"><scope>discord_session</scope><name>shards</name></member>
+      <member refid="structdiscord__session_1a0fac573c0cf60f932efe8d9af3f9090c" prot="public" virt="non-virtual"><scope>discord_session</scope><name>total</name></member>
+      <member refid="structdiscord__session_1a648a47e6677960d196bd2211befdb386" prot="public" virt="non-virtual"><scope>discord_session</scope><name>url</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

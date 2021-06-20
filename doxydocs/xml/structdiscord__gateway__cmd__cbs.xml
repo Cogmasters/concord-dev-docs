@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__gateway__cmd__cbs" kind="struct" language="C++" prot="public">
+    <compoundname>discord_gateway_cmd_cbs</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__gateway__cmd__cbs_1aebf97486ef1ec3d83788be61e7a6cceb" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_gateway_cmd_cbs::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="142" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-internal.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__gateway__cmd__cbs_1ac191d5afaa5deea45056308e5a16c705" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t discord_gateway_cmd_cbs::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="143" column="10" bodyfile="/home/lucasmull/Trabalho/orca/discord-internal.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__gateway__cmd__cbs_1a11f75a9f43a001937d371e814e5e9f19" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1afff2ce011cd5b8d20b703fb01c105559" kindref="member">message_cb</ref> *</type>
+        <definition>message_cb* discord_gateway_cmd_cbs::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="144" column="14" bodyfile="/home/lucasmull/Trabalho/orca/discord-internal.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="141" column="30" bodyfile="/home/lucasmull/Trabalho/orca/discord-internal.h" bodystart="141" bodyend="145"/>
+    <listofallmembers>
+      <member refid="structdiscord__gateway__cmd__cbs_1a11f75a9f43a001937d371e814e5e9f19" prot="public" virt="non-virtual"><scope>discord_gateway_cmd_cbs</scope><name>cb</name></member>
+      <member refid="structdiscord__gateway__cmd__cbs_1ac191d5afaa5deea45056308e5a16c705" prot="public" virt="non-virtual"><scope>discord_gateway_cmd_cbs</scope><name>size</name></member>
+      <member refid="structdiscord__gateway__cmd__cbs_1aebf97486ef1ec3d83788be61e7a6cceb" prot="public" virt="non-virtual"><scope>discord_gateway_cmd_cbs</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_ff5e28d868d09c8ba74a14019367c4b0" kind="dir">
+    <compoundname>orca/common</compoundname>
+    <innerfile refid="js-addons_8h">js-addons.h</innerfile>
+    <innerfile refid="scheduler_8h">scheduler.h</innerfile>
+    <innerfile refid="specs_8h">specs.h</innerfile>
+    <innerfile refid="user-agent_8h">user-agent.h</innerfile>
+    <innerfile refid="websockets_8h">websockets.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="orca/common/"/>
+  </compounddef>
+</doxygen>

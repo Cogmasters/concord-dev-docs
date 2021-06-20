@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structslack__rtm" kind="struct" language="C++" prot="public">
+    <compoundname>slack_rtm</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structslack__rtm_1ac2b1e4486f30caebb529e2f18e27d0d5" prot="public" static="no" mutable="no">
+        <type>struct websockets *</type>
+        <definition>struct websockets* slack_rtm::ws</definition>
+        <argsstring></argsstring>
+        <name>ws</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="29" column="19" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack__rtm_1a250353bac2ff232f167f1bed628530bc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool slack_rtm::is_ready</definition>
+        <argsstring></argsstring>
+        <name>is_ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="30" column="8" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack__rtm_1af0b9f85c47aac345ecd13a368f017155" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char slack_rtm::base_url[UA_MAX_URL_LEN]</definition>
+        <argsstring>[UA_MAX_URL_LEN]</argsstring>
+        <name>base_url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="32" column="8" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack__rtm_1a87d56c245c919cf05c539d3f42c2bd81" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+        <definition>struct slack* slack_rtm::p_client</definition>
+        <argsstring></argsstring>
+        <name>p_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="33" column="14" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>slack_rtm</label>
+        <link refid="structslack__rtm"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p_client</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>slack</label>
+        <link refid="structslack"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sm</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>rtm</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>slack_adapter</label>
+        <link refid="structslack__adapter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p_client</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>slack_socketmode</label>
+        <link refid="structslack__socketmode"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p_client</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="28" column="16" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="28" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structslack__rtm_1af0b9f85c47aac345ecd13a368f017155" prot="public" virt="non-virtual"><scope>slack_rtm</scope><name>base_url</name></member>
+      <member refid="structslack__rtm_1a250353bac2ff232f167f1bed628530bc" prot="public" virt="non-virtual"><scope>slack_rtm</scope><name>is_ready</name></member>
+      <member refid="structslack__rtm_1a87d56c245c919cf05c539d3f42c2bd81" prot="public" virt="non-virtual"><scope>slack_rtm</scope><name>p_client</name></member>
+      <member refid="structslack__rtm_1ac2b1e4486f30caebb529e2f18e27d0d5" prot="public" virt="non-virtual"><scope>slack_rtm</scope><name>ws</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

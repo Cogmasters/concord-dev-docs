@@ -1,0 +1,57 @@
+\hypertarget{structua__info}{}\doxysection{ua\+\_\+info Struct Reference}
+\label{structua__info}\index{ua\_info@{ua\_info}}
+
+
+Collaboration diagram for ua\+\_\+info\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+O\+R\+C\+Acode \mbox{\hyperlink{structua__info_aa32789e402e5a1cbe6db0addad39146d}{code}}
+\item 
+char \mbox{\hyperlink{structua__info_a1689453745d1abc249504b2a9e143454}{req\+\_\+url}} \mbox{[}U\+A\+\_\+\+M\+A\+X\+\_\+\+U\+R\+L\+\_\+\+L\+EN\mbox{]}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{structua__info_a13830d5fbac93b54d26d636a6676878f}{req\+\_\+tstamp}}
+\item 
+struct \mbox{\hyperlink{structua__resp__header}{ua\+\_\+resp\+\_\+header}} \mbox{\hyperlink{structua__info_a35cfba65b8d292a4acf17cf8259c9e8a}{resp\+\_\+header}}
+\item 
+struct \mbox{\hyperlink{structua__resp__body}{ua\+\_\+resp\+\_\+body}} \mbox{\hyperlink{structua__info_aaa602245c3fb7a6f4b986a1c25ae8a66}{resp\+\_\+body}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structua__info_aa32789e402e5a1cbe6db0addad39146d}\label{structua__info_aa32789e402e5a1cbe6db0addad39146d}} 
+\index{ua\_info@{ua\_info}!code@{code}}
+\index{code@{code}!ua\_info@{ua\_info}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily O\+R\+C\+Acode ua\+\_\+info\+::code}
+
+how the request went equal 0 means success (2xx) greater than 0 means failure (check value for http code) lesser than 0 means failure from specialized error codes \mbox{\Hypertarget{structua__info_a13830d5fbac93b54d26d636a6676878f}\label{structua__info_a13830d5fbac93b54d26d636a6676878f}} 
+\index{ua\_info@{ua\_info}!req\_tstamp@{req\_tstamp}}
+\index{req\_tstamp@{req\_tstamp}!ua\_info@{ua\_info}}
+\doxysubsubsection{\texorpdfstring{req\_tstamp}{req\_tstamp}}
+{\footnotesize\ttfamily uint64\+\_\+t ua\+\_\+info\+::req\+\_\+tstamp}
+
+timestamp of when its request completed \mbox{\Hypertarget{structua__info_a1689453745d1abc249504b2a9e143454}\label{structua__info_a1689453745d1abc249504b2a9e143454}} 
+\index{ua\_info@{ua\_info}!req\_url@{req\_url}}
+\index{req\_url@{req\_url}!ua\_info@{ua\_info}}
+\doxysubsubsection{\texorpdfstring{req\_url}{req\_url}}
+{\footnotesize\ttfamily char ua\+\_\+info\+::req\+\_\+url\mbox{[}U\+A\+\_\+\+M\+A\+X\+\_\+\+U\+R\+L\+\_\+\+L\+EN\mbox{]}}
+
+request\textquotesingle{}s url \mbox{\Hypertarget{structua__info_aaa602245c3fb7a6f4b986a1c25ae8a66}\label{structua__info_aaa602245c3fb7a6f4b986a1c25ae8a66}} 
+\index{ua\_info@{ua\_info}!resp\_body@{resp\_body}}
+\index{resp\_body@{resp\_body}!ua\_info@{ua\_info}}
+\doxysubsubsection{\texorpdfstring{resp\_body}{resp\_body}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structua__resp__body}{ua\+\_\+resp\+\_\+body}} ua\+\_\+info\+::resp\+\_\+body}
+
+the response body \mbox{\Hypertarget{structua__info_a35cfba65b8d292a4acf17cf8259c9e8a}\label{structua__info_a35cfba65b8d292a4acf17cf8259c9e8a}} 
+\index{ua\_info@{ua\_info}!resp\_header@{resp\_header}}
+\index{resp\_header@{resp\_header}!ua\_info@{ua\_info}}
+\doxysubsubsection{\texorpdfstring{resp\_header}{resp\_header}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structua__resp__header}{ua\+\_\+resp\+\_\+header}} ua\+\_\+info\+::resp\+\_\+header}
+
+the key/field response header 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orca/common/user-\/agent.\+h\end{DoxyCompactItemize}

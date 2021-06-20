@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="reddit-internal_8h" kind="file" language="C++">
+    <compoundname>reddit-internal.h</compoundname>
+    <includes local="yes">json-actor.h</includes>
+    <includes local="yes">json-actor-boxed.h</includes>
+    <includes refid="user-agent_8h" local="yes">user-agent.h</includes>
+    <includes refid="websockets_8h" local="yes">websockets.h</includes>
+    <includes local="yes">cee-utils.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>json-actor.h</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="10">
+        <label>cee-utils.h</label>
+      </node>
+      <node id="4">
+        <label>user-agent.h</label>
+        <link refid="user-agent_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>json-actor-boxed.h</label>
+      </node>
+      <node id="6">
+        <label>curl/curl.h</label>
+      </node>
+      <node id="8">
+        <label>logconf.h</label>
+      </node>
+      <node id="1">
+        <label>/home/lucasmull/Trabalho/orca/reddit-internal.h</label>
+        <link refid="reddit-internal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ntl.h</label>
+      </node>
+      <node id="9">
+        <label>websockets.h</label>
+        <link refid="websockets_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structreddit__adapter" prot="public">reddit_adapter</innerclass>
+    <innerclass refid="structreddit" prot="public">reddit</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="reddit-internal_8h_1a36fcbea953bf27cce4c74445bb6e9124" prot="public" static="no">
+        <name>BASE_API_URL</name>
+        <initializer>&quot;https://www.reddit.com&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/reddit-internal.h" line="12" column="9" bodyfile="/home/lucasmull/Trabalho/orca/reddit-internal.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="reddit-internal_8h_1a74bd8bfae5e0e9d8140cd36826c59ad8" prot="public" static="no">
+        <name>BASE_OAUTH_URL</name>
+        <initializer>&quot;https://oauth.reddit.com&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/reddit-internal.h" line="13" column="9" bodyfile="/home/lucasmull/Trabalho/orca/reddit-internal.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="reddit-internal_8h_1a552a6df97cd1d6f716d87a56b16caf4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void reddit_adapter_init</definition>
+        <argsstring>(struct reddit_adapter *adapter, struct logconf *config)</argsstring>
+        <name>reddit_adapter_init</name>
+        <param>
+          <type>struct <ref refid="structreddit__adapter" kindref="compound">reddit_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>struct logconf *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/reddit-internal.h" line="22" column="6" declfile="/home/lucasmull/Trabalho/orca/reddit-internal.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="reddit-internal_8h_1aebd64ee30626fb82b04e1c21d0eb3167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void reddit_adapter_cleanup</definition>
+        <argsstring>(struct reddit_adapter *adapter)</argsstring>
+        <name>reddit_adapter_cleanup</name>
+        <param>
+          <type>struct <ref refid="structreddit__adapter" kindref="compound">reddit_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/reddit-internal.h" line="23" column="6" declfile="/home/lucasmull/Trabalho/orca/reddit-internal.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="reddit-internal_8h_1a0491388d1a1e72afd89d55aeae685314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ORCAcode</type>
+        <definition>ORCAcode reddit_adapter_run</definition>
+        <argsstring>(struct reddit_adapter *adapter, struct sized_buffer *resp_body, struct sized_buffer *req_body, enum http_method http_method, char endpoint[],...)</argsstring>
+        <name>reddit_adapter_run</name>
+        <param>
+          <type>struct <ref refid="structreddit__adapter" kindref="compound">reddit_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>struct sized_buffer *</type>
+          <declname>resp_body</declname>
+        </param>
+        <param>
+          <type>struct sized_buffer *</type>
+          <declname>req_body</declname>
+        </param>
+        <param>
+          <type>enum http_method</type>
+          <declname>http_method</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>endpoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/reddit-internal.h" line="25" column="10" declfile="/home/lucasmull/Trabalho/orca/reddit-internal.h" declline="25" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>REDDIT_INTERNAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REDDIT_INTERNAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json-actor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json-actor-boxed.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;user-agent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;websockets.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cee-utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BASE_API_URL<sp/>&quot;https://www.reddit.com&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BASE_OAUTH_URL<sp/>&quot;https://oauth.reddit.com&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structreddit__adapter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structreddit__adapter" kindref="compound">reddit_adapter</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">user_agent<sp/>*ua;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structreddit" kindref="compound">reddit</ref><sp/>*p_client;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ADAPTER<sp/>PRIVATE<sp/>FUNCTIONS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reddit_adapter_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structreddit__adapter" kindref="compound">reddit_adapter</ref><sp/>*adapter,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>logconf<sp/>*config);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reddit_adapter_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structreddit__adapter" kindref="compound">reddit_adapter</ref><sp/>*adapter);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">ORCAcode<sp/>reddit_adapter_run(</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structreddit__adapter" kindref="compound">reddit_adapter</ref><sp/>*adapter,<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sized_buffer<sp/>*resp_body,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sized_buffer<sp/>*req_body,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>http_method<sp/>http_method,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>endpoint[],<sp/>...);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structreddit" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structreddit" kindref="compound">reddit</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/>username;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/>password;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/>client_id;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/>client_secret;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structreddit__adapter" kindref="compound">reddit_adapter</ref><sp/>adapter;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">logconf<sp/>config;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>REDDIT_INTERNAL_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/lucasmull/Trabalho/orca/reddit-internal.h"/>
+  </compounddef>
+</doxygen>

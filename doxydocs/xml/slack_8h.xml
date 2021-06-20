@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="slack_8h" kind="file" language="C++">
+    <compoundname>slack.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes local="yes">json-actor-boxed.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>/home/lucasmull/Trabalho/orca/slack.h</label>
+        <link refid="slack_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>json-actor-boxed.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="slack_8h_1a0197aa2a4f1fcbc2102e636604f98db1" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() idle_cb(struct slack *client, char payload[], size_t len)</definition>
+        <argsstring>(struct slack *client, char payload[], size_t len)</argsstring>
+        <name>idle_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="10" column="9" bodyfile="/home/lucasmull/Trabalho/orca/slack.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="slack_8h_1a7a3e18542df5fde89f5294fc9062786e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+        <definition>struct slack* slack_config_init</definition>
+        <argsstring>(const char config_file[])</argsstring>
+        <name>slack_config_init</name>
+        <param>
+          <type>const char</type>
+          <declname>config_file</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="12" column="13" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="12" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1abec209732f97b8afa17528e1293ca7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_cleanup</definition>
+        <argsstring>(struct slack *client)</argsstring>
+        <name>slack_cleanup</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="13" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="13" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1ae9c7d1bf9098e6247e6bad56f732a42d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_set_on_idle</definition>
+        <argsstring>(struct slack *client, idle_cb *callback)</argsstring>
+        <name>slack_set_on_idle</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type><ref refid="discord_8h_1afc8f66a3993c5edb45a00ef997223d52" kindref="member">idle_cb</ref> *</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="15" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="15" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1a7c816e98aec0305b050a9668428759ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_set_on_hello</definition>
+        <argsstring>(struct slack *client, idle_cb *callback)</argsstring>
+        <name>slack_set_on_hello</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type><ref refid="discord_8h_1afc8f66a3993c5edb45a00ef997223d52" kindref="member">idle_cb</ref> *</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="16" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1a9f9632ded10f67b04bcf531182846b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_set_on_message</definition>
+        <argsstring>(struct slack *client, idle_cb *callback)</argsstring>
+        <name>slack_set_on_message</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type><ref refid="discord_8h_1afc8f66a3993c5edb45a00ef997223d52" kindref="member">idle_cb</ref> *</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="17" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1ac05855d9933a762540b99af820b5e1b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_rtm_run</definition>
+        <argsstring>(struct slack *client)</argsstring>
+        <name>slack_rtm_run</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="19" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1a4498963390851f7e247efb85a93e65db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_rtm_send_message</definition>
+        <argsstring>(struct slack *client, char channel[], char text[])</argsstring>
+        <name>slack_rtm_send_message</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>channel</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>text</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="20" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1af8ad3ecff3b3c2515923beb58d759b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_rtm_shutdown</definition>
+        <argsstring>(struct slack *client)</argsstring>
+        <name>slack_rtm_shutdown</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="21" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1aec2e7e9719f9927c37f2a72bfdf7f5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_socketmode_run</definition>
+        <argsstring>(struct slack *client)</argsstring>
+        <name>slack_socketmode_run</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="23" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1a56f0695c340811dcce96f6b6127a951b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_socketmode_shutdown</definition>
+        <argsstring>(struct slack *client)</argsstring>
+        <name>slack_socketmode_shutdown</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="24" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1a4172848ef2876b70e3e76ad66fc182ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_rtm_connect</definition>
+        <argsstring>(struct slack *client)</argsstring>
+        <name>slack_rtm_connect</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="27" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="27" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1a86e4fc0c3480b95864a95d5c2d4f0350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_apps_connections_open</definition>
+        <argsstring>(struct slack *client)</argsstring>
+        <name>slack_apps_connections_open</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="28" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="slack_8h_1a975989d190ee255139f8d85f22d29537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slack_chat_post_message</definition>
+        <argsstring>(struct slack *client, char channel[], char text[])</argsstring>
+        <name>slack_chat_post_message</name>
+        <param>
+          <type>struct <ref refid="structslack" kindref="compound">slack</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>channel</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>text</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack.h" line="29" column="6" declfile="/home/lucasmull/Trabalho/orca/slack.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SLACK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLACK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json-actor-boxed.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structslack" kindref="compound">slack</ref>;<sp/></highlight><highlight class="comment">//<sp/>forward<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="discord_8h_1afc8f66a3993c5edb45a00ef997223d52" kindref="member">idle_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structslack" kindref="compound">slack</ref><sp/>*client,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>payload[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structslack" kindref="compound">slack</ref>*<sp/>slack_config_init(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>config_file[]);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_set_on_idle(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client,<sp/><ref refid="discord_8h_1afc8f66a3993c5edb45a00ef997223d52" kindref="member">idle_cb</ref><sp/>*callback);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_set_on_hello(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client,<sp/><ref refid="discord_8h_1afc8f66a3993c5edb45a00ef997223d52" kindref="member">idle_cb</ref><sp/>*callback);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_set_on_message(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client,<sp/><ref refid="discord_8h_1afc8f66a3993c5edb45a00ef997223d52" kindref="member">idle_cb</ref><sp/>*callback);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_rtm_run(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_rtm_send_message(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>channel[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>text[]);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_rtm_shutdown(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_socketmode_run(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_socketmode_shutdown(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_rtm_connect(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_apps_connections_open(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>slack_chat_post_message(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structslack" kindref="compound">slack</ref><sp/>*client,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>channel[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>text[]);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SLACK_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/lucasmull/Trabalho/orca/slack.h"/>
+  </compounddef>
+</doxygen>
