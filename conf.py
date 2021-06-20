@@ -30,11 +30,16 @@ author = 'Cee-Studio'
 extensions = [ 'breathe' ]
 
 # Breathe Configuration
+
+breathe_domain_by_extension = { "h" : "c" }
 breathe_projects = { "Orca": "./doxydocs/xml" }
 breathe_default_project = 'Orca'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+
+# The suffix of source filenames
+source_suffix = '.rst'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
