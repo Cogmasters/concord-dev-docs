@@ -1,5 +1,5 @@
 # Generate Doxygen XML Files
-import subprocess, os
+import subprocess, os, sys
 
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
@@ -75,3 +75,24 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+def run_doxygen(folder):
+    """Run the doxygen make command in the designated folder"""
+    try:
+        retcode = subprocess.call("cd %s; make" % folder, shell=True)
+        if retcode < 0:
+            sys.stderr.write("doxygen terminated by signal %s" % (-retcode))
+    except OSError as e:
+        sys.stderr.write("doxygen execution failed: %s" % e)
+
+
+def generate_doxygen_xml(app):
+    """Run the doxygen make commands if we're on the ReadTheDocs server"""
+    read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
+    if read_the_docs_build:
+        run_doxygen("doxydocs/xml")
+
+
+def setup(app):
+    # Add hook for building doxygen xml when needed
+    app.connect("builder-inited", generate_doxygen_xml)
