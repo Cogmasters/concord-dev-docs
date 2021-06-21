@@ -27,7 +27,7 @@ Supported APIs
 .. toctree::
    :maxdepth: 1
 
-   Discord API Reference <api>
+   Discord API Reference <discord-api>
 
 Help
 ----

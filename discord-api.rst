@@ -162,31 +162,26 @@ Channel
 .. doxygenfunction:: discord_get_channel
 .. doxygenfunction:: discord_modify_channel
 .. doxygenfunction:: discord_delete_channel
-..
-  doxygenfunction:: discord_get_channel_messages
+.. doxygenfunction:: discord_get_channel_messages
 .. doxygenfunction:: discord_get_channel_message
 .. doxygenfunction:: discord_create_message
 .. doxygenfunction:: discord_crosspost_message
 .. doxygenfunction:: discord_create_reaction
 .. doxygenfunction:: discord_delete_own_reaction
 .. doxygenfunction:: discord_delete_user_reaction
-..
-  doxygenfunction:: discord_get_reactions
+.. doxygenfunction:: discord_get_reactions
 .. doxygenfunction:: discord_delete_all_reactions
 .. doxygenfunction:: discord_delete_all_reactions_for_emoji
 .. doxygenfunction:: discord_edit_message
 .. doxygenfunction:: discord_delete_message
-..
-  doxygenfunction:: discord_bulk_delete_messages
+.. doxygenfunction:: discord_bulk_delete_messages
 .. doxygenfunction:: discord_edit_channel_permissions
-..
-  doxygenfunction:: discord_get_channel_invites
+.. doxygenfunction:: discord_get_channel_invites
 .. doxygenfunction:: discord_create_channel_invite
 .. doxygenfunction:: discord_delete_channel_permission
 .. doxygenfunction:: discord_trigger_typing_indicator
 .. doxygenfunction:: discord_follow_news_channel
-..
-  doxygenfunction:: discord_get_pinned_messages
+.. doxygenfunction:: discord_get_pinned_messages
 .. doxygenfunction:: discord_pin_message
 .. doxygenfunction:: discord_unpin_message
 .. doxygenfunction:: discord_group_dm_add_recipient
@@ -197,8 +192,7 @@ Channel
 .. doxygenfunction:: discord_add_thread_member
 .. doxygenfunction:: discord_leave_thread
 .. doxygenfunction:: discord_remove_thread_member
-..
-  doxygenfunction:: discord_list_thread_members
+.. doxygenfunction:: discord_list_thread_members
 .. doxygenfunction:: discord_list_active_threads
 .. doxygenfunction:: discord_list_public_archived_threads
 .. doxygenfunction:: discord_list_private_archived_threads
@@ -207,8 +201,7 @@ Channel
 Emoji
 ^^^^^
 
-..
-  doxygenfunction::discord_list_guild_emojis
+.. doxygenfunction::discord_list_guild_emojis
 .. doxygenfunction:: discord_get_guild_emoji
 .. doxygenfunction:: discord_create_guild_emoji
 .. doxygenfunction:: discord_modify_guild_emoji
@@ -222,32 +215,25 @@ Guild
 .. doxygenfunction:: discord_get_guild_preview
 .. doxygenfunction:: discord_modify_guild
 .. doxygenfunction:: discord_delete_guild
-..
-  doxygenfunction:: discord_get_guild_channels
+.. doxygenfunction:: discord_get_guild_channels
 .. doxygenfunction:: discord_create_guild_channel
-..
-  doxygenfunction:: discord_modify_guild_channel_positions
+.. doxygenfunction:: discord_modify_guild_channel_positions
 .. doxygenfunction:: discord_get_guild_member
-..
-  doxygenfunction:: discord_list_guild_members
-..
-  doxygenfunction:: discord_search_guild_members
+.. doxygenfunction:: discord_list_guild_members
+.. doxygenfunction:: discord_search_guild_members
 .. doxygenfunction:: discord_modify_guild_member
 .. doxygenfunction:: discord_add_guild_member
 .. doxygenfunction:: discord_modify_current_user_nick
 .. doxygenfunction:: discord_add_guild_member_role
 .. doxygenfunction:: discord_remove_guild_member_role
 .. doxygenfunction:: discord_remove_guild_member
-..
-  doxygenfunction:: discord_get_guild_bans
+.. doxygenfunction:: discord_get_guild_bans
 .. doxygenfunction:: discord_get_guild_ban
 .. doxygenfunction:: discord_create_guild_ban
 .. doxygenfunction:: discord_remove_guild_ban
-..
-  doxygenfunction:: discord_get_guild_roles
+.. doxygenfunction:: discord_get_guild_roles
 .. doxygenfunction:: discord_create_guild_role
-..
-  doxygenfunction:: discord_modify_guild_role_positions
+.. doxygenfunction:: discord_modify_guild_role_positions
 .. doxygenfunction:: discord_modify_guild_role
 .. doxygenfunction:: discord_delete_guild_role
 
@@ -263,19 +249,16 @@ User
 .. doxygenfunction:: discord_get_user
 .. doxygenfunction:: discord_modify_current_user
 .. doxygenfunction:: discord_get_current_user
-..
-  doxygenfunction:: discord_get_current_user_guilds
+.. doxygenfunction:: discord_get_current_user_guilds
 .. doxygenfunction:: discord_leave_guild
 .. doxygenfunction:: discord_create_dm
 .. doxygenfunction:: discord_create_group_dm
-..
-  doxygenfunction:: discord_get_user_connections
+.. doxygenfunction:: discord_get_user_connections
 
 Voice
 ^^^^^
 
-..
-  doxygenfunction:: discord_list_voice_regions
+.. doxygenfunction:: discord_list_voice_regions
 
 Gateway
 ^^^^^^^
@@ -288,8 +271,7 @@ Utility
 
 Channel
 ^^^^^^^
-..
-  doxygenfunction:: discord_overwrite_append
+.. doxygenfunction:: discord_overwrite_append
 .. doxygenfunction:: discord_get_channel_at_pos
 .. doxygenfunction:: discord_delete_messages_by_author_id
 
