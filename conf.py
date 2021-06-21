@@ -90,7 +90,7 @@ def generate_doxygen_xml(app):
     """Run the doxygen make commands if we're on the ReadTheDocs server"""
     read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
     if read_the_docs_build:
-        run_doxygen("doxydocs/xml")
+        run_doxygen(".")
 
 
 def setup(app):
