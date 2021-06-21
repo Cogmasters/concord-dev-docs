@@ -35,6 +35,9 @@ breathe_domain_by_extension = { "h" : "c" }
 breathe_projects = { "Orca": "./doxydocs/xml" }
 breathe_default_project = 'Orca'
 
+breathe_default_members = ('members', 'undoc-members')
+breathe_show_enumvalue_initializer = True
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
