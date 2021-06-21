@@ -42,6 +42,66 @@ Callbacks
 .. doxygentypedef:: voice_state_update_cb
 .. doxygentypedef:: voice_server_update_cb
 
+Audit Log
+~~~~~~~~~
+
+.. doxygenfile:: specs-code/discord/audit_log.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+Channel
+~~~~~~~
+
+.. doxygenfile:: specs-code/discord/channel.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+Emoji
+~~~~~
+
+.. doxygenfile:: specs-code/discord/emoji.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+Guild
+~~~~~
+
+.. doxygenfile:: specs-code/discord/guild.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+Guild Template
+~~~~~~~~~~~~~~
+
+.. doxygenfile:: specs-code/discord/guild-template.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+Invite
+~~~~~~
+
+.. doxygenfile:: specs-code/discord/invite.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+User
+~~~~
+
+.. doxygenfile:: specs-code/discord/user.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+Voice
+~~~~~
+
+.. doxygenfile:: specs-code/discord/voice.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+Webhook
+~~~~~~~
+
+.. doxygenfile:: specs-code/discord/webhook.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
+Gateway
+~~~~~~~
+
+.. doxygenfile:: specs-code/discord/gateway.h
+    :sections: briefdescription innerclass enum public-type public-attrib
+
 Macros
 ------
 
@@ -99,6 +159,7 @@ Initialization / Cleanup
 .. doxygenfunction:: discord_init
 .. doxygenfunction:: discord_config_init
 .. doxygenfunction:: discord_cleanup
+.. doxygenfunction:: discord_run
 
 Set Behaviour
 ^^^^^^^^^^^^^
@@ -143,21 +204,13 @@ Miscellaneous
 .. doxygenfunction:: discord_replace_presence
 .. doxygenfunction:: discord_set_presence
 
-Gateway
-~~~~~~~
-
-.. doxygenfunction:: discord_run
-
-Endpoints
-~~~~~~~~~
-
 Audit Log
-^^^^^^^^^
+~~~~~~~~~
 
 .. doxygenfunction:: discord_get_guild_audit_log
 
 Channel
-^^^^^^^
+~~~~~~~
 
 .. doxygenfunction:: discord_get_channel
 .. doxygenfunction:: discord_modify_channel
@@ -199,16 +252,16 @@ Channel
 .. doxygenfunction:: discord_list_joined_private_archived_threads
 
 Emoji
-^^^^^
+~~~~~
 
-.. doxygenfunction::discord_list_guild_emojis
+.. doxygenfunction:: discord_list_guild_emojis
 .. doxygenfunction:: discord_get_guild_emoji
 .. doxygenfunction:: discord_create_guild_emoji
 .. doxygenfunction:: discord_modify_guild_emoji
 .. doxygenfunction:: discord_delete_guild_emoji
 
 Guild
-^^^^^
+~~~~~
 
 .. doxygenfunction:: discord_create_guild
 .. doxygenfunction:: discord_get_guild
@@ -238,13 +291,13 @@ Guild
 .. doxygenfunction:: discord_delete_guild_role
 
 Invite
-^^^^^^
+~~~~~~
 
 .. doxygenfunction:: discord_get_invite
 .. doxygenfunction:: discord_delete_invite
 
 User
-^^^^
+~~~~
 
 .. doxygenfunction:: discord_get_user
 .. doxygenfunction:: discord_modify_current_user
@@ -256,12 +309,12 @@ User
 .. doxygenfunction:: discord_get_user_connections
 
 Voice
-^^^^^
+~~~~~
 
 .. doxygenfunction:: discord_list_voice_regions
 
 Gateway
-^^^^^^^
+~~~~~~~
 
 .. doxygenfunction:: discord_get_gateway
 .. doxygenfunction:: discord_get_gateway_bot
