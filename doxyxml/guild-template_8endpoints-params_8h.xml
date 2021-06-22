@@ -1,0 +1,1349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="guild-template_8endpoints-params_8h" kind="file" language="C++">
+    <compoundname>guild-template.endpoints-params.h</compoundname>
+    <innerclass refid="structdiscord__create__guild__from__guild__template__params" prot="public">discord_create_guild_from_guild_template_params</innerclass>
+    <innerclass refid="structdiscord__create__guild__template__params" prot="public">discord_create_guild_template_params</innerclass>
+    <innerclass refid="structdiscord__modify__guild__template__params" prot="public">discord_modify_guild_template_params</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a64fbee26c64276e6a845d4b8adcd5cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_cleanup_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_cleanup_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="41" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="41" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1acf0411a5486a0b10906a1cefc9f685ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_cleanup</definition>
+        <argsstring>(struct discord_create_guild_from_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="42" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="42" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a0709f0c38378236108c953564d05ba82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_init_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_init_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="43" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="43" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a1787d6b49ca739d6f2b4617c9a07e1e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_init</definition>
+        <argsstring>(struct discord_create_guild_from_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="44" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="44" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a64d8723c53f7b6fb942c7ff5b12d2adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> *</type>
+        <definition>struct discord_create_guild_from_guild_template_params* discord_create_guild_from_guild_template_params_alloc</definition>
+        <argsstring>()</argsstring>
+        <name>discord_create_guild_from_guild_template_params_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="45" column="62" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="45" declcolumn="62"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a6f5d93dd9cb6a09b057efb25d776064f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_free_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_free_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="46" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="46" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a4f98f3916c1769e69574a7c598fcb29c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_free</definition>
+        <argsstring>(struct discord_create_guild_from_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="47" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="47" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a038bf75b8307e2b895eef2002bf6e5ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_from_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="48" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="48" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a9aa1772d4eb4f17aa89e84100cc6ccd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_from_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_create_guild_from_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="49" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="49" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a6a4624131eaf5dfcbc33be464b53d331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_from_guild_template_params_to_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="50" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="50" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1aff173022cded44a7939a7a4cb367b11e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_from_guild_template_params_to_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_create_guild_from_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="51" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="51" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a2099faa7d26b8683eac8622995d42011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_from_guild_template_params_to_query_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_to_query_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="52" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="52" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1aa8e1ecf20f0205da789107ac1f953cd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_from_guild_template_params_to_query</definition>
+        <argsstring>(char *json, size_t len, struct discord_create_guild_from_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_to_query</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="53" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="53" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a6e2cb08011c74761c82b30d6e450b5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_list_free_v</definition>
+        <argsstring>(void **p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_list_free_v</name>
+        <param>
+          <type>void **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="54" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="54" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a7747b92f7d4cba2999aa5dacd36c9c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_list_free</definition>
+        <argsstring>(struct discord_create_guild_from_guild_template_params **p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_list_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="55" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="55" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ae6acac64c27382f46704c6ef76994cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_list_from_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_list_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="56" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="56" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1aedc35a4603d510db35e6294eccfff598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_from_guild_template_params_list_from_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_create_guild_from_guild_template_params ***p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_list_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> ***</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="57" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="57" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ac86a13892f1638b3bdef4822d6caba70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_from_guild_template_params_list_to_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_list_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="58" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="58" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a468788fef98837ec6e7d88c97f903d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_from_guild_template_params_list_to_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_create_guild_from_guild_template_params **p)</argsstring>
+        <name>discord_create_guild_from_guild_template_params_list_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="59" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="59" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a3eaa57a821b4296ac9a94d3763c4ae68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_cleanup_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_create_guild_template_params_cleanup_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="91" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="91" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ad53f76349409dddd1d4787033bba28c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_cleanup</definition>
+        <argsstring>(struct discord_create_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_template_params_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="92" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="92" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a1696c63c518808ac3720d0f0b2b32e35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_init_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_create_guild_template_params_init_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="93" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="93" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a5360227c7db2f682c956fcb98076cfa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_init</definition>
+        <argsstring>(struct discord_create_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_template_params_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="94" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="94" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a995d373bf9884a97e6bfb691e9d486cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> *</type>
+        <definition>struct discord_create_guild_template_params* discord_create_guild_template_params_alloc</definition>
+        <argsstring>()</argsstring>
+        <name>discord_create_guild_template_params_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="95" column="51" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="95" declcolumn="51"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a8327b7fe0d511c724b27b06f01eb7676" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_free_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_create_guild_template_params_free_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="96" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="96" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1af98dd34a76f54032e62473f8d38cebf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_free</definition>
+        <argsstring>(struct discord_create_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_template_params_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="97" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="97" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a931843ed8ff917721cc3a7ee45d6a7bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_from_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_template_params_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="98" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="98" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ade5306cc4805d557140639111c74beb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_from_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_create_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_template_params_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="99" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="99" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a82721c3148ae7e40033c614d8029a9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_template_params_to_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_template_params_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="100" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="100" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a7c292e52edc5bd4c57fe37216b70290b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_template_params_to_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_create_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_template_params_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="101" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="101" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a4fdca51942ec10f7149c9ef69a29c89e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_template_params_to_query_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_template_params_to_query_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="102" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="102" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ae95129cb771fff22f3b1f30ca522c9e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_template_params_to_query</definition>
+        <argsstring>(char *json, size_t len, struct discord_create_guild_template_params *p)</argsstring>
+        <name>discord_create_guild_template_params_to_query</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="103" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="103" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a138e799ba571f973898d915f8ffa450f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_list_free_v</definition>
+        <argsstring>(void **p)</argsstring>
+        <name>discord_create_guild_template_params_list_free_v</name>
+        <param>
+          <type>void **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="104" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="104" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ada3d655a805952ed57b1fd69a6b304c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_list_free</definition>
+        <argsstring>(struct discord_create_guild_template_params **p)</argsstring>
+        <name>discord_create_guild_template_params_list_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="105" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="105" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1accefefae9c4a3f3978f2bdf62a48ef79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_list_from_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_template_params_list_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="106" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="106" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ac3541a25c6c1a800c0964e906ab407f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_create_guild_template_params_list_from_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_create_guild_template_params ***p)</argsstring>
+        <name>discord_create_guild_template_params_list_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> ***</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="107" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="107" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ad4e7f9719b9771bf7a82ee16cedcbc43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_template_params_list_to_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_create_guild_template_params_list_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="108" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="108" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a4296be6967a918078f7f578096c5143e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_create_guild_template_params_list_to_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_create_guild_template_params **p)</argsstring>
+        <name>discord_create_guild_template_params_list_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="109" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="109" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a818495764acc17616059bee16636d3a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_cleanup_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_modify_guild_template_params_cleanup_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="141" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="141" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a46490e6f99e0fffdb295d819b3d07776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_cleanup</definition>
+        <argsstring>(struct discord_modify_guild_template_params *p)</argsstring>
+        <name>discord_modify_guild_template_params_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="142" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="142" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a62c208b3f578a6a5f5349b1c70fbe512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_init_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_modify_guild_template_params_init_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="143" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="143" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a85a8d03f896b1f6ed143ebcb0f76ad50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_init</definition>
+        <argsstring>(struct discord_modify_guild_template_params *p)</argsstring>
+        <name>discord_modify_guild_template_params_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="144" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="144" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a8310fcd42aca8004e1052f9062da9814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> *</type>
+        <definition>struct discord_modify_guild_template_params* discord_modify_guild_template_params_alloc</definition>
+        <argsstring>()</argsstring>
+        <name>discord_modify_guild_template_params_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="145" column="51" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="145" declcolumn="51"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1aa02af5912364e5f2155281c6f03ab255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_free_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_modify_guild_template_params_free_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="146" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="146" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a677aea9cad7550ea589b8ac85cc27b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_free</definition>
+        <argsstring>(struct discord_modify_guild_template_params *p)</argsstring>
+        <name>discord_modify_guild_template_params_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="147" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="147" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a891d334b1e82e28ec94e7695f3d59f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_from_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_modify_guild_template_params_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="148" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="148" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a4f18b93077c1d2f848e7d18e7960f3f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_from_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_modify_guild_template_params *p)</argsstring>
+        <name>discord_modify_guild_template_params_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="149" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="149" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a8728b823dc16d1ea7ea0e8ee54c726d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_modify_guild_template_params_to_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_modify_guild_template_params_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="150" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="150" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a5021a10fbfa0cf8de3ba3279fe9af7ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_modify_guild_template_params_to_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_modify_guild_template_params *p)</argsstring>
+        <name>discord_modify_guild_template_params_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="151" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="151" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1af4202dfb3be9f37bf07010d2eb751673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_modify_guild_template_params_to_query_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_modify_guild_template_params_to_query_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="152" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="152" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1a125449d249a9a3b2f4397afc50fc7e5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_modify_guild_template_params_to_query</definition>
+        <argsstring>(char *json, size_t len, struct discord_modify_guild_template_params *p)</argsstring>
+        <name>discord_modify_guild_template_params_to_query</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="153" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="153" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1af1dc1fbb3ef0caf027b6fe5973d9406e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_list_free_v</definition>
+        <argsstring>(void **p)</argsstring>
+        <name>discord_modify_guild_template_params_list_free_v</name>
+        <param>
+          <type>void **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="154" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="154" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ae565906c9b2b11d664919f8a4afd2f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_list_free</definition>
+        <argsstring>(struct discord_modify_guild_template_params **p)</argsstring>
+        <name>discord_modify_guild_template_params_list_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="155" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="155" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1af6994f755d289f6faaa1c46693dd2fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_list_from_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_modify_guild_template_params_list_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="156" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="156" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1ae1d9b329f8bda818148542c94b54d74c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_modify_guild_template_params_list_from_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_modify_guild_template_params ***p)</argsstring>
+        <name>discord_modify_guild_template_params_list_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> ***</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="157" column="13" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="157" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1acc65e79d2ee95ba2c52a863baf1d986b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_modify_guild_template_params_list_to_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_modify_guild_template_params_list_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="158" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="158" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8endpoints-params_8h_1abfb5d2c3625e5f5e723a354ebee979cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_modify_guild_template_params_list_to_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_modify_guild_template_params **p)</argsstring>
+        <name>discord_modify_guild_template_params_list_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="159" column="15" declfile="orca/specs-code/discord/guild-template.endpoints-params.h" declline="159" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specs generated file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>cee-studio </para>
+</simplesect>
+<simplesect kind="date"><para>21 Jun 2021 </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild-template">https://discord.com/developers/docs/resources/guild-template</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>This<sp/>file<sp/>is<sp/>generated<sp/>from<sp/>specs/discord/guild-template.endpoints-params.json,<sp/>Please<sp/>don&apos;t<sp/>edit<sp/>it.<sp/>*/</highlight></codeline>
+<codeline lineno="17" refid="structdiscord__create__guild__from__guild__template__params" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.endpoints-params.json:13:20</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;name&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;},<sp/>&quot;comment&quot;:&quot;name<sp/>of<sp/>the<sp/>guild&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;<sp/></highlight><highlight class="comment">//<sp/>name<sp/>of<sp/>the<sp/>guild</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.endpoints-params.json:14:20</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;icon&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>},<sp/>&quot;comment&quot;:&quot;base64<sp/>128x128<sp/>image<sp/>for<sp/>the<sp/>guild<sp/>icon&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*icon;<sp/></highlight><highlight class="comment">//<sp/>base64<sp/>128x128<sp/>image<sp/>for<sp/>the<sp/>guild<sp/>icon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>metadata<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>control<sp/>which<sp/>field<sp/>should<sp/>be<sp/>extracted/injected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>presented(defined)<sp/>in<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>null<sp/>in<sp/>JSON</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_arg_switches;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_defined;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_null;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg_switches[2];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_defined[2];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_null[2];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>}<sp/>__M;<sp/></highlight><highlight class="comment">//<sp/>metadata</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_cleanup_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_init_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>*<sp/>discord_create_guild_from_guild_template_params_alloc();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_to_query_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_to_query(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_list_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**p);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_list_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_list_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_list_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>***p);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_list_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_from_guild_template_params_list_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__from__guild__template__params" kindref="compound">discord_create_guild_from_guild_template_params</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structdiscord__create__guild__template__params" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.endpoints-params.json:24:20</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;name&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;},<sp/>&quot;comment&quot;:&quot;name<sp/>of<sp/>the<sp/>guild&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;<sp/></highlight><highlight class="comment">//<sp/>name<sp/>of<sp/>the<sp/>guild</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.endpoints-params.json:25:20</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;description&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>},<sp/>&quot;comment&quot;:&quot;description<sp/>for<sp/>the<sp/>template<sp/>(0-120)<sp/>chars&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*description;<sp/></highlight><highlight class="comment">//<sp/>description<sp/>for<sp/>the<sp/>template<sp/>(0-120)<sp/>chars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>metadata<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>control<sp/>which<sp/>field<sp/>should<sp/>be<sp/>extracted/injected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>presented(defined)<sp/>in<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>null<sp/>in<sp/>JSON</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_arg_switches;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_defined;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_null;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg_switches[2];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_defined[2];</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_null[2];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>}<sp/>__M;<sp/></highlight><highlight class="comment">//<sp/>metadata</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_cleanup_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_init_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>*<sp/>discord_create_guild_template_params_alloc();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_to_query_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_to_query(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_list_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**p);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_list_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_list_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_list_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>***p);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_list_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_create_guild_template_params_list_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__create__guild__template__params" kindref="compound">discord_create_guild_template_params</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="structdiscord__modify__guild__template__params" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.endpoints-params.json:35:20</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;name&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;},<sp/>&quot;comment&quot;:&quot;name<sp/>of<sp/>the<sp/>guild&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;<sp/></highlight><highlight class="comment">//<sp/>name<sp/>of<sp/>the<sp/>guild</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.endpoints-params.json:36:20</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;description&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>},<sp/>&quot;comment&quot;:&quot;description<sp/>for<sp/>the<sp/>template<sp/>(0-120)<sp/>chars&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*description;<sp/></highlight><highlight class="comment">//<sp/>description<sp/>for<sp/>the<sp/>template<sp/>(0-120)<sp/>chars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>metadata<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>control<sp/>which<sp/>field<sp/>should<sp/>be<sp/>extracted/injected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>presented(defined)<sp/>in<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>null<sp/>in<sp/>JSON</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_arg_switches;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_defined;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_null;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg_switches[2];</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_defined[2];</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_null[2];</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>}<sp/>__M;<sp/></highlight><highlight class="comment">//<sp/>metadata</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_cleanup_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_init_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>*<sp/>discord_modify_guild_template_params_alloc();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_to_query_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_to_query(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_list_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**p);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_list_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_list_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_list_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>***p);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_list_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_modify_guild_template_params_list_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__modify__guild__template__params" kindref="compound">discord_modify_guild_template_params</ref><sp/>**p);</highlight></codeline>
+    </programlisting>
+    <location file="orca/specs-code/discord/guild-template.endpoints-params.h"/>
+  </compounddef>
+</doxygen>

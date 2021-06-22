@@ -1,0 +1,83 @@
+\hypertarget{structdiscord__create__guild__params}{}\doxysection{discord\+\_\+create\+\_\+guild\+\_\+params Struct Reference}
+\label{structdiscord__create__guild__params}\index{discord\_create\_guild\_params@{discord\_create\_guild\_params}}
+
+
+Create Guild.  
+
+
+
+
+{\ttfamily \#include $<$guild.\+endpoints-\/params.\+h$>$}
+
+
+
+Collaboration diagram for discord\+\_\+create\+\_\+guild\+\_\+params\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structdiscord__create__guild__params__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_a88a2cb5a7d06d0900376f9cbfde812a5}\label{structdiscord__create__guild__params_a88a2cb5a7d06d0900376f9cbfde812a5}} 
+char $\ast$ {\bfseries name}
+\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_a60a9478f7768229479354fd3556285d5}\label{structdiscord__create__guild__params_a60a9478f7768229479354fd3556285d5}} 
+char $\ast$ {\bfseries region}
+\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_a26bf518dbbc6a2bbd45528c3c15dd63e}\label{structdiscord__create__guild__params_a26bf518dbbc6a2bbd45528c3c15dd63e}} 
+char $\ast$ {\bfseries icon}
+\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_acd1defa525096b8972c0cbcba3ddf77d}\label{structdiscord__create__guild__params_acd1defa525096b8972c0cbcba3ddf77d}} 
+int {\bfseries verification\+\_\+level}
+\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_aba0ebffdb38c07927029edd077d4b493}\label{structdiscord__create__guild__params_aba0ebffdb38c07927029edd077d4b493}} 
+int {\bfseries default\+\_\+message\+\_\+notifications}
+\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_a3a198507528d015e98912b38b7363743}\label{structdiscord__create__guild__params_a3a198507528d015e98912b38b7363743}} 
+int {\bfseries explicit\+\_\+content\+\_\+filter}
+\item 
+struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$$\ast$ \mbox{\hyperlink{structdiscord__create__guild__params_a9961a2dd1b3a565f7a6d3da49d58c154}{channels}}
+\begin{DoxyCompactList}\small\item\em $<$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_acd01af6c9bc80fc5e8d03f7afc42d141}\label{structdiscord__create__guild__params_acd01af6c9bc80fc5e8d03f7afc42d141}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries afk\+\_\+channel\+\_\+id}
+\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_a089b2811f71547cc2610f2d08f0c86fb}\label{structdiscord__create__guild__params_a089b2811f71547cc2610f2d08f0c86fb}} 
+int {\bfseries afk\+\_\+timeout}
+\item 
+\mbox{\Hypertarget{structdiscord__create__guild__params_ae2f899d36016b27d5727c01d7dc6e6e8}\label{structdiscord__create__guild__params_ae2f899d36016b27d5727c01d7dc6e6e8}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries system\+\_\+channel\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Create Guild. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/resources/guild\#create-guild}{\texttt{ https\+://discord.\+com/developers/docs/resources/guild\#create-\/guild}} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+defined at specs/discord/guild.\+endpoints-\/params.\+json\+:10\+:22 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structdiscord__create__guild__params_a9961a2dd1b3a565f7a6d3da49d58c154}\label{structdiscord__create__guild__params_a9961a2dd1b3a565f7a6d3da49d58c154}} 
+\index{discord\_create\_guild\_params@{discord\_create\_guild\_params}!channels@{channels}}
+\index{channels@{channels}!discord\_create\_guild\_params@{discord\_create\_guild\_params}}
+\doxysubsubsection{\texorpdfstring{channels}{channels}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}}$\ast$$\ast$ discord\+\_\+create\+\_\+guild\+\_\+params\+::channels}
+
+
+
+$<$ 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000018}{Todo}}]roles new guild roles; \end{DoxyRefDesc}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orca/specs-\/code/discord/\mbox{\hyperlink{guild_8endpoints-params_8h}{guild.\+endpoints-\/params.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__start__thread__with__message__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_start_thread_with_message_params</compoundname>
+    <includes refid="channel_8endpoints-params_8h" local="no">channel.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__start__thread__with__message__params_1ac19f7cd82f5076276b7feb93cf7655a2" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_start_thread_with_message_params::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.endpoints-params.h" line="396" column="8" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__start__thread__with__message__params_1a3f8362df06c09d9641a999157677a5b6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_start_thread_with_message_params::auto_archive_duration</definition>
+        <argsstring></argsstring>
+        <name>auto_archive_duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.endpoints-params.h" line="400" column="7" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Start Thread with Message. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#start-thread-with-message-json-params">https://discord.com/developers/docs/resources/channel#start-thread-with-message-json-params</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.endpoints-params.json:95:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.endpoints-params.h" line="393" column="47" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="393" bodyend="416"/>
+    <listofallmembers>
+      <member refid="structdiscord__start__thread__with__message__params_1a3f8362df06c09d9641a999157677a5b6" prot="public" virt="non-virtual"><scope>discord_start_thread_with_message_params</scope><name>auto_archive_duration</name></member>
+      <member refid="structdiscord__start__thread__with__message__params_1ac19f7cd82f5076276b7feb93cf7655a2" prot="public" virt="non-virtual"><scope>discord_start_thread_with_message_params</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

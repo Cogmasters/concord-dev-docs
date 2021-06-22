@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_1ac98cffae6bd111a8f41b7a8a561da1" kind="dir">
+    <compoundname>orca</compoundname>
+    <innerdir refid="dir_ff5e28d868d09c8ba74a14019367c4b0">orca/common</innerdir>
+    <innerdir refid="dir_52f72c84c3377d16a5cc2aea42ea6c00">orca/specs-code</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="orca/"/>
+  </compounddef>
+</doxygen>

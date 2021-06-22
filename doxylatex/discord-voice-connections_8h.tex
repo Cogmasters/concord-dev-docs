@@ -1,0 +1,344 @@
+\hypertarget{discord-voice-connections_8h}{}\doxysection{/home/lucasmull/\+Trabalho/orca/discord-\/voice-\/connections.h File Reference}
+\label{discord-voice-connections_8h}\index{/home/lucasmull/Trabalho/orca/discord-\/voice-\/connections.h@{/home/lucasmull/Trabalho/orca/discord-\/voice-\/connections.h}}
+
+
+File containing internal functions and datatypes for Voice Connections.  
+
+
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}cee-\/data-\/sizes.\+h\char`\"{}}\newline
+Include dependency graph for discord-\/voice-\/connections.h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{discord-voice-connections_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{discord-voice-connections_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdiscord__voice__cbs}{discord\+\_\+voice\+\_\+cbs}}
+\item 
+struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}}
+\begin{DoxyCompactList}\small\item\em Discord Voice Connection handle, contain information about its active session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{discord-voice-connections_8h_ac86f1f1528284f9106fe09a0b020fa9f}{voice\+\_\+idle\+\_\+cb}}) (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, const struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$bot)
+\begin{DoxyCompactList}\small\item\em Idle callback. \end{DoxyCompactList}\item 
+typedef void($\ast$ \mbox{\hyperlink{discord-voice-connections_8h_adaefbe372b9346b56fb09e1aad2086a0}{voice\+\_\+speaking\+\_\+cb}}) (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, const struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$bot, const \mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} user\+\_\+id, const int speaking, const int delay, const int ssrc)
+\begin{DoxyCompactList}\small\item\em Voice Speaking callback. \end{DoxyCompactList}\item 
+typedef void($\ast$ \mbox{\hyperlink{discord-voice-connections_8h_a07c400d510abef055c01b1c189c51760}{voice\+\_\+client\+\_\+disconnect\+\_\+cb}}) (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, const struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$bot, const \mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Voice Client Disconnect callback. \end{DoxyCompactList}\item 
+typedef void($\ast$ \mbox{\hyperlink{discord-voice-connections_8h_a14c80eb34126c7465335787c8d62bb8f}{voice\+\_\+codec\+\_\+cb}}) (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, const struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$bot, const char audio\+\_\+codec\mbox{[}$\,$\mbox{]}, const char video\+\_\+codec\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Voice Codec callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{discord-voice-connections_8h_abfaf564bb4eea863195a112f5bb9f56d}\label{discord-voice-connections_8h_abfaf564bb4eea863195a112f5bb9f56d}} 
+enum {\bfseries discord\+\_\+join\+\_\+vc\+\_\+status} \{ {\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+J\+O\+I\+N\+\_\+\+V\+C\+\_\+\+E\+R\+R\+OR} = 0, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+J\+O\+I\+N\+\_\+\+V\+C\+\_\+\+J\+O\+I\+N\+ED} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+J\+O\+I\+N\+\_\+\+V\+C\+\_\+\+E\+X\+H\+A\+U\+S\+T\+\_\+\+C\+A\+P\+A\+C\+I\+TY}, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+J\+O\+I\+N\+\_\+\+V\+C\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+J\+O\+I\+N\+ED}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{discord-voice-connections_8h_ad92f552f4ea93fb907eac0d4807cfa5d}{discord\+\_\+voice\+\_\+set\+\_\+on\+\_\+idle}} (struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, \mbox{\hyperlink{discord-voice-connections_8h_ac86f1f1528284f9106fe09a0b020fa9f}{voice\+\_\+idle\+\_\+cb}} $\ast$callback)
+\begin{DoxyCompactList}\small\item\em Set a callback that triggers at every event-\/loop iteration. \end{DoxyCompactList}\item 
+enum discord\+\_\+join\+\_\+vc\+\_\+status \mbox{\hyperlink{discord-voice-connections_8h_abd9a309fd38407c9bd8dfdb513653f7f}{discord\+\_\+join\+\_\+vc}} (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$msg, \mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} guild\+\_\+id, \mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} channel\+\_\+id, bool self\+\_\+mute, bool self\+\_\+deaf)
+\begin{DoxyCompactList}\small\item\em Send a Voice State Update to Discord. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{discord-voice-connections_8h_a80e3ccb9ae755e50121b760a6a3e174c}{discord\+\_\+send\+\_\+speaking}} (struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, enum discord\+\_\+voice\+\_\+speaking\+\_\+flags flag, int delay)
+\begin{DoxyCompactList}\small\item\em Notify clients that you are speaking or have stopped speaking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{discord-voice-connections_8h_a3ba56a9e477a384fc810ff2117e1cac4}{\+\_\+discord\+\_\+on\+\_\+voice\+\_\+state\+\_\+update}} (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$vs)
+\begin{DoxyCompactList}\small\item\em Update the voice session with a new session\+\_\+id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{discord-voice-connections_8h_a517ff51efc872dcd82d14db3c818c228}{\+\_\+discord\+\_\+on\+\_\+voice\+\_\+server\+\_\+update}} (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, \mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} guild\+\_\+id, char token\mbox{[}$\,$\mbox{]}, char endpoint\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Update the voice session with a new token and url. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{discord-voice-connections_8h_aa65251d9a963b9aeec74c84b69f35c41}{discord\+\_\+voice\+\_\+shutdown}} (struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc)
+\begin{DoxyCompactList}\small\item\em Gracefully exits a ongoing Discord Voice connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{discord-voice-connections_8h_addcc947b45c15ed075e04b9468f72c7e}{discord\+\_\+voice\+\_\+reconnect}} (struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, bool resume)
+\begin{DoxyCompactList}\small\item\em Gracefully reconnect a ongoing Discord Voice connection. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{discord-voice-connections_8h_ab428b69d18322d235d2e1423f7729ca2}{discord\+\_\+voice\+\_\+is\+\_\+alive}} (struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc)
+\begin{DoxyCompactList}\small\item\em Check if a Discord Voice connection is alive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{discord-voice-connections_8h_a907d7e9cc0cb2a7d52cd1bfc1a3c3783}{discord\+\_\+voice\+\_\+connections\+\_\+init}} (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client)
+\begin{DoxyCompactList}\small\item\em Initialize the fields of a Discord Voice Connections handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing internal functions and datatypes for Voice Connections. 
+
+\begin{DoxyAuthor}{Author}
+cee-\/studio 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21 Jun 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{discord-voice-connections_8h_a07c400d510abef055c01b1c189c51760}\label{discord-voice-connections_8h_a07c400d510abef055c01b1c189c51760}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!voice\_client\_disconnect\_cb@{voice\_client\_disconnect\_cb}}
+\index{voice\_client\_disconnect\_cb@{voice\_client\_disconnect\_cb}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{voice\_client\_disconnect\_cb}{voice\_client\_disconnect\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ voice\+\_\+client\+\_\+disconnect\+\_\+cb) (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, const struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$bot, const \mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} user\+\_\+id)}
+
+
+
+Voice Client Disconnect callback. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/topics/voice-connections\#speaking}{\texttt{ https\+://discord.\+com/developers/docs/topics/voice-\/connections\#speaking}} 
+
+\mbox{\hyperlink{discord_8h_a3d7c81f03f681c7e5671489b8160aec7}{discord\+\_\+set\+\_\+voice\+\_\+cbs()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{discord-voice-connections_8h_a14c80eb34126c7465335787c8d62bb8f}\label{discord-voice-connections_8h_a14c80eb34126c7465335787c8d62bb8f}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!voice\_codec\_cb@{voice\_codec\_cb}}
+\index{voice\_codec\_cb@{voice\_codec\_cb}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{voice\_codec\_cb}{voice\_codec\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ voice\+\_\+codec\+\_\+cb) (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, const struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$bot, const char audio\+\_\+codec\mbox{[}$\,$\mbox{]}, const char video\+\_\+codec\mbox{[}$\,$\mbox{]})}
+
+
+
+Voice Codec callback. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/topics/voice-connections\#speaking}{\texttt{ https\+://discord.\+com/developers/docs/topics/voice-\/connections\#speaking}} 
+
+\mbox{\hyperlink{discord_8h_a3d7c81f03f681c7e5671489b8160aec7}{discord\+\_\+set\+\_\+voice\+\_\+cbs()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{discord-voice-connections_8h_ac86f1f1528284f9106fe09a0b020fa9f}\label{discord-voice-connections_8h_ac86f1f1528284f9106fe09a0b020fa9f}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!voice\_idle\_cb@{voice\_idle\_cb}}
+\index{voice\_idle\_cb@{voice\_idle\_cb}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{voice\_idle\_cb}{voice\_idle\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ voice\+\_\+idle\+\_\+cb) (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, const struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$bot)}
+
+
+
+Idle callback. 
+
+Runs on every Web\+Sockets loop iteration, no trigger required \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{discord_8h_a3d7c81f03f681c7e5671489b8160aec7}{discord\+\_\+set\+\_\+voice\+\_\+cbs()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{discord-voice-connections_8h_adaefbe372b9346b56fb09e1aad2086a0}\label{discord-voice-connections_8h_adaefbe372b9346b56fb09e1aad2086a0}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!voice\_speaking\_cb@{voice\_speaking\_cb}}
+\index{voice\_speaking\_cb@{voice\_speaking\_cb}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{voice\_speaking\_cb}{voice\_speaking\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ voice\+\_\+speaking\+\_\+cb) (struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$client, struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$vc, const struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$bot, const \mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} user\+\_\+id, const int speaking, const int delay, const int ssrc)}
+
+
+
+Voice Speaking callback. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/topics/voice-connections\#speaking}{\texttt{ https\+://discord.\+com/developers/docs/topics/voice-\/connections\#speaking}} 
+
+\mbox{\hyperlink{discord_8h_a3d7c81f03f681c7e5671489b8160aec7}{discord\+\_\+set\+\_\+voice\+\_\+cbs()}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{discord-voice-connections_8h_a517ff51efc872dcd82d14db3c818c228}\label{discord-voice-connections_8h_a517ff51efc872dcd82d14db3c818c228}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!\_discord\_on\_voice\_server\_update@{\_discord\_on\_voice\_server\_update}}
+\index{\_discord\_on\_voice\_server\_update@{\_discord\_on\_voice\_server\_update}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{\_discord\_on\_voice\_server\_update()}{\_discord\_on\_voice\_server\_update()}}
+{\footnotesize\ttfamily void \+\_\+discord\+\_\+on\+\_\+voice\+\_\+server\+\_\+update (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$}]{client,  }\item[{\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}}}]{guild\+\_\+id,  }\item[{char}]{token\mbox{[}$\,$\mbox{]},  }\item[{char}]{endpoint\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Update the voice session with a new token and url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & the client created with \mbox{\hyperlink{discord_8h_a445cca7dc5a28113760c7e55759845c7}{discord\+\_\+init()}} \\
+\hline
+{\em guild\+\_\+id} & the guild that houses the voice channel \\
+\hline
+{\em token} & the unique token identifier \\
+\hline
+{\em endpoint} & unique wss url received \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]move to \mbox{\hyperlink{discord-internal_8h}{discord-\/internal.\+h}} \end{DoxyRefDesc}
+\begin{DoxyNote}{Note}
+will prepend with \char`\"{}wss\+://\char`\"{} and append with \char`\"{}?v=4\char`\"{} 
+\end{DoxyNote}
+\mbox{\Hypertarget{discord-voice-connections_8h_a3ba56a9e477a384fc810ff2117e1cac4}\label{discord-voice-connections_8h_a3ba56a9e477a384fc810ff2117e1cac4}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!\_discord\_on\_voice\_state\_update@{\_discord\_on\_voice\_state\_update}}
+\index{\_discord\_on\_voice\_state\_update@{\_discord\_on\_voice\_state\_update}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{\_discord\_on\_voice\_state\_update()}{\_discord\_on\_voice\_state\_update()}}
+{\footnotesize\ttfamily void \+\_\+discord\+\_\+on\+\_\+voice\+\_\+state\+\_\+update (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$}]{client,  }\item[{struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$}]{vs }\end{DoxyParamCaption})}
+
+
+
+Update the voice session with a new session\+\_\+id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & the client created with \mbox{\hyperlink{discord_8h_a445cca7dc5a28113760c7e55759845c7}{discord\+\_\+init()}} \\
+\hline
+{\em vs} & the voice state that has been updated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]move to \mbox{\hyperlink{discord-internal_8h}{discord-\/internal.\+h}} \end{DoxyRefDesc}
+\mbox{\Hypertarget{discord-voice-connections_8h_abd9a309fd38407c9bd8dfdb513653f7f}\label{discord-voice-connections_8h_abd9a309fd38407c9bd8dfdb513653f7f}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!discord\_join\_vc@{discord\_join\_vc}}
+\index{discord\_join\_vc@{discord\_join\_vc}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{discord\_join\_vc()}{discord\_join\_vc()}}
+{\footnotesize\ttfamily enum discord\+\_\+join\+\_\+vc\+\_\+status discord\+\_\+join\+\_\+vc (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$}]{client,  }\item[{struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$}]{msg,  }\item[{\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}}}]{guild\+\_\+id,  }\item[{\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}}}]{channel\+\_\+id,  }\item[{bool}]{self\+\_\+mute,  }\item[{bool}]{self\+\_\+deaf }\end{DoxyParamCaption})}
+
+
+
+Send a Voice State Update to Discord. 
+
+Necessary to connect to the voice server. When succesful a new voice connection instance will start 
+\begin{DoxyParams}{Parameters}
+{\em client} & the client created with \mbox{\hyperlink{discord_8h_a445cca7dc5a28113760c7e55759845c7}{discord\+\_\+init()}} \\
+\hline
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]remove this non-\/intuitive requirement \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em guild\+\_\+id} & the guild that houses the voice channel \\
+\hline
+{\em channel\+\_\+id} & the voice channel the client wants to connect to \\
+\hline
+{\em self\+\_\+mute} & true will join as mute \\
+\hline
+{\em self\+\_\+deaf} & true will join as deaf \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+enum discord\+\_\+join\+\_\+vc\+\_\+status value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{discord-voice-connections_8h_a80e3ccb9ae755e50121b760a6a3e174c}\label{discord-voice-connections_8h_a80e3ccb9ae755e50121b760a6a3e174c}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!discord\_send\_speaking@{discord\_send\_speaking}}
+\index{discord\_send\_speaking@{discord\_send\_speaking}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{discord\_send\_speaking()}{discord\_send\_speaking()}}
+{\footnotesize\ttfamily void discord\+\_\+send\+\_\+speaking (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$}]{vc,  }\item[{enum discord\+\_\+voice\+\_\+speaking\+\_\+flags}]{flag,  }\item[{int}]{delay }\end{DoxyParamCaption})}
+
+
+
+Notify clients that you are speaking or have stopped speaking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vc} & the VC obtained with \mbox{\hyperlink{discord-voice-connections_8h_abd9a309fd38407c9bd8dfdb513653f7f}{discord\+\_\+join\+\_\+vc()}} \\
+\hline
+{\em flag} & \\
+\hline
+{\em delay} & Should be set to 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/topics/voice-connections\#speaking}{\texttt{ https\+://discord.\+com/developers/docs/topics/voice-\/connections\#speaking}} 
+
+\href{https://github.com/discord/discord-api-docs/issues/859\#issuecomment-466602485}{\texttt{ https\+://github.\+com/discord/discord-\/api-\/docs/issues/859\#issuecomment-\/466602485}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{discord-voice-connections_8h_a907d7e9cc0cb2a7d52cd1bfc1a3c3783}\label{discord-voice-connections_8h_a907d7e9cc0cb2a7d52cd1bfc1a3c3783}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!discord\_voice\_connections\_init@{discord\_voice\_connections\_init}}
+\index{discord\_voice\_connections\_init@{discord\_voice\_connections\_init}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{discord\_voice\_connections\_init()}{discord\_voice\_connections\_init()}}
+{\footnotesize\ttfamily void discord\+\_\+voice\+\_\+connections\+\_\+init (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$}]{client }\end{DoxyParamCaption})}
+
+
+
+Initialize the fields of a Discord Voice Connections handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & the client created with \mbox{\hyperlink{discord_8h_a445cca7dc5a28113760c7e55759845c7}{discord\+\_\+init()}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{discord-voice-connections_8h_ab428b69d18322d235d2e1423f7729ca2}\label{discord-voice-connections_8h_ab428b69d18322d235d2e1423f7729ca2}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!discord\_voice\_is\_alive@{discord\_voice\_is\_alive}}
+\index{discord\_voice\_is\_alive@{discord\_voice\_is\_alive}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{discord\_voice\_is\_alive()}{discord\_voice\_is\_alive()}}
+{\footnotesize\ttfamily bool discord\+\_\+voice\+\_\+is\+\_\+alive (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$}]{vc }\end{DoxyParamCaption})}
+
+
+
+Check if a Discord Voice connection is alive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vc} & the VC obtained with \mbox{\hyperlink{discord-voice-connections_8h_abd9a309fd38407c9bd8dfdb513653f7f}{discord\+\_\+join\+\_\+vc()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Web\+Sockets status is different than W\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{discord-voice-connections_8h_addcc947b45c15ed075e04b9468f72c7e}\label{discord-voice-connections_8h_addcc947b45c15ed075e04b9468f72c7e}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!discord\_voice\_reconnect@{discord\_voice\_reconnect}}
+\index{discord\_voice\_reconnect@{discord\_voice\_reconnect}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{discord\_voice\_reconnect()}{discord\_voice\_reconnect()}}
+{\footnotesize\ttfamily void discord\+\_\+voice\+\_\+reconnect (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$}]{vc,  }\item[{bool}]{resume }\end{DoxyParamCaption})}
+
+
+
+Gracefully reconnect a ongoing Discord Voice connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vc} & the VC obtained with \mbox{\hyperlink{discord-voice-connections_8h_abd9a309fd38407c9bd8dfdb513653f7f}{discord\+\_\+join\+\_\+vc()}} \\
+\hline
+{\em resume} & true to attempt to resume to previous session, false reconnect to a fresh session \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Helper around ws\+\_\+set\+\_\+action() 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{websockets_8h}{websockets.\+h}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{discord-voice-connections_8h_ad92f552f4ea93fb907eac0d4807cfa5d}\label{discord-voice-connections_8h_ad92f552f4ea93fb907eac0d4807cfa5d}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!discord\_voice\_set\_on\_idle@{discord\_voice\_set\_on\_idle}}
+\index{discord\_voice\_set\_on\_idle@{discord\_voice\_set\_on\_idle}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{discord\_voice\_set\_on\_idle()}{discord\_voice\_set\_on\_idle()}}
+{\footnotesize\ttfamily void discord\+\_\+voice\+\_\+set\+\_\+on\+\_\+idle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$}]{vc,  }\item[{\mbox{\hyperlink{discord-voice-connections_8h_ac86f1f1528284f9106fe09a0b020fa9f}{voice\+\_\+idle\+\_\+cb}} $\ast$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Set a callback that triggers at every event-\/loop iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vc} & the VC obtained with \mbox{\hyperlink{discord-voice-connections_8h_abd9a309fd38407c9bd8dfdb513653f7f}{discord\+\_\+join\+\_\+vc()}} \\
+\hline
+{\em callback} & the callback that will be executed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{discord-voice-connections_8h_aa65251d9a963b9aeec74c84b69f35c41}\label{discord-voice-connections_8h_aa65251d9a963b9aeec74c84b69f35c41}} 
+\index{discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}!discord\_voice\_shutdown@{discord\_voice\_shutdown}}
+\index{discord\_voice\_shutdown@{discord\_voice\_shutdown}!discord-\/voice-\/connections.h@{discord-\/voice-\/connections.h}}
+\doxysubsubsection{\texorpdfstring{discord\_voice\_shutdown()}{discord\_voice\_shutdown()}}
+{\footnotesize\ttfamily void discord\+\_\+voice\+\_\+shutdown (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structdiscord__voice}{discord\+\_\+voice}} $\ast$}]{vc }\end{DoxyParamCaption})}
+
+
+
+Gracefully exits a ongoing Discord Voice connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vc} & the VC obtained with \mbox{\hyperlink{discord-voice-connections_8h_abd9a309fd38407c9bd8dfdb513653f7f}{discord\+\_\+join\+\_\+vc()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Wraps around ws\+\_\+set\+\_\+action() 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{websockets_8h}{websockets.\+h}} 
+\end{DoxySeeAlso}

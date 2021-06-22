@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__modify__guild__emoji__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_modify_guild_emoji_params</compoundname>
+    <includes refid="emoji_8endpoints-params_8h" local="no">emoji.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__modify__guild__emoji__params_1afab922224675109571f6c9234a270057" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_modify_guild_emoji_params::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/emoji.endpoints-params.h" line="74" column="8" bodyfile="orca/specs-code/discord/emoji.endpoints-params.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__modify__guild__emoji__params_1a8247ca940b0569418ba951aef6a570aa" prot="public" static="no" mutable="no">
+        <type>ja_u64 **</type>
+        <definition>ja_u64** discord_modify_guild_emoji_params::roles</definition>
+        <argsstring></argsstring>
+        <name>roles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/emoji.endpoints-params.h" line="78" column="10" bodyfile="orca/specs-code/discord/emoji.endpoints-params.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Modify Guild Emoji. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/emoji#modify-guild-emoji">https://discord.com/developers/docs/resources/emoji#modify-guild-emoji</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/emoji.endpoints-params.json:22:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/emoji.endpoints-params.h" line="71" column="40" bodyfile="orca/specs-code/discord/emoji.endpoints-params.h" bodystart="71" bodyend="94"/>
+    <listofallmembers>
+      <member refid="structdiscord__modify__guild__emoji__params_1afab922224675109571f6c9234a270057" prot="public" virt="non-virtual"><scope>discord_modify_guild_emoji_params</scope><name>name</name></member>
+      <member refid="structdiscord__modify__guild__emoji__params_1a8247ca940b0569418ba951aef6a570aa" prot="public" virt="non-virtual"><scope>discord_modify_guild_emoji_params</scope><name>roles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

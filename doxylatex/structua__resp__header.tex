@@ -1,0 +1,60 @@
+\hypertarget{structua__resp__header}{}\doxysection{ua\+\_\+resp\+\_\+header Struct Reference}
+\label{structua__resp__header}\index{ua\_resp\_header@{ua\_resp\_header}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{structua__resp__header_ad8cf4f43df3268293f55756d570ac2dd}{buf}}
+\item 
+\mbox{\Hypertarget{structua__resp__header_a750e6c005572401470b3c48d8dbf0ac3}\label{structua__resp__header_a750e6c005572401470b3c48d8dbf0ac3}} 
+size\+\_\+t {\bfseries length}
+\item 
+size\+\_\+t \mbox{\hyperlink{structua__resp__header_a856482fbdf966456451abb1a124d1668}{bufsize}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \{\\
+\>\>uintptr\_t {\bfseries idx}\\
+\>\>size\_t {\bfseries size}\\
+\>\} {\bfseries field}\\
+\>struct \{\\
+\>\>uintptr\_t {\bfseries idx}\\
+\>\>size\_t {\bfseries size}\\
+\>\} {\bfseries value}\\
+\} \mbox{\hyperlink{structua__resp__header_a0bed4fd65c35fa1c900641b93111f7ec}{pairs}} \mbox{[}UA\_MAX\_HEADER\_SIZE\mbox{]}\\
+
+\end{tabbing}\item 
+int \mbox{\hyperlink{structua__resp__header_a30c2275bf7f77a7a1c77a4f512718c15}{size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structua__resp__header_ad8cf4f43df3268293f55756d570ac2dd}\label{structua__resp__header_ad8cf4f43df3268293f55756d570ac2dd}} 
+\index{ua\_resp\_header@{ua\_resp\_header}!buf@{buf}}
+\index{buf@{buf}!ua\_resp\_header@{ua\_resp\_header}}
+\doxysubsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily char$\ast$ ua\+\_\+resp\+\_\+header\+::buf}
+
+the api response header and its length \mbox{\Hypertarget{structua__resp__header_a856482fbdf966456451abb1a124d1668}\label{structua__resp__header_a856482fbdf966456451abb1a124d1668}} 
+\index{ua\_resp\_header@{ua\_resp\_header}!bufsize@{bufsize}}
+\index{bufsize@{bufsize}!ua\_resp\_header@{ua\_resp\_header}}
+\doxysubsubsection{\texorpdfstring{bufsize}{bufsize}}
+{\footnotesize\ttfamily size\+\_\+t ua\+\_\+resp\+\_\+header\+::bufsize}
+
+the real size occupied in memory by \textquotesingle{}buf\textquotesingle{} \mbox{\Hypertarget{structua__resp__header_a0bed4fd65c35fa1c900641b93111f7ec}\label{structua__resp__header_a0bed4fd65c35fa1c900641b93111f7ec}} 
+\index{ua\_resp\_header@{ua\_resp\_header}!pairs@{pairs}}
+\index{pairs@{pairs}!ua\_resp\_header@{ua\_resp\_header}}
+\doxysubsubsection{\texorpdfstring{pairs}{pairs}}
+{\footnotesize\ttfamily struct \{ ... \}  ua\+\_\+resp\+\_\+header\+::pairs\mbox{[}U\+A\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE\mbox{]}}
+
+index and size of individual field and values from \textquotesingle{}buf\textquotesingle{} \mbox{\Hypertarget{structua__resp__header_a30c2275bf7f77a7a1c77a4f512718c15}\label{structua__resp__header_a30c2275bf7f77a7a1c77a4f512718c15}} 
+\index{ua\_resp\_header@{ua\_resp\_header}!size@{size}}
+\index{size@{size}!ua\_resp\_header@{ua\_resp\_header}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int ua\+\_\+resp\+\_\+header\+::size}
+
+amount of field/value pairs 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orca/common/user-\/agent.\+h\end{DoxyCompactItemize}

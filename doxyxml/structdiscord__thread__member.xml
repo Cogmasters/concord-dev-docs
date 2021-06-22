@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__thread__member" kind="struct" language="C++" prot="public">
+    <compoundname>discord_thread_member</compoundname>
+    <includes refid="channel_8h" local="no">channel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__thread__member_1ae0c64858bd7857898fc5a70f6c22e009" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_thread_member::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="841" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="841" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__thread__member_1afd817bd1472a2ff238b305b08861de4d" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_thread_member::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="845" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__thread__member_1a8f5b547bcf1c24e0fd572e415bd0cbbe" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_thread_member::join_timestamp</definition>
+        <argsstring></argsstring>
+        <name>join_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="849" column="17" bodyfile="orca/specs-code/discord/channel.h" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__thread__member_1a21985bbf2c9d41a235c9093f68ab3ff5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_thread_member::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="853" column="7" bodyfile="orca/specs-code/discord/channel.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Thread Member Object. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#thread-member-object">https://discord.com/developers/docs/resources/channel#thread-member-object</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.json:269:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.h" line="838" column="28" bodyfile="orca/specs-code/discord/channel.h" bodystart="838" bodyend="869"/>
+    <listofallmembers>
+      <member refid="structdiscord__thread__member_1a21985bbf2c9d41a235c9093f68ab3ff5" prot="public" virt="non-virtual"><scope>discord_thread_member</scope><name>flags</name></member>
+      <member refid="structdiscord__thread__member_1ae0c64858bd7857898fc5a70f6c22e009" prot="public" virt="non-virtual"><scope>discord_thread_member</scope><name>id</name></member>
+      <member refid="structdiscord__thread__member_1a8f5b547bcf1c24e0fd572e415bd0cbbe" prot="public" virt="non-virtual"><scope>discord_thread_member</scope><name>join_timestamp</name></member>
+      <member refid="structdiscord__thread__member_1afd817bd1472a2ff238b305b08861de4d" prot="public" virt="non-virtual"><scope>discord_thread_member</scope><name>user_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

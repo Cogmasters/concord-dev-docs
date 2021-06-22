@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__audit__log__entry__optional__info" kind="struct" language="C++" prot="public">
+    <compoundname>discord_audit_log_entry_optional_info</compoundname>
+    <includes refid="audit__log_8h" local="no">audit_log.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__audit__log__entry__optional__info_1aed83becc44e7a7b1950d2731c678cc09" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_audit_log_entry_optional_info::delete_member_days</definition>
+        <argsstring></argsstring>
+        <name>delete_member_days</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.h" line="189" column="8" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__audit__log__entry__optional__info_1a944b043b14f769cf1c74cc1fc34bba3d" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_audit_log_entry_optional_info::members_removed</definition>
+        <argsstring></argsstring>
+        <name>members_removed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.h" line="193" column="8" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__audit__log__entry__optional__info_1ad62aa2dc8e913fa8fdb3c1dce6d9445a" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_audit_log_entry_optional_info::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.h" line="197" column="19" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__audit__log__entry__optional__info_1a381dcac655e83919726e2334154eadbc" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_audit_log_entry_optional_info::message_id</definition>
+        <argsstring></argsstring>
+        <name>message_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.h" line="201" column="19" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__audit__log__entry__optional__info_1a43806d40acc73eeaf214c48cc08b763a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_audit_log_entry_optional_info::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.h" line="205" column="8" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__audit__log__entry__optional__info_1a56420479d03a627cce21f61d0e694ced" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_audit_log_entry_optional_info::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.h" line="209" column="19" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__audit__log__entry__optional__info_1a20f8e9cfcf5cf47234e4ab4e8479098e" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_audit_log_entry_optional_info::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.h" line="213" column="8" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__audit__log__entry__optional__info_1a9c5d3c1248f1480c7c1e6bfb5ab8982a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_audit_log_entry_optional_info::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.h" line="217" column="8" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Optional Audit Entry Info Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object-optional-audit-entry-info">https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object-optional-audit-entry-info</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/audit_log.json:81:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/audit_log.h" line="186" column="44" bodyfile="orca/specs-code/discord/audit_log.h" bodystart="186" bodyend="233"/>
+    <listofallmembers>
+      <member refid="structdiscord__audit__log__entry__optional__info_1ad62aa2dc8e913fa8fdb3c1dce6d9445a" prot="public" virt="non-virtual"><scope>discord_audit_log_entry_optional_info</scope><name>channel_id</name></member>
+      <member refid="structdiscord__audit__log__entry__optional__info_1a43806d40acc73eeaf214c48cc08b763a" prot="public" virt="non-virtual"><scope>discord_audit_log_entry_optional_info</scope><name>count</name></member>
+      <member refid="structdiscord__audit__log__entry__optional__info_1aed83becc44e7a7b1950d2731c678cc09" prot="public" virt="non-virtual"><scope>discord_audit_log_entry_optional_info</scope><name>delete_member_days</name></member>
+      <member refid="structdiscord__audit__log__entry__optional__info_1a56420479d03a627cce21f61d0e694ced" prot="public" virt="non-virtual"><scope>discord_audit_log_entry_optional_info</scope><name>id</name></member>
+      <member refid="structdiscord__audit__log__entry__optional__info_1a944b043b14f769cf1c74cc1fc34bba3d" prot="public" virt="non-virtual"><scope>discord_audit_log_entry_optional_info</scope><name>members_removed</name></member>
+      <member refid="structdiscord__audit__log__entry__optional__info_1a381dcac655e83919726e2334154eadbc" prot="public" virt="non-virtual"><scope>discord_audit_log_entry_optional_info</scope><name>message_id</name></member>
+      <member refid="structdiscord__audit__log__entry__optional__info_1a9c5d3c1248f1480c7c1e6bfb5ab8982a" prot="public" virt="non-virtual"><scope>discord_audit_log_entry_optional_info</scope><name>role</name></member>
+      <member refid="structdiscord__audit__log__entry__optional__info_1a20f8e9cfcf5cf47234e4ab4e8479098e" prot="public" virt="non-virtual"><scope>discord_audit_log_entry_optional_info</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

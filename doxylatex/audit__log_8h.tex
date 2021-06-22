@@ -1,0 +1,380 @@
+\hypertarget{audit__log_8h}{}\doxysection{orca/specs-\/code/discord/audit\+\_\+log.h File Reference}
+\label{audit__log_8h}\index{orca/specs-\/code/discord/audit\_log.h@{orca/specs-\/code/discord/audit\_log.h}}
+
+
+Specs generated file.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}}
+\begin{DoxyCompactList}\small\item\em Audit Log Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}}
+\begin{DoxyCompactList}\small\item\em Audit Log Entry Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em Optional Audit Entry Info Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}}
+\begin{DoxyCompactList}\small\item\em Audit Log Change Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}}
+\begin{DoxyCompactList}\small\item\em Audit Log Change Key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{audit__log_8h_a078ff0aa987d45d3c87d0e6d4007f85e}\label{audit__log_8h_a078ff0aa987d45d3c87d0e6d4007f85e}} 
+enum {\bfseries discord\+\_\+audit\+\_\+log\+\_\+events} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+G\+U\+I\+L\+D\+\_\+\+U\+P\+D\+A\+TE} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+R\+E\+A\+TE} = 10, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+U\+P\+D\+A\+TE} = 11, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+D\+E\+L\+E\+TE} = 12, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+O\+V\+E\+R\+W\+R\+I\+T\+E\+\_\+\+C\+R\+E\+A\+TE} = 13, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+O\+V\+E\+R\+W\+R\+I\+T\+E\+\_\+\+U\+P\+D\+A\+TE} = 14, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+O\+V\+E\+R\+W\+R\+I\+T\+E\+\_\+\+D\+E\+L\+E\+TE} = 15, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+K\+I\+CK} = 20, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+P\+R\+U\+NE} = 21, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+B\+A\+N\+\_\+\+A\+DD} = 22, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+B\+A\+N\+\_\+\+R\+E\+M\+O\+VE} = 23, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+U\+P\+D\+A\+TE} = 24, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+R\+O\+L\+E\+\_\+\+U\+P\+D\+A\+TE} = 25, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+M\+O\+VE} = 26, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT} = 27, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+B\+O\+T\+\_\+\+A\+DD} = 28, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+R\+O\+L\+E\+\_\+\+C\+R\+E\+A\+TE} = 30, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+R\+O\+L\+E\+\_\+\+U\+P\+D\+A\+TE} = 31, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+R\+O\+L\+E\+\_\+\+D\+E\+L\+E\+TE} = 32, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+I\+N\+V\+I\+T\+E\+\_\+\+C\+R\+E\+A\+TE} = 40, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+I\+N\+V\+I\+T\+E\+\_\+\+D\+E\+L\+E\+TE} = 42, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+W\+E\+B\+H\+O\+O\+K\+\_\+\+C\+R\+E\+A\+TE} = 50, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+W\+E\+B\+H\+O\+O\+K\+\_\+\+U\+P\+D\+A\+TE} = 51, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+W\+E\+B\+H\+O\+O\+K\+\_\+\+D\+E\+L\+E\+TE} = 52, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+E\+M\+O\+J\+I\+\_\+\+C\+R\+E\+A\+TE} = 60, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+E\+M\+O\+J\+I\+\_\+\+U\+P\+D\+A\+TE} = 61, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+E\+M\+O\+J\+I\+\_\+\+D\+E\+L\+E\+TE} = 62, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+D\+E\+L\+E\+TE} = 72, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+B\+U\+L\+K\+\_\+\+D\+E\+L\+E\+TE} = 73, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+P\+IN} = 74, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+U\+N\+P\+IN} = 75, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+\_\+\+C\+R\+E\+A\+TE} = 80, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+\_\+\+U\+P\+D\+A\+TE} = 81, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+A\+U\+D\+I\+T\+\_\+\+L\+O\+G\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+\_\+\+D\+E\+L\+E\+TE} = 82
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{audit__log_8h_add359a1b173d9f28bd94b133466d6bb2}\label{audit__log_8h_add359a1b173d9f28bd94b133466d6bb2}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a316247d4215305d2f9a712759d3f4c3c}\label{audit__log_8h_a316247d4215305d2f9a712759d3f4c3c}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ad08e61adf7188dcdb365a3f9db1abd10}\label{audit__log_8h_ad08e61adf7188dcdb365a3f9db1abd10}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ab2e3743ea0c6d144067c71640647cda9}\label{audit__log_8h_ab2e3743ea0c6d144067c71640647cda9}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+init} (struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a40b434b282289c564178b99923019883}\label{audit__log_8h_a40b434b282289c564178b99923019883}} 
+struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$ {\bfseries discord\+\_\+audit\+\_\+log\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{audit__log_8h_a98a84dd7ca28b08a72999a4e0a5bcc35}\label{audit__log_8h_a98a84dd7ca28b08a72999a4e0a5bcc35}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a192a026eb038bef6af2eec650f70d6cd}\label{audit__log_8h_a192a026eb038bef6af2eec650f70d6cd}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ab079d5e976a5af6a2c56b479bbb50507}\label{audit__log_8h_ab079d5e976a5af6a2c56b479bbb50507}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ad6125c7bcb31b2187d071a59c1f3ab18}\label{audit__log_8h_ad6125c7bcb31b2187d071a59c1f3ab18}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a443427638b962bbff3335edc6831aac0}\label{audit__log_8h_a443427638b962bbff3335edc6831aac0}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ae7e14fa74cf753e0f16ad8791a5c2695}\label{audit__log_8h_ae7e14fa74cf753e0f16ad8791a5c2695}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ae62fe2b0b5423e27c3cc9e3729d3f8c4}\label{audit__log_8h_ae62fe2b0b5423e27c3cc9e3729d3f8c4}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ac6d94729dff9e9fa1f88b453d1b5aa8f}\label{audit__log_8h_ac6d94729dff9e9fa1f88b453d1b5aa8f}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_adc9fbc7287e0be8d20436dc7fd1f9118}\label{audit__log_8h_adc9fbc7287e0be8d20436dc7fd1f9118}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a6b7e37e898ecae5f735e65f82c60394a}\label{audit__log_8h_a6b7e37e898ecae5f735e65f82c60394a}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a8fb4e6a3297ce74509f6d2a340a48cbb}\label{audit__log_8h_a8fb4e6a3297ce74509f6d2a340a48cbb}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a54c8057a4d9032597d2b332bc89811d0}\label{audit__log_8h_a54c8057a4d9032597d2b332bc89811d0}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ac0ba09657016f3915b8fdaaac5a67c68}\label{audit__log_8h_ac0ba09657016f3915b8fdaaac5a67c68}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a043a30aae2b272e322c00710039d6a0d}\label{audit__log_8h_a043a30aae2b272e322c00710039d6a0d}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log}{discord\+\_\+audit\+\_\+log}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a6ec2382a7a899ec5284bbd3145dc90a1}\label{audit__log_8h_a6ec2382a7a899ec5284bbd3145dc90a1}} 
+char $\ast$ {\bfseries discord\+\_\+audit\+\_\+log\+\_\+events\+\_\+to\+\_\+string} (enum discord\+\_\+audit\+\_\+log\+\_\+events)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a55d4b260e7c41d84651d2b8bd866bdd0}\label{audit__log_8h_a55d4b260e7c41d84651d2b8bd866bdd0}} 
+enum discord\+\_\+audit\+\_\+log\+\_\+events {\bfseries discord\+\_\+audit\+\_\+log\+\_\+events\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a28bbb37bf73187a5df1bd42c1d89de07}\label{audit__log_8h_a28bbb37bf73187a5df1bd42c1d89de07}} 
+bool {\bfseries discord\+\_\+audit\+\_\+log\+\_\+events\+\_\+has} (enum discord\+\_\+audit\+\_\+log\+\_\+events, char $\ast$)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a7aa58d93414becfedb1fca55b80cec07}\label{audit__log_8h_a7aa58d93414becfedb1fca55b80cec07}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aaa5e023afc5e56d72410debf65cb23f9}\label{audit__log_8h_aaa5e023afc5e56d72410debf65cb23f9}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a5b234cabde7e64a60cd12c386cdab55a}\label{audit__log_8h_a5b234cabde7e64a60cd12c386cdab55a}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a70937966bc998ab22857d679746157d1}\label{audit__log_8h_a70937966bc998ab22857d679746157d1}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+init} (struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a0f4cef3796852aeadd49b3e70875933c}\label{audit__log_8h_a0f4cef3796852aeadd49b3e70875933c}} 
+struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$ {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{audit__log_8h_a63be73506f647f61411ef6ac01fd092d}\label{audit__log_8h_a63be73506f647f61411ef6ac01fd092d}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a94e1e96a43b54dd847e15d4dcdc74847}\label{audit__log_8h_a94e1e96a43b54dd847e15d4dcdc74847}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a582b2475448794138c7527f80eeab7a1}\label{audit__log_8h_a582b2475448794138c7527f80eeab7a1}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a66d96e844181331186935af3a40cc6a4}\label{audit__log_8h_a66d96e844181331186935af3a40cc6a4}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_af682b6b1c6bf01a888f855c239f1497e}\label{audit__log_8h_af682b6b1c6bf01a888f855c239f1497e}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a6533b2b9234538ad8343ba27c5ade4ec}\label{audit__log_8h_a6533b2b9234538ad8343ba27c5ade4ec}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_af745313297252588f0aa315deb3c2c7d}\label{audit__log_8h_af745313297252588f0aa315deb3c2c7d}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ab9f305eeeaaaf965f276d726119d48c3}\label{audit__log_8h_ab9f305eeeaaaf965f276d726119d48c3}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aea382601b77230c796c0b049a5e509da}\label{audit__log_8h_aea382601b77230c796c0b049a5e509da}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_af4d4b8f1818931965dff783532fa2f71}\label{audit__log_8h_af4d4b8f1818931965dff783532fa2f71}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a570c3c2320abb37e25fbe487357d1971}\label{audit__log_8h_a570c3c2320abb37e25fbe487357d1971}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a4d3d1185ba1946b65d85fecc7b501e23}\label{audit__log_8h_a4d3d1185ba1946b65d85fecc7b501e23}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_abe40dbd4c1a55a5f6c4b5eac2f66adab}\label{audit__log_8h_abe40dbd4c1a55a5f6c4b5eac2f66adab}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a566b9a9a674f9a5418d6d4516999904c}\label{audit__log_8h_a566b9a9a674f9a5418d6d4516999904c}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry}{discord\+\_\+audit\+\_\+log\+\_\+entry}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aa6fe03b77becec72ab37567305be851b}\label{audit__log_8h_aa6fe03b77becec72ab37567305be851b}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ac9252056b954d0a41a2d2926f9cfe27a}\label{audit__log_8h_ac9252056b954d0a41a2d2926f9cfe27a}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a0dca0f8816aa7e2e9c19d11f8a4834fb}\label{audit__log_8h_a0dca0f8816aa7e2e9c19d11f8a4834fb}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a472479173598f152d946bd66ee36f297}\label{audit__log_8h_a472479173598f152d946bd66ee36f297}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+init} (struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_adde95fe1768bba6b78f787b02c62bcbc}\label{audit__log_8h_adde95fe1768bba6b78f787b02c62bcbc}} 
+struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$ {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{audit__log_8h_ae7b73e38b3612a79bc5e6a7c89081bb2}\label{audit__log_8h_ae7b73e38b3612a79bc5e6a7c89081bb2}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aa1e2b316bd8883aebe27623850ed42a9}\label{audit__log_8h_aa1e2b316bd8883aebe27623850ed42a9}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a35a6391e1139c279c5e142cd10e7106c}\label{audit__log_8h_a35a6391e1139c279c5e142cd10e7106c}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a3026111225b9d788176a11d32bb5651a}\label{audit__log_8h_a3026111225b9d788176a11d32bb5651a}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aac7422c5280fc449886753b5a7674add}\label{audit__log_8h_aac7422c5280fc449886753b5a7674add}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ae90559a3175fe8bdd86d3527a5db3e20}\label{audit__log_8h_ae90559a3175fe8bdd86d3527a5db3e20}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aeb92a623b24190e19c5a62d8ced0f17e}\label{audit__log_8h_aeb92a623b24190e19c5a62d8ced0f17e}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a3f3e62d14ec82f061d89f506a3d09cbc}\label{audit__log_8h_a3f3e62d14ec82f061d89f506a3d09cbc}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_abc9d11b6511e52248e2c429229887aa7}\label{audit__log_8h_abc9d11b6511e52248e2c429229887aa7}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_af3aa44dce296c7a67e8699fe16afc17b}\label{audit__log_8h_af3aa44dce296c7a67e8699fe16afc17b}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ae461f78decc3352ec426b265f486e297}\label{audit__log_8h_ae461f78decc3352ec426b265f486e297}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a4e31c56e3646cdc58739a7fed0256ccd}\label{audit__log_8h_a4e31c56e3646cdc58739a7fed0256ccd}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a4d9c7e4115017ea63494e9daa23f9206}\label{audit__log_8h_a4d9c7e4115017ea63494e9daa23f9206}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a2a7f9dc5b9c21d26c8f5ac535436c51b}\label{audit__log_8h_a2a7f9dc5b9c21d26c8f5ac535436c51b}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a7490c7ab63a56ac7b11e90d5a2ecc081}\label{audit__log_8h_a7490c7ab63a56ac7b11e90d5a2ecc081}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a627ed4fc62e4974c7f02392c40593408}\label{audit__log_8h_a627ed4fc62e4974c7f02392c40593408}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aa29413c495204386898974370836c214}\label{audit__log_8h_aa29413c495204386898974370836c214}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a1265b1b27f6884f1ff468adb3bba8ea8}\label{audit__log_8h_a1265b1b27f6884f1ff468adb3bba8ea8}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+init} (struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ab435b910d95a44d4f650e10261f84c87}\label{audit__log_8h_ab435b910d95a44d4f650e10261f84c87}} 
+struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$ {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{audit__log_8h_aecf7f9843ebdf4ba1c94870cdaef80d4}\label{audit__log_8h_aecf7f9843ebdf4ba1c94870cdaef80d4}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_afbb2977aa850b5d5a65372431317fbb4}\label{audit__log_8h_afbb2977aa850b5d5a65372431317fbb4}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aa3b726895dc38eff09fa54a19c61b799}\label{audit__log_8h_aa3b726895dc38eff09fa54a19c61b799}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aa598150a7b8418a3167a8f2066f16ea0}\label{audit__log_8h_aa598150a7b8418a3167a8f2066f16ea0}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_aac8b28a5b9bc23d32f4eb4a404853cba}\label{audit__log_8h_aac8b28a5b9bc23d32f4eb4a404853cba}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a363737ff1581119914606c45dcf830d6}\label{audit__log_8h_a363737ff1581119914606c45dcf830d6}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a02877f9ead2e9eca50a12a3e3efc4668}\label{audit__log_8h_a02877f9ead2e9eca50a12a3e3efc4668}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ae054e410abd9178ae88c1e8cdadee155}\label{audit__log_8h_ae054e410abd9178ae88c1e8cdadee155}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ac0cb89cb0ebcc9aa696c2909c2020091}\label{audit__log_8h_ac0cb89cb0ebcc9aa696c2909c2020091}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a4278d7a7a7422f490ea795c5ccfa7cd1}\label{audit__log_8h_a4278d7a7a7422f490ea795c5ccfa7cd1}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a51504c120335930533ea2c2c287cd4a5}\label{audit__log_8h_a51504c120335930533ea2c2c287cd4a5}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a5048ed0bbdd2a9f5b3af3ae19b83aceb}\label{audit__log_8h_a5048ed0bbdd2a9f5b3af3ae19b83aceb}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a1925de6be6e4132d268dab0217e0327a}\label{audit__log_8h_a1925de6be6e4132d268dab0217e0327a}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a9e7bae277e18082413a70f765c11b315}\label{audit__log_8h_a9e7bae277e18082413a70f765c11b315}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a344ad2ee5aa30f43aaaa4987c7a56e70}\label{audit__log_8h_a344ad2ee5aa30f43aaaa4987c7a56e70}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a1d2e46a4d955f69b605db3017afc3c3a}\label{audit__log_8h_a1d2e46a4d955f69b605db3017afc3c3a}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ab9329843770f223bcb22f0227de4b962}\label{audit__log_8h_ab9329843770f223bcb22f0227de4b962}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a971f5bc8c5f77cd679a401d45af33cde}\label{audit__log_8h_a971f5bc8c5f77cd679a401d45af33cde}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+init} (struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a2caf03904b258d098281351441f0ed59}\label{audit__log_8h_a2caf03904b258d098281351441f0ed59}} 
+struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$ {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{audit__log_8h_a0d5e4d0dcc13c726c3e3d22e9aab3161}\label{audit__log_8h_a0d5e4d0dcc13c726c3e3d22e9aab3161}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a4c9aa86ede2318adf8ac8523041584ba}\label{audit__log_8h_a4c9aa86ede2318adf8ac8523041584ba}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a6a0b998eb5b2cfbaa58c561f570d4974}\label{audit__log_8h_a6a0b998eb5b2cfbaa58c561f570d4974}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ae3b2786a8f0e66643e7cafb4f515fe0d}\label{audit__log_8h_ae3b2786a8f0e66643e7cafb4f515fe0d}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a6d641988a41805aaff24fb8afb421d53}\label{audit__log_8h_a6d641988a41805aaff24fb8afb421d53}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ae7e8745bcbc8fdd758e889f209cc275d}\label{audit__log_8h_ae7e8745bcbc8fdd758e889f209cc275d}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_ad10b1760a4e64b8e76678faa8ab7756c}\label{audit__log_8h_ad10b1760a4e64b8e76678faa8ab7756c}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a307ef85d4b5063d14987f3f93026a826}\label{audit__log_8h_a307ef85d4b5063d14987f3f93026a826}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a6df91b8691519cff20307380b92a45bb}\label{audit__log_8h_a6df91b8691519cff20307380b92a45bb}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a50a0c99dfd9c6fc7599a94791342bf65}\label{audit__log_8h_a50a0c99dfd9c6fc7599a94791342bf65}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a2276e4e35b5aa5d10a4a19ea0fba5e90}\label{audit__log_8h_a2276e4e35b5aa5d10a4a19ea0fba5e90}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a36a838c3d7d41216fda1ac3311fd31b4}\label{audit__log_8h_a36a838c3d7d41216fda1ac3311fd31b4}} 
+void {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a62e0416b6f262999893d77f8b4320afe}\label{audit__log_8h_a62e0416b6f262999893d77f8b4320afe}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{audit__log_8h_a0f75ef668a03aaa67fb2a632517690f6}\label{audit__log_8h_a0f75ef668a03aaa67fb2a632517690f6}} 
+size\+\_\+t {\bfseries discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__audit__log__change__key}{discord\+\_\+audit\+\_\+log\+\_\+change\+\_\+key}} $\ast$$\ast$p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Specs generated file. 
+
+\begin{DoxyAuthor}{Author}
+cee-\/studio 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21 Jun 2021 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/resources/audit-log}{\texttt{ https\+://discord.\+com/developers/docs/resources/audit-\/log}} 
+\end{DoxySeeAlso}

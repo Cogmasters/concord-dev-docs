@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__channel__followed__channel" kind="struct" language="C++" prot="public">
+    <compoundname>discord_channel_followed_channel</compoundname>
+    <includes refid="channel_8h" local="no">channel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__channel__followed__channel_1aa5f0c1ba65641a5f855c228d815b0ddb" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_channel_followed_channel::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="616" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__followed__channel_1ae6fde1e2202ad2fe2872e048ca91b4db" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_channel_followed_channel::webhook_id</definition>
+        <argsstring></argsstring>
+        <name>webhook_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="620" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Followed Channel Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#followed-channel-object-followed-channel-structure">https://discord.com/developers/docs/resources/channel#followed-channel-object-followed-channel-structure</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.json:217:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.h" line="613" column="39" bodyfile="orca/specs-code/discord/channel.h" bodystart="613" bodyend="636"/>
+    <listofallmembers>
+      <member refid="structdiscord__channel__followed__channel_1aa5f0c1ba65641a5f855c228d815b0ddb" prot="public" virt="non-virtual"><scope>discord_channel_followed_channel</scope><name>channel_id</name></member>
+      <member refid="structdiscord__channel__followed__channel_1ae6fde1e2202ad2fe2872e048ca91b4db" prot="public" virt="non-virtual"><scope>discord_channel_followed_channel</scope><name>webhook_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

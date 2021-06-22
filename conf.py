@@ -1,11 +1,13 @@
 # Generate Doxygen XML Files
-import subprocess, os, sys
+import subprocess
+import os
+import sys
 
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
 if read_the_docs_build:
     print("RTD build...")
-    # subprocess.call('doxygen Doxyfile', shell=True)
+    #subprocess.call('doxygen Doxyfile; ls', shell=True)
 else:
     print("Normal build...")
 # ----------------------------------------------------------------------------
@@ -46,7 +48,7 @@ extensions = [
 # Breathe Configuration
 
 breathe_domain_by_extension = { "h" : "c" }
-breathe_projects = { "Orca": "./doxydocs/xml" }
+breathe_projects = { "Orca": 'doxyxml' }
 breathe_default_project = 'Orca'
 
 breathe_default_members = ('members', 'undoc-members')
@@ -69,30 +71,16 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+if read_the_docs_build:
+    html_theme = 'default'
+else:
+    html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-def run_doxygen(folder):
-    """Run the doxygen make command in the designated folder"""
-    try:
-        retcode = subprocess.call("cd %s; make" % folder, shell=True)
-        if retcode < 0:
-            sys.stderr.write("doxygen terminated by signal %s" % (-retcode))
-    except OSError as e:
-        sys.stderr.write("doxygen execution failed: %s" % e)
-
-
-def generate_doxygen_xml(app):
-    """Run the doxygen make commands if we're on the ReadTheDocs server"""
-    read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
-    if read_the_docs_build:
-        run_doxygen(".")
-
-
-def setup(app):
-    # Add hook for building doxygen xml when needed
-    app.connect("builder-inited", generate_doxygen_xml)
+pygments_style = 'sphinx'
+highlight_language = 'c'
+primary_domain = 'c'

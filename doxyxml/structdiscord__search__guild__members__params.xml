@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__search__guild__members__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_search_guild_members_params</compoundname>
+    <includes refid="guild_8endpoints-params_8h" local="no">guild.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__search__guild__members__params_1a281ff039f887c927d9522ec8f41ef2b5" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_search_guild_members_params::query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="364" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__search__guild__members__params_1a3a62692a2f7ca4522cdc6d3c7a14bf08" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_search_guild_members_params::limit</definition>
+        <argsstring></argsstring>
+        <name>limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="368" column="7" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Search Guild Members. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#search-guild-members-query-string-params">https://discord.com/developers/docs/resources/guild#search-guild-members-query-string-params</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/guild.endpoints-params.json:90:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/guild.endpoints-params.h" line="361" column="42" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="361" bodyend="384"/>
+    <listofallmembers>
+      <member refid="structdiscord__search__guild__members__params_1a3a62692a2f7ca4522cdc6d3c7a14bf08" prot="public" virt="non-virtual"><scope>discord_search_guild_members_params</scope><name>limit</name></member>
+      <member refid="structdiscord__search__guild__members__params_1a281ff039f887c927d9522ec8f41ef2b5" prot="public" virt="non-virtual"><scope>discord_search_guild_members_params</scope><name>query</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

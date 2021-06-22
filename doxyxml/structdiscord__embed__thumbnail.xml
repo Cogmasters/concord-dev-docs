@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__embed__thumbnail" kind="struct" language="C++" prot="public">
+    <compoundname>discord_embed_thumbnail</compoundname>
+    <includes refid="channel_8h" local="no">channel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__embed__thumbnail_1a2be66a23a749ca9f7fd336a84fb5cd8f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_embed_thumbnail::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="1179" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="1179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__embed__thumbnail_1a44d21c605747d5568eeb8b1303e00b10" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_embed_thumbnail::proxy_url</definition>
+        <argsstring></argsstring>
+        <name>proxy_url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="1183" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="1183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__embed__thumbnail_1a75c14eeac46d99d0c6e4807dfe865d83" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_embed_thumbnail::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="1187" column="7" bodyfile="orca/specs-code/discord/channel.h" bodystart="1187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__embed__thumbnail_1a3754738d8c29e68b164e47ac3ccb33e2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_embed_thumbnail::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="1191" column="7" bodyfile="orca/specs-code/discord/channel.h" bodystart="1191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Embed Thumbnail Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#embed-object-embed-thumbnail-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-thumbnail-structure</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.json:345:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.h" line="1176" column="30" bodyfile="orca/specs-code/discord/channel.h" bodystart="1176" bodyend="1207"/>
+    <listofallmembers>
+      <member refid="structdiscord__embed__thumbnail_1a75c14eeac46d99d0c6e4807dfe865d83" prot="public" virt="non-virtual"><scope>discord_embed_thumbnail</scope><name>height</name></member>
+      <member refid="structdiscord__embed__thumbnail_1a44d21c605747d5568eeb8b1303e00b10" prot="public" virt="non-virtual"><scope>discord_embed_thumbnail</scope><name>proxy_url</name></member>
+      <member refid="structdiscord__embed__thumbnail_1a2be66a23a749ca9f7fd336a84fb5cd8f" prot="public" virt="non-virtual"><scope>discord_embed_thumbnail</scope><name>url</name></member>
+      <member refid="structdiscord__embed__thumbnail_1a3754738d8c29e68b164e47ac3ccb33e2" prot="public" virt="non-virtual"><scope>discord_embed_thumbnail</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

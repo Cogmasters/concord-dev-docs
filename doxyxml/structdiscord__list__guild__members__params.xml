@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__list__guild__members__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_list_guild_members_params</compoundname>
+    <includes refid="discord_8h" local="no">discord.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__list__guild__members__params_1a9aaad1b32dfe0d79c3402711716c9856" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_list_guild_members_params::limit</definition>
+        <argsstring></argsstring>
+        <name>limit</name>
+        <briefdescription>
+<para>the number of members to return (1-1000) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="349" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__list__guild__members__params_1a365fe17fca1305512fb92321e35f11b8" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_list_guild_members_params::after</definition>
+        <argsstring></argsstring>
+        <name>after</name>
+        <briefdescription>
+<para>the highest user id in the previous page </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="350" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="todo_1_todo000011"><xreftitle>Todo</xreftitle><xrefdescription><para>this can become specs generated code </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/lucasmull/Trabalho/orca/discord.h" line="348" column="40" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="348" bodyend="351"/>
+    <listofallmembers>
+      <member refid="structdiscord__list__guild__members__params_1a365fe17fca1305512fb92321e35f11b8" prot="public" virt="non-virtual"><scope>discord_list_guild_members_params</scope><name>after</name></member>
+      <member refid="structdiscord__list__guild__members__params_1a9aaad1b32dfe0d79c3402711716c9856" prot="public" virt="non-virtual"><scope>discord_list_guild_members_params</scope><name>limit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

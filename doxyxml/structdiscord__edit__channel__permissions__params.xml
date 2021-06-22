@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__edit__channel__permissions__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_edit_channel_permissions_params</compoundname>
+    <includes refid="channel_8endpoints-params_8h" local="no">channel.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__edit__channel__permissions__params_1aacef0f4dbc5fbe837daa518e975444ed" prot="public" static="no" mutable="no">
+        <type>enum discord_permissions_bitwise_flags</type>
+        <definition>enum discord_permissions_bitwise_flags discord_edit_channel_permissions_params::allow</definition>
+        <argsstring></argsstring>
+        <name>allow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.endpoints-params.h" line="130" column="7" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__edit__channel__permissions__params_1af05b5148cccb72aca8e2ed52ecaab25c" prot="public" static="no" mutable="no">
+        <type>enum discord_permissions_bitwise_flags</type>
+        <definition>enum discord_permissions_bitwise_flags discord_edit_channel_permissions_params::deny</definition>
+        <argsstring></argsstring>
+        <name>deny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.endpoints-params.h" line="130" column="7" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__edit__channel__permissions__params_1a168a8b0acb042e326e2840c1f0549343" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_edit_channel_permissions_params::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.endpoints-params.h" line="184" column="7" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Edit Channel Permissions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#edit-channel-permissions">https://discord.com/developers/docs/resources/channel#edit-channel-permissions</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.endpoints-params.json:46:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.endpoints-params.h" line="173" column="46" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="173" bodyend="200"/>
+    <listofallmembers>
+      <member refid="structdiscord__edit__channel__permissions__params_1aacef0f4dbc5fbe837daa518e975444ed" prot="public" virt="non-virtual"><scope>discord_edit_channel_permissions_params</scope><name>allow</name></member>
+      <member refid="structdiscord__edit__channel__permissions__params_1af05b5148cccb72aca8e2ed52ecaab25c" prot="public" virt="non-virtual"><scope>discord_edit_channel_permissions_params</scope><name>deny</name></member>
+      <member refid="structdiscord__edit__channel__permissions__params_1a168a8b0acb042e326e2840c1f0549343" prot="public" virt="non-virtual"><scope>discord_edit_channel_permissions_params</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,53 @@
+\hypertarget{structdiscord__adapter}{}\doxysection{discord\+\_\+adapter Struct Reference}
+\label{structdiscord__adapter}\index{discord\_adapter@{discord\_adapter}}
+
+
+The handle used for performing H\+T\+TP Requests.  
+
+
+
+
+{\ttfamily \#include $<$discord-\/internal.\+h$>$}
+
+
+
+Collaboration diagram for discord\+\_\+adapter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structdiscord__adapter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdiscord__adapter_a4bc3965220fb197fe1dab2237a8dec7d}\label{structdiscord__adapter_a4bc3965220fb197fe1dab2237a8dec7d}} 
+struct user\+\_\+agent $\ast$ \mbox{\hyperlink{structdiscord__adapter_a4bc3965220fb197fe1dab2237a8dec7d}{ua}}
+\begin{DoxyCompactList}\small\item\em The user agent handle for performing requests. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__adapter_a4f678965ec7a3d58966e77a69a48d319}\label{structdiscord__adapter_a4f678965ec7a3d58966e77a69a48d319}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \mbox{\hyperlink{structdiscord__bucket}{discord\_bucket}} $\ast$ \mbox{\hyperlink{structdiscord__adapter_a20ef4471bba9e6c4a2e064aa8e498747}{buckets}}\\
+\>\>{\em Endpoint/routes discovered, check a endpoint/bucket match with tree search functions. }\\
+\>pthread\_mutex\_t \mbox{\hyperlink{structdiscord__adapter_a6c82f5b486617094d1d1d0c79995e4ee}{lock}}\\
+\>\>{\em Mutex used when adding to or searching for buckets. }\\
+\} {\bfseries ratelimit}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structdiscord__adapter_a19d5ff5b0b9843bf65d1cb080b9cb5a7}\label{structdiscord__adapter_a19d5ff5b0b9843bf65d1cb080b9cb5a7}} 
+struct \mbox{\hyperlink{structdiscord}{discord}} $\ast$ \mbox{\hyperlink{structdiscord__adapter_a19d5ff5b0b9843bf65d1cb080b9cb5a7}{p\+\_\+client}}
+\begin{DoxyCompactList}\small\item\em pointer to client this struct is part of \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The handle used for performing H\+T\+TP Requests. 
+
+This is a wrapper over struct user\+\_\+agent \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{user-agent_8h_source}{user-\/agent.\+h}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/lucasmull/\+Trabalho/orca/\mbox{\hyperlink{discord-internal_8h}{discord-\/internal.\+h}}\end{DoxyCompactItemize}

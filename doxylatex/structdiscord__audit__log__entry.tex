@@ -1,0 +1,60 @@
+\hypertarget{structdiscord__audit__log__entry}{}\doxysection{discord\+\_\+audit\+\_\+log\+\_\+entry Struct Reference}
+\label{structdiscord__audit__log__entry}\index{discord\_audit\_log\_entry@{discord\_audit\_log\_entry}}
+
+
+Audit Log Entry Structure.  
+
+
+
+
+{\ttfamily \#include $<$audit\+\_\+log.\+h$>$}
+
+
+
+Collaboration diagram for discord\+\_\+audit\+\_\+log\+\_\+entry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structdiscord__audit__log__entry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdiscord__audit__log__entry_a965e505841f429834c36e4895212d8b2}\label{structdiscord__audit__log__entry_a965e505841f429834c36e4895212d8b2}} 
+char $\ast$ {\bfseries target\+\_\+id}
+\item 
+\mbox{\Hypertarget{structdiscord__audit__log__entry_ada09465ba5728b5a425f6f18c223a7ad}\label{structdiscord__audit__log__entry_ada09465ba5728b5a425f6f18c223a7ad}} 
+struct \mbox{\hyperlink{structdiscord__audit__log__change}{discord\+\_\+audit\+\_\+log\+\_\+change}} $\ast$$\ast$ {\bfseries changes}
+\item 
+\mbox{\Hypertarget{structdiscord__audit__log__entry_a0c8bb6db089654b0be3d906afb9b7d46}\label{structdiscord__audit__log__entry_a0c8bb6db089654b0be3d906afb9b7d46}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries user\+\_\+id}
+\item 
+\mbox{\Hypertarget{structdiscord__audit__log__entry_a55739be4f3734bfb946eda6ec8929cad}\label{structdiscord__audit__log__entry_a55739be4f3734bfb946eda6ec8929cad}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries id}
+\item 
+\mbox{\Hypertarget{structdiscord__audit__log__entry_ac7d1e4b730e6e0658cd35e74b0249828}\label{structdiscord__audit__log__entry_ac7d1e4b730e6e0658cd35e74b0249828}} 
+int {\bfseries action\+\_\+type}
+\item 
+\mbox{\Hypertarget{structdiscord__audit__log__entry_a2cc0c23a70843beacc73700a98a94824}\label{structdiscord__audit__log__entry_a2cc0c23a70843beacc73700a98a94824}} 
+struct \mbox{\hyperlink{structdiscord__audit__log__entry__optional__info}{discord\+\_\+audit\+\_\+log\+\_\+entry\+\_\+optional\+\_\+info}} $\ast$$\ast$ {\bfseries options}
+\item 
+\mbox{\Hypertarget{structdiscord__audit__log__entry_a37f635b59bf8d69f8be3edabd4007211}\label{structdiscord__audit__log__entry_a37f635b59bf8d69f8be3edabd4007211}} 
+char {\bfseries reason} \mbox{[}M\+A\+X\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+L\+EN\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Audit Log Entry Structure. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/resources/audit-log\#audit-log-entry-object-audit-log-entry-structure}{\texttt{ https\+://discord.\+com/developers/docs/resources/audit-\/log\#audit-\/log-\/entry-\/object-\/audit-\/log-\/entry-\/structure}} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+defined at specs/discord/audit\+\_\+log.\+json\+:65\+:22 
+\end{DoxyNote}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orca/specs-\/code/discord/\mbox{\hyperlink{audit__log_8h}{audit\+\_\+log.\+h}}\end{DoxyCompactItemize}

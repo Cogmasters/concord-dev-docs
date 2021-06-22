@@ -1,0 +1,963 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="voice_8h" kind="file" language="C++">
+    <compoundname>voice.h</compoundname>
+    <innerclass refid="structdiscord__voice__state" prot="public">discord_voice_state</innerclass>
+    <innerclass refid="structdiscord__voice__region" prot="public">discord_voice_region</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="voice_8h_1a2ffbfb18b9382dae511adbcf0f6d5916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_cleanup_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_voice_state_cleanup_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="81" column="13" declfile="orca/specs-code/discord/voice.h" declline="81" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a75a1f9e349156923fb70e3197aba0464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_cleanup</definition>
+        <argsstring>(struct discord_voice_state *p)</argsstring>
+        <name>discord_voice_state_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="82" column="13" declfile="orca/specs-code/discord/voice.h" declline="82" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a021d5cfa5d094a60716c086fe612f0f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_init_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_voice_state_init_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="83" column="13" declfile="orca/specs-code/discord/voice.h" declline="83" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a85ec401816e690f31a216c5a5dfe540a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_init</definition>
+        <argsstring>(struct discord_voice_state *p)</argsstring>
+        <name>discord_voice_state_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="84" column="13" declfile="orca/specs-code/discord/voice.h" declline="84" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a94fa4a89f6d346d4b0408e846307640b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> *</type>
+        <definition>struct discord_voice_state* discord_voice_state_alloc</definition>
+        <argsstring>()</argsstring>
+        <name>discord_voice_state_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="85" column="34" declfile="orca/specs-code/discord/voice.h" declline="85" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a19b2f6a76f34b376ea19f0cea7b7ad39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_free_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_voice_state_free_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="86" column="13" declfile="orca/specs-code/discord/voice.h" declline="86" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a6166744b597b79222906134f590eff76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_free</definition>
+        <argsstring>(struct discord_voice_state *p)</argsstring>
+        <name>discord_voice_state_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="87" column="13" declfile="orca/specs-code/discord/voice.h" declline="87" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1ab2008d8de15cc1ffd22a1f1d515e272a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_from_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_voice_state_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="88" column="13" declfile="orca/specs-code/discord/voice.h" declline="88" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a025151cb730edc817a2c33ef66015253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_from_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_voice_state *p)</argsstring>
+        <name>discord_voice_state_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="89" column="13" declfile="orca/specs-code/discord/voice.h" declline="89" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a9ec45bb840970a2e1148287227f3f092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_state_to_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_voice_state_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="90" column="15" declfile="orca/specs-code/discord/voice.h" declline="90" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a83ab74941af531b0b1decec61d87e0b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_state_to_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_voice_state *p)</argsstring>
+        <name>discord_voice_state_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="91" column="15" declfile="orca/specs-code/discord/voice.h" declline="91" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1af135208083b7d26b9441baee8c585965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_state_to_query_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_voice_state_to_query_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="92" column="15" declfile="orca/specs-code/discord/voice.h" declline="92" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a37aa1e1c8d844abf08b737632caecd3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_state_to_query</definition>
+        <argsstring>(char *json, size_t len, struct discord_voice_state *p)</argsstring>
+        <name>discord_voice_state_to_query</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="93" column="15" declfile="orca/specs-code/discord/voice.h" declline="93" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a9f23661b2796717063d9695db2d4ad40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_list_free_v</definition>
+        <argsstring>(void **p)</argsstring>
+        <name>discord_voice_state_list_free_v</name>
+        <param>
+          <type>void **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="94" column="13" declfile="orca/specs-code/discord/voice.h" declline="94" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a227eac8a74dfc0ac95b791f7fc4fd37a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_list_free</definition>
+        <argsstring>(struct discord_voice_state **p)</argsstring>
+        <name>discord_voice_state_list_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="95" column="13" declfile="orca/specs-code/discord/voice.h" declline="95" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a73326ae49fb95b1f8d8965516bd7a2c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_list_from_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_voice_state_list_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="96" column="13" declfile="orca/specs-code/discord/voice.h" declline="96" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a776b0dd8b4c149c7086b0f9bf01a4913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_state_list_from_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_voice_state ***p)</argsstring>
+        <name>discord_voice_state_list_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> ***</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="97" column="13" declfile="orca/specs-code/discord/voice.h" declline="97" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a73c2b39983eadc19d35062af3fb491bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_state_list_to_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_voice_state_list_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="98" column="15" declfile="orca/specs-code/discord/voice.h" declline="98" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1abe3a603989827ff461cbb15a820b9d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_state_list_to_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_voice_state **p)</argsstring>
+        <name>discord_voice_state_list_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="99" column="15" declfile="orca/specs-code/discord/voice.h" declline="99" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a13e2e15f896c5afacf8ab079bdba10d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_cleanup_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_voice_region_cleanup_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="147" column="13" declfile="orca/specs-code/discord/voice.h" declline="147" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a88093269a0d55f5eeeee169d06d161f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_cleanup</definition>
+        <argsstring>(struct discord_voice_region *p)</argsstring>
+        <name>discord_voice_region_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="148" column="13" declfile="orca/specs-code/discord/voice.h" declline="148" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a1911a44c14df60d38f12898b6c484421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_init_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_voice_region_init_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="149" column="13" declfile="orca/specs-code/discord/voice.h" declline="149" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1af86c22e0909aee40bdfa05885870b620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_init</definition>
+        <argsstring>(struct discord_voice_region *p)</argsstring>
+        <name>discord_voice_region_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="150" column="13" declfile="orca/specs-code/discord/voice.h" declline="150" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a64edfa52833784d3a38129ea1e2b99be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> *</type>
+        <definition>struct discord_voice_region* discord_voice_region_alloc</definition>
+        <argsstring>()</argsstring>
+        <name>discord_voice_region_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="151" column="35" declfile="orca/specs-code/discord/voice.h" declline="151" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a8a45b8ed7154dffaa0fc5a48e7711d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_free_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_voice_region_free_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="152" column="13" declfile="orca/specs-code/discord/voice.h" declline="152" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a61a9baa8b7b5e19d121bbc2f688c018b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_free</definition>
+        <argsstring>(struct discord_voice_region *p)</argsstring>
+        <name>discord_voice_region_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="153" column="13" declfile="orca/specs-code/discord/voice.h" declline="153" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a4f72d4ab18387c0b1043dc61bef798a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_from_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_voice_region_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="154" column="13" declfile="orca/specs-code/discord/voice.h" declline="154" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1aebe0bce3126ea87967e3959bb6db79ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_from_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_voice_region *p)</argsstring>
+        <name>discord_voice_region_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="155" column="13" declfile="orca/specs-code/discord/voice.h" declline="155" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1ad3a7134399395c520df8dbc1cec3533a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_region_to_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_voice_region_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="156" column="15" declfile="orca/specs-code/discord/voice.h" declline="156" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1aa0417d994887462fe8d3a9c534c39a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_region_to_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_voice_region *p)</argsstring>
+        <name>discord_voice_region_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="157" column="15" declfile="orca/specs-code/discord/voice.h" declline="157" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1ab5bc12ee5dc9278ea02d252b04ad462c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_region_to_query_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_voice_region_to_query_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="158" column="15" declfile="orca/specs-code/discord/voice.h" declline="158" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a8f3914d46ca60fb18f4d1f1096a2b1dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_region_to_query</definition>
+        <argsstring>(char *json, size_t len, struct discord_voice_region *p)</argsstring>
+        <name>discord_voice_region_to_query</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="159" column="15" declfile="orca/specs-code/discord/voice.h" declline="159" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a7ea06b9e0709d9a826e992d5923b840e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_list_free_v</definition>
+        <argsstring>(void **p)</argsstring>
+        <name>discord_voice_region_list_free_v</name>
+        <param>
+          <type>void **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="160" column="13" declfile="orca/specs-code/discord/voice.h" declline="160" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1ab30fcf9ba2e2e12a7dae44a16477f11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_list_free</definition>
+        <argsstring>(struct discord_voice_region **p)</argsstring>
+        <name>discord_voice_region_list_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="161" column="13" declfile="orca/specs-code/discord/voice.h" declline="161" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1ae54c5a268126a276d2f35e8f6f83d0d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_list_from_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_voice_region_list_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="162" column="13" declfile="orca/specs-code/discord/voice.h" declline="162" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a963251cdfc1c1197bb240bd1ab2017f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_voice_region_list_from_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_voice_region ***p)</argsstring>
+        <name>discord_voice_region_list_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> ***</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="163" column="13" declfile="orca/specs-code/discord/voice.h" declline="163" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1ab4bca11fbc079bb2ca2c0442c3f0a93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_region_list_to_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_voice_region_list_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="164" column="15" declfile="orca/specs-code/discord/voice.h" declline="164" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="voice_8h_1a264c5b9ec994cd24f163287c7c3707e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_voice_region_list_to_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_voice_region **p)</argsstring>
+        <name>discord_voice_region_list_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="165" column="15" declfile="orca/specs-code/discord/voice.h" declline="165" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specs generated file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>cee-studio </para>
+</simplesect>
+<simplesect kind="date"><para>21 Jun 2021 </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice">https://discord.com/developers/docs/resources/voice</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>This<sp/>file<sp/>is<sp/>generated<sp/>from<sp/>specs/discord/voice.json,<sp/>Please<sp/>don&apos;t<sp/>edit<sp/>it.<sp/>*/</highlight></codeline>
+<codeline lineno="17" refid="structdiscord__voice__state" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:12:20</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;guild_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>guild_id;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:13:20</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;channel_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>channel_id;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:14:20</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;user_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>user_id;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:15:20</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;member&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;struct<sp/>discord_guild_member&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__guild__member" kindref="compound">discord_guild_member</ref><sp/>*member;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:16:20</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;session_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*session_id;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:17:20</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;deaf&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>deaf;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:18:20</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;mute&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mute;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:19:20</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;self_deaf&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>self_deaf;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:20:20</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;self_mute&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>self_mute;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:21:20</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;self_stream&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>self_stream;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:22:20</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;self_video&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>self_video;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:23:20</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;supress&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>supress;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>metadata<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>control<sp/>which<sp/>field<sp/>should<sp/>be<sp/>extracted/injected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>presented(defined)<sp/>in<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>null<sp/>in<sp/>JSON</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_arg_switches;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_defined;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_null;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg_switches[12];</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_defined[12];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_null[12];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}<sp/>__M;<sp/></highlight><highlight class="comment">//<sp/>metadata</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_cleanup_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_init_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>*<sp/>discord_voice_state_alloc();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_state_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_state_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_state_to_query_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_state_to_query(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_list_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**p);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_list_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_list_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_state_list_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>***p);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_state_list_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_state_list_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="structdiscord__voice__region" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:32:20</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>},<sp/>&quot;comment&quot;:&quot;@todo<sp/>fixed<sp/>size<sp/>limit&quot;<sp/>}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*id;<sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>fixed<sp/>size<sp/>limit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:33:20</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;name&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>},<sp/>&quot;comment&quot;:&quot;@todo<sp/>fixed<sp/>size<sp/>limit&quot;<sp/>}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;<sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>fixed<sp/>size<sp/>limit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:34:20</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;vip&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vip;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:35:20</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;optimal&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>optimal;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:36:20</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;deprecated&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>deprecated;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/voice.json:37:20</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;custom&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>custom;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>metadata<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>control<sp/>which<sp/>field<sp/>should<sp/>be<sp/>extracted/injected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>presented(defined)<sp/>in<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>null<sp/>in<sp/>JSON</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_arg_switches;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_defined;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_null;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg_switches[6];</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_defined[6];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_null[6];</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>}<sp/>__M;<sp/></highlight><highlight class="comment">//<sp/>metadata</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_cleanup_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_init_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>*<sp/>discord_voice_region_alloc();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_region_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_region_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_region_to_query_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_region_to_query(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_list_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**p);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_list_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_list_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_voice_region_list_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>***p);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_region_list_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_voice_region_list_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__voice__region" kindref="compound">discord_voice_region</ref><sp/>**p);</highlight></codeline>
+    </programlisting>
+    <location file="orca/specs-code/discord/voice.h"/>
+  </compounddef>
+</doxygen>

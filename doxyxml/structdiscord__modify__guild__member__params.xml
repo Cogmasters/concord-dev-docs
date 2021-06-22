@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__modify__guild__member__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_modify_guild_member_params</compoundname>
+    <includes refid="guild_8endpoints-params_8h" local="no">guild.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__modify__guild__member__params_1afd294200d9ca99a038acf5d21df40c81" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_modify_guild_member_params::nick</definition>
+        <argsstring></argsstring>
+        <name>nick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="476" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__modify__guild__member__params_1a3914277bbaeba9d58727e043aab2e838" prot="public" static="no" mutable="no">
+        <type>ja_u64 **</type>
+        <definition>ja_u64** discord_modify_guild_member_params::roles</definition>
+        <argsstring></argsstring>
+        <name>roles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="480" column="10" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__modify__guild__member__params_1adbfcdd194edf3d0e907bcf73dd698839" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_modify_guild_member_params::mute</definition>
+        <argsstring></argsstring>
+        <name>mute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="484" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__modify__guild__member__params_1ab5a7d75beeae7c9c128391628820ca3f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_modify_guild_member_params::deaf</definition>
+        <argsstring></argsstring>
+        <name>deaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="488" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__modify__guild__member__params_1aeacf6cc10af6dcb4fe4b6c2f1d598208" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_modify_guild_member_params::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="492" column="19" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Modify Guild Member. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/guild.endpoints-params.json:115:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/guild.endpoints-params.h" line="473" column="41" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="473" bodyend="508"/>
+    <listofallmembers>
+      <member refid="structdiscord__modify__guild__member__params_1aeacf6cc10af6dcb4fe4b6c2f1d598208" prot="public" virt="non-virtual"><scope>discord_modify_guild_member_params</scope><name>channel_id</name></member>
+      <member refid="structdiscord__modify__guild__member__params_1ab5a7d75beeae7c9c128391628820ca3f" prot="public" virt="non-virtual"><scope>discord_modify_guild_member_params</scope><name>deaf</name></member>
+      <member refid="structdiscord__modify__guild__member__params_1adbfcdd194edf3d0e907bcf73dd698839" prot="public" virt="non-virtual"><scope>discord_modify_guild_member_params</scope><name>mute</name></member>
+      <member refid="structdiscord__modify__guild__member__params_1afd294200d9ca99a038acf5d21df40c81" prot="public" virt="non-virtual"><scope>discord_modify_guild_member_params</scope><name>nick</name></member>
+      <member refid="structdiscord__modify__guild__member__params_1a3914277bbaeba9d58727e043aab2e838" prot="public" virt="non-virtual"><scope>discord_modify_guild_member_params</scope><name>roles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+\hypertarget{structdiscord__event__cxt}{}\doxysection{discord\+\_\+event\+\_\+cxt Struct Reference}
+\label{structdiscord__event__cxt}\index{discord\_event\_cxt@{discord\_event\_cxt}}
+
+
+Collaboration diagram for discord\+\_\+event\+\_\+cxt\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structdiscord__event__cxt__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdiscord__event__cxt_a8d61a3127ddd821a5be387aae13fc42b}\label{structdiscord__event__cxt_a8d61a3127ddd821a5be387aae13fc42b}} 
+char {\bfseries event\+\_\+name} \mbox{[}64\mbox{]}
+\item 
+\mbox{\Hypertarget{structdiscord__event__cxt_a071077c7dab52dfbcf7b9adeebb0a1f4}\label{structdiscord__event__cxt_a071077c7dab52dfbcf7b9adeebb0a1f4}} 
+pthread\+\_\+t \mbox{\hyperlink{structdiscord__event__cxt_a071077c7dab52dfbcf7b9adeebb0a1f4}{tid}}
+\begin{DoxyCompactList}\small\item\em the thread id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__event__cxt_a875b50def69fc66cb304501fea07c0fe}\label{structdiscord__event__cxt_a875b50def69fc66cb304501fea07c0fe}} 
+struct sized\+\_\+buffer \mbox{\hyperlink{structdiscord__event__cxt_a875b50def69fc66cb304501fea07c0fe}{data}}
+\begin{DoxyCompactList}\small\item\em a copy of payload data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__event__cxt_a9a02751dfe9e0d15c14176cb6cb0a39c}\label{structdiscord__event__cxt_a9a02751dfe9e0d15c14176cb6cb0a39c}} 
+struct \mbox{\hyperlink{structdiscord__gateway}{discord\+\_\+gateway}} $\ast$ \mbox{\hyperlink{structdiscord__event__cxt_a9a02751dfe9e0d15c14176cb6cb0a39c}{p\+\_\+gw}}
+\begin{DoxyCompactList}\small\item\em the gateway client \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__event__cxt_ad17b02585da522924e7292aa063528c4}\label{structdiscord__event__cxt_ad17b02585da522924e7292aa063528c4}} 
+enum discord\+\_\+gateway\+\_\+events {\bfseries event}
+\item 
+\mbox{\Hypertarget{structdiscord__event__cxt_ad2122dc725f3d9f5147a9bd722e78e2e}\label{structdiscord__event__cxt_ad2122dc725f3d9f5147a9bd722e78e2e}} 
+void($\ast$ {\bfseries on\+\_\+event} )(struct \mbox{\hyperlink{structdiscord__gateway}{discord\+\_\+gateway}} $\ast$gw, struct sized\+\_\+buffer $\ast$\mbox{\hyperlink{structdiscord__event__cxt_a875b50def69fc66cb304501fea07c0fe}{data}})
+\item 
+\mbox{\Hypertarget{structdiscord__event__cxt_ad51cac6dbeca5d6361f0551ad1035b4f}\label{structdiscord__event__cxt_ad51cac6dbeca5d6361f0551ad1035b4f}} 
+bool {\bfseries is\+\_\+main\+\_\+thread}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/lucasmull/\+Trabalho/orca/\mbox{\hyperlink{discord-internal_8h}{discord-\/internal.\+h}}\end{DoxyCompactItemize}

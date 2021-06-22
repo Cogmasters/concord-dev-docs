@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__modify__webhook__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_modify_webhook_params</compoundname>
+    <includes refid="webhook_8endpoints-params_8h" local="no">webhook.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__modify__webhook__params_1af36524d9bc05a5f6217cc719a9560632" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_modify_webhook_params::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="70" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__modify__webhook__params_1a3a5098bc295cd67c4cec072620952fe5" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_modify_webhook_params::avatar</definition>
+        <argsstring></argsstring>
+        <name>avatar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="74" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__modify__webhook__params_1a6c22a7271cbf3b1a10be5bc68bfab048" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_modify_webhook_params::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="78" column="19" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Modify Webhook. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/webhook#modify-webhook">https://discord.com/developers/docs/resources/webhook#modify-webhook</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/webhook.endpoints-params.json:21:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="67" column="36" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="67" bodyend="94"/>
+    <listofallmembers>
+      <member refid="structdiscord__modify__webhook__params_1a3a5098bc295cd67c4cec072620952fe5" prot="public" virt="non-virtual"><scope>discord_modify_webhook_params</scope><name>avatar</name></member>
+      <member refid="structdiscord__modify__webhook__params_1a6c22a7271cbf3b1a10be5bc68bfab048" prot="public" virt="non-virtual"><scope>discord_modify_webhook_params</scope><name>channel_id</name></member>
+      <member refid="structdiscord__modify__webhook__params_1af36524d9bc05a5f6217cc719a9560632" prot="public" virt="non-virtual"><scope>discord_modify_webhook_params</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

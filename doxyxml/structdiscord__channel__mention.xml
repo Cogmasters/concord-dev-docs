@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__channel__mention" kind="struct" language="C++" prot="public">
+    <compoundname>discord_channel_mention</compoundname>
+    <includes refid="channel_8h" local="no">channel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__channel__mention_1aec8b4be8393674e094ecdfceb73e1517" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_channel_mention::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="969" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__mention_1a178e9dde4581f1cea762ef09b994d3a6" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_channel_mention::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="973" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="973" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__mention_1a74c475216332b1228a490dcc29681e11" prot="public" static="no" mutable="no">
+        <type>enum discord_channel_types</type>
+        <definition>enum discord_channel_types discord_channel_mention::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="973" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="977" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__mention_1af16048a9da5f4ee194992c2d51ba58b2" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_channel_mention::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="981" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="981" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Channel Mention Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#channel-mention-object-channel-mention-structure">https://discord.com/developers/docs/resources/channel#channel-mention-object-channel-mention-structure</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.json:298:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.h" line="966" column="30" bodyfile="orca/specs-code/discord/channel.h" bodystart="966" bodyend="997"/>
+    <listofallmembers>
+      <member refid="structdiscord__channel__mention_1a178e9dde4581f1cea762ef09b994d3a6" prot="public" virt="non-virtual"><scope>discord_channel_mention</scope><name>guild_id</name></member>
+      <member refid="structdiscord__channel__mention_1aec8b4be8393674e094ecdfceb73e1517" prot="public" virt="non-virtual"><scope>discord_channel_mention</scope><name>id</name></member>
+      <member refid="structdiscord__channel__mention_1af16048a9da5f4ee194992c2d51ba58b2" prot="public" virt="non-virtual"><scope>discord_channel_mention</scope><name>name</name></member>
+      <member refid="structdiscord__channel__mention_1a74c475216332b1228a490dcc29681e11" prot="public" virt="non-virtual"><scope>discord_channel_mention</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__create__group__dm__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_create_group_dm_params</compoundname>
+    <includes refid="user_8endpoints-params_8h" local="no">user.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__create__group__dm__params_1a365ef7786c372ce328adf55e15a3f382" prot="public" static="no" mutable="no">
+        <type>ja_str **</type>
+        <definition>ja_str** discord_create_group_dm_params::access_tokens</definition>
+        <argsstring></argsstring>
+        <name>access_tokens</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/user.endpoints-params.h" line="71" column="10" bodyfile="orca/specs-code/discord/user.endpoints-params.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__group__dm__params_1af11e408672952c74dca5544ec419e4a2" prot="public" static="no" mutable="no">
+        <type>ja_u64 **</type>
+        <definition>ja_u64** discord_create_group_dm_params::nicks</definition>
+        <argsstring></argsstring>
+        <name>nicks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/user.endpoints-params.h" line="76" column="10" bodyfile="orca/specs-code/discord/user.endpoints-params.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create Group DM. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/user#create-group-dm-json-params">https://discord.com/developers/docs/resources/user#create-group-dm-json-params</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/user.endpoints-params.json:21:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/user.endpoints-params.h" line="67" column="37" bodyfile="orca/specs-code/discord/user.endpoints-params.h" bodystart="67" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structdiscord__create__group__dm__params_1a365ef7786c372ce328adf55e15a3f382" prot="public" virt="non-virtual"><scope>discord_create_group_dm_params</scope><name>access_tokens</name></member>
+      <member refid="structdiscord__create__group__dm__params_1af11e408672952c74dca5544ec419e4a2" prot="public" virt="non-virtual"><scope>discord_create_group_dm_params</scope><name>nicks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

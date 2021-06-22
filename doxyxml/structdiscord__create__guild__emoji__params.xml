@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__create__guild__emoji__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_create_guild_emoji_params</compoundname>
+    <includes refid="emoji_8endpoints-params_8h" local="no">emoji.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__create__guild__emoji__params_1ae1f2c211fa43cf145413b6c1e59d71f0" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_guild_emoji_params::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/emoji.endpoints-params.h" line="20" column="8" bodyfile="orca/specs-code/discord/emoji.endpoints-params.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__emoji__params_1a2baec65891570d763ba557aa7e3b258a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_guild_emoji_params::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/emoji.endpoints-params.h" line="24" column="8" bodyfile="orca/specs-code/discord/emoji.endpoints-params.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__emoji__params_1a341b4c79c8a0c8c6fbcc9c6be79aca6a" prot="public" static="no" mutable="no">
+        <type>ja_u64 **</type>
+        <definition>ja_u64** discord_create_guild_emoji_params::roles</definition>
+        <argsstring></argsstring>
+        <name>roles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/emoji.endpoints-params.h" line="28" column="10" bodyfile="orca/specs-code/discord/emoji.endpoints-params.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create Guild Emoji. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/emoji#create-guild-emoji">https://discord.com/developers/docs/resources/emoji#create-guild-emoji</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/emoji.endpoints-params.json:10:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/emoji.endpoints-params.h" line="17" column="40" bodyfile="orca/specs-code/discord/emoji.endpoints-params.h" bodystart="17" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structdiscord__create__guild__emoji__params_1a2baec65891570d763ba557aa7e3b258a" prot="public" virt="non-virtual"><scope>discord_create_guild_emoji_params</scope><name>image</name></member>
+      <member refid="structdiscord__create__guild__emoji__params_1ae1f2c211fa43cf145413b6c1e59d71f0" prot="public" virt="non-virtual"><scope>discord_create_guild_emoji_params</scope><name>name</name></member>
+      <member refid="structdiscord__create__guild__emoji__params_1a341b4c79c8a0c8c6fbcc9c6be79aca6a" prot="public" virt="non-virtual"><scope>discord_create_guild_emoji_params</scope><name>roles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

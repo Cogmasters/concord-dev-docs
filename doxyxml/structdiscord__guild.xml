@@ -1,0 +1,808 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__guild" kind="struct" language="C++" prot="public">
+    <compoundname>discord_guild</compoundname>
+    <includes refid="guild_8h" local="no">guild.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__guild_1afcea6841e18e1bcf6f643d484a3ba77c" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="20" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a899fae40ef087860ad5bd8af9e2d058b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_guild::name[MAX_NAME_LEN]</definition>
+        <argsstring>[MAX_NAME_LEN]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="24" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a772572f21613a0706830cef599defa6a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_guild::icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="28" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a26c52e53020c8ad2cb1790a3ae14e759" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_guild::icon_hash</definition>
+        <argsstring></argsstring>
+        <name>icon_hash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="32" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a87acb755605972c5f9b56c5d78396751" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_guild::splash</definition>
+        <argsstring></argsstring>
+        <name>splash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="36" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a475ba81c3f6600402e68d456db8553eb" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_guild::discovery_splash</definition>
+        <argsstring></argsstring>
+        <name>discovery_splash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="40" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a8d1f0d33eefeb590e322e7125dfbfbe3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_guild::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="44" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a23e7285d5b5290d034ccf270b0b01c57" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild::owner_id</definition>
+        <argsstring></argsstring>
+        <name>owner_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="48" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a49f0bf7588fd2d801c4ff8d2707f2635" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::permissions</definition>
+        <argsstring></argsstring>
+        <name>permissions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="52" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a284ea0b937dde5df99f38256e3ef97d0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_guild::region[MAX_REGION_LEN]</definition>
+        <argsstring>[MAX_REGION_LEN]</argsstring>
+        <name>region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="56" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1aba37d1e630ee8e25a615a1a1f6726730" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild::afk_channel_id</definition>
+        <argsstring></argsstring>
+        <name>afk_channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="60" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1ae334bae8ee1d7c786af5d599935084bd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::afk_timeout</definition>
+        <argsstring></argsstring>
+        <name>afk_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="64" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a4ac238d11643161ca0e2141ae3428f28" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_guild::widget_enabled</definition>
+        <argsstring></argsstring>
+        <name>widget_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="68" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a1f5fba1c657357867c949bd41109f19c" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild::widget_channel_id</definition>
+        <argsstring></argsstring>
+        <name>widget_channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="72" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1adfbfa94d5c5718ef11352a28ce5f779c" prot="public" static="no" mutable="no">
+        <type>enum discord_guild_verification_level</type>
+        <definition>enum discord_guild_verification_level discord_guild::verification_level</definition>
+        <argsstring></argsstring>
+        <name>verification_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="72" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1aab5220bf37a7ca7016ef5bf05ed23eb1" prot="public" static="no" mutable="no">
+        <type>enum discord_guild_default_message_notification_level</type>
+        <definition>enum discord_guild_default_message_notification_level discord_guild::default_message_notifications</definition>
+        <argsstring></argsstring>
+        <name>default_message_notifications</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="72" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a84bf151a4ce529b4b2f47729bca09310" prot="public" static="no" mutable="no">
+        <type>enum discord_guild_explicit_content_filter_level</type>
+        <definition>enum discord_guild_explicit_content_filter_level discord_guild::explicit_content_filter</definition>
+        <argsstring></argsstring>
+        <name>explicit_content_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="72" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a06b154313aa74e10b1d1fd9ccf9b798f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__emoji" kindref="compound">discord_emoji</ref> **</type>
+        <definition>struct discord_emoji** discord_guild::emojis</definition>
+        <argsstring></argsstring>
+        <name>emojis</name>
+        <briefdescription>
+<para>&lt; </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000020"><xreftitle>Todo</xreftitle><xrefdescription><para>roles array of role objects; </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="95" column="22" bodyfile="orca/specs-code/discord/guild.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1acf7dd0e68460da34175e33dd2f378aa4" prot="public" static="no" mutable="no">
+        <type>enum discord_guild_mfa_level</type>
+        <definition>enum discord_guild_mfa_level discord_guild::mfa_level</definition>
+        <argsstring></argsstring>
+        <name>mfa_level</name>
+        <briefdescription>
+<para>&lt; </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000021"><xreftitle>Todo</xreftitle><xrefdescription><para>features array of guild feature strings; </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="95" column="22" bodyfile="orca/specs-code/discord/guild.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a1ba68a02496f5da2121c543846e6cf67" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild::application_id</definition>
+        <argsstring></argsstring>
+        <name>application_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="108" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1ac66f0e24493b39f31f22c75efdb16441" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild::system_channel_id</definition>
+        <argsstring></argsstring>
+        <name>system_channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="112" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1aedbf1e8e36d59f04a5335df1edc0b3b8" prot="public" static="no" mutable="no">
+        <type>enum discord_guild_system_channel_flags</type>
+        <definition>enum discord_guild_system_channel_flags discord_guild::system_channel_flags</definition>
+        <argsstring></argsstring>
+        <name>system_channel_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="112" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a753ac0fc8f194bef730aeb040590d98b" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild::rules_channel_id</definition>
+        <argsstring></argsstring>
+        <name>rules_channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="120" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a5242dbb68ba1947637dcc8a175d3e099" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_guild::joined_at</definition>
+        <argsstring></argsstring>
+        <name>joined_at</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="124" column="17" bodyfile="orca/specs-code/discord/guild.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a1c2fbb5ca422f10cc297271fe57e5007" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_guild::large</definition>
+        <argsstring></argsstring>
+        <name>large</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="128" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a823213bf1f792f370b8b04354c387f17" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_guild::unavailable</definition>
+        <argsstring></argsstring>
+        <name>unavailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="132" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1ade3e3283c5f507af4ce619ddd0d3b264" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::member_count</definition>
+        <argsstring></argsstring>
+        <name>member_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="136" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a23e7368b9fde69866345df2ebb1a07b6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__guild__member" kindref="compound">discord_guild_member</ref> **</type>
+        <definition>struct discord_guild_member** discord_guild::members</definition>
+        <argsstring></argsstring>
+        <name>members</name>
+        <briefdescription>
+<para>&lt; </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000022"><xreftitle>Todo</xreftitle><xrefdescription><para>voice_states array of partial voice state objects; </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="145" column="29" bodyfile="orca/specs-code/discord/guild.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a94f196f955f8a33c2c95ff63f1253caf" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__channel" kindref="compound">discord_channel</ref> **</type>
+        <definition>struct discord_channel** discord_guild::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="150" column="24" bodyfile="orca/specs-code/discord/guild.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a7cdccad067827d24ec90b8aeb514993a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::max_presences</definition>
+        <argsstring></argsstring>
+        <name>max_presences</name>
+        <briefdescription>
+<para>&lt; </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000023"><xreftitle>Todo</xreftitle><xrefdescription><para>presences array of partial presence update objects; </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="159" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a31942f131e8007185879c3008bbd6274" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::max_members</definition>
+        <argsstring></argsstring>
+        <name>max_members</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="163" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1aea609a1a194c2aa728da0693c0f8676e" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_guild::vanity_url</definition>
+        <argsstring></argsstring>
+        <name>vanity_url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="167" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1aa561691727592311e089d1262f51f507" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_guild::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="171" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a29665f8892f36a10edf67b25ff77150c" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_guild::banner</definition>
+        <argsstring></argsstring>
+        <name>banner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="175" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a36e35700150fc6d403146bcb1f65a3c4" prot="public" static="no" mutable="no">
+        <type>enum discord_guild_premium_tier</type>
+        <definition>enum discord_guild_premium_tier discord_guild::premium_tier</definition>
+        <argsstring></argsstring>
+        <name>premium_tier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="175" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a0f115a9d4d1da0ca75007d9cc893568f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::premium_subscription_count</definition>
+        <argsstring></argsstring>
+        <name>premium_subscription_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="183" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a21536efeae87e72dc6f82434bd25cdc9" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_guild::preferred_locale[MAX_LOCALE_LEN]</definition>
+        <argsstring>[MAX_LOCALE_LEN]</argsstring>
+        <name>preferred_locale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="187" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1ab4e5e1fe91a9d6da76bc1eaa587887ef" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild::public_updates_channel_id</definition>
+        <argsstring></argsstring>
+        <name>public_updates_channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="192" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a42b55d4e4d21ae3239af1e8348c23b5e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::max_video_channel_users</definition>
+        <argsstring></argsstring>
+        <name>max_video_channel_users</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="196" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1af65b45891870491fe92b8727e322762b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::approximate_member_count</definition>
+        <argsstring></argsstring>
+        <name>approximate_member_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="200" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1a180333f76bc1af71303cca29d7cc0732" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_guild::approximate_presence_count</definition>
+        <argsstring></argsstring>
+        <name>approximate_presence_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="204" column="7" bodyfile="orca/specs-code/discord/guild.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild_1ac32f7b063dbfe8cb3953a2eb43b2432b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__guild__welcome__screen" kindref="compound">discord_guild_welcome_screen</ref> *</type>
+        <definition>struct discord_guild_welcome_screen* discord_guild::welcome_screen</definition>
+        <argsstring></argsstring>
+        <name>welcome_screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="208" column="37" bodyfile="orca/specs-code/discord/guild.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Guild Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#guild-object-guild-structure">https://discord.com/developers/docs/resources/guild#guild-object-guild-structure</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/guild.json:9:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="19">
+        <label>discord_channel_reaction</label>
+        <link refid="structdiscord__channel__reaction"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>emoji</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>discord_message</label>
+        <link refid="structdiscord__message"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mention_channels</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>application</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>embeds</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>referenced_message</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>activity</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mentions</edgelabel>
+          <edgelabel>author</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>stickers</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>reactions</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>attachments</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>message_reference</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>member</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>discord_embed_provider</label>
+        <link refid="structdiscord__embed__provider"/>
+      </node>
+      <node id="18">
+        <label>discord_message_sticker</label>
+        <link refid="structdiscord__message__sticker"/>
+      </node>
+      <node id="24">
+        <label>discord_guild_welcome_screen_channel</label>
+        <link refid="structdiscord__guild__welcome__screen__channel"/>
+      </node>
+      <node id="1">
+        <label>discord_guild</label>
+        <link refid="structdiscord__guild"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>emojis</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>channels</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>welcome_screen</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>members</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>discord_embed_footer</label>
+        <link refid="structdiscord__embed__footer"/>
+      </node>
+      <node id="23">
+        <label>discord_guild_welcome_screen</label>
+        <link refid="structdiscord__guild__welcome__screen"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>welcome_channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>discord_channel</label>
+        <link refid="structdiscord__channel"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>permission_overwrites</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>messages</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>recipients</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>discord_message_reference</label>
+        <link refid="structdiscord__message__reference"/>
+      </node>
+      <node id="13">
+        <label>discord_embed_field</label>
+        <link refid="structdiscord__embed__field"/>
+      </node>
+      <node id="2">
+        <label>discord_emoji</label>
+        <link refid="structdiscord__emoji"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>user</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>discord_user</label>
+        <link refid="structdiscord__user"/>
+      </node>
+      <node id="22">
+        <label>discord_guild_member</label>
+        <link refid="structdiscord__guild__member"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>user</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>discord_embed_image</label>
+        <link refid="structdiscord__embed__image"/>
+      </node>
+      <node id="7">
+        <label>discord_channel_mention</label>
+        <link refid="structdiscord__channel__mention"/>
+      </node>
+      <node id="15">
+        <label>discord_embed_thumbnail</label>
+        <link refid="structdiscord__embed__thumbnail"/>
+      </node>
+      <node id="8">
+        <label>discord_message_application</label>
+        <link refid="structdiscord__message__application"/>
+      </node>
+      <node id="14">
+        <label>discord_embed_author</label>
+        <link refid="structdiscord__embed__author"/>
+      </node>
+      <node id="17">
+        <label>discord_message_activity</label>
+        <link refid="structdiscord__message__activity"/>
+      </node>
+      <node id="12">
+        <label>discord_embed_video</label>
+        <link refid="structdiscord__embed__video"/>
+      </node>
+      <node id="9">
+        <label>discord_embed</label>
+        <link refid="structdiscord__embed"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>provider</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>image</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>video</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>fields</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>author</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>thumbnail</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>footer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>discord_channel_overwrite</label>
+        <link refid="structdiscord__channel__overwrite"/>
+      </node>
+      <node id="20">
+        <label>discord_channel_attachment</label>
+        <link refid="structdiscord__channel__attachment"/>
+      </node>
+    </collaborationgraph>
+    <location file="orca/specs-code/discord/guild.h" line="17" column="20" bodyfile="orca/specs-code/discord/guild.h" bodystart="17" bodyend="224"/>
+    <listofallmembers>
+      <member refid="structdiscord__guild_1aba37d1e630ee8e25a615a1a1f6726730" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>afk_channel_id</name></member>
+      <member refid="structdiscord__guild_1ae334bae8ee1d7c786af5d599935084bd" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>afk_timeout</name></member>
+      <member refid="structdiscord__guild_1a1ba68a02496f5da2121c543846e6cf67" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>application_id</name></member>
+      <member refid="structdiscord__guild_1af65b45891870491fe92b8727e322762b" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>approximate_member_count</name></member>
+      <member refid="structdiscord__guild_1a180333f76bc1af71303cca29d7cc0732" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>approximate_presence_count</name></member>
+      <member refid="structdiscord__guild_1a29665f8892f36a10edf67b25ff77150c" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>banner</name></member>
+      <member refid="structdiscord__guild_1a94f196f955f8a33c2c95ff63f1253caf" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>channels</name></member>
+      <member refid="structdiscord__guild_1aab5220bf37a7ca7016ef5bf05ed23eb1" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>default_message_notifications</name></member>
+      <member refid="structdiscord__guild_1aa561691727592311e089d1262f51f507" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>description</name></member>
+      <member refid="structdiscord__guild_1a475ba81c3f6600402e68d456db8553eb" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>discovery_splash</name></member>
+      <member refid="structdiscord__guild_1a06b154313aa74e10b1d1fd9ccf9b798f" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>emojis</name></member>
+      <member refid="structdiscord__guild_1a84bf151a4ce529b4b2f47729bca09310" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>explicit_content_filter</name></member>
+      <member refid="structdiscord__guild_1a772572f21613a0706830cef599defa6a" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>icon</name></member>
+      <member refid="structdiscord__guild_1a26c52e53020c8ad2cb1790a3ae14e759" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>icon_hash</name></member>
+      <member refid="structdiscord__guild_1afcea6841e18e1bcf6f643d484a3ba77c" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>id</name></member>
+      <member refid="structdiscord__guild_1a5242dbb68ba1947637dcc8a175d3e099" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>joined_at</name></member>
+      <member refid="structdiscord__guild_1a1c2fbb5ca422f10cc297271fe57e5007" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>large</name></member>
+      <member refid="structdiscord__guild_1a31942f131e8007185879c3008bbd6274" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>max_members</name></member>
+      <member refid="structdiscord__guild_1a7cdccad067827d24ec90b8aeb514993a" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>max_presences</name></member>
+      <member refid="structdiscord__guild_1a42b55d4e4d21ae3239af1e8348c23b5e" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>max_video_channel_users</name></member>
+      <member refid="structdiscord__guild_1ade3e3283c5f507af4ce619ddd0d3b264" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>member_count</name></member>
+      <member refid="structdiscord__guild_1a23e7368b9fde69866345df2ebb1a07b6" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>members</name></member>
+      <member refid="structdiscord__guild_1acf7dd0e68460da34175e33dd2f378aa4" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>mfa_level</name></member>
+      <member refid="structdiscord__guild_1a899fae40ef087860ad5bd8af9e2d058b" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>name</name></member>
+      <member refid="structdiscord__guild_1a8d1f0d33eefeb590e322e7125dfbfbe3" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>owner</name></member>
+      <member refid="structdiscord__guild_1a23e7285d5b5290d034ccf270b0b01c57" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>owner_id</name></member>
+      <member refid="structdiscord__guild_1a49f0bf7588fd2d801c4ff8d2707f2635" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>permissions</name></member>
+      <member refid="structdiscord__guild_1a21536efeae87e72dc6f82434bd25cdc9" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>preferred_locale</name></member>
+      <member refid="structdiscord__guild_1a0f115a9d4d1da0ca75007d9cc893568f" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>premium_subscription_count</name></member>
+      <member refid="structdiscord__guild_1a36e35700150fc6d403146bcb1f65a3c4" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>premium_tier</name></member>
+      <member refid="structdiscord__guild_1ab4e5e1fe91a9d6da76bc1eaa587887ef" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>public_updates_channel_id</name></member>
+      <member refid="structdiscord__guild_1a284ea0b937dde5df99f38256e3ef97d0" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>region</name></member>
+      <member refid="structdiscord__guild_1a753ac0fc8f194bef730aeb040590d98b" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>rules_channel_id</name></member>
+      <member refid="structdiscord__guild_1a87acb755605972c5f9b56c5d78396751" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>splash</name></member>
+      <member refid="structdiscord__guild_1aedbf1e8e36d59f04a5335df1edc0b3b8" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>system_channel_flags</name></member>
+      <member refid="structdiscord__guild_1ac66f0e24493b39f31f22c75efdb16441" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>system_channel_id</name></member>
+      <member refid="structdiscord__guild_1a823213bf1f792f370b8b04354c387f17" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>unavailable</name></member>
+      <member refid="structdiscord__guild_1aea609a1a194c2aa728da0693c0f8676e" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>vanity_url</name></member>
+      <member refid="structdiscord__guild_1adfbfa94d5c5718ef11352a28ce5f779c" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>verification_level</name></member>
+      <member refid="structdiscord__guild_1ac32f7b063dbfe8cb3953a2eb43b2432b" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>welcome_screen</name></member>
+      <member refid="structdiscord__guild_1a1f5fba1c657357867c949bd41109f19c" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>widget_channel_id</name></member>
+      <member refid="structdiscord__guild_1a4ac238d11643161ca0e2141ae3428f28" prot="public" virt="non-virtual"><scope>discord_guild</scope><name>widget_enabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

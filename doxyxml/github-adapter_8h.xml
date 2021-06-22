@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="github-adapter_8h" kind="file" language="C++">
+    <compoundname>github-adapter.h</compoundname>
+    <includes refid="user-agent_8h" local="yes">user-agent.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>user-agent.h</label>
+        <link refid="user-agent_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>curl/curl.h</label>
+      </node>
+      <node id="6">
+        <label>logconf.h</label>
+      </node>
+      <node id="1">
+        <label>/home/lucasmull/Trabalho/orca/github-adapter.h</label>
+        <link refid="github-adapter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ntl.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structgithub__adapter" prot="public">github_adapter</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="github-adapter_8h_1a9fce11ae3848b6cff7ff604b6f9474d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void github_adapter_init</definition>
+        <argsstring>(struct github_adapter *adapter, char username[], char token[])</argsstring>
+        <name>github_adapter_init</name>
+        <param>
+          <type>struct <ref refid="structgithub__adapter" kindref="compound">github_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>username</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>token</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/github-adapter.h" line="12" column="13" declfile="/home/lucasmull/Trabalho/orca/github-adapter.h" declline="12" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="github-adapter_8h_1af58b2c5fc9f4afeb6fa785831ecf2b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void github_adapter_run</definition>
+        <argsstring>(struct github_adapter *adapter, struct ua_resp_handle *resp_handle, struct sized_buffer *req_body, enum http_method http_method, char endpoint[],...)</argsstring>
+        <name>github_adapter_run</name>
+        <param>
+          <type>struct <ref refid="structgithub__adapter" kindref="compound">github_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structua__resp__handle" kindref="compound">ua_resp_handle</ref> *</type>
+          <declname>resp_handle</declname>
+        </param>
+        <param>
+          <type>struct sized_buffer *</type>
+          <declname>req_body</declname>
+        </param>
+        <param>
+          <type>enum http_method</type>
+          <declname>http_method</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>endpoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/github-adapter.h" line="17" column="13" declfile="/home/lucasmull/Trabalho/orca/github-adapter.h" declline="17" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GITHUB_ADAPTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GITHUB_ADAPTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;user-agent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structgithub__adapter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgithub__adapter" kindref="compound">github_adapter</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">user_agent<sp/>*ua;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*token;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>github_adapter_init(</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structgithub__adapter" kindref="compound">github_adapter</ref><sp/>*adapter,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>username[],</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>token[]);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>github_adapter_run(</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structgithub__adapter" kindref="compound">github_adapter</ref><sp/>*adapter,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structua__resp__handle" kindref="compound">ua_resp_handle</ref><sp/>*resp_handle,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sized_buffer<sp/>*req_body,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>http_method<sp/>http_method,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>endpoint[],</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>...);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GITHUB_ADAPTER_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/lucasmull/Trabalho/orca/github-adapter.h"/>
+  </compounddef>
+</doxygen>

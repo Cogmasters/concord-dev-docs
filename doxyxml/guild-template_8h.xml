@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="guild-template_8h" kind="file" language="C++">
+    <compoundname>guild-template.h</compoundname>
+    <innerclass refid="structdiscord__guild__template" prot="public">discord_guild_template</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="guild-template_8h_1a296c0e338d0b4227bbed4d95b29de75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_cleanup_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_guild_template_cleanup_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="77" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="77" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a1c0d15ae36f2188a3ce4a09ed494cb3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_cleanup</definition>
+        <argsstring>(struct discord_guild_template *p)</argsstring>
+        <name>discord_guild_template_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="78" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="78" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a03df1ee3f2dd65d7c89df24bd1173054" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_init_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_guild_template_init_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="79" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="79" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a42c3dae1dadb64bffd3a4ca6f097c4c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_init</definition>
+        <argsstring>(struct discord_guild_template *p)</argsstring>
+        <name>discord_guild_template_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="80" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="80" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1ab356720abc4ec646efa429c048fb460a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> *</type>
+        <definition>struct discord_guild_template* discord_guild_template_alloc</definition>
+        <argsstring>()</argsstring>
+        <name>discord_guild_template_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="81" column="37" declfile="orca/specs-code/discord/guild-template.h" declline="81" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a5bd9f33f24b9c8475fea5a7076d1b403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_free_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_guild_template_free_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="82" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="82" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1ad6e42ba6cdc98a17e5c933a823a4fe8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_free</definition>
+        <argsstring>(struct discord_guild_template *p)</argsstring>
+        <name>discord_guild_template_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="83" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="83" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a70c1c2316c83a04e638d8273a41fa047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_from_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_guild_template_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="84" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="84" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a04dfeb97417eecb26f67f6317a03e964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_from_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_guild_template *p)</argsstring>
+        <name>discord_guild_template_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="85" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="85" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a79e23aa008b32e6a64129e4cba43bf0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_guild_template_to_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_guild_template_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="86" column="15" declfile="orca/specs-code/discord/guild-template.h" declline="86" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a4f947a94a63641e45027b40fef7248bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_guild_template_to_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_guild_template *p)</argsstring>
+        <name>discord_guild_template_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="87" column="15" declfile="orca/specs-code/discord/guild-template.h" declline="87" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a733926a5f1e69f8ee430421f9da49426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_guild_template_to_query_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_guild_template_to_query_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="88" column="15" declfile="orca/specs-code/discord/guild-template.h" declline="88" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a43c4e5add145c1c6b37dadefecdb05ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_guild_template_to_query</definition>
+        <argsstring>(char *json, size_t len, struct discord_guild_template *p)</argsstring>
+        <name>discord_guild_template_to_query</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="89" column="15" declfile="orca/specs-code/discord/guild-template.h" declline="89" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a7dc83b6aa27d0325b6c58cc6b74fdef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_list_free_v</definition>
+        <argsstring>(void **p)</argsstring>
+        <name>discord_guild_template_list_free_v</name>
+        <param>
+          <type>void **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="90" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="90" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1ab3bc98b617c0f16a16761e0d60d9ad02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_list_free</definition>
+        <argsstring>(struct discord_guild_template **p)</argsstring>
+        <name>discord_guild_template_list_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="91" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="91" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1ac4e68122ef66aa43229db285b7cfec44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_list_from_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_guild_template_list_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="92" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="92" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1aeffd245239cae0175dc1f0bb934b0801" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_guild_template_list_from_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_guild_template ***p)</argsstring>
+        <name>discord_guild_template_list_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> ***</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="93" column="13" declfile="orca/specs-code/discord/guild-template.h" declline="93" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1a4281621302764e873f28edbe42550cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_guild_template_list_to_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_guild_template_list_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="94" column="15" declfile="orca/specs-code/discord/guild-template.h" declline="94" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="guild-template_8h_1ae03ae9e2d3938df76504f54f3becbf73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_guild_template_list_to_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_guild_template **p)</argsstring>
+        <name>discord_guild_template_list_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.h" line="95" column="15" declfile="orca/specs-code/discord/guild-template.h" declline="95" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specs generated file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>cee-studio </para>
+</simplesect>
+<simplesect kind="date"><para>21 Jun 2021 </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild-template">https://discord.com/developers/docs/resources/guild-template</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>This<sp/>file<sp/>is<sp/>generated<sp/>from<sp/>specs/discord/guild-template.json,<sp/>Please<sp/>don&apos;t<sp/>edit<sp/>it.<sp/>*/</highlight></codeline>
+<codeline lineno="17" refid="structdiscord__guild__template" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:12:20</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;code&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;},<sp/>&quot;comment&quot;:&quot;@todo<sp/>find<sp/>fixed<sp/>size<sp/>limit&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*code;<sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>find<sp/>fixed<sp/>size<sp/>limit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:13:20</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;name&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;},<sp/>&quot;comment&quot;:&quot;@todo<sp/>find<sp/>fixed<sp/>size<sp/>limit&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;<sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>find<sp/>fixed<sp/>size<sp/>limit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:14:20</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;description&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>},<sp/>&quot;comment&quot;:<sp/>&quot;@todo<sp/>find<sp/>fixed<sp/>size<sp/>limit&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*description;<sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>find<sp/>fixed<sp/>size<sp/>limit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:15:20</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;usage_count&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;int&quot;}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>usage_count;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:16:20</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;creator_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>creator_id;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:17:20</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;creator&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;struct<sp/>discord_user&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__user" kindref="compound">discord_user</ref><sp/>*creator;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:18:20</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;created_at&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;iso8601&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref><sp/>created_at;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:19:20</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;updated_at&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;iso8601&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref><sp/>updated_at;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:20:20</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;source_guild_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>source_guild_id;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:21:20</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;serialized_source_guild&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;struct<sp/>discord_guild&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__guild" kindref="compound">discord_guild</ref><sp/>*serialized_source_guild;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/guild-template.json:22:20</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;is_dirty&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;bool&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_dirty;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>metadata<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>control<sp/>which<sp/>field<sp/>should<sp/>be<sp/>extracted/injected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>presented(defined)<sp/>in<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>null<sp/>in<sp/>JSON</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_arg_switches;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_defined;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_null;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg_switches[11];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_defined[11];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_null[11];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>}<sp/>__M;<sp/></highlight><highlight class="comment">//<sp/>metadata</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_cleanup_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_init_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>*<sp/>discord_guild_template_alloc();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_guild_template_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_guild_template_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_guild_template_to_query_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_guild_template_to_query(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_list_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**p);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_list_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_list_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_guild_template_list_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>***p);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_guild_template_list_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_guild_template_list_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__guild__template" kindref="compound">discord_guild_template</ref><sp/>**p);</highlight></codeline>
+    </programlisting>
+    <location file="orca/specs-code/discord/guild-template.h"/>
+  </compounddef>
+</doxygen>

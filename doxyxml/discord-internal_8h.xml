@@ -1,0 +1,905 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="discord-internal_8h" kind="file" language="C++">
+    <compoundname>discord-internal.h</compoundname>
+    <includes local="no">inttypes.h</includes>
+    <includes local="no">pthread.h</includes>
+    <includes local="yes">uthash.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="yes">json-scanf.h</includes>
+    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/ntl.h</includes>
+    <includes local="yes">json-actor.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="yes">json-actor-boxed.h</includes>
+    <includes local="yes">logconf.h</includes>
+    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/debug.h</includes>
+    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/log.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">time.h</includes>
+    <includes refid="user-agent_8h" local="yes">user-agent.h</includes>
+    <includes refid="websockets_8h" local="yes">websockets.h</includes>
+    <includes local="yes">cee-utils.h</includes>
+    <includes refid="discord-voice-connections_8h" local="yes">discord-voice-connections.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>stdbool.h</label>
+      </node>
+      <node id="12">
+        <label>stdarg.h</label>
+      </node>
+      <node id="11">
+        <label>json-actor.h</label>
+      </node>
+      <node id="1">
+        <label>/home/lucasmull/Trabalho/orca/discord-internal.h</label>
+        <link refid="discord-internal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="24">
+        <label>cee-utils.h</label>
+      </node>
+      <node id="20">
+        <label>user-agent.h</label>
+        <link refid="user-agent_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>json-actor-boxed.h</label>
+      </node>
+      <node id="26">
+        <label>cee-data-sizes.h</label>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="21">
+        <label>curl/curl.h</label>
+      </node>
+      <node id="3">
+        <label>pthread.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="25">
+        <label>discord-voice-connections.h</label>
+        <link refid="discord-voice-connections_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>logconf.h</label>
+      </node>
+      <node id="4">
+        <label>uthash.h</label>
+      </node>
+      <node id="19">
+        <label>time.h</label>
+      </node>
+      <node id="10">
+        <label>/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/ntl.h</label>
+      </node>
+      <node id="9">
+        <label>json-scanf.h</label>
+      </node>
+      <node id="16">
+        <label>/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/log.h</label>
+      </node>
+      <node id="22">
+        <label>ntl.h</label>
+      </node>
+      <node id="15">
+        <label>/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/debug.h</label>
+      </node>
+      <node id="17">
+        <label>stdio.h</label>
+      </node>
+      <node id="23">
+        <label>websockets.h</label>
+        <link refid="websockets_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structdiscord__adapter" prot="public">discord_adapter</innerclass>
+    <innerclass refid="structdiscord__bucket" prot="public">discord_bucket</innerclass>
+    <innerclass refid="structdiscord__gateway__cmd__cbs" prot="public">discord_gateway_cmd_cbs</innerclass>
+    <innerclass refid="structdiscord__gateway" prot="public">discord_gateway</innerclass>
+    <innerclass refid="structdiscord" prot="public">discord</innerclass>
+    <innerclass refid="structdiscord__event__cxt" prot="public">discord_event_cxt</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="discord-internal_8h_1ab1440d1648385b0cce185551712f2a75" prot="public" static="no">
+        <name>NUM_VCS</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="278" column="9" bodyfile="/home/lucasmull/Trabalho/orca/discord-internal.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="discord-internal_8h_1abcd9b5bb8e2b372bc109ec6c751d23ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_adapter_init</definition>
+        <argsstring>(struct discord_adapter *adapter, struct logconf *config, struct sized_buffer *token)</argsstring>
+        <name>discord_adapter_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>struct logconf *</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>struct sized_buffer *</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the fields of a Discord Adapter handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adapter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the allocated handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional pointer to a pre-initialized logconf </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the bot token </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>logconf.h </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="48" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1a38db97551a3760ca678f6d765ff37f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_adapter_cleanup</definition>
+        <argsstring>(struct discord_adapter *adapter)</argsstring>
+        <name>discord_adapter_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <briefdescription>
+<para>Free a Discord Adapter handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adapter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the adapter handle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="55" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="55" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1ac929e6b0a7cc7029b1e3efbe6134519f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ORCAcode</type>
+        <definition>ORCAcode discord_adapter_run</definition>
+        <argsstring>(struct discord_adapter *adapter, struct ua_resp_handle *resp_handle, struct sized_buffer *req_body, enum http_method http_method, char endpoint[],...)</argsstring>
+        <name>discord_adapter_run</name>
+        <param>
+          <type>struct <ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structua__resp__handle" kindref="compound">ua_resp_handle</ref> *</type>
+          <declname>resp_handle</declname>
+        </param>
+        <param>
+          <type>struct sized_buffer *</type>
+          <declname>req_body</declname>
+        </param>
+        <param>
+          <type>enum http_method</type>
+          <declname>http_method</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>endpoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Start a HTTP Request to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adapter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle initialized with <ref refid="discord-internal_8h_1abcd9b5bb8e2b372bc109ec6c751d23ca" kindref="member">discord_adapter_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resp_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callbacks that will be triggered should the request fail or succeed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>req_body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the body sent for methods that require (ex: POST), leave as NULL if unecessary </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>http_method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the method in opcode format of the request being sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the format endpoint that be appended to base_url when performing a request, same behavior as printf() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a code for checking on how the transfer went ORCA_OK means the transfer was succesful </para>
+</simplesect>
+<simplesect kind="note"><para>Helper over ua_run() </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="user-agent_8h_source" kindref="compound">user-agent.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="69" column="10" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="69" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1aed725e74b163eff80be830bb3fd9f42d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_buckets_cleanup</definition>
+        <argsstring>(struct discord_adapter *adapter)</argsstring>
+        <name>discord_buckets_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <briefdescription>
+<para>Free client buckets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adapter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the client adapter containinig every bucket found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="100" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="100" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1a82c20ff44bc4a01a9f6a77b0aef49426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_bucket_try_cooldown</definition>
+        <argsstring>(struct discord_bucket *bucket)</argsstring>
+        <name>discord_bucket_try_cooldown</name>
+        <param>
+          <type>struct <ref refid="structdiscord__bucket" kindref="compound">discord_bucket</ref> *</type>
+          <declname>bucket</declname>
+        </param>
+        <briefdescription>
+<para>Check bucket for ratelimit cooldown. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if connections from a bucket hit its threshold, and lock every connection associated with the bucket until cooldown time elapses <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bucket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>check if a cooldown is necessary </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="109" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="109" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1a7a744851301642d398b255b5e541de69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__bucket" kindref="compound">discord_bucket</ref> *</type>
+        <definition>struct discord_bucket* discord_bucket_try_get</definition>
+        <argsstring>(struct discord_adapter *adapter, const char route[])</argsstring>
+        <name>discord_bucket_try_get</name>
+        <param>
+          <type>struct <ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>route</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Get existing bucket with <computeroutput>route</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if bucket associated with <computeroutput>route</computeroutput> has already been discovered <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adapter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle created with <ref refid="discord-internal_8h_1abcd9b5bb8e2b372bc109ec6c751d23ca" kindref="member">discord_adapter_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>route</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>that will be checked for a bucket match </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bucket associated with route or NULL if no match found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="119" column="22" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="119" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1ae0e3506aff4c36827f13ee45e4ffe670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_bucket_build</definition>
+        <argsstring>(struct discord_adapter *adapter, struct discord_bucket *bucket, const char route[], struct ua_info *info)</argsstring>
+        <name>discord_bucket_build</name>
+        <param>
+          <type>struct <ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref> *</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__bucket" kindref="compound">discord_bucket</ref> *</type>
+          <declname>bucket</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>route</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>struct <ref refid="structua__info" kindref="compound">ua_info</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Update the bucket with response header data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adapter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle created with <ref refid="discord-internal_8h_1abcd9b5bb8e2b372bc109ec6c751d23ca" kindref="member">discord_adapter_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bucket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL when bucket is first discovered </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>route</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the route associated with the bucket </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information struct regarding the current transfer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If the bucket was just discovered it will be created here. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="130" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="130" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1aef325194684c5bce1d51f2da6d81dbfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_gateway_init</definition>
+        <argsstring>(struct discord_gateway *gw, struct logconf *config, struct sized_buffer *token)</argsstring>
+        <name>discord_gateway_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref> *</type>
+          <declname>gw</declname>
+        </param>
+        <param>
+          <type>struct logconf *</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>struct sized_buffer *</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the fields of Discord Gateway handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the allocated handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional pointer to a initialized logconf </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the bot token </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>logconf.h </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="230" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="230" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1ab66259b9988312a38de984c9c54e49f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_gateway_cleanup</definition>
+        <argsstring>(struct discord_gateway *gw)</argsstring>
+        <name>discord_gateway_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref> *</type>
+          <declname>gw</declname>
+        </param>
+        <briefdescription>
+<para>Free a Discord Gateway handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the gateway handle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="237" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="237" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1a95ba1ce5c14fdf852ffc33f1186ee4c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_gateway_run</definition>
+        <argsstring>(struct discord_gateway *gw)</argsstring>
+        <name>discord_gateway_run</name>
+        <param>
+          <type>struct <ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref> *</type>
+          <declname>gw</declname>
+        </param>
+        <briefdescription>
+<para>Start a Discord connection over WebSockets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle initialized with <ref refid="discord-internal_8h_1aef325194684c5bce1d51f2da6d81dbfa" kindref="member">discord_gateway_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="websockets_8h" kindref="compound">websockets.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="245" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="245" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1a820b8262c06ee3bba05d1284d4bc6910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_gateway_shutdown</definition>
+        <argsstring>(struct discord_gateway *gw)</argsstring>
+        <name>discord_gateway_shutdown</name>
+        <param>
+          <type>struct <ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref> *</type>
+          <declname>gw</declname>
+        </param>
+        <briefdescription>
+<para>Gracefully exits a ongoing Discord connection over WebSockets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle initialized with <ref refid="discord-internal_8h_1aef325194684c5bce1d51f2da6d81dbfa" kindref="member">discord_gateway_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="websockets_8h" kindref="compound">websockets.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="253" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="253" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="discord-internal_8h_1a44ee2f95d91bd642a68e074782ad4f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_gateway_reconnect</definition>
+        <argsstring>(struct discord_gateway *gw, bool resume)</argsstring>
+        <name>discord_gateway_reconnect</name>
+        <param>
+          <type>struct <ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref> *</type>
+          <declname>gw</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>resume</declname>
+        </param>
+        <briefdescription>
+<para>Gracefully reconnect a ongoing Discord connection over WebSockets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle initialized with <ref refid="discord-internal_8h_1aef325194684c5bce1d51f2da6d81dbfa" kindref="member">discord_gateway_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to attempt to resume to previous session, false restart a fresh session </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="websockets_8h" kindref="compound">websockets.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-internal.h" line="263" column="6" declfile="/home/lucasmull/Trabalho/orca/discord-internal.h" declline="263" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File containing internal functions and datatypes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>cee-studio </para>
+</simplesect>
+<simplesect kind="date"><para>18 Jun 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>DISCORD_INTERNAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISCORD_INTERNAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;uthash.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json-scanf.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json-actor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json-actor-boxed.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;logconf.h&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>struct<sp/>logconf<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;user-agent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="websockets_8h" kindref="compound">websockets.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cee-utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="discord-voice-connections_8h" kindref="compound">discord-voice-connections.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structdiscord__adapter" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref><sp/>{</highlight></codeline>
+<codeline lineno="32" refid="structdiscord__adapter_1a4bc3965220fb197fe1dab2237a8dec7d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">user_agent<sp/>*<ref refid="structdiscord__adapter_1a4bc3965220fb197fe1dab2237a8dec7d" kindref="member">ua</ref>;<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">/*<sp/>RATELIMITING<sp/>STRUCTURE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structdiscord__adapter_1a20ef4471bba9e6c4a2e064aa8e498747" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__bucket" kindref="compound">discord_bucket</ref><sp/>*<ref refid="structdiscord__adapter_1a20ef4471bba9e6c4a2e064aa8e498747" kindref="member">buckets</ref>;<sp/></highlight></codeline>
+<codeline lineno="35" refid="structdiscord__adapter_1a6c82f5b486617094d1d1d0c79995e4ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_t<sp/><ref refid="structdiscord__adapter_1a6c82f5b486617094d1d1d0c79995e4ee" kindref="member">lock</ref>;<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>}<sp/>ratelimit;</highlight></codeline>
+<codeline lineno="37" refid="structdiscord__adapter_1a19d5ff5b0b9843bf65d1cb080b9cb5a7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord" kindref="compound">discord</ref><sp/>*<ref refid="structdiscord__adapter_1a19d5ff5b0b9843bf65d1cb080b9cb5a7" kindref="member">p_client</ref>;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1abcd9b5bb8e2b372bc109ec6c751d23ca" kindref="member">discord_adapter_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref><sp/>*<ref refid="structdiscord_1aa6b920cecb961738d00682cd25bcd14a" kindref="member">adapter</ref>,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>logconf<sp/>*<ref refid="structdiscord_1a4fdac485645187a3aa014ef57a2c6aa4" kindref="member">config</ref>,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sized_buffer<sp/>*<ref refid="structdiscord_1af3d2fe931cc6c487fb42ce7fe8db71a5" kindref="member">token</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1a38db97551a3760ca678f6d765ff37f98" kindref="member">discord_adapter_cleanup</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref><sp/>*<ref refid="structdiscord_1aa6b920cecb961738d00682cd25bcd14a" kindref="member">adapter</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">ORCAcode<sp/><ref refid="discord-internal_8h_1ac929e6b0a7cc7029b1e3efbe6134519f" kindref="member">discord_adapter_run</ref>(</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref><sp/>*<ref refid="structdiscord_1aa6b920cecb961738d00682cd25bcd14a" kindref="member">adapter</ref>,<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structua__resp__handle" kindref="compound">ua_resp_handle</ref><sp/>*resp_handle,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sized_buffer<sp/>*req_body,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>http_method<sp/>http_method,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>endpoint[],<sp/>...);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structdiscord__bucket" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__bucket" kindref="compound">discord_bucket</ref><sp/>{</highlight></codeline>
+<codeline lineno="82" refid="structdiscord__bucket_1aeef4fc5b96d858c6ec5e2071a95d595f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structdiscord__bucket_1aeef4fc5b96d858c6ec5e2071a95d595f" kindref="member">route</ref>[256];<sp/></highlight></codeline>
+<codeline lineno="83" refid="structdiscord__bucket_1ac67b2ad453a4224a780784e05f7669d8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structdiscord__bucket_1ac67b2ad453a4224a780784e05f7669d8" kindref="member">hash</ref>[128];<sp/></highlight></codeline>
+<codeline lineno="84" refid="structdiscord__bucket_1ac945c8ad595f5fe1c0265156fb939813" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structdiscord__bucket_1ac945c8ad595f5fe1c0265156fb939813" kindref="member">busy</ref>;<sp/></highlight></codeline>
+<codeline lineno="85" refid="structdiscord__bucket_1afbf7b738447cf6ce2ba70eada7b4c06a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structdiscord__bucket_1afbf7b738447cf6ce2ba70eada7b4c06a" kindref="member">remaining</ref>;<sp/></highlight></codeline>
+<codeline lineno="86" refid="structdiscord__bucket_1a27851d72383d8f7ac3eadb75e4c7d9b8" refkind="member"><highlight class="normal"><sp/><sp/>int64_t<sp/><ref refid="structdiscord__bucket_1a27851d72383d8f7ac3eadb75e4c7d9b8" kindref="member">reset_after_ms</ref>;<sp/></highlight></codeline>
+<codeline lineno="87" refid="structdiscord__bucket_1a05dedaa37f1e2e10de0be17e5dd00904" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref><sp/><ref refid="structdiscord__bucket_1a05dedaa37f1e2e10de0be17e5dd00904" kindref="member">reset_tstamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="88" refid="structdiscord__bucket_1a157a3a73fb075e1bb721b5e35a798138" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref><sp/><ref refid="structdiscord__bucket_1a157a3a73fb075e1bb721b5e35a798138" kindref="member">update_tstamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="structdiscord__bucket_1a268f5f36225ae82f4640704eea74adf2" refkind="member"><highlight class="normal"><sp/><sp/>pthread_mutex_t<sp/><ref refid="structdiscord__bucket_1a268f5f36225ae82f4640704eea74adf2" kindref="member">lock</ref>;<sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>pthread_cond_t<sp/>cond;</highlight></codeline>
+<codeline lineno="92" refid="structdiscord__bucket_1a53523eeac146fe4f8e0aaea713b3ca1d" refkind="member"><highlight class="normal"><sp/><sp/>UT_hash_handle<sp/><ref refid="structdiscord__bucket_1a53523eeac146fe4f8e0aaea713b3ca1d" kindref="member">hh</ref>;<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1aed725e74b163eff80be830bb3fd9f42d" kindref="member">discord_buckets_cleanup</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref><sp/>*adapter);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1a82c20ff44bc4a01a9f6a77b0aef49426" kindref="member">discord_bucket_try_cooldown</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__bucket" kindref="compound">discord_bucket</ref><sp/>*bucket);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__bucket" kindref="compound">discord_bucket</ref>*<sp/><ref refid="discord-internal_8h_1a7a744851301642d398b255b5e541de69" kindref="member">discord_bucket_try_get</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref><sp/>*adapter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structdiscord__bucket_1aeef4fc5b96d858c6ec5e2071a95d595f" kindref="member">route</ref>[]);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1ae0e3506aff4c36827f13ee45e4ffe670" kindref="member">discord_bucket_build</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref><sp/>*adapter,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__bucket" kindref="compound">discord_bucket</ref><sp/>*bucket,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structdiscord__bucket_1aeef4fc5b96d858c6ec5e2071a95d595f" kindref="member">route</ref>[],<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structua__info" kindref="compound">ua_info</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="structdiscord__gateway__cmd__cbs" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__gateway__cmd__cbs" kindref="compound">discord_gateway_cmd_cbs</ref><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*start;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1af60102e757272cd21561552553d7ed6c" kindref="member">message_cb</ref><sp/>cb;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="structdiscord__gateway" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/>{</highlight></codeline>
+<codeline lineno="146" refid="structdiscord__gateway_1a14f4f4117925f91a02e3b9a47cb50475" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">websockets<sp/>*<ref refid="structdiscord__gateway_1a14f4f4117925f91a02e3b9a47cb50475" kindref="member">ws</ref>;<sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">/*<sp/>RECONNECT<sp/>STRUCTURE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="structdiscord__gateway_1ae1bca7721ed89ea3f64bdc28f63bcba7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1ae1bca7721ed89ea3f64bdc28f63bcba7" kindref="member">enable</ref>;<sp/></highlight></codeline>
+<codeline lineno="149" refid="structdiscord__gateway_1a0c1cf462499400d561f776f98f3226d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1a0c1cf462499400d561f776f98f3226d7" kindref="member">attempt</ref>;<sp/></highlight></codeline>
+<codeline lineno="150" refid="structdiscord__gateway_1a954b1a27b79a1e1eaa7944022dcaeed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1a954b1a27b79a1e1eaa7944022dcaeed0" kindref="member">threshold</ref>;<sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>}<sp/>reconnect;</highlight></codeline>
+<codeline lineno="152" refid="structdiscord__gateway_1aa638bbbd9620716e2634b3886c51328a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1aa638bbbd9620716e2634b3886c51328a" kindref="member">is_resumable</ref>;<sp/></highlight></codeline>
+<codeline lineno="153" refid="structdiscord__gateway_1a3a758f591a57c3bc1e48993da6bcaabb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1a3a758f591a57c3bc1e48993da6bcaabb" kindref="member">is_ready</ref>;<sp/></highlight></codeline>
+<codeline lineno="154" refid="structdiscord__gateway_1a776f9988eef3120151973b91b5d297f0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1a776f9988eef3120151973b91b5d297f0" kindref="member">shutdown</ref>;<sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="structdiscord__gateway_1af94e0262990b00c4ca80cb49cbd1455d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__gateway__identify" kindref="compound">discord_gateway_identify</ref><sp/>*<ref refid="structdiscord__gateway_1af94e0262990b00c4ca80cb49cbd1455d" kindref="member">id</ref>;<sp/></highlight></codeline>
+<codeline lineno="157" refid="structdiscord__gateway_1aaebae21be2a555770440eac6aaf60d39" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1aaebae21be2a555770440eac6aaf60d39" kindref="member">session_id</ref>[512];<sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>https://discord.com/developers/docs/topics/gateway#payloads-gateway-payload-structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">/*<sp/>GATEWAY<sp/>PAYLOAD<sp/>STRUCTURE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="structdiscord__gateway_1a56baf6a6c365f558e2fa5b4602d88ea3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>discord_gateway_opcodes<sp/><ref refid="structdiscord__gateway_1a56baf6a6c365f558e2fa5b4602d88ea3" kindref="member">opcode</ref>;<sp/></highlight></codeline>
+<codeline lineno="162" refid="structdiscord__gateway_1a57b7fd95dfd9f28554324e733b9ce78f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1a57b7fd95dfd9f28554324e733b9ce78f" kindref="member">seq_number</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="structdiscord__gateway_1a9b1c71ec09a1866b5010f7e5a25c35a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1a9b1c71ec09a1866b5010f7e5a25c35a1" kindref="member">event_name</ref>[64];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164" refid="structdiscord__gateway_1a8fdc5ba5da309c2e50b87604f28d22c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/><ref refid="structdiscord__gateway_1a8fdc5ba5da309c2e50b87604f28d22c6" kindref="member">event_data</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>}<sp/>payload;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Discord<sp/>expects<sp/>a<sp/>proccess<sp/>called<sp/>heartbeating<sp/>in<sp/>order<sp/>to<sp/>keep<sp/>the<sp/>client-server<sp/>connection<sp/>alive</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>https://discord.com/developers/docs/topics/gateway#heartbeating</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">/*<sp/>HEARTBEAT<sp/>STRUCTURE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="structdiscord__gateway_1a1891f0120357a36d3aa3bd563bbe6568" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref><sp/><ref refid="structdiscord__gateway_1a1891f0120357a36d3aa3bd563bbe6568" kindref="member">interval_ms</ref>;<sp/></highlight></codeline>
+<codeline lineno="171" refid="structdiscord__gateway_1a50c25b5da8238334fe1202455f416924" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref><sp/><ref refid="structdiscord__gateway_1a50c25b5da8238334fe1202455f416924" kindref="member">tstamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>}<sp/>hbeat;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="structdiscord__gateway_1a16a5f1506e49d402a70783033e07a6ff" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__session" kindref="compound">discord_session</ref><sp/><ref refid="structdiscord__gateway_1a16a5f1506e49d402a70783033e07a6ff" kindref="member">session</ref>;<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="structdiscord__gateway_1a75e0773822f26760ac47acb62ee93139" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/><ref refid="structdiscord__gateway_1a75e0773822f26760ac47acb62ee93139" kindref="member">prefix</ref>;<sp/></highlight></codeline>
+<codeline lineno="177" refid="structdiscord__gateway_1a1ea1d58d960a55cb794114df1a36ec53" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__gateway__cmd__cbs" kindref="compound">discord_gateway_cmd_cbs</ref><sp/>on_default_cmd,<sp/>*<ref refid="structdiscord__gateway_1a1ea1d58d960a55cb794114df1a36ec53" kindref="member">on_cmd</ref>;<sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num_cmd;<sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">/*<sp/>CALLBACKS<sp/>STRUCTURE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="structdiscord__gateway_1a1ad5cbecdc1e2a4d1403211f89d99ebb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1aa6024f71dcb39c0ec64c54345db99d4d" kindref="member">idle_cb</ref><sp/><ref refid="structdiscord__gateway_1a1ad5cbecdc1e2a4d1403211f89d99ebb" kindref="member">on_idle</ref>;<sp/></highlight></codeline>
+<codeline lineno="182" refid="structdiscord__gateway_1a503eb7745a0c6f76f7daff8e7000a5d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a8f20a10f04ffbb31be7905357b9a9d62" kindref="member">event_raw_cb</ref><sp/><ref refid="structdiscord__gateway_1a503eb7745a0c6f76f7daff8e7000a5d1" kindref="member">on_event_raw</ref>;<sp/></highlight></codeline>
+<codeline lineno="183" refid="structdiscord__gateway_1abc30b5ffa7c554aaa43c5035760bca57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1aa6024f71dcb39c0ec64c54345db99d4d" kindref="member">idle_cb</ref><sp/><ref refid="structdiscord__gateway_1abc30b5ffa7c554aaa43c5035760bca57" kindref="member">on_ready</ref>;<sp/></highlight></codeline>
+<codeline lineno="184" refid="structdiscord__gateway_1a5242b7a4467840594adcaff6e9507a87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1ac58124712e6bbf7b463fde803ae1dc11" kindref="member">guild_role_cb</ref><sp/><ref refid="structdiscord__gateway_1a5242b7a4467840594adcaff6e9507a87" kindref="member">on_guild_role_create</ref>;<sp/></highlight></codeline>
+<codeline lineno="185" refid="structdiscord__gateway_1acb1a69191bf812614c56bbf72e1225e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1ac58124712e6bbf7b463fde803ae1dc11" kindref="member">guild_role_cb</ref><sp/><ref refid="structdiscord__gateway_1acb1a69191bf812614c56bbf72e1225e5" kindref="member">on_guild_role_update</ref>;<sp/></highlight></codeline>
+<codeline lineno="186" refid="structdiscord__gateway_1a5dc702137fcda3a0e3d93facae5229b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1afa19686270ac753f3b3e27f288fb5426" kindref="member">guild_role_delete_cb</ref><sp/><ref refid="structdiscord__gateway_1a5dc702137fcda3a0e3d93facae5229b1" kindref="member">on_guild_role_delete</ref>;<sp/></highlight></codeline>
+<codeline lineno="187" refid="structdiscord__gateway_1a2a3e7ff5c1f0c8ea2b7511d5fd1a541b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a602cbe3cae7dd709ee856b3864e31428" kindref="member">guild_member_cb</ref><sp/><ref refid="structdiscord__gateway_1a2a3e7ff5c1f0c8ea2b7511d5fd1a541b" kindref="member">on_guild_member_add</ref>;<sp/></highlight></codeline>
+<codeline lineno="188" refid="structdiscord__gateway_1ad98b186d12225c458f53e6693103af10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a8e5a6efff766f4bc2f9b3f054b0d6cb5" kindref="member">guild_member_remove_cb</ref><sp/><ref refid="structdiscord__gateway_1ad98b186d12225c458f53e6693103af10" kindref="member">on_guild_member_remove</ref>;<sp/></highlight></codeline>
+<codeline lineno="189" refid="structdiscord__gateway_1a42b60a38dabc20463f8b8c64b8ea2664" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a602cbe3cae7dd709ee856b3864e31428" kindref="member">guild_member_cb</ref><sp/><ref refid="structdiscord__gateway_1a42b60a38dabc20463f8b8c64b8ea2664" kindref="member">on_guild_member_update</ref>;<sp/></highlight></codeline>
+<codeline lineno="190" refid="structdiscord__gateway_1acf4cf02842557f3692d1f181d0dbd6ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a57bf59c4201163786579c5c7e2a7e4e9" kindref="member">guild_ban_cb</ref><sp/><ref refid="structdiscord__gateway_1acf4cf02842557f3692d1f181d0dbd6ab" kindref="member">on_guild_ban_add</ref>;<sp/></highlight></codeline>
+<codeline lineno="191" refid="structdiscord__gateway_1a8e0f50dd7827cda7681392c16a65120d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a57bf59c4201163786579c5c7e2a7e4e9" kindref="member">guild_ban_cb</ref><sp/><ref refid="structdiscord__gateway_1a8e0f50dd7827cda7681392c16a65120d" kindref="member">on_guild_ban_remove</ref>;<sp/></highlight></codeline>
+<codeline lineno="192" refid="structdiscord__gateway_1a81b512fc9115cf5eccbf3a41b9bf39c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a9b5e92598d5d59eb54041f7de01026a9" kindref="member">channel_cb</ref><sp/><ref refid="structdiscord__gateway_1a81b512fc9115cf5eccbf3a41b9bf39c5" kindref="member">on_channel_create</ref>;<sp/></highlight></codeline>
+<codeline lineno="193" refid="structdiscord__gateway_1a4d6a18497849239ae3e4bdfdc9ba38f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a9b5e92598d5d59eb54041f7de01026a9" kindref="member">channel_cb</ref><sp/><ref refid="structdiscord__gateway_1a4d6a18497849239ae3e4bdfdc9ba38f1" kindref="member">on_channel_update</ref>;<sp/></highlight></codeline>
+<codeline lineno="194" refid="structdiscord__gateway_1a822c97c4fdc77f77ba6a788697f7421e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a9b5e92598d5d59eb54041f7de01026a9" kindref="member">channel_cb</ref><sp/><ref refid="structdiscord__gateway_1a822c97c4fdc77f77ba6a788697f7421e" kindref="member">on_channel_delete</ref>;<sp/></highlight></codeline>
+<codeline lineno="195" refid="structdiscord__gateway_1a0785fc05a5cea7a562dcfb8325042022" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a539e73881b4d88003356b62cd61ceba0" kindref="member">channel_pins_update_cb</ref><sp/><ref refid="structdiscord__gateway_1a0785fc05a5cea7a562dcfb8325042022" kindref="member">on_channel_pins_update</ref>;<sp/></highlight></codeline>
+<codeline lineno="196" refid="structdiscord__gateway_1a505b0fb8c92e1344d7040d1e0d331feb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1af60102e757272cd21561552553d7ed6c" kindref="member">message_cb</ref><sp/><ref refid="structdiscord__gateway_1a505b0fb8c92e1344d7040d1e0d331feb" kindref="member">on_message_create</ref>;<sp/></highlight></codeline>
+<codeline lineno="197" refid="structdiscord__gateway_1a15671c64a6fceff5ab9ea5493d893dcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sb_message_cb<sp/><ref refid="structdiscord__gateway_1a15671c64a6fceff5ab9ea5493d893dcd" kindref="member">sb_on_message_create</ref>;<sp/></highlight></codeline>
+<codeline lineno="198" refid="structdiscord__gateway_1a91b4a98ed140127f5387e7fb2470b38a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1af60102e757272cd21561552553d7ed6c" kindref="member">message_cb</ref><sp/><ref refid="structdiscord__gateway_1a91b4a98ed140127f5387e7fb2470b38a" kindref="member">on_message_update</ref>;<sp/></highlight></codeline>
+<codeline lineno="199" refid="structdiscord__gateway_1a8591ddfb0e882dc8721abbb91cd8fb94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sb_message_cb<sp/><ref refid="structdiscord__gateway_1a8591ddfb0e882dc8721abbb91cd8fb94" kindref="member">sb_on_message_update</ref>;<sp/></highlight></codeline>
+<codeline lineno="200" refid="structdiscord__gateway_1a70464877e20755d0f27de91045ec325b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1acb22f042e31a06c7af88ada4ec91d87a" kindref="member">message_delete_cb</ref><sp/><ref refid="structdiscord__gateway_1a70464877e20755d0f27de91045ec325b" kindref="member">on_message_delete</ref>;<sp/></highlight></codeline>
+<codeline lineno="201" refid="structdiscord__gateway_1a18f7c8b9892b61d196ef114bff8066ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a71379d1b5ae970c00d00ea0b5094eb6a" kindref="member">message_delete_bulk_cb</ref><sp/><ref refid="structdiscord__gateway_1a18f7c8b9892b61d196ef114bff8066ec" kindref="member">on_message_delete_bulk</ref>;<sp/></highlight></codeline>
+<codeline lineno="202" refid="structdiscord__gateway_1ae71caf73928d7d9165df454944a40a3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a099535fb1a7295890b87699b176359f2" kindref="member">message_reaction_add_cb</ref><sp/><ref refid="structdiscord__gateway_1ae71caf73928d7d9165df454944a40a3c" kindref="member">on_message_reaction_add</ref>;<sp/></highlight></codeline>
+<codeline lineno="203" refid="structdiscord__gateway_1a8cf5b689874aafc7dabba46172f46bf1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1aa875d3975041e5d18776a1ce3d07f77c" kindref="member">message_reaction_remove_cb</ref><sp/><ref refid="structdiscord__gateway_1a8cf5b689874aafc7dabba46172f46bf1" kindref="member">on_message_reaction_remove</ref>;<sp/></highlight></codeline>
+<codeline lineno="204" refid="structdiscord__gateway_1a617a897fd7275a3159b0100a9e4b9da3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1ac6121d813f8b9613a37273cc869d8fdf" kindref="member">message_reaction_remove_all_cb</ref><sp/><ref refid="structdiscord__gateway_1a617a897fd7275a3159b0100a9e4b9da3" kindref="member">on_message_reaction_remove_all</ref>;<sp/></highlight></codeline>
+<codeline lineno="205" refid="structdiscord__gateway_1a52041c20467cafd3e9ba7a898a23cba9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1ac5348c83c33c983f8e5bf1001fd4964a" kindref="member">message_reaction_remove_emoji_cb</ref><sp/><ref refid="structdiscord__gateway_1a52041c20467cafd3e9ba7a898a23cba9" kindref="member">on_message_reaction_remove_emoji</ref>;<sp/></highlight></codeline>
+<codeline lineno="206" refid="structdiscord__gateway_1a8105f0bd4a5cf1f4f713577d2be93082" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a6e03b806ba4bedeb5241aaa25d55f494" kindref="member">voice_state_update_cb</ref><sp/><ref refid="structdiscord__gateway_1a8105f0bd4a5cf1f4f713577d2be93082" kindref="member">on_voice_state_update</ref>;<sp/></highlight></codeline>
+<codeline lineno="207" refid="structdiscord__gateway_1a653f492662fdcf718285426f15dbba94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="discord_8h_1a4d8b39af4010e2c186de8ea6f4d8d70d" kindref="member">voice_server_update_cb</ref><sp/><ref refid="structdiscord__gateway_1a653f492662fdcf718285426f15dbba94" kindref="member">on_voice_server_update</ref>;<sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>}<sp/>cbs;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="discord_8h_1a1b11a8fb0bb025f18e2b7b207979b314" kindref="member">discord_event_handling_mode</ref><sp/>(*blocking_event_handler)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cxt);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="212" refid="structdiscord__gateway_1aa69001076c00c9267f759d6d69eec050" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway_1aa69001076c00c9267f759d6d69eec050" kindref="member">ping_ms</ref>;<sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>pthread_mutex_t<sp/>lock;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="216" refid="structdiscord__gateway_1ae8735fb2c3b4327b5e31bc706f9a719c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__user" kindref="compound">discord_user</ref><sp/>*<ref refid="structdiscord__gateway_1ae8735fb2c3b4327b5e31bc706f9a719c" kindref="member">bot</ref>;<sp/></highlight></codeline>
+<codeline lineno="217" refid="structdiscord__gateway_1a3595a1cbbd88f6a10d736d2f28e8ca3e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/><ref refid="structdiscord__gateway_1a3595a1cbbd88f6a10d736d2f28e8ca3e" kindref="member">sb_bot</ref>;<sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="structdiscord__gateway_1a9fb7b8ea8fc1eff0f4e817373d5c13c9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord" kindref="compound">discord</ref><sp/>*<ref refid="structdiscord__gateway_1a9fb7b8ea8fc1eff0f4e817373d5c13c9" kindref="member">p_client</ref>;<sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1aef325194684c5bce1d51f2da6d81dbfa" kindref="member">discord_gateway_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/>*<ref refid="structdiscord_1ac439ecded3eac536b5de5dc24355a1d5" kindref="member">gw</ref>,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>logconf<sp/>*<ref refid="structdiscord_1a4fdac485645187a3aa014ef57a2c6aa4" kindref="member">config</ref>,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sized_buffer<sp/>*<ref refid="structdiscord_1af3d2fe931cc6c487fb42ce7fe8db71a5" kindref="member">token</ref>);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1ab66259b9988312a38de984c9c54e49f0" kindref="member">discord_gateway_cleanup</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/>*<ref refid="structdiscord_1ac439ecded3eac536b5de5dc24355a1d5" kindref="member">gw</ref>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1a95ba1ce5c14fdf852ffc33f1186ee4c2" kindref="member">discord_gateway_run</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/>*<ref refid="structdiscord_1ac439ecded3eac536b5de5dc24355a1d5" kindref="member">gw</ref>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1a820b8262c06ee3bba05d1284d4bc6910" kindref="member">discord_gateway_shutdown</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/>*<ref refid="structdiscord_1ac439ecded3eac536b5de5dc24355a1d5" kindref="member">gw</ref>);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="discord-internal_8h_1a44ee2f95d91bd642a68e074782ad4f13" kindref="member">discord_gateway_reconnect</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/>*<ref refid="structdiscord_1ac439ecded3eac536b5de5dc24355a1d5" kindref="member">gw</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resume);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="structdiscord" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord" kindref="compound">discord</ref><sp/>{</highlight></codeline>
+<codeline lineno="272" refid="structdiscord_1af3d2fe931cc6c487fb42ce7fe8db71a5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/><ref refid="structdiscord_1af3d2fe931cc6c487fb42ce7fe8db71a5" kindref="member">token</ref>;<sp/></highlight></codeline>
+<codeline lineno="273" refid="structdiscord_1aa6b920cecb961738d00682cd25bcd14a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__adapter" kindref="compound">discord_adapter</ref><sp/><ref refid="structdiscord_1aa6b920cecb961738d00682cd25bcd14a" kindref="member">adapter</ref>;<sp/></highlight></codeline>
+<codeline lineno="274" refid="structdiscord_1ac439ecded3eac536b5de5dc24355a1d5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/><ref refid="structdiscord_1ac439ecded3eac536b5de5dc24355a1d5" kindref="member">gw</ref>;<sp/></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="276" refid="structdiscord_1a4fdac485645187a3aa014ef57a2c6aa4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">logconf<sp/><ref refid="structdiscord_1a4fdac485645187a3aa014ef57a2c6aa4" kindref="member">config</ref>;<sp/></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_VCS<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__voice" kindref="compound">discord_voice</ref><sp/>vcs[NUM_VCS];</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__voice__cbs" kindref="compound">discord_voice_cbs</ref><sp/>voice_cbs;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="structdiscord_1ad36541f87b8997a57c0467d29627e8d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structdiscord_1ad36541f87b8997a57c0467d29627e8d1" kindref="member">data</ref>;<sp/></highlight></codeline>
+<codeline lineno="283"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="structdiscord__event__cxt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__event__cxt" kindref="compound">discord_event_cxt</ref><sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>event_name[64];</highlight></codeline>
+<codeline lineno="287" refid="structdiscord__event__cxt_1a071077c7dab52dfbcf7b9adeebb0a1f4" refkind="member"><highlight class="normal"><sp/><sp/>pthread_t<sp/><ref refid="structdiscord__event__cxt_1a071077c7dab52dfbcf7b9adeebb0a1f4" kindref="member">tid</ref>;<sp/></highlight></codeline>
+<codeline lineno="288" refid="structdiscord__event__cxt_1a875b50def69fc66cb304501fea07c0fe" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/><ref refid="structdiscord__event__cxt_1a875b50def69fc66cb304501fea07c0fe" kindref="member">data</ref>;<sp/></highlight></codeline>
+<codeline lineno="289" refid="structdiscord__event__cxt_1a9a02751dfe9e0d15c14176cb6cb0a39c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/>*<ref refid="structdiscord__event__cxt_1a9a02751dfe9e0d15c14176cb6cb0a39c" kindref="member">p_gw</ref>;<sp/></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>discord_gateway_events<sp/>event;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>void<sp/>(*on_event)(</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__gateway" kindref="compound">discord_gateway</ref><sp/>*gw,</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sized_buffer<sp/>*<ref refid="structdiscord__event__cxt_1a875b50def69fc66cb304501fea07c0fe" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_main_thread;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DISCORD_INTERNAL_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/lucasmull/Trabalho/orca/discord-internal.h"/>
+  </compounddef>
+</doxygen>

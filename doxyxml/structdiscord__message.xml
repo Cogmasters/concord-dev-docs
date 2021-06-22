@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__message" kind="struct" language="C++" prot="public">
+    <compoundname>discord_message</compoundname>
+    <includes refid="channel_8h" local="no">channel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__message_1a1f5adc124caed4a6b3427ee38bae8474" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_message::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="468" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a1d49ab1acce2a74b3c8290b68e66c5c5" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_message::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="472" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a194a40b37e318c68e9fc2859ec95bf82" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_message::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="476" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1ac8e69ac0e67b0ae189b9705910cde7bb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__user" kindref="compound">discord_user</ref> *</type>
+        <definition>struct discord_user* discord_message::author</definition>
+        <argsstring></argsstring>
+        <name>author</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="480" column="21" bodyfile="orca/specs-code/discord/channel.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1ac325084b69c1bf35bef45510ab6ce7a7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__guild__member" kindref="compound">discord_guild_member</ref> *</type>
+        <definition>struct discord_guild_member* discord_message::member</definition>
+        <argsstring></argsstring>
+        <name>member</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="484" column="29" bodyfile="orca/specs-code/discord/channel.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1aa48b4b9a69db9fae0bb8be3f139317ae" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_message::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="488" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1adddeff7bbbb33458e0879f8e91d285d2" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_message::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="492" column="17" bodyfile="orca/specs-code/discord/channel.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a914694864ac982c0e8046dfeef422722" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_message::edited_timestamp</definition>
+        <argsstring></argsstring>
+        <name>edited_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="496" column="17" bodyfile="orca/specs-code/discord/channel.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1ad78515ac01b381ea3b653a5bd99695a9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_message::tts</definition>
+        <argsstring></argsstring>
+        <name>tts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="500" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a9361866859ad03fbbf609a472a6336a5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_message::mention_everyone</definition>
+        <argsstring></argsstring>
+        <name>mention_everyone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="504" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1abe822d891c4e93b3accacc20a6665af7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__user" kindref="compound">discord_user</ref> **</type>
+        <definition>struct discord_user** discord_message::mentions</definition>
+        <argsstring></argsstring>
+        <name>mentions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="508" column="21" bodyfile="orca/specs-code/discord/channel.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1af8f509c0faadec0d67d8e47d2b8afb7d" prot="public" static="no" mutable="no">
+        <type>ja_u64 **</type>
+        <definition>ja_u64** discord_message::mention_roles</definition>
+        <argsstring></argsstring>
+        <name>mention_roles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="512" column="10" bodyfile="orca/specs-code/discord/channel.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a0047ccb1acbb0189f4cb51b8e286297d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__channel__mention" kindref="compound">discord_channel_mention</ref> **</type>
+        <definition>struct discord_channel_mention** discord_message::mention_channels</definition>
+        <argsstring></argsstring>
+        <name>mention_channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="516" column="32" bodyfile="orca/specs-code/discord/channel.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1ad47405928669a294bb81f0dd74795921" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__channel__attachment" kindref="compound">discord_channel_attachment</ref> **</type>
+        <definition>struct discord_channel_attachment** discord_message::attachments</definition>
+        <argsstring></argsstring>
+        <name>attachments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="520" column="35" bodyfile="orca/specs-code/discord/channel.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a0a72af97350afa7a2eaeabbb61a0a640" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__embed" kindref="compound">discord_embed</ref> **</type>
+        <definition>struct discord_embed** discord_message::embeds</definition>
+        <argsstring></argsstring>
+        <name>embeds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="524" column="22" bodyfile="orca/specs-code/discord/channel.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a972488bd0bbb7c4ff6b09eea8efd7820" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__channel__reaction" kindref="compound">discord_channel_reaction</ref> **</type>
+        <definition>struct discord_channel_reaction** discord_message::reactions</definition>
+        <argsstring></argsstring>
+        <name>reactions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="528" column="33" bodyfile="orca/specs-code/discord/channel.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a9ce7b073536c5dda9c6f2d5cbed165f6" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_message::nonce</definition>
+        <argsstring></argsstring>
+        <name>nonce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="532" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1aed931e5f75fbfa5f0216b301f9aab662" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_message::pinned</definition>
+        <argsstring></argsstring>
+        <name>pinned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="536" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1ab1d8e6c477f72532d1b8191aea030666" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_message::webhook_id</definition>
+        <argsstring></argsstring>
+        <name>webhook_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="541" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a078cfa611e1f7aaa852f85c654504e72" prot="public" static="no" mutable="no">
+        <type>enum discord_message_types</type>
+        <definition>enum discord_message_types discord_message::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="541" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="545" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a7135fe08ea0f33dcf478be9647cbe47f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__message__activity" kindref="compound">discord_message_activity</ref> *</type>
+        <definition>struct discord_message_activity* discord_message::activity</definition>
+        <argsstring></argsstring>
+        <name>activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="549" column="33" bodyfile="orca/specs-code/discord/channel.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a517e651e98722cc9caddf849d3aa8e0e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__message__application" kindref="compound">discord_message_application</ref> **</type>
+        <definition>struct discord_message_application** discord_message::application</definition>
+        <argsstring></argsstring>
+        <name>application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="553" column="36" bodyfile="orca/specs-code/discord/channel.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1aeb12afe052d88e2488d8aee6d6e9eea8" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__message__reference" kindref="compound">discord_message_reference</ref> *</type>
+        <definition>struct discord_message_reference* discord_message::message_reference</definition>
+        <argsstring></argsstring>
+        <name>message_reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="557" column="34" bodyfile="orca/specs-code/discord/channel.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1abeba446e9825d6e6c989e89f3c61810c" prot="public" static="no" mutable="no">
+        <type>enum discord_message_flags</type>
+        <definition>enum discord_message_flags discord_message::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="557" column="34" bodyfile="orca/specs-code/discord/channel.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1adb6528b3066e5e5ab0d13abfc111882b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__message__sticker" kindref="compound">discord_message_sticker</ref> **</type>
+        <definition>struct discord_message_sticker** discord_message::stickers</definition>
+        <argsstring></argsstring>
+        <name>stickers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="565" column="32" bodyfile="orca/specs-code/discord/channel.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__message_1a985926879f0a05f4487c18b74a1dc6d5" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__message" kindref="compound">discord_message</ref> *</type>
+        <definition>struct discord_message* discord_message::referenced_message</definition>
+        <argsstring></argsstring>
+        <name>referenced_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="570" column="24" bodyfile="orca/specs-code/discord/channel.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Message Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#message-object">https://discord.com/developers/docs/resources/channel#message-object</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.json:181:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>discord_channel_reaction</label>
+        <link refid="structdiscord__channel__reaction"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>emoji</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>discord_message</label>
+        <link refid="structdiscord__message"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mention_channels</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>application</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>embeds</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>referenced_message</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>activity</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mentions</edgelabel>
+          <edgelabel>author</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>stickers</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>reactions</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>attachments</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>message_reference</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>member</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>discord_embed_provider</label>
+        <link refid="structdiscord__embed__provider"/>
+      </node>
+      <node id="14">
+        <label>discord_message_sticker</label>
+        <link refid="structdiscord__message__sticker"/>
+      </node>
+      <node id="11">
+        <label>discord_embed_footer</label>
+        <link refid="structdiscord__embed__footer"/>
+      </node>
+      <node id="18">
+        <label>discord_message_reference</label>
+        <link refid="structdiscord__message__reference"/>
+      </node>
+      <node id="8">
+        <label>discord_embed_field</label>
+        <link refid="structdiscord__embed__field"/>
+      </node>
+      <node id="16">
+        <label>discord_emoji</label>
+        <link refid="structdiscord__emoji"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>user</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>discord_user</label>
+        <link refid="structdiscord__user"/>
+      </node>
+      <node id="19">
+        <label>discord_guild_member</label>
+        <link refid="structdiscord__guild__member"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>user</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>discord_embed_image</label>
+        <link refid="structdiscord__embed__image"/>
+      </node>
+      <node id="2">
+        <label>discord_channel_mention</label>
+        <link refid="structdiscord__channel__mention"/>
+      </node>
+      <node id="10">
+        <label>discord_embed_thumbnail</label>
+        <link refid="structdiscord__embed__thumbnail"/>
+      </node>
+      <node id="3">
+        <label>discord_message_application</label>
+        <link refid="structdiscord__message__application"/>
+      </node>
+      <node id="9">
+        <label>discord_embed_author</label>
+        <link refid="structdiscord__embed__author"/>
+      </node>
+      <node id="12">
+        <label>discord_message_activity</label>
+        <link refid="structdiscord__message__activity"/>
+      </node>
+      <node id="7">
+        <label>discord_embed_video</label>
+        <link refid="structdiscord__embed__video"/>
+      </node>
+      <node id="4">
+        <label>discord_embed</label>
+        <link refid="structdiscord__embed"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>provider</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>image</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>video</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>fields</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>author</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>thumbnail</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>footer</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>discord_channel_attachment</label>
+        <link refid="structdiscord__channel__attachment"/>
+      </node>
+    </collaborationgraph>
+    <location file="orca/specs-code/discord/channel.h" line="465" column="22" bodyfile="orca/specs-code/discord/channel.h" bodystart="465" bodyend="586"/>
+    <listofallmembers>
+      <member refid="structdiscord__message_1a7135fe08ea0f33dcf478be9647cbe47f" prot="public" virt="non-virtual"><scope>discord_message</scope><name>activity</name></member>
+      <member refid="structdiscord__message_1a517e651e98722cc9caddf849d3aa8e0e" prot="public" virt="non-virtual"><scope>discord_message</scope><name>application</name></member>
+      <member refid="structdiscord__message_1ad47405928669a294bb81f0dd74795921" prot="public" virt="non-virtual"><scope>discord_message</scope><name>attachments</name></member>
+      <member refid="structdiscord__message_1ac8e69ac0e67b0ae189b9705910cde7bb" prot="public" virt="non-virtual"><scope>discord_message</scope><name>author</name></member>
+      <member refid="structdiscord__message_1a1d49ab1acce2a74b3c8290b68e66c5c5" prot="public" virt="non-virtual"><scope>discord_message</scope><name>channel_id</name></member>
+      <member refid="structdiscord__message_1aa48b4b9a69db9fae0bb8be3f139317ae" prot="public" virt="non-virtual"><scope>discord_message</scope><name>content</name></member>
+      <member refid="structdiscord__message_1a914694864ac982c0e8046dfeef422722" prot="public" virt="non-virtual"><scope>discord_message</scope><name>edited_timestamp</name></member>
+      <member refid="structdiscord__message_1a0a72af97350afa7a2eaeabbb61a0a640" prot="public" virt="non-virtual"><scope>discord_message</scope><name>embeds</name></member>
+      <member refid="structdiscord__message_1abeba446e9825d6e6c989e89f3c61810c" prot="public" virt="non-virtual"><scope>discord_message</scope><name>flags</name></member>
+      <member refid="structdiscord__message_1a194a40b37e318c68e9fc2859ec95bf82" prot="public" virt="non-virtual"><scope>discord_message</scope><name>guild_id</name></member>
+      <member refid="structdiscord__message_1a1f5adc124caed4a6b3427ee38bae8474" prot="public" virt="non-virtual"><scope>discord_message</scope><name>id</name></member>
+      <member refid="structdiscord__message_1ac325084b69c1bf35bef45510ab6ce7a7" prot="public" virt="non-virtual"><scope>discord_message</scope><name>member</name></member>
+      <member refid="structdiscord__message_1a0047ccb1acbb0189f4cb51b8e286297d" prot="public" virt="non-virtual"><scope>discord_message</scope><name>mention_channels</name></member>
+      <member refid="structdiscord__message_1a9361866859ad03fbbf609a472a6336a5" prot="public" virt="non-virtual"><scope>discord_message</scope><name>mention_everyone</name></member>
+      <member refid="structdiscord__message_1af8f509c0faadec0d67d8e47d2b8afb7d" prot="public" virt="non-virtual"><scope>discord_message</scope><name>mention_roles</name></member>
+      <member refid="structdiscord__message_1abe822d891c4e93b3accacc20a6665af7" prot="public" virt="non-virtual"><scope>discord_message</scope><name>mentions</name></member>
+      <member refid="structdiscord__message_1aeb12afe052d88e2488d8aee6d6e9eea8" prot="public" virt="non-virtual"><scope>discord_message</scope><name>message_reference</name></member>
+      <member refid="structdiscord__message_1a9ce7b073536c5dda9c6f2d5cbed165f6" prot="public" virt="non-virtual"><scope>discord_message</scope><name>nonce</name></member>
+      <member refid="structdiscord__message_1aed931e5f75fbfa5f0216b301f9aab662" prot="public" virt="non-virtual"><scope>discord_message</scope><name>pinned</name></member>
+      <member refid="structdiscord__message_1a972488bd0bbb7c4ff6b09eea8efd7820" prot="public" virt="non-virtual"><scope>discord_message</scope><name>reactions</name></member>
+      <member refid="structdiscord__message_1a985926879f0a05f4487c18b74a1dc6d5" prot="public" virt="non-virtual"><scope>discord_message</scope><name>referenced_message</name></member>
+      <member refid="structdiscord__message_1adb6528b3066e5e5ab0d13abfc111882b" prot="public" virt="non-virtual"><scope>discord_message</scope><name>stickers</name></member>
+      <member refid="structdiscord__message_1adddeff7bbbb33458e0879f8e91d285d2" prot="public" virt="non-virtual"><scope>discord_message</scope><name>timestamp</name></member>
+      <member refid="structdiscord__message_1ad78515ac01b381ea3b653a5bd99695a9" prot="public" virt="non-virtual"><scope>discord_message</scope><name>tts</name></member>
+      <member refid="structdiscord__message_1a078cfa611e1f7aaa852f85c654504e72" prot="public" virt="non-virtual"><scope>discord_message</scope><name>type</name></member>
+      <member refid="structdiscord__message_1ab1d8e6c477f72532d1b8191aea030666" prot="public" virt="non-virtual"><scope>discord_message</scope><name>webhook_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
