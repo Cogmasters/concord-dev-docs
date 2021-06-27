@@ -1,0 +1,23 @@
+<map id="discord_channel" name="discord_channel">
+<area shape="rect" id="node1" title="Channel Structure." alt="" coords="1397,56,1524,83"/>
+<area shape="rect" id="node2" href="$structdiscord__channel__overwrite.html" title="Overwrite Structure." alt="" coords="1000,5,1196,32"/>
+<area shape="rect" id="node3" href="$structdiscord__message.html" title="Message Structure." alt="" coords="1031,411,1165,437"/>
+<area shape="rect" id="node4" href="$structdiscord__channel__mention.html" title="Channel Mention Structure." alt="" coords="617,208,805,235"/>
+<area shape="rect" id="node5" href="$structdiscord__message__application.html" title="Message Application Structure." alt="" coords="604,259,819,285"/>
+<area shape="rect" id="node6" href="$structdiscord__embed.html" title="Embed Structure." alt="" coords="651,309,772,336"/>
+<area shape="rect" id="node7" href="$structdiscord__embed__provider.html" title="Embed Provider Structure." alt="" coords="197,259,379,285"/>
+<area shape="rect" id="node8" href="$structdiscord__embed__image.html" title="Embed Image Structure." alt="" coords="203,309,373,336"/>
+<area shape="rect" id="node9" href="$structdiscord__embed__video.html" title="Embed Video Structure." alt="" coords="206,360,370,387"/>
+<area shape="rect" id="node10" href="$structdiscord__embed__field.html" title="Embed Field Structure." alt="" coords="210,411,366,437"/>
+<area shape="rect" id="node11" href="$structdiscord__embed__author.html" title="Embed Author Structure." alt="" coords="203,107,373,133"/>
+<area shape="rect" id="node12" href="$structdiscord__embed__thumbnail.html" title="Embed Thumbnail Structure." alt="" coords="191,157,385,184"/>
+<area shape="rect" id="node13" href="$structdiscord__embed__footer.html" title="Embed Footer Structure." alt="" coords="205,208,371,235"/>
+<area shape="rect" id="node14" href="$structdiscord__message__activity.html" title="Message Activity Structure." alt="" coords="616,360,807,387"/>
+<area shape="rect" id="node15" href="$structdiscord__user.html" title="User Structure." alt="" coords="5,479,109,505"/>
+<area shape="rect" id="node18" href="$structdiscord__emoji.html" title="Emoji Structure." alt="" coords="231,512,345,539"/>
+<area shape="rect" id="node21" href="$structdiscord__guild__member.html" title="Guild Member Structure." alt="" coords="409,563,580,589"/>
+<area shape="rect" id="node16" href="$structdiscord__message__sticker.html" title="Message Sticker Structure." alt="" coords="619,625,804,652"/>
+<area shape="rect" id="node17" href="$structdiscord__channel__reaction.html" title="Reaction Structure." alt="" coords="618,512,805,539"/>
+<area shape="rect" id="node19" href="$structdiscord__channel__attachment.html" title="Attachment Strcture." alt="" coords="607,676,816,703"/>
+<area shape="rect" id="node20" href="$structdiscord__message__reference.html" title="Message Reference Structure." alt="" coords="609,411,813,437"/>
+</map>

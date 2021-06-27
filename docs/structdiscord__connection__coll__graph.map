@@ -1,0 +1,7 @@
+<map id="discord_connection" name="discord_connection">
+<area shape="rect" id="node1" title="Connection Structure." alt="" coords="812,47,959,73"/>
+<area shape="rect" id="node2" href="$structdiscord__guild__integration.html" title="Integration Structure." alt="" coords="495,47,681,73"/>
+<area shape="rect" id="node3" href="$structdiscord__guild__integration__application.html" title="Integration Application Object." alt="" coords="183,39,369,81"/>
+<area shape="rect" id="node4" href="$structdiscord__user.html" title="User Structure." alt="" coords="5,12,109,39"/>
+<area shape="rect" id="node5" href="$structdiscord__guild__integration__account.html" title="Integration Account Structure." alt="" coords="183,105,369,146"/>
+</map>
