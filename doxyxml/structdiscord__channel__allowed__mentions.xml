@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__channel__allowed__mentions" kind="struct" language="C++" prot="public">
+    <compoundname>discord_channel_allowed_mentions</compoundname>
+    <includes refid="channel_8h" local="no">channel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__channel__allowed__mentions_1a213acdd39b760de7aeffdb9a0fb9e2ac" prot="public" static="no" mutable="no">
+        <type>ja_str **</type>
+        <definition>ja_str** discord_channel_allowed_mentions::parse</definition>
+        <argsstring></argsstring>
+        <name>parse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="1027" column="10" bodyfile="orca/specs-code/discord/channel.h" bodystart="1027" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__allowed__mentions_1ad3c670edf58ce3dbd7d139af85f44e76" prot="public" static="no" mutable="no">
+        <type>ja_u64 **</type>
+        <definition>ja_u64** discord_channel_allowed_mentions::roles</definition>
+        <argsstring></argsstring>
+        <name>roles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="1031" column="10" bodyfile="orca/specs-code/discord/channel.h" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__allowed__mentions_1a5d3fb4b6e5a3f7cf3eb6a4dd7f49754c" prot="public" static="no" mutable="no">
+        <type>ja_u64 **</type>
+        <definition>ja_u64** discord_channel_allowed_mentions::users</definition>
+        <argsstring></argsstring>
+        <name>users</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="1035" column="10" bodyfile="orca/specs-code/discord/channel.h" bodystart="1035" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__allowed__mentions_1aaa844a5f6389887a004873c8388234d6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_channel_allowed_mentions::replied_user</definition>
+        <argsstring></argsstring>
+        <name>replied_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="1039" column="8" bodyfile="orca/specs-code/discord/channel.h" bodystart="1039" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Allowed Mentions Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#allowed-mentions-object-allowed-mentions-structure">https://discord.com/developers/docs/resources/channel#allowed-mentions-object-allowed-mentions-structure</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.json:311:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.h" line="1024" column="39" bodyfile="orca/specs-code/discord/channel.h" bodystart="1024" bodyend="1055"/>
+    <listofallmembers>
+      <member refid="structdiscord__channel__allowed__mentions_1a213acdd39b760de7aeffdb9a0fb9e2ac" prot="public" virt="non-virtual"><scope>discord_channel_allowed_mentions</scope><name>parse</name></member>
+      <member refid="structdiscord__channel__allowed__mentions_1aaa844a5f6389887a004873c8388234d6" prot="public" virt="non-virtual"><scope>discord_channel_allowed_mentions</scope><name>replied_user</name></member>
+      <member refid="structdiscord__channel__allowed__mentions_1ad3c670edf58ce3dbd7d139af85f44e76" prot="public" virt="non-virtual"><scope>discord_channel_allowed_mentions</scope><name>roles</name></member>
+      <member refid="structdiscord__channel__allowed__mentions_1a5d3fb4b6e5a3f7cf3eb6a4dd7f49754c" prot="public" virt="non-virtual"><scope>discord_channel_allowed_mentions</scope><name>users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

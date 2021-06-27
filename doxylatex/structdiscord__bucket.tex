@@ -1,0 +1,57 @@
+\hypertarget{structdiscord__bucket}{}\doxysection{discord\+\_\+bucket Struct Reference}
+\label{structdiscord__bucket}\index{discord\_bucket@{discord\_bucket}}
+
+
+The bucket struct that will handle ratelimiting.  
+
+
+
+
+{\ttfamily \#include $<$discord-\/internal.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdiscord__bucket_aeef4fc5b96d858c6ec5e2071a95d595f}\label{structdiscord__bucket_aeef4fc5b96d858c6ec5e2071a95d595f}} 
+char \mbox{\hyperlink{structdiscord__bucket_aeef4fc5b96d858c6ec5e2071a95d595f}{route}} \mbox{[}256\mbox{]}
+\begin{DoxyCompactList}\small\item\em this bucket \textquotesingle{}key\textquotesingle{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__bucket_ac67b2ad453a4224a780784e05f7669d8}\label{structdiscord__bucket_ac67b2ad453a4224a780784e05f7669d8}} 
+char \mbox{\hyperlink{structdiscord__bucket_ac67b2ad453a4224a780784e05f7669d8}{hash}} \mbox{[}128\mbox{]}
+\begin{DoxyCompactList}\small\item\em the unique hash associated with this bucket \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__bucket_ac945c8ad595f5fe1c0265156fb939813}\label{structdiscord__bucket_ac945c8ad595f5fe1c0265156fb939813}} 
+int \mbox{\hyperlink{structdiscord__bucket_ac945c8ad595f5fe1c0265156fb939813}{busy}}
+\begin{DoxyCompactList}\small\item\em amount of busy connections that have not yet finished its requests \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__bucket_afbf7b738447cf6ce2ba70eada7b4c06a}\label{structdiscord__bucket_afbf7b738447cf6ce2ba70eada7b4c06a}} 
+int \mbox{\hyperlink{structdiscord__bucket_afbf7b738447cf6ce2ba70eada7b4c06a}{remaining}}
+\begin{DoxyCompactList}\small\item\em connections this bucket can do before waiting for cooldown \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__bucket_a27851d72383d8f7ac3eadb75e4c7d9b8}\label{structdiscord__bucket_a27851d72383d8f7ac3eadb75e4c7d9b8}} 
+int64\+\_\+t \mbox{\hyperlink{structdiscord__bucket_a27851d72383d8f7ac3eadb75e4c7d9b8}{reset\+\_\+after\+\_\+ms}}
+\begin{DoxyCompactList}\small\item\em how long until cooldown timer resets \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__bucket_a05dedaa37f1e2e10de0be17e5dd00904}\label{structdiscord__bucket_a05dedaa37f1e2e10de0be17e5dd00904}} 
+\mbox{\hyperlink{discord_8h_a8c10c2449cb2148f47b8a032af96dd60}{u64\+\_\+unix\+\_\+ms\+\_\+t}} \mbox{\hyperlink{structdiscord__bucket_a05dedaa37f1e2e10de0be17e5dd00904}{reset\+\_\+tstamp}}
+\begin{DoxyCompactList}\small\item\em timestamp of when cooldown timer resets \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__bucket_a157a3a73fb075e1bb721b5e35a798138}\label{structdiscord__bucket_a157a3a73fb075e1bb721b5e35a798138}} 
+\mbox{\hyperlink{discord_8h_a8c10c2449cb2148f47b8a032af96dd60}{u64\+\_\+unix\+\_\+ms\+\_\+t}} \mbox{\hyperlink{structdiscord__bucket_a157a3a73fb075e1bb721b5e35a798138}{update\+\_\+tstamp}}
+\begin{DoxyCompactList}\small\item\em timestamp of the most recent request \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__bucket_a268f5f36225ae82f4640704eea74adf2}\label{structdiscord__bucket_a268f5f36225ae82f4640704eea74adf2}} 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{structdiscord__bucket_a268f5f36225ae82f4640704eea74adf2}{lock}}
+\begin{DoxyCompactList}\small\item\em synchronize buckets between threads \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__bucket_aa95f113e0b49e84dbc1aa3aea11d1d56}\label{structdiscord__bucket_aa95f113e0b49e84dbc1aa3aea11d1d56}} 
+pthread\+\_\+cond\+\_\+t {\bfseries cond}
+\item 
+\mbox{\Hypertarget{structdiscord__bucket_a53523eeac146fe4f8e0aaea713b3ca1d}\label{structdiscord__bucket_a53523eeac146fe4f8e0aaea713b3ca1d}} 
+U\+T\+\_\+hash\+\_\+handle \mbox{\hyperlink{structdiscord__bucket_a53523eeac146fe4f8e0aaea713b3ca1d}{hh}}
+\begin{DoxyCompactList}\small\item\em makes this structure hashable \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The bucket struct that will handle ratelimiting. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/topics/rate-limits}{\texttt{ https\+://discord.\+com/developers/docs/topics/rate-\/limits}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/lucasmull/\+Trabalho/orca/\mbox{\hyperlink{discord-internal_8h}{discord-\/internal.\+h}}\end{DoxyCompactItemize}

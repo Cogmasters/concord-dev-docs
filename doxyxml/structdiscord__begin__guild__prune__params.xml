@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__begin__guild__prune__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_begin_guild_prune_params</compoundname>
+    <includes refid="guild_8endpoints-params_8h" local="no">guild.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__begin__guild__prune__params_1a3a6be6e5234c8a1e6e03b21b09c3f05c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_begin_guild_prune_params::days</definition>
+        <argsstring></argsstring>
+        <name>days</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="762" column="7" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__begin__guild__prune__params_1aad404413e96d53ec503480b8135e7426" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_begin_guild_prune_params::compute_prune_count</definition>
+        <argsstring></argsstring>
+        <name>compute_prune_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="766" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__begin__guild__prune__params_1a3c83eadb4061f028d72c877d9513e0c0" prot="public" static="no" mutable="no">
+        <type>ja_u64 **</type>
+        <definition>ja_u64** discord_begin_guild_prune_params::include_roles</definition>
+        <argsstring></argsstring>
+        <name>include_roles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="770" column="10" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__begin__guild__prune__params_1a1d9e37bf43fdd435e48d639d6a7411de" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_begin_guild_prune_params::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="774" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Begin Guild Prune. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#begin-guild-prune-json-params">https://discord.com/developers/docs/resources/guild#begin-guild-prune-json-params</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/guild.endpoints-params.json:179:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/guild.endpoints-params.h" line="759" column="39" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="759" bodyend="790"/>
+    <listofallmembers>
+      <member refid="structdiscord__begin__guild__prune__params_1aad404413e96d53ec503480b8135e7426" prot="public" virt="non-virtual"><scope>discord_begin_guild_prune_params</scope><name>compute_prune_count</name></member>
+      <member refid="structdiscord__begin__guild__prune__params_1a3a6be6e5234c8a1e6e03b21b09c3f05c" prot="public" virt="non-virtual"><scope>discord_begin_guild_prune_params</scope><name>days</name></member>
+      <member refid="structdiscord__begin__guild__prune__params_1a3c83eadb4061f028d72c877d9513e0c0" prot="public" virt="non-virtual"><scope>discord_begin_guild_prune_params</scope><name>include_roles</name></member>
+      <member refid="structdiscord__begin__guild__prune__params_1a1d9e37bf43fdd435e48d639d6a7411de" prot="public" virt="non-virtual"><scope>discord_begin_guild_prune_params</scope><name>reason</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

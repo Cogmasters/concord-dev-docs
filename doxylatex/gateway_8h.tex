@@ -1,0 +1,428 @@
+\hypertarget{gateway_8h}{}\doxysection{orca/specs-\/code/discord/gateway.h File Reference}
+\label{gateway_8h}\index{orca/specs-\/code/discord/gateway.h@{orca/specs-\/code/discord/gateway.h}}
+
+
+Specs generated file.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}}
+\begin{DoxyCompactList}\small\item\em Identify Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}}
+\begin{DoxyCompactList}\small\item\em Gateway Status Update Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}}
+\begin{DoxyCompactList}\small\item\em Identify Connection Properties. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}}
+\begin{DoxyCompactList}\small\item\em Activity Structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{gateway_8h_aa4973a549061e20fb2db80abf0d43ca2}\label{gateway_8h_aa4973a549061e20fb2db80abf0d43ca2}} 
+enum {\bfseries discord\+\_\+gateway\+\_\+close\+\_\+opcodes} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+OR} = 4000, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+O\+P\+C\+O\+DE} = 4001, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+E\+R\+R\+OR} = 4002, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+N\+O\+T\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+ED} = 4003, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED} = 4004, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+ED} = 4005, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+E\+Q\+U\+E\+N\+CE} = 4007, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+R\+A\+T\+E\+\_\+\+L\+I\+M\+I\+T\+ED} = 4008, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+I\+M\+E\+D\+\_\+\+O\+UT} = 4009, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+H\+A\+RD} = 4010, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+S\+H\+A\+R\+D\+I\+N\+G\+\_\+\+R\+E\+Q\+U\+I\+R\+ED} = 4011, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON} = 4012, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+T\+E\+N\+TS} = 4013, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+C\+L\+O\+S\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+E\+D\+\_\+\+I\+N\+T\+E\+N\+TS} = 4014
+ \}
+\item 
+\mbox{\Hypertarget{gateway_8h_a91803313c766c49777f50921b7027aeb}\label{gateway_8h_a91803313c766c49777f50921b7027aeb}} 
+enum {\bfseries discord\+\_\+gateway\+\_\+intents} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+DS} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+M\+B\+E\+RS} = 2, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+B\+A\+NS} = 4, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+E\+M\+O\+J\+IS} = 8, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+NS} = 16, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+W\+E\+B\+H\+O\+O\+KS} = 32, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+I\+N\+V\+I\+T\+ES} = 64, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+V\+O\+I\+C\+E\+\_\+\+S\+T\+A\+T\+ES} = 128, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+P\+R\+E\+S\+E\+N\+C\+ES} = 256, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+S\+S\+A\+G\+ES} = 512, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+C\+T\+I\+O\+NS} = 1024, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+T\+Y\+P\+I\+NG} = 2048, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+M\+E\+S\+S\+A\+G\+ES} = 4096, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+C\+T\+I\+O\+NS} = 8192, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+T\+Y\+P\+I\+NG} = 16384
+ \}
+\item 
+\mbox{\Hypertarget{gateway_8h_a086cfb51d525fc1bf2ac93eb4ed085fe}\label{gateway_8h_a086cfb51d525fc1bf2ac93eb4ed085fe}} 
+enum {\bfseries discord\+\_\+gateway\+\_\+opcodes} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+D\+I\+S\+P\+A\+T\+CH} = 0, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+H\+E\+A\+R\+T\+B\+E\+AT} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+I\+D\+E\+N\+T\+I\+FY} = 2, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+P\+R\+E\+S\+E\+N\+C\+E\+\_\+\+U\+P\+D\+A\+TE} = 3, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+V\+O\+I\+C\+E\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P\+D\+A\+TE} = 4, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+R\+E\+S\+U\+ME} = 6, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+R\+E\+C\+O\+N\+N\+E\+CT} = 7, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+M\+B\+E\+RS} = 8, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+E\+S\+S\+I\+ON} = 9, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+H\+E\+L\+LO} = 10, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+A\+CK} = 11
+ \}
+\item 
+\mbox{\Hypertarget{gateway_8h_a90ebb76de1682ce02a67a08b0510145b}\label{gateway_8h_a90ebb76de1682ce02a67a08b0510145b}} 
+enum {\bfseries discord\+\_\+gateway\+\_\+events} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+N\+O\+NE} = 0, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+C\+R\+E\+A\+TE} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+U\+P\+D\+A\+TE} = 2, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+D\+E\+L\+E\+TE} = 3, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+R\+O\+L\+E\+\_\+\+C\+R\+E\+A\+TE} = 4, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+R\+O\+L\+E\+\_\+\+U\+P\+D\+A\+TE} = 5, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+R\+O\+L\+E\+\_\+\+D\+E\+L\+E\+TE} = 6, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+DD} = 7, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+U\+P\+D\+A\+TE} = 8, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+R\+E\+M\+O\+VE} = 9, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+B\+A\+N\+\_\+\+A\+DD} = 10, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+B\+A\+N\+\_\+\+R\+E\+M\+O\+VE} = 11, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+E\+M\+O\+J\+I\+S\+\_\+\+U\+P\+D\+A\+TE} = 12, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+G\+U\+I\+L\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+S\+\_\+\+U\+P\+D\+A\+TE} = 13, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+R\+E\+A\+TE} = 14, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+U\+P\+D\+A\+TE} = 15, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+D\+E\+L\+E\+TE} = 16, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+I\+N\+S\+\_\+\+U\+P\+D\+A\+TE} = 17, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+I\+N\+V\+I\+T\+E\+\_\+\+C\+R\+E\+A\+TE} = 18, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+I\+N\+V\+I\+T\+E\+\_\+\+D\+E\+L\+E\+TE} = 19, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+C\+R\+E\+A\+TE} = 20, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+U\+P\+D\+A\+TE} = 21, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+D\+E\+L\+E\+TE} = 22, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+B\+U\+LK} = 23, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+C\+T\+I\+O\+N\+\_\+\+A\+DD} = 24, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+VE} = 25, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+LL} = 26, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+E\+M\+O\+JI} = 27, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+W\+E\+B\+H\+O\+O\+K\+S\+\_\+\+U\+P\+D\+A\+TE} = 28, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+V\+O\+I\+C\+E\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P\+D\+A\+TE} = 29, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+V\+O\+I\+C\+E\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+U\+P\+D\+A\+TE} = 30, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+P\+R\+E\+S\+E\+N\+C\+E\+\_\+\+U\+P\+D\+A\+TE} = 31, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+T\+Y\+P\+I\+N\+G\+\_\+\+S\+T\+A\+RT} = 32, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+R\+E\+A\+DY} = 33, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+R\+E\+S\+U\+M\+ED} = 34
+ \}
+\item 
+\mbox{\Hypertarget{gateway_8h_a153f708f0818f7e2b1682ec275332c0b}\label{gateway_8h_a153f708f0818f7e2b1682ec275332c0b}} 
+enum {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+types} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+G\+A\+ME} = 0, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+S\+T\+R\+E\+A\+M\+I\+NG} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+L\+I\+S\+T\+E\+N\+I\+NG} = 2, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+C\+U\+S\+T\+OM} = 4, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+C\+O\+M\+P\+E\+T\+I\+NG} = 5
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{gateway_8h_ace9ac1e3cf41622f7721d1054454cded}\label{gateway_8h_ace9ac1e3cf41622f7721d1054454cded}} 
+char $\ast$ {\bfseries discord\+\_\+gateway\+\_\+close\+\_\+opcodes\+\_\+to\+\_\+string} (enum discord\+\_\+gateway\+\_\+close\+\_\+opcodes)
+\item 
+\mbox{\Hypertarget{gateway_8h_a895206d69deedff41495ab8d4a572df5}\label{gateway_8h_a895206d69deedff41495ab8d4a572df5}} 
+enum discord\+\_\+gateway\+\_\+close\+\_\+opcodes {\bfseries discord\+\_\+gateway\+\_\+close\+\_\+opcodes\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_af62c683831ab4745fc4244775dac2b86}\label{gateway_8h_af62c683831ab4745fc4244775dac2b86}} 
+bool {\bfseries discord\+\_\+gateway\+\_\+close\+\_\+opcodes\+\_\+has} (enum discord\+\_\+gateway\+\_\+close\+\_\+opcodes, char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_a810b1237988bff656c208d80e5ac07b1}\label{gateway_8h_a810b1237988bff656c208d80e5ac07b1}} 
+char $\ast$ {\bfseries discord\+\_\+gateway\+\_\+intents\+\_\+to\+\_\+string} (enum discord\+\_\+gateway\+\_\+intents)
+\item 
+\mbox{\Hypertarget{gateway_8h_aa372e1c69a1991762da559c7fa43967b}\label{gateway_8h_aa372e1c69a1991762da559c7fa43967b}} 
+enum discord\+\_\+gateway\+\_\+intents {\bfseries discord\+\_\+gateway\+\_\+intents\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_abad233cd72b68e76ddbe07d3278b50e6}\label{gateway_8h_abad233cd72b68e76ddbe07d3278b50e6}} 
+bool {\bfseries discord\+\_\+gateway\+\_\+intents\+\_\+has} (enum discord\+\_\+gateway\+\_\+intents, char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_a74c82ef49daf98d2eb3e8d05b39dcbb7}\label{gateway_8h_a74c82ef49daf98d2eb3e8d05b39dcbb7}} 
+char $\ast$ {\bfseries discord\+\_\+gateway\+\_\+opcodes\+\_\+to\+\_\+string} (enum discord\+\_\+gateway\+\_\+opcodes)
+\item 
+\mbox{\Hypertarget{gateway_8h_a5aa2df7fd4638ed4e8a3c04be85f01b1}\label{gateway_8h_a5aa2df7fd4638ed4e8a3c04be85f01b1}} 
+enum discord\+\_\+gateway\+\_\+opcodes {\bfseries discord\+\_\+gateway\+\_\+opcodes\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_a6d1bc63becc598f6c68a71eeef063336}\label{gateway_8h_a6d1bc63becc598f6c68a71eeef063336}} 
+bool {\bfseries discord\+\_\+gateway\+\_\+opcodes\+\_\+has} (enum discord\+\_\+gateway\+\_\+opcodes, char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_adc98be13c133abb0fff60d8b4bceda6b}\label{gateway_8h_adc98be13c133abb0fff60d8b4bceda6b}} 
+char $\ast$ {\bfseries discord\+\_\+gateway\+\_\+events\+\_\+to\+\_\+string} (enum discord\+\_\+gateway\+\_\+events)
+\item 
+\mbox{\Hypertarget{gateway_8h_aeb8424f039d707c9f4b839900717ef5c}\label{gateway_8h_aeb8424f039d707c9f4b839900717ef5c}} 
+enum discord\+\_\+gateway\+\_\+events {\bfseries discord\+\_\+gateway\+\_\+events\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_a1a5edec377445780c93a07aee3ed3574}\label{gateway_8h_a1a5edec377445780c93a07aee3ed3574}} 
+bool {\bfseries discord\+\_\+gateway\+\_\+events\+\_\+has} (enum discord\+\_\+gateway\+\_\+events, char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_a983d7e53007d86ec6d6493157d758ba9}\label{gateway_8h_a983d7e53007d86ec6d6493157d758ba9}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a3541c678b7e0967a6418383f2442796e}\label{gateway_8h_a3541c678b7e0967a6418383f2442796e}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a67e5a2f9a3ec0162ec48c02ca835b849}\label{gateway_8h_a67e5a2f9a3ec0162ec48c02ca835b849}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a3d49e59f940f28cc18c4c0ea657620b6}\label{gateway_8h_a3d49e59f940f28cc18c4c0ea657620b6}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+init} (struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a08ca1cf52e58471a1945fa7f55c443f2}\label{gateway_8h_a08ca1cf52e58471a1945fa7f55c443f2}} 
+struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$ {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{gateway_8h_a86761d25e9196f40589488c6bf7db32e}\label{gateway_8h_a86761d25e9196f40589488c6bf7db32e}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a576b7e20a5bb4fcbf4a20a17de202708}\label{gateway_8h_a576b7e20a5bb4fcbf4a20a17de202708}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+free} (struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a402f3e7604469fa981bd58a9eafc906c}\label{gateway_8h_a402f3e7604469fa981bd58a9eafc906c}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a22f5d95e7e89ef4bdc8bdcaf5f391a14}\label{gateway_8h_a22f5d95e7e89ef4bdc8bdcaf5f391a14}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_aa4f3f18f8bea0db4d5974f3ce994895a}\label{gateway_8h_aa4f3f18f8bea0db4d5974f3ce994895a}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a71823947702427c3dfac550357bf1315}\label{gateway_8h_a71823947702427c3dfac550357bf1315}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_adae3355ad4107cfc3d677d71f3a32f36}\label{gateway_8h_adae3355ad4107cfc3d677d71f3a32f36}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a27a1778b2475563f370eabebdb894405}\label{gateway_8h_a27a1778b2475563f370eabebdb894405}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a49aaa2f57f98843b34b66671baecd1b4}\label{gateway_8h_a49aaa2f57f98843b34b66671baecd1b4}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a7c5db2a20e7f9a57caa62718592e773d}\label{gateway_8h_a7c5db2a20e7f9a57caa62718592e773d}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a0dfcd0a2c33d59419ba40b5ccbf256ee}\label{gateway_8h_a0dfcd0a2c33d59419ba40b5ccbf256ee}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ad067dc4c1b2c93aaea38db36592c8cb3}\label{gateway_8h_ad067dc4c1b2c93aaea38db36592c8cb3}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a5f5b42c08fb15aa0c1765e0df623c7c9}\label{gateway_8h_a5f5b42c08fb15aa0c1765e0df623c7c9}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a1996f091436bc9e5cc5956ded11a8740}\label{gateway_8h_a1996f091436bc9e5cc5956ded11a8740}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify}{discord\+\_\+gateway\+\_\+identify}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_af8301891191a75c5d33a3c8e0fe6f85b}\label{gateway_8h_af8301891191a75c5d33a3c8e0fe6f85b}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a33784070e3a13e910a44d9f894096bd6}\label{gateway_8h_a33784070e3a13e910a44d9f894096bd6}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a0b42fa12d00882dc3111e7ba595cd182}\label{gateway_8h_a0b42fa12d00882dc3111e7ba595cd182}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_aebfc073fc8c686b8da0825a2e8d5bbe9}\label{gateway_8h_aebfc073fc8c686b8da0825a2e8d5bbe9}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+init} (struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_af702f81f30d6a6a8ed9b4cc743fc7c42}\label{gateway_8h_af702f81f30d6a6a8ed9b4cc743fc7c42}} 
+struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$ {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{gateway_8h_a90bd69490bd2aa809dae37f56f5c42a6}\label{gateway_8h_a90bd69490bd2aa809dae37f56f5c42a6}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_af43061dae1c51cc4bd3add0e4575361d}\label{gateway_8h_af43061dae1c51cc4bd3add0e4575361d}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+free} (struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a221daa88c6a5409d84c27e8f56f3cd15}\label{gateway_8h_a221daa88c6a5409d84c27e8f56f3cd15}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_abcb78f05363194d74f6448b0c46787cf}\label{gateway_8h_abcb78f05363194d74f6448b0c46787cf}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a8e66bce9218438ba0818cec3c9519615}\label{gateway_8h_a8e66bce9218438ba0818cec3c9519615}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ad29861a97a757990853a62c3046f6c15}\label{gateway_8h_ad29861a97a757990853a62c3046f6c15}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_aa48e4ea05d39988a07494a615da8ab20}\label{gateway_8h_aa48e4ea05d39988a07494a615da8ab20}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a0059c83be4dd4e03d70236e1f246c1bc}\label{gateway_8h_a0059c83be4dd4e03d70236e1f246c1bc}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a6593e40d5081cba8380bd2b23e59d66f}\label{gateway_8h_a6593e40d5081cba8380bd2b23e59d66f}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a26a3c44a481acea81b2644884ea138fb}\label{gateway_8h_a26a3c44a481acea81b2644884ea138fb}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_acc25bdb722904746a47d525fac8ce154}\label{gateway_8h_acc25bdb722904746a47d525fac8ce154}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_aa3624f88a4d8c2e02c0143f46d1ed359}\label{gateway_8h_aa3624f88a4d8c2e02c0143f46d1ed359}} 
+void {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a921bad641b4a3e5e44c57559b1ddaf51}\label{gateway_8h_a921bad641b4a3e5e44c57559b1ddaf51}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_aa6bf1f726dc837e3b3efcb3d7d75ff2b}\label{gateway_8h_aa6bf1f726dc837e3b3efcb3d7d75ff2b}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+status\+\_\+update\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a33f6edf801e1b71fa885cf6f5ac50938}\label{gateway_8h_a33f6edf801e1b71fa885cf6f5ac50938}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_adb9d6b9588792abe2069625c2a01bfb1}\label{gateway_8h_adb9d6b9588792abe2069625c2a01bfb1}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_afea143b5be8b08b27b48f46e7dfcf203}\label{gateway_8h_afea143b5be8b08b27b48f46e7dfcf203}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a8f68ebd592a0fdbaae1eaddc05e03fbb}\label{gateway_8h_a8f68ebd592a0fdbaae1eaddc05e03fbb}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+init} (struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a8917ccc8d0d9f73681e9a19a1a9758fc}\label{gateway_8h_a8917ccc8d0d9f73681e9a19a1a9758fc}} 
+struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$ {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{gateway_8h_a4ce4fbee042eec2fbc7e267dd0346c5d}\label{gateway_8h_a4ce4fbee042eec2fbc7e267dd0346c5d}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ae65729e24c1400b7931569b6ba3d88a7}\label{gateway_8h_ae65729e24c1400b7931569b6ba3d88a7}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+free} (struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a0a8d877a45b0e6dba2b0e7dbcbf5ec0d}\label{gateway_8h_a0a8d877a45b0e6dba2b0e7dbcbf5ec0d}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a441e33a8fd780614295f99cea16ffd7d}\label{gateway_8h_a441e33a8fd780614295f99cea16ffd7d}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a95c467a92105e6fd75c83c229f4a13e6}\label{gateway_8h_a95c467a92105e6fd75c83c229f4a13e6}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a14f45359c6c25c090c542a1406d8e1a7}\label{gateway_8h_a14f45359c6c25c090c542a1406d8e1a7}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ad5e6247773e7ab8739d9249160ba980a}\label{gateway_8h_ad5e6247773e7ab8739d9249160ba980a}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a47021d4d513e8a7110230c10db88601b}\label{gateway_8h_a47021d4d513e8a7110230c10db88601b}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a7522af1a0774a7f56a40e5b456c904ac}\label{gateway_8h_a7522af1a0774a7f56a40e5b456c904ac}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a9db7ced6d43af79e346ec052c9ca6c03}\label{gateway_8h_a9db7ced6d43af79e346ec052c9ca6c03}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_aecadb759e96ed568f6b09d6c77548006}\label{gateway_8h_aecadb759e96ed568f6b09d6c77548006}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a80163167509ccd17d696845877e35b91}\label{gateway_8h_a80163167509ccd17d696845877e35b91}} 
+void {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ae7f79e4170f6616645e0e5a7279e274c}\label{gateway_8h_ae7f79e4170f6616645e0e5a7279e274c}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a1bb50dd6e47b0b28257cf780602534ce}\label{gateway_8h_a1bb50dd6e47b0b28257cf780602534ce}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+identify\+\_\+connection\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ab3761b83c702eb17c4811dfd92521686}\label{gateway_8h_ab3761b83c702eb17c4811dfd92521686}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a7e686c5cf71e041960a929b5a889073b}\label{gateway_8h_a7e686c5cf71e041960a929b5a889073b}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a5d1d69aed98ce2429bcf54d8d066b4b6}\label{gateway_8h_a5d1d69aed98ce2429bcf54d8d066b4b6}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_abe86c659d6da3d6583d0804aa7431014}\label{gateway_8h_abe86c659d6da3d6583d0804aa7431014}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+init} (struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_acf780d7dc63a98240ad7d4818498f90c}\label{gateway_8h_acf780d7dc63a98240ad7d4818498f90c}} 
+struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$ {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{gateway_8h_a5b44551df91f73060267bec1fd4c3597}\label{gateway_8h_a5b44551df91f73060267bec1fd4c3597}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_adcb1c5e3a22dce2c9ec542e263531e78}\label{gateway_8h_adcb1c5e3a22dce2c9ec542e263531e78}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+free} (struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_aaf6285eb5d53505821c46333f961bc74}\label{gateway_8h_aaf6285eb5d53505821c46333f961bc74}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a974046ad7c179c60e7b8c9b2a4e31772}\label{gateway_8h_a974046ad7c179c60e7b8c9b2a4e31772}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ab80f5ada7ddd8c9365bebd7b7e0efffb}\label{gateway_8h_ab80f5ada7ddd8c9365bebd7b7e0efffb}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a371bd3d8e458c4c2fe6695ad47fc9a0b}\label{gateway_8h_a371bd3d8e458c4c2fe6695ad47fc9a0b}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ae9ca20101d00e5497758033f3abc8fc0}\label{gateway_8h_ae9ca20101d00e5497758033f3abc8fc0}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a2481337f3f2ea22ca1a9a5a2d6d9f558}\label{gateway_8h_a2481337f3f2ea22ca1a9a5a2d6d9f558}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a961c344e01d674b4ea4d1ff13079a62e}\label{gateway_8h_a961c344e01d674b4ea4d1ff13079a62e}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a5a54eb3a113e0d4d9480cf28808382fa}\label{gateway_8h_a5a54eb3a113e0d4d9480cf28808382fa}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a30ee92316e1dca133bcb1c26feed2778}\label{gateway_8h_a30ee92316e1dca133bcb1c26feed2778}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a8d42ec5a8832dc167306601bd300b48a}\label{gateway_8h_a8d42ec5a8832dc167306601bd300b48a}} 
+void {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_abafcb0f667a825ac8ec725a09b51a439}\label{gateway_8h_abafcb0f667a825ac8ec725a09b51a439}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_a3fbdf3c2a59ba7307e9c3b6d49279634}\label{gateway_8h_a3fbdf3c2a59ba7307e9c3b6d49279634}} 
+size\+\_\+t {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__gateway__activity}{discord\+\_\+gateway\+\_\+activity}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{gateway_8h_ae85812c757d58d3ca14d3fc12eb3fabc}\label{gateway_8h_ae85812c757d58d3ca14d3fc12eb3fabc}} 
+char $\ast$ {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+types\+\_\+to\+\_\+string} (enum discord\+\_\+gateway\+\_\+activity\+\_\+types)
+\item 
+\mbox{\Hypertarget{gateway_8h_aaa0079e5b518b7a4403746f40daa3025}\label{gateway_8h_aaa0079e5b518b7a4403746f40daa3025}} 
+enum discord\+\_\+gateway\+\_\+activity\+\_\+types {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+types\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{gateway_8h_af30c5c166fd9c9706f96c5bd3a169a39}\label{gateway_8h_af30c5c166fd9c9706f96c5bd3a169a39}} 
+bool {\bfseries discord\+\_\+gateway\+\_\+activity\+\_\+types\+\_\+has} (enum discord\+\_\+gateway\+\_\+activity\+\_\+types, char $\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Specs generated file. 
+
+\begin{DoxyAuthor}{Author}
+cee-\/studio 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21 Jun 2021 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/topics/gateway}{\texttt{ https\+://discord.\+com/developers/docs/topics/gateway}} 
+\end{DoxySeeAlso}

@@ -1,0 +1,5 @@
+<map id="discord_audit_log_entry" name="discord_audit_log_entry">
+<area shape="rect" id="node1" title="Audit Log Entry Structure." alt="" coords="109,109,287,136"/>
+<area shape="rect" id="node2" href="$structdiscord__audit__log__entry__optional__info.html" title="Optional Audit Entry Info Structure." alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node3" href="$structdiscord__audit__log__change.html" title="Audit Log Change Structure." alt="" coords="207,13,397,39"/>
+</map>

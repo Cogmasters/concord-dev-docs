@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__voice__region" kind="struct" language="C++" prot="public">
+    <compoundname>discord_voice_region</compoundname>
+    <includes refid="voice_8h" local="no">voice.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__voice__region_1a51158e72f6e56f36691a71217a2df8bd" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_voice_region::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="110" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__region_1a791ed00d6b4d227387eb9db38ae08de1" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_voice_region::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="114" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__region_1a89889eb9c16e4f5b07717bfbcb07be4a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_region::vip</definition>
+        <argsstring></argsstring>
+        <name>vip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="118" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__region_1ae29fa000a923cf5061a8966f773c0019" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_region::optimal</definition>
+        <argsstring></argsstring>
+        <name>optimal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="122" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__region_1a6128f58102d1422736404f1244bd2275" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_region::deprecated</definition>
+        <argsstring></argsstring>
+        <name>deprecated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="126" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__region_1a65f8ecc035e31344c6b4c06e72c6d68e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_region::custom</definition>
+        <argsstring></argsstring>
+        <name>custom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="130" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Voice Region Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice#voice-region-object-voice-region-structure">https://discord.com/developers/docs/resources/voice#voice-region-object-voice-region-structure</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/voice.json:29:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/voice.h" line="107" column="27" bodyfile="orca/specs-code/discord/voice.h" bodystart="107" bodyend="146"/>
+    <listofallmembers>
+      <member refid="structdiscord__voice__region_1a65f8ecc035e31344c6b4c06e72c6d68e" prot="public" virt="non-virtual"><scope>discord_voice_region</scope><name>custom</name></member>
+      <member refid="structdiscord__voice__region_1a6128f58102d1422736404f1244bd2275" prot="public" virt="non-virtual"><scope>discord_voice_region</scope><name>deprecated</name></member>
+      <member refid="structdiscord__voice__region_1a51158e72f6e56f36691a71217a2df8bd" prot="public" virt="non-virtual"><scope>discord_voice_region</scope><name>id</name></member>
+      <member refid="structdiscord__voice__region_1a791ed00d6b4d227387eb9db38ae08de1" prot="public" virt="non-virtual"><scope>discord_voice_region</scope><name>name</name></member>
+      <member refid="structdiscord__voice__region_1ae29fa000a923cf5061a8966f773c0019" prot="public" virt="non-virtual"><scope>discord_voice_region</scope><name>optimal</name></member>
+      <member refid="structdiscord__voice__region_1a89889eb9c16e4f5b07717bfbcb07be4a" prot="public" virt="non-virtual"><scope>discord_voice_region</scope><name>vip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

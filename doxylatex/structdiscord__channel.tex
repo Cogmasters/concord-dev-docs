@@ -1,0 +1,96 @@
+\hypertarget{structdiscord__channel}{}\doxysection{discord\+\_\+channel Struct Reference}
+\label{structdiscord__channel}\index{discord\_channel@{discord\_channel}}
+
+
+Channel Structure.  
+
+
+
+
+{\ttfamily \#include $<$channel.\+h$>$}
+
+
+
+Collaboration diagram for discord\+\_\+channel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structdiscord__channel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a72def7e9263a007d0db6ec38c8768fcd}\label{structdiscord__channel_a72def7e9263a007d0db6ec38c8768fcd}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries id}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a6c9ff1bbeb02a93eed831fad009996ca}\label{structdiscord__channel_a6c9ff1bbeb02a93eed831fad009996ca}} 
+enum discord\+\_\+channel\+\_\+types {\bfseries type}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a9dc6f38631f96f32d45f23c1ed934efa}\label{structdiscord__channel_a9dc6f38631f96f32d45f23c1ed934efa}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries guild\+\_\+id}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a9f4bedc816990229576468649b8469e1}\label{structdiscord__channel_a9f4bedc816990229576468649b8469e1}} 
+int {\bfseries position}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_ac09a20dc5b950b09cf1ac03c506fd9aa}\label{structdiscord__channel_ac09a20dc5b950b09cf1ac03c506fd9aa}} 
+struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$$\ast$ {\bfseries permission\+\_\+overwrites}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_abf82332a3063d81a4cc92129217b7ee3}\label{structdiscord__channel_abf82332a3063d81a4cc92129217b7ee3}} 
+char {\bfseries name} \mbox{[}M\+A\+X\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN\mbox{]}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a40137d531ffef3cc1ad6c0cd75dddd73}\label{structdiscord__channel_a40137d531ffef3cc1ad6c0cd75dddd73}} 
+char {\bfseries topic} \mbox{[}M\+A\+X\+\_\+\+T\+O\+P\+I\+C\+\_\+\+L\+EN\mbox{]}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_ab5467297c0038a929463958d3fb38d21}\label{structdiscord__channel_ab5467297c0038a929463958d3fb38d21}} 
+bool {\bfseries nsfw}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_abb434e59ded45e956d15bd0126625fc0}\label{structdiscord__channel_abb434e59ded45e956d15bd0126625fc0}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries last\+\_\+message\+\_\+id}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a46819a74f40cf5bc67d9a91da17d2836}\label{structdiscord__channel_a46819a74f40cf5bc67d9a91da17d2836}} 
+int {\bfseries bitrate}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a28474740decb67bc753cd8b2fffd9680}\label{structdiscord__channel_a28474740decb67bc753cd8b2fffd9680}} 
+int {\bfseries user\+\_\+limit}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_ac762604c5b82f4f9877111cbc75ec421}\label{structdiscord__channel_ac762604c5b82f4f9877111cbc75ec421}} 
+int {\bfseries rate\+\_\+limit\+\_\+per\+\_\+user}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a3ab4703040aa87f70c1b94ab38a67620}\label{structdiscord__channel_a3ab4703040aa87f70c1b94ab38a67620}} 
+struct \mbox{\hyperlink{structdiscord__user}{discord\+\_\+user}} $\ast$$\ast$ {\bfseries recipients}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_aafedb1257dd3d9008b23cc2492462f5b}\label{structdiscord__channel_aafedb1257dd3d9008b23cc2492462f5b}} 
+char {\bfseries icon} \mbox{[}M\+A\+X\+\_\+\+S\+H\+A256\+\_\+\+L\+EN\mbox{]}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_aae776e726273e4db4895603d6fb9c628}\label{structdiscord__channel_aae776e726273e4db4895603d6fb9c628}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries owner\+\_\+id}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a333fafd983d8f08bffc88c77e76a88cf}\label{structdiscord__channel_a333fafd983d8f08bffc88c77e76a88cf}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries application\+\_\+id}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a4008c0aaffde69265340611d2cdc85ce}\label{structdiscord__channel_a4008c0aaffde69265340611d2cdc85ce}} 
+\mbox{\hyperlink{discord_8h_a2aca4957fe0e14f7ab03fdaeb17d8fb9}{u64\+\_\+snowflake\+\_\+t}} {\bfseries parent\+\_\+id}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a0333b1354e2c693fc04194691b2b2063}\label{structdiscord__channel_a0333b1354e2c693fc04194691b2b2063}} 
+\mbox{\hyperlink{discord_8h_a8c10c2449cb2148f47b8a032af96dd60}{u64\+\_\+unix\+\_\+ms\+\_\+t}} {\bfseries last\+\_\+pin\+\_\+timestamp}
+\item 
+\mbox{\Hypertarget{structdiscord__channel_a26196e6bae2204662c5abe773fe2cf5b}\label{structdiscord__channel_a26196e6bae2204662c5abe773fe2cf5b}} 
+struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$$\ast$ {\bfseries messages}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Channel Structure. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/resources/channel\#channel-object-channel-structure}{\texttt{ https\+://discord.\+com/developers/docs/resources/channel\#channel-\/object-\/channel-\/structure}} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+defined at specs/discord/channel.\+json\+:25\+:22 
+\end{DoxyNote}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orca/specs-\/code/discord/\mbox{\hyperlink{channel_8h}{channel.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<map id="discord_create_message_params" name="discord_create_message_params">
+<area shape="rect" id="node1" title=" " alt="" coords="704,150,887,191"/>
+<area shape="rect" id="node2" href="$structdiscord__channel__allowed__mentions.html" title="Allowed Mentions Structure." alt="" coords="328,91,513,133"/>
+<area shape="rect" id="node3" href="$structdiscord__embed.html" title="Embed Structure." alt="" coords="360,157,481,184"/>
+<area shape="rect" id="node4" href="$structdiscord__embed__provider.html" title="Embed Provider Structure." alt="" coords="11,5,194,32"/>
+<area shape="rect" id="node5" href="$structdiscord__embed__image.html" title="Embed Image Structure." alt="" coords="18,56,187,83"/>
+<area shape="rect" id="node6" href="$structdiscord__embed__video.html" title="Embed Video Structure." alt="" coords="21,107,185,133"/>
+<area shape="rect" id="node7" href="$structdiscord__embed__field.html" title="Embed Field Structure." alt="" coords="25,157,181,184"/>
+<area shape="rect" id="node8" href="$structdiscord__embed__author.html" title="Embed Author Structure." alt="" coords="17,208,188,235"/>
+<area shape="rect" id="node9" href="$structdiscord__embed__thumbnail.html" title="Embed Thumbnail Structure." alt="" coords="5,259,200,285"/>
+<area shape="rect" id="node10" href="$structdiscord__embed__footer.html" title="Embed Footer Structure." alt="" coords="19,309,186,336"/>
+<area shape="rect" id="node11" href="$structdiscord__message__reference.html" title="Message Reference Structure." alt="" coords="319,208,523,235"/>
+</map>

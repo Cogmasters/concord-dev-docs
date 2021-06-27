@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__voice__state" kind="struct" language="C++" prot="public">
+    <compoundname>discord_voice_state</compoundname>
+    <includes refid="voice_8h" local="no">voice.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__voice__state_1a2e100a5de31fbf7594dcaf088eaf4013" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_voice_state::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="20" column="19" bodyfile="orca/specs-code/discord/voice.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1a915d309c0c51c2dbfa242d319bbda412" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_voice_state::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="24" column="19" bodyfile="orca/specs-code/discord/voice.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1a94056e8d7dae558989bc7c03ca6324a2" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_voice_state::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="28" column="19" bodyfile="orca/specs-code/discord/voice.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1acdf3d617e113f93e350a7c6231990628" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__guild__member" kindref="compound">discord_guild_member</ref> *</type>
+        <definition>struct discord_guild_member* discord_voice_state::member</definition>
+        <argsstring></argsstring>
+        <name>member</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="32" column="29" bodyfile="orca/specs-code/discord/voice.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1ab095fd362850063d4b88ffae65df1e65" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_voice_state::session_id</definition>
+        <argsstring></argsstring>
+        <name>session_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="36" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1a6f7f3aaccd5b7f5171ba3fb98c6f30be" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_state::deaf</definition>
+        <argsstring></argsstring>
+        <name>deaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="40" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1a29a67f597d28f303b072e9734ae2f84a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_state::mute</definition>
+        <argsstring></argsstring>
+        <name>mute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="44" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1a1c3469d05fab6294289f6b769803339e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_state::self_deaf</definition>
+        <argsstring></argsstring>
+        <name>self_deaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="48" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1a309c86acb3acb466732d27f83887dca7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_state::self_mute</definition>
+        <argsstring></argsstring>
+        <name>self_mute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="52" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1aaf8ec96506115f8bcef4ea5dc64c200a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_state::self_stream</definition>
+        <argsstring></argsstring>
+        <name>self_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="56" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1a226d2739edbc9618a9c077eaef4aa634" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_state::self_video</definition>
+        <argsstring></argsstring>
+        <name>self_video</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="60" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice__state_1a39d66ff86bddd9d4283dcf27e6e55c5e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice_state::supress</definition>
+        <argsstring></argsstring>
+        <name>supress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/voice.h" line="64" column="8" bodyfile="orca/specs-code/discord/voice.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Voice State Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice#voice-state-object-voice-state-structure">https://discord.com/developers/docs/resources/voice#voice-state-object-voice-state-structure</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/voice.json:9:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>discord_user</label>
+        <link refid="structdiscord__user"/>
+      </node>
+      <node id="2">
+        <label>discord_guild_member</label>
+        <link refid="structdiscord__guild__member"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>user</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>discord_voice_state</label>
+        <link refid="structdiscord__voice__state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>member</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="orca/specs-code/discord/voice.h" line="17" column="26" bodyfile="orca/specs-code/discord/voice.h" bodystart="17" bodyend="80"/>
+    <listofallmembers>
+      <member refid="structdiscord__voice__state_1a915d309c0c51c2dbfa242d319bbda412" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>channel_id</name></member>
+      <member refid="structdiscord__voice__state_1a6f7f3aaccd5b7f5171ba3fb98c6f30be" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>deaf</name></member>
+      <member refid="structdiscord__voice__state_1a2e100a5de31fbf7594dcaf088eaf4013" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>guild_id</name></member>
+      <member refid="structdiscord__voice__state_1acdf3d617e113f93e350a7c6231990628" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>member</name></member>
+      <member refid="structdiscord__voice__state_1a29a67f597d28f303b072e9734ae2f84a" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>mute</name></member>
+      <member refid="structdiscord__voice__state_1a1c3469d05fab6294289f6b769803339e" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>self_deaf</name></member>
+      <member refid="structdiscord__voice__state_1a309c86acb3acb466732d27f83887dca7" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>self_mute</name></member>
+      <member refid="structdiscord__voice__state_1aaf8ec96506115f8bcef4ea5dc64c200a" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>self_stream</name></member>
+      <member refid="structdiscord__voice__state_1a226d2739edbc9618a9c077eaef4aa634" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>self_video</name></member>
+      <member refid="structdiscord__voice__state_1ab095fd362850063d4b88ffae65df1e65" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>session_id</name></member>
+      <member refid="structdiscord__voice__state_1a39d66ff86bddd9d4283dcf27e6e55c5e" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>supress</name></member>
+      <member refid="structdiscord__voice__state_1a94056e8d7dae558989bc7c03ca6324a2" prot="public" virt="non-virtual"><scope>discord_voice_state</scope><name>user_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

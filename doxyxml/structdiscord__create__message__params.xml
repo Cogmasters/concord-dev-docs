@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__create__message__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_create_message_params</compoundname>
+    <includes refid="discord_8h" local="no">discord.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__create__message__params_1ad37e7dc00bfba35b60e412eca42f7b96" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_message_params::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+<para>the content of the message being sent </para>
+        </briefdescription>
+        <detaileddescription>
+<para>the contents of the file being sent (optional) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="316" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1a203cb4e6241783c653e85905b769b210" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_message_params::nonce</definition>
+        <argsstring></argsstring>
+        <name>nonce</name>
+        <briefdescription>
+<para>the nonce of the message being sent </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="317" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1a59a16fe3fe7a7b434ffc2ea9045a15a2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_create_message_params::tts</definition>
+        <argsstring></argsstring>
+        <name>tts</name>
+        <briefdescription>
+<para>enable/disable text-to-speech </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="318" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1a9307dec7aa37d8045d47d52f2b16eb46" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__embed" kindref="compound">discord_embed</ref> *</type>
+        <definition>struct discord_embed* discord_create_message_params::embed</definition>
+        <argsstring></argsstring>
+        <name>embed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="321" column="22" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1a6fb10c38f15aa0fdc8d311e3245f35be" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__channel__allowed__mentions" kindref="compound">discord_channel_allowed_mentions</ref> *</type>
+        <definition>struct discord_channel_allowed_mentions* discord_create_message_params::allowed_mentions</definition>
+        <argsstring></argsstring>
+        <name>allowed_mentions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="322" column="41" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1ae075f1b2e5bc110b2f8d8ce1a8acc7eb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__message__reference" kindref="compound">discord_message_reference</ref> *</type>
+        <definition>struct discord_message_reference* discord_create_message_params::message_reference</definition>
+        <argsstring></argsstring>
+        <name>message_reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="323" column="34" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1a69305c4547bb2f287939d3846b7dfe72" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_message_params::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>the name of the file being sent </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="328" column="10" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1abf442ac5cf250cf57abd148daf9c09e6" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t discord_create_message_params::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>the size of the file being sent (if content is set) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="330" column="12" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1a792a36abeba38bc4dd4b3b72364cb694" prot="public" static="no" mutable="no">
+        <type>struct discord_create_message_params::@9</type>
+        <definition>struct discord_create_message_params::@9 discord_create_message_params::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="331" column="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__message__params_1a8b3fb41627d5c019f1cdc2495b2825f6" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_message_params::payload_json</definition>
+        <argsstring></argsstring>
+        <name>payload_json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="332" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>make this specs generated code </para>
+</xrefdescription></xrefsect><simplesect kind="warning"><para>content-type sent is <computeroutput>application/json</computeroutput>, UNLESS any <computeroutput>multipart/form-data</computeroutput> parameter is set </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>discord_embed_provider</label>
+        <link refid="structdiscord__embed__provider"/>
+      </node>
+      <node id="1">
+        <label>discord_create_message_params</label>
+        <link refid="structdiscord__create__message__params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>allowed_mentions</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>embed</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>message_reference</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>discord_channel_allowed_mentions</label>
+        <link refid="structdiscord__channel__allowed__mentions"/>
+      </node>
+      <node id="10">
+        <label>discord_embed_footer</label>
+        <link refid="structdiscord__embed__footer"/>
+      </node>
+      <node id="11">
+        <label>discord_message_reference</label>
+        <link refid="structdiscord__message__reference"/>
+      </node>
+      <node id="7">
+        <label>discord_embed_field</label>
+        <link refid="structdiscord__embed__field"/>
+      </node>
+      <node id="5">
+        <label>discord_embed_image</label>
+        <link refid="structdiscord__embed__image"/>
+      </node>
+      <node id="9">
+        <label>discord_embed_thumbnail</label>
+        <link refid="structdiscord__embed__thumbnail"/>
+      </node>
+      <node id="8">
+        <label>discord_embed_author</label>
+        <link refid="structdiscord__embed__author"/>
+      </node>
+      <node id="6">
+        <label>discord_embed_video</label>
+        <link refid="structdiscord__embed__video"/>
+      </node>
+      <node id="3">
+        <label>discord_embed</label>
+        <link refid="structdiscord__embed"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>provider</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>image</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>video</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>fields</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>author</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>thumbnail</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>footer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lucasmull/Trabalho/orca/discord.h" line="314" column="36" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="314" bodyend="333"/>
+    <listofallmembers>
+      <member refid="structdiscord__create__message__params_1a6fb10c38f15aa0fdc8d311e3245f35be" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>allowed_mentions</name></member>
+      <member refid="structdiscord__create__message__params_1ad37e7dc00bfba35b60e412eca42f7b96" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>content</name></member>
+      <member refid="structdiscord__create__message__params_1a9307dec7aa37d8045d47d52f2b16eb46" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>embed</name></member>
+      <member refid="structdiscord__create__message__params_1a792a36abeba38bc4dd4b3b72364cb694" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>file</name></member>
+      <member refid="structdiscord__create__message__params_1ae075f1b2e5bc110b2f8d8ce1a8acc7eb" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>message_reference</name></member>
+      <member refid="structdiscord__create__message__params_1a69305c4547bb2f287939d3846b7dfe72" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>name</name></member>
+      <member refid="structdiscord__create__message__params_1a203cb4e6241783c653e85905b769b210" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>nonce</name></member>
+      <member refid="structdiscord__create__message__params_1a8b3fb41627d5c019f1cdc2495b2825f6" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>payload_json</name></member>
+      <member refid="structdiscord__create__message__params_1abf442ac5cf250cf57abd148daf9c09e6" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>size</name></member>
+      <member refid="structdiscord__create__message__params_1a59a16fe3fe7a7b434ffc2ea9045a15a2" prot="public" virt="non-virtual"><scope>discord_create_message_params</scope><name>tts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__follow__news__channel__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_follow_news_channel_params</compoundname>
+    <includes refid="channel_8endpoints-params_8h" local="no">channel.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__follow__news__channel__params_1ad704860aae2efa1e99c076fb3ecbc751" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_follow_news_channel_params::webhook_channel_id</definition>
+        <argsstring></argsstring>
+        <name>webhook_channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.endpoints-params.h" line="230" column="19" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Follow News Channel. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#follow-news-channel">https://discord.com/developers/docs/resources/channel#follow-news-channel</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.endpoints-params.json:58:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.endpoints-params.h" line="227" column="41" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="227" bodyend="246"/>
+    <listofallmembers>
+      <member refid="structdiscord__follow__news__channel__params_1ad704860aae2efa1e99c076fb3ecbc751" prot="public" virt="non-virtual"><scope>discord_follow_news_channel_params</scope><name>webhook_channel_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

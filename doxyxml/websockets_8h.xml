@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="websockets_8h" kind="file" language="C++">
+    <compoundname>websockets.h</compoundname>
+    <includes local="yes">logconf.h</includes>
+    <includedby refid="discord-internal_8h" local="yes">/home/lucasmull/Trabalho/orca/discord-internal.h</includedby>
+    <includedby refid="reddit-internal_8h" local="yes">/home/lucasmull/Trabalho/orca/reddit-internal.h</includedby>
+    <includedby refid="slack-internal_8h" local="yes">/home/lucasmull/Trabalho/orca/slack-internal.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>logconf.h</label>
+      </node>
+      <node id="1">
+        <label>orca/common/websockets.h</label>
+        <link refid="websockets_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/lucasmull/Trabalho/orca/discord-internal.h</label>
+        <link refid="discord-internal_8h"/>
+      </node>
+      <node id="3">
+        <label>/home/lucasmull/Trabalho/orca/reddit-internal.h</label>
+        <link refid="reddit-internal_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/home/lucasmull/Trabalho/orca/slack-internal.h</label>
+        <link refid="slack-internal_8h_source"/>
+      </node>
+      <node id="1">
+        <label>orca/common/websockets.h</label>
+        <link refid="websockets_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structws__callbacks" prot="public">ws_callbacks</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ws_status</name>
+        <enumvalue id="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26ab3328538fd15fe5c3195a5d56e3e4889" prot="public">
+          <name>WS_DISCONNECTED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>client disconnected from ws </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26af9564bb4cc0e631f03b8a7d7c1a204c9" prot="public">
+          <name>WS_CONNECTED</name>
+          <briefdescription>
+<para>client connected to ws </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26a857733861369d2ba346cfb281b04cac2" prot="public">
+          <name>WS_DISCONNECTING</name>
+          <briefdescription>
+<para>client in the process of disconnecting to ws </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26ab2299292b41bdeeefe3157b6911bb2e1" prot="public">
+          <name>WS_CONNECTING</name>
+          <briefdescription>
+<para>client in the process of connecting from ws </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The WebSockets client status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79" kindref="member">ws_get_status()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="25" column="15" bodyfile="orca/common/websockets.h" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="enum" id="websockets_8h_1a2c25477292b8bc33d3241eecfd4da5fb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ws_user_cmd</name>
+        <enumvalue id="websockets_8h_1a2c25477292b8bc33d3241eecfd4da5fba57fafcb2a224dd251a014885362575b3" prot="public">
+          <name>WS_USER_CMD_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a2c25477292b8bc33d3241eecfd4da5fba0376d03ca2634c6307ce1ac62e7e3cd8" prot="public">
+          <name>WS_USER_CMD_EXIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="32" column="17" bodyfile="orca/common/websockets.h" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ws_close_reason</name>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08dad1772606ee741d54ded353a12160662b" prot="public">
+          <name>WS_CLOSE_REASON_NORMAL</name>
+          <initializer>= 1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08da94283316304aae0b5712a9a59186d75c" prot="public">
+          <name>WS_CLOSE_REASON_GOING_AWAY</name>
+          <initializer>= 1001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08dae645cfc9260227ddfc36e66798a963d7" prot="public">
+          <name>WS_CLOSE_REASON_PROTOCOL_ERROR</name>
+          <initializer>= 1002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08da49da0f1f57cca8bdfee319d4156f47e0" prot="public">
+          <name>WS_CLOSE_REASON_UNEXPECTED_DATA</name>
+          <initializer>= 1003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08da7838574f5ed9d26bd1a71abe37fc1e76" prot="public">
+          <name>WS_CLOSE_REASON_NO_REASON</name>
+          <initializer>= 1005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08da07cdaa342b879e8d97926290684f6f89" prot="public">
+          <name>WS_CLOSE_REASON_ABRUPTLY</name>
+          <initializer>= 1006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08da00714687bc9f1ff9ea0598af0d340aa6" prot="public">
+          <name>WS_CLOSE_REASON_INCONSISTENT_DATA</name>
+          <initializer>= 1007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08dac5c2d38da697e860557b1a551be1eccd" prot="public">
+          <name>WS_CLOSE_REASON_POLICY_VIOLATION</name>
+          <initializer>= 1008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08da21c33734a73745af101c87312d3af95e" prot="public">
+          <name>WS_CLOSE_REASON_TOO_BIG</name>
+          <initializer>= 1009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08da3590c6bcfa0874bcdd11886c9e595ff4" prot="public">
+          <name>WS_CLOSE_REASON_MISSING_EXTENSION</name>
+          <initializer>= 1010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08daef57e1b1bff1b1ee0e36920b399b7f09" prot="public">
+          <name>WS_CLOSE_REASON_SERVER_ERROR</name>
+          <initializer>= 1011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08dac5f77696fbdaa99138d8258a3858fbfb" prot="public">
+          <name>WS_CLOSE_REASON_IANA_REGISTRY_START</name>
+          <initializer>= 3000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08dad75cd713b4e838c5a5ab06eff6649074" prot="public">
+          <name>WS_CLOSE_REASON_IANA_REGISTRY_END</name>
+          <initializer>= 3999</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08da37d152d001a7b6513077dfc126349d95" prot="public">
+          <name>WS_CLOSE_REASON_PRIVATE_START</name>
+          <initializer>= 4000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="websockets_8h_1a92591a76da29adffd6f3a95bb12db08dab3a0ee03638d537a30fd9db837afdc86" prot="public">
+          <name>WS_CLOSE_REASON_PRIVATE_END</name>
+          <initializer>= 4999</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://tools.ietf.org/html/rfc6455#section-7.4.1">https://tools.ietf.org/html/rfc6455#section-7.4.1</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="40" column="21" bodyfile="orca/common/websockets.h" bodystart="40" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct websockets *</type>
+        <definition>struct websockets* ws_init</definition>
+        <argsstring>(struct ws_callbacks *cbs, struct logconf *config)</argsstring>
+        <name>ws_init</name>
+        <param>
+          <type>struct <ref refid="structws__callbacks" kindref="compound">ws_callbacks</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type>struct logconf *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Create a new (CURL-based) WebSockets handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set of functions to call back when server report events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional pointer to a pre-initialized logconf </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly created WebSockets handle, free with <ref refid="websockets_8h_1ad45b500790fffec540211cda5d1dbd0f" kindref="member">ws_cleanup()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="108" column="18" declfile="orca/common/websockets.h" declline="108" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1ad45b500790fffec540211cda5d1dbd0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ws_cleanup</definition>
+        <argsstring>(struct websockets *ws)</argsstring>
+        <name>ws_cleanup</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+<para>Free a WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="115" column="6" declfile="orca/common/websockets.h" declline="115" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1ac709a5d97d06af442ec647d3ff275cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ws_set_url</definition>
+        <argsstring>(struct websockets *ws, const char base_url[], const char ws_protocols[])</argsstring>
+        <name>ws_set_url</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>base_url</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>ws_protocols</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Set the URL for the WebSockets handle to connect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the URL to connect, such as ws://echo.websockets.org </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ws_protocols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL or something like &quot;chat&quot;, &quot;superchat&quot;,... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="124" column="6" declfile="orca/common/websockets.h" declline="124" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1a0cedef20b1e0a94d5fa19a6a391d31e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ws_send_text</definition>
+        <argsstring>(struct websockets *ws, char text[], size_t len)</argsstring>
+        <name>ws_send_text</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>text</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Send a text message of given size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Text messages do not need to include the null terminator (\0), they will be read up to <emphasis>len</emphasis>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pointer to memory (linear) to send. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the length in bytes of <emphasis>text</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if sent, false on errors. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="137" column="6" declfile="orca/common/websockets.h" declline="137" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1a66074fd9ea27d36bafd1dcd9a8fe8cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ws_start</definition>
+        <argsstring>(struct websockets *ws)</argsstring>
+        <name>ws_start</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+<para>Signals connecting state before entering the WebSockets event loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Helper over _ws_set_status(ws, WS_CONNECTING) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="145" column="6" declfile="orca/common/websockets.h" declline="145" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1a0ee64c7a7e5fc1c34a311bb4777bdafc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ws_perform</definition>
+        <argsstring>(struct websockets *ws, _Bool *is_running, uint64_t wait_ms)</argsstring>
+        <name>ws_perform</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <param>
+          <type>_Bool *</type>
+          <declname>is_running</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>wait_ms</declname>
+        </param>
+        <briefdescription>
+<para>Reads/Write available data from WebSockets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper over curl_multi_perform()</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_running</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>receives true if the client is running and false otherwise </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wait_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>limit amount in milliseconds to wait for until activity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://curl.se/libcurl/c/curl_multi_perform.html">https://curl.se/libcurl/c/curl_multi_perform.html</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="157" column="6" declfile="orca/common/websockets.h" declline="157" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1a65d5b02ac193585416446eae1061c93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t ws_timestamp</definition>
+        <argsstring>(struct websockets *ws)</argsstring>
+        <name>ws_timestamp</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+<para>The WebSockets handle concept of &quot;now&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the timestamp in milliseconds from when <ref refid="websockets_8h_1a0ee64c7a7e5fc1c34a311bb4777bdafc" kindref="member">ws_perform()</ref> was last called </para>
+</simplesect>
+<simplesect kind="note"><para>the timestamp is updated at every <ref refid="websockets_8h_1a0ee64c7a7e5fc1c34a311bb4777bdafc" kindref="member">ws_perform()</ref> call </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="166" column="10" declfile="orca/common/websockets.h" declline="166" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26" kindref="member">ws_status</ref></type>
+        <definition>enum ws_status ws_get_status</definition>
+        <argsstring>(struct websockets *ws)</argsstring>
+        <name>ws_get_status</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+<para>Returns the WebSockets handle connection status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a ws_status opcode </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="166" column="10" declfile="orca/common/websockets.h" declline="166" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1aec6eb7399dc87efe08a10b5366077716" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* ws_close_opcode_print</definition>
+        <argsstring>(enum ws_close_reason opcode)</argsstring>
+        <name>ws_close_opcode_print</name>
+        <param>
+          <type>enum <ref refid="websockets_8h_1a92591a76da29adffd6f3a95bb12db08d" kindref="member">ws_close_reason</ref></type>
+          <declname>opcode</declname>
+        </param>
+        <briefdescription>
+<para>Returns a enum ws_close_reason opcode in a string format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the opcode to be converted to string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a read-only string literal of the opcode </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="182" column="6" declfile="orca/common/websockets.h" declline="182" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1acc7d4f818e65c5af96619d507fd27b49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ws_is_alive</definition>
+        <argsstring>(struct websockets *ws)</argsstring>
+        <name>ws_is_alive</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+<para>Check if a WebSockets connection is alive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if WebSockets status is different than WS_DISCONNECTED, FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="191" column="6" declfile="orca/common/websockets.h" declline="191" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1a3e893a76e1030e2e81e8e2981cec3dc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ws_is_functional</definition>
+        <argsstring>(struct websockets *ws)</argsstring>
+        <name>ws_is_functional</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+<para>Check if WebSockets connection is active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ws</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WebSockets handle created with <ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if is function, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="199" column="6" declfile="orca/common/websockets.h" declline="199" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1aa512cf01fd8d1c302101f7707ce06c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ws_exit_event_loop</definition>
+        <argsstring>(struct websockets *ws)</argsstring>
+        <name>ws_exit_event_loop</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="201" column="6" declfile="orca/common/websockets.h" declline="201" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="websockets_8h_1ad8c8d337b38d18386668ce800013f172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ws_same_thread</definition>
+        <argsstring>(struct websockets *ws)</argsstring>
+        <name>ws_same_thread</name>
+        <param>
+          <type>struct websockets *</type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/websockets.h" line="203" column="6" declfile="orca/common/websockets.h" declline="203" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File containing internal functions and datatypes for WebSockets client. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>cee-studio </para>
+</simplesect>
+<simplesect kind="date"><para>21 Jun 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>WEBSOCKETS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WEBSOCKETS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;logconf.h&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>struct<sp/>logconf<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>FORWARD<sp/>DECLARATIONS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">websockets;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26" kindref="member">ws_status</ref><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26ab3328538fd15fe5c3195a5d56e3e4889" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26ab3328538fd15fe5c3195a5d56e3e4889" kindref="member">WS_DISCONNECTED</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="27" refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26af9564bb4cc0e631f03b8a7d7c1a204c9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26af9564bb4cc0e631f03b8a7d7c1a204c9" kindref="member">WS_CONNECTED</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26a857733861369d2ba346cfb281b04cac2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26a857733861369d2ba346cfb281b04cac2" kindref="member">WS_DISCONNECTING</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26ab2299292b41bdeeefe3157b6911bb2e1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26ab2299292b41bdeeefe3157b6911bb2e1" kindref="member">WS_CONNECTING</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>ws_user_cmd<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>WS_USER_CMD_NONE,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>WS_USER_CMD_EXIT,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="websockets_8h_1a92591a76da29adffd6f3a95bb12db08d" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a92591a76da29adffd6f3a95bb12db08d" kindref="member">ws_close_reason</ref><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_NORMAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1000,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_GOING_AWAY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1001,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_PROTOCOL_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1002,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_UNEXPECTED_DATA<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1003,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_NO_REASON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1005,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_ABRUPTLY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1006,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_INCONSISTENT_DATA<sp/><sp/><sp/><sp/>=<sp/>1007,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_POLICY_VIOLATION<sp/><sp/><sp/><sp/><sp/>=<sp/>1008,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_TOO_BIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1009,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_MISSING_EXTENSION<sp/><sp/><sp/><sp/>=<sp/>1010,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_SERVER_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1011,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_IANA_REGISTRY_START<sp/><sp/>=<sp/>3000,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_IANA_REGISTRY_END<sp/><sp/><sp/><sp/>=<sp/>3999,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_PRIVATE_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4000,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>WS_CLOSE_REASON_PRIVATE_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4999</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structws__callbacks" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structws__callbacks" kindref="compound">ws_callbacks</ref><sp/>{</highlight></codeline>
+<codeline lineno="64" refid="structws__callbacks_1a05a9d6bc3b46a80682a1418c2f170a9d" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="structws__callbacks_1a05a9d6bc3b46a80682a1418c2f170a9d" kindref="member">on_connect</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structws__callbacks_1a3f24a596e673c6ed86ae31c22703e512" kindref="member">data</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*protocols);</highlight></codeline>
+<codeline lineno="72" refid="structws__callbacks_1aaa46d886606fb4c6d3b561638542c1d3" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="structws__callbacks_1aaa46d886606fb4c6d3b561638542c1d3" kindref="member">on_text</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structws__callbacks_1a3f24a596e673c6ed86ae31c22703e512" kindref="member">data</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="76" refid="structws__callbacks_1a1af892bd1cd7b5a09c10a3fc54dced8c" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="structws__callbacks_1a1af892bd1cd7b5a09c10a3fc54dced8c" kindref="member">on_binary</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structws__callbacks_1a3f24a596e673c6ed86ae31c22703e512" kindref="member">data</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="83" refid="structws__callbacks_1ae6f23f982fffe84c6df124e4e1792e0c" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="structws__callbacks_1ae6f23f982fffe84c6df124e4e1792e0c" kindref="member">on_ping</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structws__callbacks_1a3f24a596e673c6ed86ae31c22703e512" kindref="member">data</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*reason,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="87" refid="structws__callbacks_1a2f1459ed3a83e58d9856df9a54c532cd" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="structws__callbacks_1a2f1459ed3a83e58d9856df9a54c532cd" kindref="member">on_pong</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structws__callbacks_1a3f24a596e673c6ed86ae31c22703e512" kindref="member">data</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*reason,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="94" refid="structws__callbacks_1aab6fed8460a632c719abaa32f3f0ca41" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="structws__callbacks_1aab6fed8460a632c719abaa32f3f0ca41" kindref="member">on_close</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structws__callbacks_1a3f24a596e673c6ed86ae31c22703e512" kindref="member">data</ref>,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a92591a76da29adffd6f3a95bb12db08d" kindref="member">ws_close_reason</ref><sp/>wscode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*reason,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="98" refid="structws__callbacks_1a3f24a596e673c6ed86ae31c22703e512" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structws__callbacks_1a3f24a596e673c6ed86ae31c22703e512" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">websockets*<sp/><ref refid="websockets_8h_1a4ff8bbffc8cf3172ff02f5233315796b" kindref="member">ws_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structws__callbacks" kindref="compound">ws_callbacks</ref><sp/>*cbs,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>logconf<sp/>*config);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1ad45b500790fffec540211cda5d1dbd0f" kindref="member">ws_cleanup</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1ac709a5d97d06af442ec647d3ff275cbf" kindref="member">ws_set_url</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>base_url[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ws_protocols[]);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a0cedef20b1e0a94d5fa19a6a391d31e5" kindref="member">ws_send_text</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>text[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a66074fd9ea27d36bafd1dcd9a8fe8cc8" kindref="member">ws_start</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a0ee64c7a7e5fc1c34a311bb4777bdafc" kindref="member">ws_perform</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws,<sp/>_Bool<sp/>*is_running,<sp/>uint64_t<sp/>wait_ms);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">uint64_t<sp/><ref refid="websockets_8h_1a65d5b02ac193585416446eae1061c93d" kindref="member">ws_timestamp</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26" kindref="member">ws_status</ref><sp/><ref refid="websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79" kindref="member">ws_get_status</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="websockets_8h_1aec6eb7399dc87efe08a10b5366077716" kindref="member">ws_close_opcode_print</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a92591a76da29adffd6f3a95bb12db08d" kindref="member">ws_close_reason</ref><sp/>opcode);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1acc7d4f818e65c5af96619d507fd27b49" kindref="member">ws_is_alive</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="websockets_8h_1a3e893a76e1030e2e81e8e2981cec3dc2" kindref="member">ws_is_functional</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ws_exit_event_loop(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ws_same_thread(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>websockets<sp/>*ws);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>WEBSOCKETS_H</highlight></codeline>
+    </programlisting>
+    <location file="orca/common/websockets.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="audit__log_8endpoints-params_8h" kind="file" language="C++">
+    <compoundname>audit_log.endpoints-params.h</compoundname>
+    <innerclass refid="structdiscord__get__guild__audit__log__params" prot="public">discord_get_guild_audit_log_params</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1ac81713b9274dc399bc1a893a64ea5f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_cleanup_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_cleanup_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="47" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="47" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a01ce2a2bbd86c2b744b224d2563050c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_cleanup</definition>
+        <argsstring>(struct discord_get_guild_audit_log_params *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="48" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="48" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a4bba889bf09e5240a882baf318ca5ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_init_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_init_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="49" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="49" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1afa36f756b0dfcb5d3066c692f304c61f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_init</definition>
+        <argsstring>(struct discord_get_guild_audit_log_params *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="50" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="50" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a0278130fba89d65b22b9c967b0dd69c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> *</type>
+        <definition>struct discord_get_guild_audit_log_params* discord_get_guild_audit_log_params_alloc</definition>
+        <argsstring>()</argsstring>
+        <name>discord_get_guild_audit_log_params_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="51" column="49" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="51" declcolumn="49"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a5a8a4babbb3ed051d8b1fe4f67dd5414" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_free_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_free_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="52" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="52" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a5582029a2147ad58fe6488ca64757b8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_free</definition>
+        <argsstring>(struct discord_get_guild_audit_log_params *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="53" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="53" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a91ef58b18ad672a06455681b3068b61a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_from_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="54" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="54" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a0fa45f5cbcb919340121b485f6be07f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_from_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_get_guild_audit_log_params *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="55" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="55" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a306e862cb02cc81fb7261caf73db9841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_get_guild_audit_log_params_to_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="56" column="15" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="56" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1af7ee4fe4bf809e0d2044534db371c578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_get_guild_audit_log_params_to_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_get_guild_audit_log_params *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="57" column="15" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="57" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a437ff23a2a8c52b16134258b5b3e9672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_get_guild_audit_log_params_to_query_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_to_query_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="58" column="15" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="58" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a8e8920d41e3803afdfeaeb3f8f62ab4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_get_guild_audit_log_params_to_query</definition>
+        <argsstring>(char *json, size_t len, struct discord_get_guild_audit_log_params *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_to_query</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="59" column="15" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="59" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a4084370cfdc4f1f89d6ffceb6f450d61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_list_free_v</definition>
+        <argsstring>(void **p)</argsstring>
+        <name>discord_get_guild_audit_log_params_list_free_v</name>
+        <param>
+          <type>void **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="60" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="60" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1ae66fb05da9ff64eae104c77682ad37c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_list_free</definition>
+        <argsstring>(struct discord_get_guild_audit_log_params **p)</argsstring>
+        <name>discord_get_guild_audit_log_params_list_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="61" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="61" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a23e0f063637e7ef5f3529d800f1c395d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_list_from_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_list_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="62" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="62" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1abcc9194d91994fb31f4a557bab0d0a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_get_guild_audit_log_params_list_from_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_get_guild_audit_log_params ***p)</argsstring>
+        <name>discord_get_guild_audit_log_params_list_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> ***</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="63" column="13" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="63" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1ae909f2c7941b71a4924873b74dcad9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_get_guild_audit_log_params_list_to_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_get_guild_audit_log_params_list_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="64" column="15" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="64" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="audit__log_8endpoints-params_8h_1a86140f74036fad59c314ff0f1b3a4324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_get_guild_audit_log_params_list_to_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_get_guild_audit_log_params **p)</argsstring>
+        <name>discord_get_guild_audit_log_params_list_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="65" column="15" declfile="orca/specs-code/discord/audit_log.endpoints-params.h" declline="65" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specs generated file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>cee-studio </para>
+</simplesect>
+<simplesect kind="date"><para>21 Jun 2021 </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/audit-log">https://discord.com/developers/docs/resources/audit-log</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>This<sp/>file<sp/>is<sp/>generated<sp/>from<sp/>specs/discord/audit_log.endpoints-params.json,<sp/>Please<sp/>don&apos;t<sp/>edit<sp/>it.<sp/>*/</highlight></codeline>
+<codeline lineno="15" refid="structdiscord__get__guild__audit__log__params" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/audit_log.endpoints-params.json:11:20</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;user_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>},<sp/>&quot;inject_if_not&quot;:0<sp/>}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>user_id;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/audit_log.endpoints-params.json:12:20</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;action_type&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;int&quot;,<sp/>&quot;int_alias&quot;:&quot;enum<sp/>discord_audit_log_events&quot;<sp/>},<sp/>&quot;inject_if_not&quot;:0<sp/>}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>discord_audit_log_events<sp/>action_type;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/audit_log.endpoints-params.json:13:20</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;before&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>},<sp/>&quot;inject_if_not&quot;:0<sp/>}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>before;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/audit_log.endpoints-params.json:14:20</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;limit&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;int&quot;<sp/>},<sp/>&quot;inject_if_not&quot;:0<sp/>}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>limit;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>metadata<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>control<sp/>which<sp/>field<sp/>should<sp/>be<sp/>extracted/injected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>presented(defined)<sp/>in<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>null<sp/>in<sp/>JSON</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_arg_switches;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_defined;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_null;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg_switches[4];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_defined[4];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_null[4];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}<sp/>__M;<sp/></highlight><highlight class="comment">//<sp/>metadata</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_cleanup_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_init_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>*<sp/>discord_get_guild_audit_log_params_alloc();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_to_query_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_to_query(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_list_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**p);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_list_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_list_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_list_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>***p);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_list_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_get_guild_audit_log_params_list_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__get__guild__audit__log__params" kindref="compound">discord_get_guild_audit_log_params</ref><sp/>**p);</highlight></codeline>
+    </programlisting>
+    <location file="orca/specs-code/discord/audit_log.endpoints-params.h"/>
+  </compounddef>
+</doxygen>

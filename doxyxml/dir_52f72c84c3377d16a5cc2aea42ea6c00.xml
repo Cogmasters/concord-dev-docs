@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_52f72c84c3377d16a5cc2aea42ea6c00" kind="dir">
+    <compoundname>orca/specs-code</compoundname>
+    <innerdir refid="dir_3080d2226eb25d563d2048a95860b17f">orca/specs-code/discord</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="orca/specs-code/"/>
+  </compounddef>
+</doxygen>

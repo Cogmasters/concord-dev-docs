@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__voice" kind="struct" language="C++" prot="public">
+    <compoundname>discord_voice</compoundname>
+    <includes refid="discord-voice-connections_8h" local="no">discord-voice-connections.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__voice_1a946b6f5215fb0a18d242b490396f18ee" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_voice::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>the session guild id </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>obtained from <ref refid="discord-voice-connections_8h_1abd9a309fd38407c9bd8dfdb513653f7f" kindref="member">discord_join_vc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="89" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1ab89baa105408aca684a0b69b8b659400" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_voice::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the session channel id <simplesect kind="note"><para>obtained from <ref refid="discord-voice-connections_8h_1abd9a309fd38407c9bd8dfdb513653f7f" kindref="member">discord_join_vc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="90" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a548d14342c68517de160694706126ff4" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_voice::token[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>token</name>
+        <briefdescription>
+<para>the session token </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>obtained from on_voice_server_update() </para>
+</simplesect>
+<simplesect kind="note"><para>obtained from on_voice_server_update() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="92" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a68abd0d516bd445d828497175f6ee618" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_voice::new_token[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>new_token</name>
+        <briefdescription>
+<para>the new session token after a voice region change </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>obtained from on_voice_server_update() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="93" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a76fd38580478a6e62b25666381c29d6b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_voice::new_url[512]</definition>
+        <argsstring>[512]</argsstring>
+        <name>new_url</name>
+        <briefdescription>
+<para>the new url after a voice region change </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>obtained from on_voice_server_update() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="94" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a2f6a4c2f8c462f59882978d0ec8b8a29" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_voice::session_id[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>session_id</name>
+        <briefdescription>
+<para>the session id </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>obtained from on_voice_state_update() </para>
+</simplesect>
+<simplesect kind="note"><para>obtained from on_voice_state_update() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="97" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a461afcb154a43d603210134265de3a1e" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_voice::bot_id</definition>
+        <argsstring></argsstring>
+        <name>bot_id</name>
+        <briefdescription>
+<para>the bot user id </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>obtained from on_voice_state_update() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="98" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a2958941e90c1cb84f711a11195a393d8" prot="public" static="no" mutable="no">
+        <type>struct websockets *</type>
+        <definition>struct websockets* discord_voice::ws</definition>
+        <argsstring></argsstring>
+        <name>ws</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the websockets handle that binds to Discord Voice Connections </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="99" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a99eb0b0f909a8fa2c500ed49a1e33f28" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <briefdescription>
+<para>will attempt reconnecting if true </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="102" column="10" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a7d5b9ba1eb09d06ab6d54c61370b77bd" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char discord_voice::attempt</definition>
+        <argsstring></argsstring>
+        <name>attempt</name>
+        <briefdescription>
+<para>current reconnect attempt (resets to 0 when succesful) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="103" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1aef639043efbfb1dd93c21339c51071ae" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char discord_voice::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <briefdescription>
+<para>max amount of reconnects before giving up </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="104" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a0450e8935c6133c9b7fa11885f807116" prot="public" static="no" mutable="no">
+        <type>struct discord_voice::@5</type>
+        <definition>struct discord_voice::@5 discord_voice::reconnect</definition>
+        <argsstring></argsstring>
+        <name>reconnect</name>
+        <briefdescription>
+<para>handle reconnect logic </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="105" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1af4c4b869a6e815f45efbe9420a883990" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice::is_resumable</definition>
+        <argsstring></argsstring>
+        <name>is_resumable</name>
+        <briefdescription>
+<para>will attempt to resume session if connection shutsdown </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="106" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1ad953547c1c3b864772a3473da13d620c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice::is_redirect</definition>
+        <argsstring></argsstring>
+        <name>is_redirect</name>
+        <briefdescription>
+<para>redirect to a different voice server </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="108" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1adbbb211fe2a8a866f752dea5609bd881" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice::is_ready</definition>
+        <argsstring></argsstring>
+        <name>is_ready</name>
+        <briefdescription>
+<para>can start sending/receiving additional events to discord </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="109" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a1fe496c3c65b88990da861f2e82cdd3e" prot="public" static="no" mutable="no">
+        <type>enum discord_voice_opcodes</type>
+        <definition>enum discord_voice_opcodes discord_voice::opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>field &apos;op&apos; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="104" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1ab8d897fac80970412831a772bfb94944" prot="public" static="no" mutable="no">
+        <type>struct sized_buffer</type>
+        <definition>struct sized_buffer discord_voice::event_data</definition>
+        <argsstring></argsstring>
+        <name>event_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>field &apos;d&apos; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="104" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1adfe994a08867c7aeda9531cece6c9ffb" prot="public" static="no" mutable="no">
+        <type>struct discord_voice::@6</type>
+        <definition>struct discord_voice::@6 discord_voice::payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/voice-connections#establishing-a-voice-websocket-connection-example-voice-ready-payload">https://discord.com/developers/docs/topics/voice-connections#establishing-a-voice-websocket-connection-example-voice-ready-payload</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="117" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1add6f6addc5c21e7a654cf64cc427ddb8" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_voice::interval_ms</definition>
+        <argsstring></argsstring>
+        <name>interval_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fixed interval between heartbeats </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="120" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1aac74c117b51d71568ac2e5908110a491" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_voice::tstamp</definition>
+        <argsstring></argsstring>
+        <name>tstamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>start pulse timestamp in milliseconds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="121" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1acd4c054a358202e73d66ee8495a54628" prot="public" static="no" mutable="no">
+        <type>struct discord_voice::@7</type>
+        <definition>struct discord_voice::@7 discord_voice::hbeat</definition>
+        <argsstring></argsstring>
+        <name>hbeat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="122" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a8dcb218e6dc77fe7fdc5ca2d50b6b952" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_voice::ping_ms</definition>
+        <argsstring></argsstring>
+        <name>ping_ms</name>
+        <briefdescription>
+<para>latency between client and websockets server, calculated by the interval between HEARTBEAT and HEARTBEAT_ACK </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="124" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a830e416cbac95188543803f1006bb959" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord" kindref="compound">discord</ref> *</type>
+        <definition>struct discord* discord_voice::p_client</definition>
+        <argsstring></argsstring>
+        <name>p_client</name>
+        <briefdescription>
+<para>pointer to client this struct is part of </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="126" column="16" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1ae770fb93fb2b623f4a214217d71702dd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_voice::shutdown</definition>
+        <argsstring></argsstring>
+        <name>shutdown</name>
+        <briefdescription>
+<para>if true shutdown websockets connection as soon as possible </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="128" column="8" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a8317ead25acc5900245be6a38a43f327" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_voice::ssrc</definition>
+        <argsstring></argsstring>
+        <name>ssrc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="131" column="9" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a394e674e0186cf9ebed2cf74ce5dfaff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_voice::server_port</definition>
+        <argsstring></argsstring>
+        <name>server_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="132" column="9" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a545357a6c0d1e35032479e66cac34610" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_voice::server_ip[CEE_MAX_IP_ADDR_STR_LEN]</definition>
+        <argsstring>[CEE_MAX_IP_ADDR_STR_LEN]</argsstring>
+        <name>server_ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="133" column="10" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a992277fc7c8aeb73ff52d0ba0778eba4" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_voice::digest[CEE_SHA1_STR_LEN]</definition>
+        <argsstring>[CEE_SHA1_STR_LEN]</argsstring>
+        <name>digest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="134" column="10" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a41c81b5443c7ee0c06ee87fe1dc773d2" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_voice::unique_key[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>unique_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="135" column="10" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1adc1cb2aa204896e5516cd668811e4982" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_voice::audio_udp_pid</definition>
+        <argsstring></argsstring>
+        <name>audio_udp_pid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="136" column="9" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1aa4dbccde62f79ba9ba4773baec3a9926" prot="public" static="no" mutable="no">
+        <type>uintmax_t</type>
+        <definition>uintmax_t discord_voice::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="137" column="15" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a2fcba3b65a361fe272e327c66fa4c950" prot="public" static="no" mutable="no">
+        <type>struct discord_voice::@8</type>
+        <definition>struct discord_voice::@8 discord_voice::udp_service</definition>
+        <argsstring></argsstring>
+        <name>udp_service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="138" column="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a30746750acaff0ff482d9aaa3850b9c0" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__voice__cbs" kindref="compound">discord_voice_cbs</ref> *</type>
+        <definition>struct discord_voice_cbs* discord_voice::p_voice_cbs</definition>
+        <argsstring></argsstring>
+        <name>p_voice_cbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="140" column="26" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a21ae7915fc9ff2742292228724feb845" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t discord_voice::message_channel_id</definition>
+        <argsstring></argsstring>
+        <name>message_channel_id</name>
+        <briefdescription>
+<para>used to communicate the status of the bot state changes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="142" column="13" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__voice_1a9a85096944d2f4aa33811ee8488369a8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_voice::recv_interval</definition>
+        <argsstring></argsstring>
+        <name>recv_interval</name>
+        <briefdescription>
+<para>Interval to divide the received packets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 store in one file n store packets received every n minutes in a new file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="150" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Discord Voice Connection handle, contain information about its active session. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>struct <ref refid="structdiscord__voice" kindref="compound">discord_voice</ref> are reused on a guild basis, because there can be only one active struct <ref refid="structdiscord__voice" kindref="compound">discord_voice</ref> session per guild. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="discord-voice-connections_8h_1abd9a309fd38407c9bd8dfdb513653f7f" kindref="member">discord_join_vc()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>discord_voice_get_vc() </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>discord_gateway</label>
+        <link refid="structdiscord__gateway"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>on_voice_state_update</edgelabel>
+          <edgelabel>on_message_update</edgelabel>
+          <edgelabel>on_message_delete</edgelabel>
+          <edgelabel>sb_on_message_update</edgelabel>
+          <edgelabel>on_guild_member_add</edgelabel>
+          <edgelabel>on_message_reaction_remove_all</edgelabel>
+          <edgelabel>on_message_delete_bulk</edgelabel>
+          <edgelabel>on_guild_member_remove</edgelabel>
+          <edgelabel>on_idle</edgelabel>
+          <edgelabel>on_channel_pins_update</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>session</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>bot</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>on_cmd</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>discord_voice</label>
+        <link refid="structdiscord__voice"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p_voice_cbs</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>p_client</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>discord</label>
+        <link refid="structdiscord"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>voice_cbs</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>gw</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>vcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>discord_adapter</label>
+        <link refid="structdiscord__adapter"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>p_client</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>buckets</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>discord_voice_cbs</label>
+        <link refid="structdiscord__voice__cbs"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>on_idle</edgelabel>
+          <edgelabel>on_codec</edgelabel>
+          <edgelabel>on_client_disconnect</edgelabel>
+          <edgelabel>on_speaking</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>discord_gateway_activity</label>
+        <link refid="structdiscord__gateway__activity"/>
+      </node>
+      <node id="12">
+        <label>discord_gateway_identify_connection</label>
+        <link refid="structdiscord__gateway__identify__connection"/>
+      </node>
+      <node id="13">
+        <label>discord_gateway_cmd_cbs</label>
+        <link refid="structdiscord__gateway__cmd__cbs"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>discord_gateway_status_update</label>
+        <link refid="structdiscord__gateway__status__update"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>activities</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>discord_session</label>
+        <link refid="structdiscord__session"/>
+      </node>
+      <node id="8">
+        <label>discord_user</label>
+        <link refid="structdiscord__user"/>
+      </node>
+      <node id="5">
+        <label>discord_bucket</label>
+        <link refid="structdiscord__bucket"/>
+      </node>
+      <node id="9">
+        <label>discord_gateway_identify</label>
+        <link refid="structdiscord__gateway__identify"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>presence</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" line="88" column="20" bodyfile="/home/lucasmull/Trabalho/orca/discord-voice-connections.h" bodystart="88" bodyend="151"/>
+    <listofallmembers>
+      <member refid="structdiscord__voice_1a7d5b9ba1eb09d06ab6d54c61370b77bd" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>attempt</name></member>
+      <member refid="structdiscord__voice_1adc1cb2aa204896e5516cd668811e4982" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>audio_udp_pid</name></member>
+      <member refid="structdiscord__voice_1a461afcb154a43d603210134265de3a1e" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>bot_id</name></member>
+      <member refid="structdiscord__voice_1ab89baa105408aca684a0b69b8b659400" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>channel_id</name></member>
+      <member refid="structdiscord__voice_1a992277fc7c8aeb73ff52d0ba0778eba4" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>digest</name></member>
+      <member refid="structdiscord__voice_1a99eb0b0f909a8fa2c500ed49a1e33f28" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>enable</name></member>
+      <member refid="structdiscord__voice_1ab8d897fac80970412831a772bfb94944" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>event_data</name></member>
+      <member refid="structdiscord__voice_1a946b6f5215fb0a18d242b490396f18ee" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>guild_id</name></member>
+      <member refid="structdiscord__voice_1acd4c054a358202e73d66ee8495a54628" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>hbeat</name></member>
+      <member refid="structdiscord__voice_1add6f6addc5c21e7a654cf64cc427ddb8" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>interval_ms</name></member>
+      <member refid="structdiscord__voice_1adbbb211fe2a8a866f752dea5609bd881" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>is_ready</name></member>
+      <member refid="structdiscord__voice_1ad953547c1c3b864772a3473da13d620c" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>is_redirect</name></member>
+      <member refid="structdiscord__voice_1af4c4b869a6e815f45efbe9420a883990" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>is_resumable</name></member>
+      <member refid="structdiscord__voice_1a21ae7915fc9ff2742292228724feb845" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>message_channel_id</name></member>
+      <member refid="structdiscord__voice_1a68abd0d516bd445d828497175f6ee618" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>new_token</name></member>
+      <member refid="structdiscord__voice_1a76fd38580478a6e62b25666381c29d6b" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>new_url</name></member>
+      <member refid="structdiscord__voice_1a1fe496c3c65b88990da861f2e82cdd3e" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>opcode</name></member>
+      <member refid="structdiscord__voice_1a830e416cbac95188543803f1006bb959" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>p_client</name></member>
+      <member refid="structdiscord__voice_1a30746750acaff0ff482d9aaa3850b9c0" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>p_voice_cbs</name></member>
+      <member refid="structdiscord__voice_1adfe994a08867c7aeda9531cece6c9ffb" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>payload</name></member>
+      <member refid="structdiscord__voice_1a8dcb218e6dc77fe7fdc5ca2d50b6b952" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>ping_ms</name></member>
+      <member refid="structdiscord__voice_1a0450e8935c6133c9b7fa11885f807116" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>reconnect</name></member>
+      <member refid="structdiscord__voice_1a9a85096944d2f4aa33811ee8488369a8" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>recv_interval</name></member>
+      <member refid="structdiscord__voice_1a545357a6c0d1e35032479e66cac34610" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>server_ip</name></member>
+      <member refid="structdiscord__voice_1a394e674e0186cf9ebed2cf74ce5dfaff" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>server_port</name></member>
+      <member refid="structdiscord__voice_1a2f6a4c2f8c462f59882978d0ec8b8a29" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>session_id</name></member>
+      <member refid="structdiscord__voice_1ae770fb93fb2b623f4a214217d71702dd" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>shutdown</name></member>
+      <member refid="structdiscord__voice_1a8317ead25acc5900245be6a38a43f327" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>ssrc</name></member>
+      <member refid="structdiscord__voice_1aa4dbccde62f79ba9ba4773baec3a9926" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>start_time</name></member>
+      <member refid="structdiscord__voice_1aef639043efbfb1dd93c21339c51071ae" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>threshold</name></member>
+      <member refid="structdiscord__voice_1a548d14342c68517de160694706126ff4" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>token</name></member>
+      <member refid="structdiscord__voice_1aac74c117b51d71568ac2e5908110a491" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>tstamp</name></member>
+      <member refid="structdiscord__voice_1a2fcba3b65a361fe272e327c66fa4c950" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>udp_service</name></member>
+      <member refid="structdiscord__voice_1a41c81b5443c7ee0c06ee87fe1dc773d2" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>unique_key</name></member>
+      <member refid="structdiscord__voice_1a2958941e90c1cb84f711a11195a393d8" prot="public" virt="non-virtual"><scope>discord_voice</scope><name>ws</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

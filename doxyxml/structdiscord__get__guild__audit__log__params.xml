@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__get__guild__audit__log__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_get_guild_audit_log_params</compoundname>
+    <includes refid="audit__log_8endpoints-params_8h" local="no">audit_log.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__get__guild__audit__log__params_1a4021897974f2db54c42f54166871f6b0" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_get_guild_audit_log_params::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="18" column="19" bodyfile="orca/specs-code/discord/audit_log.endpoints-params.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__get__guild__audit__log__params_1ad64af062f6d975f0bfb74e42ac419032" prot="public" static="no" mutable="no">
+        <type>enum discord_audit_log_events</type>
+        <definition>enum discord_audit_log_events discord_get_guild_audit_log_params::action_type</definition>
+        <argsstring></argsstring>
+        <name>action_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="18" column="19" bodyfile="orca/specs-code/discord/audit_log.endpoints-params.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__get__guild__audit__log__params_1a6eaab7904941231a2dc0b39bd364ec03" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_get_guild_audit_log_params::before</definition>
+        <argsstring></argsstring>
+        <name>before</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="26" column="19" bodyfile="orca/specs-code/discord/audit_log.endpoints-params.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__get__guild__audit__log__params_1a771be7740581711ccaac0fa2846f99e0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_get_guild_audit_log_params::limit</definition>
+        <argsstring></argsstring>
+        <name>limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="30" column="7" bodyfile="orca/specs-code/discord/audit_log.endpoints-params.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/audit-log#get-guild-audit-log">https://discord.com/developers/docs/resources/audit-log#get-guild-audit-log</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/audit_log.endpoints-params.json:8:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/audit_log.endpoints-params.h" line="15" column="41" bodyfile="orca/specs-code/discord/audit_log.endpoints-params.h" bodystart="15" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structdiscord__get__guild__audit__log__params_1ad64af062f6d975f0bfb74e42ac419032" prot="public" virt="non-virtual"><scope>discord_get_guild_audit_log_params</scope><name>action_type</name></member>
+      <member refid="structdiscord__get__guild__audit__log__params_1a6eaab7904941231a2dc0b39bd364ec03" prot="public" virt="non-virtual"><scope>discord_get_guild_audit_log_params</scope><name>before</name></member>
+      <member refid="structdiscord__get__guild__audit__log__params_1a771be7740581711ccaac0fa2846f99e0" prot="public" virt="non-virtual"><scope>discord_get_guild_audit_log_params</scope><name>limit</name></member>
+      <member refid="structdiscord__get__guild__audit__log__params_1a4021897974f2db54c42f54166871f6b0" prot="public" virt="non-virtual"><scope>discord_get_guild_audit_log_params</scope><name>user_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

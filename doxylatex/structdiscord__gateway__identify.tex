@@ -1,0 +1,74 @@
+\hypertarget{structdiscord__gateway__identify}{}\doxysection{discord\+\_\+gateway\+\_\+identify Struct Reference}
+\label{structdiscord__gateway__identify}\index{discord\_gateway\_identify@{discord\_gateway\_identify}}
+
+
+Identify Structure.  
+
+
+
+
+{\ttfamily \#include $<$gateway.\+h$>$}
+
+
+
+Collaboration diagram for discord\+\_\+gateway\+\_\+identify\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structdiscord__gateway__identify__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdiscord__gateway__identify_a01d446e068370dedfd23f20259f9a60b}\label{structdiscord__gateway__identify_a01d446e068370dedfd23f20259f9a60b}} 
+char $\ast$ {\bfseries token}
+\item 
+\mbox{\Hypertarget{structdiscord__gateway__identify_abcd19ded80a834482053fb58e2148f45}\label{structdiscord__gateway__identify_abcd19ded80a834482053fb58e2148f45}} 
+struct \mbox{\hyperlink{structdiscord__gateway__identify__connection}{discord\+\_\+gateway\+\_\+identify\+\_\+connection}} $\ast$ {\bfseries properties}
+\item 
+\mbox{\Hypertarget{structdiscord__gateway__identify_afe8f92599b88f8a2e99278fbf3c28b35}\label{structdiscord__gateway__identify_afe8f92599b88f8a2e99278fbf3c28b35}} 
+bool {\bfseries compress}
+\item 
+\mbox{\Hypertarget{structdiscord__gateway__identify_a6385cd5f535c112ca3959df40b42e32a}\label{structdiscord__gateway__identify_a6385cd5f535c112ca3959df40b42e32a}} 
+int {\bfseries large\+\_\+threshold}
+\item 
+\mbox{\Hypertarget{structdiscord__gateway__identify_a385ec425c7d867b5e0e4e224b81add76}\label{structdiscord__gateway__identify_a385ec425c7d867b5e0e4e224b81add76}} 
+bool {\bfseries guild\+\_\+subscriptions}
+\item 
+struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}} $\ast$ \mbox{\hyperlink{structdiscord__gateway__identify_a18f7c458f67d8d27e12ff03d41abe94a}{presence}}
+\begin{DoxyCompactList}\small\item\em $<$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structdiscord__gateway__identify_a92c42ed15577f8b833f3b9d7ee198112}\label{structdiscord__gateway__identify_a92c42ed15577f8b833f3b9d7ee198112}} 
+int {\bfseries intents}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Identify Structure. 
+
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/topics/gateway\#identify-identify-structure}{\texttt{ https\+://discord.\+com/developers/docs/topics/gateway\#identify-\/identify-\/structure}} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+defined at specs/discord/gateway.\+json\+:116\+:22 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structdiscord__gateway__identify_a18f7c458f67d8d27e12ff03d41abe94a}\label{structdiscord__gateway__identify_a18f7c458f67d8d27e12ff03d41abe94a}} 
+\index{discord\_gateway\_identify@{discord\_gateway\_identify}!presence@{presence}}
+\index{presence@{presence}!discord\_gateway\_identify@{discord\_gateway\_identify}}
+\doxysubsubsection{\texorpdfstring{presence}{presence}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structdiscord__gateway__status__update}{discord\+\_\+gateway\+\_\+status\+\_\+update}}$\ast$ discord\+\_\+gateway\+\_\+identify\+::presence}
+
+
+
+$<$ 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000017}{Todo}}]shard (null); \end{DoxyRefDesc}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orca/specs-\/code/discord/\mbox{\hyperlink{gateway_8h}{gateway.\+h}}\end{DoxyCompactItemize}

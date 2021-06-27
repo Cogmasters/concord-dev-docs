@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="discord-voice-connections_8h_1a517ff51efc872dcd82d14db3c818c228" kindref="member">_discord_on_voice_server_update</ref>  (struct discord *client, u64_snowflake_t guild_id, char token[], char endpoint[])</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000006"/>move to <ref refid="discord-internal_8h" kindref="compound">discord-internal.h</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="discord-voice-connections_8h_1a3ba56a9e477a384fc810ff2117e1cac4" kindref="member">_discord_on_voice_state_update</ref>  (struct discord *client, struct <ref refid="structdiscord__voice__state" kindref="compound">discord_voice_state</ref> *vs)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000005"/>move to <ref refid="discord-internal_8h" kindref="compound">discord-internal.h</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__audit__log__change__key_1a4eafa3ed7445ed4cbead63377ac9f5f7" kindref="member">discord_audit_log_change_key::enable_emotions</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000015"/>type integer or string;  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__audit__log__change__key_1a3dd775e4673665dd9988f4fc4fb58329" kindref="member">discord_audit_log_change_key::nsfw</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000014"/>permission_overwrites (null);  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__audit__log__change__key_1a3781ee712f5bf8609ad298270b9c2860" kindref="member">discord_audit_log_change_key::prune_delete_days</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000012"/>add (null); </para>
+<para><anchor id="todo_1_todo000013"/>remove (null);  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__create__guild__params_1a9961a2dd1b3a565f7a6d3da49d58c154" kindref="member">discord_create_guild_params::channels</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000018"/>roles new guild roles;  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="structdiscord__create__message__params" kindref="compound">discord_create_message_params</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000009"/>make this specs generated code  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="structdiscord__edit__message__params" kindref="compound">discord_edit_message_params</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000010"/>make this specs generated code  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__emoji_1a2f8f871daa760513aca81c79f0c9ad82" kindref="member">discord_emoji::user</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000016"/>roles (null);  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__gateway_1a3595a1cbbd88f6a10d736d2f28e8ca3e" kindref="member">discord_gateway::sb_bot</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>this is temporary  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__gateway_1a15671c64a6fceff5ab9ea5493d893dcd" kindref="member">discord_gateway::sb_on_message_create</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>this is temporary  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__gateway_1a8591ddfb0e882dc8721abbb91cd8fb94" kindref="member">discord_gateway::sb_on_message_update</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000003"/>this is temporary  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__gateway__identify_1a18f7c458f67d8d27e12ff03d41abe94a" kindref="member">discord_gateway_identify::presence</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000017"/>shard (null);  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="structdiscord__get__channel__messages__params" kindref="compound">discord_get_channel_messages_params</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000008"/>make this specs generated code  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__guild_1a06b154313aa74e10b1d1fd9ccf9b798f" kindref="member">discord_guild::emojis</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000020"/>roles array of role objects;  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__guild_1a7cdccad067827d24ec90b8aeb514993a" kindref="member">discord_guild::max_presences</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000023"/>presences array of partial presence update objects;  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__guild_1a23e7368b9fde69866345df2ebb1a07b6" kindref="member">discord_guild::members</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000022"/>voice_states array of partial voice state objects;  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__guild_1acf7dd0e68460da34175e33dd2f378aa4" kindref="member">discord_guild::mfa_level</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000021"/>features array of guild feature strings;  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__guild__preview_1a68082e0d7ea99f9ec354ef9b06a7bb22" kindref="member">discord_guild_preview::approximate_member_count</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000024"/>features (null);  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="discord-voice-connections_8h_1abd9a309fd38407c9bd8dfdb513653f7f" kindref="member">discord_join_vc</ref>  (struct discord *client, struct <ref refid="structdiscord__message" kindref="compound">discord_message</ref> *msg, u64_snowflake_t guild_id, u64_snowflake_t channel_id, bool self_mute, bool self_deaf)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000004"/>remove this non-intuitive requirement  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="structdiscord__list__guild__members__params" kindref="compound">discord_list_guild_members_params</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000011"/>this can become specs generated code  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structdiscord__modify__guild__params_1a3df01c1602d469e8204d1731202bed49" kindref="member">discord_modify_guild_params::description</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000019"/>features array of guild feature strings;  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="structdiscord__session" kindref="compound">discord_session</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000007"/>make this specs generated code </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

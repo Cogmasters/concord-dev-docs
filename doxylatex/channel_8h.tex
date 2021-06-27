@@ -1,0 +1,1433 @@
+\hypertarget{channel_8h}{}\doxysection{orca/specs-\/code/discord/channel.h File Reference}
+\label{channel_8h}\index{orca/specs-\/code/discord/channel.h@{orca/specs-\/code/discord/channel.h}}
+
+
+Specs generated file.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}}
+\begin{DoxyCompactList}\small\item\em Channel Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}}
+\begin{DoxyCompactList}\small\item\em Message Sticker Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}}
+\begin{DoxyCompactList}\small\item\em Message Reference Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}}
+\begin{DoxyCompactList}\small\item\em Message Application Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}}
+\begin{DoxyCompactList}\small\item\em Message Activity Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Message Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}}
+\begin{DoxyCompactList}\small\item\em Followed Channel Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}}
+\begin{DoxyCompactList}\small\item\em Reaction Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}}
+\begin{DoxyCompactList}\small\item\em Overwrite Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}}
+\begin{DoxyCompactList}\small\item\em Thread Metadata Object. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}}
+\begin{DoxyCompactList}\small\item\em Thread Member Object. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}}
+\begin{DoxyCompactList}\small\item\em Attachment Strcture. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}}
+\begin{DoxyCompactList}\small\item\em Channel Mention Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}}
+\begin{DoxyCompactList}\small\item\em Allowed Mentions Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}}
+\begin{DoxyCompactList}\small\item\em Embed Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}}
+\begin{DoxyCompactList}\small\item\em Embed Thumbnail Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}}
+\begin{DoxyCompactList}\small\item\em Embed Video Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}}
+\begin{DoxyCompactList}\small\item\em Embed Image Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}}
+\begin{DoxyCompactList}\small\item\em Embed Provider Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}}
+\begin{DoxyCompactList}\small\item\em Embed Author Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}}
+\begin{DoxyCompactList}\small\item\em Embed Footer Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em Embed Field Structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{channel_8h_a8da5a4e81d57a68dc380394ef40a12fe}\label{channel_8h_a8da5a4e81d57a68dc380394ef40a12fe}} 
+enum {\bfseries discord\+\_\+channel\+\_\+types} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+U\+I\+L\+D\+\_\+\+T\+E\+XT} = 0, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+DM} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+U\+I\+L\+D\+\_\+\+V\+O\+I\+CE} = 2, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+R\+O\+U\+P\+\_\+\+DM} = 3, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+U\+I\+L\+D\+\_\+\+C\+A\+T\+E\+G\+O\+RY} = 4, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+U\+I\+L\+D\+\_\+\+N\+E\+WS} = 5, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+U\+I\+L\+D\+\_\+\+S\+T\+O\+RE} = 6
+ \}
+\item 
+\mbox{\Hypertarget{channel_8h_abdb022a311e5e1a98f8de0305ba2a855}\label{channel_8h_abdb022a311e5e1a98f8de0305ba2a855}} 
+enum {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+format\+\_\+types} \{ {\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+I\+C\+K\+E\+R\+\_\+\+P\+NG} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+I\+C\+K\+E\+R\+\_\+\+A\+P\+NG} = 2, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+T\+I\+C\+K\+E\+R\+\_\+\+L\+O\+T\+T\+IE} = 3
+ \}
+\item 
+\mbox{\Hypertarget{channel_8h_aa5abd5ed2af1f624314dd0bba31a2d89}\label{channel_8h_aa5abd5ed2af1f624314dd0bba31a2d89}} 
+enum {\bfseries discord\+\_\+message\+\_\+flags} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+C\+R\+O\+S\+S\+P\+O\+S\+T\+ED} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+I\+S\+\_\+\+C\+R\+O\+S\+S\+P\+O\+ST} = 2, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+U\+P\+R\+E\+S\+S\+\_\+\+E\+M\+B\+E\+DS} = 4, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+D\+E\+L\+E\+T\+ED} = 8, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+U\+R\+G\+E\+NT} = 16
+ \}
+\item 
+\mbox{\Hypertarget{channel_8h_a366e3c4f92dd50b9a053e6163c40e82b}\label{channel_8h_a366e3c4f92dd50b9a053e6163c40e82b}} 
+enum {\bfseries discord\+\_\+message\+\_\+activity\+\_\+types} \{ {\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+J\+O\+IN} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+S\+P\+E\+C\+T\+A\+TE} = 2, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+L\+I\+S\+T\+EN} = 3, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+J\+O\+I\+N\+\_\+\+R\+E\+Q\+U\+E\+ST} = 5
+ \}
+\item 
+\mbox{\Hypertarget{channel_8h_a9d5ce4d366c039a34da94bd514a4bced}\label{channel_8h_a9d5ce4d366c039a34da94bd514a4bced}} 
+enum {\bfseries discord\+\_\+message\+\_\+types} \{ \newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+LT} = 0, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+C\+I\+P\+I\+E\+N\+T\+\_\+\+A\+DD} = 1, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+C\+I\+P\+I\+E\+N\+T\+\_\+\+R\+E\+M\+O\+VE} = 3, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+C\+A\+LL} = 5, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+A\+M\+E\+\_\+\+C\+H\+A\+N\+GE} = 5, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+I\+C\+O\+N\+\_\+\+C\+H\+A\+N\+GE} = 5, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+I\+N\+N\+E\+D\+\_\+\+M\+E\+S\+S\+A\+GE} = 5, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+G\+U\+I\+L\+D\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+J\+O\+IN} = 5, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+E\+M\+I\+U\+M\+\_\+\+G\+U\+I\+L\+D\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+ON} = 5, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+E\+M\+I\+U\+M\+\_\+\+G\+U\+I\+L\+D\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+T\+I\+E\+R\+\_\+1} = 9, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+E\+M\+I\+U\+M\+\_\+\+G\+U\+I\+L\+D\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+T\+I\+E\+R\+\_\+2} = 10, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+U\+S\+E\+R\+\_\+\+P\+R\+E\+M\+I\+U\+M\+\_\+\+G\+U\+I\+L\+D\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+T\+I\+E\+R\+\_\+3} = 11, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+A\+DD} = 12, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+G\+U\+I\+L\+D\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+Y\+\_\+\+D\+I\+S\+Q\+U\+A\+L\+I\+F\+I\+ED} = 14, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+G\+U\+I\+L\+D\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+Y\+\_\+\+R\+E\+Q\+U\+A\+L\+I\+F\+I\+ED} = 15, 
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+P\+LY} = 19, 
+\newline
+{\bfseries D\+I\+S\+C\+O\+R\+D\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+O\+M\+M\+A\+ND} = 20
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{channel_8h_a885ec7000ed36f1b70fd107d7352dd82}\label{channel_8h_a885ec7000ed36f1b70fd107d7352dd82}} 
+char $\ast$ {\bfseries discord\+\_\+channel\+\_\+types\+\_\+to\+\_\+string} (enum discord\+\_\+channel\+\_\+types)
+\item 
+\mbox{\Hypertarget{channel_8h_a37cbde07467e6692c9e004fe2f3846b3}\label{channel_8h_a37cbde07467e6692c9e004fe2f3846b3}} 
+enum discord\+\_\+channel\+\_\+types {\bfseries discord\+\_\+channel\+\_\+types\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_ae21a93d8178d72d215a88963c3f86680}\label{channel_8h_ae21a93d8178d72d215a88963c3f86680}} 
+bool {\bfseries discord\+\_\+channel\+\_\+types\+\_\+has} (enum discord\+\_\+channel\+\_\+types, char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_ad8bd4cf66416470c573ab550fc9479f4}\label{channel_8h_ad8bd4cf66416470c573ab550fc9479f4}} 
+void {\bfseries discord\+\_\+channel\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a46d4acb4210c8f4530b44ba8fd066ab5}\label{channel_8h_a46d4acb4210c8f4530b44ba8fd066ab5}} 
+void {\bfseries discord\+\_\+channel\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a839b3fc2f3b07ae068e98658d0a4915c}\label{channel_8h_a839b3fc2f3b07ae068e98658d0a4915c}} 
+void {\bfseries discord\+\_\+channel\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac2cf492e0e653b0df09a8270020c95b8}\label{channel_8h_ac2cf492e0e653b0df09a8270020c95b8}} 
+void {\bfseries discord\+\_\+channel\+\_\+init} (struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab0e1b654562c82dfeaf86b7b863f8309}\label{channel_8h_ab0e1b654562c82dfeaf86b7b863f8309}} 
+struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$ {\bfseries discord\+\_\+channel\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a1c226211df1d942f0a292dadf301bddf}\label{channel_8h_a1c226211df1d942f0a292dadf301bddf}} 
+void {\bfseries discord\+\_\+channel\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afd992570a74250b0cb9b964e3478a4cb}\label{channel_8h_afd992570a74250b0cb9b964e3478a4cb}} 
+void {\bfseries discord\+\_\+channel\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae0ee760ff39165a1865e8c69cd9b064d}\label{channel_8h_ae0ee760ff39165a1865e8c69cd9b064d}} 
+void {\bfseries discord\+\_\+channel\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a677e6c20177306f5c670ac6a693d19d3}\label{channel_8h_a677e6c20177306f5c670ac6a693d19d3}} 
+void {\bfseries discord\+\_\+channel\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a26e22470e0bc15e48319a851496db957}\label{channel_8h_a26e22470e0bc15e48319a851496db957}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6d9c4db2aee5a46df4d62e29938e5f39}\label{channel_8h_a6d9c4db2aee5a46df4d62e29938e5f39}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa3f9e0be06bf0abb604a9d7f031e4b22}\label{channel_8h_aa3f9e0be06bf0abb604a9d7f031e4b22}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4d85b4eeda647c2c392e665306fddbe5}\label{channel_8h_a4d85b4eeda647c2c392e665306fddbe5}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad03fb3d460ef69397f27d9feff7a145d}\label{channel_8h_ad03fb3d460ef69397f27d9feff7a145d}} 
+void {\bfseries discord\+\_\+channel\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a26605fa76542386386c3a9c7e3ef5167}\label{channel_8h_a26605fa76542386386c3a9c7e3ef5167}} 
+void {\bfseries discord\+\_\+channel\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6357ab3255028d5d4d592a34720bf65f}\label{channel_8h_a6357ab3255028d5d4d592a34720bf65f}} 
+void {\bfseries discord\+\_\+channel\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6c6dd720707f922185b944692ae65d24}\label{channel_8h_a6c6dd720707f922185b944692ae65d24}} 
+void {\bfseries discord\+\_\+channel\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa13ddca57d73cf8f2fd9fa8f11518015}\label{channel_8h_aa13ddca57d73cf8f2fd9fa8f11518015}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a77668ea6c8092dc3879c74633946383c}\label{channel_8h_a77668ea6c8092dc3879c74633946383c}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel}{discord\+\_\+channel}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a0e1f795003213b45a12a9fd78a8c8db9}\label{channel_8h_a0e1f795003213b45a12a9fd78a8c8db9}} 
+char $\ast$ {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+format\+\_\+types\+\_\+to\+\_\+string} (enum discord\+\_\+message\+\_\+sticker\+\_\+format\+\_\+types)
+\item 
+\mbox{\Hypertarget{channel_8h_a9c93a5236b1fff1190725a2b8d1a1d2c}\label{channel_8h_a9c93a5236b1fff1190725a2b8d1a1d2c}} 
+enum discord\+\_\+message\+\_\+sticker\+\_\+format\+\_\+types {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+format\+\_\+types\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_a751a2ddaa9baeab2b74b47712bc25d68}\label{channel_8h_a751a2ddaa9baeab2b74b47712bc25d68}} 
+bool {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+format\+\_\+types\+\_\+has} (enum discord\+\_\+message\+\_\+sticker\+\_\+format\+\_\+types, char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_ab9a8fe4e5b8403ed85c0c1e8cf4371d2}\label{channel_8h_ab9a8fe4e5b8403ed85c0c1e8cf4371d2}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a919aa6c806cc06bf196d66171fe1c7a5}\label{channel_8h_a919aa6c806cc06bf196d66171fe1c7a5}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afce8add5414d3431b63a6f94c6ba39ce}\label{channel_8h_afce8add5414d3431b63a6f94c6ba39ce}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a722e58e358d304ccc32a778f3b3603b0}\label{channel_8h_a722e58e358d304ccc32a778f3b3603b0}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+init} (struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a628f265658aec1008d66a4afeb107f23}\label{channel_8h_a628f265658aec1008d66a4afeb107f23}} 
+struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$ {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_af1a44dbfc43adc92fb8547ae8b795330}\label{channel_8h_af1a44dbfc43adc92fb8547ae8b795330}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a29924a3b996bab4efc938476558ae935}\label{channel_8h_a29924a3b996bab4efc938476558ae935}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a432c6ef931520093204334de35250228}\label{channel_8h_a432c6ef931520093204334de35250228}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad52a263af3f10c2680f7759e7db9dbd1}\label{channel_8h_ad52a263af3f10c2680f7759e7db9dbd1}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2653ef64d953d5574c1144e4fa1a94ca}\label{channel_8h_a2653ef64d953d5574c1144e4fa1a94ca}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_abbb278741425ae15d77b28f89e2e34bc}\label{channel_8h_abbb278741425ae15d77b28f89e2e34bc}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad8575f3a35bc27a195e4eb14e9a3a587}\label{channel_8h_ad8575f3a35bc27a195e4eb14e9a3a587}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a223d4b343dc3970bed9a17bb3833303c}\label{channel_8h_a223d4b343dc3970bed9a17bb3833303c}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae46af256f0fe902dbaa65fb35f328c15}\label{channel_8h_ae46af256f0fe902dbaa65fb35f328c15}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad1b328dc73dd6cdab3f876f29f94599b}\label{channel_8h_ad1b328dc73dd6cdab3f876f29f94599b}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2fc470252276135be5b72f9c4f6707ea}\label{channel_8h_a2fc470252276135be5b72f9c4f6707ea}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2001c8a63f9c9cbbd2dd1b740145b098}\label{channel_8h_a2001c8a63f9c9cbbd2dd1b740145b098}} 
+void {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2d0b37ab61cd6e7accbfb39c82a09e28}\label{channel_8h_a2d0b37ab61cd6e7accbfb39c82a09e28}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa85386f98680dc76604f2bb4d53399ba}\label{channel_8h_aa85386f98680dc76604f2bb4d53399ba}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+sticker\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__sticker}{discord\+\_\+message\+\_\+sticker}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aba3c520374e84af77e13f5e34522ea58}\label{channel_8h_aba3c520374e84af77e13f5e34522ea58}} 
+char $\ast$ {\bfseries discord\+\_\+message\+\_\+flags\+\_\+to\+\_\+string} (enum discord\+\_\+message\+\_\+flags)
+\item 
+\mbox{\Hypertarget{channel_8h_ac43f5cc77f825d9e3debc0471cba34c9}\label{channel_8h_ac43f5cc77f825d9e3debc0471cba34c9}} 
+enum discord\+\_\+message\+\_\+flags {\bfseries discord\+\_\+message\+\_\+flags\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_ae2691d6aa98acf0b9f5b39994c42dd00}\label{channel_8h_ae2691d6aa98acf0b9f5b39994c42dd00}} 
+bool {\bfseries discord\+\_\+message\+\_\+flags\+\_\+has} (enum discord\+\_\+message\+\_\+flags, char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_ae0c49b57388c079956c790aaa38ac10c}\label{channel_8h_ae0c49b57388c079956c790aaa38ac10c}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a93e41be37d70e438e988e7291a6af83c}\label{channel_8h_a93e41be37d70e438e988e7291a6af83c}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab0c9d83e5ffece1ca45be7f81370e8bb}\label{channel_8h_ab0c9d83e5ffece1ca45be7f81370e8bb}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3de159cee171a3cb8faa4cd40d475261}\label{channel_8h_a3de159cee171a3cb8faa4cd40d475261}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+init} (struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad079a832058d0df172e828c4e48ec00a}\label{channel_8h_ad079a832058d0df172e828c4e48ec00a}} 
+struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$ {\bfseries discord\+\_\+message\+\_\+reference\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a2a21eb3648e1e39815e34816f7baae10}\label{channel_8h_a2a21eb3648e1e39815e34816f7baae10}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a22ced67ed5dcbe34ce0989e90a9ba68e}\label{channel_8h_a22ced67ed5dcbe34ce0989e90a9ba68e}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a411b602770e6f49aec7319ec98067154}\label{channel_8h_a411b602770e6f49aec7319ec98067154}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad058d797ff9a60f6cf5515f26730b0ce}\label{channel_8h_ad058d797ff9a60f6cf5515f26730b0ce}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2049c5d3e4af755a17bbf9f7c85e1d8a}\label{channel_8h_a2049c5d3e4af755a17bbf9f7c85e1d8a}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+reference\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae46ef9d3d28875bdf01b7ebd1469239e}\label{channel_8h_ae46ef9d3d28875bdf01b7ebd1469239e}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+reference\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4a0611750028d0b246e31f5d3fc06fa6}\label{channel_8h_a4a0611750028d0b246e31f5d3fc06fa6}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+reference\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4a27268a40776437c43cf84e1f4042c8}\label{channel_8h_a4a27268a40776437c43cf84e1f4042c8}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+reference\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae1405f91168ab9ef0aa9f1a54f887fa3}\label{channel_8h_ae1405f91168ab9ef0aa9f1a54f887fa3}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a63b048614988a1688a3f4506f55fecd0}\label{channel_8h_a63b048614988a1688a3f4506f55fecd0}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a102a1c91ca3981425a68310cabdf8bf7}\label{channel_8h_a102a1c91ca3981425a68310cabdf8bf7}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9ef04f5ea3e460d5d6a341d1585189c2}\label{channel_8h_a9ef04f5ea3e460d5d6a341d1585189c2}} 
+void {\bfseries discord\+\_\+message\+\_\+reference\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a74915b85c93c496bb2221bd18048b80a}\label{channel_8h_a74915b85c93c496bb2221bd18048b80a}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+reference\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a69f4f801053fc603eb3eeaed68b303ee}\label{channel_8h_a69f4f801053fc603eb3eeaed68b303ee}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+reference\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__reference}{discord\+\_\+message\+\_\+reference}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a16a8ef6e8fb4bb04438061b80981e77b}\label{channel_8h_a16a8ef6e8fb4bb04438061b80981e77b}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3516f49968c46c5dd3f8de68b33864a7}\label{channel_8h_a3516f49968c46c5dd3f8de68b33864a7}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afee289854a446c9bdd10ea79db6bccec}\label{channel_8h_afee289854a446c9bdd10ea79db6bccec}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9b1022d148d415f3e5be008846918e5d}\label{channel_8h_a9b1022d148d415f3e5be008846918e5d}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+init} (struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a13ae64bdc28eab5e27640507b5c0235e}\label{channel_8h_a13ae64bdc28eab5e27640507b5c0235e}} 
+struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$ {\bfseries discord\+\_\+message\+\_\+application\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_aaa34eaa1003aad2c9d6e4cf89c14dd3b}\label{channel_8h_aaa34eaa1003aad2c9d6e4cf89c14dd3b}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a46ade293c519874d125311bdb3a55d0a}\label{channel_8h_a46ade293c519874d125311bdb3a55d0a}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a85b951e3404402dddc761f925fabd549}\label{channel_8h_a85b951e3404402dddc761f925fabd549}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4233d6f1f0f553565e80fefc139e31a5}\label{channel_8h_a4233d6f1f0f553565e80fefc139e31a5}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aefea6a2c6a8a0cd4b487f80bcad78ab4}\label{channel_8h_aefea6a2c6a8a0cd4b487f80bcad78ab4}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+application\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7e259fad18311ccd2b3f9e7047328d9c}\label{channel_8h_a7e259fad18311ccd2b3f9e7047328d9c}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+application\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aacb41bb5222e9c9379eb0d50a13c9f49}\label{channel_8h_aacb41bb5222e9c9379eb0d50a13c9f49}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+application\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac3ecf8a4f78e90bdce8fed72bd85f4fa}\label{channel_8h_ac3ecf8a4f78e90bdce8fed72bd85f4fa}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+application\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6a491038fa0672530c774ec58ed1a0b6}\label{channel_8h_a6a491038fa0672530c774ec58ed1a0b6}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab379bc9decb88ce731e853e92535f84b}\label{channel_8h_ab379bc9decb88ce731e853e92535f84b}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af468f5aeafd8f3f5507796c61850866b}\label{channel_8h_af468f5aeafd8f3f5507796c61850866b}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a141dde117b242528284b410ce5f272ec}\label{channel_8h_a141dde117b242528284b410ce5f272ec}} 
+void {\bfseries discord\+\_\+message\+\_\+application\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad8ab65d68a57636de506fc4b306fad89}\label{channel_8h_ad8ab65d68a57636de506fc4b306fad89}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+application\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7c93e3a0530b9ba983b74527903dac37}\label{channel_8h_a7c93e3a0530b9ba983b74527903dac37}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+application\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__application}{discord\+\_\+message\+\_\+application}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_acc3430d44e73d6bbb2444a7bc05887a7}\label{channel_8h_acc3430d44e73d6bbb2444a7bc05887a7}} 
+char $\ast$ {\bfseries discord\+\_\+message\+\_\+activity\+\_\+types\+\_\+to\+\_\+string} (enum discord\+\_\+message\+\_\+activity\+\_\+types)
+\item 
+\mbox{\Hypertarget{channel_8h_a540be9c36f55aa7c1c56ba878547440d}\label{channel_8h_a540be9c36f55aa7c1c56ba878547440d}} 
+enum discord\+\_\+message\+\_\+activity\+\_\+types {\bfseries discord\+\_\+message\+\_\+activity\+\_\+types\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_af3eef520f2f3c4444f9aefc3a7401137}\label{channel_8h_af3eef520f2f3c4444f9aefc3a7401137}} 
+bool {\bfseries discord\+\_\+message\+\_\+activity\+\_\+types\+\_\+has} (enum discord\+\_\+message\+\_\+activity\+\_\+types, char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_aa23376f33fad5edfb1d89dc037249d71}\label{channel_8h_aa23376f33fad5edfb1d89dc037249d71}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_adae88a39fe80c43c67bf13ae9128639b}\label{channel_8h_adae88a39fe80c43c67bf13ae9128639b}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa44d85470981c80a8fb4b63fd29f7017}\label{channel_8h_aa44d85470981c80a8fb4b63fd29f7017}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a06b9158c0dbb1aa2b84d9fd39e9d193c}\label{channel_8h_a06b9158c0dbb1aa2b84d9fd39e9d193c}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+init} (struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_abe7e9e6805ec7ee16894eea527bf676f}\label{channel_8h_abe7e9e6805ec7ee16894eea527bf676f}} 
+struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$ {\bfseries discord\+\_\+message\+\_\+activity\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a62e3b003c0c452a92c347dc191374f6e}\label{channel_8h_a62e3b003c0c452a92c347dc191374f6e}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab8d18cad5bae9f85cc70b103ad595469}\label{channel_8h_ab8d18cad5bae9f85cc70b103ad595469}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3f97ed8bfcee8727f39d26d220d600a5}\label{channel_8h_a3f97ed8bfcee8727f39d26d220d600a5}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa8b2386dc36a6560c5a68870aa4caad4}\label{channel_8h_aa8b2386dc36a6560c5a68870aa4caad4}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a958f8e79be366195786401f53c02283b}\label{channel_8h_a958f8e79be366195786401f53c02283b}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+activity\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afcb4515db77e6c226435a21408a467b9}\label{channel_8h_afcb4515db77e6c226435a21408a467b9}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+activity\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac5c38cf31b7290602e0bf34e4cccf111}\label{channel_8h_ac5c38cf31b7290602e0bf34e4cccf111}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+activity\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a8e1123c411b30e26f6d0108881a0fbd1}\label{channel_8h_a8e1123c411b30e26f6d0108881a0fbd1}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+activity\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aef37c7c6e7f5f80e67b0c8846acdb1b5}\label{channel_8h_aef37c7c6e7f5f80e67b0c8846acdb1b5}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a79a85a9cfed393766b293ed055cb3cc1}\label{channel_8h_a79a85a9cfed393766b293ed055cb3cc1}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a8e8fcce4d4cb1cd493aa3062c507b570}\label{channel_8h_a8e8fcce4d4cb1cd493aa3062c507b570}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6489477b0fa849aba54541bfa13dc62e}\label{channel_8h_a6489477b0fa849aba54541bfa13dc62e}} 
+void {\bfseries discord\+\_\+message\+\_\+activity\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9fc0531f95bec3b73e0e6bddd4d235f1}\label{channel_8h_a9fc0531f95bec3b73e0e6bddd4d235f1}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+activity\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5d8ad14ff5da64ed75df5c231b13e151}\label{channel_8h_a5d8ad14ff5da64ed75df5c231b13e151}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+activity\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message__activity}{discord\+\_\+message\+\_\+activity}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2d4b64a296ebc556fe0b80df5e9ca401}\label{channel_8h_a2d4b64a296ebc556fe0b80df5e9ca401}} 
+char $\ast$ {\bfseries discord\+\_\+message\+\_\+types\+\_\+to\+\_\+string} (enum discord\+\_\+message\+\_\+types)
+\item 
+\mbox{\Hypertarget{channel_8h_a3c486819c8d60742c90a6b5d9ae64672}\label{channel_8h_a3c486819c8d60742c90a6b5d9ae64672}} 
+enum discord\+\_\+message\+\_\+types {\bfseries discord\+\_\+message\+\_\+types\+\_\+from\+\_\+string} (char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_a6625711b828e4bb6305ed4d819f9f283}\label{channel_8h_a6625711b828e4bb6305ed4d819f9f283}} 
+bool {\bfseries discord\+\_\+message\+\_\+types\+\_\+has} (enum discord\+\_\+message\+\_\+types, char $\ast$)
+\item 
+\mbox{\Hypertarget{channel_8h_aad3ab57f5a2fd84713c883c68b2b061b}\label{channel_8h_aad3ab57f5a2fd84713c883c68b2b061b}} 
+void {\bfseries discord\+\_\+message\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab7d5f5eddce23bd33f2deaaa2b6df91b}\label{channel_8h_ab7d5f5eddce23bd33f2deaaa2b6df91b}} 
+void {\bfseries discord\+\_\+message\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a65599d307f4b26292d329ea99ec12e8a}\label{channel_8h_a65599d307f4b26292d329ea99ec12e8a}} 
+void {\bfseries discord\+\_\+message\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae206077cd09ff15eb92191ad26018c2f}\label{channel_8h_ae206077cd09ff15eb92191ad26018c2f}} 
+void {\bfseries discord\+\_\+message\+\_\+init} (struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7902f0ccdab473de4c6b7df00ecba675}\label{channel_8h_a7902f0ccdab473de4c6b7df00ecba675}} 
+struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$ {\bfseries discord\+\_\+message\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a673b28518cb1019b637a1e2380297f50}\label{channel_8h_a673b28518cb1019b637a1e2380297f50}} 
+void {\bfseries discord\+\_\+message\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a76f1795b33b4eaf9eb065184dbc812a8}\label{channel_8h_a76f1795b33b4eaf9eb065184dbc812a8}} 
+void {\bfseries discord\+\_\+message\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a47ba94d6935c6c3cde91f0e9d8f77ebf}\label{channel_8h_a47ba94d6935c6c3cde91f0e9d8f77ebf}} 
+void {\bfseries discord\+\_\+message\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a80c344287a07afc91d2eec93c1296657}\label{channel_8h_a80c344287a07afc91d2eec93c1296657}} 
+void {\bfseries discord\+\_\+message\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa602e711dba73b33657cc76cec0ba7fa}\label{channel_8h_aa602e711dba73b33657cc76cec0ba7fa}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a22b93806ff4843365939f01d7a07b816}\label{channel_8h_a22b93806ff4843365939f01d7a07b816}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a44bad9e89df539e3298dfddf8f8bd446}\label{channel_8h_a44bad9e89df539e3298dfddf8f8bd446}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab0a81857f6151d77ea5f68fb8b2f146c}\label{channel_8h_ab0a81857f6151d77ea5f68fb8b2f146c}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a26fcce60b23cff184348945a021d4f29}\label{channel_8h_a26fcce60b23cff184348945a021d4f29}} 
+void {\bfseries discord\+\_\+message\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a216fbbacd9d83af31f80c708981f82b8}\label{channel_8h_a216fbbacd9d83af31f80c708981f82b8}} 
+void {\bfseries discord\+\_\+message\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a281581f8c03f8ab537704ce24ef630f4}\label{channel_8h_a281581f8c03f8ab537704ce24ef630f4}} 
+void {\bfseries discord\+\_\+message\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad6d8fdfb559fcf7edfa8b017758adaa7}\label{channel_8h_ad6d8fdfb559fcf7edfa8b017758adaa7}} 
+void {\bfseries discord\+\_\+message\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a0ccddfafcb431ad1099be5fd2ee5f4ba}\label{channel_8h_a0ccddfafcb431ad1099be5fd2ee5f4ba}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5e9e3f23f10153344fd35f420fec3e0c}\label{channel_8h_a5e9e3f23f10153344fd35f420fec3e0c}} 
+size\+\_\+t {\bfseries discord\+\_\+message\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__message}{discord\+\_\+message}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_abb823b24462f5fa539124adabe374394}\label{channel_8h_abb823b24462f5fa539124adabe374394}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4e632bf257bf51683fed6a74a0aa68bc}\label{channel_8h_a4e632bf257bf51683fed6a74a0aa68bc}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae179f56ccb4ce19b4de6811f9472f5cd}\label{channel_8h_ae179f56ccb4ce19b4de6811f9472f5cd}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a21e462bd38d27c4e2f8eddad7367e916}\label{channel_8h_a21e462bd38d27c4e2f8eddad7367e916}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+init} (struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a94a0b7ec6a25bba9d816ab71656d49f1}\label{channel_8h_a94a0b7ec6a25bba9d816ab71656d49f1}} 
+struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$ {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_aa23127f53040edf35670cecada3a3d57}\label{channel_8h_aa23127f53040edf35670cecada3a3d57}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a10e414a153f83ef974a8702d4f7e44a7}\label{channel_8h_a10e414a153f83ef974a8702d4f7e44a7}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab8311b6e5f408089960ea8a88259208d}\label{channel_8h_ab8311b6e5f408089960ea8a88259208d}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6bb1ca9d6d7bc30a2c71d50a1e00f45c}\label{channel_8h_a6bb1ca9d6d7bc30a2c71d50a1e00f45c}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4ffcd524935d12f574312875addd9043}\label{channel_8h_a4ffcd524935d12f574312875addd9043}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad5ad40c25a3d82c54d5d2925c9e33d66}\label{channel_8h_ad5ad40c25a3d82c54d5d2925c9e33d66}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac0cba3fdaa106a3f3913b2c8da635af6}\label{channel_8h_ac0cba3fdaa106a3f3913b2c8da635af6}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6b0f0d31573f169753850d9e1c11e39f}\label{channel_8h_a6b0f0d31573f169753850d9e1c11e39f}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a74b38aaf0a88cab348467d2d02cb9bbe}\label{channel_8h_a74b38aaf0a88cab348467d2d02cb9bbe}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3637b96b96ae84d0158adaa7757cb977}\label{channel_8h_a3637b96b96ae84d0158adaa7757cb977}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af3f5dd2d8504bf13ccc8a9ab9e6da2a5}\label{channel_8h_af3f5dd2d8504bf13ccc8a9ab9e6da2a5}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad449652d747745270f82ee0c9918dd8e}\label{channel_8h_ad449652d747745270f82ee0c9918dd8e}} 
+void {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a093b9f9db5b2badc2940137a418bb113}\label{channel_8h_a093b9f9db5b2badc2940137a418bb113}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aaed375c2a9ffebc529cb4f6d707e8a5e}\label{channel_8h_aaed375c2a9ffebc529cb4f6d707e8a5e}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+followed\+\_\+channel\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__followed__channel}{discord\+\_\+channel\+\_\+followed\+\_\+channel}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af3874fa86f071ba62c2ad430fe142caf}\label{channel_8h_af3874fa86f071ba62c2ad430fe142caf}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5b2f0cbeba481327a0b5bedb13a1195b}\label{channel_8h_a5b2f0cbeba481327a0b5bedb13a1195b}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab1b9c6e9e3e22d88a075c27fa0e87d1d}\label{channel_8h_ab1b9c6e9e3e22d88a075c27fa0e87d1d}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9e92ffbd2854d2566032e7ae9da998db}\label{channel_8h_a9e92ffbd2854d2566032e7ae9da998db}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+init} (struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aafa21f49a48c6409e5337259f3945b0a}\label{channel_8h_aafa21f49a48c6409e5337259f3945b0a}} 
+struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$ {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a89c0c1c90cb07cf2d027e71e8db260d2}\label{channel_8h_a89c0c1c90cb07cf2d027e71e8db260d2}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a36a9477158cc3cc68538cd156161a9ef}\label{channel_8h_a36a9477158cc3cc68538cd156161a9ef}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a26b16b153cf47313a6212c99067440da}\label{channel_8h_a26b16b153cf47313a6212c99067440da}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_adacfb8ef0caec7833dc735595f5b415d}\label{channel_8h_adacfb8ef0caec7833dc735595f5b415d}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_acb2fd9a975c3f960e5ed9e10fe528f5a}\label{channel_8h_acb2fd9a975c3f960e5ed9e10fe528f5a}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a459d21cd1ea41153fd5ab0dec3d3549b}\label{channel_8h_a459d21cd1ea41153fd5ab0dec3d3549b}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_adfa8287189837fb97be0c8e0931cbdab}\label{channel_8h_adfa8287189837fb97be0c8e0931cbdab}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a799f4f1b532aae72960c350ac1b2d27d}\label{channel_8h_a799f4f1b532aae72960c350ac1b2d27d}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a161bc3b452161de3d3db909c0e95ea70}\label{channel_8h_a161bc3b452161de3d3db909c0e95ea70}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a704ab262873d4ceef6bbb9a90b2d047b}\label{channel_8h_a704ab262873d4ceef6bbb9a90b2d047b}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7f0fb7a1bf2ea61a63c7afe370769c1e}\label{channel_8h_a7f0fb7a1bf2ea61a63c7afe370769c1e}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2138e6ce2b76f1cc64efdbb117313d3a}\label{channel_8h_a2138e6ce2b76f1cc64efdbb117313d3a}} 
+void {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afa762203fa46b2d9a4eeaa70c22bf337}\label{channel_8h_afa762203fa46b2d9a4eeaa70c22bf337}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab6c8270c98b3c5b9bc96786c78790741}\label{channel_8h_ab6c8270c98b3c5b9bc96786c78790741}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+reaction\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__reaction}{discord\+\_\+channel\+\_\+reaction}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a0d4a9079ac5d96efab153d6a7e2045c8}\label{channel_8h_a0d4a9079ac5d96efab153d6a7e2045c8}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4c4af93f43de5c5a94a87e9356d4da5e}\label{channel_8h_a4c4af93f43de5c5a94a87e9356d4da5e}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a31d94328eb3afade3ee21cbf4802a4ec}\label{channel_8h_a31d94328eb3afade3ee21cbf4802a4ec}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af4371246780c45fe184e07d79f25eaa3}\label{channel_8h_af4371246780c45fe184e07d79f25eaa3}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+init} (struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a853e1c200d266b4be5e4e7920a44eace}\label{channel_8h_a853e1c200d266b4be5e4e7920a44eace}} 
+struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$ {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a6631fca3d7ad58e60fa2bcb7dbd5c3f1}\label{channel_8h_a6631fca3d7ad58e60fa2bcb7dbd5c3f1}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a85b730990c0b573d22869da7e8c8aa55}\label{channel_8h_a85b730990c0b573d22869da7e8c8aa55}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aca7adbdec2c014af35e0767c91b003fc}\label{channel_8h_aca7adbdec2c014af35e0767c91b003fc}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a0e4c45e58b77ea680a89abde303a8b5e}\label{channel_8h_a0e4c45e58b77ea680a89abde303a8b5e}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9bf98a1ba220a8eb078b0955e0686709}\label{channel_8h_a9bf98a1ba220a8eb078b0955e0686709}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afbe51b8846183dff610da88e57529e79}\label{channel_8h_afbe51b8846183dff610da88e57529e79}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af59434e1028ed655634417292ae8c2e7}\label{channel_8h_af59434e1028ed655634417292ae8c2e7}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5d533f9a4c5d4354922ee3e132585b3b}\label{channel_8h_a5d533f9a4c5d4354922ee3e132585b3b}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a1c6b148b53dd4e501a65cf654888b270}\label{channel_8h_a1c6b148b53dd4e501a65cf654888b270}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad1dc71f99a976e8a89fd0949f6fccd39}\label{channel_8h_ad1dc71f99a976e8a89fd0949f6fccd39}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae2338f2bbfe14c7fdddf8a213292d660}\label{channel_8h_ae2338f2bbfe14c7fdddf8a213292d660}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6a766f06f97d4417d14ebd9945fab44e}\label{channel_8h_a6a766f06f97d4417d14ebd9945fab44e}} 
+void {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af67147218c8514bfe786cc5ef290041c}\label{channel_8h_af67147218c8514bfe786cc5ef290041c}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4c285d8bff2c028af906c0314b152bb4}\label{channel_8h_a4c285d8bff2c028af906c0314b152bb4}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+overwrite\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__overwrite}{discord\+\_\+channel\+\_\+overwrite}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9af974f1bec90ce67fabe494f062bd1d}\label{channel_8h_a9af974f1bec90ce67fabe494f062bd1d}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac4baa05bfe62cd298af7f1bfd17505da}\label{channel_8h_ac4baa05bfe62cd298af7f1bfd17505da}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af0de0e4539d5cf6419d883eb3a2976ea}\label{channel_8h_af0de0e4539d5cf6419d883eb3a2976ea}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_abcf323c1e9bb4e5a8077f3039797328e}\label{channel_8h_abcf323c1e9bb4e5a8077f3039797328e}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+init} (struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a35c3694cb546bdba0101f4fb29062a2f}\label{channel_8h_a35c3694cb546bdba0101f4fb29062a2f}} 
+struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$ {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a2247eb667c2e803a3ef1ef25b39882b5}\label{channel_8h_a2247eb667c2e803a3ef1ef25b39882b5}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a75573d923029833ba4777842951441a9}\label{channel_8h_a75573d923029833ba4777842951441a9}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+free} (struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7aabc64cffaad9264fefd56aa0ea64a2}\label{channel_8h_a7aabc64cffaad9264fefd56aa0ea64a2}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a88d5550e5db442696e2889ba5cef34f5}\label{channel_8h_a88d5550e5db442696e2889ba5cef34f5}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_adff86e77b860ecf2540ec85e65810972}\label{channel_8h_adff86e77b860ecf2540ec85e65810972}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac8df720b704bdbe0fdba3fdd8242838e}\label{channel_8h_ac8df720b704bdbe0fdba3fdd8242838e}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac8d477d027cdc4e565856a8b90c54fb2}\label{channel_8h_ac8d477d027cdc4e565856a8b90c54fb2}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2b28d8d3354b8118ac3d409f18d1d2fd}\label{channel_8h_a2b28d8d3354b8118ac3d409f18d1d2fd}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a8f6d700d73507fab7ab7ce2b94838fd2}\label{channel_8h_a8f6d700d73507fab7ab7ce2b94838fd2}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a322d6f8fd7983c5560da07514841b236}\label{channel_8h_a322d6f8fd7983c5560da07514841b236}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9ab8be5ab26244ef871688093ade982d}\label{channel_8h_a9ab8be5ab26244ef871688093ade982d}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa6b7af7f5d41c8e7cd0de42c53861826}\label{channel_8h_aa6b7af7f5d41c8e7cd0de42c53861826}} 
+void {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a05d07d99cceddeeae1eace546f517cc0}\label{channel_8h_a05d07d99cceddeeae1eace546f517cc0}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4d8f2ef568b17492221ca09ee2cf1fd1}\label{channel_8h_a4d8f2ef568b17492221ca09ee2cf1fd1}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+metadata\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__metadata}{discord\+\_\+thread\+\_\+metadata}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5d1f4eb6a2cfa365d03a32eb29013550}\label{channel_8h_a5d1f4eb6a2cfa365d03a32eb29013550}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a04c024222996aeda6cc827b5d405a01e}\label{channel_8h_a04c024222996aeda6cc827b5d405a01e}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a8280dbbd8bd05f12f6d73862105edd81}\label{channel_8h_a8280dbbd8bd05f12f6d73862105edd81}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a172f8d00d059e2c79e3fcdf8f1200123}\label{channel_8h_a172f8d00d059e2c79e3fcdf8f1200123}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+init} (struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3dad0e8a5296fdc29c5b9dbd1651e9ab}\label{channel_8h_a3dad0e8a5296fdc29c5b9dbd1651e9ab}} 
+struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$ {\bfseries discord\+\_\+thread\+\_\+member\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a43f0f0edf94806ec71fc1da55aa587b6}\label{channel_8h_a43f0f0edf94806ec71fc1da55aa587b6}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a33bb1c4012990545176caec9677c2ead}\label{channel_8h_a33bb1c4012990545176caec9677c2ead}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+free} (struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a68f0f950fab3f5b758071a4383e3ae0e}\label{channel_8h_a68f0f950fab3f5b758071a4383e3ae0e}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_abbcbe27ff536284007c444816d52f3d9}\label{channel_8h_abbcbe27ff536284007c444816d52f3d9}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac27cf53c9781d572f940f6d1593599cb}\label{channel_8h_ac27cf53c9781d572f940f6d1593599cb}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+member\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2bdaf0798e55e8c09e9806145d9b4ef8}\label{channel_8h_a2bdaf0798e55e8c09e9806145d9b4ef8}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+member\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a49a1c5378290086958499c05609cc341}\label{channel_8h_a49a1c5378290086958499c05609cc341}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+member\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad12ac16729bebea8f711fdb782adb8e9}\label{channel_8h_ad12ac16729bebea8f711fdb782adb8e9}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+member\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a866b68c98c7301d4ad37ebc67a09d98d}\label{channel_8h_a866b68c98c7301d4ad37ebc67a09d98d}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae5803f6ff8bd72f53fd4d28ead2386e3}\label{channel_8h_ae5803f6ff8bd72f53fd4d28ead2386e3}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2b35baa8b23d3d9b5fc856700b1ee8e9}\label{channel_8h_a2b35baa8b23d3d9b5fc856700b1ee8e9}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae7ee699b2abbaec59d82179233a49faf}\label{channel_8h_ae7ee699b2abbaec59d82179233a49faf}} 
+void {\bfseries discord\+\_\+thread\+\_\+member\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4860ebdf202d7ffaebcd3900ff0df11b}\label{channel_8h_a4860ebdf202d7ffaebcd3900ff0df11b}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+member\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3d26e89fa06ebd1e2e00745c657ee136}\label{channel_8h_a3d26e89fa06ebd1e2e00745c657ee136}} 
+size\+\_\+t {\bfseries discord\+\_\+thread\+\_\+member\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__thread__member}{discord\+\_\+thread\+\_\+member}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2cb8188d733a02deaba9f21ff96a89bd}\label{channel_8h_a2cb8188d733a02deaba9f21ff96a89bd}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a385bdfc2f7f1c6ca2a43f2f50c2186bb}\label{channel_8h_a385bdfc2f7f1c6ca2a43f2f50c2186bb}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afb6cd42c5976db79783252b6434519f7}\label{channel_8h_afb6cd42c5976db79783252b6434519f7}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a374e93770675d9b343148bda770bb5a6}\label{channel_8h_a374e93770675d9b343148bda770bb5a6}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+init} (struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afd4a4d0ca884ab966f5782800580833b}\label{channel_8h_afd4a4d0ca884ab966f5782800580833b}} 
+struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$ {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a5f66d012131dfaaf1ee8da7006620c5c}\label{channel_8h_a5f66d012131dfaaf1ee8da7006620c5c}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a49353f9e5ecdb7e380291ac1defa18ed}\label{channel_8h_a49353f9e5ecdb7e380291ac1defa18ed}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a16617b71d9dc3075918b330e3b2cee00}\label{channel_8h_a16617b71d9dc3075918b330e3b2cee00}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa40e7c451583dfbc63d23c740617b1f5}\label{channel_8h_aa40e7c451583dfbc63d23c740617b1f5}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa2b49ad21f043c8ce1616e613e69449f}\label{channel_8h_aa2b49ad21f043c8ce1616e613e69449f}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a330d237c3b2107bbfb9dade58a542711}\label{channel_8h_a330d237c3b2107bbfb9dade58a542711}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a06a0d1d45b653771116d02f9f5e30317}\label{channel_8h_a06a0d1d45b653771116d02f9f5e30317}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a1db5e7c6e49328ccbdc4fe4e882c9749}\label{channel_8h_a1db5e7c6e49328ccbdc4fe4e882c9749}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aef04234b2d63a32f7b5e47dbd3f38097}\label{channel_8h_aef04234b2d63a32f7b5e47dbd3f38097}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4cb9b86511dee89d77d85dfbce67f784}\label{channel_8h_a4cb9b86511dee89d77d85dfbce67f784}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5d9e041d925d78fc929de8806066e182}\label{channel_8h_a5d9e041d925d78fc929de8806066e182}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aba978334c9180850dcd1397e3fca3d54}\label{channel_8h_aba978334c9180850dcd1397e3fca3d54}} 
+void {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a874611c8fe8204c72130caf7574a617d}\label{channel_8h_a874611c8fe8204c72130caf7574a617d}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a8d218a354b904eb289072e8384b437a8}\label{channel_8h_a8d218a354b904eb289072e8384b437a8}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+attachment\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__attachment}{discord\+\_\+channel\+\_\+attachment}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab4c1b6e0034b2694d2fcdccdf2596747}\label{channel_8h_ab4c1b6e0034b2694d2fcdccdf2596747}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a39f53caf80962b706e900be4bea00e65}\label{channel_8h_a39f53caf80962b706e900be4bea00e65}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afeeb0f72bcf8e3054dde4bf05f046f92}\label{channel_8h_afeeb0f72bcf8e3054dde4bf05f046f92}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a23ecd4ebe5a2708f68173238173b6fe0}\label{channel_8h_a23ecd4ebe5a2708f68173238173b6fe0}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+init} (struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a92064776bdb7e2610c140f94eaeea721}\label{channel_8h_a92064776bdb7e2610c140f94eaeea721}} 
+struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$ {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_ac307d301c0bda7df94d194d8d09ef678}\label{channel_8h_ac307d301c0bda7df94d194d8d09ef678}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7439ae0fa78a4a6eddc36224e0635619}\label{channel_8h_a7439ae0fa78a4a6eddc36224e0635619}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a47c0e15c6377c28b99eaa8fd193728ef}\label{channel_8h_a47c0e15c6377c28b99eaa8fd193728ef}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae86b69f5c388de50c1679b2c90533d80}\label{channel_8h_ae86b69f5c388de50c1679b2c90533d80}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a99a4e4fb9f40878dfb279215f934a294}\label{channel_8h_a99a4e4fb9f40878dfb279215f934a294}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3b6216b6c6995011b4f8f61e8110087a}\label{channel_8h_a3b6216b6c6995011b4f8f61e8110087a}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a73dda0ec96246c217fa76c6174362ee5}\label{channel_8h_a73dda0ec96246c217fa76c6174362ee5}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a84b711a8537e77a2c7d951acdce3bf4d}\label{channel_8h_a84b711a8537e77a2c7d951acdce3bf4d}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a16e2959f70a367d4beecb5e819f93fe3}\label{channel_8h_a16e2959f70a367d4beecb5e819f93fe3}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aaf4ede28d814dea6ba89852ad8ae5956}\label{channel_8h_aaf4ede28d814dea6ba89852ad8ae5956}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af332fa3a252ac2d01469ae70f87d5563}\label{channel_8h_af332fa3a252ac2d01469ae70f87d5563}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a47d898b03c99f876ab963d780fc8e6f5}\label{channel_8h_a47d898b03c99f876ab963d780fc8e6f5}} 
+void {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af10ed51c3a84a4a9889b0e4d1e40b85c}\label{channel_8h_af10ed51c3a84a4a9889b0e4d1e40b85c}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac7ded16becbd08ca2e33e77e25939682}\label{channel_8h_ac7ded16becbd08ca2e33e77e25939682}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+mention\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__mention}{discord\+\_\+channel\+\_\+mention}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a535f545a057438fc4b8b5e02bf46e912}\label{channel_8h_a535f545a057438fc4b8b5e02bf46e912}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a690cb771887ee275e7b63dc7f94588b9}\label{channel_8h_a690cb771887ee275e7b63dc7f94588b9}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a159bd2a2c003ce5f10374f9b059cfdf2}\label{channel_8h_a159bd2a2c003ce5f10374f9b059cfdf2}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af90b7fab2e0247e89ace441c1f338941}\label{channel_8h_af90b7fab2e0247e89ace441c1f338941}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+init} (struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6d890638cb2efc045e84f0a3990e30a9}\label{channel_8h_a6d890638cb2efc045e84f0a3990e30a9}} 
+struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$ {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a6388cd7c6d8c9f263189a19bf4eafd16}\label{channel_8h_a6388cd7c6d8c9f263189a19bf4eafd16}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa438b05e1321d1aa956c9dc0fb91270f}\label{channel_8h_aa438b05e1321d1aa956c9dc0fb91270f}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa57a303f8dcc38009cb207a7554216ba}\label{channel_8h_aa57a303f8dcc38009cb207a7554216ba}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a15787e3005fa2a48a59fb9fb854dcd59}\label{channel_8h_a15787e3005fa2a48a59fb9fb854dcd59}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3000c7cdd19aba83a31db3245f14bb7a}\label{channel_8h_a3000c7cdd19aba83a31db3245f14bb7a}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a74f6e478b04505fe3e34d93d3c80d359}\label{channel_8h_a74f6e478b04505fe3e34d93d3c80d359}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad0195afa763d41fb73ddfa4ed878268b}\label{channel_8h_ad0195afa763d41fb73ddfa4ed878268b}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a11e93f00ff4b067001ee6de51c447812}\label{channel_8h_a11e93f00ff4b067001ee6de51c447812}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2218d5394ef4a1c61e2bf116d69da58b}\label{channel_8h_a2218d5394ef4a1c61e2bf116d69da58b}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a384e68812ff3f856891e6dd66a71297f}\label{channel_8h_a384e68812ff3f856891e6dd66a71297f}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a76da180b1aad70899bd7758a5fc2b214}\label{channel_8h_a76da180b1aad70899bd7758a5fc2b214}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a42bfcaf5f9c7a616c9e72241341d1257}\label{channel_8h_a42bfcaf5f9c7a616c9e72241341d1257}} 
+void {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4375f94a4e957cbb5147aa17a4c1cda3}\label{channel_8h_a4375f94a4e957cbb5147aa17a4c1cda3}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad7fb39248ce1f589b108abc68360befc}\label{channel_8h_ad7fb39248ce1f589b108abc68360befc}} 
+size\+\_\+t {\bfseries discord\+\_\+channel\+\_\+allowed\+\_\+mentions\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__channel__allowed__mentions}{discord\+\_\+channel\+\_\+allowed\+\_\+mentions}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a8f22dc494e6e7a46c5bff241585eb94e}\label{channel_8h_a8f22dc494e6e7a46c5bff241585eb94e}} 
+void {\bfseries discord\+\_\+embed\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a252cbac068ec346843c5501e812a3b4f}\label{channel_8h_a252cbac068ec346843c5501e812a3b4f}} 
+void {\bfseries discord\+\_\+embed\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a1c67f18ebab2f339b5087aeb8c6e07b0}\label{channel_8h_a1c67f18ebab2f339b5087aeb8c6e07b0}} 
+void {\bfseries discord\+\_\+embed\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a45ec180684b8c80e1eaba1c8d9ee261e}\label{channel_8h_a45ec180684b8c80e1eaba1c8d9ee261e}} 
+void {\bfseries discord\+\_\+embed\+\_\+init} (struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a31f8535a805a6d6d3b52c64eef1e1f3c}\label{channel_8h_a31f8535a805a6d6d3b52c64eef1e1f3c}} 
+struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$ {\bfseries discord\+\_\+embed\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_ad65c45b5a15ce4f581c4cb480aed73df}\label{channel_8h_ad65c45b5a15ce4f581c4cb480aed73df}} 
+void {\bfseries discord\+\_\+embed\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab2b17629767b9c1c0d20ebc9b8728a2b}\label{channel_8h_ab2b17629767b9c1c0d20ebc9b8728a2b}} 
+void {\bfseries discord\+\_\+embed\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad1f508d97ab6c202bb9a29ce98bed3d4}\label{channel_8h_ad1f508d97ab6c202bb9a29ce98bed3d4}} 
+void {\bfseries discord\+\_\+embed\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a393f3bf9946a5bcc44acede9eb3975eb}\label{channel_8h_a393f3bf9946a5bcc44acede9eb3975eb}} 
+void {\bfseries discord\+\_\+embed\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aaef7df82c2471daf21c098dcf5f31e36}\label{channel_8h_aaef7df82c2471daf21c098dcf5f31e36}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a81b2d77909381d174f2d8294d83db646}\label{channel_8h_a81b2d77909381d174f2d8294d83db646}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aeea86fb9271edbc03d739c81f7e3daff}\label{channel_8h_aeea86fb9271edbc03d739c81f7e3daff}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4ce69f4dbdd096bf02d3522c8e0e3112}\label{channel_8h_a4ce69f4dbdd096bf02d3522c8e0e3112}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aefba663b5fc72ccb3379966d17fd4476}\label{channel_8h_aefba663b5fc72ccb3379966d17fd4476}} 
+void {\bfseries discord\+\_\+embed\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a776b069a0e00d027b2ed51ca09779c51}\label{channel_8h_a776b069a0e00d027b2ed51ca09779c51}} 
+void {\bfseries discord\+\_\+embed\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aedceab443aa410ef4dadb849893d6cf0}\label{channel_8h_aedceab443aa410ef4dadb849893d6cf0}} 
+void {\bfseries discord\+\_\+embed\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2738799ccb7c0b5faea6dec1154c0c39}\label{channel_8h_a2738799ccb7c0b5faea6dec1154c0c39}} 
+void {\bfseries discord\+\_\+embed\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_adee0a723d03d548dd23e09b270f1304e}\label{channel_8h_adee0a723d03d548dd23e09b270f1304e}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a99575d7b6aae9bd23f7b8cf28bee0004}\label{channel_8h_a99575d7b6aae9bd23f7b8cf28bee0004}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed}{discord\+\_\+embed}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a06e86b387727ebad8677d2f349394974}\label{channel_8h_a06e86b387727ebad8677d2f349394974}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5a5da113d6789ff4ab6dd040666785b5}\label{channel_8h_a5a5da113d6789ff4ab6dd040666785b5}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aee74ac84dd86c7302ea0fe9442ee6413}\label{channel_8h_aee74ac84dd86c7302ea0fe9442ee6413}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac36894f1f1f3f36f40b86f707fbbb055}\label{channel_8h_ac36894f1f1f3f36f40b86f707fbbb055}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+init} (struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af2e020461b1e9910ccb9f508b7b52af9}\label{channel_8h_af2e020461b1e9910ccb9f508b7b52af9}} 
+struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$ {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a82ab7ecf6137f21a6cd674a703bdcadc}\label{channel_8h_a82ab7ecf6137f21a6cd674a703bdcadc}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aab641f004f4aa21d80eddb86658af608}\label{channel_8h_aab641f004f4aa21d80eddb86658af608}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa5c35d2cc330eb580bb21ac99b300e9b}\label{channel_8h_aa5c35d2cc330eb580bb21ac99b300e9b}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9fa2aaa4102b9fe34dcca064ee679702}\label{channel_8h_a9fa2aaa4102b9fe34dcca064ee679702}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a13acbba857843bc95d7441eec73efa26}\label{channel_8h_a13acbba857843bc95d7441eec73efa26}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa356fc9fcf8802770ca8bd8b48041305}\label{channel_8h_aa356fc9fcf8802770ca8bd8b48041305}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab2f0afa837398c1f0f5206568aa7bc3e}\label{channel_8h_ab2f0afa837398c1f0f5206568aa7bc3e}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_acec7ec12e69ba2971edf34202b590dc2}\label{channel_8h_acec7ec12e69ba2971edf34202b590dc2}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab056af3570c879285f7801f2273d89af}\label{channel_8h_ab056af3570c879285f7801f2273d89af}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae0ac7c1cf76d0bde22cdc14dfcd55c1a}\label{channel_8h_ae0ac7c1cf76d0bde22cdc14dfcd55c1a}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad92cf91d3523c614a59820895770f337}\label{channel_8h_ad92cf91d3523c614a59820895770f337}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aae1d92832b697a612e2671cd29448993}\label{channel_8h_aae1d92832b697a612e2671cd29448993}} 
+void {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae11a9bf52b2082e2d077a096da32fc7e}\label{channel_8h_ae11a9bf52b2082e2d077a096da32fc7e}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a4f6507fdec72eda98a8ae7fc684796eb}\label{channel_8h_a4f6507fdec72eda98a8ae7fc684796eb}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+thumbnail\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__thumbnail}{discord\+\_\+embed\+\_\+thumbnail}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6582d3a29b6c3c68e04b838bf3883a53}\label{channel_8h_a6582d3a29b6c3c68e04b838bf3883a53}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afe9493e18a5d73b9af5c0ea5d86988a1}\label{channel_8h_afe9493e18a5d73b9af5c0ea5d86988a1}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a52217ea5b0b81da1ad24e094340c8cd1}\label{channel_8h_a52217ea5b0b81da1ad24e094340c8cd1}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aba4c49cdb24fb7c690eef42911f8154c}\label{channel_8h_aba4c49cdb24fb7c690eef42911f8154c}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+init} (struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af6e48400f52711111d7cb9166dd19321}\label{channel_8h_af6e48400f52711111d7cb9166dd19321}} 
+struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$ {\bfseries discord\+\_\+embed\+\_\+video\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_ad366a208874065f5de74493e6f875653}\label{channel_8h_ad366a208874065f5de74493e6f875653}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a41ae17083209dffeab568045557c76f5}\label{channel_8h_a41ae17083209dffeab568045557c76f5}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa1392fbbc43ac262d81c2d0134c2ced8}\label{channel_8h_aa1392fbbc43ac262d81c2d0134c2ced8}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a814bc788da2b4fe37b10f8ef37303d38}\label{channel_8h_a814bc788da2b4fe37b10f8ef37303d38}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6e381dc8832f94439e224a9e623ba1ce}\label{channel_8h_a6e381dc8832f94439e224a9e623ba1ce}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+video\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a60c14f5fde3098c8a07af0b86d5b49e0}\label{channel_8h_a60c14f5fde3098c8a07af0b86d5b49e0}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+video\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3b5694b0996dbcd33db5428bcefd22a1}\label{channel_8h_a3b5694b0996dbcd33db5428bcefd22a1}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+video\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a91e2d7c721a4ac448524289919119925}\label{channel_8h_a91e2d7c721a4ac448524289919119925}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+video\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7f19f1b6d0086a8fb5227ae0f983bc95}\label{channel_8h_a7f19f1b6d0086a8fb5227ae0f983bc95}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a05fefb0b1a5866804f9e301b604350a3}\label{channel_8h_a05fefb0b1a5866804f9e301b604350a3}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3ea8fb5794e03726733781ed4d790157}\label{channel_8h_a3ea8fb5794e03726733781ed4d790157}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a22d8901e5edd1dcbf6a620343266424e}\label{channel_8h_a22d8901e5edd1dcbf6a620343266424e}} 
+void {\bfseries discord\+\_\+embed\+\_\+video\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aa0b8387bcc098f4fa54668dbbc7f9a8a}\label{channel_8h_aa0b8387bcc098f4fa54668dbbc7f9a8a}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+video\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_adc55c5b663a81f31d54c0c1fa2ba6a26}\label{channel_8h_adc55c5b663a81f31d54c0c1fa2ba6a26}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+video\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__video}{discord\+\_\+embed\+\_\+video}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab09856ee105e8be4553352d3d4b84374}\label{channel_8h_ab09856ee105e8be4553352d3d4b84374}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a147ed60f33ff206d2a9db1593827e081}\label{channel_8h_a147ed60f33ff206d2a9db1593827e081}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab3aa769c3b4660491724f8bf7cb50485}\label{channel_8h_ab3aa769c3b4660491724f8bf7cb50485}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a069f218ff4b4c60d4ca73103fab0a4df}\label{channel_8h_a069f218ff4b4c60d4ca73103fab0a4df}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+init} (struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a0e668f04038d0036a78ef2161cd99476}\label{channel_8h_a0e668f04038d0036a78ef2161cd99476}} 
+struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$ {\bfseries discord\+\_\+embed\+\_\+image\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a042b89a9243a8040ed90cac8aea2d8f4}\label{channel_8h_a042b89a9243a8040ed90cac8aea2d8f4}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a17847541b7dccf784ea45a8097fb78a2}\label{channel_8h_a17847541b7dccf784ea45a8097fb78a2}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a0c403253be4e3694b5fdc7f759aa4579}\label{channel_8h_a0c403253be4e3694b5fdc7f759aa4579}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae5fbe7de8ab93cdcd264643fda0077f4}\label{channel_8h_ae5fbe7de8ab93cdcd264643fda0077f4}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a18228e9126aa9373ea9ed744829583be}\label{channel_8h_a18228e9126aa9373ea9ed744829583be}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+image\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5e61d440ab63fb988b9aa1000f928ea6}\label{channel_8h_a5e61d440ab63fb988b9aa1000f928ea6}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+image\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a39db6026d08cdea37f0d9ad855159650}\label{channel_8h_a39db6026d08cdea37f0d9ad855159650}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+image\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a158c116e66c1d5a07c6af4b1474891e6}\label{channel_8h_a158c116e66c1d5a07c6af4b1474891e6}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+image\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aac84a1bf560d6b08b19741038e3d5303}\label{channel_8h_aac84a1bf560d6b08b19741038e3d5303}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a1a0ef392bf2ea805e1a02fcafb44df70}\label{channel_8h_a1a0ef392bf2ea805e1a02fcafb44df70}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_abcc65b6228aa0b7240f68565a7676a69}\label{channel_8h_abcc65b6228aa0b7240f68565a7676a69}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a86994ff4a743e08b1ffca2c7f37334de}\label{channel_8h_a86994ff4a743e08b1ffca2c7f37334de}} 
+void {\bfseries discord\+\_\+embed\+\_\+image\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7f395114fa7ec29f0787954d15988018}\label{channel_8h_a7f395114fa7ec29f0787954d15988018}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+image\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2edd48144d97a636f6b0981ba07f7280}\label{channel_8h_a2edd48144d97a636f6b0981ba07f7280}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+image\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__image}{discord\+\_\+embed\+\_\+image}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a57555bac88616f9b373234d47beadba1}\label{channel_8h_a57555bac88616f9b373234d47beadba1}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6c3c483fa20acbc7579e4d6e8a1fbc66}\label{channel_8h_a6c3c483fa20acbc7579e4d6e8a1fbc66}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a34b9bd41371283163d14171188cf91c6}\label{channel_8h_a34b9bd41371283163d14171188cf91c6}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a0063846eadd377f09d6485df5e49bdf3}\label{channel_8h_a0063846eadd377f09d6485df5e49bdf3}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+init} (struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7c2b19e34b5dd8f8e332ca289ac4c486}\label{channel_8h_a7c2b19e34b5dd8f8e332ca289ac4c486}} 
+struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$ {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a4a7fe0f7fde8df531ed3e0dac86990fb}\label{channel_8h_a4a7fe0f7fde8df531ed3e0dac86990fb}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae4345dd3f4d0523f03dac371121fc712}\label{channel_8h_ae4345dd3f4d0523f03dac371121fc712}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a583e20f6f8f0a3dbc951536eb419a92f}\label{channel_8h_a583e20f6f8f0a3dbc951536eb419a92f}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a1d307207e7c7e7ef749750e9e7003da9}\label{channel_8h_a1d307207e7c7e7ef749750e9e7003da9}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a52757836e833100eb639335b5e9bbe39}\label{channel_8h_a52757836e833100eb639335b5e9bbe39}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a945931fbcd30d7890639cded9d9a0b75}\label{channel_8h_a945931fbcd30d7890639cded9d9a0b75}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac7a3f93c182c23194bd7f33969dcdb21}\label{channel_8h_ac7a3f93c182c23194bd7f33969dcdb21}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_afd536396ae531edc42f7f8682b597a24}\label{channel_8h_afd536396ae531edc42f7f8682b597a24}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9aa677c613f38223f56a6f5051409ba8}\label{channel_8h_a9aa677c613f38223f56a6f5051409ba8}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab727fa8f70a4f7456b8a968a8ed5019e}\label{channel_8h_ab727fa8f70a4f7456b8a968a8ed5019e}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a31f71cb05a6671c1fe69d5029abe905f}\label{channel_8h_a31f71cb05a6671c1fe69d5029abe905f}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a545f0ab4e6766b75074ea41e0a7cce6a}\label{channel_8h_a545f0ab4e6766b75074ea41e0a7cce6a}} 
+void {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a592db5e6f07331c9494df8757c6eaf54}\label{channel_8h_a592db5e6f07331c9494df8757c6eaf54}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac9952f676ad0b2b1cee77d0314777b9c}\label{channel_8h_ac9952f676ad0b2b1cee77d0314777b9c}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+provider\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__provider}{discord\+\_\+embed\+\_\+provider}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a79dff3e3abbd6f1f74a0d76224936b59}\label{channel_8h_a79dff3e3abbd6f1f74a0d76224936b59}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae65a3a93bee674289de08ba5f2fdc0f0}\label{channel_8h_ae65a3a93bee674289de08ba5f2fdc0f0}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af50c5407de7556795054042b400637dc}\label{channel_8h_af50c5407de7556795054042b400637dc}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_affb24f09885f10f17abd86d9884f1eb3}\label{channel_8h_affb24f09885f10f17abd86d9884f1eb3}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+init} (struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad160c9ae8560713e52c76689ee29f688}\label{channel_8h_ad160c9ae8560713e52c76689ee29f688}} 
+struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$ {\bfseries discord\+\_\+embed\+\_\+author\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_ac4300bd8f63985a1a1c0fb05e5cfe9a0}\label{channel_8h_ac4300bd8f63985a1a1c0fb05e5cfe9a0}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a24eafdf3b7ae276ec1a0179e5286bd66}\label{channel_8h_a24eafdf3b7ae276ec1a0179e5286bd66}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a461653e85d905b74fb721beb02e970f6}\label{channel_8h_a461653e85d905b74fb721beb02e970f6}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a5e1aba9ea3f93d0ef588d878fa88f5c8}\label{channel_8h_a5e1aba9ea3f93d0ef588d878fa88f5c8}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a38e1a18922159391a12a2ed2ae1b0531}\label{channel_8h_a38e1a18922159391a12a2ed2ae1b0531}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+author\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a574c0a895fe3e5cc0e33af5f815170ca}\label{channel_8h_a574c0a895fe3e5cc0e33af5f815170ca}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+author\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab166c172e21461dd1d1a92d2e659c17f}\label{channel_8h_ab166c172e21461dd1d1a92d2e659c17f}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+author\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a18d9e4284681193cc6adda52b5851ccb}\label{channel_8h_a18d9e4284681193cc6adda52b5851ccb}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+author\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a701a906be11636842acbaec67af6e7e2}\label{channel_8h_a701a906be11636842acbaec67af6e7e2}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a87281057d193ff22c8ff01a025d013e4}\label{channel_8h_a87281057d193ff22c8ff01a025d013e4}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad55f98d14d80da463609c33ba3acd0ac}\label{channel_8h_ad55f98d14d80da463609c33ba3acd0ac}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a50ac2d644c056364ec3f2d23b7555e8f}\label{channel_8h_a50ac2d644c056364ec3f2d23b7555e8f}} 
+void {\bfseries discord\+\_\+embed\+\_\+author\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a17647fd7e152118696deb22979a9f655}\label{channel_8h_a17647fd7e152118696deb22979a9f655}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+author\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_adb3b7e3ac18144a85a71b7cd4a70be23}\label{channel_8h_adb3b7e3ac18144a85a71b7cd4a70be23}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+author\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__author}{discord\+\_\+embed\+\_\+author}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a49d0ba7acce4d967dd8c4e7851c39f01}\label{channel_8h_a49d0ba7acce4d967dd8c4e7851c39f01}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a861e0fee5d5cbc54778a70f08e594113}\label{channel_8h_a861e0fee5d5cbc54778a70f08e594113}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a337684c2ee8d0a91eb05735fbb82b0b8}\label{channel_8h_a337684c2ee8d0a91eb05735fbb82b0b8}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af01cdbe9250ed2089af073d9fc335875}\label{channel_8h_af01cdbe9250ed2089af073d9fc335875}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+init} (struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a563b8d401f7db5ba4e8398db38e2d676}\label{channel_8h_a563b8d401f7db5ba4e8398db38e2d676}} 
+struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$ {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a2db3ad0a4f25ddf06c50746c831329d6}\label{channel_8h_a2db3ad0a4f25ddf06c50746c831329d6}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a021178c7bc971f15a6ed0984d7fe6a3f}\label{channel_8h_a021178c7bc971f15a6ed0984d7fe6a3f}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a80a0340915d96dc324f00da72a8b8ac2}\label{channel_8h_a80a0340915d96dc324f00da72a8b8ac2}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a8546bd453a63da3e36039bef1c5b4946}\label{channel_8h_a8546bd453a63da3e36039bef1c5b4946}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a1364413c7c1d983a479f928b779978e4}\label{channel_8h_a1364413c7c1d983a479f928b779978e4}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a581ffd355f9d3d1b03bbdea78dc3d88f}\label{channel_8h_a581ffd355f9d3d1b03bbdea78dc3d88f}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ab174aa91df097949779ea78043db9717}\label{channel_8h_ab174aa91df097949779ea78043db9717}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9d7d2f323033c73edec114088435b5e0}\label{channel_8h_a9d7d2f323033c73edec114088435b5e0}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a0ffdf748efcae74cd47fc3c9c4ddbbc6}\label{channel_8h_a0ffdf748efcae74cd47fc3c9c4ddbbc6}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7bb8acf4710752691ab986dc10d09d26}\label{channel_8h_a7bb8acf4710752691ab986dc10d09d26}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a41974920bd8d4fa2848de7e2a403f4fe}\label{channel_8h_a41974920bd8d4fa2848de7e2a403f4fe}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a213d7574fc321c76dc5bc7058b1f63b6}\label{channel_8h_a213d7574fc321c76dc5bc7058b1f63b6}} 
+void {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a99de6d23c062cbc88c6e70c249d96bd0}\label{channel_8h_a99de6d23c062cbc88c6e70c249d96bd0}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a60c0e7ec89886c473cb486f297693ee0}\label{channel_8h_a60c0e7ec89886c473cb486f297693ee0}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+footer\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__footer}{discord\+\_\+embed\+\_\+footer}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a7f29279c592af56fdc9794765ff2faf8}\label{channel_8h_a7f29279c592af56fdc9794765ff2faf8}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ac391233eb1654db968ab2760bd35fd6b}\label{channel_8h_ac391233eb1654db968ab2760bd35fd6b}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a490aabcdb479ed7e8c8ad2fd8f1a38ea}\label{channel_8h_a490aabcdb479ed7e8c8ad2fd8f1a38ea}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad378f708435baa3736267597922a4960}\label{channel_8h_ad378f708435baa3736267597922a4960}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+init} (struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad0efb9500454d1f716572e90d55b7fcc}\label{channel_8h_ad0efb9500454d1f716572e90d55b7fcc}} 
+struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$ {\bfseries discord\+\_\+embed\+\_\+field\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{channel_8h_a59e9b25246a6d430539329c2693a3f10}\label{channel_8h_a59e9b25246a6d430539329c2693a3f10}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ad88317440ecd043f1fb852db250f920c}\label{channel_8h_ad88317440ecd043f1fb852db250f920c}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a973e097ac5bae8ab99337a1cee24d7f5}\label{channel_8h_a973e097ac5bae8ab99337a1cee24d7f5}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a9b309dfc27633107c725e8e8d059aa7d}\label{channel_8h_a9b309dfc27633107c725e8e8d059aa7d}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a6229de01d125c6ddd1fb6b7a056335bf}\label{channel_8h_a6229de01d125c6ddd1fb6b7a056335bf}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+field\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2ad0ac080143c3a07c91c81bdd6bfd12}\label{channel_8h_a2ad0ac080143c3a07c91c81bdd6bfd12}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+field\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_ae658a546383521c208a0fc408261aab2}\label{channel_8h_ae658a546383521c208a0fc408261aab2}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+field\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a2c3580f3bfc03720fa046374ecd7e188}\label{channel_8h_a2c3580f3bfc03720fa046374ecd7e188}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+field\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a3f56e39e91ef4c84f821397fc626564c}\label{channel_8h_a3f56e39e91ef4c84f821397fc626564c}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_af4adbd8093f4f1298e27648f6e323544}\label{channel_8h_af4adbd8093f4f1298e27648f6e323544}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aaf4f4de439eb6c80421bf4f9c343f9a8}\label{channel_8h_aaf4f4de439eb6c80421bf4f9c343f9a8}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a8c97fc9fbe6abd43eae35b3be2d5084e}\label{channel_8h_a8c97fc9fbe6abd43eae35b3be2d5084e}} 
+void {\bfseries discord\+\_\+embed\+\_\+field\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_a04a76afb02babac26b0a292af5381406}\label{channel_8h_a04a76afb02babac26b0a292af5381406}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+field\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{channel_8h_aaa7175f2436e8bdc27e2da2786b1e9b6}\label{channel_8h_aaa7175f2436e8bdc27e2da2786b1e9b6}} 
+size\+\_\+t {\bfseries discord\+\_\+embed\+\_\+field\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__embed__field}{discord\+\_\+embed\+\_\+field}} $\ast$$\ast$p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Specs generated file. 
+
+\begin{DoxyAuthor}{Author}
+cee-\/studio 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21 Jun 2021 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/resources/channel}{\texttt{ https\+://discord.\+com/developers/docs/resources/channel}} 
+\end{DoxySeeAlso}

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__gateway__status__update" kind="struct" language="C++" prot="public">
+    <compoundname>discord_gateway_status_update</compoundname>
+    <includes refid="gateway_8h" local="no">gateway.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__gateway__status__update_1a31a6636b5022bbaebfe8f0829a9cc62f" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a8c10c2449cb2148f47b8a032af96dd60" kindref="member">u64_unix_ms_t</ref></type>
+        <definition>u64_unix_ms_t discord_gateway_status_update::since</definition>
+        <argsstring></argsstring>
+        <name>since</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/gateway.h" line="198" column="17" bodyfile="orca/specs-code/discord/gateway.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__gateway__status__update_1a5a75b520e4eefa8876e908249036fff6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__gateway__activity" kindref="compound">discord_gateway_activity</ref> **</type>
+        <definition>struct discord_gateway_activity** discord_gateway_status_update::activities</definition>
+        <argsstring></argsstring>
+        <name>activities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/gateway.h" line="203" column="33" bodyfile="orca/specs-code/discord/gateway.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__gateway__status__update_1abaa788d062d5305975ec4da347173336" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char discord_gateway_status_update::status[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/gateway.h" line="207" column="8" bodyfile="orca/specs-code/discord/gateway.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__gateway__status__update_1ad83cf32f2bdb5fb6940cc30a1100bd8a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_gateway_status_update::afk</definition>
+        <argsstring></argsstring>
+        <name>afk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/gateway.h" line="211" column="8" bodyfile="orca/specs-code/discord/gateway.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Gateway Status Update Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway#update-status-gateway-status-update-structure">https://discord.com/developers/docs/topics/gateway#update-status-gateway-status-update-structure</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/gateway.json:132:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>discord_gateway_activity</label>
+        <link refid="structdiscord__gateway__activity"/>
+      </node>
+      <node id="1">
+        <label>discord_gateway_status_update</label>
+        <link refid="structdiscord__gateway__status__update"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>activities</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="orca/specs-code/discord/gateway.h" line="194" column="36" bodyfile="orca/specs-code/discord/gateway.h" bodystart="194" bodyend="227"/>
+    <listofallmembers>
+      <member refid="structdiscord__gateway__status__update_1a5a75b520e4eefa8876e908249036fff6" prot="public" virt="non-virtual"><scope>discord_gateway_status_update</scope><name>activities</name></member>
+      <member refid="structdiscord__gateway__status__update_1ad83cf32f2bdb5fb6940cc30a1100bd8a" prot="public" virt="non-virtual"><scope>discord_gateway_status_update</scope><name>afk</name></member>
+      <member refid="structdiscord__gateway__status__update_1a31a6636b5022bbaebfe8f0829a9cc62f" prot="public" virt="non-virtual"><scope>discord_gateway_status_update</scope><name>since</name></member>
+      <member refid="structdiscord__gateway__status__update_1abaa788d062d5305975ec4da347173336" prot="public" virt="non-virtual"><scope>discord_gateway_status_update</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

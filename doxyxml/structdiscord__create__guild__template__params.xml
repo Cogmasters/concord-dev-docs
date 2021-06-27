@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__create__guild__template__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_create_guild_template_params</compoundname>
+    <includes refid="guild-template_8endpoints-params_8h" local="no">guild-template.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__create__guild__template__params_1ab9d76cd1422178cb092831b8ba03121b" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_guild_template_params::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="70" column="8" bodyfile="orca/specs-code/discord/guild-template.endpoints-params.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__template__params_1ab7c9bcb80e138565bc2e7069fa857767" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_guild_template_params::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="74" column="8" bodyfile="orca/specs-code/discord/guild-template.endpoints-params.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create Guild Template. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild-template#create-guild-template-json-params">https://discord.com/developers/docs/resources/guild-template#create-guild-template-json-params</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/guild-template.endpoints-params.json:21:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/guild-template.endpoints-params.h" line="67" column="43" bodyfile="orca/specs-code/discord/guild-template.endpoints-params.h" bodystart="67" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structdiscord__create__guild__template__params_1ab7c9bcb80e138565bc2e7069fa857767" prot="public" virt="non-virtual"><scope>discord_create_guild_template_params</scope><name>description</name></member>
+      <member refid="structdiscord__create__guild__template__params_1ab9d76cd1422178cb092831b8ba03121b" prot="public" virt="non-virtual"><scope>discord_create_guild_template_params</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

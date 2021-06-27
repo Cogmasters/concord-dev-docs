@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__get__channel__messages__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_get_channel_messages_params</compoundname>
+    <includes refid="discord_8h" local="no">discord.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__get__channel__messages__params_1a237ce7ab37f3dbdfc71ca5b792289949" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_get_channel_messages_params::around</definition>
+        <argsstring></argsstring>
+        <name>around</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="303" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__get__channel__messages__params_1a9467da28de9e8d215e182d8e08329f91" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_get_channel_messages_params::before</definition>
+        <argsstring></argsstring>
+        <name>before</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="304" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__get__channel__messages__params_1aad7b4da3f2202d0e1943529939c50d0e" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_get_channel_messages_params::after</definition>
+        <argsstring></argsstring>
+        <name>after</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="305" column="19" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__get__channel__messages__params_1a44a91d20ebd042192494a52af69dd5ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_get_channel_messages_params::limit</definition>
+        <argsstring></argsstring>
+        <name>limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/discord.h" line="306" column="7" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="todo_1_todo000008"><xreftitle>Todo</xreftitle><xrefdescription><para>make this specs generated code </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/lucasmull/Trabalho/orca/discord.h" line="302" column="42" bodyfile="/home/lucasmull/Trabalho/orca/discord.h" bodystart="302" bodyend="307"/>
+    <listofallmembers>
+      <member refid="structdiscord__get__channel__messages__params_1aad7b4da3f2202d0e1943529939c50d0e" prot="public" virt="non-virtual"><scope>discord_get_channel_messages_params</scope><name>after</name></member>
+      <member refid="structdiscord__get__channel__messages__params_1a237ce7ab37f3dbdfc71ca5b792289949" prot="public" virt="non-virtual"><scope>discord_get_channel_messages_params</scope><name>around</name></member>
+      <member refid="structdiscord__get__channel__messages__params_1a9467da28de9e8d215e182d8e08329f91" prot="public" virt="non-virtual"><scope>discord_get_channel_messages_params</scope><name>before</name></member>
+      <member refid="structdiscord__get__channel__messages__params_1a44a91d20ebd042192494a52af69dd5ca" prot="public" virt="non-virtual"><scope>discord_get_channel_messages_params</scope><name>limit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,145 @@
+\hypertarget{voice_8h}{}\doxysection{orca/specs-\/code/discord/voice.h File Reference}
+\label{voice_8h}\index{orca/specs-\/code/discord/voice.h@{orca/specs-\/code/discord/voice.h}}
+
+
+Specs generated file.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}}
+\begin{DoxyCompactList}\small\item\em Voice State Structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}}
+\begin{DoxyCompactList}\small\item\em Voice Region Structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{voice_8h_a2ffbfb18b9382dae511adbcf0f6d5916}\label{voice_8h_a2ffbfb18b9382dae511adbcf0f6d5916}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a75a1f9e349156923fb70e3197aba0464}\label{voice_8h_a75a1f9e349156923fb70e3197aba0464}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a021d5cfa5d094a60716c086fe612f0f2}\label{voice_8h_a021d5cfa5d094a60716c086fe612f0f2}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a85ec401816e690f31a216c5a5dfe540a}\label{voice_8h_a85ec401816e690f31a216c5a5dfe540a}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+init} (struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a94fa4a89f6d346d4b0408e846307640b}\label{voice_8h_a94fa4a89f6d346d4b0408e846307640b}} 
+struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$ {\bfseries discord\+\_\+voice\+\_\+state\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{voice_8h_a19b2f6a76f34b376ea19f0cea7b7ad39}\label{voice_8h_a19b2f6a76f34b376ea19f0cea7b7ad39}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a6166744b597b79222906134f590eff76}\label{voice_8h_a6166744b597b79222906134f590eff76}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+free} (struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_ab2008d8de15cc1ffd22a1f1d515e272a}\label{voice_8h_ab2008d8de15cc1ffd22a1f1d515e272a}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a025151cb730edc817a2c33ef66015253}\label{voice_8h_a025151cb730edc817a2c33ef66015253}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a9ec45bb840970a2e1148287227f3f092}\label{voice_8h_a9ec45bb840970a2e1148287227f3f092}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+state\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a83ab74941af531b0b1decec61d87e0b3}\label{voice_8h_a83ab74941af531b0b1decec61d87e0b3}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+state\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_af135208083b7d26b9441baee8c585965}\label{voice_8h_af135208083b7d26b9441baee8c585965}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+state\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a37aa1e1c8d844abf08b737632caecd3b}\label{voice_8h_a37aa1e1c8d844abf08b737632caecd3b}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+state\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a9f23661b2796717063d9695db2d4ad40}\label{voice_8h_a9f23661b2796717063d9695db2d4ad40}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a227eac8a74dfc0ac95b791f7fc4fd37a}\label{voice_8h_a227eac8a74dfc0ac95b791f7fc4fd37a}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a73326ae49fb95b1f8d8965516bd7a2c3}\label{voice_8h_a73326ae49fb95b1f8d8965516bd7a2c3}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a776b0dd8b4c149c7086b0f9bf01a4913}\label{voice_8h_a776b0dd8b4c149c7086b0f9bf01a4913}} 
+void {\bfseries discord\+\_\+voice\+\_\+state\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a73c2b39983eadc19d35062af3fb491bd}\label{voice_8h_a73c2b39983eadc19d35062af3fb491bd}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+state\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_abe3a603989827ff461cbb15a820b9d98}\label{voice_8h_abe3a603989827ff461cbb15a820b9d98}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+state\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__state}{discord\+\_\+voice\+\_\+state}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a13e2e15f896c5afacf8ab079bdba10d2}\label{voice_8h_a13e2e15f896c5afacf8ab079bdba10d2}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+cleanup\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a88093269a0d55f5eeeee169d06d161f1}\label{voice_8h_a88093269a0d55f5eeeee169d06d161f1}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+cleanup} (struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a1911a44c14df60d38f12898b6c484421}\label{voice_8h_a1911a44c14df60d38f12898b6c484421}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+init\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_af86c22e0909aee40bdfa05885870b620}\label{voice_8h_af86c22e0909aee40bdfa05885870b620}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+init} (struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a64edfa52833784d3a38129ea1e2b99be}\label{voice_8h_a64edfa52833784d3a38129ea1e2b99be}} 
+struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$ {\bfseries discord\+\_\+voice\+\_\+region\+\_\+alloc} ()
+\item 
+\mbox{\Hypertarget{voice_8h_a8a45b8ed7154dffaa0fc5a48e7711d38}\label{voice_8h_a8a45b8ed7154dffaa0fc5a48e7711d38}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+free\+\_\+v} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a61a9baa8b7b5e19d121bbc2f688c018b}\label{voice_8h_a61a9baa8b7b5e19d121bbc2f688c018b}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+free} (struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a4f72d4ab18387c0b1043dc61bef798a6}\label{voice_8h_a4f72d4ab18387c0b1043dc61bef798a6}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+from\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_aebe0bce3126ea87967e3959bb6db79ba}\label{voice_8h_aebe0bce3126ea87967e3959bb6db79ba}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+from\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_ad3a7134399395c520df8dbc1cec3533a}\label{voice_8h_ad3a7134399395c520df8dbc1cec3533a}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+region\+\_\+to\+\_\+json\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_aa0417d994887462fe8d3a9c534c39a4c}\label{voice_8h_aa0417d994887462fe8d3a9c534c39a4c}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+region\+\_\+to\+\_\+json} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_ab5bc12ee5dc9278ea02d252b04ad462c}\label{voice_8h_ab5bc12ee5dc9278ea02d252b04ad462c}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+region\+\_\+to\+\_\+query\+\_\+v} (char $\ast$json, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a8f3914d46ca60fb18f4d1f1096a2b1dd}\label{voice_8h_a8f3914d46ca60fb18f4d1f1096a2b1dd}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+region\+\_\+to\+\_\+query} (char $\ast$json, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a7ea06b9e0709d9a826e992d5923b840e}\label{voice_8h_a7ea06b9e0709d9a826e992d5923b840e}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+list\+\_\+free\+\_\+v} (void $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_ab30fcf9ba2e2e12a7dae44a16477f11c}\label{voice_8h_ab30fcf9ba2e2e12a7dae44a16477f11c}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+list\+\_\+free} (struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_ae54c5a268126a276d2f35e8f6f83d0d7}\label{voice_8h_ae54c5a268126a276d2f35e8f6f83d0d7}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+list\+\_\+from\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a963251cdfc1c1197bb240bd1ab2017f0}\label{voice_8h_a963251cdfc1c1197bb240bd1ab2017f0}} 
+void {\bfseries discord\+\_\+voice\+\_\+region\+\_\+list\+\_\+from\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$$\ast$$\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_ab4bca11fbc079bb2ca2c0442c3f0a93e}\label{voice_8h_ab4bca11fbc079bb2ca2c0442c3f0a93e}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+region\+\_\+list\+\_\+to\+\_\+json\+\_\+v} (char $\ast$str, size\+\_\+t len, void $\ast$p)
+\item 
+\mbox{\Hypertarget{voice_8h_a264c5b9ec994cd24f163287c7c3707e9}\label{voice_8h_a264c5b9ec994cd24f163287c7c3707e9}} 
+size\+\_\+t {\bfseries discord\+\_\+voice\+\_\+region\+\_\+list\+\_\+to\+\_\+json} (char $\ast$str, size\+\_\+t len, struct \mbox{\hyperlink{structdiscord__voice__region}{discord\+\_\+voice\+\_\+region}} $\ast$$\ast$p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Specs generated file. 
+
+\begin{DoxyAuthor}{Author}
+cee-\/studio 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21 Jun 2021 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\href{https://discord.com/developers/docs/resources/voice}{\texttt{ https\+://discord.\+com/developers/docs/resources/voice}} 
+\end{DoxySeeAlso}

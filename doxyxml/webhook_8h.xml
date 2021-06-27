@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="webhook_8h" kind="file" language="C++">
+    <compoundname>webhook.h</compoundname>
+    <innerclass refid="structdiscord__webhook" prot="public">discord_webhook</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="webhook_8h_1aacb8c6d69b0de8cbc4e518199cbeb84b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>discord_webhook_types</name>
+        <enumvalue id="webhook_8h_1aacb8c6d69b0de8cbc4e518199cbeb84ba4e3b5868b56575190f2d01798ff01ecf" prot="public">
+          <name>DISCORD_WEBHOOK_INCOMING</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="webhook_8h_1aacb8c6d69b0de8cbc4e518199cbeb84ba87706811dceae0bcea491ba795167477" prot="public">
+          <name>DISCORD_WEBHOOK_CHANNEL_FOLLOWER</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="90" column="27" bodyfile="orca/specs-code/discord/webhook.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="webhook_8h_1a8bb8fa0b34f67b500be39e16580804c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_cleanup_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_webhook_cleanup_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="69" column="13" declfile="orca/specs-code/discord/webhook.h" declline="69" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a4da1620db58b06603a01f500bb12c1cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_cleanup</definition>
+        <argsstring>(struct discord_webhook *p)</argsstring>
+        <name>discord_webhook_cleanup</name>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="70" column="13" declfile="orca/specs-code/discord/webhook.h" declline="70" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a3f939137e555714b1fe0946c15ccb6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_init_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_webhook_init_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="71" column="13" declfile="orca/specs-code/discord/webhook.h" declline="71" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a866794f7e4106b816c2bcd0a80d75b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_init</definition>
+        <argsstring>(struct discord_webhook *p)</argsstring>
+        <name>discord_webhook_init</name>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="72" column="13" declfile="orca/specs-code/discord/webhook.h" declline="72" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1aded5c8f5552f789e683f9bb80fbd88e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> *</type>
+        <definition>struct discord_webhook* discord_webhook_alloc</definition>
+        <argsstring>()</argsstring>
+        <name>discord_webhook_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="73" column="30" declfile="orca/specs-code/discord/webhook.h" declline="73" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a8b85e4cd4227fdcb4b77236dbcf9b70d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_free_v</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>discord_webhook_free_v</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="74" column="13" declfile="orca/specs-code/discord/webhook.h" declline="74" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1ac03ea57c1657b4d89ffc298641e0f048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_free</definition>
+        <argsstring>(struct discord_webhook *p)</argsstring>
+        <name>discord_webhook_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="75" column="13" declfile="orca/specs-code/discord/webhook.h" declline="75" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a43d7675c4f8d3bf3555b6c1fbb2b4dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_from_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_webhook_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="76" column="13" declfile="orca/specs-code/discord/webhook.h" declline="76" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1abbad3b103a7a46cc6112f95c57aa3853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_from_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_webhook *p)</argsstring>
+        <name>discord_webhook_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="77" column="13" declfile="orca/specs-code/discord/webhook.h" declline="77" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1afa5ffed457f2edce6f2b8bdec1ab85f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_webhook_to_json_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_webhook_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="78" column="15" declfile="orca/specs-code/discord/webhook.h" declline="78" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a220a7e99b71f2493fedbeb347d663612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_webhook_to_json</definition>
+        <argsstring>(char *json, size_t len, struct discord_webhook *p)</argsstring>
+        <name>discord_webhook_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="79" column="15" declfile="orca/specs-code/discord/webhook.h" declline="79" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a1dc0d5d8d65ff01b8abb88c92c9feb09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_webhook_to_query_v</definition>
+        <argsstring>(char *json, size_t len, void *p)</argsstring>
+        <name>discord_webhook_to_query_v</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="80" column="15" declfile="orca/specs-code/discord/webhook.h" declline="80" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1acce4481ff481a6cfd4fbafbe080ef178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_webhook_to_query</definition>
+        <argsstring>(char *json, size_t len, struct discord_webhook *p)</argsstring>
+        <name>discord_webhook_to_query</name>
+        <param>
+          <type>char *</type>
+          <declname>json</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="81" column="15" declfile="orca/specs-code/discord/webhook.h" declline="81" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a2b4510004e9dcf52705f51b37295f2c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_list_free_v</definition>
+        <argsstring>(void **p)</argsstring>
+        <name>discord_webhook_list_free_v</name>
+        <param>
+          <type>void **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="82" column="13" declfile="orca/specs-code/discord/webhook.h" declline="82" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a3462cd8e45ae2a4b7dda37ea90c5d0e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_list_free</definition>
+        <argsstring>(struct discord_webhook **p)</argsstring>
+        <name>discord_webhook_list_free</name>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="83" column="13" declfile="orca/specs-code/discord/webhook.h" declline="83" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1af056263e7a254d0c866950c9a692bbfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_list_from_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_webhook_list_from_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="84" column="13" declfile="orca/specs-code/discord/webhook.h" declline="84" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1af13bf77d4dfabedbf7feea906e8ccfab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void discord_webhook_list_from_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_webhook ***p)</argsstring>
+        <name>discord_webhook_list_from_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> ***</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="85" column="13" declfile="orca/specs-code/discord/webhook.h" declline="85" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1ab0e3ed328bcada9922cc041f1c8a8c10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_webhook_list_to_json_v</definition>
+        <argsstring>(char *str, size_t len, void *p)</argsstring>
+        <name>discord_webhook_list_to_json_v</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="86" column="15" declfile="orca/specs-code/discord/webhook.h" declline="86" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a6c3bbd7490a6de5ed20b8c8d069455a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t discord_webhook_list_to_json</definition>
+        <argsstring>(char *str, size_t len, struct discord_webhook **p)</argsstring>
+        <name>discord_webhook_list_to_json</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="87" column="15" declfile="orca/specs-code/discord/webhook.h" declline="87" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a7d743db5081d1b3f0307428ce04ab972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* discord_webhook_types_to_string</definition>
+        <argsstring>(enum discord_webhook_types)</argsstring>
+        <name>discord_webhook_types_to_string</name>
+        <param>
+          <type>enum</type>
+          <declname>discord_webhook_types</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="94" column="13" declfile="orca/specs-code/discord/webhook.h" declline="94" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a4b96e20cf9e4c410a2ce1c69041f4f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum discord_webhook_types</type>
+        <definition>enum discord_webhook_types discord_webhook_types_from_string</definition>
+        <argsstring>(char *)</argsstring>
+        <name>discord_webhook_types_from_string</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="94" column="13" declfile="orca/specs-code/discord/webhook.h" declline="94" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="webhook_8h_1a01bc8a5e706054a69c2f51eeb965db72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool discord_webhook_types_has</definition>
+        <argsstring>(enum discord_webhook_types, char *)</argsstring>
+        <name>discord_webhook_types_has</name>
+        <param>
+          <type>enum</type>
+          <declname>discord_webhook_types</declname>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.h" line="96" column="13" declfile="orca/specs-code/discord/webhook.h" declline="96" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specs generated file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>cee-studio </para>
+</simplesect>
+<simplesect kind="date"><para>21 Jun 2021 </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/webhook">https://discord.com/developers/docs/resources/webhook</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>This<sp/>file<sp/>is<sp/>generated<sp/>from<sp/>specs/discord/webhook.json,<sp/>Please<sp/>don&apos;t<sp/>edit<sp/>it.<sp/>*/</highlight></codeline>
+<codeline lineno="17" refid="structdiscord__webhook" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:12:20</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>id;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:13:20</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;type&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;int&quot;,<sp/>&quot;int_alias&quot;:&quot;enum<sp/>discord_webhook_types&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>discord_webhook_types<sp/>type;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:14:20</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;guild_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>guild_id;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:15:20</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;channel_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>channel_id;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:16:20</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;user&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;struct<sp/>discord_user&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__user" kindref="compound">discord_user</ref><sp/>*user;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:17:20</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;name&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;[WEBHOOK_NAME_LEN]&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>name[WEBHOOK_NAME_LEN];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:18:20</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;avatar&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>},<sp/>&quot;comment&quot;:&quot;@todo<sp/>fixed<sp/>size<sp/>limit&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*avatar;<sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>fixed<sp/>size<sp/>limit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:19:20</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;token&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;<sp/>},<sp/>&quot;comment&quot;:&quot;@todo<sp/>fixed<sp/>size<sp/>limit&quot;}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*token;<sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>fixed<sp/>size<sp/>limit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>specs/discord/webhook.json:20:20</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&apos;{<sp/>&quot;name&quot;:<sp/>&quot;application_id&quot;,<sp/>&quot;type&quot;:{<sp/>&quot;base&quot;:&quot;char&quot;,<sp/>&quot;dec&quot;:&quot;*&quot;,<sp/>&quot;converter&quot;:&quot;snowflake&quot;<sp/>}}&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref><sp/>application_id;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>metadata<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>control<sp/>which<sp/>field<sp/>should<sp/>be<sp/>extracted/injected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>presented(defined)<sp/>in<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>record<sp/>which<sp/>field<sp/>is<sp/>null<sp/>in<sp/>JSON</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_arg_switches;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_defined;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable_record_null;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg_switches[9];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_defined[9];</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*record_null[9];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}<sp/>__M;<sp/></highlight><highlight class="comment">//<sp/>metadata</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_cleanup_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_init_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>*<sp/>discord_webhook_alloc();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_webhook_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_webhook_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_webhook_to_query_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_webhook_to_query(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*json,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_list_free_v(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**p);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_list_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_list_from_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discord_webhook_list_from_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>***p);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_webhook_list_to_json_v(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>discord_webhook_list_to_json(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdiscord__webhook" kindref="compound">discord_webhook</ref><sp/>**p);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>discord_webhook_types<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>DISCORD_WEBHOOK_INCOMING<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>DISCORD_WEBHOOK_CHANNEL_FOLLOWER<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>discord_webhook_types_to_string(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>discord_webhook_types);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>discord_webhook_types<sp/>discord_webhook_types_from_string(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>discord_webhook_types_has(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>discord_webhook_types,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+    </programlisting>
+    <location file="orca/specs-code/discord/webhook.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__create__guild__channel__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_create_guild_channel_params</compoundname>
+    <includes refid="guild_8endpoints-params_8h" local="no">guild.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1afae1da92b176d4fb3030e40b4e63f414" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_guild_channel_params::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="224" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1ab3b4c6d6ff6e0197cc46a8465f563f94" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_create_guild_channel_params::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="228" column="7" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1af3b53274c032e3e9d1ae4aaba201c556" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_create_guild_channel_params::topic</definition>
+        <argsstring></argsstring>
+        <name>topic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="232" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1ad41744b7918d7338e3c49167f5399309" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_create_guild_channel_params::bitrate</definition>
+        <argsstring></argsstring>
+        <name>bitrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="236" column="7" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1a62608bf9ac15268a3b7b8a77594b69f0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_create_guild_channel_params::user_limit</definition>
+        <argsstring></argsstring>
+        <name>user_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="240" column="7" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1a3ebf311a8eecbf090c38544ee5f081b0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_create_guild_channel_params::rate_limit_per_user</definition>
+        <argsstring></argsstring>
+        <name>rate_limit_per_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="244" column="7" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1a9ccfea68867d029e893064fcbb69a2c0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_create_guild_channel_params::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="248" column="7" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1a73e9a817bdc9987d389e76f05754701c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__channel__overwrite" kindref="compound">discord_channel_overwrite</ref> **</type>
+        <definition>struct discord_channel_overwrite** discord_create_guild_channel_params::permission_overwrites</definition>
+        <argsstring></argsstring>
+        <name>permission_overwrites</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="252" column="34" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1acf5addb5a859ef4da2ec8a99d175f21f" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_create_guild_channel_params::parent_id</definition>
+        <argsstring></argsstring>
+        <name>parent_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="256" column="19" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__create__guild__channel__params_1af53338a76edfc0e1e263b05d6d438631" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_create_guild_channel_params::nsfw</definition>
+        <argsstring></argsstring>
+        <name>nsfw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.endpoints-params.h" line="260" column="8" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create Guild Channel. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#create-guild-channel">https://discord.com/developers/docs/resources/guild#create-guild-channel</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/guild.endpoints-params.json:58:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>discord_create_guild_channel_params</label>
+        <link refid="structdiscord__create__guild__channel__params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>permission_overwrites</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>discord_channel_overwrite</label>
+        <link refid="structdiscord__channel__overwrite"/>
+      </node>
+    </collaborationgraph>
+    <location file="orca/specs-code/discord/guild.endpoints-params.h" line="221" column="42" bodyfile="orca/specs-code/discord/guild.endpoints-params.h" bodystart="221" bodyend="276"/>
+    <listofallmembers>
+      <member refid="structdiscord__create__guild__channel__params_1ad41744b7918d7338e3c49167f5399309" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>bitrate</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1afae1da92b176d4fb3030e40b4e63f414" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>name</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1af53338a76edfc0e1e263b05d6d438631" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>nsfw</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1acf5addb5a859ef4da2ec8a99d175f21f" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>parent_id</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1a73e9a817bdc9987d389e76f05754701c" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>permission_overwrites</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1a9ccfea68867d029e893064fcbb69a2c0" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>position</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1a3ebf311a8eecbf090c38544ee5f081b0" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>rate_limit_per_user</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1af3b53274c032e3e9d1ae4aaba201c556" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>topic</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1ab3b4c6d6ff6e0197cc46a8465f563f94" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>type</name></member>
+      <member refid="structdiscord__create__guild__channel__params_1a62608bf9ac15268a3b7b8a77594b69f0" prot="public" virt="non-virtual"><scope>discord_create_guild_channel_params</scope><name>user_limit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

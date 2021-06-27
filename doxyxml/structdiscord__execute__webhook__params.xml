@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__execute__webhook__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_execute_webhook_params</compoundname>
+    <includes refid="webhook_8endpoints-params_8h" local="no">webhook.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1a62a9d92bfe84427f8f1f7f6241bfec44" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_execute_webhook_params::wait</definition>
+        <argsstring></argsstring>
+        <name>wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="127" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1a51084b86dc785112ee9d3961e638f9cf" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_execute_webhook_params::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="134" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1ada072e547cec28cab3979609d804a6ba" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_execute_webhook_params::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="141" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1a1cfb3867483250bf10411025376154c3" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_execute_webhook_params::avatar_url</definition>
+        <argsstring></argsstring>
+        <name>avatar_url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="146" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1a7154706dc51f4b35ed8884273c69a851" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_execute_webhook_params::tts</definition>
+        <argsstring></argsstring>
+        <name>tts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="153" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1ad79d7d720a449221ee375169817646a3" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_execute_webhook_params::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="160" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1aeec8af9b6243021cbeb27d3e0b8ef251" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__embed" kindref="compound">discord_embed</ref> *</type>
+        <definition>struct discord_embed* discord_execute_webhook_params::embeds</definition>
+        <argsstring></argsstring>
+        <name>embeds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="167" column="22" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1a8c33ac9335955bd70c3adc8ea66c4c0f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* discord_execute_webhook_params::payload_json</definition>
+        <argsstring></argsstring>
+        <name>payload_json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="174" column="8" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__execute__webhook__params_1a40b8e6f72e6708a34999349f68a2fb62" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdiscord__channel__allowed__mentions" kindref="compound">discord_channel_allowed_mentions</ref> *</type>
+        <definition>struct discord_channel_allowed_mentions* discord_execute_webhook_params::allowed_mentions</definition>
+        <argsstring></argsstring>
+        <name>allowed_mentions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="182" column="41" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Execute Webhook. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/webhook#execute-webhook">https://discord.com/developers/docs/resources/webhook#execute-webhook</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/webhook.endpoints-params.json:33:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>discord_embed_provider</label>
+        <link refid="structdiscord__embed__provider"/>
+      </node>
+      <node id="1">
+        <label>discord_execute_webhook_params</label>
+        <link refid="structdiscord__execute__webhook__params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>allowed_mentions</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>embeds</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>discord_channel_allowed_mentions</label>
+        <link refid="structdiscord__channel__allowed__mentions"/>
+      </node>
+      <node id="10">
+        <label>discord_embed_footer</label>
+        <link refid="structdiscord__embed__footer"/>
+      </node>
+      <node id="7">
+        <label>discord_embed_field</label>
+        <link refid="structdiscord__embed__field"/>
+      </node>
+      <node id="5">
+        <label>discord_embed_image</label>
+        <link refid="structdiscord__embed__image"/>
+      </node>
+      <node id="9">
+        <label>discord_embed_thumbnail</label>
+        <link refid="structdiscord__embed__thumbnail"/>
+      </node>
+      <node id="8">
+        <label>discord_embed_author</label>
+        <link refid="structdiscord__embed__author"/>
+      </node>
+      <node id="6">
+        <label>discord_embed_video</label>
+        <link refid="structdiscord__embed__video"/>
+      </node>
+      <node id="3">
+        <label>discord_embed</label>
+        <link refid="structdiscord__embed"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>provider</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>image</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>video</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>fields</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>author</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>thumbnail</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>footer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="orca/specs-code/discord/webhook.endpoints-params.h" line="121" column="37" bodyfile="orca/specs-code/discord/webhook.endpoints-params.h" bodystart="121" bodyend="198"/>
+    <listofallmembers>
+      <member refid="structdiscord__execute__webhook__params_1a40b8e6f72e6708a34999349f68a2fb62" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>allowed_mentions</name></member>
+      <member refid="structdiscord__execute__webhook__params_1a1cfb3867483250bf10411025376154c3" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>avatar_url</name></member>
+      <member refid="structdiscord__execute__webhook__params_1a51084b86dc785112ee9d3961e638f9cf" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>content</name></member>
+      <member refid="structdiscord__execute__webhook__params_1aeec8af9b6243021cbeb27d3e0b8ef251" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>embeds</name></member>
+      <member refid="structdiscord__execute__webhook__params_1ad79d7d720a449221ee375169817646a3" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>file</name></member>
+      <member refid="structdiscord__execute__webhook__params_1a8c33ac9335955bd70c3adc8ea66c4c0f" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>payload_json</name></member>
+      <member refid="structdiscord__execute__webhook__params_1a7154706dc51f4b35ed8884273c69a851" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>tts</name></member>
+      <member refid="structdiscord__execute__webhook__params_1ada072e547cec28cab3979609d804a6ba" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>username</name></member>
+      <member refid="structdiscord__execute__webhook__params_1a62a9d92bfe84427f8f1f7f6241bfec44" prot="public" virt="non-virtual"><scope>discord_execute_webhook_params</scope><name>wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

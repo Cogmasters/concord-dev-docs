@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__channel__overwrite" kind="struct" language="C++" prot="public">
+    <compoundname>discord_channel_overwrite</compoundname>
+    <includes refid="channel_8h" local="no">channel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__channel__overwrite_1a651e07ff7afed20994bd2aefb9f98fe2" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_channel_overwrite::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="719" column="19" bodyfile="orca/specs-code/discord/channel.h" bodystart="719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__overwrite_1ab8a63c7473d1183f3d34ce836841f09e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_channel_overwrite::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="723" column="7" bodyfile="orca/specs-code/discord/channel.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__overwrite_1adf7ec069f91b438b1358e81d730f29e9" prot="public" static="no" mutable="no">
+        <type>enum discord_permissions_bitwise_flags</type>
+        <definition>enum discord_permissions_bitwise_flags discord_channel_overwrite::allow</definition>
+        <argsstring></argsstring>
+        <name>allow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="723" column="7" bodyfile="orca/specs-code/discord/channel.h" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__channel__overwrite_1af9a78389d69b0bcbba40c2e1b9b29f1a" prot="public" static="no" mutable="no">
+        <type>enum discord_permissions_bitwise_flags</type>
+        <definition>enum discord_permissions_bitwise_flags discord_channel_overwrite::deny</definition>
+        <argsstring></argsstring>
+        <name>deny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.h" line="723" column="7" bodyfile="orca/specs-code/discord/channel.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Overwrite Structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>defined at specs/discord/channel.json:240:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.h" line="716" column="32" bodyfile="orca/specs-code/discord/channel.h" bodystart="716" bodyend="749"/>
+    <listofallmembers>
+      <member refid="structdiscord__channel__overwrite_1adf7ec069f91b438b1358e81d730f29e9" prot="public" virt="non-virtual"><scope>discord_channel_overwrite</scope><name>allow</name></member>
+      <member refid="structdiscord__channel__overwrite_1af9a78389d69b0bcbba40c2e1b9b29f1a" prot="public" virt="non-virtual"><scope>discord_channel_overwrite</scope><name>deny</name></member>
+      <member refid="structdiscord__channel__overwrite_1a651e07ff7afed20994bd2aefb9f98fe2" prot="public" virt="non-virtual"><scope>discord_channel_overwrite</scope><name>id</name></member>
+      <member refid="structdiscord__channel__overwrite_1ab8a63c7473d1183f3d34ce836841f09e" prot="public" virt="non-virtual"><scope>discord_channel_overwrite</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

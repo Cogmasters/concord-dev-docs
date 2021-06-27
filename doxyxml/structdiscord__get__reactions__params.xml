@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__get__reactions__params" kind="struct" language="C++" prot="public">
+    <compoundname>discord_get_reactions_params</compoundname>
+    <includes refid="channel_8endpoints-params_8h" local="no">channel.endpoints-params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__get__reactions__params_1ac2c82c604e82ebd98512e2b7c179e2ba" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_get_reactions_params::after</definition>
+        <argsstring></argsstring>
+        <name>after</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.endpoints-params.h" line="126" column="19" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__get__reactions__params_1ac950ba935fe0f8235c66e7eb483f353b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int discord_get_reactions_params::limit</definition>
+        <argsstring></argsstring>
+        <name>limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/channel.endpoints-params.h" line="130" column="7" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Get Reactions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/channel#get-reactions">https://discord.com/developers/docs/resources/channel#get-reactions</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/channel.endpoints-params.json:35:22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/channel.endpoints-params.h" line="123" column="35" bodyfile="orca/specs-code/discord/channel.endpoints-params.h" bodystart="123" bodyend="146"/>
+    <listofallmembers>
+      <member refid="structdiscord__get__reactions__params_1ac2c82c604e82ebd98512e2b7c179e2ba" prot="public" virt="non-virtual"><scope>discord_get_reactions_params</scope><name>after</name></member>
+      <member refid="structdiscord__get__reactions__params_1ac950ba935fe0f8235c66e7eb483f353b" prot="public" virt="non-virtual"><scope>discord_get_reactions_params</scope><name>limit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

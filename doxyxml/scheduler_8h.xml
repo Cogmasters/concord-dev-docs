@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="scheduler_8h" kind="file" language="C++">
+    <compoundname>scheduler.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>orca/common/scheduler.h</label>
+        <link refid="scheduler_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="scheduler_8h_1a95df94b83b9285adf7c6fccfdb0c24c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct task_s *</type>
+        <definition>struct task_s* task_init</definition>
+        <argsstring>()</argsstring>
+        <name>task_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/scheduler.h" line="10" column="14" declfile="orca/common/scheduler.h" declline="10" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="scheduler_8h_1a9f5ec191b194522c27e730d562144e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void task_cleanup</definition>
+        <argsstring>(struct task_s *task)</argsstring>
+        <name>task_cleanup</name>
+        <param>
+          <type>struct task_s *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/scheduler.h" line="11" column="6" declfile="orca/common/scheduler.h" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="scheduler_8h_1a2f64bb0252168407b0260342b25d8a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void task_start</definition>
+        <argsstring>(struct task_s *task, uint64_t timeout_ms, uint64_t repeat_ms, void *data, void(*callback)(void *data))</argsstring>
+        <name>task_start</name>
+        <param>
+          <type>struct task_s *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>timeout_ms</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>repeat_ms</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void(*)(void *data)</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/scheduler.h" line="13" column="6" declfile="orca/common/scheduler.h" declline="13" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="scheduler_8h_1a3deb16917fd4eb3cbfc3e455438f56e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void task_stop</definition>
+        <argsstring>(struct task_s *task)</argsstring>
+        <name>task_stop</name>
+        <param>
+          <type>struct task_s *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/scheduler.h" line="20" column="6" declfile="orca/common/scheduler.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SCHEDULER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCHEDULER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">task_s*<sp/>task_init();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>task_cleanup(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>task_s<sp/>*task);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>task_start(</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>task_s<sp/>*task,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>uint64_t<sp/>timeout_ms,<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>uint64_t<sp/>repeat_ms,<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*callback)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>task_stop(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>task_s<sp/>*task);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SCHEDULER_H</highlight></codeline>
+    </programlisting>
+    <location file="orca/common/scheduler.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structslack" kind="struct" language="C++" prot="public">
+    <compoundname>slack</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structslack_1abff14789787b510dbc7ed332001450f1" prot="public" static="no" mutable="no">
+        <type>struct sized_buffer</type>
+        <definition>struct sized_buffer slack::bot_token</definition>
+        <argsstring></argsstring>
+        <name>bot_token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="49" column="10" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1abd7355e9be14c18848ecd7ee39d3beda" prot="public" static="no" mutable="no">
+        <type>struct sized_buffer</type>
+        <definition>struct sized_buffer slack::app_token</definition>
+        <argsstring></argsstring>
+        <name>app_token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="49" column="10" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1a5bd7938e2caeb58451180b67d5fca6be" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structslack__adapter" kindref="compound">slack_adapter</ref></type>
+        <definition>struct slack_adapter slack::adapter</definition>
+        <argsstring></argsstring>
+        <name>adapter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="49" column="10" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1ab43336d2ade83b6dfc1ac1676446c569" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structslack__socketmode" kindref="compound">slack_socketmode</ref></type>
+        <definition>struct slack_socketmode slack::sm</definition>
+        <argsstring></argsstring>
+        <name>sm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="49" column="10" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1a50f80579073f93fb3bb3c1bbd9178786" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structslack__rtm" kindref="compound">slack_rtm</ref></type>
+        <definition>struct slack_rtm slack::rtm</definition>
+        <argsstring></argsstring>
+        <name>rtm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="49" column="10" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1a208a1a509ab2f7534666ca8e0015acdc" prot="public" static="no" mutable="no">
+        <type>struct logconf</type>
+        <definition>struct logconf slack::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="49" column="10" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1a82a34a7ef090cb82ff7dc0cd51f1321e" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1aa6024f71dcb39c0ec64c54345db99d4d" kindref="member">idle_cb</ref> *</type>
+        <definition>idle_cb* slack::on_idle</definition>
+        <argsstring></argsstring>
+        <name>on_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="69" column="13" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1a725390ece6fc9159a0fc6a2a468dd3e0" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1aa6024f71dcb39c0ec64c54345db99d4d" kindref="member">idle_cb</ref> *</type>
+        <definition>idle_cb* slack::on_hello</definition>
+        <argsstring></argsstring>
+        <name>on_hello</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="70" column="13" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1a2ff7d8c371613953a2438109ca2a2b78" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1aa6024f71dcb39c0ec64c54345db99d4d" kindref="member">idle_cb</ref> *</type>
+        <definition>idle_cb* slack::on_message</definition>
+        <argsstring></argsstring>
+        <name>on_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="71" column="13" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslack_1a450c6390c53df5adf6df5566fe09e6f5" prot="public" static="no" mutable="no">
+        <type>struct slack::@11</type>
+        <definition>struct slack::@11 slack::cbs</definition>
+        <argsstring></argsstring>
+        <name>cbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="72" column="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>slack_rtm</label>
+        <link refid="structslack__rtm"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>p_client</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>slack</label>
+        <link refid="structslack"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sm</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>rtm</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>slack_adapter</label>
+        <link refid="structslack__adapter"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>p_client</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>slack_socketmode</label>
+        <link refid="structslack__socketmode"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>p_client</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lucasmull/Trabalho/orca/slack-internal.h" line="58" column="12" bodyfile="/home/lucasmull/Trabalho/orca/slack-internal.h" bodystart="58" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structslack_1a5bd7938e2caeb58451180b67d5fca6be" prot="public" virt="non-virtual"><scope>slack</scope><name>adapter</name></member>
+      <member refid="structslack_1abd7355e9be14c18848ecd7ee39d3beda" prot="public" virt="non-virtual"><scope>slack</scope><name>app_token</name></member>
+      <member refid="structslack_1abff14789787b510dbc7ed332001450f1" prot="public" virt="non-virtual"><scope>slack</scope><name>bot_token</name></member>
+      <member refid="structslack_1a450c6390c53df5adf6df5566fe09e6f5" prot="public" virt="non-virtual"><scope>slack</scope><name>cbs</name></member>
+      <member refid="structslack_1a208a1a509ab2f7534666ca8e0015acdc" prot="public" virt="non-virtual"><scope>slack</scope><name>config</name></member>
+      <member refid="structslack_1a725390ece6fc9159a0fc6a2a468dd3e0" prot="public" virt="non-virtual"><scope>slack</scope><name>on_hello</name></member>
+      <member refid="structslack_1a82a34a7ef090cb82ff7dc0cd51f1321e" prot="public" virt="non-virtual"><scope>slack</scope><name>on_idle</name></member>
+      <member refid="structslack_1a2ff7d8c371613953a2438109ca2a2b78" prot="public" virt="non-virtual"><scope>slack</scope><name>on_message</name></member>
+      <member refid="structslack_1a50f80579073f93fb3bb3c1bbd9178786" prot="public" virt="non-virtual"><scope>slack</scope><name>rtm</name></member>
+      <member refid="structslack_1ab43336d2ade83b6dfc1ac1676446c569" prot="public" virt="non-virtual"><scope>slack</scope><name>sm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

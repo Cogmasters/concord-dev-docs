@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdiscord__guild__widget" kind="struct" language="C++" prot="public">
+    <compoundname>discord_guild_widget</compoundname>
+    <includes refid="guild_8h" local="no">guild.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdiscord__guild__widget_1a0eff8a4e1aad4379b476c034ed0e9b54" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool discord_guild_widget::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="468" column="8" bodyfile="orca/specs-code/discord/guild.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdiscord__guild__widget_1a2c20c4ec2464a24f34480f97237b7aed" prot="public" static="no" mutable="no">
+        <type><ref refid="discord_8h_1a2aca4957fe0e14f7ab03fdaeb17d8fb9" kindref="member">u64_snowflake_t</ref></type>
+        <definition>u64_snowflake_t discord_guild_widget::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/specs-code/discord/guild.h" line="472" column="19" bodyfile="orca/specs-code/discord/guild.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Guild Widget Object. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#guild-widget-object">https://discord.com/developers/docs/resources/guild#guild-widget-object</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>defined at specs/discord/guild.json:189:23 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="orca/specs-code/discord/guild.h" line="465" column="27" bodyfile="orca/specs-code/discord/guild.h" bodystart="465" bodyend="488"/>
+    <listofallmembers>
+      <member refid="structdiscord__guild__widget_1a2c20c4ec2464a24f34480f97237b7aed" prot="public" virt="non-virtual"><scope>discord_guild_widget</scope><name>channel_id</name></member>
+      <member refid="structdiscord__guild__widget_1a0eff8a4e1aad4379b476c034ed0e9b54" prot="public" virt="non-virtual"><scope>discord_guild_widget</scope><name>enabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
