@@ -11,18 +11,26 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Test
-        run: echo $(pwd)
-
       - name: Dependencies
-        run: git clone https://github.com/cee-studio/orca
+        run: |
+          echo "Cloning Orca"
+          git clone https://github.com/cee-studio/orca
+          cd orca && ./scripts/get-cee-utils.sh && cd ..
+          echo "Install Sphinx"
+          pip install sphinx
+          pip install sphinx_rtd_theme
+          echo "Install Breathe"
+          pip install breathe
 
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.3.1
+
+      - name: Breathe Action
+        run: make -C docs html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./docs/html
+          publish_dir: ./docs/build/html
