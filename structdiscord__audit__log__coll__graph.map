@@ -1,0 +1,11 @@
+<map id="discord_audit_log" name="discord_audit_log">
+<area shape="rect" id="node1" title="Audit Log Structure." alt="" coords="916,176,1052,203"/>
+<area shape="rect" id="node2" href="$structdiscord__user.html" title="User Structure." alt="" coords="5,118,109,144"/>
+<area shape="rect" id="node3" href="$structdiscord__guild__integration.html" title="Integration Structure." alt="" coords="564,143,751,170"/>
+<area shape="rect" id="node4" href="$structdiscord__guild__integration__application.html" title="Integration Application Object." alt="" coords="193,162,379,204"/>
+<area shape="rect" id="node6" href="$structdiscord__webhook.html" title="Webhook Structure." alt="" coords="405,215,540,242"/>
+<area shape="rect" id="node5" href="$structdiscord__guild__integration__account.html" title="Integration Account Structure." alt="" coords="193,33,379,74"/>
+<area shape="rect" id="node7" href="$structdiscord__audit__log__entry.html" title="Audit Log Entry Structure." alt="" coords="569,279,746,306"/>
+<area shape="rect" id="node8" href="$structdiscord__audit__log__entry__optional__info.html" title="Optional Audit Entry Info Structure." alt="" coords="197,330,375,372"/>
+<area shape="rect" id="node9" href="$structdiscord__audit__log__change.html" title="Audit Log Change Structure." alt="" coords="191,279,381,306"/>
+</map>
