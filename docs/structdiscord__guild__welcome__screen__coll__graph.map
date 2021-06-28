@@ -1,4 +1,0 @@
-<map id="discord_guild_welcome_screen" name="discord_guild_welcome_screen">
-<area shape="rect" id="node1" title="Welcome Screen Structure." alt="" coords="5,109,180,151"/>
-<area shape="rect" id="node2" href="$structdiscord__guild__welcome__screen__channel.html" title="Welcome Screen Channel Structure." alt="" coords="5,5,180,47"/>
-</map>
