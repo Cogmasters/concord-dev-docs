@@ -1,0 +1,15 @@
+<map id="discord_voice_cbs" name="discord_voice_cbs">
+<area shape="rect" id="node1" title=" " alt="" coords="23,331,154,357"/>
+<area shape="rect" id="node2" href="$structdiscord.html" title="The Discord Client structure." alt="" coords="397,241,461,268"/>
+<area shape="rect" id="node13" href="$structdiscord__voice.html" title="Discord Voice Connection handle, contain information about its active session." alt="" coords="659,331,762,357"/>
+<area shape="rect" id="node3" href="$structdiscord__adapter.html" title="The handle used for performing HTTP Requests." alt="" coords="653,7,768,33"/>
+<area shape="rect" id="node5" href="$structdiscord__gateway.html" title="The handle used for establishing a Discord Gateway connection via WebSockets." alt="" coords="897,439,1016,465"/>
+<area shape="rect" id="node12" href="$structdiscord__gateway__cmd__cbs.html" title=" " alt="" coords="621,273,800,300"/>
+<area shape="rect" id="node4" href="$structdiscord__bucket.html" title="The bucket struct that will handle ratelimiting." alt="" coords="373,7,484,33"/>
+<area shape="rect" id="node6" href="$structdiscord__session.html" title=" " alt="" coords="653,469,769,496"/>
+<area shape="rect" id="node7" href="$structdiscord__user.html" title="User Structure." alt="" coords="663,520,759,547"/>
+<area shape="rect" id="node8" href="$structdiscord__gateway__identify.html" title="Identify Structure." alt="" coords="627,571,794,597"/>
+<area shape="rect" id="node9" href="$structdiscord__gateway__status__update.html" title="Gateway Status Update Structure." alt="" coords="347,530,510,571"/>
+<area shape="rect" id="node10" href="$structdiscord__gateway__activity.html" title="Activity Structure." alt="" coords="5,537,172,564"/>
+<area shape="rect" id="node11" href="$structdiscord__gateway__identify__connection.html" title="Identify Connection Properties." alt="" coords="345,595,512,637"/>
+</map>

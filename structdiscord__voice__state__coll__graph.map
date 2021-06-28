@@ -1,0 +1,5 @@
+<map id="discord_voice_state" name="discord_voice_state">
+<area shape="rect" id="node1" title="Voice State Structure." alt="" coords="12,184,151,211"/>
+<area shape="rect" id="node2" href="$structdiscord__guild__member.html" title="Guild Member Structure." alt="" coords="5,95,157,121"/>
+<area shape="rect" id="node3" href="$structdiscord__user.html" title="User Structure." alt="" coords="33,5,129,32"/>
+</map>
