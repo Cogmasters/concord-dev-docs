@@ -1,5 +1,0 @@
-<map id="discord_channel_reaction" name="discord_channel_reaction">
-<area shape="rect" id="node1" title="Reaction Structure." alt="" coords="5,184,175,211"/>
-<area shape="rect" id="node2" href="$structdiscord__emoji.html" title="Emoji Structure." alt="" coords="39,95,141,121"/>
-<area shape="rect" id="node3" href="$structdiscord__user.html" title="User Structure." alt="" coords="42,5,138,32"/>
-</map>

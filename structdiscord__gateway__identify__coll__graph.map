@@ -1,6 +1,0 @@
-<map id="discord_gateway_identify" name="discord_gateway_identify">
-<area shape="rect" id="node1" title="Identify Structure." alt="" coords="100,199,267,225"/>
-<area shape="rect" id="node2" href="$structdiscord__gateway__status__update.html" title="Gateway Status Update Structure." alt="" coords="7,95,170,136"/>
-<area shape="rect" id="node3" href="$structdiscord__gateway__activity.html" title="Activity Structure." alt="" coords="5,5,172,32"/>
-<area shape="rect" id="node4" href="$structdiscord__gateway__identify__connection.html" title="Identify Connection Properties." alt="" coords="195,95,361,136"/>
-</map>
