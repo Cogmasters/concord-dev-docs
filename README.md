@@ -9,7 +9,7 @@ Clone this repository into `orca/`
 
 ### Installing Dependencies
 
-* $ `sudo apt install doxygen && pip install sphinx && && pip install sphinx_rtd_theme && pip install breathe`
+* $ `sudo apt install doxygen && pip install sphinx && && pip install pydata_sphinx_theme && pip install breathe`
 * $ `./scripts/get-cee-utils.sh && cp orca-docs/Doxyfile Doxyfile`
 
 ### Generating Static Files

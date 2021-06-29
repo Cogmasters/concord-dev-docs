@@ -56,6 +56,7 @@ breathe_projects = { "Orca": '../xml' }
 breathe_default_project = 'Orca'
 
 breathe_default_members = ('members', 'undoc-members')
+breathe_show_define_initializer = True
 breathe_show_enumvalue_initializer = True
 
 # Add any paths that contain templates here, relative to this directory.
@@ -78,7 +79,7 @@ exclude_patterns = []
 if read_the_docs_build:
     html_theme = 'default'
 else:
-    html_theme = 'sphinx_rtd_theme'
+    html_theme = 'pydata_sphinx_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
