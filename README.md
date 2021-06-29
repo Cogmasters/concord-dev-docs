@@ -1,18 +1,19 @@
 # Testing Manually
 
+Run the following commands from your `orca/` repository
+
 ## Setting Up
+
+Clone this repository into `orca/`
+* $ `git clone https://github.com/cee-studio/orca-docs`
 
 ### Installing Dependencies
 
-* `$ apt install doxygen`
-* `$ pip install sphinx`
-* `$ pip install breathe`
-* `$ git clone https://github.com/cee-studio/orca.git`
-* `$ cd orca && ./scripts/get-cee-utils.sh && cd ..`
+* $ `sudo apt install doxygen && pip install sphinx && && pip install sphinx_rtd_theme && pip install breathe`
+* $ `./scripts/get-cee-utils.sh && cp orca-docs/Doxyfile Doxyfile`
 
 ### Generating Static Files
 
-* `$ doxygen`
-* `$ make -C docs html`
+* $ `doxygen && mv docs/xml orca-docs/docs/ && make -C orca-docs/docs html`
 
-Generated files at `docs/build/html`
+Generated files located at `orca-docs/docs/build/html`

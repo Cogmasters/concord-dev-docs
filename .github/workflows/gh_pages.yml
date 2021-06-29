@@ -13,9 +13,10 @@ jobs:
 
       - name: Dependencies
         run: |
-          echo "Cloning Orca"
+          echo "Preparing Orca"
           git clone https://github.com/cee-studio/orca
           cd orca && ./scripts/get-cee-utils.sh && cd ..
+          cp Doxyfile orca/Doxyfile
           echo "Install Sphinx"
           pip install sphinx
           pip install sphinx_rtd_theme
@@ -24,12 +25,18 @@ jobs:
 
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.3.1
+        with:
+          working-directory: 'orca/'
+
+      - name: Move XML to Orca-Docs
+        run: sudo mv orca/docs/xml docs/
 
       - name: Breathe Action
         run: make -C docs html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
+        # if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
