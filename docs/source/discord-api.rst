@@ -9,7 +9,8 @@ Clients
 Client
 ~~~~~~
 
-.. doxygenstruct:: discord
+.. doxygenfile:: discord.h
+    :sections: briefdescription innerclass enum public-type public-attrib
 
 Datatypes
 ---------
