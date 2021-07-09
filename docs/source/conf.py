@@ -28,7 +28,6 @@ else:
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
 # -- Project information -----------------------------------------------------
 
 project = 'Orca'
@@ -76,6 +75,23 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+html_favicon = 'images/icon.ico'
+html_logo = 'images/icon.svg'
+html_theme_options = {
+    "github_url": "https://github.com/cee-studio/orca",
+    "external_links": [
+        {"name": "SaiphC", "url": "https://www.cee.studio/"}
+    ],
+    "use_edit_page_button": True
+}
+html_context = {
+    # "github_url": "https://github.com", # or your GitHub Enterprise interprise
+    "github_user": "cee-studio",
+    "github_repo": "orca-docs",
+    "github_version": "master",
+    "doc_path": "docs/source",
+}
+
 if read_the_docs_build:
     html_theme = 'default'
 else:
