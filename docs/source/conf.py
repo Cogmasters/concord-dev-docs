@@ -76,6 +76,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_favicon = "https://raw.githubusercontent.com/cee-studio/orca-docs/master/docs/source/images/icon.ico"
+# @todo fix logo not showing up
 # html_logo = "https://raw.githubusercontent.com/cee-studio/orca-docs/master/docs/source/images/icon.svg"
 html_theme_options = {
     "github_url": "https://github.com/cee-studio/orca",
