@@ -75,8 +75,8 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_favicon = 'images/icon.ico'
-html_logo = 'images/icon.svg'
+html_favicon = "https://raw.githubusercontent.com/cee-studio/orca-docs/master/docs/source/images/icon.ico"
+# html_logo = "https://raw.githubusercontent.com/cee-studio/orca-docs/master/docs/source/images/icon.svg"
 html_theme_options = {
     "github_url": "https://github.com/cee-studio/orca",
     "external_links": [
