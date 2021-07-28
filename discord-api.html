@@ -2295,6 +2295,26 @@
 <span class="target" id="channel_8h_1a8da5a4e81d57a68dc380394ef40a12fea3b82da359e955620ec09e26291b3cd2d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_CHANNEL_GUILD_STORE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">6</span></span><a class="headerlink" href="#c.discord_channel_types.DISCORD_CHANNEL_GUILD_STORE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_channel_types.DISCORD_CHANNEL_GUILD_NEWS_THREAD">
+<span class="target" id="channel_8h_1a8da5a4e81d57a68dc380394ef40a12fea18fd19a920d0d4da67c1c514ee5cec50"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_CHANNEL_GUILD_NEWS_THREAD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#c.discord_channel_types.DISCORD_CHANNEL_GUILD_NEWS_THREAD" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_channel_types.DISCORD_CHANNEL_GUILD_PUBLIC_THREAD">
+<span class="target" id="channel_8h_1a8da5a4e81d57a68dc380394ef40a12fead17ab895e52d4bff206d30047b5f1dcb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_CHANNEL_GUILD_PUBLIC_THREAD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">11</span></span><a class="headerlink" href="#c.discord_channel_types.DISCORD_CHANNEL_GUILD_PUBLIC_THREAD" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_channel_types.DISCORD_CHANNEL_GUILD_PRIVATE_THREAD">
+<span class="target" id="channel_8h_1a8da5a4e81d57a68dc380394ef40a12fea0226d4c910a2df5130af32890843ad55"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_CHANNEL_GUILD_PRIVATE_THREAD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">12</span></span><a class="headerlink" href="#c.discord_channel_types.DISCORD_CHANNEL_GUILD_PRIVATE_THREAD" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_channel_types.DISCORD_CHANNEL_GUILD_STAGE_VOICE">
+<span class="target" id="channel_8h_1a8da5a4e81d57a68dc380394ef40a12fea2683d254ac8e952800d5c621e151db79"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_CHANNEL_GUILD_STAGE_VOICE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">13</span></span><a class="headerlink" href="#c.discord_channel_types.DISCORD_CHANNEL_GUILD_STAGE_VOICE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 <dl class="c enum">
@@ -6579,7 +6599,30 @@
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_guild_audit_log">
 <span class="target" id="group__AuditLogEndpoints_1ga81d7889c378d15e3cbe5a8fffe1489a2"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_guild_audit_log</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_get_guild_audit_log_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_audit_log" title="discord_audit_log"><span class="n"><span class="pre">discord_audit_log</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_audit_log</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_guild_audit_log" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>GET</strong> /guilds/{guild.id}/audit-logs </p>
+<p>Returns an audit log object for the guild. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/audit-log#get-guild-audit-log">https://discord.com/developers/docs/resources/audit-log#get-guild-audit-log</a> </p>
+</dd>
+</dl>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Requires the ‘VIEW_AUDIT_LOG’ permission </p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>guild_id</strong> – the guild to retrieve the audit log from </p></li>
+<li><p><strong>params</strong> – request parameters </p></li>
+<li><p><strong>p_audit_log</strong> – the audit log object if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 </dd></dl>
@@ -6595,67 +6638,343 @@
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_channel">
 <span class="target" id="group__ChannelEndpoints_1ga4c61fd80befb32ef0d13f3b0226139d4"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_channel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_channel" title="discord_channel"><span class="n"><span class="pre">discord_channel</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_channel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_channel" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>GET</strong> /channels/{channel.id} </p>
+<p>Get a channel by ID. Returns a channel object. If the channel is a thread, a thread member object is included in the returned result. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#get-channel">https://discord.com/developers/docs/resources/channel#get-channel</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel to be retrieved </p></li>
+<li><p><strong>p_channel</strong> – the channel object if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_modify_channel">
 <span class="target" id="group__ChannelEndpoints_1ga2feeb362e4787f63910fcabdfaf85111"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_modify_channel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_modify_channel_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_channel" title="discord_channel"><span class="n"><span class="pre">discord_channel</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_channel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_modify_channel" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>PATCH</strong> /channels/{channel.id} </p>
+<p>Update a channel’s settings. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#modify-channel">https://discord.com/developers/docs/resources/channel#modify-channel</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel to be modified </p></li>
+<li><p><strong>params</strong> – request parameters </p></li>
+<li><p><strong>p_channel</strong> – the channel object if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_delete_channel">
 <span class="target" id="group__ChannelEndpoints_1ga797a880bdb31d6649a4fcc2f93493699"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_delete_channel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_channel" title="discord_channel"><span class="n"><span class="pre">discord_channel</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_channel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_delete_channel" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>DELETE</strong> /channels/{channel.id} </p>
+<p>Delete a channel, or close a private message. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#deleteclose-channel">https://discord.com/developers/docs/resources/channel#deleteclose-channel</a> </p>
+</dd>
+</dl>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Requires the MANAGE_CHANNELS permission for the guild, or MANAGE_THREADS if the channel is a thread. Deleting a category does not delete its child channels; they will have their parent_id removed and a Channel Update Gateway event will fire for each of them. </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Fires a Channel Delete Gateway event (or Thread Delete if the channel was a thread). </p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel to be deleted </p></li>
+<li><p><strong>p_channel</strong> – the channel object if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_channel_messages">
 <span class="target" id="group__ChannelEndpoints_1ga82c80d017413c06e9738de351f9922b5"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_channel_messages</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_get_channel_messages_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_message" title="discord_message"><span class="n"><span class="pre">discord_message</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_messages</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_channel_messages" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>GET</strong> /channels/{channel.id}/messages </p>
+<p>Returns the messages for a channel. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#get-channel-messages">https://discord.com/developers/docs/resources/channel#get-channel-messages</a> </p>
+</dd>
+</dl>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If operating on a guild channel, this endpoint requires the VIEW_CHANNEL permission to be present on the current user. </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the current user is missing the ‘READ_MESSAGE_HISTORY’ permission in the channel then this will return no messages (since they cannot read the message history). </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The before, after, and around keys are mutually exclusive, only one may be passed at a time. </p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel to get messages from </p></li>
+<li><p><strong>params</strong> – request parameters </p></li>
+<li><p><strong>p_messages</strong> – the null-terminated array of messages if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_channel_message">
 <span class="target" id="group__ChannelEndpoints_1ga8a4fd93a2bfbcd72fa782dc2240c8534"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_channel_message</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">message_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_message" title="discord_message"><span class="n"><span class="pre">discord_message</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_channel_message" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>GET</strong> /channels/{channel.id}/messages/{message.id} </p>
+<p>Returns a specific message in the channel. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#get-channel-message">https://discord.com/developers/docs/resources/channel#get-channel-message</a> </p>
+</dd>
+</dl>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If operating on a guild channel, this endpoint requires the ‘READ_MESSAGE_HISTORY’ permission to be present on the current user. </p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel where the message resides </p></li>
+<li><p><strong>message_id</strong> – the message itself </p></li>
+<li><p><strong>p_message</strong> – the message object if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_create_message">
 <span class="target" id="group__ChannelEndpoints_1gaa3b677f10f01789f3a49f9b03bb33123"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_create_message</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_create_message_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_message" title="discord_message"><span class="n"><span class="pre">discord_message</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_create_message" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>POST</strong> /channels/{channel.id}/messages </p>
+<p>Post a message to a guild text or DM channel. Fires a Message Create Gateway event. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#create-message">https://discord.com/developers/docs/resources/channel#create-message</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel to send the message at </p></li>
+<li><p><strong>params</strong> – request parameters </p></li>
+<li><p><strong>p_message</strong> – the message object if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_crosspost_message">
 <span class="target" id="group__ChannelEndpoints_1gaf484b1df781540059ad41caa842f231e"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_crosspost_message</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">message_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_message" title="discord_message"><span class="n"><span class="pre">discord_message</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_crosspost_message" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>POST</strong> /channels/{channel.id}/messages/{message.id}/crosspost </p>
+<p>Crosspost a message in a News Channel to following channels. This endpoint requires the ‘SEND_MESSAGES’ permission, if the current user sent the message, or additionally the ‘MANAGE_MESSAGES’ permission, for all other messages, to be present for the current user. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#crosspost-message">https://discord.com/developers/docs/resources/channel#crosspost-message</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the news channel that will crosspost </p></li>
+<li><p><strong>message_id</strong> – the message that will crospost </p></li>
+<li><p><strong>p_message</strong> – the message object if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_create_reaction">
 <span class="target" id="group__ChannelEndpoints_1gaf49cc2529120bceb09fc060fee2b0256"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_create_reaction</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">message_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">emoji_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">emoji_name</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_create_reaction" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>PUT</strong> /channels/{channel.id}/messages/{message.id}/reactions/{emoji}/&#64;me </p>
+<p>Create a reaction for the message. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#create-reaction">https://discord.com/developers/docs/resources/channel#create-reaction</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel that the message belongs to </p></li>
+<li><p><strong>message_id</strong> – the message to receive a reaction </p></li>
+<li><p><strong>emoji_id</strong> – the emoji id (leave as 0 if not a custom emoji) </p></li>
+<li><p><strong>emoji_name</strong> – the emoji name </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_delete_own_reaction">
 <span class="target" id="group__ChannelEndpoints_1ga857928d288ba52cf0c85ed0a6ecfe019"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_delete_own_reaction</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">message_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">emoji_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">emoji_name</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_delete_own_reaction" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>DELETE</strong> /channels/{channel.id}/messages/{message.id}/reactions/{emoji}/&#64;me </p>
+<p>Delete a reaction the current user has made for the message. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#delete-own-reaction">https://discord.com/developers/docs/resources/channel#delete-own-reaction</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel that the message belongs to </p></li>
+<li><p><strong>message_id</strong> – the message to have a reaction deleted </p></li>
+<li><p><strong>emoji_id</strong> – the emoji id (leave as 0 if not a custom emoji) </p></li>
+<li><p><strong>emoji_name</strong> – the emoji name </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_delete_user_reaction">
 <span class="target" id="group__ChannelEndpoints_1gadf871c1c3ed4a90b802413821414151b"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_delete_user_reaction</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">message_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">user_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">emoji_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">emoji_name</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_delete_user_reaction" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>DELETE</strong> /channels/{channel.id}/messages/{message.id}/reactions/{emoji}/{user.id} </p>
+<p>Deletes another user’s reaction. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#delete-user-reaction">https://discord.com/developers/docs/resources/channel#delete-user-reaction</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel that the message belongs to </p></li>
+<li><p><strong>message_id</strong> – the message to have a reaction deleted </p></li>
+<li><p><strong>user_id</strong> – the user the reaction belongs to </p></li>
+<li><p><strong>emoji_id</strong> – the emoji id (leave as 0 if not a custom emoji) </p></li>
+<li><p><strong>emoji_name</strong> – the emoji name </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_reactions">
 <span class="target" id="group__ChannelEndpoints_1gae1ce541902fabfd2ac51014fb5af797c"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_reactions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">message_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">emoji_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">emoji_name</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_get_reactions_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_user" title="discord_user"><span class="n"><span class="pre">discord_user</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_users</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_reactions" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>GET</strong> /channels/{channel.id}/messages/{message.id}/reactions/{emoji} </p>
+<p>Get a list of users that reacted with this emoji. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#get-reactions">https://discord.com/developers/docs/resources/channel#get-reactions</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel that the message belongs to </p></li>
+<li><p><strong>message_id</strong> – the message reacted to </p></li>
+<li><p><strong>emoji_id</strong> – the emoji id (leave as 0 if not a custom emoji) </p></li>
+<li><p><strong>emoji_name</strong> – the emoji name </p></li>
+<li><p><strong>params</strong> – request parameters </p></li>
+<li><p><strong>p_users</strong> – the null-terminated array of users if succesful </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_delete_all_reactions">
 <span class="target" id="group__ChannelEndpoints_1ga6ce2ea48ea01a30e082eb69feea5a6de"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_delete_all_reactions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">message_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_delete_all_reactions" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>DELETE</strong> /channels/{channel.id}/messages/{message.id}/reactions </p>
+<p>Deletes all reactions on a message. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#delete-all-reactions">https://discord.com/developers/docs/resources/channel#delete-all-reactions</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel that the message belongs to </p></li>
+<li><p><strong>message_id</strong> – the message that will be purged of reactions </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_delete_all_reactions_for_emoji">
 <span class="target" id="group__ChannelEndpoints_1gad31c0271bc31a09741f904d340b3a173"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_delete_all_reactions_for_emoji</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">message_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">emoji_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">emoji_name</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_delete_all_reactions_for_emoji" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><strong>DELETE</strong> /channels/{channel.id}/messages/{message.id}/reactions/{emoji} </p>
+<p>Deletes all the reactions for a given emoji on a message. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#delete-all-reactions-for-emoji">https://discord.com/developers/docs/resources/channel#delete-all-reactions-for-emoji</a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>channel_id</strong> – the channel that the message belongs to </p></li>
+<li><p><strong>message_id</strong> – the message that will be purged of reactions from particular emoji </p></li>
+<li><p><strong>emoji_id</strong> – the emoji id (leave as 0 if not a custom emoji) </p></li>
+<li><p><strong>emoji_name</strong> – the emoji name </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ORCAcode for how the transfer went, ORCA_OK means a succesful request </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_edit_message">
