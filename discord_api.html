@@ -34,6 +34,7 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/cee-studio/orca-docs/master/docs/source/images/icon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="WebSockets Reference" href="websockets_api.html" />
     <link rel="prev" title="Supported APIs" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -69,6 +70,12 @@
     <li class="toctree-l1 current active nav-item">
  <a class="current reference internal nav-link" href="#">
   Discord
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="websockets_api.html">
+  WebSockets
  </a>
 </li>
 
@@ -334,7 +341,7 @@
                 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/cee-studio/orca-docs/edit/master/docs/source/discord-api.rst">
+    <a href="https://github.com/cee-studio/orca-docs/edit/master/docs/source/discord_api.rst">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -6591,11 +6598,6 @@
 </div>
 <div class="section" id="id1">
 <h3>Audit Log<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__AuditLogEndpoints"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">AuditLogEndpoints</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_guild_audit_log">
 <span class="target" id="group__AuditLogEndpoints_1ga81d7889c378d15e3cbe5a8fffe1489a2"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_guild_audit_log</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_get_guild_audit_log_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_audit_log" title="discord_audit_log"><span class="n"><span class="pre">discord_audit_log</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_audit_log</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_guild_audit_log" title="Permalink to this definition">¶</a><br /></dt>
@@ -6625,16 +6627,8 @@
 </dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id2">
 <h3>Channel<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__ChannelEndpoints"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">ChannelEndpoints</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_channel">
 <span class="target" id="group__ChannelEndpoints_1ga4c61fd80befb32ef0d13f3b0226139d4"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_channel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_channel" title="discord_channel"><span class="n"><span class="pre">discord_channel</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_channel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_channel" title="Permalink to this definition">¶</a><br /></dt>
@@ -7102,16 +7096,8 @@
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id3">
 <h3>Emoji<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__EmojiEndpoints"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">EmojiEndpoints</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_list_guild_emojis">
 <span class="target" id="group__EmojiEndpoints_1gad66b148931c25fc3b6058d957d975eba"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_list_guild_emojis</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_emoji" title="discord_emoji"><span class="n"><span class="pre">discord_emoji</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_emojis</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_list_guild_emojis" title="Permalink to this definition">¶</a><br /></dt>
@@ -7138,16 +7124,8 @@
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id4">
 <h3>Guild<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__GuildEndpoints"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">GuildEndpoints</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_create_guild">
 <span class="target" id="group__GuildEndpoints_1ga75b25aef5d985983e6cc6f13f82606ee"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_create_guild</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_create_guild_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_guild" title="discord_guild"><span class="n"><span class="pre">discord_guild</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_guild</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_create_guild" title="Permalink to this definition">¶</a><br /></dt>
@@ -7279,16 +7257,8 @@
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id5">
 <h3>Invite<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__InviteEndpoints"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">InviteEndpoints</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_invite">
 <span class="target" id="group__InviteEndpoints_1ga9766dd277b518aeb212abb182bad60e6"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_invite</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">invite_code</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_get_invite_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_invite" title="discord_invite"><span class="n"><span class="pre">discord_invite</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_invite</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_invite" title="Permalink to this definition">¶</a><br /></dt>
@@ -7300,16 +7270,8 @@
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id6">
 <h3>User<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__UserEndpoints"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">UserEndpoints</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_user">
 <span class="target" id="group__UserEndpoints_1ga99482b768d36c5d452f4900b80f7c942"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_user</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">user_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_user" title="discord_user"><span class="n"><span class="pre">discord_user</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_user</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_user" title="Permalink to this definition">¶</a><br /></dt>
@@ -7356,32 +7318,16 @@
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id7">
 <h3>Voice<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__VoiceEndpoints"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">VoiceEndpoints</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_list_voice_regions">
 <span class="target" id="group__VoiceEndpoints_1ga43b993910fbcb2e64ce3d3a713a788e6"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_list_voice_regions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_voice_region" title="discord_voice_region"><span class="n"><span class="pre">discord_voice_region</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_voice_regions</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_list_voice_regions" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id8">
 <h3>Gateway<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__GatewayEndpoints"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">GatewayEndpoints</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_get_gateway">
 <span class="target" id="group__GatewayEndpoints_1gaceb2e973229ca1d060ca331d33997a74"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_gateway</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_session</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_session</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_gateway" title="Permalink to this definition">¶</a><br /></dt>
@@ -7393,18 +7339,10 @@
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id9">
 <h3>Misc<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id10">
 <h4>Channel<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__ChannelMisc"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">ChannelMisc</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_overwrite_append">
 <span class="target" id="group__ChannelMisc_1ga54dfbff44cd96744ed569f281d2fb112"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_overwrite_append</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_channel_overwrite" title="discord_channel_overwrite"><span class="n"><span class="pre">discord_channel_overwrite</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">permission_overwrites</span></span>, <a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">id</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span>, <span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_permissions_bitwise_flags" title="discord_permissions_bitwise_flags"><span class="n"><span class="pre">discord_permissions_bitwise_flags</span></span></a><span class="w"> </span><span class="n"><span class="pre">allow</span></span>, <span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_permissions_bitwise_flags" title="discord_permissions_bitwise_flags"><span class="n"><span class="pre">discord_permissions_bitwise_flags</span></span></a><span class="w"> </span><span class="n"><span class="pre">deny</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_overwrite_append" title="Permalink to this definition">¶</a><br /></dt>
@@ -7421,32 +7359,16 @@
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="id11">
 <h4>Guild<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__GuildMisc"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">GuildMisc</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_disconnect_guild_member">
 <span class="target" id="group__GuildMisc_1ga7bca68b10bc07a82621a2bc20e2ac567"></span><span class="n"><span class="pre">ORCAcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_disconnect_guild_member</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">user_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_guild_member" title="discord_guild_member"><span class="n"><span class="pre">discord_guild_member</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p_member</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_disconnect_guild_member" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 <div class="section" id="embed">
 <h4>Embed<a class="headerlink" href="#embed" title="Permalink to this headline">¶</a></h4>
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="group__EmbedMisc"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">EmbedMisc</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_embed_set_thumbnail">
 <span class="target" id="group__EmbedMisc_1gadfd0289ffc7f0fd0789d196c37691047"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed_set_thumbnail</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_embed" title="discord_embed"><span class="n"><span class="pre">discord_embed</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">embed</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">proxy_url</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">height</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">width</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_embed_set_thumbnail" title="Permalink to this definition">¶</a><br /></dt>
@@ -7488,9 +7410,6 @@
 <dd></dd></dl>
 
 </div>
-</dd></dl>
-
-</div>
 </div>
 </div>
 </div>
@@ -7502,6 +7421,7 @@
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="index.html" title="previous page">Supported APIs</a>
+    <a class='right-next' id="next-link" href="websockets_api.html" title="next page">WebSockets Reference</a>
 
               </div>
               
