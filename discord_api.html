@@ -370,56 +370,20 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord">
 <span class="target" id="structdiscord"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord</span></span></span><a class="headerlink" href="#c.discord" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>The Discord Client structure. </p>
-<p>Used to access/perform public functions from discord.h </p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord.token">
-<span class="target" id="structdiscord_1af3d2fe931cc6c487fb42ce7fe8db71a5"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">sized_buffer</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">token</span></span></span><a class="headerlink" href="#c.discord.token" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>the bot token </p>
-</dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord.adapter">
-<span class="target" id="structdiscord_1aa6b920cecb961738d00682cd25bcd14a"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_adapter</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adapter</span></span></span><a class="headerlink" href="#c.discord.adapter" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>the HTTP adapter for performing requests </p>
-</dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord.gw">
-<span class="target" id="structdiscord_1ac439ecded3eac536b5de5dc24355a1d5"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_gateway</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gw</span></span></span><a class="headerlink" href="#c.discord.gw" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>the WebSockets handle for establishing a connection to Discord </p>
-</dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord.config">
-<span class="target" id="structdiscord_1a4fdac485645187a3aa014ef57a2c6aa4"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">logconf</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">config</span></span></span><a class="headerlink" href="#c.discord.config" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>store bot.config file contents and sync logging between adapter/gw </p>
-</dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord.vcs">
-<span class="target" id="structdiscord_1a1aadae4252d9c16d2b296f295ee9a9ad"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_voice</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vcs</span></span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#c.DISCORD_MAX_VOICE_CONNECTIONS" title="DISCORD_MAX_VOICE_CONNECTIONS"><span class="n"><span class="pre">DISCORD_MAX_VOICE_CONNECTIONS</span></span></a><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#c.discord.vcs" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord.voice_cbs">
-<span class="target" id="structdiscord_1ae07c8a71cd17e60f6f6d26b9cdaa8345"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_voice_cbs</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voice_cbs</span></span></span><a class="headerlink" href="#c.discord.voice_cbs" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord.data">
-<span class="target" id="structdiscord_1ad36541f87b8997a57c0467d29627e8d1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#c.discord.data" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>space for user arbitrary data </p>
-<p><dl class="simple">
-<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="#discord_8h_1af7534e0384766754eeb77f573dac1a84"><span class="std std-ref">discord_get_data()</span></a> and <a class="reference internal" href="#discord_8h_1a2fe34375b2ce557d8ac84a0794063b78"><span class="std std-ref">discord_set_data()</span></a> </p>
+<dd><p>The Discord opaque structure handler. </p>
+<p>Used to access/perform public functions from discord.h <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Initializer</span></code> <a class="reference internal" href="#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a>, <a class="reference internal" href="#discord_8h_1a23500a16c7afdb797c779b045ad20b10"><span class="std std-ref">discord_config_init()</span></a> </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cleanup</span></code> <a class="reference internal" href="#discord_8h_1a009d0e352a30c00f8b4765712fcfa5a9"><span class="std std-ref">discord_cleanup()</span></a> <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at discord-internal.h </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="#discord_8h_1ae0e3bf4cdf86e1737d53e16b802fc186"><span class="std std-ref">discord_run()</span></a> </p>
 </dd>
 </dl>
+</p></li>
+</ul>
 </p>
-</dd></dl>
-
-</div>
 </dd></dl>
 
 <dl class="c enum">
@@ -732,11 +696,29 @@
 </div>
 <div class="section" id="audit-log">
 <h3>Audit Log<a class="headerlink" href="#audit-log" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/audit-log">https://discord.com/developers/docs/resources/audit-log</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_audit_log">
 <span class="target" id="structdiscord__audit__log"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_audit_log</span></span></span><a class="headerlink" href="#c.discord_audit_log" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;audit_log.h&gt;</em><p>Audit Log Structure. </p>
+<dd><em>#include &lt;audit_log.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/audit_log.json:9:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/audit-log#audit-log-object-audit-log-structure">https://discord.com/developers/docs/resources/audit-log#audit-log-object-audit-log-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Audit Log Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -765,7 +747,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_audit_log_entry">
 <span class="target" id="structdiscord__audit__log__entry"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_audit_log_entry</span></span></span><a class="headerlink" href="#c.discord_audit_log_entry" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;audit_log.h&gt;</em><p>Audit Log Entry Structure. </p>
+<dd><em>#include &lt;audit_log.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/audit_log.json:65:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object-audit-log-entry-structure">https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object-audit-log-entry-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Audit Log Entry Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -809,7 +800,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_audit_log_entry_optional_info">
 <span class="target" id="structdiscord__audit__log__entry__optional__info"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_audit_log_entry_optional_info</span></span></span><a class="headerlink" href="#c.discord_audit_log_entry_optional_info" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;audit_log.h&gt;</em><p>Optional Audit Entry Info Structure. </p>
+<dd><em>#include &lt;audit_log.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/audit_log.json:81:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object-optional-audit-entry-info">https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object-optional-audit-entry-info</a> </p>
+</dd>
+</dl>
+</p>
+<p>Optional Audit Entry Info Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -893,7 +893,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_audit_log_change">
 <span class="target" id="structdiscord__audit__log__change"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_audit_log_change</span></span></span><a class="headerlink" href="#c.discord_audit_log_change" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;audit_log.h&gt;</em><p>Audit Log Change Structure. </p>
+<dd><em>#include &lt;audit_log.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/audit_log.json:98:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/audit-log#audit-log-change-object-audit-log-change-structure">https://discord.com/developers/docs/resources/audit-log#audit-log-change-object-audit-log-change-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Audit Log Change Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -917,7 +926,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_audit_log_change_key">
 <span class="target" id="structdiscord__audit__log__change__key"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_audit_log_change_key</span></span></span><a class="headerlink" href="#c.discord_audit_log_change_key" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;audit_log.h&gt;</em><p>Audit Log Change Key. </p>
+<dd><em>#include &lt;audit_log.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/audit_log.json:110:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/audit-log#audit-log-change-object-audit-log-change-key">https://discord.com/developers/docs/resources/audit-log#audit-log-change-object-audit-log-change-key</a> </p>
+</dd>
+</dl>
+</p>
+<p>Audit Log Change Key. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1357,11 +1375,29 @@
 </div>
 <div class="section" id="channel">
 <h3>Channel<a class="headerlink" href="#channel" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel">https://discord.com/developers/docs/resources/channel</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_channel">
 <span class="target" id="structdiscord__channel"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_channel</span></span></span><a class="headerlink" href="#c.discord_channel" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Channel Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:29:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#channel-object-channel-structure">https://discord.com/developers/docs/resources/channel#channel-object-channel-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Channel Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1465,7 +1501,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_message_sticker">
 <span class="target" id="structdiscord__message__sticker"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_message_sticker</span></span></span><a class="headerlink" href="#c.discord_message_sticker" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Message Sticker Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:82:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#message-object-message-sticker-structure">https://discord.com/developers/docs/resources/channel#message-object-message-sticker-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Message Sticker Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1514,7 +1559,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_message_reference">
 <span class="target" id="structdiscord__message__reference"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_message_reference</span></span></span><a class="headerlink" href="#c.discord_message_reference" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Message Reference Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:112:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#message-object-message-reference-structure">https://discord.com/developers/docs/resources/channel#message-object-message-reference-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Message Reference Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1543,7 +1597,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_message_application">
 <span class="target" id="structdiscord__message__application"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_message_application</span></span></span><a class="headerlink" href="#c.discord_message_application" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Message Application Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:124:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#message-object-message-application-structure">https://discord.com/developers/docs/resources/channel#message-object-message-application-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Message Application Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1577,7 +1640,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_message_activity">
 <span class="target" id="structdiscord__message__activity"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_message_activity</span></span></span><a class="headerlink" href="#c.discord_message_activity" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Message Activity Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:149:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#message-object-message-activity-structure">https://discord.com/developers/docs/resources/channel#message-object-message-activity-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Message Activity Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1596,7 +1668,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_message">
 <span class="target" id="structdiscord__message"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_message</span></span></span><a class="headerlink" href="#c.discord_message" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Message Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:184:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#message-object">https://discord.com/developers/docs/resources/channel#message-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Message Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1765,7 +1846,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_channel_followed_channel">
 <span class="target" id="structdiscord__channel__followed__channel"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_channel_followed_channel</span></span></span><a class="headerlink" href="#c.discord_channel_followed_channel" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Followed Channel Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:222:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#followed-channel-object-followed-channel-structure">https://discord.com/developers/docs/resources/channel#followed-channel-object-followed-channel-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Followed Channel Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1784,7 +1874,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_channel_reaction">
 <span class="target" id="structdiscord__channel__reaction"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_channel_reaction</span></span></span><a class="headerlink" href="#c.discord_channel_reaction" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Reaction Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:233:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#reaction-object-reaction-structure">https://discord.com/developers/docs/resources/channel#reaction-object-reaction-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Reaction Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1809,7 +1908,12 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_channel_overwrite">
 <span class="target" id="structdiscord__channel__overwrite"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_channel_overwrite</span></span></span><a class="headerlink" href="#c.discord_channel_overwrite" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Overwrite Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:244:22 </p>
+</div>
+</p>
+<p>Overwrite Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1840,7 +1944,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_thread_metadata">
 <span class="target" id="structdiscord__thread__metadata"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_thread_metadata</span></span></span><a class="headerlink" href="#c.discord_thread_metadata" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Thread Metadata Object. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:259:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#thread-metadata-object">https://discord.com/developers/docs/resources/channel#thread-metadata-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Thread Metadata Object. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1874,7 +1987,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_thread_member">
 <span class="target" id="structdiscord__thread__member"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_thread_member</span></span></span><a class="headerlink" href="#c.discord_thread_member" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Thread Member Object. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:273:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#thread-member-object">https://discord.com/developers/docs/resources/channel#thread-member-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Thread Member Object. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1903,7 +2025,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_channel_attachment">
 <span class="target" id="structdiscord__channel__attachment"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_channel_attachment</span></span></span><a class="headerlink" href="#c.discord_channel_attachment" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Attachment Strcture. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:286:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#attachment-object">https://discord.com/developers/docs/resources/channel#attachment-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Attachment Strcture. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1947,7 +2078,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_channel_mention">
 <span class="target" id="structdiscord__channel__mention"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_channel_mention</span></span></span><a class="headerlink" href="#c.discord_channel_mention" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Channel Mention Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:302:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#channel-mention-object-channel-mention-structure">https://discord.com/developers/docs/resources/channel#channel-mention-object-channel-mention-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Channel Mention Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -1976,7 +2116,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_channel_allowed_mentions">
 <span class="target" id="structdiscord__channel__allowed__mentions"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_channel_allowed_mentions</span></span></span><a class="headerlink" href="#c.discord_channel_allowed_mentions" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Allowed Mentions Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:315:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#allowed-mentions-object-allowed-mentions-structure">https://discord.com/developers/docs/resources/channel#allowed-mentions-object-allowed-mentions-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Allowed Mentions Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2007,7 +2156,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_embed">
 <span class="target" id="structdiscord__embed"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed</span></span></span><a class="headerlink" href="#c.discord_embed" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Embed Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:327:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#embed-object-embed-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Embed Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2081,7 +2239,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_embed_thumbnail">
 <span class="target" id="structdiscord__embed__thumbnail"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed_thumbnail</span></span></span><a class="headerlink" href="#c.discord_embed_thumbnail" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Embed Thumbnail Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:349:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#embed-object-embed-thumbnail-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-thumbnail-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Embed Thumbnail Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2110,7 +2277,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_embed_video">
 <span class="target" id="structdiscord__embed__video"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed_video</span></span></span><a class="headerlink" href="#c.discord_embed_video" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Embed Video Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:361:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#embed-object-embed-video-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-video-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Embed Video Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2139,7 +2315,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_embed_image">
 <span class="target" id="structdiscord__embed__image"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed_image</span></span></span><a class="headerlink" href="#c.discord_embed_image" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Embed Image Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:373:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#embed-object-embed-image-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-image-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Embed Image Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2168,7 +2353,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_embed_provider">
 <span class="target" id="structdiscord__embed__provider"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed_provider</span></span></span><a class="headerlink" href="#c.discord_embed_provider" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Embed Provider Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:385:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#embed-object-embed-provider-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-provider-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Embed Provider Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2187,7 +2381,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_embed_author">
 <span class="target" id="structdiscord__embed__author"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed_author</span></span></span><a class="headerlink" href="#c.discord_embed_author" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Embed Author Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:395:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#embed-object-embed-author-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-author-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Embed Author Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2216,7 +2419,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_embed_footer">
 <span class="target" id="structdiscord__embed__footer"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed_footer</span></span></span><a class="headerlink" href="#c.discord_embed_footer" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Embed Footer Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:407:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#embed-object-embed-footer-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-footer-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Embed Footer Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2240,7 +2452,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_embed_field">
 <span class="target" id="structdiscord__embed__field"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_embed_field</span></span></span><a class="headerlink" href="#c.discord_embed_field" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;channel.h&gt;</em><p>Embed Field Structure. </p>
+<dd><em>#include &lt;channel.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/channel.json:418:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/channel#embed-object-embed-field-structure">https://discord.com/developers/docs/resources/channel#embed-object-embed-field-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Embed Field Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2497,11 +2718,29 @@
 </div>
 <div class="section" id="emoji">
 <h3>Emoji<a class="headerlink" href="#emoji" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/emoji">https://discord.com/developers/docs/resources/emoji</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_emoji">
 <span class="target" id="structdiscord__emoji"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_emoji</span></span></span><a class="headerlink" href="#c.discord_emoji" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;emoji.h&gt;</em><p>Emoji Structure. </p>
+<dd><em>#include &lt;emoji.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/emoji.json:9:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/emoji#emoji-object-emoji-structure">https://discord.com/developers/docs/resources/emoji#emoji-object-emoji-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Emoji Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2545,11 +2784,29 @@
 </div>
 <div class="section" id="guild">
 <h3>Guild<a class="headerlink" href="#guild" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild">https://discord.com/developers/docs/resources/guild</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild">
 <span class="target" id="structdiscord__guild"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild</span></span></span><a class="headerlink" href="#c.discord_guild" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Guild Structure. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:9:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#guild-object-guild-structure">https://discord.com/developers/docs/resources/guild#guild-object-guild-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Guild Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2769,7 +3026,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_unavailable">
 <span class="target" id="structdiscord__guild__unavailable"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_unavailable</span></span></span><a class="headerlink" href="#c.discord_guild_unavailable" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Unavailable Guild Object. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:161:23 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#unavailable-guild-object">https://discord.com/developers/docs/resources/guild#unavailable-guild-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Unavailable Guild Object. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2788,7 +3054,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_preview">
 <span class="target" id="structdiscord__guild__preview"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_preview</span></span></span><a class="headerlink" href="#c.discord_guild_preview" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Guild Preview Object. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:171:23 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#guild-preview-object">https://discord.com/developers/docs/resources/guild#guild-preview-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Guild Preview Object. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2842,7 +3117,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_widget">
 <span class="target" id="structdiscord__guild__widget"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_widget</span></span></span><a class="headerlink" href="#c.discord_guild_widget" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Guild Widget Object. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:189:23 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#guild-widget-object">https://discord.com/developers/docs/resources/guild#guild-widget-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Guild Widget Object. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2861,7 +3145,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_member">
 <span class="target" id="structdiscord__guild__member"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_member</span></span></span><a class="headerlink" href="#c.discord_guild_member" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Guild Member Structure. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:199:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#guild-member-object">https://discord.com/developers/docs/resources/guild#guild-member-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Guild Member Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -2916,7 +3209,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_integration">
 <span class="target" id="structdiscord__guild__integration"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_integration</span></span></span><a class="headerlink" href="#c.discord_guild_integration" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Integration Structure. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:217:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#integration-object-integration-structure">https://discord.com/developers/docs/resources/guild#integration-object-integration-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Integration Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3000,7 +3302,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_integration_account">
 <span class="target" id="structdiscord__guild__integration__account"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_integration_account</span></span></span><a class="headerlink" href="#c.discord_guild_integration_account" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Integration Account Structure. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:251:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#integration-account-object-integration-account-structure">https://discord.com/developers/docs/resources/guild#integration-account-object-integration-account-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Integration Account Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3019,7 +3330,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_integration_application">
 <span class="target" id="structdiscord__guild__integration__application"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_integration_application</span></span></span><a class="headerlink" href="#c.discord_guild_integration_application" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Integration Application Object. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:261:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#integration-application-object-integration-application-structure">https://discord.com/developers/docs/resources/guild#integration-application-object-integration-application-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Integration Application Object. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3058,7 +3378,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_ban">
 <span class="target" id="structdiscord__guild__ban"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_ban</span></span></span><a class="headerlink" href="#c.discord_guild_ban" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Ban Structure. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:275:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#ban-object">https://discord.com/developers/docs/resources/guild#ban-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Ban Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3078,7 +3407,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_welcome_screen">
 <span class="target" id="structdiscord__guild__welcome__screen"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_welcome_screen</span></span></span><a class="headerlink" href="#c.discord_guild_welcome_screen" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Welcome Screen Structure. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:286:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#welcome-screen-object-welcome-screen-structure">https://discord.com/developers/docs/resources/guild#welcome-screen-object-welcome-screen-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Welcome Screen Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3104,7 +3442,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_welcome_screen_channel">
 <span class="target" id="structdiscord__guild__welcome__screen__channel"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_welcome_screen_channel</span></span></span><a class="headerlink" href="#c.discord_guild_welcome_screen_channel" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.h&gt;</em><p>Welcome Screen Channel Structure. </p>
+<dd><em>#include &lt;guild.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild.json:297:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#welcome-screen-object-welcome-screen-channel-structure">https://discord.com/developers/docs/resources/guild#welcome-screen-object-welcome-screen-channel-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Welcome Screen Channel Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3359,11 +3706,29 @@
 </div>
 <div class="section" id="guild-template">
 <h3>Guild Template<a class="headerlink" href="#guild-template" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild-template">https://discord.com/developers/docs/resources/guild-template</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_template">
 <span class="target" id="structdiscord__guild__template"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_template</span></span></span><a class="headerlink" href="#c.discord_guild_template" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild-template.h&gt;</em><p>Guild Template Structure. </p>
+<dd><em>#include &lt;guild-template.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/guild-template.json:9:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild-template#guild-template-object-guild-template-structure">https://discord.com/developers/docs/resources/guild-template#guild-template-object-guild-template-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Guild Template Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3448,11 +3813,29 @@
 </div>
 <div class="section" id="invite">
 <h3>Invite<a class="headerlink" href="#invite" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/invite">https://discord.com/developers/docs/resources/invite</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_invite">
 <span class="target" id="structdiscord__invite"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_invite</span></span></span><a class="headerlink" href="#c.discord_invite" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;invite.h&gt;</em><p>Invite Structure. </p>
+<dd><em>#include &lt;invite.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/invite.json:19:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/invite#invite-object-invite-structure">https://discord.com/developers/docs/resources/invite#invite-object-invite-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Invite Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3511,7 +3894,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_invite_metadata">
 <span class="target" id="structdiscord__invite__metadata"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_invite_metadata</span></span></span><a class="headerlink" href="#c.discord_invite_metadata" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;invite.h&gt;</em><p>Invite Metadata Structure. </p>
+<dd><em>#include &lt;invite.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/invite.json:36:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/invite#invite-metadata-object">https://discord.com/developers/docs/resources/invite#invite-metadata-object</a> </p>
+</dd>
+</dl>
+</p>
+<p>Invite Metadata Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3559,11 +3951,29 @@
 </div>
 <div class="section" id="message-components">
 <h3>Message Components<a class="headerlink" href="#message-components" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/message-components#message-components">https://discord.com/developers/docs/interactions/message-components#message-components</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_component">
 <span class="target" id="structdiscord__component"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_component</span></span></span><a class="headerlink" href="#c.discord_component" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;message_components.h&gt;</em><p>Component Structure. </p>
+<dd><em>#include &lt;message_components.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/message_components.json:9:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/message-components#component-object-component-structure">https://discord.com/developers/docs/interactions/message-components#component-object-component-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Component Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3644,7 +4054,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_button">
 <span class="target" id="structdiscord__button"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_button</span></span></span><a class="headerlink" href="#c.discord_button" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;message_components.h&gt;</em><p>Button Structure. </p>
+<dd><em>#include &lt;message_components.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/message_components.json:41:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/message-components#button-object-button-structure">https://discord.com/developers/docs/interactions/message-components#button-object-button-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Button Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3695,7 +4114,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_select_menu">
 <span class="target" id="structdiscord__select__menu"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_select_menu</span></span></span><a class="headerlink" href="#c.discord_select_menu" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;message_components.h&gt;</em><p>Select Menu Structure. </p>
+<dd><em>#include &lt;message_components.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/message_components.json:70:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/message-components#select-menu-object-select-menu-structure">https://discord.com/developers/docs/interactions/message-components#select-menu-object-select-menu-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Select Menu Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3746,7 +4174,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_select_option">
 <span class="target" id="structdiscord__select__option"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_select_option</span></span></span><a class="headerlink" href="#c.discord_select_option" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;message_components.h&gt;</em><p>Select Option Structure. </p>
+<dd><em>#include &lt;message_components.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/message_components.json:85:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/message-components#select-menu-object-select-option-structure">https://discord.com/developers/docs/interactions/message-components#select-menu-object-select-option-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Select Option Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3840,11 +4277,29 @@
 </div>
 <div class="section" id="permissions">
 <h3>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/topics/permissions">https://discord.com/developers/docs/topics/permissions</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_permissions_role">
 <span class="target" id="structdiscord__permissions__role"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_permissions_role</span></span></span><a class="headerlink" href="#c.discord_permissions_role" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;permissions.h&gt;</em><p>Role Structure. </p>
+<dd><em>#include &lt;permissions.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/permissions.json:49:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/topics/permissions#role-object-role-structure">https://discord.com/developers/docs/topics/permissions#role-object-role-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Role Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -3898,7 +4353,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_permissions_role_tags">
 <span class="target" id="structdiscord__permissions__role__tags"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_permissions_role_tags</span></span></span><a class="headerlink" href="#c.discord_permissions_role_tags" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;permissions.h&gt;</em><p>Role Tags Structure. </p>
+<dd><em>#include &lt;permissions.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/permissions.json:67:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/topics/permissions#role-object-role-tags-structure">https://discord.com/developers/docs/topics/permissions#role-object-role-tags-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Role Tags Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4091,11 +4555,29 @@
 </div>
 <div class="section" id="slash-commands">
 <h3>Slash Commands<a class="headerlink" href="#slash-commands" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#data-models-and-types">https://discord.com/developers/docs/interactions/slash-commands#data-models-and-types</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_application_command">
 <span class="target" id="structdiscord__application__command"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_application_command</span></span></span><a class="headerlink" href="#c.discord_application_command" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Application Command Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:9:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#application-command-object-application-command-structure">https://discord.com/developers/docs/interactions/slash-commands#application-command-object-application-command-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Application Command Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4146,7 +4628,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_application_command_option">
 <span class="target" id="structdiscord__application__command__option"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_application_command_option</span></span></span><a class="headerlink" href="#c.discord_application_command_option" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Application Command Option Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:25:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#application-command-object-application-command-option-structure">https://discord.com/developers/docs/interactions/slash-commands#application-command-object-application-command-option-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Application Command Option Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4191,7 +4682,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_application_command_option_choice">
 <span class="target" id="structdiscord__application__command__option__choice"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_application_command_option_choice</span></span></span><a class="headerlink" href="#c.discord_application_command_option_choice" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Application Command Option Choice Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:58:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#application-command-object-application-command-option-choice-structure">https://discord.com/developers/docs/interactions/slash-commands#application-command-object-application-command-option-choice-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Application Command Option Choice Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4212,7 +4712,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_guild_application_command_permissions">
 <span class="target" id="structdiscord__guild__application__command__permissions"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_guild_application_command_permissions</span></span></span><a class="headerlink" href="#c.discord_guild_application_command_permissions" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Guild Application Command Permissions Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:69:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#application-command-permissions-object-guild-application-command-permissions-structure">https://discord.com/developers/docs/interactions/slash-commands#application-command-permissions-object-guild-application-command-permissions-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Guild Application Command Permissions Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4245,7 +4754,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_application_command_permissions">
 <span class="target" id="structdiscord__application__command__permissions"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_application_command_permissions</span></span></span><a class="headerlink" href="#c.discord_application_command_permissions" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Application Command Permissions Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:82:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#application-command-permissions-object-guild-application-command-permissions-structure">https://discord.com/developers/docs/interactions/slash-commands#application-command-permissions-object-guild-application-command-permissions-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Application Command Permissions Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4272,7 +4790,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_interaction">
 <span class="target" id="structdiscord__interaction"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction</span></span></span><a class="headerlink" href="#c.discord_interaction" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Interaction Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:104:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#interaction-object-interaction-structure">https://discord.com/developers/docs/interactions/slash-commands#interaction-object-interaction-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Interaction Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4335,7 +4862,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_application_command_interaction_data">
 <span class="target" id="structdiscord__application__command__interaction__data"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_application_command_interaction_data</span></span></span><a class="headerlink" href="#c.discord_application_command_interaction_data" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Application Command Interaction Data Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:134:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#interaction-object-application-command-interaction-data-structure">https://discord.com/developers/docs/interactions/slash-commands#interaction-object-application-command-interaction-data-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Application Command Interaction Data Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4380,7 +4916,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_application_command_interaction_data_resolved">
 <span class="target" id="structdiscord__application__command__interaction__data__resolved"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_application_command_interaction_data_resolved</span></span></span><a class="headerlink" href="#c.discord_application_command_interaction_data_resolved" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Application Command Interaction Data Resolved Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:149:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#interaction-object-application-command-interaction-data-resolved-structure">https://discord.com/developers/docs/interactions/slash-commands#interaction-object-application-command-interaction-data-resolved-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Application Command Interaction Data Resolved Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4413,7 +4958,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_application_command_interaction_data_option">
 <span class="target" id="structdiscord__application__command__interaction__data__option"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_application_command_interaction_data_option</span></span></span><a class="headerlink" href="#c.discord_application_command_interaction_data_option" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Application Command Interaction Data Option Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:162:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#interaction-object-application-command-interaction-data-option-structure">https://discord.com/developers/docs/interactions/slash-commands#interaction-object-application-command-interaction-data-option-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Application Command Interaction Data Option Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4446,7 +5000,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_interaction_response">
 <span class="target" id="structdiscord__interaction__response"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction_response</span></span></span><a class="headerlink" href="#c.discord_interaction_response" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Interaction Response Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:175:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#interaction-response-object-interaction-response-structure">https://discord.com/developers/docs/interactions/slash-commands#interaction-response-object-interaction-response-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Interaction Response Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4467,7 +5030,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_interaction_application_command_callback_data">
 <span class="target" id="structdiscord__interaction__application__command__callback__data"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction_application_command_callback_data</span></span></span><a class="headerlink" href="#c.discord_interaction_application_command_callback_data" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Interaction Application Command Callback Data Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:200:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#interaction-response-object-interaction-application-command-callback-data-structure">https://discord.com/developers/docs/interactions/slash-commands#interaction-response-object-interaction-application-command-callback-data-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Interaction Application Command Callback Data Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4506,7 +5078,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_message_interaction">
 <span class="target" id="structdiscord__message__interaction"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_message_interaction</span></span></span><a class="headerlink" href="#c.discord_message_interaction" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;slash_commands.h&gt;</em><p>Message Interaction Structure. </p>
+<dd><em>#include &lt;slash_commands.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/slash_commands.json:225:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/interactions/slash-commands#message-interaction-object-message-interaction-structure">https://discord.com/developers/docs/interactions/slash-commands#message-interaction-object-message-interaction-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Message Interaction Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4672,11 +5253,25 @@
 </div>
 <div class="section" id="user">
 <h3>User<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/user">https://discord.com/developers/docs/resources/user</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_user">
 <span class="target" id="structdiscord__user"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_user</span></span></span><a class="headerlink" href="#c.discord_user" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;user.h&gt;</em><p>User Structure. </p>
+<dd><em>#include &lt;user.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/user.json:42:28 </p>
+</div>
+</p>
+<p>User Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4750,7 +5345,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_connection">
 <span class="target" id="structdiscord__connection"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_connection</span></span></span><a class="headerlink" href="#c.discord_connection" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;user.h&gt;</em><p>Connection Structure. </p>
+<dd><em>#include &lt;user.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/user.json:74:28 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/user#connection-object-connection-structure">https://discord.com/developers/docs/resources/user#connection-object-connection-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Connection Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4917,11 +5521,29 @@
 </div>
 <div class="section" id="voice">
 <h3>Voice<a class="headerlink" href="#voice" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/voice">https://discord.com/developers/docs/resources/voice</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_voice_state">
 <span class="target" id="structdiscord__voice__state"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_voice_state</span></span></span><a class="headerlink" href="#c.discord_voice_state" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;voice.h&gt;</em><p>Voice State Structure. </p>
+<dd><em>#include &lt;voice.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/voice.json:9:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/voice#voice-state-object-voice-state-structure">https://discord.com/developers/docs/resources/voice#voice-state-object-voice-state-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Voice State Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -4990,7 +5612,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_voice_region">
 <span class="target" id="structdiscord__voice__region"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_voice_region</span></span></span><a class="headerlink" href="#c.discord_voice_region" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;voice.h&gt;</em><p>Voice Region Structure. </p>
+<dd><em>#include &lt;voice.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/voice.json:29:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/voice#voice-region-object-voice-region-structure">https://discord.com/developers/docs/resources/voice#voice-region-object-voice-region-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Voice Region Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -5043,11 +5674,29 @@
 </div>
 <div class="section" id="webhook">
 <h3>Webhook<a class="headerlink" href="#webhook" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/webhook">https://discord.com/developers/docs/resources/webhook</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_webhook">
 <span class="target" id="structdiscord__webhook"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_webhook</span></span></span><a class="headerlink" href="#c.discord_webhook" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;webhook.h&gt;</em><p>Webhook Structure. </p>
+<dd><em>#include &lt;webhook.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/webhook.json:9:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/webhook#webhook-object-webhook-structure">https://discord.com/developers/docs/resources/webhook#webhook-object-webhook-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Webhook Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -5134,11 +5783,29 @@
 </div>
 <div class="section" id="gateway">
 <h3>Gateway<a class="headerlink" href="#gateway" title="Permalink to this headline">¶</a></h3>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>cee-studio </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>Jul 30 2021 </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/topics/gateway">https://discord.com/developers/docs/topics/gateway</a> </p>
+</dd>
+</dl>
+</p>
 <p>Specs generated file. </p>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_gateway_identify">
 <span class="target" id="structdiscord__gateway__identify"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_gateway_identify</span></span></span><a class="headerlink" href="#c.discord_gateway_identify" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;gateway.h&gt;</em><p>Identify Structure. </p>
+<dd><em>#include &lt;gateway.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/gateway.json:116:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/topics/gateway#identify-identify-structure">https://discord.com/developers/docs/topics/gateway#identify-identify-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Identify Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -5182,7 +5849,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_gateway_status_update">
 <span class="target" id="structdiscord__gateway__status__update"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_gateway_status_update</span></span></span><a class="headerlink" href="#c.discord_gateway_status_update" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;gateway.h&gt;</em><p>Gateway Status Update Structure. </p>
+<dd><em>#include &lt;gateway.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/gateway.json:132:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/topics/gateway#update-status-gateway-status-update-structure">https://discord.com/developers/docs/topics/gateway#update-status-gateway-status-update-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Gateway Status Update Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -5211,7 +5887,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_gateway_identify_connection">
 <span class="target" id="structdiscord__gateway__identify__connection"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_gateway_identify_connection</span></span></span><a class="headerlink" href="#c.discord_gateway_identify_connection" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;gateway.h&gt;</em><p>Identify Connection Properties. </p>
+<dd><em>#include &lt;gateway.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/gateway.json:147:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/topics/gateway#identify-identify-connection-properties">https://discord.com/developers/docs/topics/gateway#identify-identify-connection-properties</a> </p>
+</dd>
+</dl>
+</p>
+<p>Identify Connection Properties. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
@@ -5235,7 +5920,16 @@
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.discord_gateway_activity">
 <span class="target" id="structdiscord__gateway__activity"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_gateway_activity</span></span></span><a class="headerlink" href="#c.discord_gateway_activity" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;gateway.h&gt;</em><p>Activity Structure. </p>
+<dd><em>#include &lt;gateway.h&gt;</em><p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>defined at specs/discord/gateway.json:158:22 </p>
+</div>
+<dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/topics/gateway#activity-object-activity-structure">https://discord.com/developers/docs/topics/gateway#activity-object-activity-structure</a> </p>
+</dd>
+</dl>
+</p>
+<p>Activity Structure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">

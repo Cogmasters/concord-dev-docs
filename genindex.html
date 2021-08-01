@@ -144,26 +144,13 @@
  <a href="#D"><strong>D</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#U"><strong>U</strong></a>
+ | <a href="#W"><strong>W</strong></a>
  
 </div>
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="discord_api.html#c.discord">discord (C struct)</a>
-</li>
-      <li><a href="discord_api.html#c.discord.adapter">discord.adapter (C var)</a>
-</li>
-      <li><a href="discord_api.html#c.discord.config">discord.config (C var)</a>
-</li>
-      <li><a href="discord_api.html#c.discord.data">discord.data (C var)</a>
-</li>
-      <li><a href="discord_api.html#c.discord.gw">discord.gw (C var)</a>
-</li>
-      <li><a href="discord_api.html#c.discord.token">discord.token (C var)</a>
-</li>
-      <li><a href="discord_api.html#c.discord.vcs">discord.vcs (C var)</a>
-</li>
-      <li><a href="discord_api.html#c.discord.voice_cbs">discord.voice_cbs (C var)</a>
 </li>
       <li><a href="discord_api.html#c.discord_add_guild_member">discord_add_guild_member (C function)</a>
 </li>
@@ -1209,8 +1196,6 @@
 </li>
       <li><a href="discord_api.html#c.discord_guild.approximate_presence_count">discord_guild.approximate_presence_count (C var)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="discord_api.html#c.discord_guild.banner">discord_guild.banner (C var)</a>
 </li>
       <li><a href="discord_api.html#c.discord_guild.channels">discord_guild.channels (C var)</a>
@@ -1219,6 +1204,8 @@
 </li>
       <li><a href="discord_api.html#c.discord_guild.description">discord_guild.description (C var)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="discord_api.html#c.discord_guild.discovery_splash">discord_guild.discovery_splash (C var)</a>
 </li>
       <li><a href="discord_api.html#c.discord_guild.emojis">discord_guild.emojis (C var)</a>
@@ -2292,6 +2279,112 @@
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="discord_api.html#c.u64_unix_ms_t">u64_unix_ms_t (C type)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="websockets_api.html#c.websockets">websockets (C struct)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_callbacks">ws_callbacks (C struct)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_callbacks.data">ws_callbacks.data (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_callbacks.on_binary">ws_callbacks.on_binary (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_callbacks.on_close">ws_callbacks.on_close (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_callbacks.on_connect">ws_callbacks.on_connect (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_callbacks.on_ping">ws_callbacks.on_ping (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_callbacks.on_pong">ws_callbacks.on_pong (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_callbacks.on_text">ws_callbacks.on_text (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_cleanup">ws_cleanup (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close">ws_close (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_opcode_print">ws_close_opcode_print (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason">ws_close_reason (C enum)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_ABRUPTLY">ws_close_reason.WS_CLOSE_REASON_ABRUPTLY (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_GOING_AWAY">ws_close_reason.WS_CLOSE_REASON_GOING_AWAY (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_IANA_REGISTRY_END">ws_close_reason.WS_CLOSE_REASON_IANA_REGISTRY_END (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_IANA_REGISTRY_START">ws_close_reason.WS_CLOSE_REASON_IANA_REGISTRY_START (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_INCONSISTENT_DATA">ws_close_reason.WS_CLOSE_REASON_INCONSISTENT_DATA (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_MISSING_EXTENSION">ws_close_reason.WS_CLOSE_REASON_MISSING_EXTENSION (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_NO_REASON">ws_close_reason.WS_CLOSE_REASON_NO_REASON (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_NORMAL">ws_close_reason.WS_CLOSE_REASON_NORMAL (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_POLICY_VIOLATION">ws_close_reason.WS_CLOSE_REASON_POLICY_VIOLATION (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_PRIVATE_END">ws_close_reason.WS_CLOSE_REASON_PRIVATE_END (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_PRIVATE_START">ws_close_reason.WS_CLOSE_REASON_PRIVATE_START (C enumerator)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_PROTOCOL_ERROR">ws_close_reason.WS_CLOSE_REASON_PROTOCOL_ERROR (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_SERVER_ERROR">ws_close_reason.WS_CLOSE_REASON_SERVER_ERROR (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_TOO_BIG">ws_close_reason.WS_CLOSE_REASON_TOO_BIG (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_close_reason.WS_CLOSE_REASON_UNEXPECTED_DATA">ws_close_reason.WS_CLOSE_REASON_UNEXPECTED_DATA (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_get_status">ws_get_status (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_info">ws_info (C struct)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_info.code">ws_info.code (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_info.loginfo">ws_info.loginfo (C var)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_init">ws_init (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_is_alive">ws_is_alive (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_is_functional">ws_is_functional (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_perform">ws_perform (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_ping">ws_ping (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_pong">ws_pong (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_same_thread">ws_same_thread (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_send_binary">ws_send_binary (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_send_text">ws_send_text (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_set_url">ws_set_url (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_start">ws_start (C function)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_status">ws_status (C enum)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_status.WS_CONNECTED">ws_status.WS_CONNECTED (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_status.WS_CONNECTING">ws_status.WS_CONNECTING (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_status.WS_DISCONNECTED">ws_status.WS_DISCONNECTED (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_status.WS_DISCONNECTING">ws_status.WS_DISCONNECTING (C enumerator)</a>
+</li>
+      <li><a href="websockets_api.html#c.ws_timestamp">ws_timestamp (C function)</a>
 </li>
   </ul></td>
 </tr></table>
