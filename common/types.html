@@ -196,24 +196,130 @@
 <h1>Orca Types Reference<a class="headerlink" href="#orca-types-reference" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="primitives">
 <h2>Primitives<a class="headerlink" href="#primitives" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygengroup: Cannot find group “OrcaTypes” in doxygen xml output for project “Orca” from directory: ../xml</p>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group__OrcaTypes"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">OrcaTypes</span></span></dt>
+<dd><p>Commonly used datatypes with various APIs. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-typedefs">Typedefs</p>
+<dl class="c type">
+<dt class="sig sig-object c" id="c.u64_unix_ms_t">
+<span class="target" id="group__OrcaTypes_1ga8c10c2449cb2148f47b8a032af96dd60"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">u64_unix_ms_t</span></span></span><a class="headerlink" href="#c.u64_unix_ms_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>unix time in ms </p>
+</dd></dl>
+
+<dl class="c type">
+<dt class="sig sig-object c" id="c.u64_snowflake_t">
+<span class="target" id="group__OrcaTypes_1ga2aca4957fe0e14f7ab03fdaeb17d8fb9"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">u64_snowflake_t</span></span></span><a class="headerlink" href="#c.u64_snowflake_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>snowflake datatype </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </div>
 <div class="section" id="error-codes">
 <h2>Error Codes<a class="headerlink" href="#error-codes" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygengroup: Cannot find group “OrcaCodes” in doxygen xml output for project “Orca” from directory: ../xml</p>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group__OrcaCodes"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">OrcaCodes</span></span></dt>
+<dd><p>Error code returned by Orca REST functions. </p>
+<p><dl>
+<dt class="sig sig-object cpp">
+<em><span class="pre">Todo:</span></em></dt>
+<dd><p>add origins links</p>
+</dd></dl>
+
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_OK">
+<span class="target" id="group__OrcaCodes_1gab234ec8eeddc7f0abf7324b995fcfcb4"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_OK</span></span></span> <span class="pre">0</span><a class="headerlink" href="#c.ORCA_OK" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>request was a success </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_NO_RESPONSE">
+<span class="target" id="group__OrcaCodes_1ga8880e92512783e988d4755f9f03c4580"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_NO_RESPONSE</span></span></span> <span class="pre">-1</span><a class="headerlink" href="#c.ORCA_NO_RESPONSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>failure connecting to API’s url </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_UNUSUAL_HTTP_CODE">
+<span class="target" id="group__OrcaCodes_1ga110d8f5a1faaf13ba1a763b7b260c82b"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_UNUSUAL_HTTP_CODE</span></span></span> <span class="pre">-2</span><a class="headerlink" href="#c.ORCA_UNUSUAL_HTTP_CODE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>received a non-standard http code </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_MISSING_PARAMETER">
+<span class="target" id="group__OrcaCodes_1gafc0b28e6e4fc98109015eb537f207bd7"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_MISSING_PARAMETER</span></span></span> <span class="pre">-3</span><a class="headerlink" href="#c.ORCA_MISSING_PARAMETER" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>missing a mandatory function parameter </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_BAD_PARAMETER">
+<span class="target" id="group__OrcaCodes_1gaf21cf4909ec6435f4d6ced88922bcea8"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_BAD_PARAMETER</span></span></span> <span class="pre">-4</span><a class="headerlink" href="#c.ORCA_BAD_PARAMETER" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>unexpected value for parameter </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_BAD_JSON">
+<span class="target" id="group__OrcaCodes_1ga641eec95dca09556c3cbf01121015e28"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_BAD_JSON</span></span></span> <span class="pre">-5</span><a class="headerlink" href="#c.ORCA_BAD_JSON" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>internal failure when encoding or decoding JSON </p>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-typedefs">Typedefs</p>
+<dl class="c type">
+<dt class="sig sig-object c" id="c.ORCAcode">
+<span class="target" id="group__OrcaCodes_1ga9cf2c634d026f2b4665d1859fe596b90"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ORCAcode</span></span></span><a class="headerlink" href="#c.ORCAcode" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the error code datatype </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </div>
 <div class="section" id="limits">
 <h2>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygengroup: Cannot find group “OrcaLimits” in doxygen xml output for project “Orca” from directory: ../xml</p>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group__OrcaLimits"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">OrcaLimits</span></span></dt>
+<dd><p>Limits discovered across the web. </p>
+<p><dl>
+<dt class="sig sig-object cpp">
+<em><span class="pre">Todo:</span></em></dt>
+<dd><p>add reference links</p>
+</dd></dl>
+
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_LIMITS_SHA256">
+<span class="target" id="group__OrcaLimits_1ga9a53399e4608bf68e17284abd681e7ec"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_LIMITS_SHA256</span></span></span> <span class="pre">1024</span> <span class="pre">+</span> <span class="pre">1</span><a class="headerlink" href="#c.ORCA_LIMITS_SHA256" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_LIMITS_LOCALE">
+<span class="target" id="group__OrcaLimits_1ga2e4dbb65d307bbaa9926e24d246b5c57"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_LIMITS_LOCALE</span></span></span> <span class="pre">16</span> <span class="pre">+</span> <span class="pre">1</span><a class="headerlink" href="#c.ORCA_LIMITS_LOCALE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_LIMITS_EMAIL">
+<span class="target" id="group__OrcaLimits_1ga97bc9ad1de9ed51089928ea66d8442d4"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_LIMITS_EMAIL</span></span></span> <span class="pre">254</span> <span class="pre">+</span> <span class="pre">1</span><a class="headerlink" href="#c.ORCA_LIMITS_EMAIL" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.ORCA_LIMITS_REGION">
+<span class="target" id="group__OrcaLimits_1gaef17459f932a9385f06fd6c57a7d4db6"></span><span class="sig-name descname"><span class="n"><span class="pre">ORCA_LIMITS_REGION</span></span></span> <span class="pre">16</span> <span class="pre">+</span> <span class="pre">1</span><a class="headerlink" href="#c.ORCA_LIMITS_REGION" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 </div>
+</dd></dl>
+
 </div>
 </div>
 
