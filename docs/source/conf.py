@@ -3,13 +3,6 @@ import subprocess
 import os
 import sys
 
-read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
-
-if read_the_docs_build:
-    print("RTD build...")
-    #subprocess.call('doxygen Doxyfile; ls', shell=True)
-else:
-    print("Normal build...")
 # ----------------------------------------------------------------------------
 
 # Configuration file for the Sphinx documentation builder.
@@ -95,11 +88,6 @@ html_context = {
     "github_version": "master",
     "doc_path": "docs/source",
 }
-
-if read_the_docs_build:
-    html_theme = 'default'
-else:
-    html_theme = 'pydata_sphinx_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
