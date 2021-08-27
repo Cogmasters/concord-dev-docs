@@ -12534,10 +12534,6 @@
   
   <script type="text/javascript">
     $(document).ready(function() {
-         // Create collapse menu for struct/enum methods
-         $(".c.struct dd > ul:first-of-type, .c.enum dd > ul:first-of-type").wrap("<div class=\"toggle\"></div>");
-         $(".toggle").prepend("<div class=\"header\"><b>Methods</b></div>");
-         $(".toggle > *:not(.header)").hide();
          $(".toggle .header").click(function() {
             $(this).parent().children().not(".header").toggle(400);
             $(this).parent().children(".header").toggleClass("open");

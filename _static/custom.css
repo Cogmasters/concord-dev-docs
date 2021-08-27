@@ -6,11 +6,14 @@
 .toggle .header:hover {
     cursor: pointer;
 }
-.toggle .header:after {
+.toggle .header::after {
     content: " ➕";
 }
-.toggle .header.open:after {
+.toggle .header.open::after {
     content: " ➖";
+}
+.toggle > *:not(.header) {
+    display: none;
 }
 
 /* THE FOLLOWING MODIFY HOW THE DEFAULT PAGE IS RENDERED */
@@ -23,6 +26,10 @@
 /* Hide the welcome text */
 .section#welcome-to-orca > h1 {
     display: none;
+}
+
+.header p {
+    text-indent:0!important;
 }
 
 i.fa-github:hover {

@@ -198,7 +198,16 @@
   
   <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  <footer class="footer mt-5 mt-md-0">
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+         $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+         })
+    });
+  </script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
@@ -215,5 +224,6 @@ Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
     
   </div>
 </footer>
+
   </body>
 </html>
