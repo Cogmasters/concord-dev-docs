@@ -24,3 +24,15 @@
 .section#welcome-to-orca > h1 {
     display: none;
 }
+
+i.fa-github:hover {
+  color: black;
+}
+
+i.fa-discord:hover {
+  color: #5765f2;
+}
+
+#navbar-icon-links > li.nav-item > a.nav-link:hover {
+   color: rgba(77, 77, 77, 1) !important
+}
