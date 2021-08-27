@@ -71,11 +71,20 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_favicon = "https://raw.githubusercontent.com/cee-studio/orca-docs/master/docs/source/images/icon.ico"
-# @todo fix logo not showing up
-# html_logo = "https://raw.githubusercontent.com/cee-studio/orca-docs/master/docs/source/images/icon.svg"
+html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
-    "github_url": "https://github.com/cee-studio/orca",
+    "icon_links": [
+        {
+            "name": "Github",
+            "url": "https://github.com/cee-studio/orca",
+            "icon": "fab fa-github"
+        },
+        {
+            "name": "Discord",
+            "url": "https://discord.gg/GNUxKtxf",
+            "icon": "fab fa-discord"
+        }
+    ],
     "external_links": [
         {"name": "SaiphC", "url": "https://www.cee.studio/"}
     ],
@@ -88,6 +97,8 @@ html_context = {
     "github_version": "master",
     "doc_path": "docs/source",
 }
+html_favicon = "icon.ico"
+html_logo = "icon.svg"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
