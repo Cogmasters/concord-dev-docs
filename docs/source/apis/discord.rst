@@ -923,3 +923,8 @@ Embed
 ^^^^^
 
 .. doxygengroup:: DiscordMiscEmbed
+
+Gateway
+^^^^^^^
+
+.. doxygengroup:: DiscordMiscGateway
