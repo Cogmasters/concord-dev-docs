@@ -270,7 +270,6 @@ Miscellaneous
 
 .. doxygenfunction:: discord_set_data
 .. doxygenfunction:: discord_get_data
-.. doxygenfunction:: discord_replace_presence
 .. doxygenfunction:: discord_set_presence
 
 Application Commands
