@@ -86,7 +86,7 @@ html_theme_options = {
         }
     ],
     "external_links": [
-        {"name": "SaiphC", "url": "https://www.cee.studio/"}
+        {"name": "Cee Studio", "url": "https://www.cee.studio/"}
     ],
     "use_edit_page_button": True
 }
