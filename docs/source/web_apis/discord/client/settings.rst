@@ -7,9 +7,9 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-=========
-Behaviour
-=========
+========
+Settings
+========
 
 .. doxygenfunction:: discord_add_intents
 .. doxygenfunction:: discord_remove_intents
