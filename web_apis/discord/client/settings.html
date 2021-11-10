@@ -82,7 +82,7 @@
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../../../orca_api/index.html">
-  Orca API Reference
+  Orca API
  </a>
 </li>
 
@@ -1258,10 +1258,27 @@
 </dl>
 </dd></dl>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_get_logconf” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_get_logconf">
+<span class="target" id="discord_8h_1a12fcb6ebfc884f9a68dc6f8ba22a8721"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../orca_api/logconf/index.html#c.logconf" title="logconf"><span class="n"><span class="pre">logconf</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_logconf</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="structures.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_logconf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieve client’s logging module for configuration purposes. </p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p>logconf_setup(), logconf_set_quiet(), logconf_set_level(), … </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="initialization.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the client’s logging module </p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 
