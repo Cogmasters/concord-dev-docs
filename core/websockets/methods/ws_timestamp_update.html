@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="../../../_static/icon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Modular Logging Reference" href="../../logconf/index.html" />
+    <link rel="next" title="ws_send_binary - send binary control-frame" href="ws_send_binary.html" />
     <link rel="prev" title="ws_timestamp - get WebSockets current timestamp" href="ws_timestamp.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -158,8 +158,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ws_add_header.html">
-     ws_add_header - add HTTP header
+    <a class="reference internal" href="ws_init.html">
+     ws_init - initialize a WebSockets handle
     </a>
    </li>
    <li class="toctree-l2">
@@ -168,13 +168,18 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ws_close.html">
-     ws_close - send CLOSE control-frame
+    <a class="reference internal" href="ws_set_url.html">
+     ws_set_url - set WebSockets URL
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ws_close_opcode_print.html">
-     ws_close_opcode_print - print CLOSE code as string
+    <a class="reference internal" href="ws_add_header.html">
+     ws_add_header - add HTTP header
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ws_start.html">
+     ws_start - kickstart WebSockets connection
     </a>
    </li>
    <li class="toctree-l2">
@@ -193,18 +198,18 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ws_init.html">
-     ws_init - initialize a WebSockets handle
+    <a class="reference internal" href="ws_close_opcode_print.html">
+     ws_close_opcode_print - print CLOSE code as string
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ws_ping.html">
-     ws_ping - send PING control-frame
+    <a class="reference internal" href="ws_timestamp.html">
+     ws_timestamp - get WebSockets current timestamp
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ws_pong.html">
-     ws_pong - send PONG control-frame
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     ws_timestamp_update - update WebSockets current timestamp
     </a>
    </li>
    <li class="toctree-l2">
@@ -218,23 +223,18 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ws_set_url.html">
-     ws_set_url - set WebSockets URL
+    <a class="reference internal" href="ws_ping.html">
+     ws_ping - send PING control-frame
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ws_start.html">
-     ws_start - kickstart WebSockets connection
+    <a class="reference internal" href="ws_pong.html">
+     ws_pong - send PONG control-frame
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ws_timestamp.html">
-     ws_timestamp - get WebSockets current timestamp
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     ws_timestamp_update - update WebSockets current timestamp
+    <a class="reference internal" href="ws_close.html">
+     ws_close - send CLOSE control-frame
     </a>
    </li>
   </ul>
@@ -400,10 +400,10 @@
             <p class="prev-next-title">ws_timestamp - get WebSockets current timestamp</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../logconf/index.html" title="next page">
+    <a class='right-next' id="next-link" href="ws_send_binary.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Modular Logging Reference</p>
+        <p class="prev-next-title">ws_send_binary - send binary control-frame</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

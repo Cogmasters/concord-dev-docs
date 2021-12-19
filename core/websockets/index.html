@@ -158,8 +158,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_add_header.html">
-     ws_add_header - add HTTP header
+    <a class="reference internal" href="methods/ws_init.html">
+     ws_init - initialize a WebSockets handle
     </a>
    </li>
    <li class="toctree-l2">
@@ -168,13 +168,18 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_close.html">
-     ws_close - send CLOSE control-frame
+    <a class="reference internal" href="methods/ws_set_url.html">
+     ws_set_url - set WebSockets URL
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_close_opcode_print.html">
-     ws_close_opcode_print - print CLOSE code as string
+    <a class="reference internal" href="methods/ws_add_header.html">
+     ws_add_header - add HTTP header
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="methods/ws_start.html">
+     ws_start - kickstart WebSockets connection
     </a>
    </li>
    <li class="toctree-l2">
@@ -193,18 +198,18 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_init.html">
-     ws_init - initialize a WebSockets handle
+    <a class="reference internal" href="methods/ws_close_opcode_print.html">
+     ws_close_opcode_print - print CLOSE code as string
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_ping.html">
-     ws_ping - send PING control-frame
+    <a class="reference internal" href="methods/ws_timestamp.html">
+     ws_timestamp - get WebSockets current timestamp
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_pong.html">
-     ws_pong - send PONG control-frame
+    <a class="reference internal" href="methods/ws_timestamp_update.html">
+     ws_timestamp_update - update WebSockets current timestamp
     </a>
    </li>
    <li class="toctree-l2">
@@ -218,23 +223,18 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_set_url.html">
-     ws_set_url - set WebSockets URL
+    <a class="reference internal" href="methods/ws_ping.html">
+     ws_ping - send PING control-frame
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_start.html">
-     ws_start - kickstart WebSockets connection
+    <a class="reference internal" href="methods/ws_pong.html">
+     ws_pong - send PONG control-frame
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_timestamp.html">
-     ws_timestamp - get WebSockets current timestamp
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="methods/ws_timestamp_update.html">
-     ws_timestamp_update - update WebSockets current timestamp
+    <a class="reference internal" href="methods/ws_close.html">
+     ws_close - send CLOSE control-frame
     </a>
    </li>
   </ul>
@@ -325,71 +325,22 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="structures.html">Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_add_header.html">ws_add_header - add HTTP header</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_add_header.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_cleanup.html">ws_cleanup - cleanup a WebSockets handle</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_cleanup.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_close.html">ws_close - send CLOSE control-frame</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_close.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_close_opcode_print.html">ws_close_opcode_print - print CLOSE code as string</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_close_opcode_print.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_easy_run.html">ws_easy_run - check pending WebSockets transfers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_easy_run.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_end.html">ws_end - exit from a WebSockets connection</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_end.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_get_status.html">ws_get_status - get client’s connection status</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_get_status.html#wrappers">Wrappers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_get_status.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_init.html">ws_init - initialize a WebSockets handle</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_init.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_ping.html">ws_ping - send PING control-frame</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_ping.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_pong.html">ws_pong - send PONG control-frame</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_pong.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_send_binary.html">ws_send_binary - send binary control-frame</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_send_binary.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_send_text.html">ws_send_text - send text control-frame</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_send_text.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_set_url.html">ws_set_url - set WebSockets URL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_set_url.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_start.html">ws_start - kickstart WebSockets connection</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_start.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_timestamp.html">ws_timestamp - get WebSockets current timestamp</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_timestamp.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="methods/ws_timestamp_update.html">ws_timestamp_update - update WebSockets current timestamp</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="methods/ws_timestamp_update.html#example">Example</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_init.html">ws_init - initialize a WebSockets handle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_cleanup.html">ws_cleanup - cleanup a WebSockets handle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_set_url.html">ws_set_url - set WebSockets URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_add_header.html">ws_add_header - add HTTP header</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_start.html">ws_start - kickstart WebSockets connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_easy_run.html">ws_easy_run - check pending WebSockets transfers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_end.html">ws_end - exit from a WebSockets connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_get_status.html">ws_get_status - get client’s connection status</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_close_opcode_print.html">ws_close_opcode_print - print CLOSE code as string</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_timestamp.html">ws_timestamp - get WebSockets current timestamp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_timestamp_update.html">ws_timestamp_update - update WebSockets current timestamp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_send_binary.html">ws_send_binary - send binary control-frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_send_text.html">ws_send_text - send text control-frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_ping.html">ws_ping - send PING control-frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_pong.html">ws_pong - send PONG control-frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods/ws_close.html">ws_close - send CLOSE control-frame</a></li>
 </ul>
 </div>
 </section>
