@@ -11,8 +11,22 @@ WebSockets Reference
 
 .. toctree::
    :caption: Table of Contents
-   :glob:
-   :maxdepth: 2
+   :maxdepth: 1
 
    structures
-   methods/*
+   methods/ws_init
+   methods/ws_cleanup
+   methods/ws_set_url
+   methods/ws_add_header
+   methods/ws_start
+   methods/ws_easy_run
+   methods/ws_end
+   methods/ws_get_status
+   methods/ws_close_opcode_print
+   methods/ws_timestamp
+   methods/ws_timestamp_update
+   methods/ws_send_binary
+   methods/ws_send_text
+   methods/ws_ping
+   methods/ws_pong
+   methods/ws_close
