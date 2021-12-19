@@ -3051,7 +3051,15 @@
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="core/user_agent/http.html#c.HTTP_BAD_REQUEST">HTTP_BAD_REQUEST (C macro)</a>
+</li>
       <li><a href="core/user_agent/http.html#c.http_code_print">http_code_print (C function)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_CREATED">HTTP_CREATED (C macro)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_FORBIDDEN">HTTP_FORBIDDEN (C macro)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_GATEWAY_UNAVAILABLE">HTTP_GATEWAY_UNAVAILABLE (C macro)</a>
 </li>
       <li><a href="core/user_agent/http.html#c.http_method">http_method (C enum)</a>
 </li>
@@ -3063,19 +3071,35 @@
 </li>
       <li><a href="core/user_agent/http.html#c.http_method.HTTP_MIMEPOST">http_method.HTTP_MIMEPOST (C enumerator)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="core/user_agent/http.html#c.http_method.HTTP_PATCH">http_method.HTTP_PATCH (C enumerator)</a>
 </li>
       <li><a href="core/user_agent/http.html#c.http_method.HTTP_POST">http_method.HTTP_POST (C enumerator)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="core/user_agent/http.html#c.http_method.HTTP_PUT">http_method.HTTP_PUT (C enumerator)</a>
 </li>
       <li><a href="core/user_agent/http.html#c.http_method_eval">http_method_eval (C function)</a>
 </li>
+      <li><a href="core/user_agent/http.html#c.HTTP_METHOD_NOT_ALLOWED">HTTP_METHOD_NOT_ALLOWED (C macro)</a>
+</li>
       <li><a href="core/user_agent/http.html#c.http_method_print">http_method_print (C function)</a>
 </li>
+      <li><a href="core/user_agent/http.html#c.HTTP_NO_CONTENT">HTTP_NO_CONTENT (C macro)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_NOT_FOUND">HTTP_NOT_FOUND (C macro)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_NOT_MODIFIED">HTTP_NOT_MODIFIED (C macro)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_OK">HTTP_OK (C macro)</a>
+</li>
       <li><a href="core/user_agent/http.html#c.http_reason_print">http_reason_print (C function)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_TOO_MANY_REQUESTS">HTTP_TOO_MANY_REQUESTS (C macro)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_UNAUTHORIZED">HTTP_UNAUTHORIZED (C macro)</a>
+</li>
+      <li><a href="core/user_agent/http.html#c.HTTP_UNPROCESSABLE_ENTITY">HTTP_UNPROCESSABLE_ENTITY (C macro)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -3323,6 +3347,8 @@
 </li>
       <li><a href="core/user_agent/methods/ua_cleanup.html#c.ua_cleanup">ua_cleanup (C function)</a>
 </li>
+      <li><a href="core/user_agent/structures.html#c.ua_conn">ua_conn (C struct)</a>
+</li>
       <li><a href="core/user_agent/methods/ua_conn_add_header.html#c.ua_conn_add_header">ua_conn_add_header (C function)</a>
 </li>
       <li><a href="core/user_agent/structures.html#c.ua_conn_attr">ua_conn_attr (C struct)</a>
@@ -3334,6 +3360,8 @@
       <li><a href="core/user_agent/structures.html#c.ua_conn_attr.endpoint">ua_conn_attr.endpoint (C var)</a>
 </li>
       <li><a href="core/user_agent/structures.html#c.ua_conn_attr.method">ua_conn_attr.method (C var)</a>
+</li>
+      <li><a href="core/user_agent/methods/ua_conn_easy_perform.html#c.ua_conn_easy_perform">ua_conn_easy_perform (C function)</a>
 </li>
       <li><a href="core/user_agent/methods/ua_conn_get_easy_handle.html#c.ua_conn_get_easy_handle">ua_conn_get_easy_handle (C function)</a>
 </li>
@@ -3349,19 +3377,15 @@
 </li>
       <li><a href="core/user_agent/methods/ua_conn_stop.html#c.ua_conn_stop">ua_conn_stop (C function)</a>
 </li>
-      <li><a href="core/user_agent/methods/ua_easy_run.html#c.ua_easy_run">ua_easy_run (C function)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="core/user_agent/methods/ua_easy_run.html#c.ua_easy_run">ua_easy_run (C function)</a>
+</li>
       <li><a href="core/user_agent/methods/ua_get_url.html#c.ua_get_url">ua_get_url (C function)</a>
 </li>
       <li><a href="core/user_agent/structures.html#c.ua_info">ua_info (C struct)</a>
 </li>
-      <li><a href="core/user_agent/structures.html#c.ua_info.body">ua_info.body (C var)</a>
-</li>
       <li><a href="core/user_agent/structures.html#c.ua_info.code">ua_info.code (C var)</a>
-</li>
-      <li><a href="core/user_agent/structures.html#c.ua_info.header">ua_info.header (C var)</a>
 </li>
       <li><a href="core/user_agent/structures.html#c.ua_info.httpcode">ua_info.httpcode (C var)</a>
 </li>
@@ -3392,6 +3416,8 @@
       <li><a href="core/user_agent/methods/ua_set_opt.html#c.ua_set_opt">ua_set_opt (C function)</a>
 </li>
       <li><a href="core/user_agent/methods/ua_set_url.html#c.ua_set_url">ua_set_url (C function)</a>
+</li>
+      <li><a href="core/user_agent/structures.html#c.user_agent">user_agent (C struct)</a>
 </li>
   </ul></td>
 </tr></table>
