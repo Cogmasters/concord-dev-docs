@@ -153,8 +153,8 @@
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../structures.html">
-     Structures
+    <a class="reference internal" href="../datatypes.html">
+     Datatypes
     </a>
    </li>
    <li class="toctree-l2">
@@ -270,8 +270,8 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../websockets/structures.html">
-     Structures
+    <a class="reference internal" href="../../websockets/datatypes.html">
+     Datatypes
     </a>
    </li>
    <li class="toctree-l2">
@@ -356,14 +356,9 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../logconf/index.html">
-   Modular Logging
-  </a>
- </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../ntl/index.html">
-   NTL (null-terminated lists)
+  <a class="reference internal" href="../../cee-utils/index.html">
+   Cee-Utils
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -372,24 +367,41 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/initializer.html">
-     Initializer / Cleanup
+    <a class="reference internal" href="../../cee-utils/logconf/index.html">
+     Modular Logging
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/utils.html">
-     Utilities
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../cee-utils/ntl/index.html">
+     NTL (null-terminated lists)
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/serializer.html">
-     Serializer
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/deserializer.html">
-     De-serializer
-    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/initializer.html">
+       Initializer / Cleanup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/utils.html">
+       Utilities
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/serializer.html">
+       Serializer
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/deserializer.html">
+       De-serializer
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -450,7 +462,7 @@
 <h1>ua_init - create a User-Agent handle<a class="headerlink" href="#ua-init-create-a-user-agent-handle" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.ua_init">
-<span class="target" id="user-agent_8h_1a20fa3d79fe196c1ac342ca7cce89303b"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../structures.html#c.user_agent" title="user_agent"><span class="n"><span class="pre">user_agent</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">ua_init</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../structures.html#c.ua_attr" title="ua_attr"><span class="n"><span class="pre">ua_attr</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">attr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ua_init" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="user-agent_8h_1a20fa3d79fe196c1ac342ca7cce89303b"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.user_agent" title="user_agent"><span class="n"><span class="pre">user_agent</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">ua_init</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.ua_attr" title="ua_attr"><span class="n"><span class="pre">ua_attr</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">attr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ua_init" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize User-Agent handle. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

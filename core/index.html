@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Orca Common Reference" href="common/index.html" />
-    <link rel="prev" title="Structures" href="../apis/discord/models/permissions/structures.html" />
+    <link rel="prev" title="Datatypes" href="../apis/discord/models/permissions/datatypes.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -153,8 +153,8 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="user_agent/structures.html">
-     Structures
+    <a class="reference internal" href="user_agent/datatypes.html">
+     Datatypes
     </a>
    </li>
    <li class="toctree-l2">
@@ -270,8 +270,8 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="websockets/structures.html">
-     Structures
+    <a class="reference internal" href="websockets/datatypes.html">
+     Datatypes
     </a>
    </li>
    <li class="toctree-l2">
@@ -356,14 +356,9 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="logconf/index.html">
-   Modular Logging
-  </a>
- </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="ntl/index.html">
-   NTL (null-terminated lists)
+  <a class="reference internal" href="cee-utils/index.html">
+   Cee-Utils
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -372,24 +367,41 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="ntl/methods/initializer.html">
-     Initializer / Cleanup
+    <a class="reference internal" href="cee-utils/logconf/index.html">
+     Modular Logging
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ntl/methods/utils.html">
-     Utilities
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cee-utils/ntl/index.html">
+     NTL (null-terminated lists)
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ntl/methods/serializer.html">
-     Serializer
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ntl/methods/deserializer.html">
-     De-serializer
-    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cee-utils/ntl/methods/initializer.html">
+       Initializer / Cleanup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cee-utils/ntl/methods/utils.html">
+       Utilities
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cee-utils/ntl/methods/serializer.html">
+       Serializer
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cee-utils/ntl/methods/deserializer.html">
+       De-serializer
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -450,7 +462,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="user_agent/index.html">User-Agent</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="user_agent/structures.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_agent/datatypes.html">Datatypes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user_agent/http.html">HTTP - general</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user_agent/methods/ua_init.html">ua_init - create a User-Agent handle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user_agent/methods/ua_cleanup.html">ua_cleanup - cleanup a User-Agent handle</a></li>
@@ -474,7 +486,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="websockets/index.html">WebSockets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="websockets/structures.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="websockets/datatypes.html">Datatypes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="websockets/methods/ws_init.html">ws_init - initialize a WebSockets handle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="websockets/methods/ws_cleanup.html">ws_cleanup - cleanup a WebSockets handle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="websockets/methods/ws_set_url.html">ws_set_url - set WebSockets URL</a></li>
@@ -493,19 +505,9 @@
 <li class="toctree-l2"><a class="reference internal" href="websockets/methods/ws_close.html">ws_close - send CLOSE control-frame</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="logconf/index.html">Modular Logging</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="logconf/index.html#datatypes">Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logconf/index.html#constants">Constants</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logconf/index.html#configure-logging-via-a-json-file">Configure logging via a JSON file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logconf/index.html#branch-a-logging-module">Branch a logging module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logconf/index.html#cleanup">Cleanup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logconf/index.html#logging">Logging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logconf/index.html#configuring-logging-manually">Configuring logging manually</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ntl/index.html">NTL (null-terminated lists)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ntl/index.html#datatypes">Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ntl/index.html#methods">Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cee-utils/index.html">Cee-Utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cee-utils/logconf/index.html">Modular Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cee-utils/ntl/index.html">NTL (null-terminated lists)</a></li>
 </ul>
 </li>
 </ul>
@@ -518,11 +520,11 @@
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../apis/discord/models/permissions/structures.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../apis/discord/models/permissions/datatypes.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Structures</p>
+            <p class="prev-next-title">Datatypes</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="common/index.html" title="next page">

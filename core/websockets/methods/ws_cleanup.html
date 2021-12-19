@@ -153,8 +153,8 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../user_agent/structures.html">
-     Structures
+    <a class="reference internal" href="../../user_agent/datatypes.html">
+     Datatypes
     </a>
    </li>
    <li class="toctree-l2">
@@ -270,8 +270,8 @@
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../structures.html">
-     Structures
+    <a class="reference internal" href="../datatypes.html">
+     Datatypes
     </a>
    </li>
    <li class="toctree-l2">
@@ -356,14 +356,9 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../logconf/index.html">
-   Modular Logging
-  </a>
- </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../ntl/index.html">
-   NTL (null-terminated lists)
+  <a class="reference internal" href="../../cee-utils/index.html">
+   Cee-Utils
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -372,24 +367,41 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/initializer.html">
-     Initializer / Cleanup
+    <a class="reference internal" href="../../cee-utils/logconf/index.html">
+     Modular Logging
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/utils.html">
-     Utilities
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../cee-utils/ntl/index.html">
+     NTL (null-terminated lists)
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/serializer.html">
-     Serializer
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/deserializer.html">
-     De-serializer
-    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/initializer.html">
+       Initializer / Cleanup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/utils.html">
+       Utilities
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/serializer.html">
+       Serializer
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/deserializer.html">
+       De-serializer
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -450,7 +462,7 @@
 <h1>ws_cleanup - cleanup a WebSockets handle<a class="headerlink" href="#ws-cleanup-cleanup-a-websockets-handle" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.ws_cleanup">
-<span class="target" id="websockets_8h_1ad45b500790fffec540211cda5d1dbd0f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ws_cleanup</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../structures.html#c.websockets" title="websockets"><span class="n"><span class="pre">websockets</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ws</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ws_cleanup" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="websockets_8h_1ad45b500790fffec540211cda5d1dbd0f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ws_cleanup</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.websockets" title="websockets"><span class="n"><span class="pre">websockets</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ws</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ws_cleanup" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Free a WebSockets handle created with <a class="reference internal" href="ws_init.html#websockets_8h_1aa6088ca5a9cbda8616ca3ca0bdd12d5d"><span class="std std-ref">ws_init()</span></a> </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

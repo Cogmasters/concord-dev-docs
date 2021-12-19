@@ -153,8 +153,8 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../user_agent/structures.html">
-     Structures
+    <a class="reference internal" href="../../user_agent/datatypes.html">
+     Datatypes
     </a>
    </li>
    <li class="toctree-l2">
@@ -270,8 +270,8 @@
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../structures.html">
-     Structures
+    <a class="reference internal" href="../datatypes.html">
+     Datatypes
     </a>
    </li>
    <li class="toctree-l2">
@@ -356,14 +356,9 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../logconf/index.html">
-   Modular Logging
-  </a>
- </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../ntl/index.html">
-   NTL (null-terminated lists)
+  <a class="reference internal" href="../../cee-utils/index.html">
+   Cee-Utils
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -372,24 +367,41 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/initializer.html">
-     Initializer / Cleanup
+    <a class="reference internal" href="../../cee-utils/logconf/index.html">
+     Modular Logging
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/utils.html">
-     Utilities
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../cee-utils/ntl/index.html">
+     NTL (null-terminated lists)
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/serializer.html">
-     Serializer
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ntl/methods/deserializer.html">
-     De-serializer
-    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/initializer.html">
+       Initializer / Cleanup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/utils.html">
+       Utilities
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/serializer.html">
+       Serializer
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../cee-utils/ntl/methods/deserializer.html">
+       De-serializer
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -455,7 +467,7 @@
 <h1>ws_get_status - get client’s connection status<a class="headerlink" href="#ws-get-status-get-client-s-connection-status" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.ws_get_status">
-<span class="target" id="websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="../structures.html#c.ws_status" title="ws_status"><span class="n"><span class="pre">ws_status</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ws_get_status</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../structures.html#c.websockets" title="websockets"><span class="n"><span class="pre">websockets</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ws</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ws_get_status" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.ws_status" title="ws_status"><span class="n"><span class="pre">ws_status</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ws_get_status</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.websockets" title="websockets"><span class="n"><span class="pre">websockets</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ws</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ws_get_status" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Returns the WebSockets handle connection status. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -473,7 +485,7 @@
 <h2>Wrappers<a class="headerlink" href="#wrappers" title="Permalink to this headline">¶</a></h2>
 <dl class="c macro">
 <dt class="sig sig-object c" id="c.ws_is_alive">
-<span class="target" id="websockets_8h_1ad051813d376e9b2eae4018af09b36608"></span><span class="sig-name descname"><span class="n"><span class="pre">ws_is_alive</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ws</span></span><span class="sig-paren">)</span> <span class="pre">(</span><a class="reference internal" href="#websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79"><span class="std std-ref"><span class="pre">ws_get_status</span></span></a><span class="pre">(ws)</span> <span class="pre">!=</span> <a class="reference internal" href="../structures.html#websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26ab3328538fd15fe5c3195a5d56e3e4889"><span class="std std-ref"><span class="pre">WS_DISCONNECTED</span></span></a><span class="pre">)</span><a class="headerlink" href="#c.ws_is_alive" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="websockets_8h_1ad051813d376e9b2eae4018af09b36608"></span><span class="sig-name descname"><span class="n"><span class="pre">ws_is_alive</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ws</span></span><span class="sig-paren">)</span> <span class="pre">(</span><a class="reference internal" href="#websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79"><span class="std std-ref"><span class="pre">ws_get_status</span></span></a><span class="pre">(ws)</span> <span class="pre">!=</span> <a class="reference internal" href="../datatypes.html#websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26ab3328538fd15fe5c3195a5d56e3e4889"><span class="std std-ref"><span class="pre">WS_DISCONNECTED</span></span></a><span class="pre">)</span><a class="headerlink" href="#c.ws_is_alive" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Check if a WebSockets connection is alive. </p>
 <p>This will only return true if the connection status is different than WS_DISCONNECTED </p>
 <dl class="field-list simple">
@@ -490,7 +502,7 @@
 
 <dl class="c macro">
 <dt class="sig sig-object c" id="c.ws_is_functional">
-<span class="target" id="websockets_8h_1a684b8995274735a5e21602b065a4aa0e"></span><span class="sig-name descname"><span class="n"><span class="pre">ws_is_functional</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ws</span></span><span class="sig-paren">)</span> <span class="pre">(</span><a class="reference internal" href="#websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79"><span class="std std-ref"><span class="pre">ws_get_status</span></span></a><span class="pre">(ws)</span> <span class="pre">==</span> <a class="reference internal" href="../structures.html#websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26af9564bb4cc0e631f03b8a7d7c1a204c9"><span class="std std-ref"><span class="pre">WS_CONNECTED</span></span></a><span class="pre">)</span><a class="headerlink" href="#c.ws_is_functional" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="websockets_8h_1a684b8995274735a5e21602b065a4aa0e"></span><span class="sig-name descname"><span class="n"><span class="pre">ws_is_functional</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ws</span></span><span class="sig-paren">)</span> <span class="pre">(</span><a class="reference internal" href="#websockets_8h_1acdd4872611e9c663ffbfd3c67deb0b79"><span class="std std-ref"><span class="pre">ws_get_status</span></span></a><span class="pre">(ws)</span> <span class="pre">==</span> <a class="reference internal" href="../datatypes.html#websockets_8h_1a2c98aa4435bf623cdba0e8bab4303b26af9564bb4cc0e631f03b8a7d7c1a204c9"><span class="std std-ref"><span class="pre">WS_CONNECTED</span></span></a><span class="pre">)</span><a class="headerlink" href="#c.ws_is_functional" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Check if WebSockets connection is functional. </p>
 <p>This will only return true if the connection status is WS_CONNECTED </p>
 <dl class="field-list simple">
