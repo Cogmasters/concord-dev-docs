@@ -743,8 +743,8 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../methods/craete_guild_channel.html">
-         Create Guild Channel
+        <a class="reference internal" href="../methods/begin_guild_prune.html">
+         Begin Guild Prune
         </a>
        </li>
        <li class="toctree-l4">
@@ -755,6 +755,11 @@
        <li class="toctree-l4">
         <a class="reference internal" href="../methods/create_guild_ban.html">
          Create Guild Ban
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../methods/create_guild_channel.html">
+         Create Guild Channel
         </a>
        </li>
        <li class="toctree-l4">
@@ -793,6 +798,11 @@
         </a>
        </li>
        <li class="toctree-l4">
+        <a class="reference internal" href="../methods/get_guild_invites.html">
+         Get Guild Invites
+        </a>
+       </li>
+       <li class="toctree-l4">
         <a class="reference internal" href="../methods/get_guild_member.html">
          Get Guild Member
         </a>
@@ -810,6 +820,11 @@
        <li class="toctree-l4">
         <a class="reference internal" href="../methods/list_guild_members.html">
          List Guild Members
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../methods/modify_current_member.html">
+         Modify Current Member
         </a>
        </li>
        <li class="toctree-l4">
@@ -877,6 +892,21 @@
        <li class="toctree-l4">
         <a class="reference internal" href="../../guild_template/datatypes.html">
          Datatypes
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/create_guild_template.html">
+         Create Guild Template
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/get_guild_template.html">
+         Get Guild Template
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/sync_guild_template.html">
+         Sync Guild Template
         </a>
        </li>
       </ul>
@@ -1119,11 +1149,6 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../../gateway/utils/methods.html">
-         Utils
-        </a>
-       </li>
-       <li class="toctree-l4">
         <a class="reference internal" href="../../gateway/methods/get_gateway.html">
          Get Gateway
         </a>
@@ -1205,6 +1230,17 @@
 <dt class="sig sig-object c" id="c.discord_disconnect_guild_member">
 <span class="target" id="group__DiscordMiscGuild_1ga91a8697902e4d583983cbbed09b0a171"></span><a class="reference internal" href="../../../../../core/common/index.html#c.ORCAcode" title="ORCAcode"><span class="n"><span class="pre">ORCAcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_disconnect_guild_member</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/structures.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">user_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord_guild_member" title="discord_guild_member"><span class="n"><span class="pre">discord_guild_member</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_disconnect_guild_member" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_presence_add_activity">
+<span class="target" id="group__DiscordMiscGateway_1ga98855f8e8996b75d6ec46f6278404940"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_presence_add_activity</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../gateway/datatypes.html#c.discord_presence_status" title="discord_presence_status"><span class="n"><span class="pre">discord_presence_status</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">presence</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../gateway/datatypes.html#c.discord_activity" title="discord_activity"><span class="n"><span class="pre">discord_activity</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">activity</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_presence_add_activity" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Helper function to add presence activities. </p>
+<p>This function is a wrapper over ntl_append2() <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="../../../client/utils.html#discord_8h_1a85aa60632cd13ca917521c5166902719"><span class="std std-ref">discord_set_presence()</span></a> </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 </section>
 

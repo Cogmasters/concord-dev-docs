@@ -7,9 +7,8 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-Create Guild Channel
-====================
+Create Guild Template
+=====================
 
-.. doxygengroup:: DiscordCreateGuildChannel
-   :content-only:
-
+.. doxygenfunction:: discord_create_guild_template
+.. doxygenstruct:: discord_create_guild_template_params

@@ -7,10 +7,8 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-=====
-Utils
-=====
+Begin Guild Prune
+=================
 
-.. doxygengroup:: DiscordMiscGateway
-   :content-only:
-
+.. doxygenfunction:: discord_begin_guild_prune
+.. doxygenstruct:: discord_begin_guild_prune_params

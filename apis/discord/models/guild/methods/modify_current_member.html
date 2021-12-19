@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Create Guild Channel &#8212; Orca  documentation</title>
+    <title>Modify Current Member &#8212; Orca  documentation</title>
     
   <link href="../../../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -36,8 +36,8 @@
     <link rel="shortcut icon" href="../../../../../_static/icon.ico"/>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
-    <link rel="next" title="Create Guild" href="create_guild.html" />
-    <link rel="prev" title="Add Guild Member Role" href="add_guild_member_role.html" />
+    <link rel="next" title="Modify Current User Nick" href="modify_current_user_nick.html" />
+    <link rel="prev" title="List Guild Members" href="list_guild_members.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -742,9 +742,9 @@
          Add Guild Member Role
         </a>
        </li>
-       <li class="toctree-l4 current active">
-        <a class="current reference internal" href="#">
-         Create Guild Channel
+       <li class="toctree-l4">
+        <a class="reference internal" href="begin_guild_prune.html">
+         Begin Guild Prune
         </a>
        </li>
        <li class="toctree-l4">
@@ -755,6 +755,11 @@
        <li class="toctree-l4">
         <a class="reference internal" href="create_guild_ban.html">
          Create Guild Ban
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="create_guild_channel.html">
+         Create Guild Channel
         </a>
        </li>
        <li class="toctree-l4">
@@ -793,6 +798,11 @@
         </a>
        </li>
        <li class="toctree-l4">
+        <a class="reference internal" href="get_guild_invites.html">
+         Get Guild Invites
+        </a>
+       </li>
+       <li class="toctree-l4">
         <a class="reference internal" href="get_guild_member.html">
          Get Guild Member
         </a>
@@ -810,6 +820,11 @@
        <li class="toctree-l4">
         <a class="reference internal" href="list_guild_members.html">
          List Guild Members
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Modify Current Member
         </a>
        </li>
        <li class="toctree-l4">
@@ -877,6 +892,21 @@
        <li class="toctree-l4">
         <a class="reference internal" href="../../guild_template/datatypes.html">
          Datatypes
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/create_guild_template.html">
+         Create Guild Template
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/get_guild_template.html">
+         Get Guild Template
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/sync_guild_template.html">
+         Sync Guild Template
         </a>
        </li>
       </ul>
@@ -1119,11 +1149,6 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../../gateway/utils/methods.html">
-         Utils
-        </a>
-       </li>
-       <li class="toctree-l4">
         <a class="reference internal" href="../../gateway/methods/get_gateway.html">
          Get Gateway
         </a>
@@ -1180,7 +1205,7 @@
                 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/cee-studio/orca-docs/edit/master/docs/source/apis/discord/models/guild/methods/craete_guild_channel.rst">
+    <a href="https://github.com/cee-studio/orca-docs/edit/master/docs/source/apis/discord/models/guild/methods/modify_current_member.rst">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -1199,14 +1224,14 @@
               
               <div>
                 
-  <section id="create-guild-channel">
-<h1>Create Guild Channel<a class="headerlink" href="#create-guild-channel" title="Permalink to this headline">¶</a></h1>
+  <section id="modify-current-member">
+<h1>Modify Current Member<a class="headerlink" href="#modify-current-member" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel">
-<span class="target" id="group__DiscordCreateGuildChannel_1gad73427f2c118371bb1cb18c65ce4fb36"></span><a class="reference internal" href="../../../../../core/common/index.html#c.ORCAcode" title="ORCAcode"><span class="n"><span class="pre">ORCAcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_create_guild_channel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/structures.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_create_guild_channel_params" title="discord_create_guild_channel_params"><span class="n"><span class="pre">discord_create_guild_channel_params</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../channel/datatypes.html#c.discord_channel" title="discord_channel"><span class="n"><span class="pre">discord_channel</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_create_guild_channel" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p><strong>POST</strong> /guilds/{guild.id}/channels </p>
-<p>Create a new channel object for the guild. Requires the MANAGE_CHANNELS permission. If setting permission overwrites, only permissions your bot has in the guild can be allowed/denied. Setting MANAGE_ROLES permission in channels is only possible for guild administrators. Returns the new channel object on success. Fires a Channel Create Gateway event. <dl class="simple">
-<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#create-guild-channel">https://discord.com/developers/docs/resources/guild#create-guild-channel</a> </p>
+<dt class="sig sig-object c" id="c.discord_modify_current_member">
+<span class="target" id="group__DiscordModifyCurrentMember_1ga1521db786c572f24759614db38ee8b69"></span><a class="reference internal" href="../../../../../core/common/index.html#c.ORCAcode" title="ORCAcode"><span class="n"><span class="pre">ORCAcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_modify_current_member</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/structures.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_modify_current_member_params" title="discord_modify_current_member_params"><span class="n"><span class="pre">discord_modify_current_member_params</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord_guild_member" title="discord_guild_member"><span class="n"><span class="pre">discord_guild_member</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_modify_current_member" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><strong>PATCH</strong> /guilds/{guild.id}/members/&#64;me </p>
+<p>Modifies the current member in the guild. Used to modify nicknames. <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#modify-current-member">https://discord.com/developers/docs/resources/guild#modify-current-member</a> </p>
 </dd>
 </dl>
 </p>
@@ -1214,9 +1239,9 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/initialization.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
-<li><p><strong>guild_id</strong> – the unique id of the guild to create the channel in </p></li>
-<li><p><strong>params</strong> – request parameters </p></li>
-<li><p><strong>ret</strong> – the place to store the newly created channel </p></li>
+<li><p><strong>guild_id</strong> – the unique id of the guild where the member exists </p></li>
+<li><p><strong>params</strong> – the parameters sent to discord. For example the new nickname for the bot </p></li>
+<li><p><strong>ret</strong> – location where the updated member object is stored if successful </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1226,34 +1251,34 @@
 </dd></dl>
 
 <dl class="c struct">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params">
-<span class="target" id="structdiscord__create__guild__channel__params"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_create_guild_channel_params</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.params.h&gt;</em><p><p><div class="toggle docutils container">
+<dt class="sig sig-object c" id="c.discord_modify_current_member_params">
+<span class="target" id="structdiscord__modify__current__member__params"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_modify_current_member_params</span></span></span><a class="headerlink" href="#c.discord_modify_current_member_params" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><p><div class="toggle docutils container">
 <div class="header docutils container">
 <p><strong>Methods</strong></p>
 </div>
 <ul class="simple">
 <li><p>Initializer:</p>
 <ul>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_guild_channel_params_init(struct</span> <span class="pre">discord_create_guild_channel_params</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_member_params_init(struct</span> <span class="pre">discord_modify_current_member_params</span> <span class="pre">*)</span></code></p></li>
 </ul>
 </li>
 <li><p>Cleanup:</p>
 <ul>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_guild_channel_params_cleanup(struct</span> <span class="pre">discord_create_guild_channel_params</span> <span class="pre">*)</span></code></p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_guild_channel_params_list_free(struct</span> <span class="pre">discord_create_guild_channel_params</span> <span class="pre">**)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_member_params_cleanup(struct</span> <span class="pre">discord_modify_current_member_params</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_member_params_list_free(struct</span> <span class="pre">discord_modify_current_member_params</span> <span class="pre">**)</span></code></p></li>
 </ul>
 </li>
 <li><p>JSON Decoder:</p>
 <ul>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_guild_channel_params_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_create_guild_channel_params</span> <span class="pre">*)</span></code></p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_guild_channel_params_list_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_create_guild_channel_params</span> <span class="pre">***)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_member_params_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_modify_current_member_params</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_member_params_list_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_modify_current_member_params</span> <span class="pre">***)</span></code></p></li>
 </ul>
 </li>
 <li><p>JSON Encoder:</p>
 <ul>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_guild_channel_params_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_create_guild_channel_params</span> <span class="pre">*)</span></code></p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_guild_channel_params_list_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_create_guild_channel_params</span> <span class="pre">**)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_member_params_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_modify_current_member_params</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_member_params_list_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_modify_current_member_params</span> <span class="pre">**)</span></code></p></li>
 </ul>
 </li>
 </ul>
@@ -1263,53 +1288,8 @@
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.name">
-<span class="target" id="structdiscord__create__guild__channel__params_1afae1da92b176d4fb3030e40b4e63f414"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.name" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.type">
-<span class="target" id="structdiscord__create__guild__channel__params_1ab3b4c6d6ff6e0197cc46a8465f563f94"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.type" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.topic">
-<span class="target" id="structdiscord__create__guild__channel__params_1af3b53274c032e3e9d1ae4aaba201c556"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">topic</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.topic" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.bitrate">
-<span class="target" id="structdiscord__create__guild__channel__params_1ad41744b7918d7338e3c49167f5399309"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bitrate</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.bitrate" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.user_limit">
-<span class="target" id="structdiscord__create__guild__channel__params_1a62608bf9ac15268a3b7b8a77594b69f0"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">user_limit</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.user_limit" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.rate_limit_per_user">
-<span class="target" id="structdiscord__create__guild__channel__params_1a3ebf311a8eecbf090c38544ee5f081b0"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rate_limit_per_user</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.rate_limit_per_user" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.position">
-<span class="target" id="structdiscord__create__guild__channel__params_1a9ccfea68867d029e893064fcbb69a2c0"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">position</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.position" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.permission_overwrites">
-<span class="target" id="structdiscord__create__guild__channel__params_1ab10f6558b55aa856a78d99832db33c9d"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../channel/datatypes.html#c.discord_overwrite" title="discord_overwrite"><span class="n"><span class="pre">discord_overwrite</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">permission_overwrites</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.permission_overwrites" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.parent_id">
-<span class="target" id="structdiscord__create__guild__channel__params_1acf5addb5a859ef4da2ec8a99d175f21f"></span><a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">parent_id</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.parent_id" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_create_guild_channel_params.nsfw">
-<span class="target" id="structdiscord__create__guild__channel__params_1af53338a76edfc0e1e263b05d6d438631"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nsfw</span></span></span><a class="headerlink" href="#c.discord_create_guild_channel_params.nsfw" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object c" id="c.discord_modify_current_member_params.nick">
+<span class="target" id="structdiscord__modify__current__member__params_1a40c41a953e668d8c5c579a9a720c7c20"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">nick</span></span></span><a class="headerlink" href="#c.discord_modify_current_member_params.nick" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -1323,17 +1303,17 @@
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="add_guild_member_role.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="list_guild_members.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Add Guild Member Role</p>
+            <p class="prev-next-title">List Guild Members</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="create_guild.html" title="next page">
+    <a class='right-next' id="next-link" href="modify_current_user_nick.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Create Guild</p>
+        <p class="prev-next-title">Modify Current User Nick</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

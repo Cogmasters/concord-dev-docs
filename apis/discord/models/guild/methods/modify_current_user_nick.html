@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="Modify Guild" href="modify_guild.html" />
-    <link rel="prev" title="List Guild Members" href="list_guild_members.html" />
+    <link rel="prev" title="Modify Current Member" href="modify_current_member.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -743,8 +743,8 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="craete_guild_channel.html">
-         Create Guild Channel
+        <a class="reference internal" href="begin_guild_prune.html">
+         Begin Guild Prune
         </a>
        </li>
        <li class="toctree-l4">
@@ -755,6 +755,11 @@
        <li class="toctree-l4">
         <a class="reference internal" href="create_guild_ban.html">
          Create Guild Ban
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="create_guild_channel.html">
+         Create Guild Channel
         </a>
        </li>
        <li class="toctree-l4">
@@ -793,6 +798,11 @@
         </a>
        </li>
        <li class="toctree-l4">
+        <a class="reference internal" href="get_guild_invites.html">
+         Get Guild Invites
+        </a>
+       </li>
+       <li class="toctree-l4">
         <a class="reference internal" href="get_guild_member.html">
          Get Guild Member
         </a>
@@ -810,6 +820,11 @@
        <li class="toctree-l4">
         <a class="reference internal" href="list_guild_members.html">
          List Guild Members
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="modify_current_member.html">
+         Modify Current Member
         </a>
        </li>
        <li class="toctree-l4 current active">
@@ -877,6 +892,21 @@
        <li class="toctree-l4">
         <a class="reference internal" href="../../guild_template/datatypes.html">
          Datatypes
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/create_guild_template.html">
+         Create Guild Template
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/get_guild_template.html">
+         Get Guild Template
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/methods/sync_guild_template.html">
+         Sync Guild Template
         </a>
        </li>
       </ul>
@@ -1119,11 +1149,6 @@
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../../gateway/utils/methods.html">
-         Utils
-        </a>
-       </li>
-       <li class="toctree-l4">
         <a class="reference internal" href="../../gateway/methods/get_gateway.html">
          Get Gateway
         </a>
@@ -1203,10 +1228,10 @@
 <h1>Modify Current User Nick<a class="headerlink" href="#modify-current-user-nick" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_modify_current_user_nick">
-<span class="target" id="group__DiscordModifyCurrentUserNick_1ga42dedda48af8b9c6f8abe35c28090ae4"></span><a class="reference internal" href="../../../../../core/common/index.html#c.ORCAcode" title="ORCAcode"><span class="n"><span class="pre">ORCAcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_modify_current_user_nick</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/structures.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_modify_current_user_nick_params" title="discord_modify_current_user_nick_params"><span class="n"><span class="pre">discord_modify_current_user_nick_params</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord_guild_member" title="discord_guild_member"><span class="n"><span class="pre">discord_guild_member</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_modify_current_user_nick" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__DiscordModifyCurrentUserNick_1ga42dedda48af8b9c6f8abe35c28090ae4"></span><a class="reference internal" href="../../../../../core/common/index.html#c.ORCAcode" title="ORCAcode"><span class="n"><span class="pre">ORCAcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_modify_current_user_nick</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/structures.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_modify_current_user_nick_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord_guild_member" title="discord_guild_member"><span class="n"><span class="pre">discord_guild_member</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_modify_current_user_nick" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p><strong>PATCH</strong> /guilds/{guild.id}/members/&#64;me/nick </p>
 <p><dl class="simple">
-<dt><strong>Attention</strong></dt><dd><p>Deprecated by the discord api. Use discord_modify_current_member() instead </p>
+<dt><strong>Attention</strong></dt><dd><p>Deprecated by the discord api. Use <a class="reference internal" href="modify_current_member.html#group__DiscordModifyCurrentMember_1ga1521db786c572f24759614db38ee8b69"><span class="std std-ref">discord_modify_current_member()</span></a> instead </p>
 </dd>
 <dt><strong>See</strong></dt><dd><p><a class="reference external" href="https://discord.com/developers/docs/resources/guild#modify-current-user-nick">https://discord.com/developers/docs/resources/guild#modify-current-user-nick</a> </p>
 </dd>
@@ -1227,51 +1252,6 @@
 </dl>
 </dd></dl>
 
-<dl class="c struct">
-<dt class="sig sig-object c" id="c.discord_modify_current_user_nick_params">
-<span class="target" id="structdiscord__modify__current__user__nick__params"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_modify_current_user_nick_params</span></span></span><a class="headerlink" href="#c.discord_modify_current_user_nick_params" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;guild.params.h&gt;</em><p><p><div class="toggle docutils container">
-<div class="header docutils container">
-<p><strong>Methods</strong></p>
-</div>
-<ul class="simple">
-<li><p>Initializer:</p>
-<ul>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_user_nick_params_init(struct</span> <span class="pre">discord_modify_current_user_nick_params</span> <span class="pre">*)</span></code></p></li>
-</ul>
-</li>
-<li><p>Cleanup:</p>
-<ul>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_user_nick_params_cleanup(struct</span> <span class="pre">discord_modify_current_user_nick_params</span> <span class="pre">*)</span></code></p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_user_nick_params_list_free(struct</span> <span class="pre">discord_modify_current_user_nick_params</span> <span class="pre">**)</span></code></p></li>
-</ul>
-</li>
-<li><p>JSON Decoder:</p>
-<ul>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_user_nick_params_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_modify_current_user_nick_params</span> <span class="pre">*)</span></code></p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_user_nick_params_list_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_modify_current_user_nick_params</span> <span class="pre">***)</span></code></p></li>
-</ul>
-</li>
-<li><p>JSON Encoder:</p>
-<ul>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_user_nick_params_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_modify_current_user_nick_params</span> <span class="pre">*)</span></code></p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_modify_current_user_nick_params_list_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_modify_current_user_nick_params</span> <span class="pre">**)</span></code></p></li>
-</ul>
-</li>
-</ul>
-</div>
-</p>
- </p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="c var">
-<dt class="sig sig-object c" id="c.discord_modify_current_user_nick_params.nick">
-<span class="target" id="structdiscord__modify__current__user__nick__params_1a5420c5b3a72cb3f79130decc0dbafe51"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">nick</span></span></span><a class="headerlink" href="#c.discord_modify_current_user_nick_params.nick" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
 </section>
 
 
@@ -1280,11 +1260,11 @@
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="list_guild_members.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="modify_current_member.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">List Guild Members</p>
+            <p class="prev-next-title">Modify Current Member</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="modify_guild.html" title="next page">

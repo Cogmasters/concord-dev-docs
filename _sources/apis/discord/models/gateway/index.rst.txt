@@ -17,5 +17,4 @@ Gateway
    :maxdepth: 2
 
    datatypes
-   utils/*
    methods/*
