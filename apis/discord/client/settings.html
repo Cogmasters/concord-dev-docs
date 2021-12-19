@@ -1258,7 +1258,7 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>client</strong> – the client created with <a class="reference internal" href="initialization.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
-<li><p><strong>code</strong> – the intents opcode, can be set as a bitmask operation (ex: A | B | C) </p></li>
+<li><p><strong>code</strong> – the intents opcode, can be set as bitmask operation Ex: 1 &lt;&lt; 0 | 1 &lt;&lt; 1 | 1 &lt;&lt; 4 </p></li>
 </ul>
 </dd>
 </dl>
@@ -1288,7 +1288,7 @@
 <span class="target" id="discord_8h_1a12fcb6ebfc884f9a68dc6f8ba22a8721"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../core/cee-utils/logconf/index.html#c.logconf" title="logconf"><span class="n"><span class="pre">logconf</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_logconf</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="structures.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_logconf" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Retrieve client’s logging module for configuration purposes. </p>
 <p><dl class="simple">
-<dt><strong>See</strong></dt><dd><p>logconf_setup(), logconf_set_quiet(), logconf_set_level(), … </p>
+<dt><strong>See</strong></dt><dd><p>logconf_setup(), logconf_set_quiet(), logconf_set_level() </p>
 </dd>
 </dl>
 </p>
