@@ -17,3 +17,4 @@ Guild Template
    :maxdepth: 2
 
    datatypes
+   methods/*

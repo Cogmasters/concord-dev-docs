@@ -7,7 +7,8 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-Delete Webhook
-==============
+Modify Current Member
+=====================
 
-.. doxygenfunction:: discord_delete_webhook
+.. doxygenfunction:: discord_modify_current_member
+.. doxygenstruct:: discord_modify_current_member_params

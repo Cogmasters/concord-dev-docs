@@ -7,7 +7,7 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-Delete Webhook
-==============
+Get Guild Invites
+=================
 
-.. doxygenfunction:: discord_delete_webhook
+.. doxygenfunction:: discord_get_guild_invites

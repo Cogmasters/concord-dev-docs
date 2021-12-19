@@ -7,7 +7,7 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-Delete Webhook
-==============
+Sync Guild Template
+===================
 
-.. doxygenfunction:: discord_delete_webhook
+.. doxygenfunction:: discord_sync_guild_template
