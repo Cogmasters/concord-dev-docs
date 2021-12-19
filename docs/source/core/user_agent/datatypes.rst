@@ -5,9 +5,9 @@
   The following files contains the documentation used to generate this page: 
   - common/user-agent.h
 
-==========
-Structures
-==========
+=========
+Datatypes
+=========
 
 .. doxygenstruct:: user_agent
 .. doxygenstruct:: ua_attr

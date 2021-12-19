@@ -5,9 +5,9 @@
   The following files contains the documentation used to generate this page: 
   - common/websockets.h
 
-==========
-Structures
-==========
+=========
+Datatypes
+=========
 
 .. doxygenstruct:: websockets
 .. doxygenstruct:: ws_attr

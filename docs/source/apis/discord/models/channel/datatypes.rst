@@ -7,9 +7,9 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-==========
-Structures
-==========
+=========
+Datatypes
+=========
 
-.. doxygenfile:: specs-code/discord/gateway.h
+.. doxygenfile:: specs-code/discord/channel.h
     :sections: detaileddescription briefdescription innerclass enum public-type public-attrib

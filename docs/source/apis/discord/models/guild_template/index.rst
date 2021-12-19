@@ -16,4 +16,4 @@ Guild Template
    :glob:
    :maxdepth: 2
 
-   structures
+   datatypes

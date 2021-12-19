@@ -7,9 +7,9 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-==========
-Structures
-==========
+=========
+Datatypes
+=========
 
-.. doxygenfile:: specs-code/discord/invite.h
+.. doxygenfile:: specs-code/discord/stage_instance.h
     :sections: detaileddescription briefdescription innerclass enum public-type public-attrib
