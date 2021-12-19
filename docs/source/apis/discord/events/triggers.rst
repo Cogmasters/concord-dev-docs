@@ -16,11 +16,6 @@ Set On Command
 
 .. doxygenfunction:: discord_set_on_command
 
-Set On Event Raw
-----------------
-
-.. doxygenfunction:: discord_set_on_event_raw
-
 Set On Idle
 -----------
 

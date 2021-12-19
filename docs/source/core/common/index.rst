@@ -3,27 +3,34 @@
     please head to github.com/cee-studio/orca if you want to contribute!
 
   The following files contains the documentation used to generate this page: 
-  - common/types.h
+  - common/common.h
 
-====================
-Orca Types Reference
-====================
+=====================
+Orca Common Reference
+=====================
 
 Primitives
 ----------
 
 .. doxygengroup:: OrcaTypes
 
+Global Resources
+----------------
+
+.. doxygenfunction:: orca_global_init()
+.. doxygenfunction:: orca_global_cleanup()
+
 Error Codes
 -----------
 
-Orca API
-^^^^^^^^
+Common
+^^^^^^
 
 .. doxygengroup:: OrcaCodes
+.. doxygenfunction:: orca_strerror
 
-Discord API
-^^^^^^^^^^^
+Discord
+^^^^^^^
 
 .. doxygengroup:: OrcaDiscordCodes
 

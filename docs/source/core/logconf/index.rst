@@ -10,18 +10,42 @@ Modular Logging Reference
 =========================
 
 An add-on to the popular `log.c <https://github.com/rxi/log.c>`__
-logging library. Its goal is to promote modularity over the existing
-functionalities. All functions from ``log.c`` are included and expect 
-them to behave as the original. The following outlines the modular logging
-functionalities.
+logging library that adds modularity over the existing functionalities.
+All functions from ``log.c`` are included and can be expected to behave the same.
+
+The following outlines the modular logging functionalities.
 
 Datatypes
 ---------
 
 .. doxygenstruct:: logconf
-.. doxygenstruct:: loginfo
+
+Constants
+---------
+
 .. doxygendefine:: LOGCONF_ID_LEN
 .. doxygendefine:: LOGCONF_PATH_MAX
+
+Configure logging via a JSON file
+---------------------------------
+
+.. doxygenfunction:: logconf_setup
+
+Get file field
+^^^^^^^^^^^^^^
+
+.. doxygenfunction:: logconf_get_field
+
+Branch a logging module
+-----------------------
+
+.. doxygenfunction:: logconf_branch
+
+Cleanup
+-------
+
+.. doxygenfunction:: logconf_cleanup
+
 
 Logging
 -------
@@ -34,41 +58,17 @@ Logging
 .. doxygendefine:: logconf_fatal
 .. doxygendefine:: logconf_log
 
-HTTP Logging
-------------
+HTTP
+^^^^
 
 .. doxygenfunction:: logconf_http
+.. doxygenstruct:: loginfo
 
-Configuring Via a Config File
------------------------------
-
-.. doxygenfunction:: logconf_setup
-
-Configuring Manually
---------------------
+Configuring logging manually
+----------------------------
 
 .. doxygenfunction:: logconf_set_quiet
 .. doxygenfunction:: logconf_set_level
 .. doxygenfunction:: logconf_add_fp
 .. doxygenfunction:: logconf_add_callback
 .. doxygenfunction:: logconf_set_lock
-
-Branch a Logging Module
------------------------
-
-.. doxygenfunction:: logconf_branch
-
-Cleanup
--------
-
-.. doxygenfunction:: logconf_cleanup
-
-Utils
------
-
-.. doxygenfunction:: logconf_get_field
-
-log.c Borrowed Datatypes
-------------------------
-
-.. doxygengroup:: Log_C_Datatypes

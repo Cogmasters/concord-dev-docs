@@ -18,11 +18,10 @@ Thread Pool Work Scheduling
 
 ``Orca-Discord`` provides a threadpool which can be used to run the events callbacks.
 
-The default size for the threadpool and its queue are 1 and 8 respectively, and those can be changed by settings the value of their environment variables counterparts: ``DISCORD_THREADPOOL_SIZE`` and ``DISCORD_THREADPOOL_QUEUE_SIZE``.
+The default size for the threadpool and its queue are 2 and 8 respectively, and those can be changed by settings the value of their environment variables counterparts: ``ORCA_THREADPOOL_SIZE`` and ``ORCA_THREADPOOL_QUEUE_SIZE``.
 
 .. note::
-   The threadpool is unique per client. The total amount of threads pre-allocated is
-   `DISCORD_THREADPOOL_SIZE * number of clients initialized`.
+   The threadpool is shared amongst all clients.
 
 .. seealso::
    For a quick example check `Example`_.
@@ -62,8 +61,8 @@ Example
 
     int main(void)
     {
-      setenv("DISCORD_THREADPOOL_SIZE", "4", 1);
-      setenv("DISCORD_THREADPOOL_QUEUE_SIZE", "128", 1);
+      setenv("ORCA_THREADPOOL_SIZE", "4", 1);
+      setenv("ORCA_THREADPOOL_QUEUE_SIZE", "128", 1);
       struct discord *client = discord_init(TOKEN);
 
       discord_set_event_scheduler(client, &scheduler);

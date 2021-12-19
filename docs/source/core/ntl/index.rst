@@ -23,4 +23,7 @@ Methods
    :glob:
    :maxdepth: 1
 
-   methods/*
+   methods/initializer
+   methods/utils
+   methods/serializer
+   methods/deserializer

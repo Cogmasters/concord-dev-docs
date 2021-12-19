@@ -10,6 +10,7 @@ Structures
 ==========
 
 .. doxygenstruct:: websockets
+.. doxygenstruct:: ws_attr
 .. doxygenstruct:: ws_info
 .. doxygenstruct:: ws_callbacks
 .. doxygenenum:: ws_status
