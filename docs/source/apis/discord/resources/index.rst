@@ -1,8 +1,8 @@
-==============
-Discord Models
-==============
+=========
+Resources
+=========
 
-The following section outlines the Discord API models
+The following section outlines the Discord API requests and datatypes.
 
 .. toctree::
    :caption: Table of Contents
