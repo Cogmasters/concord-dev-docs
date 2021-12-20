@@ -11,7 +11,6 @@ The following section outlines the Discord API Client handle and utilities
    structures
    initialization
    settings
-   scheduler
    error
    connecting
    utils

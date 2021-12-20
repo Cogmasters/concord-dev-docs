@@ -7,21 +7,21 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-===============
-Event Scheduler
-===============
+=========
+Scheduler
+=========
 
-By default every event emitter will execute its callback from the event-loop thread, meaning that during the callback execution the bot will be blocked from reacting to any other events, which quickly becomes a nuisance as your bot increases in size. This sections outlines the built-in methods for providing scalability to your application, so each event may be dealt with asychronously.
+The event scheduler gives power to the user for overriding or adding his own logic on top of Orca's default event-emitting behavior. This section outlines the scheduler built-in methods so that the user may take full advantage of it.
 
 Thread Pool Work Scheduling
 ---------------------------
 
-``Orca-Discord`` provides a threadpool which can be used to run the events callbacks.
+``Orca`` provides a threadpool that can be used to run the event callbacks from.
 
-The default size for the threadpool and its queue are 2 and 8 respectively, and those can be changed by settings the value of their environment variables counterparts: ``ORCA_THREADPOOL_SIZE`` and ``ORCA_THREADPOOL_QUEUE_SIZE``.
+The default size for the threadpool and its queue are 2 and 8 respectively, and those can be changed by settings the value of their respective environment variables: ``ORCA_THREADPOOL_SIZE`` and ``ORCA_THREADPOOL_QUEUE_SIZE``.
 
 .. note::
-   The threadpool is shared amongst all clients.
+   The threadpool is shared amongst ALL clients initialized from the same proccess.
 
 .. seealso::
    For a quick example check `Example`_.
