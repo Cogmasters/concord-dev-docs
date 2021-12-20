@@ -7,8 +7,8 @@
   - discord-internal.h (for private datatypes)
   - specs/discord/ (for generated datatypes)
 
-==========
-Structures
-==========
+=========
+Datatypes
+=========
 
 .. doxygenstruct:: discord
