@@ -261,8 +261,8 @@ TAB_SIZE               = 4
 # commands \{ and \} for these it is advised to use the version @{ and @} or use
 # a double escape (\\{ and \\})
 
-ALIASES += ORCA_ret_obj{2}="@param \1 if successful, the response's \2 object^^"
-ALIASES += ORCA_ret_list{2}="@param \1 if successful, the response's null-terminated list of \2 objects^^"
+ALIASES += ORCA_ret_obj{2}="@param \1 if successful, a @ref \2 that should be free'd with `\2_cleanup()`^^"
+ALIASES += ORCA_ret_list{2}="@param \1 if successful, a null-terminated list of @ref \2, that should be free'd with `\2_list_free()`^^"
 ALIASES += ORCA_return="@return @ref ORCAcode for how the operation went, @ref ORCA_OK means nothing out of the ordinary^^"
 
 # This tag can be used to specify a number of word-keyword mappings (TCL only).
