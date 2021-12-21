@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>discord_clone - create a Discord client clone &#8212; Orca  documentation</title>
+    <title>discord_clone - clone a Discord client handle &#8212; Orca  documentation</title>
     
   <link href="../../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -174,7 +174,7 @@
      </li>
      <li class="toctree-l3 current active">
       <a class="current reference internal" href="#">
-       discord_clone - create a Discord client clone
+       discord_clone - clone a Discord client handle
       </a>
      </li>
      <li class="toctree-l3">
@@ -195,6 +195,11 @@
      <li class="toctree-l3">
       <a class="reference internal" href="discord_get_ping.html">
        discord_get_ping - get latency between client and Discord
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="discord_get_self.html">
+       discord_get_self - get the client’s cached user
       </a>
      </li>
      <li class="toctree-l3">
@@ -225,6 +230,11 @@
      <li class="toctree-l3">
       <a class="reference internal" href="discord_set_prefix.html">
        discord_set_prefix - set a default prefix for commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="discord_set_presence.html">
+       discord_set_presence - set client status
       </a>
      </li>
      <li class="toctree-l3">
@@ -1296,8 +1306,8 @@
               
               <div>
                 
-  <section id="discord-clone-create-a-discord-client-clone">
-<h1>discord_clone - create a Discord client clone<a class="headerlink" href="#discord-clone-create-a-discord-client-clone" title="Permalink to this headline">¶</a></h1>
+  <section id="discord-clone-clone-a-discord-client-handle">
+<h1>discord_clone - clone a Discord client handle<a class="headerlink" href="#discord-clone-clone-a-discord-client-handle" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_clone">
 <span class="target" id="discord_8h_1aa350d6bc95fb4b4969a9a8025233d38f"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">discord_clone</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">orig_client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_clone" title="Permalink to this definition">¶</a><br /></dt>
