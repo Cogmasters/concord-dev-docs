@@ -7,7 +7,7 @@ The following section outlines the Discord API Client handle and utilities
 .. toctree::
    :caption: Table of Contents
    :glob:
-   :maxdepth: 2
+   :maxdepth: 1
 
    datatypes
    methods/*
