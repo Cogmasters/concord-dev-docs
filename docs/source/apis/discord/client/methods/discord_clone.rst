@@ -8,7 +8,7 @@
   - specs/discord/ (for generated datatypes)
 
 =============================================
-discord_clone - create a Discord client clone
+discord_clone - clone a Discord client handle
 =============================================
 
 .. doxygenfunction:: discord_clone
