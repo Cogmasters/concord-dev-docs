@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     #include <orca/discord.h>
     #include <orca/work.h> // use orca's threadpool
 

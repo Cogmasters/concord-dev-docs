@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     #include <inttypes.h> // PRIu64
 
     // see https://discord.com/developers/docs/reference#message-formatting-formats

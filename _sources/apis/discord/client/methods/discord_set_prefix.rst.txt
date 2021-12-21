@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     struct discord *client = discord_init(BOT_TOKEN);
     discord_set_prefix(client, "#!");
     // triggers at '#!foo'

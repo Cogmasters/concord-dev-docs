@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     void on_ping(struct discord *client, const struct discord_message *msg)
     {
       char text[256];

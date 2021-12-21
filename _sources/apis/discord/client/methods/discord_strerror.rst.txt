@@ -18,6 +18,7 @@ Example
 -------
 
 .. code:: c
+
     /* Attempt to send a message to a invalid channel (id 0) */
     void on_force_error(struct discord *client, 
                         const struct discord_message *msg)

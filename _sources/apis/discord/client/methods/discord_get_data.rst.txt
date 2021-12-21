@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     void on_ready(struct discord *client) 
     {
       char *text = discord_get_data(client);

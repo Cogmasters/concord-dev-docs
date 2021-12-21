@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     struct discord *client = discord_init(BOT_TOKEN);
     // this will implicitly set intents for channel and direct messages
     discord_set_on_message_create(client, &on_msg);

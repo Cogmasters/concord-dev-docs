@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     void on_reconnect(struct discord *client, const struct discord_message *msg)
     {
       discord_reconnect(client, true);

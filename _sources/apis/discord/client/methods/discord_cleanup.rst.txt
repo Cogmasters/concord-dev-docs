@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     void on_ready(struct discord *client) 
     {
       log_info("Up and running!");
