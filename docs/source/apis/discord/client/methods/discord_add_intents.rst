@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     discord_event_scheduler_t scheduler(struct discord *client,
                                         struct sized_buffer *data,
                                         enum discord_gateway_events event)
@@ -46,4 +47,3 @@ Example
       discord_run(client);
       discord_cleanup(client);
     }
-

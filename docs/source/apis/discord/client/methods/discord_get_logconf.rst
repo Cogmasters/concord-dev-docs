@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     struct discord *client = discord_init(BOT_TOKEN);
     struct logconf *conf = discord_get_logconf(client);
 

@@ -17,6 +17,7 @@ Example
 -------
 
 .. code:: c
+
     void on_shutdown(struct discord *client, const struct discord_message *msg)
     {
       discord_shutdown(client);
