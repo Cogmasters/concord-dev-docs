@@ -5,7 +5,9 @@ Run the following commands from your `concord/` repository
 ## Setting Up
 
 Clone this repository into `concord/`
-* $ `git clone https://github.com/Cogmasters/concord-docs`
+```sh
+$ git clone https://github.com/Cogmasters/concord-docs
+```
 
 ### Installing Dependencies
 
