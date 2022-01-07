@@ -1297,10 +1297,26 @@
                 
   <section id="discord-set-prefix-set-a-default-prefix-for-commands">
 <h1>discord_set_prefix - set a default prefix for commands<a class="headerlink" href="#discord-set-prefix-set-a-default-prefix-for-commands" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_set_prefix” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_set_prefix">
+<span class="target" id="discord_8h_1a13d9f16d62fea7cebdb6c24d57f685a1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_set_prefix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">prefix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_set_prefix" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set a mandatory prefix before commands. </p>
+<p>
+Example: If <em>‘help’</em> is a command and <em>‘!’</em> prefix is set, the command will only be validated if <em>‘!help’</em> is sent <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="../../events/set_callbacks.html#discord_8h_1a9f98f73563958950143a6aba85fbdc1b"><span class="std std-ref">discord_set_on_command()</span></a></p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>prefix</strong> – the prefix that should accompany any command </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">discord</span> <span class="o">*</span><span class="n">client</span> <span class="o">=</span> <span class="n">discord_init</span><span class="p">(</span><span class="n">BOT_TOKEN</span><span class="p">);</span>

@@ -1297,14 +1297,64 @@
                 
   <section id="discord-strerror-return-string-describing-ccordcode-value">
 <h1>discord_strerror() - return string describing <code class="docutils literal notranslate"><span class="pre">CCORDcode</span></code> value<a class="headerlink" href="#discord-strerror-return-string-describing-ccordcode-value" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygengroup: Cannot find group “ConcordDiscordCodes” in doxygen xml output for project “Orca” from directory: ../xml</p>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group__ConcordDiscordCodes"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">ConcordDiscordCodes</span></span></dt>
+<dd><p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="../../../core/common/index.html#group__ConcordCodes"><span class="std std-ref">ConcordCodes</span></a> for non-Discord errors </p>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CCORD_DISCORD_JSON_CODE">
+<span class="target" id="group__ConcordDiscordCodes_1ga108e5c7e599dcf335f0d883f5c051a4e"></span><span class="sig-name descname"><span class="n"><span class="pre">CCORD_DISCORD_JSON_CODE</span></span></span> <span class="pre">1</span><a class="headerlink" href="#c.CCORD_DISCORD_JSON_CODE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Received a JSON error message </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CCORD_DISCORD_BAD_AUTH">
+<span class="target" id="group__ConcordDiscordCodes_1ga9355844f4e91b5a12e1bc25540cac2e4"></span><span class="sig-name descname"><span class="n"><span class="pre">CCORD_DISCORD_BAD_AUTH</span></span></span> <span class="pre">2</span><a class="headerlink" href="#c.CCORD_DISCORD_BAD_AUTH" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Bad authentication token </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CCORD_DISCORD_RATELIMIT">
+<span class="target" id="group__ConcordDiscordCodes_1ga17b4baf3b66ea2862c4981e4f3fc1639"></span><span class="sig-name descname"><span class="n"><span class="pre">CCORD_DISCORD_RATELIMIT</span></span></span> <span class="pre">3</span><a class="headerlink" href="#c.CCORD_DISCORD_RATELIMIT" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Being ratelimited </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CCORD_DISCORD_CONNECTION">
+<span class="target" id="group__ConcordDiscordCodes_1ga4f5d0733373b4e252a94665294c316bf"></span><span class="sig-name descname"><span class="n"><span class="pre">CCORD_DISCORD_CONNECTION</span></span></span> <span class="pre">4</span><a class="headerlink" href="#c.CCORD_DISCORD_CONNECTION" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Couldn’t establish connection to Discord </p>
+</dd></dl>
+
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_strerror” in doxygen xml output for project “Orca” from directory: ../xml</p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_strerror">
+<span class="target" id="discord_8h_1a7f7f508b62f7d4f0a2d0e9e2bcd5f302"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">discord_strerror</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../../core/common/index.html#c.CCORDcode" title="CCORDcode"><span class="n"><span class="pre">CCORDcode</span></span></a><span class="w"> </span><span class="n"><span class="pre">code</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_strerror" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the meaning of CCORDcode. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>in case of a <a class="reference internal" href="#group__ConcordDiscordCodes_1ga108e5c7e599dcf335f0d883f5c051a4e"><span class="std std-ref">CCORD_DISCORD_JSON_CODE</span></a> and if <code class="docutils literal notranslate"><span class="pre">client</span></code> is provided, a much more descriptive JSON message will be returned instead.</p>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>code</strong> – the CCORDcode to be explained </p></li>
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a>, NULL for generic error descriptions </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a string containing the code meaning </p>
+</dd>
+</dl>
+</dd></dl>
+
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Attempt to send a message to a invalid channel (id 0) */</span>

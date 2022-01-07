@@ -1297,10 +1297,23 @@
                 
   <section id="discord-clone-clone-a-discord-client-handle">
 <h1>discord_clone - clone a Discord client handle<a class="headerlink" href="#discord-clone-clone-a-discord-client-handle" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_clone” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_clone">
+<span class="target" id="discord_8h_1aa350d6bc95fb4b4969a9a8025233d38f"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">discord_clone</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">orig_client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_clone" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Clone a discord client. </p>
+<p>Should be called before entering a thread, to ensure each thread has its own client instance with unique buffers, url and headers </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>orig_client</strong> – the original client created with <a class="reference internal" href="discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the original client clone </p>
+</dd>
+</dl>
+</dd></dl>
+
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;concord/discord.h&gt;</span><span class="cp"></span>

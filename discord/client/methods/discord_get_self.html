@@ -1297,10 +1297,23 @@
                 
   <section id="discord-get-self-get-the-client-s-cached-user">
 <h1>discord_get_self - get the client’s cached user<a class="headerlink" href="#discord-get-self-get-the-client-s-cached-user" title="Permalink to this headline">¶</a></h1>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_get_self">
+<span class="target" id="discord_8h_1a1311c8675b8a237215c969049348d58c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_user</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_self</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_self" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the client’s cached user. </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_get_self” in doxygen xml output for project “Orca” from directory: ../xml</p>
+<p>the returned structure should NOT be modified </p>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">on_ready</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord</span> <span class="o">*</span><span class="n">client</span><span class="p">)</span>

@@ -1297,10 +1297,22 @@
                 
   <section id="discord-timestamp-get-current-timestamp-client-s-concept-of-now">
 <h1>discord_timestamp - get current timestamp (client’s concept of <code class="docutils literal notranslate"><span class="pre">now</span></code>)<a class="headerlink" href="#discord-timestamp-get-current-timestamp-client-s-concept-of-now" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_timestamp” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_timestamp">
+<span class="target" id="discord_8h_1a15a8fe1a6d3f30c18c6985b3afae11f5"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_timestamp</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_timestamp" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the current timestamp (in milliseconds) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the timestamp in milliseconds </p>
+</dd>
+</dl>
+</dd></dl>
+
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;inttypes.h&gt; // PRIu64</span><span class="cp"></span>

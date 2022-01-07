@@ -1297,10 +1297,20 @@
                 
   <section id="discord-remove-intents-remove-events-to-listen-to">
 <h1>discord_remove_intents - remove events to listen to<a class="headerlink" href="#discord-remove-intents-remove-events-to-listen-to" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_remove_intents” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_remove_intents">
+<span class="target" id="discord_8h_1ac6a9d904378b46a72c64ade07ac02f43"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_remove_intents</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="n"><span class="pre">discord_gateway_intents</span></span><span class="w"> </span><span class="n"><span class="pre">code</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_remove_intents" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Unsubscribe from Discord Events. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>code</strong> – the intents opcode, can be set as bitmask operation Ex: 1 &lt;&lt; 0 | 1 &lt;&lt; 1 | 1 &lt;&lt; 4 </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">discord</span> <span class="o">*</span><span class="n">client</span> <span class="o">=</span> <span class="n">discord_init</span><span class="p">(</span><span class="n">BOT_TOKEN</span><span class="p">);</span>

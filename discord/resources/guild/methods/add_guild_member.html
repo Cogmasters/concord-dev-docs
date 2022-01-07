@@ -1287,13 +1287,41 @@
                 
   <section id="add-guild-member">
 <h1>Add Guild Member<a class="headerlink" href="#add-guild-member" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_add_guild_member” in doxygen xml output for project “Orca” from directory: ../xml</p>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_add_guild_member">
+<span class="target" id="discord_8h_1ab46d8c8354492d0800e6b38f411b27a4"></span><a class="reference internal" href="../../../../core/common/index.html#c.CCORDcode" title="CCORDcode"><span class="n"><span class="pre">CCORDcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_add_guild_member</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <a class="reference internal" href="../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">user_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_add_guild_member_params</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_guild_member</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_add_guild_member" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Adds a user to the guild. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Requires valid oauth2 access token for the user with <code class="docutils literal notranslate"><span class="pre">guilds.join</span></code> scope </p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Fires a <code class="docutils literal notranslate"><span class="pre">Guild</span> <span class="pre">Member</span> <span class="pre">Add</span></code> event </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The bot must be a member of the guild with CREATE_INSTANT_INVITE permission</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/methods/discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>guild_id</strong> – guild to add the member to </p></li>
+<li><p><strong>user_id</strong> – the user to be added </p></li>
+<li><p><strong>request</strong> – parameters </p></li>
+<li><p><strong>ret</strong> – if successful, a discord_guild_member that should be free’d with <code class="docutils literal notranslate"><span class="pre">discord_guild_member_cleanup()</span></code> </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="../../../../core/common/index.html#group__ConcordCodes_1ga4ca5a90a1068552190074f603f68b587"><span class="std std-ref">CCORDcode</span></a> for how the operation went, <a class="reference internal" href="../../../../core/common/index.html#group__ConcordCodes_1ga0b2454f88baeff7a3d492bb59227ab0f"><span class="std std-ref">CCORD_OK</span></a> means nothing out of the ordinary </p>
+</dd>
+</dl>
+</dd></dl>
+
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “discord_add_guild_member_params” in doxygen xml output for project “Orca” from directory: ../xml</p>
+<p>doxygenstruct: Cannot find class “discord_add_guild_member_params” in doxygen xml output for project “Concord” from directory: ../xml</p>
 </div>
 </section>
 

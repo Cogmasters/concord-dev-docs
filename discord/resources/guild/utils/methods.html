@@ -1287,14 +1287,37 @@
                 
   <section id="utils">
 <h1>Utils<a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_disconnect_guild_member” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find function “discord_presence_add_activity” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_disconnect_guild_member">
+<span class="target" id="discord_8h_1a8df0bea1d58385ad25691348567f0f79"></span><a class="reference internal" href="../../../../core/common/index.html#c.CCORDcode" title="CCORDcode"><span class="n"><span class="pre">CCORDcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_disconnect_guild_member</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <a class="reference internal" href="../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">user_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_guild_member</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_disconnect_guild_member" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Disconnect a member from voice channel. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/methods/discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>guild_id</strong> – the guild the member belongs to </p></li>
+<li><p><strong>user_id</strong> – the user to be disconnected </p></li>
+<li><p><strong>ret</strong> – if successful, a discord_member that should be free’d with <code class="docutils literal notranslate"><span class="pre">discord_member_cleanup()</span></code> </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="../../../../core/common/index.html#group__ConcordCodes_1ga4ca5a90a1068552190074f603f68b587"><span class="std std-ref">CCORDcode</span></a> for how the operation went, <a class="reference internal" href="../../../../core/common/index.html#group__ConcordCodes_1ga0b2454f88baeff7a3d492bb59227ab0f"><span class="std std-ref">CCORD_OK</span></a> means nothing out of the ordinary </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.discord_presence_add_activity">
+<span class="target" id="discord_8h_1a98855f8e8996b75d6ec46f6278404940"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_presence_add_activity</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_presence_status</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">presence</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_activity</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">activity</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_presence_add_activity" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Helper function to add presence activities. </p>
+<p>
+This function is a wrapper over ntl_append2() <dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="../../../client/methods/discord_set_presence.html#discord_8h_1a85aa60632cd13ca917521c5166902719"><span class="std std-ref">discord_set_presence()</span></a></p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
 </section>
 
 
