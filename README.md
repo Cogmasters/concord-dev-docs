@@ -10,7 +10,7 @@ Clone this repository into `concord/`
 ### Installing Dependencies
 
 * $ `sudo apt install doxygen && pip install sphinx && && pip install pydata_sphinx_theme && pip install breathe`
-* $ `make cog_utils && cp concord-docs/Doxyfile Doxyfile`
+* $ `make docs && cp concord-docs/Doxyfile Doxyfile`
 
 ### Generating Static Files
 

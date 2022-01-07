@@ -15,7 +15,7 @@ jobs:
         run: |
           echo "Preparing Concord"
           git clone https://github.com/Cogmasters/concord
-          make -C concord cog_utils
+          make -C concord docs
           cp Doxyfile concord/Doxyfile
           echo "Install Sphinx"
           pip install sphinx
