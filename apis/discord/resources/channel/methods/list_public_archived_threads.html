@@ -1313,12 +1313,8 @@
 <li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/methods/discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
 <li><p><strong>channel_id</strong> – the channel to be searched for threads </p></li>
 <li><p><strong>before</strong> – return threads before this timestamp </p></li>
-<li><p><strong>limit</strong> – maximum number of threads to return </p></li>
-<li><p><strong>body</strong> – if successful, a discord_thread_response_body that should be free’d with <code class="docutils literal notranslate"><span class="pre">discord_thread_response_body_cleanup()</span></code> </p></li>
+<li><p><strong>limit</strong> – maximum number of threads to return &#64;ORCA_ret_obj{body, discord_thread_response_body} &#64;ORCA_return </p></li>
 </ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><a class="reference internal" href="../../../../../core/common/index.html#group__OrcaCodes_1ga9cf2c634d026f2b4665d1859fe596b90"><span class="std std-ref">ORCAcode</span></a> for how the operation went, <a class="reference internal" href="../../../../../core/common/index.html#group__OrcaCodes_1gab234ec8eeddc7f0abf7324b995fcfcb4"><span class="std std-ref">ORCA_OK</span></a> means nothing out of the ordinary </p>
 </dd>
 </dl>
 </dd></dl>
