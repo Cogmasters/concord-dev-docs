@@ -26,9 +26,9 @@ def setup(app):
 
 # -- Project information -----------------------------------------------------
 
-project = 'Orca'
-copyright = '2021, Cee-Studio'
-author = 'Cee-Studio'
+project = 'Concord'
+copyright = '2022, Cogmasters'
+author = 'Cogmasters'
 
 
 # -- General configuration ---------------------------------------------------
@@ -76,24 +76,21 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "Github",
-            "url": "https://github.com/cee-studio/orca",
+            "url": "https://github.com/Cogmasters/concord",
             "icon": "fab fa-github"
         },
         {
             "name": "Discord",
-            "url": "https://discord.gg/nBUqrWf",
+            "url": "https://discord.gg/Y7Xa6MA82v",
             "icon": "fab fa-discord"
         }
-    ],
-    "external_links": [
-        {"name": "Cee Studio", "url": "https://www.cee.studio/"}
-    ],
+    ]
     "use_edit_page_button": True
 }
 html_context = {
     # "github_url": "https://github.com", # or your GitHub Enterprise interprise
-    "github_user": "cee-studio",
-    "github_repo": "orca-docs",
+    "github_user": "Cogmasters",
+    "github_repo": "concord-docs",
     "github_version": "master",
     "doc_path": "docs/source",
 }
