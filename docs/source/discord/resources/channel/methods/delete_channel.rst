@@ -18,12 +18,7 @@ Example
 
 .. code:: c
    
-   void on_message(struct discord *client, const struct discord_message *msg)
-   {
-     if (0 == strcmp(msg->content, "!delete")) {
-       struct discord_channel ret;
-       discord_delete_channel(client, msg->channel_id, &ret);
+   struct discord_channel ret;
+   discord_delete_channel(client, msg->channel_id, &ret);
        
-       printf("Deleted channel %s", ret.name);
-     }
-   }
+   printf("Deleted channel %s", ret.name);
