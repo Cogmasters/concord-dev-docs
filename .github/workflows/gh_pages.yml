@@ -13,10 +13,10 @@ jobs:
 
       - name: Dependencies
         run: |
-          echo "Preparing Orca"
-          git clone https://github.com/cee-studio/orca
-          cd orca && ./scripts/get-cee-utils.sh && cd ..
-          cp Doxyfile orca/Doxyfile
+          echo "Preparing Concord"
+          git clone https://github.com/Cogmasters/concord
+          make -C concord cog_utils
+          cp Doxyfile concord/Doxyfile
           echo "Install Sphinx"
           pip install sphinx
           pip install pydata_sphinx_theme
@@ -26,10 +26,10 @@ jobs:
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.3.1
         with:
-          working-directory: 'orca/'
+          working-directory: 'concord/'
 
-      - name: Move XML to Orca-Docs
-        run: sudo mv orca/docs/xml docs/
+      - name: Move XML to Concord-Docs
+        run: sudo mv concord/docs/xml docs/
 
       - name: Breathe Action
         run: make -C docs html
