@@ -1313,20 +1313,10 @@
                 
   <section id="discord-reconnect-reconnect-a-on-going-connection">
 <h1>discord_reconnect - reconnect a on-going connection<a class="headerlink" href="#discord-reconnect-reconnect-a-on-going-connection" title="Permalink to this headline">¶</a></h1>
-<dl class="c function">
-<dt class="sig sig-object c" id="c.discord_reconnect">
-<span class="target" id="discord_8h_1a6accf8c8d133a8b676b6838da2912f94"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_reconnect</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n"><span class="pre">resume</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_reconnect" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Gracefully reconnects an ongoing Discord connection. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>client</strong> – the client created with <a class="reference internal" href="discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
-<li><p><strong>resume</strong> – true to attempt to resume to previous session, false restart a fresh session </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenfunction: Cannot find function “discord_reconnect” in doxygen xml output for project “Orca” from directory: ../xml</p>
+</div>
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">on_reconnect</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord</span> <span class="o">*</span><span class="n">client</span><span class="p">,</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">discord_message</span> <span class="o">*</span><span class="n">msg</span><span class="p">)</span>

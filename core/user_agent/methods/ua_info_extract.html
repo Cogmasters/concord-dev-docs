@@ -462,14 +462,17 @@
 <h1>ua_info_extract - extract information on latest request<a class="headerlink" href="#ua-info-extract-extract-information-on-latest-request" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.ua_info_extract">
-<span class="target" id="user-agent_8h_1a3a11940b4a9924d30f3b0be181846124"></span><a class="reference internal" href="../../common/index.html#c.ORCAcode" title="ORCAcode"><span class="n"><span class="pre">ORCAcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ua_info_extract</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.ua_conn" title="ua_conn"><span class="n"><span class="pre">ua_conn</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.ua_info" title="ua_info"><span class="n"><span class="pre">ua_info</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">info</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ua_info_extract" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="user-agent_8h_1a3a504b9a56f608ca1d3b07d909bd15d3"></span><span class="n"><span class="pre">CCORDcode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ua_info_extract</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.ua_conn" title="ua_conn"><span class="n"><span class="pre">ua_conn</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.ua_info" title="ua_info"><span class="n"><span class="pre">ua_info</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">info</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ua_info_extract" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Extract information from <code class="docutils literal notranslate"><span class="pre">conn</span></code> previous request. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>conn</strong> – the connection handle </p></li>
-<li><p><strong>info</strong> – handle to store information on previous request &#64;ORCA_return </p></li>
+<li><p><strong>info</strong> – handle to store information on previous request </p></li>
 </ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>CCORDcode for how the operation went, CCORD_OK means nothing out of the ordinary </p>
 </dd>
 </dl>
 </dd></dl>

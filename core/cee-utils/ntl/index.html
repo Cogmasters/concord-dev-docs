@@ -467,18 +467,41 @@
 <h1>Null-Terminated List Reference<a class="headerlink" href="#null-terminated-list-reference" title="Permalink to this headline">¶</a></h1>
 <section id="datatypes">
 <h2>Datatypes<a class="headerlink" href="#datatypes" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find class “sized_buffer” in doxygen xml output for project “Orca” from directory: ../xml</p>
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.sized_buffer">
+<span class="target" id="structsized__buffer"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sized_buffer</span></span></span><a class="headerlink" href="#c.sized_buffer" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Sized buffer. </p>
+<p>A very important data structure that is used pervasively in the conversion between JSON strings and C structs, http request/response body </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.sized_buffer.start">
+<span class="target" id="structsized__buffer_1a0b8bd4058288e58d800c1a688a9f1d68"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">start</span></span></span><a class="headerlink" href="#c.sized_buffer.start" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the buffer’s start </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.sized_buffer.size">
+<span class="target" id="structsized__buffer_1a0bf8ee0ebe9fb98a35c6e8f6d23cd769"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><a class="headerlink" href="#c.sized_buffer.size" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the buffer’s size in bytes </p>
+</dd></dl>
+
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygentypedef: Cannot find typedef “ntl_t” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygendefine: Cannot find define “NTL_T” in doxygen xml output for project “Orca” from directory: ../xml</p>
-</div>
+</dd></dl>
+
+<dl class="c type">
+<dt class="sig sig-object c" id="c.ntl_t">
+<span class="target" id="ntl_8h_1a72a2d558dbbf31e384d9bcbcdb327663"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">ntl_t</span></span></span><a class="headerlink" href="#c.ntl_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Null-terminated list helper type. </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.NTL_T">
+<span class="target" id="ntl_8h_1a21b9f892112975c5d88c57e575060954"></span><span class="sig-name descname"><span class="n"><span class="pre">NTL_T</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">t</span></span><span class="sig-paren">)</span> <span class="pre">t</span> <span class="pre">**</span><a class="headerlink" href="#c.NTL_T" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Identification macro for null-terminated lists. </p>
+<p>A macro meant to facillitate the identification of null-terminated lists. </p>
+</dd></dl>
+
 </section>
 <section id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>

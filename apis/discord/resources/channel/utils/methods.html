@@ -1303,57 +1303,18 @@
                 
   <section id="utils">
 <h1>Utils<a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h1>
-<dl class="c function">
-<dt class="sig sig-object c" id="c.discord_overwrite_append">
-<span class="target" id="discord_8h_1a75cc9372b5330d7f1479fd2daaf48b64"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_overwrite_append</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_overwrite</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">permission_overwrites</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">id</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_bitmask_t" title="u64_bitmask_t"><span class="n"><span class="pre">u64_bitmask_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">allow</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_bitmask_t" title="u64_bitmask_t"><span class="n"><span class="pre">u64_bitmask_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">deny</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_overwrite_append" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Append to an overwrite list. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>the list should be freed with <code class="docutils literal notranslate"><span class="pre">discord_overwrite_list_free()</span></code> after its no longer being used</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenfunction: Cannot find function “discord_overwrite_append” in doxygen xml output for project “Orca” from directory: ../xml</p>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>permission_overwrites</strong> – list to be appended to </p></li>
-<li><p><strong>id</strong> – role or user id </p></li>
-<li><p><strong>type</strong> – either 0 (role) or 1 (member) </p></li>
-<li><p><strong>allow</strong> – permission bit set </p></li>
-<li><p><strong>deny</strong> – permission bit set </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="c function">
-<dt class="sig sig-object c" id="c.discord_get_channel_at_pos">
-<span class="target" id="discord_8h_1a309a098a68183a3bf720d00060c38de0"></span><a class="reference internal" href="../../../../../core/common/index.html#c.ORCAcode" title="ORCAcode"><span class="n"><span class="pre">ORCAcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_channel_at_pos</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">guild_id</span></span>, <span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="n"><span class="pre">discord_channel_types</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n"><span class="pre">position</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_channel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_channel_at_pos" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Get a guild’s channel from its given numerical position. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/methods/discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
-<li><p><strong>guild_id</strong> – guild the channel belongs to </p></li>
-<li><p><strong>type</strong> – the channel type where to take position reference from &#64;ORCA_ret_obj{ret, discord_channel} &#64;ORCA_return </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="c function">
-<dt class="sig sig-object c" id="c.discord_delete_messages_by_author_id">
-<span class="target" id="discord_8h_1acc3e6bb474a17a2f2556caadc29c51a7"></span><a class="reference internal" href="../../../../../core/common/index.html#c.ORCAcode" title="ORCAcode"><span class="n"><span class="pre">ORCAcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_delete_messages_by_author_id</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <a class="reference internal" href="../../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">author_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_delete_messages_by_author_id" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Delete messages from a channel by a given author. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/methods/discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
-<li><p><strong>channel_id</strong> – channel where the messages resides </p></li>
-<li><p><strong>author_id</strong> – the user who sent those messages &#64;ORCA_return </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenfunction: Cannot find function “discord_get_channel_at_pos” in doxygen xml output for project “Orca” from directory: ../xml</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenfunction: Cannot find function “discord_delete_messages_by_author_id” in doxygen xml output for project “Orca” from directory: ../xml</p>
+</div>
 </section>
 
 

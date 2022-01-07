@@ -1313,26 +1313,10 @@
                 
   <section id="discord-get-data-get-a-pointer-to-user-arbitrary-data">
 <h1>discord_get_data - get a pointer to user arbitrary data<a class="headerlink" href="#discord-get-data-get-a-pointer-to-user-arbitrary-data" title="Permalink to this headline">¶</a></h1>
-<dl class="c function">
-<dt class="sig sig-object c" id="c.discord_get_data">
-<span class="target" id="discord_8h_1af7534e0384766754eeb77f573dac1a84"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">discord_get_data</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_get_data" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Receive user arbitrary data stored with <a class="reference internal" href="discord_set_data.html#discord_8h_1a2fe34375b2ce557d8ac84a0794063b78"><span class="std std-ref">discord_set_data()</span></a> </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>the user should provide his own locking mechanism to protect his data from race conditions </p>
+<p>doxygenfunction: Cannot find function “discord_get_data” in doxygen xml output for project “Orca” from directory: ../xml</p>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>client</strong> – the client created with <a class="reference internal" href="discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>pointer to user data </p>
-</dd>
-</dl>
-</dd></dl>
-
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">on_ready</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord</span> <span class="o">*</span><span class="n">client</span><span class="p">)</span>
