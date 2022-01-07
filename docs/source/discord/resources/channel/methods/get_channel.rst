@@ -12,3 +12,27 @@ Get Channel
 ===========
 
 .. doxygenfunction:: discord_get_channel
+
+Example
+-------
+
+.. code:: c
+   
+   void on_message(struct discord *client, const struct discord_message *msg)
+   {
+     if (0 == strcmp(msg->content, "?channel")) {
+       struct discord_channel ret;
+       char channel_message[128]
+
+       discord_get_channel(client, msg->channel_id, &ret);
+
+       snprint(channel_message, sizeof(channel_message), "The name of this channel is: %s", ret.name)
+
+       struct discord_create_message_params params = { .content = channel_message };
+      
+       discord_async_next(client, NULL);
+       discord_create_message(client, msg->channel_id, &params, NULL);
+
+       discord_channel_cleanup(&ret);
+     }
+   }
