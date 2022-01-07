@@ -9,11 +9,18 @@ Clone this repository into `concord/`
 
 ### Installing Dependencies
 
-* $ `sudo apt install doxygen && pip install sphinx && && pip install pydata_sphinx_theme && pip install breathe`
-* $ `make docs && cp concord-docs/Doxyfile Doxyfile`
+```sh
+$ sudo apt install doxygen && pip install sphinx && && pip install pydata_sphinx_theme && pip install breathe
+```
+
+```sh
+$ make docs && cp concord-docs/Doxyfile Doxyfile
+```
 
 ### Generating Static Files
 
-* $ `doxygen && mv docs/xml concord-docs/docs/ && make -C concord-docs/docs html`
+```sh
+make -C concord-docs/docs clean && rm -rf concord-docs/docs/xml && doxygen && mv docs/xml concord-docs/docs/ && make -C concord-docs/docs html
+```
 
 Generated files located at `concord-docs/docs/build/html`
