@@ -84,7 +84,7 @@ html_theme_options = {
             "url": "https://discord.gg/Y7Xa6MA82v",
             "icon": "fab fa-discord"
         }
-    ]
+    ],
     "use_edit_page_button": True
 }
 html_context = {
