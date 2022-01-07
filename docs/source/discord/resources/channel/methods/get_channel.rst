@@ -20,7 +20,7 @@ Example
    
    void on_message(struct discord *client, const struct discord_message *msg)
    {
-     if (0 == strcmp(msg->content, "?channel")) {
+     if (0 == strcmp(msg->content, "!channel")) {
        struct discord_channel ret;
        char text[128]
 
