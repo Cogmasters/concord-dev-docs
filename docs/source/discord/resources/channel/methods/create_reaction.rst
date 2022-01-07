@@ -12,3 +12,15 @@ Create Reaction
 ===============
 
 .. doxygenfunction:: discord_create_reaction
+
+Example
+-------
+
+.. code:: c
+   
+   void on_message(struct discord *client, const struct discord_message *msg)
+   {
+     if (0 == strcmp(msg->content, "?react")) {
+       discord_create_reaction(client, msg->channel_id, msg->message_id, NULL, "😄");
+     }
+   }
