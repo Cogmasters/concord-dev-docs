@@ -18,9 +18,6 @@ Example
 
 .. code:: c
    
-   void on_message(struct discord *client, const struct discord_message *msg)
-   {
-     if (0 == strcmp(msg->content, "!react")) {
-       discord_create_reaction(client, msg->channel_id, msg->message_id, NULL, "😄");
-     }
-   }
+  discord_create_reaction(client, msg->channel_id, msg->message_id, NULL, "😄");
+  
+  printf("Reacted to the message.")
