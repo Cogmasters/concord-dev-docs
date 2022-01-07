@@ -47,8 +47,8 @@ primary_domain = 'c'
 # Breathe Configuration
 
 breathe_domain_by_extension = { "h" : "c" }
-breathe_projects = { "Orca": '../xml' }
-breathe_default_project = 'Orca'
+breathe_projects = { "Concord": '../xml' }
+breathe_default_project = 'Concord'
 
 breathe_default_members = ('members', 'undoc-members')
 breathe_show_define_initializer = True
