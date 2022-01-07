@@ -13,3 +13,18 @@ Create Message
 
 .. doxygenfunction:: discord_create_message
 .. doxygenstruct:: discord_create_message_params
+
+Example
+-------
+
+.. code:: c
+   
+   void on_message(struct discord *client, const struct discord_message *msg)
+   {
+     if (0 == strcmp(msg->content, "?ping")) {
+       struct discord_create_message_params params = { .content = "Pong!" };
+      
+       discord_async_next(client, NULL);
+       discord_create_message(client, msg -> channel_id, &params, NULL);
+     }
+   }
