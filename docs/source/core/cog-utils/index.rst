@@ -1,8 +1,8 @@
 ===================
-Cee-Utils Reference
+Cog-Utils Reference
 ===================
 
-The following section outlines Cee-Utils tools used by orca
+The following section outlines Cog-Utils tools used by Concord
 
 .. toctree::
    :caption: Table of Contents
@@ -10,4 +10,3 @@ The following section outlines Cee-Utils tools used by orca
 
    Modular Logging <logconf/index>
    NTL (null-terminated lists) <ntl/index>
-
