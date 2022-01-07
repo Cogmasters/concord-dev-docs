@@ -21,7 +21,7 @@ Example
    
    void on_message(struct discord *client, const struct discord_message *msg)
    {
-     if (0 == strcmp(msg->content, "?ping")) {
+     if (0 == strcmp(msg->content, "!ping")) {
        struct discord_create_message_params params = { .content = "Pong!" };
       
        discord_async_next(client, NULL);
