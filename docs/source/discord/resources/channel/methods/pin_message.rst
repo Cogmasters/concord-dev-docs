@@ -24,3 +24,5 @@ Example
    discord_create_message(client, msg->channel_id, &params, &ret);
    
    discord_pin_message(client, msg->channel_id, ret.id);
+   
+   discord_message_cleanup(&ret);
