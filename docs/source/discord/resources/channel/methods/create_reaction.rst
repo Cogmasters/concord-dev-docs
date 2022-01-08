@@ -18,6 +18,6 @@ Example
 
 .. code:: c
    
-  discord_create_reaction(client, msg->channel_id, msg->message_id, 0, "😄");
+  discord_create_reaction(client, msg->channel_id, msg->id, 0, "😄");
   
   printf("Reacted to the message.");
