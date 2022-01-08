@@ -13,3 +13,20 @@ Edit Message
 
 .. doxygenfunction:: discord_edit_message
 .. doxygenstruct:: discord_edit_message_params
+
+Example
+-------
+
+.. code:: c
+
+   struct discord_message ret;
+   
+   struct discord_create_message_params params = { .content = "Hello there?" };
+   
+   discord_async_next(client, NULL);
+   discord_create_message(client, msg->channel_id, NULL, &ret);
+   
+   struct discord_create_message_params params = { .content = "Hi!\nOh! What a fast response, thank you async!" };
+   
+   discord_async_next(client, NULL);
+   discord_edit_message(client, msg->channel_id, ret.id, NULL, NULL);
