@@ -20,11 +20,11 @@
 
 /* Hide the welcome text */
 .section#welcome-to-concord > h1 {
-    display: none;
+    display: none !important;
 }
 
 .header p {
-    text-indent:0!important;
+    text-indent: 0 !important;
 }
 
 i.fa-github:hover {
