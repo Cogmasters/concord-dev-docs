@@ -18,5 +18,5 @@ Example
 
 .. code:: c
    
-   // The channel that you executed the channel must be a thread.
+   // channel_id must be from a thread channel
    discord_add_thread_member(client, msg->channel_id, msg->author.id); 
