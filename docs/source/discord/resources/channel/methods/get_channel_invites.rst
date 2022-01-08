@@ -25,4 +25,4 @@ Example
       for (int i = 0; ret[i]; ++i)
         printf("%s\n", ret[i]->code);
    
-   discord_invite_list_free(ret);
+    discord_invite_list_free(ret);
