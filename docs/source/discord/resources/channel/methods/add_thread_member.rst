@@ -11,3 +11,13 @@ Add Thread Member
 =================
 
 .. doxygenfunction:: discord_add_thread_member
+
+
+Example
+-------
+
+.. code:: c
+   
+   discord_add_thread_member(client, msg->channel_id, msg->author.id); // The channel that you executed the channel must be a thread.
+   
+   printf("Added user to thread.");
