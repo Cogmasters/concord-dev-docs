@@ -35,3 +35,5 @@ Example
                           .content = "Such a fast response!"
                         },
                         NULL);
+  
+   discord_message_cleanup(&ret); 
