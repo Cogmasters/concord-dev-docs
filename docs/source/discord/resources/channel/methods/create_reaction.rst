@@ -20,4 +20,4 @@ Example
    
   discord_create_reaction(client, msg->channel_id, msg->message_id, NULL, "😄");
   
-  printf("Reacted to the message.")
+  printf("Reacted to the message.");
