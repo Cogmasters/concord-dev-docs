@@ -21,5 +21,4 @@ Example
    
    struct discord_create_message_params params = { .content = "Pong!" };
       
-   discord_async_next(client, NULL);
    discord_create_message(client, msg -> channel_id, &params, NULL);
