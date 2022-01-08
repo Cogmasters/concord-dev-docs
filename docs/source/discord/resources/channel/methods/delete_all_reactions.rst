@@ -22,5 +22,3 @@ Example
        
    struct discord_channel ret;
    discord_delete_all_reactions(client, msg->channel_id, message_id);
-   
-   printf("Removed all reactions.");
