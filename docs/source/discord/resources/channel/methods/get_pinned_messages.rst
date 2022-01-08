@@ -24,3 +24,5 @@ Example
    if (ret)
      for (int i = 0; ret[i]; ++i)
        printf("%s\n", ret[i]->content);
+       
+   discord_message_list_free(ret);
