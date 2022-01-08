@@ -21,10 +21,17 @@ Example
 
    struct discord_message ret;
    
-   struct discord_create_message_params params = { .content = "Hello there?" };
+   discord_create_message(client, 
+                          msg->channel_id,
+                          &(struct discord_create_message_params){ 
+                            .content = "Hello there?" 
+                          },
+                          &ret);
    
-   discord_create_message(client, msg->channel_id, &params, &ret);
-   
-   struct discord_create_message_params paramss = { .content = "Hi!\nOh! What a fast response!" };
-   
-   discord_edit_message(client, msg->channel_id, ret.id, &paramss, NULL);
+   discord_edit_message(client,
+                        msg->channel_id,
+                        ret.id,
+                        &(struct discord_edit_message_params){
+                          .content = "Such a fast response!"
+                        },
+                        NULL);
