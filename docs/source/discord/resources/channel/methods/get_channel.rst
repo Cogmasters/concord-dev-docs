@@ -22,5 +22,5 @@ Example
 
    discord_get_channel(client, msg->channel_id, &ret);
 
-   snprint(text, sizeof(text), "The name of this channel is: %s", ret.name)
+   printf("The name of this channel is: %s", ret.name);
    discord_channel_cleanup(&ret);
