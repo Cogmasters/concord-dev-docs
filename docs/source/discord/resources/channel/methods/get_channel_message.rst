@@ -12,3 +12,22 @@ Get Channel Message
 ===================
 
 .. doxygenfunction:: discord_get_channel_message
+
+Example
+-------
+
+.. code:: c
+
+   struct discord_message ret;
+   struct discord_message rett;
+
+   struct discord_create_message_params params = { .content = "Hey!" };
+
+   discord_create_message(client, msg->channel_id, &params, &rett);
+   
+   discord_get_channel_message(client, msg->channel_id, rett.id, &ret);
+   
+   printf("I said: %s", rett.content);
+   
+   discord_message_cleanup(ret);
+   discord_message_cleanup(rett);
