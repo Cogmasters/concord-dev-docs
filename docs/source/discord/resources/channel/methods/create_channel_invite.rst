@@ -26,4 +26,6 @@ Example
    snprintf(text, sizeof(text), "Created invite: %s", ret.code);
    
    struct discord_create_message_params params = { .content = text };
-   discord_create_message(client, msg -> channel_id, &params, NULL);
+   discord_create_message(client, msg->channel_id, &params, NULL);
+   
+   discord_invite_cleanup(&ret);
