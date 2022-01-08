@@ -23,10 +23,8 @@ Example
    
    struct discord_create_message_params params = { .content = "Hello there?" };
    
-   discord_async_next(client, NULL);
    discord_create_message(client, msg->channel_id, NULL, &ret);
    
-   struct discord_create_message_params paramss = { .content = "Hi!\nOh! What a fast response, thank you async!" };
+   struct discord_create_message_params paramss = { .content = "Hi!\nOh! What a fast response!" };
    
-   discord_async_next(client, NULL);
    discord_edit_message(client, msg->channel_id, ret.id, paramss, NULL);
