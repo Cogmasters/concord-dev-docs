@@ -28,3 +28,5 @@ Example
    if (ret)
      for (int i = 0; ret[i]; ++i)
        printf("%s\n", ret[i]->username);
+       
+   discord_user_list_free(ret);
