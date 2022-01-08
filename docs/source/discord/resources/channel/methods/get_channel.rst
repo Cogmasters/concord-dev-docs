@@ -19,7 +19,6 @@ Example
 .. code:: c
    
    struct discord_channel ret;
-   char text[128]
 
    discord_get_channel(client, msg->channel_id, &ret);
 
