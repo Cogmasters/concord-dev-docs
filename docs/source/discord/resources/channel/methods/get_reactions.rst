@@ -23,8 +23,6 @@ Example
 
    discord_create_reaction(client, msg->channel_id, msg->id, 0, "😄");
    
-   sleep(5000);
-   
    discord_get_reactions(client, msg->channel_id, msg->id, 0, "😄", NULL, &ret);
    
    if (ret)
