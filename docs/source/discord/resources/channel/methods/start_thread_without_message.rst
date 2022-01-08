@@ -24,6 +24,6 @@ Example
                                       &(struct discord_start_thread_with_message_params *params){
                                         .name = "Thread",
                                         .auto_archive_duration = 4320,
-                                        .discord_channel_types = 0
+                                        .discord_channel_types = DISCORD_CHANNEL_GUILD_PUBLIC_THREAD 
                                       }
                                       , NULL);
