@@ -23,7 +23,7 @@ Example
    
    struct discord_create_message_params params = { .content = "Hello there?" };
    
-   discord_create_message(client, msg->channel_id, NULL, &ret);
+   discord_create_message(client, msg->channel_id, params, &ret);
    
    struct discord_create_message_params paramss = { .content = "Hi!\nOh! What a fast response!" };
    
