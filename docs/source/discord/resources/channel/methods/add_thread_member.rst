@@ -18,6 +18,5 @@ Example
 
 .. code:: c
    
-   discord_add_thread_member(client, msg->channel_id, msg->author.id); // The channel that you executed the channel must be a thread.
-   
-   printf("Added user to thread.");
+   // The channel that you executed the channel must be a thread.
+   discord_add_thread_member(client, msg->channel_id, msg->author.id); 
