@@ -21,4 +21,3 @@ Example
    struct discord_message ret;
    
    discord_crosspost_message(client, msg->channel_id, msg->id, &ret);
-   
