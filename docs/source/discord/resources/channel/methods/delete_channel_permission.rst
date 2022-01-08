@@ -11,3 +11,17 @@ Delete Channel Permission
 =========================
 
 .. doxygenfunction:: discord_delete_channel_permission
+
+Example
+-------
+
+.. code:: c
+   
+   #include <inttypes.h> /* PRIu64 */
+   
+   char buf[256];
+   u64_snowflake_t id = 1231231232131ULL;
+
+   snprintf(buf, sizeof(buf), "%" PRIu64, id);
+   
+   discord_delete_channel_permission(client, msg->channel_id, buf);
