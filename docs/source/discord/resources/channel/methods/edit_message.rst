@@ -27,4 +27,4 @@ Example
    
    struct discord_create_message_params paramss = { .content = "Hi!\nOh! What a fast response!" };
    
-   discord_edit_message(client, msg->channel_id, ret.id, paramss, NULL);
+   discord_edit_message(client, msg->channel_id, ret.id, &paramss, NULL);
