@@ -21,6 +21,7 @@
 /* Hide the welcome text */
 .section#welcome-to-concord > h1 {
     display: none !important;
+    visibility: hidden;
 }
 
 .header p {
