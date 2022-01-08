@@ -17,4 +17,4 @@ Example
 
 .. code:: c
    
-   discord_remove_thread_member(client, msg->channel_id, msg->author.id);
+   discord_remove_thread_member(client, msg->channel_id, msg->author->id);
