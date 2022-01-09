@@ -25,5 +25,5 @@ Example
                                         .name = "Thread",
                                         .auto_archive_duration = 4320,
                                         .discord_channel_types = DISCORD_CHANNEL_GUILD_PUBLIC_THREAD 
-                                      }
-                                      , NULL);
+                                      }, 
+                                      NULL);
