@@ -462,7 +462,11 @@
 <dd><p>Reads/Write available data from WebSockets. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This is an easy, yet highly abstracted way of performing transfers. If a higher control is necessary, users are better of using functions of <code class="docutils literal notranslate"><span class="pre">curl_multi_xxx()</span></code> family. </p>
+<p>Helper over curl_multi_wait()</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an easy, yet highly abstracted way of performing transfers. If a higher control is necessary, users are better of using ws_multi_socket_run() </p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

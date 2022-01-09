@@ -1256,9 +1256,19 @@
               
               <div class="toc-item">
                 
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
-    
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example">
+   Example
+  </a>
+ </li>
+</ul>
+
 </nav>
               </div>
               
@@ -1289,7 +1299,7 @@
 <h1>List Active Threads<a class="headerlink" href="#list-active-threads" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_list_active_threads">
-<span class="target" id="discord_8h_1a0d1836b881f8b6730508ea2a2f2d5fae"></span><a class="reference internal" href="../../../../core/common/index.html#c.CCORDcode" title="CCORDcode"><span class="n"><span class="pre">CCORDcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_list_active_threads</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">discord_thread_response_body</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">body</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_list_active_threads" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="discord_8h_1a03048189b9ede073cd61c88683614e0b"></span><a class="reference internal" href="../../../../core/common/index.html#c.CCORDcode" title="CCORDcode"><span class="n"><span class="pre">CCORDcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_list_active_threads</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../datatypes.html#c.discord_thread_response_body" title="discord_thread_response_body"><span class="n"><span class="pre">discord_thread_response_body</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_list_active_threads" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get all active threads in a given channel. </p>
 <p><dl>
 <dt class="sig sig-object cpp">
@@ -1309,7 +1319,7 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/methods/discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
 <li><p><strong>channel_id</strong> – the channel to be searched for threads </p></li>
-<li><p><strong>body</strong> – if successful, a discord_thread_response_body that should be free’d with <code class="docutils literal notranslate"><span class="pre">discord_thread_response_body_cleanup()</span></code> </p></li>
+<li><p><strong>ret</strong> – if successful, a <a class="reference internal" href="../datatypes.html#structdiscord__thread__response__body"><span class="std std-ref">discord_thread_response_body</span></a> that should be free’d with <code class="docutils literal notranslate"><span class="pre">discord_thread_response_body_cleanup()</span></code> </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1318,6 +1328,20 @@
 </dl>
 </dd></dl>
 
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">discord_thread_response_body</span> <span class="n">body</span><span class="p">;</span>
+
+<span class="n">discord_list_active_threads</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">body</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">body</span><span class="p">.</span><span class="n">threads</span><span class="p">)</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">body</span><span class="p">.</span><span class="n">threads</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Thread name: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">body</span><span class="p">.</span><span class="n">threads</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">);</span>
+
+<span class="n">discord_thread_response_body_cleanup</span><span class="p">(</span><span class="o">&amp;</span><span class="n">body</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
