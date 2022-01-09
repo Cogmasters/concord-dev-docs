@@ -11,3 +11,14 @@ Get Gateway Bot
 ===============
 
 .. doxygenfunction:: discord_get_gateway_bot
+
+Example
+-------
+
+.. code:: c
+
+   struct sized_buffer ret;
+
+   discord_get_gateway_bot(client, &ret);
+   
+   printf("%s\n", ret.start);
