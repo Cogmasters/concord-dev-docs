@@ -11,6 +11,7 @@ Bulk Delete Messages
 ====================
 
 .. doxygenfunction:: discord_bulk_delete_messages
+
 Example
 -------
 
