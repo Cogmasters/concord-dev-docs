@@ -11,4 +11,4 @@ Create DM
 =========
 
 .. doxygenfunction:: discord_create_dm
-.. doxygenstruct:: discord_create_dm_params
+.. doxygenstruct:: discord_create_dm

@@ -11,7 +11,7 @@ Start Thread With Message
 =========================
 
 .. doxygenfunction:: discord_start_thread_with_message
-.. doxygenstruct:: discord_start_thread_with_message_params
+.. doxygenstruct:: discord_start_thread_with_message
 
 Example
 -------
@@ -21,7 +21,7 @@ Example
    discord_start_thread_with_message(client,
                                      msg->channel_id, 
                                      msg->id, 
-                                      &(struct discord_start_thread_with_message_params *params){
+                                      &(struct discord_start_thread_with_message *params){
                                         .name = "Thread",
                                         .auto_archive_duration = 4320
                                       }

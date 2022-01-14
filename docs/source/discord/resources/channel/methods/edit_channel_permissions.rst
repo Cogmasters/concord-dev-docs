@@ -11,7 +11,7 @@ Edit Channel Permissions
 ========================
 
 .. doxygenfunction:: discord_edit_channel_permissions
-.. doxygenstruct:: discord_edit_channel_permissions_params
+.. doxygenstruct:: discord_edit_channel_permissions
 
 Example
 -------

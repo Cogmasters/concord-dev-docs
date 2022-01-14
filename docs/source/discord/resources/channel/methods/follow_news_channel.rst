@@ -11,7 +11,7 @@ Follow News Channel
 ===================
 
 .. doxygenfunction:: discord_follow_news_channel
-.. doxygenstruct:: discord_follow_news_channel_params
+.. doxygenstruct:: discord_follow_news_channel
 
 Example
 -------

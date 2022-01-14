@@ -11,4 +11,4 @@ Modify Current User
 ===================
 
 .. doxygenfunction:: discord_modify_current_user
-.. doxygenstruct:: discord_modify_current_user_params
+.. doxygenstruct:: discord_modify_current_user

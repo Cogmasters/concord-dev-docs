@@ -11,7 +11,7 @@ Create Channel Invite
 =====================
 
 .. doxygenfunction:: discord_create_channel_invite
-.. doxygenstruct:: discord_create_channel_invite_params
+.. doxygenstruct:: discord_create_channel_invite
 
 Example
 -------
@@ -25,7 +25,7 @@ Example
    
    snprintf(text, sizeof(text), "Created invite: %s", ret.code);
    
-   struct discord_create_message_params params = { .content = text };
+   struct discord_create_message params = { .content = text };
    discord_create_message(client, msg->channel_id, &params, NULL);
    
    discord_invite_cleanup(&ret);
