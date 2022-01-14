@@ -12,7 +12,7 @@ Edit Message
 ============
 
 .. doxygenfunction:: discord_edit_message
-.. doxygenstruct:: discord_edit_message_params
+.. doxygenstruct:: discord_edit_message
 
 Example
 -------
@@ -23,7 +23,7 @@ Example
    
    discord_create_message(client, 
                           msg->channel_id,
-                          &(struct discord_create_message_params){ 
+                          &(struct discord_create_message){ 
                             .content = "Hello there?" 
                           },
                           &ret);
@@ -31,7 +31,7 @@ Example
    discord_edit_message(client,
                         msg->channel_id,
                         ret.id,
-                        &(struct discord_edit_message_params){
+                        &(struct discord_edit_message){
                           .content = "Such a fast response!"
                         },
                         NULL);

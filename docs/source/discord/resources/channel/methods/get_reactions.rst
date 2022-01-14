@@ -12,7 +12,7 @@ Get Reactions
 =============
 
 .. doxygenfunction:: discord_get_reactions
-.. doxygenstruct:: discord_get_reactions_params
+.. doxygenstruct:: discord_get_reactions
 
 Example
 -------

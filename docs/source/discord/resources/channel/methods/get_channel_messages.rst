@@ -12,7 +12,7 @@ Get Channel Messages
 ====================
 
 .. doxygenfunction:: discord_get_channel_messages
-.. doxygenstruct:: discord_get_channel_messages_params
+.. doxygenstruct:: discord_get_channel_messages
 
 Example
 -------

@@ -11,7 +11,7 @@ Group DM Add Recipient
 ======================
 
 .. doxygenfunction:: discord_group_dm_add_recipient
-.. doxygenstruct:: discord_group_dm_add_recipient_params
+.. doxygenstruct:: discord_group_dm_add_recipient
 
 Example
 -------
@@ -22,7 +22,7 @@ Example
    
    discord_group_dm_add_recipient(client, id, 
                                   msg->author->id, 
-                                  &(struct discord_group_dm_add_recipient_params){
+                                  &(struct discord_group_dm_add_recipient){
                                     .access_token = "Access token of a user",
                                     .nick = "Nickname of the use that will be added"
                                   });

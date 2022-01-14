@@ -12,7 +12,7 @@ Modify Channel
 ==============
 
 .. doxygenfunction:: discord_modify_channel
-.. doxygenstruct:: discord_modify_channel_params
+.. doxygenstruct:: discord_modify_channel
 
 Example
 -------
@@ -23,7 +23,7 @@ Example
 
    discord_modify_channel(client, 
                           id, 
-                          &(struct discord_modify_channel_params){
+                          &(struct discord_modify_channel){
                             .name = "Friends channel"
                           }, 
                           NULL);

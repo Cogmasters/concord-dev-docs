@@ -21,7 +21,7 @@ Example
    struct discord_message ret1;
    struct discord_message ret2;
 
-   struct discord_create_message_params params = { .content = "Hey!" };
+   struct discord_create_message params = { .content = "Hey!" };
 
    discord_create_message(client, msg->channel_id, &params, &ret1);
    
