@@ -261,9 +261,8 @@ TAB_SIZE               = 4
 # commands \{ and \} for these it is advised to use the version @{ and @} or use
 # a double escape (\\{ and \\})
 
-ALIASES += CCORD_ret{1}="@param \1 return context of the request. if succesful the assigned @ref discord_on_done will be triggered @see @ret discord_ret for more options^^"
-ALIASES += CCORD_ret_obj{2}="@param \1 return context of the request. if succesful a @ref discord_\2 will be sent over to its assigned @ref discord_on_\2 @see @ret discord_ret_\2 for more options^^"
-ALIASES += CCORD_ret_list{2}="@param \1 return context of the request. if succesful a null-terminated list of @ref discord_\2 will be sent over to its assigned @ref discord_on_\2s @see @ret discord_ret_\2s for more options^^"
+ALIASES += CCORD_ret{1}="@param \1 return context of the request. if successful the assigned @ref discord_on_done will be triggered @see @ret discord_ret for more options^^"
+ALIASES += CCORD_ret_obj{2}="@param \1 return context of the request. if successful a @ref discord_\2 will be sent over to its assigned @ref discord_on_\2 @see @ref discord_ret_\2 for more options^^"
 ALIASES += CCORD_return="@return @ref CCORDcode for how the operation went, @ref CCORD_OK means nothing out of the ordinary^^"
 
 # This tag can be used to specify a number of word-keyword mappings (TCL only).
@@ -832,7 +831,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = cog-utils core include docs/specs-headers
+INPUT                  = cog-utils core include docs/api
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -890,7 +889,7 @@ EXCLUDE_SYMLINKS       = NO
 # Note that the wildcards are matched against the file with absolute path, so to
 # exclude all test directories for example use the pattern */test/*
 
-EXCLUDE_PATTERNS       = one-specs.h
+EXCLUDE_PATTERNS       = discord-codecs.h
 
 # The EXCLUDE_SYMBOLS tag can be used to specify one or more symbol names
 # (namespaces, classes, functions, etc.) that should be excluded from the
