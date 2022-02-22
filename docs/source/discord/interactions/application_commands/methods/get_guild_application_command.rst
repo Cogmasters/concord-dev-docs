@@ -3,9 +3,9 @@
     please head to github.com/Cogmasters/concord if you want to contribute!
 
   The following files contains the documentation used to generate this page: 
-  - discord.h (for public datatypes)
-  - discord-internal.h (for private datatypes)
-  - specs/discord/ (for generated datatypes)
+  - include/discord.h (for public datatypes)
+  - include/discord-internal.h (for private datatypes)
+  - gencodecs/api/ (for generated datatypes)
 
 Get Guild Application Command
 =============================

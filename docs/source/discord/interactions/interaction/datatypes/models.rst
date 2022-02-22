@@ -11,5 +11,5 @@
 Datatypes
 =========
 
-.. doxygenfile:: application_commands.h
+.. doxygenfile:: interactions.h
     :sections: detaileddescription briefdescription innerclass enum public-type public-attrib
