@@ -14,6 +14,14 @@ Primitives
 
 .. doxygengroup:: ConcordTypes
 
+Arrays
+------
+
+.. doxygenstruct:: snowflakes
+.. doxygenstruct:: integers
+.. doxygenstruct:: strings
+.. doxygenstruct:: json_values
+
 Global Resources
 ----------------
 

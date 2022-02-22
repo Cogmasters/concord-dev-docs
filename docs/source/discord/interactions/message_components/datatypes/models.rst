@@ -7,7 +7,9 @@
   - include/discord-internal.h (for private datatypes)
   - gencodecs/api/ (for generated datatypes)
 
-Bulk Overwrite Guild Application Command
-========================================
+=========
+Datatypes
+=========
 
-.. doxygenfunction:: discord_bulk_overwrite_guild_application_command
+.. doxygenfile:: message_components.h
+    :sections: detaileddescription briefdescription innerclass enum public-type public-attrib

@@ -14,7 +14,7 @@ Guild
 .. toctree::
    :caption: Table of Contents
    :glob:
-   :maxdepth: 2
+   :maxdepth: 1
 
    datatypes
    utils/*
