@@ -17,6 +17,8 @@ jobs:
           git clone https://github.com/Cogmasters/concord
           make -C concord docs
           cp Doxyfile concord/Doxyfile
+          echo "Install Jinja2"
+          pip install -U jinja2
           echo "Install Sphinx"
           pip install sphinx
           pip install pydata_sphinx_theme
