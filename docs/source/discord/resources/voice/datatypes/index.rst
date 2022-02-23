@@ -7,13 +7,14 @@
   - include/discord-internal.h (for private datatypes)
   - gencodecs/api/ (for generated datatypes)
 
-=======
-Sticker
-=======
+=========
+Datatypes
+=========
 
 .. toctree::
    :caption: Table of Contents
    :glob:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   datatypes/index
+   return_handles
+   models

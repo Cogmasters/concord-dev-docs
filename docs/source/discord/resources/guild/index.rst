@@ -16,6 +16,6 @@ Guild
    :glob:
    :maxdepth: 1
 
-   datatypes
+   datatypes/index
    utils/*
    methods/*
