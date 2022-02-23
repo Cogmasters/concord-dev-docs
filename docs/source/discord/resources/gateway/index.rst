@@ -16,5 +16,5 @@ Gateway
    :glob:
    :maxdepth: 1
 
-   datatypes
+   datatypes/index
    methods/*
