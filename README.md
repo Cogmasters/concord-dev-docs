@@ -20,15 +20,16 @@ pip install sphinx && pip install pydata_sphinx_theme
 ```sh
 pip install breathe
 ```
-### Prepare files for documentation
-```sh
-make docs && cp concord-docs/Doxyfile Doxyfile
-```
 #### Install doxygen 1.9.3
 ```sh
 wget https://www.doxygen.nl/files/doxygen-1.9.3.linux.bin.tar.gz
 tar -xvf doxygen-1.9.3.linux.bin.tar.gz
 cp doxygen-1.9.3/bin/doxygen .
+```
+
+### Prepare concord files for documentation
+```sh
+make docs && cp concord-docs/Doxyfile Doxyfile
 ```
 
 ### Generating Static Files
