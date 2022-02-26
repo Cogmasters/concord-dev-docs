@@ -17,4 +17,4 @@ Example
 
 .. code:: c
    
-   discord_trigger_typing_indicator(client, msg->channel_id);
+   discord_trigger_typing_indicator(client, msg->channel_id, NULL);
