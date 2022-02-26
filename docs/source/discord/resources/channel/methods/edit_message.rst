@@ -19,7 +19,7 @@ Example
 
 .. code:: c
 
-   struct discord_message ret;
+   struct discord_ret_message ret;
    
    discord_create_message(client, 
                           msg->channel_id,
