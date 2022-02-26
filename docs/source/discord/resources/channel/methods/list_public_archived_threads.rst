@@ -17,7 +17,7 @@ Example
 
 .. code:: c
 
-   struct discord_thread_response_body ret;
+   struct discord_ret_thread_response_body ret;
 
    discord_list_public_archived_threads(client, msg->channel_id, 0, 5, &ret);
    
