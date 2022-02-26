@@ -18,7 +18,7 @@ Example
 
 .. code:: c
 
-   char *code = "Y7Xa6MA82v";
+   char *invite_code = "Y7Xa6MA82v";
    
-   discord_delete_invite(client, code, NULL);
+   discord_delete_invite(client, invite_code, NULL);
    
