@@ -25,4 +25,5 @@ Example
                                   &(struct discord_group_dm_add_recipient_params){
                                     .access_token = "Access token of a user",
                                     .nick = "Nickname of the use that will be added"
-                                  });
+                                  },
+                                  NULL);
