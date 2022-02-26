@@ -22,4 +22,5 @@ Example
      NULL
    };
 
-   discord_bulk_delete_messages(client, msg->channel_id, messages);
+   discord_bulk_delete_messages(client, msg->channel_id, messages, NULL);
+   
