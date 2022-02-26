@@ -17,12 +17,12 @@ Example
 
 .. code:: c
 
-   struct discord_message ret;
+   struct discord_ret_message ret;
 
    struct discord_create_message_params params = { .content = "I'm important, I need to get pinned!" };
 
    discord_create_message(client, msg->channel_id, &params, &ret);
    
-   discord_pin_message(client, msg->channel_id, ret.id);
+   discord_pin_message(client, msg->channel_id, ret.id, NULL);
    
    discord_message_cleanup(&ret);
