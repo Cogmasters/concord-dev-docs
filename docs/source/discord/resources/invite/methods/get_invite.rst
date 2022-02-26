@@ -12,3 +12,18 @@ Get Invite
 
 .. doxygenfunction:: discord_get_invite
 .. doxygenstruct:: discord_get_invite_params
+
+
+Example
+-------
+
+.. code:: c
+
+   char *invite_code = "Y7Xa6MA82v";
+   struct discord_ret_invite ret;
+   
+   discord_get_invite(client, invite_code, NULL, &ret);
+   
+   printf("Approximate member count: %i\n", ret.approximate_member_count);
+   
+   discord_invite_cleanup(ret);
