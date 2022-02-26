@@ -24,5 +24,5 @@ Example
                                       &(struct discord_start_thread_with_message_params *params){
                                         .name = "Thread",
                                         .auto_archive_duration = 4320
-                                      }
-                                      , NULL);
+                                      }, 
+                                      NULL);
