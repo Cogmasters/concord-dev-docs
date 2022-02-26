@@ -12,5 +12,5 @@ Example
 
 .. code:: c
    
-   discord_get_guild_audit_log(client, msg->guild_id, NULL, NULL)
+   discord_get_guild_audit_log(client, msg->guild_id, NULL, NULL);
    
