@@ -17,7 +17,7 @@ Example
 
 .. code:: c
 
-   struct discord_thread_member **ret;
+   struct discord_ret_thread_members ret;
 
    discord_list_thread_members(client, msg->channel_id, &ret);
    
