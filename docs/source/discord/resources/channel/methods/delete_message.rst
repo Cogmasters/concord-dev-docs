@@ -17,4 +17,4 @@ Example
 
 .. code:: c
    
-   discord_delete_message(client, msg->channel_id, msg->id);
+   discord_delete_message(client, msg->channel_id, msg->id, NULL);
