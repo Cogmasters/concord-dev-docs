@@ -12,15 +12,19 @@ git clone https://github.com/Cogmasters/concord-docs
 ```
 
 ### Installing Dependencies
-#### Install Sphinx
+#### Jinja2
+```sh
+pip install -U jinja2
+```
+#### Sphinx
 ```sh
 pip install sphinx && pip install pydata_sphinx_theme
 ```
-#### Install Breathe
+#### Breathe
 ```sh
 pip install breathe
 ```
-#### Install doxygen 1.9.3
+#### Doxygen 1.9.3
 ```sh
 wget https://www.doxygen.nl/files/doxygen-1.9.3.linux.bin.tar.gz
 tar -xvf doxygen-1.9.3.linux.bin.tar.gz
