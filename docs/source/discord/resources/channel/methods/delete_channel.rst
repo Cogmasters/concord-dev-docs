@@ -8,7 +8,7 @@ Example
 
 .. code:: c
    
-   void done_discord_delete_channel(struct discord *client, void *data, const struct discord_invite *ret)
+   void done_discord_delete_channel(struct discord *client, void *data, const struct discord_channel *ret)
    {
      printf("Deleted channel %s", ret->name);
    }
