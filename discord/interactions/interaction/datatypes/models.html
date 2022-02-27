@@ -1,0 +1,2323 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Models &#8212; Concord  documentation</title>
+    
+    <link href="../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
+    
+    <link rel="stylesheet"
+      href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+    
+      
+  
+    
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/pydata-sphinx-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css" />
+    
+    <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../../../_static/icon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Create Followup Message" href="../methods/create_followup_message.html" />
+    <link rel="prev" title="Return Handles" href="return_handles.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../../../index.html">
+  <img src="../../../../_static/icon.svg" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../../index.html">
+  Discord API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../../core/index.html">
+  Concord's core API
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Cogmasters/concord" rel="noopener" target="_blank" title="Github"><span><i class="fab fa-github"></i></span>
+            <label class="sr-only">Github</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://discord.gg/Y7Xa6MA82v" rel="noopener" target="_blank" title="Discord"><span><i class="fab fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Table of Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../constants.html">
+   Constants
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../common.html">
+   Common
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../client/index.html">
+   Client
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/datatypes.html">
+     Datatypes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_add_intents.html">
+     discord_add_intents - add events to listen to
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_cleanup.html">
+     discord_cleanup - cleanup a Discord client
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_clone.html">
+     discord_clone - clone a Discord client handle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_config_init.html">
+     discord_config_init - create a Discord client handle from a config file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_get_data.html">
+     discord_get_data - get a pointer to user arbitrary data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_get_logconf.html">
+     discord_get_logconf - Get client’s logging internals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_get_ping.html">
+     discord_get_ping - get latency between client and Discord
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_get_self.html">
+     discord_get_self - get the client’s cached user
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_init.html">
+     discord_init - create a Discord client handle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_reconnect.html">
+     discord_reconnect - reconnect a on-going connection
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_remove_intents.html">
+     discord_remove_intents - remove events to listen to
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_run.html">
+     discord_run - start client connection to Discord
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_set_data.html">
+     discord_set_data - save a pointer to user arbitrary data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_set_prefix.html">
+     discord_set_prefix - set a default prefix for commands
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_set_presence.html">
+     discord_set_presence - set client status
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_shutdown.html">
+     discord_shutdown - shutdown a on-going connection
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_strerror.html">
+     discord_strerror() - return string describing
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       CCORDcode
+      </span>
+     </code>
+     value
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../client/methods/discord_timestamp.html">
+     discord_timestamp - get current timestamp (client’s concept of
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       now
+      </span>
+     </code>
+     )
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../events/index.html">
+   Events
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../events/scheduler.html">
+     Scheduler
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../events/set_callbacks.html">
+     Set Callbacks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../index.html">
+   Interactions
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../application_commands/index.html">
+     Application Commands
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../application_commands/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../application_commands/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../application_commands/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/batch_edit_application_command_permissions.html">
+       Batch Edit Application Command Permissions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/bulk_overwrite_global_application_commands.html">
+       Bulk Overwrite Global Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/bulk_overwrite_guild_application_command.html">
+       Bulk Overwrite Guild Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/create_global_application_command.html">
+       Create Global Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/create_guild_application_command.html">
+       Create Guild Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/delete_global_application_command.html">
+       Delete Global Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/delete_guild_application_command.html">
+       Delete Guild Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/edit_application_command_permissions.html">
+       Edit Application Command Permissions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/edit_global_application_command.html">
+       Edit Global Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/edit_guild_application_command.html">
+       Edit Guild Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/get_application_command_permissions.html">
+       Get Application Command Permissions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/get_global_application_command.html">
+       Get Global Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/get_global_application_commands.html">
+       Get Global Application Commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/get_guild_application_command.html">
+       Get Guild Application Command
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/get_guild_application_command_permissions.html">
+       Get Guild Application Command Permissions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../application_commands/methods/get_guild_application_commands.html">
+       Get Guild Application Commands
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../index.html">
+     Interaction
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="index.html">
+       Datatypes
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+      <label for="toctree-checkbox-7">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../methods/create_followup_message.html">
+       Create Followup Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../methods/create_interaction_response.html">
+       Create Interaction Response
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../methods/delete_followup_message.html">
+       Delete Followup Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../methods/delete_original_interaction_response.html">
+       Delete Original Interaction Response
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../methods/edit_followup_message.html">
+       Edit Followup Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../methods/edit_original_interaction_response.html">
+       Edit Original Interaction Response
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../methods/get_followup_message.html">
+       Get Followup Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../methods/get_original_interaction_response.html">
+       Get Original Interaction Response
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../message_components/index.html">
+     Message Components
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../message_components/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../message_components/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../resources/index.html">
+   Resources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/application/index.html">
+     Application
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/application/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+      <label for="toctree-checkbox-12">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/application/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/audit_log/index.html">
+     Audit Log
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/audit_log/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/audit_log/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/audit_log/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/audit_log/methods/get_guild_audit_log.html">
+       Get Guild Audit Log
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/channel/index.html">
+     Channel
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/channel/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+      <label for="toctree-checkbox-16">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/channel/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/channel/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/utils/methods.html">
+       Utils
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/embed_builder/methods.html">
+       Embed Builder
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/add_thread_member.html">
+       Add Thread Member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/bulk_delete_messages.html">
+       Bulk Delete Messages
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/create_channel_invite.html">
+       Create Channel Invite
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/create_message.html">
+       Create Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/create_reaction.html">
+       Create Reaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/crosspost_message.html">
+       Crosspost Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/delete_all_reactions.html">
+       Delete All Reactions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/delete_all_reactions_for_emoji.html">
+       Delete All Reactions For Emoji
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/delete_channel.html">
+       Delete Channel
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/delete_channel_permission.html">
+       Delete Channel Permission
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/delete_message.html">
+       Delete Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/delete_own_reaction.html">
+       Delete Own Reaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/delete_user_reaction.html">
+       Delete User Reaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/edit_channel_permissions.html">
+       Edit Channel Permissions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/edit_message.html">
+       Edit Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/follow_news_channel.html">
+       Follow News Channel
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/get_channel.html">
+       Get Channel
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/get_channel_invites.html">
+       Get Channel Invites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/get_channel_message.html">
+       Get Channel Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/get_channel_messages.html">
+       Get Channel Messages
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/get_pinned_messages.html">
+       Get Pinned Messages
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/get_reactions.html">
+       Get Reactions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/group_dm_add_recipient.html">
+       Group DM Add Recipient
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/group_dm_remove_recipient.html">
+       Group DM Remove Recipient
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/join_thread.html">
+       Join Thread
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/leave_thread.html">
+       Leave Thread
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/list_active_threads.html">
+       List Active Threads
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/list_joined_private_archived_threads.html">
+       List Joined Private Archived Threads
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/list_private_archived_threads.html">
+       List Private Archived Threads
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/list_public_archived_threads.html">
+       List Public Archived Threads
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/list_thread_members.html">
+       List Thread Members
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/modify_channel.html">
+       Modify Channel
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/pin_message.html">
+       Pin Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/remove_thread_member.html">
+       Remove Thread Member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/start_thread_with_message.html">
+       Start Thread With Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/start_thread_without_message.html">
+       Start Thread Without Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/trigger_typing_indicator.html">
+       Trigger Typing Indicator
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/channel/methods/unpin_message.html">
+       Unpin Message
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/emoji/index.html">
+     Emoji
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/emoji/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+      <label for="toctree-checkbox-18">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/emoji/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/emoji/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/emoji/methods/create_guild_emoji.html">
+       Create Guild Emoji
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/emoji/methods/delete_guild_emoji.html">
+       Delete Guild Emoji
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/emoji/methods/get_guild_emoji.html">
+       Get Guild Emoji
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/emoji/methods/list_guild_emoji.html">
+       List Guild Emojis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/emoji/methods/modify_guild_emoji.html">
+       Modify Guild Emoji
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/guild/index.html">
+     Guild
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/guild/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+      <label for="toctree-checkbox-20">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/guild/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/guild/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/utils/methods.html">
+       Utils
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/add_guild_member.html">
+       Add Guild Member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/add_guild_member_role.html">
+       Add Guild Member Role
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/begin_guild_prune.html">
+       Begin Guild Prune
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/create_guild.html">
+       Create Guild
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/create_guild_ban.html">
+       Create Guild Ban
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/create_guild_channel.html">
+       Create Guild Channel
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/create_guild_role.html">
+       Create Guild Role
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/delete_guild.html">
+       Delete Guild
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/delete_guild_role.html">
+       Delete Guild Role
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/get_guild.html">
+       Get Guild
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/get_guild_ban.html">
+       Get Guild Ban
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/get_guild_bans.html">
+       Get Guild Bans
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/get_guild_channels.html">
+       Get Guild Channels
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/get_guild_invites.html">
+       Get Guild Invites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/get_guild_member.html">
+       Get Guild Member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/get_guild_preview.html">
+       Get Guild Preview
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/get_guild_roles.html">
+       Get Guild Roles
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/list_guild_members.html">
+       List Guild Members
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/modify_current_member.html">
+       Modify Current Member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/modify_current_user_nick.html">
+       Modify Current User Nick
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/modify_guild.html">
+       Modify Guild
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/modify_guild_channel_positions.html">
+       Modify Guild Channel Positions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/modify_guild_member.html">
+       Modify Guild Member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/modify_guild_role.html">
+       Modify Guild Role
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/modify_guild_role_positions.html">
+       Modify Guild Role Positions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/remove_guild_ban.html">
+       Remove Guild Ban
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/remove_guild_member.html">
+       Remove Guild Member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/remove_guild_member_role.html">
+       Remove Guild Member Role
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild/methods/search_guild_members.html">
+       Search Guild Members
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/guild_template/index.html">
+     Guild Template
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/guild_template/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+      <label for="toctree-checkbox-22">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/guild_template/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/guild_template/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild_template/methods/create_guild_template.html">
+       Create Guild Template
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild_template/methods/get_guild_template.html">
+       Get Guild Template
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/guild_template/methods/sync_guild_template.html">
+       Sync Guild Template
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/invite/index.html">
+     Invite
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/invite/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+      <label for="toctree-checkbox-24">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/invite/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/invite/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/invite/methods/delete_invite.html">
+       Delete Invite
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/invite/methods/get_invite.html">
+       Get Invite
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/stage_instance/index.html">
+     Stage Instance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+    <label for="toctree-checkbox-25">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/stage_instance/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+      <label for="toctree-checkbox-26">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/stage_instance/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/sticker/index.html">
+     Sticker
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/>
+    <label for="toctree-checkbox-27">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/sticker/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/>
+      <label for="toctree-checkbox-28">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/sticker/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/user/index.html">
+     User
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/>
+    <label for="toctree-checkbox-29">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/user/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/>
+      <label for="toctree-checkbox-30">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/user/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/user/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/user/methods/create_dm.html">
+       Create DM
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/user/methods/create_group_dm.html">
+       Create Group DM
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/user/methods/get_current_user.html">
+       Get Current User
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/user/methods/get_current_user_guilds.html">
+       Get Current User Guilds
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/user/methods/get_user.html">
+       Get User
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/user/methods/get_user_connections.html">
+       Get User Connections
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/user/methods/leave_guild.html">
+       Leave Guild
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/user/methods/modify_current_user.html">
+       Modify Current User
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/voice/index.html">
+     Voice
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/>
+    <label for="toctree-checkbox-31">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/voice/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" type="checkbox"/>
+      <label for="toctree-checkbox-32">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/voice/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/voice/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/voice/methods/list_voice_regions.html">
+       List Voice Regions
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/webhook/index.html">
+     Webhook
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" type="checkbox"/>
+    <label for="toctree-checkbox-33">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/webhook/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" type="checkbox"/>
+      <label for="toctree-checkbox-34">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/webhook/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/webhook/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/create_webhook.html">
+       Create Webhook
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/delete_webhook.html">
+       Delete Webhook
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/delete_webhook_message.html">
+       Delete Webhook Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/delete_webhook_with_token.html">
+       Delete Webhook with Token
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/edit_webhook_message.html">
+       Edit Webhook Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/execute_webhook.html">
+       Execute Webhook
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/get_channel_webhooks.html">
+       Get Channel Webhooks
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/get_guild_webhooks.html">
+       Get Guild Webhooks
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/get_webhook.html">
+       Get Webhook
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/get_webhook_message.html">
+       Get Webhook Message
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/get_webhook_with_token.html">
+       Get Webhook with Token
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/modify_webhook.html">
+       Modify Webhook
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/webhook/methods/modify_webhook_with_token.html">
+       Modify Webhook with Token
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/gateway/index.html">
+     Gateway
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" type="checkbox"/>
+    <label for="toctree-checkbox-35">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/gateway/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" type="checkbox"/>
+      <label for="toctree-checkbox-36">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/gateway/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/gateway/methods/get_gateway.html">
+       Get Gateway
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../resources/gateway/methods/get_gateway_bot.html">
+       Get Gateway Bot
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../resources/permissions/index.html">
+     Permissions
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" type="checkbox"/>
+    <label for="toctree-checkbox-37">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../resources/permissions/datatypes/index.html">
+       Datatypes
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" type="checkbox"/>
+      <label for="toctree-checkbox-38">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../resources/permissions/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/Cogmasters/concord-docs/edit/master/docs/source/discord/interactions/interaction/datatypes/models.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="models">
+<h1>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_interaction">
+<span class="target" id="structdiscord__interaction"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction</span></span></span><a class="headerlink" href="#c.discord_interaction" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;interactions.h&gt;</em></div>
+<p><p><div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>Methods</strong></p>
+</div>
+<ul class="simple">
+<li><p>Initializer:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_interaction_init(struct</span> <span class="pre">discord_interaction</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>Cleanup:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_interaction_cleanup(struct</span> <span class="pre">discord_interaction</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Decoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_interaction_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_interaction</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_interaction_from_jsmnf(jsmnf</span> <span class="pre">*root,</span> <span class="pre">char</span> <span class="pre">*rbuf,</span> <span class="pre">struct</span> <span class="pre">discord_interaction</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Encoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_interaction_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_interaction</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">jsonbcode</span> <span class="pre">discord_interaction_to_jsonb(jsonb</span> <span class="pre">*b,</span> <span class="pre">char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_interaction</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.id">
+<span class="target" id="structdiscord__interaction_1a3a97e61aa2066f54c57f68175c9434f3"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#c.discord_interaction.id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>ID of the interaction </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.application_id">
+<span class="target" id="structdiscord__interaction_1ab6d6e542366d2ce011d759ec84147664"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">application_id</span></span></span><a class="headerlink" href="#c.discord_interaction.application_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>ID of the application this interaction is for </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.type">
+<span class="target" id="structdiscord__interaction_1aad9b8b77631a49efb85e7d9b3776fa72"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_interaction_types" title="discord_interaction_types"><span class="n"><span class="pre">discord_interaction_types</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#c.discord_interaction.type" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the type of the interaction </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.data">
+<span class="target" id="structdiscord__interaction_1aa51ca032313f3d65f2c6d641e569b0db"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_interaction_data" title="discord_interaction_data"><span class="n"><span class="pre">discord_interaction_data</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#c.discord_interaction.data" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the command data payload </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.guild_id">
+<span class="target" id="structdiscord__interaction_1a052f432e7fe7511f8cdea5f01556f0e6"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">guild_id</span></span></span><a class="headerlink" href="#c.discord_interaction.guild_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the guild it was sent from </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.channel_id">
+<span class="target" id="structdiscord__interaction_1a706f4f2ec75af8c352aba67c07455dd1"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">channel_id</span></span></span><a class="headerlink" href="#c.discord_interaction.channel_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the channel it was sent from </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.member">
+<span class="target" id="structdiscord__interaction_1ac09e579d3ffa481a2622a4ca536538fd"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/guild/datatypes/models.html#c.discord_guild_member" title="discord_guild_member"><span class="n"><span class="pre">discord_guild_member</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">member</span></span></span><a class="headerlink" href="#c.discord_interaction.member" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>guild member data for the invoking user, including permissions </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.user">
+<span class="target" id="structdiscord__interaction_1abe3d2fff6306f568e39e1b7ee9cdc8ff"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/user/datatypes/models.html#c.discord_user" title="discord_user"><span class="n"><span class="pre">discord_user</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">user</span></span></span><a class="headerlink" href="#c.discord_interaction.user" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>user object for the invoking user, if invoked in a DM </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.token">
+<span class="target" id="structdiscord__interaction_1ac1e97e032eec047868dce94121a7d234"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">token</span></span></span><a class="headerlink" href="#c.discord_interaction.token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>a continuation token for responding to the interaction </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.version">
+<span class="target" id="structdiscord__interaction_1aae4c8f8b39ad93af1ce9e3d40ce7402b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">version</span></span></span><a class="headerlink" href="#c.discord_interaction.version" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>read-only property, always <code class="docutils literal notranslate"><span class="pre">1</span></code> </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.message">
+<span class="target" id="structdiscord__interaction_1a4fce044c325fa6452aaa1e8dd89b8d8c"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_message" title="discord_message"><span class="n"><span class="pre">discord_message</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">message</span></span></span><a class="headerlink" href="#c.discord_interaction.message" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>for components, the message they were attached to </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.locale">
+<span class="target" id="structdiscord__interaction_1a94c16c3aef8c827081c61c6e94daf946"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">locale</span></span></span><a class="headerlink" href="#c.discord_interaction.locale" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the selected language of the invoking user </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction.guild_locale">
+<span class="target" id="structdiscord__interaction_1a9e9cd523322eddfe92d26bb4b55533b6"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">guild_locale</span></span></span><a class="headerlink" href="#c.discord_interaction.guild_locale" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the guild preferred locale, if invoked in a guild </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_interaction_data">
+<span class="target" id="structdiscord__interaction__data"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction_data</span></span></span><a class="headerlink" href="#c.discord_interaction_data" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.id">
+<span class="target" id="structdiscord__interaction__data_1aaee41e12fa738888932ab128659c422d"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#c.discord_interaction_data.id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the ID of the invoked command </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.name">
+<span class="target" id="structdiscord__interaction__data_1a306f118a55417b9029d1ef70e4366f5b"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#c.discord_interaction_data.name" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the name of the invoked command </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.type">
+<span class="target" id="structdiscord__interaction__data_1af1ffd8ac4051b11c4390a5061e86771d"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="../../application_commands/datatypes/models.html#c.discord_application_command_types" title="discord_application_command_types"><span class="n"><span class="pre">discord_application_command_types</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#c.discord_interaction_data.type" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the type of the invoked command </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.resolved">
+<span class="target" id="structdiscord__interaction__data_1ac267cad7cbf9558b3ab8431ec478e789"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_resolved_data" title="discord_resolved_data"><span class="n"><span class="pre">discord_resolved_data</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">resolved</span></span></span><a class="headerlink" href="#c.discord_interaction_data.resolved" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>converted users + roles + channels + attachments </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.options">
+<span class="target" id="structdiscord__interaction__data_1a02767d2c2564ca06b87c50dc1f4d491c"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../application_commands/datatypes/models.html#c.discord_application_command_interaction_data_options" title="discord_application_command_interaction_data_options"><span class="n"><span class="pre">discord_application_command_interaction_data_options</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">options</span></span></span><a class="headerlink" href="#c.discord_interaction_data.options" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the params + values from the user </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.custom_id">
+<span class="target" id="structdiscord__interaction__data_1ad6fc95bd66edbdab4b01f04f96e7cece"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">custom_id</span></span></span><a class="headerlink" href="#c.discord_interaction_data.custom_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the custom_id of the component </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.component_type">
+<span class="target" id="structdiscord__interaction__data_1a791d29c96e3d8f672e5044685e0eb1b1"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="../../message_components/datatypes/models.html#c.discord_component_types" title="discord_component_types"><span class="n"><span class="pre">discord_component_types</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">component_type</span></span></span><a class="headerlink" href="#c.discord_interaction_data.component_type" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the type of the component </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.values">
+<span class="target" id="structdiscord__interaction__data_1a4a95600da0f04dbfce1649b978a4d892"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../common.html#c.strings" title="strings"><span class="n"><span class="pre">strings</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">values</span></span></span><a class="headerlink" href="#c.discord_interaction_data.values" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the values the user selected </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.target_id">
+<span class="target" id="structdiscord__interaction__data_1a65b34fe1c1b64b1360698e4d48b4f93d"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">target_id</span></span></span><a class="headerlink" href="#c.discord_interaction_data.target_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the ID of the user or messaged targetted by a user or message command </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_data.components">
+<span class="target" id="structdiscord__interaction__data_1a556eb1078c05a56fa0202b9b07e39d07"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../message_components/datatypes/models.html#c.discord_components" title="discord_components"><span class="n"><span class="pre">discord_components</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">components</span></span></span><a class="headerlink" href="#c.discord_interaction_data.components" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the values submitted by the user </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_resolved_data">
+<span class="target" id="structdiscord__resolved__data"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_resolved_data</span></span></span><a class="headerlink" href="#c.discord_resolved_data" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_resolved_data.users">
+<span class="target" id="structdiscord__resolved__data_1aaafecdb23da935b86bee24f732759705"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../common.html#c.snowflakes" title="snowflakes"><span class="n"><span class="pre">snowflakes</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">users</span></span></span><a class="headerlink" href="#c.discord_resolved_data.users" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the IDs and <a class="reference internal" href="../../../resources/user/datatypes/models.html#structdiscord__user"><span class="std std-ref">discord_user</span></a> datatypes </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_resolved_data.members">
+<span class="target" id="structdiscord__resolved__data_1aafd022d26f2dc4ba91d9d97fb96759c2"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../common.html#c.snowflakes" title="snowflakes"><span class="n"><span class="pre">snowflakes</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">members</span></span></span><a class="headerlink" href="#c.discord_resolved_data.members" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the IDs and partial <a class="reference internal" href="../../../resources/guild/datatypes/models.html#structdiscord__guild__member"><span class="std std-ref">discord_guild_member</span></a> datatypes </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_resolved_data.roles">
+<span class="target" id="structdiscord__resolved__data_1a8afcf472b38212ee2f17858cbeceaa56"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../common.html#c.snowflakes" title="snowflakes"><span class="n"><span class="pre">snowflakes</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">roles</span></span></span><a class="headerlink" href="#c.discord_resolved_data.roles" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the IDs and <a class="reference internal" href="../../../resources/permissions/datatypes/models.html#structdiscord__role"><span class="std std-ref">discord_role</span></a> datatypes </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_resolved_data.channels">
+<span class="target" id="structdiscord__resolved__data_1a0700b401e31ccf558b191a62ea8d7f52"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../common.html#c.snowflakes" title="snowflakes"><span class="n"><span class="pre">snowflakes</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">channels</span></span></span><a class="headerlink" href="#c.discord_resolved_data.channels" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the IDs and partial <a class="reference internal" href="../../../resources/channel/datatypes/models.html#structdiscord__channel"><span class="std std-ref">discord_channel</span></a> datatypes </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_resolved_data.messages">
+<span class="target" id="structdiscord__resolved__data_1a9398b6c18a619576ef9ca89e798acc7c"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../common.html#c.snowflakes" title="snowflakes"><span class="n"><span class="pre">snowflakes</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">messages</span></span></span><a class="headerlink" href="#c.discord_resolved_data.messages" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the IDs and partial <a class="reference internal" href="../../../resources/channel/datatypes/models.html#structdiscord__message"><span class="std std-ref">discord_message</span></a> datatypes </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_resolved_data.attachments">
+<span class="target" id="structdiscord__resolved__data_1accd687f284620052c40d9d36c75e055e"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../common.html#c.snowflakes" title="snowflakes"><span class="n"><span class="pre">snowflakes</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">attachments</span></span></span><a class="headerlink" href="#c.discord_resolved_data.attachments" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the IDs and partial <a class="reference internal" href="../../../resources/channel/datatypes/models.html#structdiscord__attachment"><span class="std std-ref">discord_attachment</span></a> datatypes </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_message_interaction">
+<span class="target" id="structdiscord__message__interaction"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_message_interaction</span></span></span><a class="headerlink" href="#c.discord_message_interaction" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_message_interaction.id">
+<span class="target" id="structdiscord__message__interaction_1a07230f5d6703f06644bf5a9303f31ed9"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#c.discord_message_interaction.id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>ID of the interaction </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_message_interaction.type">
+<span class="target" id="structdiscord__message__interaction_1a84255cc3ea673c0caa1eb76680a4ed64"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_interaction_types" title="discord_interaction_types"><span class="n"><span class="pre">discord_interaction_types</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#c.discord_message_interaction.type" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the type of interaction </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_message_interaction.name">
+<span class="target" id="structdiscord__message__interaction_1a0e72ac995e4ac862d8e5adef03fd4910"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#c.discord_message_interaction.name" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the name of the application command </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_message_interaction.user">
+<span class="target" id="structdiscord__message__interaction_1a8870e93de627a1b4b1dd75eaad6a0c5c"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/user/datatypes/models.html#c.discord_user" title="discord_user"><span class="n"><span class="pre">discord_user</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">user</span></span></span><a class="headerlink" href="#c.discord_message_interaction.user" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the user who invoked the interaction </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_message_interaction.member">
+<span class="target" id="structdiscord__message__interaction_1afe6152d2dcaec7bb0e4fbee6c6dca7b5"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/guild/datatypes/models.html#c.discord_guild_member" title="discord_guild_member"><span class="n"><span class="pre">discord_guild_member</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">member</span></span></span><a class="headerlink" href="#c.discord_message_interaction.member" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the member who invoked the interaction in the guild </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_interaction_response">
+<span class="target" id="structdiscord__interaction__response"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction_response</span></span></span><a class="headerlink" href="#c.discord_interaction_response" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;interactions.h&gt;</em></div>
+<p><p><div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>Methods</strong></p>
+</div>
+<ul class="simple">
+<li><p>Initializer:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_interaction_response_init(struct</span> <span class="pre">discord_interaction_response</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>Cleanup:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_interaction_response_cleanup(struct</span> <span class="pre">discord_interaction_response</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Decoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_interaction_response_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_interaction_response</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_interaction_response_from_jsmnf(jsmnf</span> <span class="pre">*root,</span> <span class="pre">char</span> <span class="pre">*rbuf,</span> <span class="pre">struct</span> <span class="pre">discord_interaction_response</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Encoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_interaction_response_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_interaction_response</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">jsonbcode</span> <span class="pre">discord_interaction_response_to_jsonb(jsonb</span> <span class="pre">*b,</span> <span class="pre">char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_interaction_response</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_response.type">
+<span class="target" id="structdiscord__interaction__response_1a5f8a72eedbc0d2e5d99d7f31f99dae6e"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_interaction_callback_types" title="discord_interaction_callback_types"><span class="n"><span class="pre">discord_interaction_callback_types</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#c.discord_interaction_response.type" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>interaction callback type </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_response.data">
+<span class="target" id="structdiscord__interaction__response_1aef73ccc5ef950c8fb29897722151e38e"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.discord_interaction_callback_data" title="discord_interaction_callback_data"><span class="n"><span class="pre">discord_interaction_callback_data</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#c.discord_interaction_response.data" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>an optional response message </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data">
+<span class="target" id="structdiscord__interaction__callback__data"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction_callback_data</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.components">
+<span class="target" id="structdiscord__interaction__callback__data_1a6c7c806b804c2f962ac1f4cdeba64708"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../message_components/datatypes/models.html#c.discord_components" title="discord_components"><span class="n"><span class="pre">discord_components</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">components</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.components" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>message components </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.tts">
+<span class="target" id="structdiscord__interaction__callback__data_1aae5ac4514cb1912d3366cdfaee7ce2b3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tts</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.tts" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>is the response TTS </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.content">
+<span class="target" id="structdiscord__interaction__callback__data_1a63cab3580e1cf722dcca0f729c167089"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">content</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.content" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>message content </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.embeds">
+<span class="target" id="structdiscord__interaction__callback__data_1a5b7bf92a1c48394f93b690a2708f89a0"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_embeds" title="discord_embeds"><span class="n"><span class="pre">discord_embeds</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">embeds</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.embeds" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>supports up to 10 embeds </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.flags">
+<span class="target" id="structdiscord__interaction__callback__data_1a2aa53b83704a30425e90ba80ae93c75f"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_message_flags" title="discord_message_flags"><span class="n"><span class="pre">discord_message_flags</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">flags</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.flags" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>message flags combined as a bitfield (only DISCORD_MESSAGE_SUPRESS_EMBEDS and DISCORD_MESSAGE_EPHEMERAL can be set) </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.attachments">
+<span class="target" id="structdiscord__interaction__callback__data_1a22ea9b8c7f61a0c6722560c6960251e1"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_attachments" title="discord_attachments"><span class="n"><span class="pre">discord_attachments</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">attachments</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.attachments" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>attachment objects with filename and description </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.choices">
+<span class="target" id="structdiscord__interaction__callback__data_1a20d439b599fa21d392fb78d1f2ff09b8"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../application_commands/datatypes/models.html#c.discord_application_command_option_choices" title="discord_application_command_option_choices"><span class="n"><span class="pre">discord_application_command_option_choices</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">choices</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.choices" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>autocomplete choices (max of 25 choices) </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.custom_id">
+<span class="target" id="structdiscord__interaction__callback__data_1a230c20d7034161f530ac4ced7ef7b31b"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">custom_id</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.custom_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>a developer defined identifier for the component, max 100 characters </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_data.title">
+<span class="target" id="structdiscord__interaction__callback__data_1a3260624ea6bee5ae8f1379d6d517cf27"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">title</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_data.title" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the title of the popup modal </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_edit_original_interaction_response">
+<span class="target" id="structdiscord__edit__original__interaction__response"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_edit_original_interaction_response</span></span></span><a class="headerlink" href="#c.discord_edit_original_interaction_response" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;interactions.h&gt;</em></div>
+<p><p><div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>Methods</strong></p>
+</div>
+<ul class="simple">
+<li><p>Initializer:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_edit_original_interaction_response_init(struct</span> <span class="pre">discord_edit_original_interaction_response</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>Cleanup:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_edit_original_interaction_response_cleanup(struct</span> <span class="pre">discord_edit_original_interaction_response</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Decoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_edit_original_interaction_response_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_edit_original_interaction_response</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_edit_original_interaction_response_from_jsmnf(jsmnf</span> <span class="pre">*root,</span> <span class="pre">char</span> <span class="pre">*rbuf,</span> <span class="pre">struct</span> <span class="pre">discord_edit_original_interaction_response</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Encoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_edit_original_interaction_response_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_edit_original_interaction_response</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">jsonbcode</span> <span class="pre">discord_edit_original_interaction_response_to_jsonb(jsonb</span> <span class="pre">*b,</span> <span class="pre">char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_edit_original_interaction_response</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_original_interaction_response.thread_id">
+<span class="target" id="structdiscord__edit__original__interaction__response_1acf8b75d7eec7f9528c6fae0fd159c097"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">thread_id</span></span></span><a class="headerlink" href="#c.discord_edit_original_interaction_response.thread_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>id of the thread the message is in </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_original_interaction_response.content">
+<span class="target" id="structdiscord__edit__original__interaction__response_1ad0dbc355e174e39c5319c2e0baf5b598"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">content</span></span></span><a class="headerlink" href="#c.discord_edit_original_interaction_response.content" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the message contents (up to 2000 characters) </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_original_interaction_response.embeds">
+<span class="target" id="structdiscord__edit__original__interaction__response_1a6100763a6ed3bf18c21137ce46881567"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_embeds" title="discord_embeds"><span class="n"><span class="pre">discord_embeds</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">embeds</span></span></span><a class="headerlink" href="#c.discord_edit_original_interaction_response.embeds" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>embedded <code class="docutils literal notranslate"><span class="pre">rich</span></code> content </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_original_interaction_response.allowed_mentions">
+<span class="target" id="structdiscord__edit__original__interaction__response_1a3fc680997e49df60f11609f097b7a659"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_allowed_mention" title="discord_allowed_mention"><span class="n"><span class="pre">discord_allowed_mention</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">allowed_mentions</span></span></span><a class="headerlink" href="#c.discord_edit_original_interaction_response.allowed_mentions" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>allowed mentions for the message </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_original_interaction_response.components">
+<span class="target" id="structdiscord__edit__original__interaction__response_1aceacdee58b2dbaf7f2dcca1479abe503"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../message_components/datatypes/models.html#c.discord_components" title="discord_components"><span class="n"><span class="pre">discord_components</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">components</span></span></span><a class="headerlink" href="#c.discord_edit_original_interaction_response.components" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the components to include with the message </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_original_interaction_response.attachments">
+<span class="target" id="structdiscord__edit__original__interaction__response_1ac13d89fc23ee9bc3e4c00f56afac2292"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_attachments" title="discord_attachments"><span class="n"><span class="pre">discord_attachments</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">attachments</span></span></span><a class="headerlink" href="#c.discord_edit_original_interaction_response.attachments" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>attached files to keep and possible descriptions for new files </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_create_followup_message">
+<span class="target" id="structdiscord__create__followup__message"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_create_followup_message</span></span></span><a class="headerlink" href="#c.discord_create_followup_message" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;interactions.h&gt;</em></div>
+<p><p><div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>Methods</strong></p>
+</div>
+<ul class="simple">
+<li><p>Initializer:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_followup_message_init(struct</span> <span class="pre">discord_create_followup_message</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>Cleanup:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_create_followup_message_cleanup(struct</span> <span class="pre">discord_create_followup_message</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Decoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_create_followup_message_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_create_followup_message</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_create_followup_message_from_jsmnf(jsmnf</span> <span class="pre">*root,</span> <span class="pre">char</span> <span class="pre">*rbuf,</span> <span class="pre">struct</span> <span class="pre">discord_create_followup_message</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Encoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_create_followup_message_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_create_followup_message</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">jsonbcode</span> <span class="pre">discord_create_followup_message_to_jsonb(jsonb</span> <span class="pre">*b,</span> <span class="pre">char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_create_followup_message</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.wait">
+<span class="target" id="structdiscord__create__followup__message_1a4851d137903e7f9a78224d3c2ac9b588"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wait</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.wait" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>waits for server confirmation of message send before response, and returns the created message body (defaults to <code class="docutils literal notranslate"><span class="pre">false</span></code>; when <code class="docutils literal notranslate"><span class="pre">false</span></code> a message that is not saved does not return an error) </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.thread_id">
+<span class="target" id="structdiscord__create__followup__message_1a56475fb005681cd794c070ce34d03e99"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">thread_id</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.thread_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>send a message to the specified thread within a webhook’s channel; the thread will automatically be unarchived </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.avatar_url">
+<span class="target" id="structdiscord__create__followup__message_1a8211a75afeb9468eb7bcf45b83ecc627"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">avatar_url</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.avatar_url" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>override the default avatar of the webhook </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.tts">
+<span class="target" id="structdiscord__create__followup__message_1a3e1c9f1cb4850a8bcbb9fd64338bba6c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tts</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.tts" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>true if this is a TTS message </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.embeds">
+<span class="target" id="structdiscord__create__followup__message_1a86d78b21403370421784d4d6832a2da7"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_embeds" title="discord_embeds"><span class="n"><span class="pre">discord_embeds</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">embeds</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.embeds" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>embedded <code class="docutils literal notranslate"><span class="pre">rich</span></code> content </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.allowed_mentions">
+<span class="target" id="structdiscord__create__followup__message_1aa00a6513554df38e239d94ee02b84ccf"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_allowed_mention" title="discord_allowed_mention"><span class="n"><span class="pre">discord_allowed_mention</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">allowed_mentions</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.allowed_mentions" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>allowed mentions for the message </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.components">
+<span class="target" id="structdiscord__create__followup__message_1a91a291d958d8e641581f99d2df456d32"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../message_components/datatypes/models.html#c.discord_components" title="discord_components"><span class="n"><span class="pre">discord_components</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">components</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.components" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the components to include with the message </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.attachments">
+<span class="target" id="structdiscord__create__followup__message_1a3c32ee3a4d1dec50b9d0a25032d20621"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_attachments" title="discord_attachments"><span class="n"><span class="pre">discord_attachments</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">attachments</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.attachments" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>attachment objects with filename and description </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_create_followup_message.flags">
+<span class="target" id="structdiscord__create__followup__message_1a6eec9f3e3c4b5c3a32c0b15a1874803f"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">flags</span></span></span><a class="headerlink" href="#c.discord_create_followup_message.flags" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>message flags combined as a bitfield (only <code class="docutils literal notranslate"><span class="pre">SUPPRESS_EMBEDS</span></code> can be set) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.discord_edit_followup_message">
+<span class="target" id="structdiscord__edit__followup__message"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_edit_followup_message</span></span></span><a class="headerlink" href="#c.discord_edit_followup_message" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;interactions.h&gt;</em></div>
+<p><p><div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>Methods</strong></p>
+</div>
+<ul class="simple">
+<li><p>Initializer:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_edit_followup_message_init(struct</span> <span class="pre">discord_edit_followup_message</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>Cleanup:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">discord_edit_followup_message_cleanup(struct</span> <span class="pre">discord_edit_followup_message</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Decoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_edit_followup_message_from_json(char</span> <span class="pre">*rbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_edit_followup_message</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_edit_followup_message_from_jsmnf(jsmnf</span> <span class="pre">*root,</span> <span class="pre">char</span> <span class="pre">*rbuf,</span> <span class="pre">struct</span> <span class="pre">discord_edit_followup_message</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+<li><p>JSON Encoder:</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">size_t</span> <span class="pre">discord_edit_followup_message_to_json(char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_edit_followup_message</span> <span class="pre">*)</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">jsonbcode</span> <span class="pre">discord_edit_followup_message_to_jsonb(jsonb</span> <span class="pre">*b,</span> <span class="pre">char</span> <span class="pre">*wbuf,</span> <span class="pre">size_t</span> <span class="pre">len,</span> <span class="pre">struct</span> <span class="pre">discord_edit_followup_message</span> <span class="pre">*)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_followup_message.thread_id">
+<span class="target" id="structdiscord__edit__followup__message_1a61fc6dd6ebf2808485398733a4a3eb38"></span><a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">thread_id</span></span></span><a class="headerlink" href="#c.discord_edit_followup_message.thread_id" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>id of the thread the message is in </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_followup_message.content">
+<span class="target" id="structdiscord__edit__followup__message_1a3b3db6ae80bc1081d8c47e59df8a29c5"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">content</span></span></span><a class="headerlink" href="#c.discord_edit_followup_message.content" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the message contents (up to 2000 characters) </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_followup_message.embeds">
+<span class="target" id="structdiscord__edit__followup__message_1abb6a4dd1e4c57139457d43efeff2cdfe"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_embeds" title="discord_embeds"><span class="n"><span class="pre">discord_embeds</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">embeds</span></span></span><a class="headerlink" href="#c.discord_edit_followup_message.embeds" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>embedded <code class="docutils literal notranslate"><span class="pre">rich</span></code> content </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_followup_message.allowed_mentions">
+<span class="target" id="structdiscord__edit__followup__message_1afb4b9c71f81d0b3228c556d98a71f89a"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_allowed_mention" title="discord_allowed_mention"><span class="n"><span class="pre">discord_allowed_mention</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">allowed_mentions</span></span></span><a class="headerlink" href="#c.discord_edit_followup_message.allowed_mentions" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>allowed mentions for the message </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_followup_message.components">
+<span class="target" id="structdiscord__edit__followup__message_1a8b6fd3a713f724cc14f01dfef13c2303"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../message_components/datatypes/models.html#c.discord_components" title="discord_components"><span class="n"><span class="pre">discord_components</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">components</span></span></span><a class="headerlink" href="#c.discord_edit_followup_message.components" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>the components to include with the message </p>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.discord_edit_followup_message.attachments">
+<span class="target" id="structdiscord__edit__followup__message_1a2c639973e7d9bcc29c69b0df215a4e94"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../resources/channel/datatypes/models.html#c.discord_attachments" title="discord_attachments"><span class="n"><span class="pre">discord_attachments</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">attachments</span></span></span><a class="headerlink" href="#c.discord_edit_followup_message.attachments" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>attached files to keep and possible descriptions for new files </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="c enum">
+<dt class="sig sig-object c" id="c.discord_interaction_types">
+<span class="target" id="interactions_8h_1acedb17c68eab684a8d0f908bd4af4c3e"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction_types</span></span></span><a class="headerlink" href="#c.discord_interaction_types" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_types.DISCORD_INTERACTION_PING">
+<span class="target" id="interactions_8h_1acedb17c68eab684a8d0f908bd4af4c3eaa47817a0acf35b30b3c3657b7c2d0075"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_PING</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#c.discord_interaction_types.DISCORD_INTERACTION_PING" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_types.DISCORD_INTERACTION_APPLICATION_COMMAND">
+<span class="target" id="interactions_8h_1acedb17c68eab684a8d0f908bd4af4c3ea7b4304273fd80ebe29cfb49d974d0372"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_APPLICATION_COMMAND</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#c.discord_interaction_types.DISCORD_INTERACTION_APPLICATION_COMMAND" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_types.DISCORD_INTERACTION_MESSAGE_COMPONENT">
+<span class="target" id="interactions_8h_1acedb17c68eab684a8d0f908bd4af4c3ea2628808d3fdb6a32b6ea2b24182c6203"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_MESSAGE_COMPONENT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><a class="headerlink" href="#c.discord_interaction_types.DISCORD_INTERACTION_MESSAGE_COMPONENT" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_types.DISCORD_INTERACTION_APPLICATION_COMMAND_AUTOCOMPLETE">
+<span class="target" id="interactions_8h_1acedb17c68eab684a8d0f908bd4af4c3ea0f9e20f1c8483332e2261f7f4c27863c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_APPLICATION_COMMAND_AUTOCOMPLETE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><a class="headerlink" href="#c.discord_interaction_types.DISCORD_INTERACTION_APPLICATION_COMMAND_AUTOCOMPLETE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_types.DISCORD_INTERACTION_MODAL_SUBMIT">
+<span class="target" id="interactions_8h_1acedb17c68eab684a8d0f908bd4af4c3eac7850aeefc741aec30068fedcd3b3dd0"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_MODAL_SUBMIT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><a class="headerlink" href="#c.discord_interaction_types.DISCORD_INTERACTION_MODAL_SUBMIT" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="c enum">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_types">
+<span class="target" id="interactions_8h_1af7a2bdc22799b9d1ac556a6ba7206c83"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_interaction_callback_types</span></span></span><a class="headerlink" href="#c.discord_interaction_callback_types" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_types.DISCORD_INTERACTION_PONG">
+<span class="target" id="interactions_8h_1af7a2bdc22799b9d1ac556a6ba7206c83a9bcbfe69a431084ab2a611464cc47fc3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_PONG</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#c.discord_interaction_callback_types.DISCORD_INTERACTION_PONG" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>ACK a DISCORD_INTERACTION_PING </p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_types.DISCORD_INTERACTION_CHANNEL_MESSAGE_WITH_SOURCE">
+<span class="target" id="interactions_8h_1af7a2bdc22799b9d1ac556a6ba7206c83a3409efaf45118256f4a33d4b15d76240"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_CHANNEL_MESSAGE_WITH_SOURCE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><a class="headerlink" href="#c.discord_interaction_callback_types.DISCORD_INTERACTION_CHANNEL_MESSAGE_WITH_SOURCE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>respond to an interaction with a message </p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_types.DISCORD_INTERACTION_DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE">
+<span class="target" id="interactions_8h_1af7a2bdc22799b9d1ac556a6ba7206c83a3ac4809e726a2ac2da81e6cdf56987f8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><a class="headerlink" href="#c.discord_interaction_callback_types.DISCORD_INTERACTION_DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>ACK an interaction and edit a response later, the user sees a loading state </p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_types.DISCORD_INTERACTION_DEFERRED_UPDATE_MESSAGE">
+<span class="target" id="interactions_8h_1af7a2bdc22799b9d1ac556a6ba7206c83ac0bc9e097c1abd820a6ce6150f809076"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_DEFERRED_UPDATE_MESSAGE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">6</span></span><a class="headerlink" href="#c.discord_interaction_callback_types.DISCORD_INTERACTION_DEFERRED_UPDATE_MESSAGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>for components, ACK an interaction and edit the original message later the user does not see a loading state </p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_types.DISCORD_INTERACTION_UPDATE_MESSAGE">
+<span class="target" id="interactions_8h_1af7a2bdc22799b9d1ac556a6ba7206c83a9b2296dd06716eb23773585d584994f3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_UPDATE_MESSAGE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">7</span></span><a class="headerlink" href="#c.discord_interaction_callback_types.DISCORD_INTERACTION_UPDATE_MESSAGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>for components, edit the message the component was attached to </p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_types.DISCORD_INTERACTION_APPLICATION_COMMAND_AUTOCOMPLETE_RESULT">
+<span class="target" id="interactions_8h_1af7a2bdc22799b9d1ac556a6ba7206c83a06581bb7b0f28c2c35632cff918c691a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_APPLICATION_COMMAND_AUTOCOMPLETE_RESULT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">8</span></span><a class="headerlink" href="#c.discord_interaction_callback_types.DISCORD_INTERACTION_APPLICATION_COMMAND_AUTOCOMPLETE_RESULT" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>respond to an autocomplete interaction with suggested choices </p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.discord_interaction_callback_types.DISCORD_INTERACTION_MODAL">
+<span class="target" id="interactions_8h_1af7a2bdc22799b9d1ac556a6ba7206c83acf8595ceb0df76b8b295de6ae9d88a97"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DISCORD_INTERACTION_MODAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">9</span></span><a class="headerlink" href="#c.discord_interaction_callback_types.DISCORD_INTERACTION_MODAL" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>respond to an interaction with a popup modal </p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="return_handles.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Return Handles</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../methods/create_followup_message.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Create Followup Message</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+    <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+         $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+         })
+    });
+  </script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2022, Cogmasters.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+
+  </body>
+</html>

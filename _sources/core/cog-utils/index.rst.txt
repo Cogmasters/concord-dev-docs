@@ -9,4 +9,3 @@ The following section outlines Cog-Utils tools used by Concord
    :maxdepth: 2
 
    Modular Logging <logconf/index>
-   NTL (null-terminated lists) <ntl/index>

@@ -8,27 +8,27 @@
 
     <title>Leave Thread &#8212; Concord  documentation</title>
     
-  <link href="../../../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
+    <link href="../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
     
-  <link rel="stylesheet"
-    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
+    <link rel="stylesheet"
+      href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
     
       
-
+  
     
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/pydata-sphinx-theme.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css" />
     
-  <link rel="preload" as="script" href="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
-
+    <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
@@ -97,16 +97,12 @@
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Cogmasters/concord" rel="noopener" target="_blank" title="Github">
-            <span><i class="fab fa-github"></i></span>
-            <label class="sr-only">Github</label>
-          </a>
+          <a class="nav-link" href="https://github.com/Cogmasters/concord" rel="noopener" target="_blank" title="Github"><span><i class="fab fa-github"></i></span>
+            <label class="sr-only">Github</label></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://discord.gg/Y7Xa6MA82v" rel="noopener" target="_blank" title="Discord">
-            <span><i class="fab fa-discord"></i></span>
-            <label class="sr-only">Discord</label>
-          </a>
+          <a class="nav-link" href="https://discord.gg/Y7Xa6MA82v" rel="noopener" target="_blank" title="Discord"><span><i class="fab fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
         </li>
       </ul>
       </div>
@@ -122,7 +118,8 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -133,6 +130,16 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../constants.html">
+   Constants
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../common.html">
+   Common
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../../client/index.html">
    Client
@@ -151,11 +158,6 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../../../client/methods/discord_add_intents.html">
      discord_add_intents - add events to listen to
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../client/methods/discord_async_next.html">
-     discord_async_next - execute immediate request function asynchronously
     </a>
    </li>
    <li class="toctree-l2">
@@ -257,11 +259,6 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../constants.html">
-   Constants
-  </a>
- </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../../events/index.html">
    Events
@@ -304,10 +301,27 @@
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../../interactions/application_commands/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../interactions/application_commands/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../interactions/application_commands/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../interactions/application_commands/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../../interactions/application_commands/methods/batch_edit_application_command_permissions.html">
@@ -395,16 +409,33 @@
     <a class="reference internal" href="../../../interactions/interaction/index.html">
      Interaction
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-    <label for="toctree-checkbox-5">
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../../interactions/interaction/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../interactions/interaction/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+      <label for="toctree-checkbox-7">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../interactions/interaction/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../interactions/interaction/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../../interactions/interaction/methods/create_followup_message.html">
@@ -452,16 +483,28 @@
     <a class="reference internal" href="../../../interactions/message_components/index.html">
      Message Components
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-    <label for="toctree-checkbox-6">
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../../interactions/message_components/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../../interactions/message_components/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../../interactions/message_components/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -471,8 +514,8 @@
   <a class="reference internal" href="../../index.html">
    Resources
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -481,16 +524,28 @@
     <a class="reference internal" href="../../application/index.html">
      Application
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../application/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../application/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+      <label for="toctree-checkbox-12">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../application/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -498,16 +553,33 @@
     <a class="reference internal" href="../../audit_log/index.html">
      Audit Log
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-    <label for="toctree-checkbox-9">
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../audit_log/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../audit_log/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../audit_log/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../audit_log/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../audit_log/methods/get_guild_audit_log.html">
@@ -520,16 +592,33 @@
     <a class="reference internal" href="../index.html">
      Channel
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul class="current">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+      <label for="toctree-checkbox-16">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../utils/methods.html">
@@ -737,16 +826,33 @@
     <a class="reference internal" href="../../emoji/index.html">
      Emoji
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-    <label for="toctree-checkbox-11">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../emoji/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../emoji/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+      <label for="toctree-checkbox-18">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../emoji/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../emoji/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../emoji/methods/create_guild_emoji.html">
@@ -779,16 +885,33 @@
     <a class="reference internal" href="../../guild/index.html">
      Guild
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-    <label for="toctree-checkbox-12">
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../guild/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../guild/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+      <label for="toctree-checkbox-20">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../guild/utils/methods.html">
@@ -946,16 +1069,33 @@
     <a class="reference internal" href="../../guild_template/index.html">
      Guild Template
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-    <label for="toctree-checkbox-13">
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../guild_template/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../guild_template/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+      <label for="toctree-checkbox-22">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../guild_template/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../guild_template/methods/create_guild_template.html">
@@ -978,16 +1118,33 @@
     <a class="reference internal" href="../../invite/index.html">
      Invite
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-    <label for="toctree-checkbox-14">
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../invite/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../invite/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+      <label for="toctree-checkbox-24">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../invite/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../invite/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../invite/methods/delete_invite.html">
@@ -1005,16 +1162,28 @@
     <a class="reference internal" href="../../stage_instance/index.html">
      Stage Instance
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+    <label for="toctree-checkbox-25">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../stage_instance/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../stage_instance/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+      <label for="toctree-checkbox-26">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../stage_instance/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -1022,16 +1191,28 @@
     <a class="reference internal" href="../../sticker/index.html">
      Sticker
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-    <label for="toctree-checkbox-16">
+    <input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/>
+    <label for="toctree-checkbox-27">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../sticker/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../sticker/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/>
+      <label for="toctree-checkbox-28">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../sticker/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -1039,16 +1220,33 @@
     <a class="reference internal" href="../../user/index.html">
      User
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-    <label for="toctree-checkbox-17">
+    <input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/>
+    <label for="toctree-checkbox-29">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../user/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../user/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/>
+      <label for="toctree-checkbox-30">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../user/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../user/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../user/methods/create_dm.html">
@@ -1096,16 +1294,33 @@
     <a class="reference internal" href="../../voice/index.html">
      Voice
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-    <label for="toctree-checkbox-18">
+    <input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/>
+    <label for="toctree-checkbox-31">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../voice/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../voice/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" type="checkbox"/>
+      <label for="toctree-checkbox-32">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../voice/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../voice/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../voice/methods/list_voice_regions.html">
@@ -1118,16 +1333,33 @@
     <a class="reference internal" href="../../webhook/index.html">
      Webhook
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-    <label for="toctree-checkbox-19">
+    <input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" type="checkbox"/>
+    <label for="toctree-checkbox-33">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../webhook/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../webhook/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" type="checkbox"/>
+      <label for="toctree-checkbox-34">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../webhook/datatypes/return_handles.html">
+         Return Handles
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../webhook/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../webhook/methods/create_webhook.html">
@@ -1200,16 +1432,28 @@
     <a class="reference internal" href="../../gateway/index.html">
      Gateway
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-    <label for="toctree-checkbox-20">
+    <input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" type="checkbox"/>
+    <label for="toctree-checkbox-35">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../gateway/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../gateway/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" type="checkbox"/>
+      <label for="toctree-checkbox-36">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../gateway/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../../gateway/methods/get_gateway.html">
@@ -1227,16 +1471,28 @@
     <a class="reference internal" href="../../permissions/index.html">
      Permissions
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-    <label for="toctree-checkbox-21">
+    <input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" type="checkbox"/>
+    <label for="toctree-checkbox-37">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../permissions/datatypes.html">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../permissions/datatypes/index.html">
        Datatypes
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" type="checkbox"/>
+      <label for="toctree-checkbox-38">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../permissions/datatypes/models.html">
+         Models
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -1246,6 +1502,9 @@
 
   </div>
 </nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
@@ -1299,8 +1558,13 @@
 <h1>Leave Thread<a class="headerlink" href="#leave-thread" title="Permalink to this headline">¶</a></h1>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.discord_leave_thread">
-<span class="target" id="discord_8h_1a87e0213a6055e8d72968424b955ce5ae"></span><a class="reference internal" href="../../../../core/common/index.html#c.CCORDcode" title="CCORDcode"><span class="n"><span class="pre">CCORDcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_leave_thread</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../../core/common/index.html#c.u64_snowflake_t" title="u64_snowflake_t"><span class="n"><span class="pre">u64_snowflake_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_leave_thread" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="discord_8h_1a9026c759b51d81e7e6f03a041f3c7cf3"></span><a class="reference internal" href="../../../common.html#c.CCORDcode" title="CCORDcode"><span class="n"><span class="pre">CCORDcode</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discord_leave_thread</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../client/datatypes.html#c.discord" title="discord"><span class="n"><span class="pre">discord</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span>, <a class="reference internal" href="../../../common.html#c.u64snowflake" title="u64snowflake"><span class="n"><span class="pre">u64snowflake</span></span></a><span class="w"> </span><span class="n"><span class="pre">channel_id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../../../common.html#c.discord_ret" title="discord_ret"><span class="n"><span class="pre">discord_ret</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ret</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.discord_leave_thread" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Removes the current user from a un-archived thread. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../../common.html#structdiscord__ret"><span class="std std-ref">discord_ret</span></a> for more options </p>
+</div>
+</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Fires a <code class="docutils literal notranslate"><span class="pre">Thread</span> <span class="pre">Members</span> <span class="pre">Update</span></code> event</p>
@@ -1308,12 +1572,13 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/methods/discord_init.html#discord_8h_1a445cca7dc5a28113760c7e55759845c7"><span class="std std-ref">discord_init()</span></a> </p></li>
+<li><p><strong>client</strong> – the client created with <a class="reference internal" href="../../../client/methods/discord_init.html#discord_8h_1acd52a9fc58a1fcb9b4719a5cedd70f5d"><span class="std std-ref">discord_init()</span></a> </p></li>
 <li><p><strong>channel_id</strong> – the thread to be removed from </p></li>
+<li><p><strong>ret</strong> – return context of the request. if successful the assigned <code class="docutils literal notranslate"><span class="pre">done</span></code> will be triggered </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p><a class="reference internal" href="../../../../core/common/index.html#group__ConcordCodes_1ga4ca5a90a1068552190074f603f68b587"><span class="std std-ref">CCORDcode</span></a> for how the operation went, <a class="reference internal" href="../../../../core/common/index.html#group__ConcordCodes_1ga0b2454f88baeff7a3d492bb59227ab0f"><span class="std std-ref">CCORD_OK</span></a> means nothing out of the ordinary </p>
+<dd class="field-even"><p><a class="reference internal" href="../../../common.html#group__ConcordCodes_1ga4ca5a90a1068552190074f603f68b587"><span class="std std-ref">CCORDcode</span></a> for how the operation went, <a class="reference internal" href="../../../common.html#group__ConcordCodes_1ga0b2454f88baeff7a3d492bb59227ab0f"><span class="std std-ref">CCORD_OK</span></a> means nothing out of the ordinary </p>
 </dd>
 </dl>
 </dd></dl>
@@ -1333,7 +1598,7 @@
               
               
               <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="join_thread.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1356,8 +1621,8 @@
       </div>
     </div>
   
-  <script src="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-
+    <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  
   <script type="text/javascript">
     $(document).ready(function() {
          $(".toggle .header").click(function() {
@@ -1377,7 +1642,7 @@
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

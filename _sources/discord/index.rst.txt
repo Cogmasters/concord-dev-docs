@@ -8,12 +8,10 @@ The following section outlines the Discord API supported by Concord
    :caption: Table of Contents
    :maxdepth: 2
 
-   client/index
-
    constants
+   common
 
+   client/index
    events/index
-
    interactions/index
-
    resources/index
