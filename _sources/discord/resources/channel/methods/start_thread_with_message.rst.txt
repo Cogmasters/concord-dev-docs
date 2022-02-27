@@ -9,11 +9,7 @@ Example
 
 .. code:: c
    
-   discord_start_thread_with_message(client,
-                                     msg->channel_id, 
-                                     msg->id, 
-                                      &(struct discord_start_thread_with_message *params){
-                                        .name = "Thread",
-                                        .auto_archive_duration = 4320
-                                      }
-                                      , NULL);
+   discord_start_thread_with_message(client, msg->channel_id, msg->id, &(struct discord_start_thread_with_message){
+                                                                         .name = "New_thread",
+                                                                         .auto_archive_duration = 4320
+                                                                       }, NULL);

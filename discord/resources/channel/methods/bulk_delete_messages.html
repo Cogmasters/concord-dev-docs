@@ -1582,13 +1582,15 @@
 
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">u64_snowflake_t</span> <span class="o">*</span><span class="n">messages</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="o">&amp;</span><span class="p">(</span><span class="n">u64_snowflake_t</span><span class="p">){</span> <span class="mi">1231231232131ULL</span> <span class="p">},</span> <span class="c1">// ficticious message ID</span>
-  <span class="o">&amp;</span><span class="p">(</span><span class="n">u64_snowflake_t</span><span class="p">){</span> <span class="mi">3213213213213ULL</span> <span class="p">},</span> <span class="c1">// ficticious message ID</span>
-  <span class="nb">NULL</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">snowflakes</span> <span class="n">messages</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="p">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="p">.</span><span class="n">array</span> <span class="o">=</span> <span class="p">(</span><span class="n">u64snowflake</span><span class="p">[]){</span>
+    <span class="mi">1231231231231231ULL</span><span class="p">,</span>
+    <span class="mi">3213213213213213ULL</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 
-<span class="n">discord_bulk_delete_messages</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="n">messages</span><span class="p">);</span>
+ <span class="n">discord_bulk_delete_messages</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="n">messages</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>

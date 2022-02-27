@@ -1586,19 +1586,30 @@
 
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">discord_message</span> <span class="n">ret1</span><span class="p">;</span>
-<span class="k">struct</span> <span class="n">discord_message</span> <span class="n">ret2</span><span class="p">;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">fail</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord</span> <span class="o">*</span><span class="n">client</span><span class="p">,</span> <span class="n">CCORDcode</span> <span class="n">code</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">discord_strerror</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">client</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">done_get_channel_message</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord</span> <span class="o">*</span><span class="n">client</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">discord_message</span> <span class="o">*</span><span class="n">ret</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;I said: %s&quot;</span><span class="p">,</span> <span class="n">ret</span><span class="o">-&gt;</span><span class="n">content</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">done_create_message</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord</span> <span class="o">*</span><span class="n">client</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">discord_message</span> <span class="o">*</span><span class="n">ret</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">discord_get_channel_message</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">ret</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="n">ret1</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span> <span class="o">&amp;</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord_ret_message</span><span class="p">)</span> <span class="p">{</span>
+                                                                   <span class="p">.</span><span class="n">done</span> <span class="o">=</span> <span class="n">done_get_channel_message</span><span class="p">,</span>
+                                                                   <span class="p">.</span><span class="n">fail</span> <span class="o">=</span> <span class="n">fail</span>
+                                                                 <span class="p">});</span>
+<span class="p">}</span>
 
 <span class="k">struct</span> <span class="n">discord_create_message</span> <span class="n">params</span> <span class="o">=</span> <span class="p">{</span> <span class="p">.</span><span class="n">content</span> <span class="o">=</span> <span class="s">&quot;Hey!&quot;</span> <span class="p">};</span>
 
-<span class="n">discord_create_message</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">params</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ret1</span><span class="p">);</span>
-
-<span class="n">discord_get_channel_message</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="n">ret1</span><span class="p">.</span><span class="n">id</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ret2</span><span class="p">);</span>
-
-<span class="n">printf</span><span class="p">(</span><span class="s">&quot;I said: %s&quot;</span><span class="p">,</span> <span class="n">ret2</span><span class="p">.</span><span class="n">content</span><span class="p">);</span>
-
-<span class="n">discord_message_cleanup</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ret1</span><span class="p">);</span>
-<span class="n">discord_message_cleanup</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ret1</span><span class="p">);</span>
+<span class="n">discord_create_message</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">params</span><span class="p">,</span> <span class="o">&amp;</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord_ret_message</span><span class="p">){</span>
+                                                           <span class="p">.</span><span class="n">done</span> <span class="o">=</span> <span class="n">done_create_message</span><span class="p">,</span>
+                                                           <span class="p">.</span><span class="n">fail</span> <span class="o">=</span> <span class="n">fail</span>
+                                                         <span class="p">});</span>
 </pre></div>
 </div>
 </section>

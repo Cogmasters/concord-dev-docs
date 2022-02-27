@@ -1584,7 +1584,7 @@
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">u64_snowflake_t</span> <span class="n">message_id</span> <span class="o">=</span> <span class="n">strtoull</span><span class="p">(</span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">content</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span> <span class="c1">// assuming msg-&gt;content holds a message ID</span>
 
-<span class="n">discord_delete_all_reactions</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="n">message_id</span><span class="p">);</span>
+<span class="n">discord_delete_all_reactions</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="n">message_id</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>

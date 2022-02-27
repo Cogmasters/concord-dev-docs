@@ -1655,15 +1655,11 @@
 
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">discord_start_thread_with_message</span><span class="p">(</span><span class="n">client</span><span class="p">,</span>
-                                  <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span>
-                                  <span class="n">msg</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span>
-                                   <span class="o">&amp;</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord_start_thread_with_message</span> <span class="o">*</span><span class="n">params</span><span class="p">){</span>
-                                     <span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Thread&quot;</span><span class="p">,</span>
-                                     <span class="p">.</span><span class="n">auto_archive_duration</span> <span class="o">=</span> <span class="mi">4320</span><span class="p">,</span>
-                                     <span class="p">.</span><span class="n">discord_channel_types</span> <span class="o">=</span> <span class="n">DISCORD_CHANNEL_GUILD_PUBLIC_THREAD</span>
-                                   <span class="p">},</span>
-                                   <span class="nb">NULL</span><span class="p">);</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">discord_start_thread_with_message</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span> <span class="o">&amp;</span><span class="p">(</span><span class="k">struct</span> <span class="n">discord_start_thread_with_message</span><span class="p">){</span>
+                                                                      <span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;New_thread&quot;</span><span class="p">,</span>
+                                                                      <span class="p">.</span><span class="n">auto_archive_duration</span> <span class="o">=</span> <span class="mi">4320</span><span class="p">,</span>
+                                                                      <span class="p">.</span><span class="n">discord_channel_types</span> <span class="o">=</span> <span class="n">DISCORD_CHANNEL_GUILD_PUBLIC_THREAD</span>
+                                                                    <span class="p">},</span> <span class="nb">NULL</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
