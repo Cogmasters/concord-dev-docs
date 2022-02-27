@@ -1,13 +1,6 @@
-..
-  Most of our documentation is generated from our source code comments,
-    please head to github.com/Cogmasters/concord if you want to contribute!
-
-  The following files contains the documentation used to generate this page: 
-  - common/common.h
-
-========================
-Concord Common Reference
-========================
+======
+Common
+======
 
 Primitives
 ----------
@@ -21,6 +14,11 @@ Arrays
 .. doxygenstruct:: integers
 .. doxygenstruct:: strings
 .. doxygenstruct:: json_values
+
+Async Handler
+-------------
+
+.. doxygenstruct:: discord_ret
 
 Global Resources
 ----------------
