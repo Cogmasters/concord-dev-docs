@@ -19,7 +19,7 @@ Example
 
 .. code:: c
 
-   discord_create_guild_template(client, msg->guild_id, &(struct discord_create_guild_template) {
+   discord_create_guild_template(client, msg->guild_id, &(struct discord_create_guild_template){
                                                           .name = "Guild template create example",
                                                           .description = "Hello from Concord!"
                                                         }, NULL)
