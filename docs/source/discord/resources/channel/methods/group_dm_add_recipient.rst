@@ -9,7 +9,7 @@ Example
 
 .. code:: c
 
-   u64_snowflake_t id = 1231231232131ULL; // ficticious channel ID
+   u64snowflake id = 1231231232131ULL; // ficticious channel ID
    
    discord_group_dm_add_recipient(client, id, 
                                   msg->author->id, 
