@@ -20,8 +20,8 @@ Example
 
    void done_create_message(struct discord *client, void *data, const struct discord_message *ret)
    {
-     discord_get_channel_message(client, ret->channel_id, ret1->id, &(struct discord_ret_invite) {
-                                                                      .done = done_get_guild_template,
+     discord_get_channel_message(client, ret->channel_id, ret1->id, &(struct discord_ret_message) {
+                                                                      .done = done_get_channel_message,
                                                                       .fail = fail
                                                                     });
    }
