@@ -9,10 +9,9 @@ Example
 .. code:: c   
    
    void done_list_thread_members(struct discord *client, void *data, const struct discord_thread_members *ret)
-   {
-     if (ret)
-       for (int i = 0; ret[i]; ++i)
-         printf("%"PRIu64"\n", ret[i]->user_id);
+   {  
+     for (int i = 0; i < body->size; ++i)
+       printf("%"PRIu64"\n", body->array[i].user_id);
    }
 
    void fail_list_thread_members(struct discord *client, CCORDcode code, void *data)
