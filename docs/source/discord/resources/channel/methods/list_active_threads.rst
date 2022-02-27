@@ -29,7 +29,7 @@ Example
      printf("%s\n", discord_strerror(code, client));
    }
 
-   discord_list_active_threads(client, msg->channel_id, &(struct discord_ret_thread_response_body) {
+   discord_list_active_threads(client, msg->channel_id, &(struct discord_ret_thread_response_body){
                                                           .done = done_list_active_threads,
                                                           .fail = fail_list_active_threads
                                                         });
