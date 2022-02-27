@@ -28,4 +28,7 @@ Example
      printf("%s\n", discord_strerror(code, client));
    }
       
-   discord_create_channel_invite(client, msg->channel_id, NULL, &ret);
+   discord_create_channel_invite(client, msg->channel_id, NULL, &(struct discord_ret_invite) {
+                                                                  .done = done_create_channel_invite,
+                                                                  .fail = fail_create_channel_invite
+                                                                }));
