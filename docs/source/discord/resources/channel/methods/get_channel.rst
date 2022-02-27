@@ -28,7 +28,7 @@ Example
      printf("%s\n", discord_strerror(code, client));
    }
 
-   discord_get_channel(client, msg->channel_id, &(struct discord_ret_channel) {
+   discord_get_channel(client, msg->channel_id, &(struct discord_ret_channel){
                                                   .done = done_get_channel,
                                                   .fail = fail_get_channel
                                                 });
