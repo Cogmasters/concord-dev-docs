@@ -8,9 +8,17 @@ Example
 
 .. code:: c
    
-   struct discord_channel ret;
+   void done_get_channel(struct discord *client, void *data, const struct discord_channel *ret)
+   {
+     printf("The name of this channel is: %s", ret->name);
+   }
 
-   discord_get_channel(client, msg->channel_id, &ret);
+   void fail_get_channel(struct discord *client, CCORDcode code, void *data)
+   {
+     printf("%s\n", discord_strerror(code, client));
+   }
 
-   printf("The name of this channel is: %s", ret.name);
-   discord_channel_cleanup(&ret);
+   discord_get_channel(client, msg->channel_id, &(struct discord_ret_channel){
+                                                  .done = done_get_channel,
+                                                  .fail = fail_get_channel
+                                                });
