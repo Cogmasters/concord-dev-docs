@@ -33,7 +33,7 @@ Example
 
    discord_create_reaction(client, msg->channel_id, msg->id, 0, "😄", NULL);
    
-   discord_get_reactions(client, msg->channel_id, msg->id, 0, "😄", NULL, &(struct discord_ret_users) {
+   discord_get_reactions(client, msg->channel_id, msg->id, 0, "😄", NULL, &(struct discord_ret_users){
                                                                             .done = done_get_reactions,
                                                                             .fail = fail_get_reactions
                                                                           });
