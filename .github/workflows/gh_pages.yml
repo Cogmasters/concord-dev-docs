@@ -38,7 +38,7 @@ jobs:
       - name: Doxygen Action
         run: |
           echo "Preparing files for documentation"
-          mv doxygen-1.9.3/bin/doxygen concord/
+          sudo mv doxygen-1.9.3/bin/doxygen concord/
           cd concord/
           make -C gencodecs docs
           echo "Generating XML output"
