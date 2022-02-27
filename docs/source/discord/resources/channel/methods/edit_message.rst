@@ -33,7 +33,7 @@ Example
    
    discord_create_message(client, msg->channel_id, &(struct discord_create_message_params){
                                                      .content = "Hello there?" 
-                                                    }, &(struct discord_ret_invite) {
+                                                    }, &(struct discord_ret_message) {
                                                          .done = done_create_message,
                                                          .fail = fail_create_message
                                                        })
