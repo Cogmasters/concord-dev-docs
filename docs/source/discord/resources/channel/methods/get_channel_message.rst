@@ -22,7 +22,7 @@ Example
    {
      discord_get_channel_message(client, ret->channel_id, ret1->id, &(struct discord_ret_invite) {
                                                                       .done = done_get_guild_template,
-                                                                      .fail = fail_get_guild_template
+                                                                      .fail = fail
                                                                     });
    }
 
@@ -30,5 +30,5 @@ Example
 
    discord_create_message(client, msg->channel_id, &params, &(struct discord_ret_message){
                                                               .done = done_create_message,
-                                                              .fail = fail_create_message
+                                                              .fail = fail
                                                             });
