@@ -10,9 +10,8 @@ Example
 
    void done_list_joined_private_archived_threads(struct discord *client, void *data, const struct discord_thread_response_body *body)
    {
-     if (body.threads)
-       for (int i = 0; body.threads[i]; ++i)
-         printf("Thread name: %s\n", body.threads[i]->name);
+     for (int i = 0; i < body->threads.size; ++i)
+       printf("Thread name: %s\n", body->threads.array[i].name);
    }
 
    void fail_list_joined_private_archived_threads(struct discord *client, CCORDcode code, void *data)
