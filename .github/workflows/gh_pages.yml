@@ -38,12 +38,14 @@ jobs:
       - name: Doxygen Action
         run: |
           echo "Preparing files for documentation"
-          sudo mv doxygen-1.9.3/bin/doxygen concord/
-          cd concord/
-          make -C gencodecs docs
+          make -C concord/gencodecs docs
+          sudo mv doxygen-1.9.3/bin/doxygen .
+          sudo mv concord/docs .
+          sudo mv concord/include .
+          sudo mv concord/cog-utils .
+          sudo mv concord/core .
           echo "Generating XML output"
           ./doxygen
-          sudo mv docs/xml ../docs/
 
       - name: Breathe Action
         run: make -C docs html
