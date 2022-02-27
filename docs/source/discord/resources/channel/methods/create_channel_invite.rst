@@ -18,14 +18,14 @@ Example
 
 .. code:: c
    
-   struct discord_invite ret;
-   char text[124];
-   
+   void done_get_guild_template(struct discord *client, void *data, const struct discord_invite *ret)
+   {
+     printf("Created invite: %s", ret->code);
+   }
+
+   void fail_get_guild_template(struct discord *client, CCORDcode code, void *data)
+   {
+     printf("%s\n", discord_strerror(code, client));
+   }
+      
    discord_create_channel_invite(client, msg->channel_id, NULL, &ret);
-   
-   snprintf(text, sizeof(text), "Created invite: %s", ret.code);
-   
-   struct discord_create_message_params params = { .content = text };
-   discord_create_message(client, msg->channel_id, &params, NULL);
-   
-   discord_invite_cleanup(&ret);
