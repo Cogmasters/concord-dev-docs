@@ -12,8 +12,8 @@ Example
    void done_get_channel_messages(struct discord *client, void *data, const struct discord_messages *ret)
    {
      if (ret)
-       for (int i = 0; ret[i]; ++i)
-         printf("%s\n", ret[i]->content);
+       for (int i = 0; i < ret->size; ++i)
+         printf("%s\n", ret->array[i].content);
    }
 
    void fail_get_channel_messages(struct discord *client, CCORDcode code, void *data)
