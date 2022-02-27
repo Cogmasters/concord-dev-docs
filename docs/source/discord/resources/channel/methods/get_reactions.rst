@@ -11,9 +11,8 @@ Example
 
    void done_get_reactions(struct discord *client, void *data, const struct discord_users *ret)
    {
-     if (ret)
-       for (int i = 0; i < ret->size; ++i)
-         printf("%s\n", ret->array[i].username);
+     for (int i = 0; i < ret->size; ++i)
+       printf("%s\n", ret->array[i].username);
    }
 
    void fail_get_reactions(struct discord *client, CCORDcode code, void *data)
