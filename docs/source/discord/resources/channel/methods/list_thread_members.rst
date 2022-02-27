@@ -29,7 +29,7 @@ Example
      printf("%s\n", discord_strerror(code, client));
    }
 
-   discord_list_thread_members(client, msg->channel_id, &(struct discord_ret_thread_members) {
+   discord_list_thread_members(client, msg->channel_id, &(struct discord_ret_thread_members){
                                                           .done = done_list_thread_members,
                                                           .fail = fail_list_thread_members
                                                         });
