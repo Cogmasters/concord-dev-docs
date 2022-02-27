@@ -21,9 +21,6 @@ Example
 
    u64_snowflake_t id = 1231231232131ULL; // ficticious channel ID
 
-   discord_modify_channel(client, 
-                          id, 
-                          &(struct discord_modify_channel_params){
-                            .name = "Friends channel"
-                          }, 
-                          NULL);
+   discord_modify_channel(client, id, &(struct discord_modify_channel_params){
+                                        .name = "Friends channel"
+                                      }, NULL);
