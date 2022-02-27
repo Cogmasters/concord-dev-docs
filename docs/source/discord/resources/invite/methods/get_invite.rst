@@ -1,17 +1,8 @@
-..
-  Most of our documentation is generated from our source code comments,
-    please head to github.com/Cogmasters/concord if you want to contribute!
-
-  The following files contains the documentation used to generate this page: 
-  - discord.h (for public datatypes)
-  - discord-internal.h (for private datatypes)
-  - specs/discord/ (for generated datatypes)
-
 Get Invite
 ==========
 
 .. doxygenfunction:: discord_get_invite
-.. doxygenstruct:: discord_get_invite_params
+.. doxygenstruct:: discord_get_invite
 
 
 Example
@@ -29,10 +20,11 @@ Example
      printf("%s\n", discord_strerror(code, client));
    }
 
+   ...
 
    char *invite_code = "Y7Xa6MA82v";
    
-   discord_get_invite(client, invite_code, NULL, &(struct ) {
+   discord_get_invite(client, invite_code, NULL, &(struct discord_ret_invite) {
                                                    .done = done_get_invite,
                                                    .fail = fail_get_invite
                                                  });

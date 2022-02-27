@@ -1,0 +1,6 @@
+# Each line should contain the regular expression of a known Sphinx warning
+# that should be filtered out
+.*Duplicate C declaration.*
+.*Duplicate explicit target name.*
+.*Duplicate ID.*
+.*Duplicate target detected.*

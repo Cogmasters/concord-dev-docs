@@ -1,17 +1,8 @@
-..
-  Most of our documentation is generated from our source code comments,
-    please head to github.com/Cogmasters/concord if you want to contribute!
-
-  The following files contains the documentation used to generate this page: 
-  - discord.h (for public datatypes)
-  - discord-internal.h (for private datatypes)
-  - specs/discord/ (for generated datatypes)
-
 Create Channel Invite
 =====================
 
 .. doxygenfunction:: discord_create_channel_invite
-.. doxygenstruct:: discord_create_channel_invite_params
+.. doxygenstruct:: discord_create_channel_invite
 
 Example
 -------
@@ -27,8 +18,10 @@ Example
    {
      printf("%s\n", discord_strerror(code, client));
    }
+
+   ...
       
    discord_create_channel_invite(client, msg->channel_id, NULL, &(struct discord_ret_invite) {
                                                                   .done = done_create_channel_invite,
                                                                   .fail = fail_create_channel_invite
-                                                                }));
+                                                                });

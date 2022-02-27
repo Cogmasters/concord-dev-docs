@@ -19,7 +19,10 @@ import sys
 #
 # import os
 # import sys
-# sys.path.insert(0, os.path.abspath('.'))
+
+# Add the '_extensions' directory to sys.path, to enable finding Sphinx
+# extensions within.
+sys.path.insert(0, os.path.abspath('_extensions'))
 
 # -- Project information -----------------------------------------------------
 
@@ -34,7 +37,8 @@ author = 'Cogmasters'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-        'breathe'
+        'breathe',
+        'zephyr.warnings_filter'
         ]
 
 pygments_style = 'sphinx'
@@ -102,3 +106,8 @@ html_static_path = ['_static']
 html_css_files = [
     'css/custom.css',
 ]
+
+# - Filter known warnings -----------------------------------------------------
+
+warnings_filter_config = "./known-warnings.txt"
+warnings_filter_silent = True

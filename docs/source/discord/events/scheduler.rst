@@ -1,12 +1,3 @@
-..
-  Most of our documentation is generated from our source code comments,
-    please head to github.com/Cogmasters/concord if you want to contribute!
-
-  The following files contains the documentation used to generate this page: 
-  - discord.h (for public datatypes)
-  - discord-internal.h (for private datatypes)
-  - specs/discord/ (for generated datatypes)
-
 =========
 Scheduler
 =========
@@ -30,7 +21,7 @@ The default amount of threads in the threadpool is 2, and its maximum pending ta
 discord_set_event_scheduler() - set Event scheduler
 ---------------------------------------------------
 
-.. doxygentypedef:: discord_on_scheduler
+.. doxygentypedef:: discord_ev_scheduler
 .. doxygenenum:: discord_event_scheduler
 .. doxygenfunction:: discord_set_event_scheduler
 

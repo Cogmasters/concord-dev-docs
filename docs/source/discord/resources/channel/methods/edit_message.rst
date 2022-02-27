@@ -1,18 +1,8 @@
-..
-  Most of our documentation is generated from our source code comments,
-    please head to github.com/Cogmasters/concord if you want to contribute!
-
-  The following files contains the documentation used to generate this page: 
-  - discord.h (for public datatypes)
-  - discord-internal.h (for private datatypes)
-  - specs/discord/ (for generated datatypes)
-
-============
 Edit Message
 ============
 
 .. doxygenfunction:: discord_edit_message
-.. doxygenstruct:: discord_edit_message_params
+.. doxygenstruct:: discord_edit_message
 
 Example
 -------
@@ -30,11 +20,13 @@ Example
    {
      printf("%s\n", discord_strerror(code, client));
    }
-   
+
+   ...
+
    discord_create_message(client, msg->channel_id, &(struct discord_create_message){
                                                      .content = "Hello there?" 
-                                                    }, &(struct discord_ret_message) {
-                                                         .done = done_create_message,
-                                                         .fail = fail_create_message
-                                                       })
-                                                    );
+                                                   }, 
+                                                   &(struct discord_ret_message){
+                                                     .done = done_create_message,
+                                                     .fail = fail_create_message
+                                                   });
