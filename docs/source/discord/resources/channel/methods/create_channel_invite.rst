@@ -18,12 +18,12 @@ Example
 
 .. code:: c
    
-   void done_get_guild_template(struct discord *client, void *data, const struct discord_invite *ret)
+   void done_create_channel_invite(struct discord *client, void *data, const struct discord_invite *ret)
    {
      printf("Created invite: %s", ret->code);
    }
 
-   void fail_get_guild_template(struct discord *client, CCORDcode code, void *data)
+   void fail_create_channel_invite(struct discord *client, CCORDcode code, void *data)
    {
      printf("%s\n", discord_strerror(code, client));
    }
