@@ -31,7 +31,7 @@ Example
      printf("%s\n", discord_strerror(code, client));
    }
    
-   discord_get_channel_messages(client, msg->channel_id, NULL, &(struct discord_ret_messages) {
+   discord_get_channel_messages(client, msg->channel_id, NULL, &(struct discord_ret_messages){
                                                                  .done = done_get_channel_messages,
                                                                  .fail = fail_get_channel_messages
                                                                });
