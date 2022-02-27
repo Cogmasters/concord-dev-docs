@@ -29,7 +29,7 @@ Example
      printf("%s\n", discord_strerror(code, client));
    }
    
-    discord_get_channel_invites(client, msg->channel_id, &(struct discord_ret_invite) {
+    discord_get_channel_invites(client, msg->channel_id, &(struct discord_ret_invite){
                                                            .done = done_get_channel_invites,
                                                            .fail = fail_get_channel_invites
                                                          });
