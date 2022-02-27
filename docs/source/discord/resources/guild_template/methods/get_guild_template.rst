@@ -30,7 +30,7 @@ Example
 
    char *code = "ABCDEFGHIJ"; //ficticious guild template ID
    
-   discord_get_guild_template(client, code, NULL, &(struct discord_ret_invite) {
+   discord_get_guild_template(client, code, NULL, &(struct discord_ret_guild_template) {
                                                     .done = done_get_guild_template,
                                                     .fail = fail_get_guild_template
                                                   });
