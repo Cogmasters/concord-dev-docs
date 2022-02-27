@@ -40,7 +40,7 @@ jobs:
           echo "Preparing files for documentation"
           make -C concord/gencodecs docs
           sudo mv doxygen-1.9.3/bin/doxygen .
-          sudo mv concord/docs .
+          sudo mv concord/docs/api docs/
           sudo mv concord/include .
           sudo mv concord/cog-utils .
           sudo mv concord/core .
