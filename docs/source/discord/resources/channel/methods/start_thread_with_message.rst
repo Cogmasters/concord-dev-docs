@@ -18,11 +18,7 @@ Example
 
 .. code:: c
    
-   discord_start_thread_with_message(client,
-                                     msg->channel_id, 
-                                     msg->id, 
-                                      &(struct discord_start_thread_with_message_params *params){
-                                        .name = "Thread",
-                                        .auto_archive_duration = 4320
-                                      }, 
-                                      NULL);
+   discord_start_thread_with_message(client, msg->channel_id, msg->id, &(struct discord_start_thread_with_message){
+                                                                         .name = "Thread",
+                                                                         .auto_archive_duration = 4320
+                                                                       }, NULL);
