@@ -19,14 +19,21 @@ Example
 
 .. code:: c
 
-   struct discord_user **ret;
+   void done_get_reactions(struct discord *client, void *data, const struct discord_users *ret)
+   {
+     if (ret)
+       for (int i = 0; ret[i]; ++i)
+         printf("%s\n", ret[i]->username);
+   }
+
+   void fail_get_reactions(struct discord *client, CCORDcode code, void *data)
+   {
+     printf("%s\n", discord_strerror(code, client));
+   }
 
    discord_create_reaction(client, msg->channel_id, msg->id, 0, "😄", NULL);
    
-   discord_get_reactions(client, msg->channel_id, msg->id, 0, "😄", NULL, &ret);
-   
-   if (ret)
-     for (int i = 0; ret[i]; ++i)
-       printf("%s\n", ret[i]->username);
-       
-   discord_user_list_free(ret);
+   discord_get_reactions(client, msg->channel_id, msg->id, 0, "😄", NULL, &(struct discord_ret_users) {
+                                                                            .done = done_get_reactions,
+                                                                            .fail = fail_get_reactions
+                                                                          });
