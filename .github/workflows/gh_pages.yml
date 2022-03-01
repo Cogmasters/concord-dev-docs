@@ -13,11 +13,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          submodules: recursive
-
       - name: Update concord-dev submodule
-        run: git submodule update --remote
+        run: |
+          git submodule update --init --recursive
+          git submodule update --remote
 
       - name: Preparing concord-dev
         run: |
