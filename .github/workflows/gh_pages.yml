@@ -16,7 +16,10 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Preparing Concord-Dev
+      - name: Update concord-dev submodule
+        run: git submodule update --remote
+
+      - name: Preparing concord-dev
         run: |
           make -C concord docs
 
