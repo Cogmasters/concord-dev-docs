@@ -9,14 +9,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
       - uses: actions/checkout@v2
         with:
           submodules: recursive
 
       - name: Preparing Concord-Dev
         run: |
-          git clone --branch dev https://github.com/Cogmasters/concord
-          echo "Preparing files for documentation"
           make -C concord docs
 
       - name: Install Doxygen-1.9.3
