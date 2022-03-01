@@ -30,7 +30,9 @@ jobs:
           sudo mv doxygen-1.9.3/bin/doxygen concord/
 
       - name: Doxygen Action
-        run: ./doxygen
+        run: |
+          cd concord
+          ./doxygen
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
