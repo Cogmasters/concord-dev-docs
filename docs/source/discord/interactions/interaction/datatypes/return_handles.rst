@@ -1,6 +1,0 @@
-==============
-Return Handles
-==============
-
-.. doxygengroup:: DiscordRetInteraction
-

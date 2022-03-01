@@ -1,5 +1,0 @@
-==============
-Return Handles
-==============
-
-.. doxygengroup:: DiscordRetEmoji
