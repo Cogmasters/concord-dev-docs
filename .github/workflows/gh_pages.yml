@@ -11,9 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Preparing Concord-Dev
-        run: git clone --branch dev https://github.com/Cogmasters/concord
-
       - name: Install Doxygen-1.9.3
         run: |
           echo "Install wget"
