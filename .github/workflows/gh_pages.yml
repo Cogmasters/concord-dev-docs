@@ -19,10 +19,9 @@ jobs:
       - name: Doxygen Action
         run: |
           echo "Preparing files for documentation"
-          sudo apt install doxygen
           cd concord
           echo $(ls)
-          make docs
+          sudo make docs
           echo "Generating HTML output"
           doxygen
 
