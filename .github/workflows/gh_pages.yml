@@ -17,7 +17,11 @@ jobs:
           submodules: recursive
 
       - name: Pull latest submodules
-        run: git pull --recurse-submodules
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote
+          cd concord
+          git checkout dev
 
       - name: Preparing Concord-Dev
         run: |
