@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Concord", "index.html", [
-    [ "Building your first bot", "md_docs_BUILDING_A_BOT.html", [
+    [ "Building your first bot", "d3/dfc/md_docs_BUILDING_A_BOT.html", [
       [ "About", "index.html#autotoc_md0", [
         [ "Minimal example", "index.html#autotoc_md1", null ]
       ] ],
@@ -59,62 +59,62 @@ var NAVTREE =
       [ "Support", "index.html#autotoc_md22", null ],
       [ "Contributing", "index.html#autotoc_md23", null ],
       [ "Getting Started", "index.html#autotoc_md24", null ],
-      [ "Ping-Pong Bot Source Code", "md_docs_BUILDING_A_BOT.html#autotoc_md26", [
-        [ "Initialize the bot", "md_docs_BUILDING_A_BOT.html#autotoc_md27", [
-          [ "discord_config_init()", "md_docs_BUILDING_A_BOT.html#autotoc_md28", null ]
+      [ "Ping-Pong Bot Source Code", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md26", [
+        [ "Initialize the bot", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md27", [
+          [ "discord_config_init()", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md28", null ]
         ] ],
-        [ "discord_init()", "md_docs_BUILDING_A_BOT.html#autotoc_md29", null ],
-        [ "Start the bot", "md_docs_BUILDING_A_BOT.html#autotoc_md30", [
-          [ "discord_set_on_ready()", "md_docs_BUILDING_A_BOT.html#autotoc_md31", null ],
-          [ "discord_set_on_command()", "md_docs_BUILDING_A_BOT.html#autotoc_md32", null ],
-          [ "discord_run()", "md_docs_BUILDING_A_BOT.html#autotoc_md33", null ]
+        [ "discord_init()", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md29", null ],
+        [ "Start the bot", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md30", [
+          [ "discord_set_on_ready()", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md31", null ],
+          [ "discord_set_on_command()", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md32", null ],
+          [ "discord_run()", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md33", null ]
         ] ],
-        [ "Clean up the bot", "md_docs_BUILDING_A_BOT.html#autotoc_md34", [
-          [ "discord_cleanup()", "md_docs_BUILDING_A_BOT.html#autotoc_md35", null ]
+        [ "Clean up the bot", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md34", [
+          [ "discord_cleanup()", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md35", null ]
         ] ],
-        [ "Compile the bot", "md_docs_BUILDING_A_BOT.html#autotoc_md36", null ],
-        [ "Execute the bot", "md_docs_BUILDING_A_BOT.html#autotoc_md37", [
-          [ "Test the bot", "md_docs_BUILDING_A_BOT.html#autotoc_md38", null ],
-          [ "Terminate the bot", "md_docs_BUILDING_A_BOT.html#autotoc_md39", null ]
+        [ "Compile the bot", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md36", null ],
+        [ "Execute the bot", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md37", [
+          [ "Test the bot", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md38", null ],
+          [ "Terminate the bot", "d3/dfc/md_docs_BUILDING_A_BOT.html#autotoc_md39", null ]
         ] ]
       ] ]
     ] ],
-    [ "Discord API Roadmap", "md_docs_DISCORD_ROADMAP.html", [
-      [ "Reference", "md_docs_DISCORD_ROADMAP.html#autotoc_md41", [
-        [ "Authentication", "md_docs_DISCORD_ROADMAP.html#autotoc_md42", null ]
+    [ "Discord API Roadmap", "d5/d74/md_docs_DISCORD_ROADMAP.html", [
+      [ "Reference", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md41", [
+        [ "Authentication", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md42", null ]
       ] ],
-      [ "Interactions", "md_docs_DISCORD_ROADMAP.html#autotoc_md43", [
-        [ "Application Commands", "md_docs_DISCORD_ROADMAP.html#autotoc_md44", null ],
-        [ "Message Components", "md_docs_DISCORD_ROADMAP.html#autotoc_md45", null ],
-        [ "Receiving and Responding", "md_docs_DISCORD_ROADMAP.html#autotoc_md46", null ]
+      [ "Interactions", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md43", [
+        [ "Application Commands", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md44", null ],
+        [ "Message Components", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md45", null ],
+        [ "Receiving and Responding", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md46", null ]
       ] ],
-      [ "Resources", "md_docs_DISCORD_ROADMAP.html#autotoc_md47", [
-        [ "Application", "md_docs_DISCORD_ROADMAP.html#autotoc_md48", null ],
-        [ "Audit Log", "md_docs_DISCORD_ROADMAP.html#autotoc_md49", null ],
-        [ "Channels", "md_docs_DISCORD_ROADMAP.html#autotoc_md50", null ],
-        [ "Emoji", "md_docs_DISCORD_ROADMAP.html#autotoc_md51", null ],
-        [ "Guild", "md_docs_DISCORD_ROADMAP.html#autotoc_md52", null ],
-        [ "Guild Template", "md_docs_DISCORD_ROADMAP.html#autotoc_md53", null ],
-        [ "Invite", "md_docs_DISCORD_ROADMAP.html#autotoc_md54", null ],
-        [ "Stage Instance", "md_docs_DISCORD_ROADMAP.html#autotoc_md55", null ],
-        [ "Sticker", "md_docs_DISCORD_ROADMAP.html#autotoc_md56", null ],
-        [ "User", "md_docs_DISCORD_ROADMAP.html#autotoc_md57", null ],
-        [ "Voice Resouce", "md_docs_DISCORD_ROADMAP.html#autotoc_md58", null ],
-        [ "Webhook", "md_docs_DISCORD_ROADMAP.html#autotoc_md59", null ]
+      [ "Resources", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md47", [
+        [ "Application", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md48", null ],
+        [ "Audit Log", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md49", null ],
+        [ "Channels", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md50", null ],
+        [ "Emoji", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md51", null ],
+        [ "Guild", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md52", null ],
+        [ "Guild Template", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md53", null ],
+        [ "Invite", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md54", null ],
+        [ "Stage Instance", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md55", null ],
+        [ "Sticker", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md56", null ],
+        [ "User", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md57", null ],
+        [ "Voice Resouce", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md58", null ],
+        [ "Webhook", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md59", null ]
       ] ],
-      [ "Topics", "md_docs_DISCORD_ROADMAP.html#autotoc_md60", [
-        [ "Certified Devices", "md_docs_DISCORD_ROADMAP.html#autotoc_md61", null ],
-        [ "Gateway", "md_docs_DISCORD_ROADMAP.html#autotoc_md62", null ],
-        [ "OAuth2", "md_docs_DISCORD_ROADMAP.html#autotoc_md63", null ],
-        [ "Opcodes and Status Codes", "md_docs_DISCORD_ROADMAP.html#autotoc_md64", null ],
-        [ "Permissions", "md_docs_DISCORD_ROADMAP.html#autotoc_md65", null ],
-        [ "RPC", "md_docs_DISCORD_ROADMAP.html#autotoc_md66", null ],
-        [ "RateLimits", "md_docs_DISCORD_ROADMAP.html#autotoc_md67", null ],
-        [ "Voice Connections", "md_docs_DISCORD_ROADMAP.html#autotoc_md68", null ]
+      [ "Topics", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md60", [
+        [ "Certified Devices", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md61", null ],
+        [ "Gateway", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md62", null ],
+        [ "OAuth2", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md63", null ],
+        [ "Opcodes and Status Codes", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md64", null ],
+        [ "Permissions", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md65", null ],
+        [ "RPC", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md66", null ],
+        [ "RateLimits", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md67", null ],
+        [ "Voice Connections", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md68", null ]
       ] ]
     ] ],
-    [ "Todo List", "todo.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
+    [ "Todo List", "dd/da0/todo.html", null ],
+    [ "Deprecated List", "da/d58/deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -142,14 +142,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__DiscordAPIGuild.html#gaf355ca91c82612f96d78c3804b1fa043",
-"md_docs_DISCORD_ROADMAP.html#autotoc_md51",
-"structdiscord__channel.html#a6c9ff1bbeb02a93eed831fad009996ca",
-"structdiscord__embed__image.html#aab6a1027fdf91b014b69734589d59fc3",
-"structdiscord__guild__preview.html#a6601021f8fb12f3a4a23605efc254fe8",
-"structdiscord__modify__guild.html#af5893bfba3cf11e082438be5cd8c62f9",
-"structdiscord__ret__guild__template.html#aa690d25a45b4392eeb7ff57e671e245b",
-"structdiscord__voice__state.html#a46db9525478372128d0d8fd8e71fb244"
+"d2/deb/group__DiscordInternalAdapter.html#ga01487090fadad323f5b654acc8a0ba0d",
+"d4/d48/group__DiscordEvent.html#ga6518fe0b0d39814777469331c56c2a88",
+"d6/d50/structdiscord__guild.html#aaddf082e5e123ac3a908778245c2f3ea",
+"d9/d55/group__DiscordAPIWebhook.html#ga30e9845d20ebcfd01bf81e0610fb1322",
+"db/d6e/structdiscord__modify__channel.html#aeaa9c8ec1832aca163a41fb30de804fe",
+"dd/dc3/structdiscord__list__active__guild__threads.html#af62dd97ca14ad4a215077cd1d1f81528",
+"df/dc2/structdiscord__modify__guild__member.html#ad99af8d4e3f940b2ff0a8b1a10407d34"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
