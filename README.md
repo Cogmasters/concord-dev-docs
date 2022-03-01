@@ -12,18 +12,6 @@ git clone https://github.com/Cogmasters/concord-docs
 ```
 
 ### Installing Dependencies
-#### Jinja2
-```sh
-pip install -U jinja2
-```
-#### Sphinx
-```sh
-pip install sphinx && pip install pydata_sphinx_theme
-```
-#### Breathe
-```sh
-pip install breathe
-```
 #### Doxygen 1.9.3
 ```sh
 wget https://www.doxygen.nl/files/doxygen-1.9.3.linux.bin.tar.gz
@@ -38,7 +26,7 @@ make docs && cp concord-docs/Doxyfile Doxyfile
 
 ### Generating Static Files
 ```sh
-make -C concord-docs/docs clean && rm -rf concord-docs/docs/xml && ./doxygen && mv docs/xml concord-docs/docs/ && make -C concord-docs/docs html
+./doxygen
 ```
 
-Generated files located at `concord-docs/docs/build/html`
+Generated files located at `concord-docs/docs/html`
