@@ -26,9 +26,9 @@ jobs:
         run: |
           echo "Preparing files for documentation"
           sudo mv doxygen-1.9.3/bin/doxygen concord/
-          cd concord
-          make docs
+          make -C concord docs
           echo "Generating HTML output"
+          cd concord
           ./doxygen
 
       - name: Deploy
