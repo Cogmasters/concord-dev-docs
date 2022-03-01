@@ -16,11 +16,8 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Sync submodules
-        run: |
-          git submodule update --remote
-          cd concord
-          git checkout dev
+      - name: Update submodules
+        run: git submodule update --remote
 
       - name: Preparing Concord-Dev
         run: |
