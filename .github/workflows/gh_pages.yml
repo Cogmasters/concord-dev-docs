@@ -9,19 +9,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Pull & ipdate submodules recursively
-        run: |
-          git submodule update --init --recursive
-          git submodule update --recursive --remote
+      - uses: actions/checkout@v1
 
       - name: Doxygen Action
         run: |
+          git clone --branch dev https://github.com/Cogmasters/concord
           echo "Preparing files for documentation"
           cd concord
           echo $(ls)
-          sudo make docs
+          make docs
           echo "Generating HTML output"
           doxygen
 
