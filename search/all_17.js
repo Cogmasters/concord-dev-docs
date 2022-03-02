@@ -4,7 +4,7 @@ var searchData=
   ['wait_5fms_1',['wait_ms',['../d1/d0a/structdiscord__adapter.html#ac8553135740a099439be90e391be7035',1,'discord_adapter']]],
   ['waitq_2',['waitq',['../db/da2/structdiscord__bucket.html#a100116c70ee43ec1a75fcc35308fa2c5',1,'discord_bucket']]],
   ['wakeup_5ftimer_3',['wakeup_timer',['../d5/daf/structdiscord.html#a8b03f600d16941cbab47a18c17cd4f33',1,'discord']]],
-  ['webhook_20api_4',['Webhook API',['../d9/d55/group__DiscordAPIWebhook.html',1,'']]],
+  ['webhook_4',['Webhook',['../d9/d55/group__DiscordAPIWebhook.html',1,'']]],
   ['webhook_20lengths_5',['Webhook lengths',['../d6/d1a/group__DiscordConstantsWebhook.html',1,'']]],
   ['webhook_2eh_6',['webhook.h',['../d5/d89/include_2webhook_8h.html',1,'']]],
   ['webhook_5fchannel_5fid_7',['webhook_channel_id',['../d2/de7/structdiscord__follow__news__channel.html#ab01f1a65d883a807b79b51abf624c268',1,'discord_follow_news_channel']]],

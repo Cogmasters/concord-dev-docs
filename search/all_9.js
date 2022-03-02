@@ -23,7 +23,7 @@ var searchData=
   ['internal_20implementation_20details_20',['Internal implementation details',['../d1/d81/group__DiscordInternal.html',1,'']]],
   ['interval_21',['interval',['../db/d5b/structdiscord__gateway.html#a04beccbf4215366ff17d43ad40b34657',1,'discord_gateway']]],
   ['invitable_22',['invitable',['../df/d98/structdiscord__thread__metadata.html#ac508d50be3b101dbb126fb6225c95984',1,'discord_thread_metadata::invitable()'],['../db/d6e/structdiscord__modify__channel.html#a138994f85265ffe1a8c2b31c658511cb',1,'discord_modify_channel::invitable()'],['../d0/d5e/structdiscord__start__thread__without__message.html#ae23d4c7ad9df5df286d44bed4702d182',1,'discord_start_thread_without_message::invitable()']]],
-  ['invite_20api_23',['Invite API',['../d6/da0/group__DiscordAPIInvite.html',1,'']]],
+  ['invite_23',['Invite',['../d6/da0/group__DiscordAPIInvite.html',1,'']]],
   ['invite_2eh_24',['invite.h',['../de/d7e/include_2invite_8h.html',1,'']]],
   ['inviter_25',['inviter',['../d5/da6/structdiscord__invite.html#a04dba3a1894eec73b7d3d8d1667c8615',1,'discord_invite']]],
   ['io_5fpoller_26',['io_poller',['../d5/daf/structdiscord.html#a89cf87aa2d78f5ec8d524cfe2fe208dc',1,'discord']]],

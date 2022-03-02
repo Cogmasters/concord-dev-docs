@@ -12,7 +12,7 @@ var searchData=
   ['video_5fquality_5fmode_9',['video_quality_mode',['../db/d6e/structdiscord__modify__channel.html#aea47828c7af943a60a1c098eefb0bef2',1,'discord_modify_channel']]],
   ['visibility_10',['visibility',['../df/d38/structdiscord__connection.html#a8ff8c2c0db01fee262d2cb94975abdf0',1,'discord_connection']]],
   ['visits_11',['visits',['../df/d86/structdiscord__refcount.html#af3a0ff6ffa7ecf5ac60193bed50ba460',1,'discord_refcount']]],
-  ['voice_20api_12',['Voice API',['../d0/d64/group__DiscordAPIVoice.html',1,'']]],
+  ['voice_12',['Voice',['../d0/d64/group__DiscordAPIVoice.html',1,'']]],
   ['voice_2eh_13',['voice.h',['../dc/dd9/include_2voice_8h.html',1,'']]],
   ['voice_5fquality_5fmode_14',['voice_quality_mode',['../dc/d40/structdiscord__channel.html#a0e84e6c63f0658b54741773466bae864',1,'discord_channel']]],
   ['voice_5fstates_15',['voice_states',['../d6/d50/structdiscord__guild.html#a53aadd1ece6ead42a7a3d868504a3d40',1,'discord_guild']]]

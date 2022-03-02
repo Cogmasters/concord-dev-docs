@@ -137,20 +137,20 @@ $(document).ready(function(){initNavTree('d9/de7/webhook_8c-example.html','../..
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Get Webhook */</span></div>
 <div class="line">    {</div>
-<div class="line">        <span class="keyword">struct </span>discord_ret_webhook ret = { .sync = <a id="a3" name="a3"></a><a class="code hl_define" href="../../df/de6/discord-templates_8h.html#a4763b511d7f8bdca0aa292c1d2ca95f6">DISCORD_SYNC_FLAG</a> };</div>
-<div class="line">        <a id="a4" name="a4"></a><a class="code hl_function" href="../../d9/d55/group__DiscordAPIWebhook.html#ga30e9845d20ebcfd01bf81e0610fb1322">discord_get_webhook_with_token</a>(client, webhook_id, webhook_token, &amp;ret);</div>
+<div class="line">        <span class="keyword">struct </span><a id="_a3" name="_a3"></a><a class="code hl_struct" href="../../d9/dd5/structdiscord__ret__webhook.html">discord_ret_webhook</a> ret = { .<a id="a4" name="a4"></a><a class="code hl_variable" href="../../d9/dd5/structdiscord__ret__webhook.html#ab3f5d51d7b09163adca988373419da19">sync</a> = <a id="a5" name="a5"></a><a class="code hl_define" href="../../df/de6/discord-templates_8h.html#a4763b511d7f8bdca0aa292c1d2ca95f6">DISCORD_SYNC_FLAG</a> };</div>
+<div class="line">        <a id="a6" name="a6"></a><a class="code hl_function" href="../../d9/d55/group__DiscordAPIWebhook.html#ga30e9845d20ebcfd01bf81e0610fb1322">discord_get_webhook_with_token</a>(client, webhook_id, webhook_token, &amp;ret);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Execute Webhook */</span></div>
 <div class="line">    {</div>
-<div class="line">        <span class="keyword">struct </span><a id="_a5" name="_a5"></a><a class="code hl_struct" href="../../d4/dcc/structdiscord__ret.html">discord_ret</a> ret = { .<a id="a6" name="a6"></a><a class="code hl_variable" href="../../d4/dcc/structdiscord__ret.html#a20df532b4a94f18a8c983b83b980299e">sync</a> = <span class="keyword">true</span> };</div>
-<div class="line">        <span class="keyword">struct </span><a id="_a7" name="_a7"></a><a class="code hl_struct" href="../../d0/dd9/structdiscord__execute__webhook.html">discord_execute_webhook</a> params = { .<a id="a8" name="a8"></a><a class="code hl_variable" href="../../d0/dd9/structdiscord__execute__webhook.html#a226ddbae582f844faa18786dd073cc5a">content</a> = <span class="stringliteral">&quot;Hello World!&quot;</span> };</div>
-<div class="line">        <a id="a9" name="a9"></a><a class="code hl_function" href="../../d9/d55/group__DiscordAPIWebhook.html#ga6423cbf3797741bcaf5ced860dcc3339">discord_execute_webhook</a>(client, webhook_id, webhook_token, &amp;params, &amp;ret);</div>
+<div class="line">        <span class="keyword">struct </span><a id="_a7" name="_a7"></a><a class="code hl_struct" href="../../d4/dcc/structdiscord__ret.html">discord_ret</a> ret = { .<a id="a8" name="a8"></a><a class="code hl_variable" href="../../d4/dcc/structdiscord__ret.html#a20df532b4a94f18a8c983b83b980299e">sync</a> = <span class="keyword">true</span> };</div>
+<div class="line">        <span class="keyword">struct </span><a id="_a9" name="_a9"></a><a class="code hl_struct" href="../../d0/dd9/structdiscord__execute__webhook.html">discord_execute_webhook</a> params = { .<a id="a10" name="a10"></a><a class="code hl_variable" href="../../d0/dd9/structdiscord__execute__webhook.html#a226ddbae582f844faa18786dd073cc5a">content</a> = <span class="stringliteral">&quot;Hello World!&quot;</span> };</div>
+<div class="line">        <a id="a11" name="a11"></a><a class="code hl_function" href="../../d9/d55/group__DiscordAPIWebhook.html#ga6423cbf3797741bcaf5ced860dcc3339">discord_execute_webhook</a>(client, webhook_id, webhook_token, &amp;params, &amp;ret);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    free(webhook_token);</div>
-<div class="line">    <a id="a10" name="a10"></a><a class="code hl_function" href="../../d2/de5/group__Discord.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a>(client);</div>
-<div class="line">    <a id="a11" name="a11"></a><a class="code hl_function" href="../../dc/dcf/concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a>();</div>
+<div class="line">    <a id="a12" name="a12"></a><a class="code hl_function" href="../../d2/de5/group__Discord.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a>(client);</div>
+<div class="line">    <a id="a13" name="a13"></a><a class="code hl_function" href="../../dc/dcf/concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
 <div class="line">}</div>
@@ -165,6 +165,8 @@ $(document).ready(function(){initNavTree('d9/de7/webhook_8c-example.html','../..
 <div class="ttc" id="agroup__Discord_html_gacd52a9fc58a1fcb9b4719a5cedd70f5d"><div class="ttname"><a href="../../d2/de5/group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d">discord_init</a></div><div class="ttdeci">struct discord * discord_init(const char token[])</div><div class="ttdoc">Create a Discord Client handle by its token.</div></div>
 <div class="ttc" id="astructdiscord__execute__webhook_html"><div class="ttname"><a href="../../d0/dd9/structdiscord__execute__webhook.html">discord_execute_webhook</a></div><div class="ttdef"><b>Definition:</b> webhook.h:104</div></div>
 <div class="ttc" id="astructdiscord__execute__webhook_html_a226ddbae582f844faa18786dd073cc5a"><div class="ttname"><a href="../../d0/dd9/structdiscord__execute__webhook.html#a226ddbae582f844faa18786dd073cc5a">discord_execute_webhook::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> webhook.h:117</div></div>
+<div class="ttc" id="astructdiscord__ret__webhook_html"><div class="ttname"><a href="../../d9/dd5/structdiscord__ret__webhook.html">discord_ret_webhook</a></div><div class="ttdoc">Request's return context.</div><div class="ttdef"><b>Definition:</b> discord-templates.h:110</div></div>
+<div class="ttc" id="astructdiscord__ret__webhook_html_ab3f5d51d7b09163adca988373419da19"><div class="ttname"><a href="../../d9/dd5/structdiscord__ret__webhook.html#ab3f5d51d7b09163adca988373419da19">discord_ret_webhook::sync</a></div><div class="ttdeci">struct discord_webhook * sync</div><div class="ttdef"><b>Definition:</b> discord-templates.h:110</div></div>
 <div class="ttc" id="astructdiscord__ret_html"><div class="ttname"><a href="../../d4/dcc/structdiscord__ret.html">discord_ret</a></div><div class="ttdoc">Request's return context.</div><div class="ttdef"><b>Definition:</b> discord-templates.h:38</div></div>
 <div class="ttc" id="astructdiscord__ret_html_a20df532b4a94f18a8c983b83b980299e"><div class="ttname"><a href="../../d4/dcc/structdiscord__ret.html#a20df532b4a94f18a8c983b83b980299e">discord_ret::sync</a></div><div class="ttdeci">bool sync</div><div class="ttdef"><b>Definition:</b> discord-templates.h:43</div></div>
 <div class="ttc" id="astructdiscord_html"><div class="ttname"><a href="../../d5/daf/structdiscord.html">discord</a></div><div class="ttdoc">The Discord client handler.</div><div class="ttdef"><b>Definition:</b> discord-internal.h:683</div></div>

@@ -155,13 +155,13 @@ $(document).ready(function(){initNavTree('dc/dfb/guild-template_8c-example.html'
 <div class="line">    <a class="code hl_typedef" href="../../da/d86/group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a> *channel_id = malloc(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../da/d86/group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a>));</div>
 <div class="line">    *channel_id = msg-&gt;<a id="a10" name="a10"></a><a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#ae8ca075067f08c4f1b793de670817d48">channel_id</a>;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span>discord_ret_guild_template ret = {</div>
-<div class="line">        .done = &amp;done,</div>
-<div class="line">        .fail = &amp;fail,</div>
+<div class="line">    <span class="keyword">struct </span><a id="_a11" name="_a11"></a><a class="code hl_struct" href="../../d7/d4a/structdiscord__ret__guild__template.html">discord_ret_guild_template</a> ret = {</div>
+<div class="line">        .<a id="a12" name="a12"></a><a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#a3ab1ae586ebc93fa75d881739520583f">done</a> = &amp;<a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#a3ab1ae586ebc93fa75d881739520583f">done</a>,</div>
+<div class="line">        .fail = &amp;<a id="a13" name="a13"></a><a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#aa690d25a45b4392eeb7ff57e671e245b">fail</a>,</div>
 <div class="line">        .data = channel_id,</div>
 <div class="line">        .cleanup = &amp;free,</div>
 <div class="line">    };</div>
-<div class="line">    <a id="a11" name="a11"></a><a class="code hl_function" href="../../d0/d17/group__DiscordAPIGuildTemplate.html#ga20541f2f667a510fa33dbe076e5d89b2">discord_get_guild_template</a>(client, msg-&gt;<a id="a12" name="a12"></a><a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#aa48b4b9a69db9fae0bb8be3f139317ae">content</a>, &amp;ret);</div>
+<div class="line">    <a id="a14" name="a14"></a><a class="code hl_function" href="../../d0/d17/group__DiscordAPIGuildTemplate.html#ga20541f2f667a510fa33dbe076e5d89b2">discord_get_guild_template</a>(client, msg-&gt;<a id="a15" name="a15"></a><a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#aa48b4b9a69db9fae0bb8be3f139317ae">content</a>, &amp;ret);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span></div>
@@ -171,19 +171,19 @@ $(document).ready(function(){initNavTree('dc/dfb/guild-template_8c-example.html'
 <div class="line">    <a class="code hl_typedef" href="../../da/d86/group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a> *channel_id = malloc(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../da/d86/group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a>));</div>
 <div class="line">    *channel_id = msg-&gt;<a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#ae8ca075067f08c4f1b793de670817d48">channel_id</a>;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span>discord_ret_guild_template ret = {</div>
-<div class="line">        .done = &amp;done,</div>
-<div class="line">        .fail = &amp;fail,</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="../../d7/d4a/structdiscord__ret__guild__template.html">discord_ret_guild_template</a> ret = {</div>
+<div class="line">        .<a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#a3ab1ae586ebc93fa75d881739520583f">done</a> = &amp;<a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#a3ab1ae586ebc93fa75d881739520583f">done</a>,</div>
+<div class="line">        .fail = &amp;<a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#aa690d25a45b4392eeb7ff57e671e245b">fail</a>,</div>
 <div class="line">        .data = channel_id,</div>
 <div class="line">        .cleanup = &amp;free,</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span><a id="_a13" name="_a13"></a><a class="code hl_struct" href="../../da/d12/structdiscord__create__guild__template.html">discord_create_guild_template</a> params = {</div>
-<div class="line">        .<a id="a14" name="a14"></a><a class="code hl_variable" href="../../da/d12/structdiscord__create__guild__template.html#a819dd769f582160f53d2e181a4f35fa6">name</a> = <span class="stringliteral">&quot;New server template!&quot;</span>,</div>
+<div class="line">    <span class="keyword">struct </span><a id="_a16" name="_a16"></a><a class="code hl_struct" href="../../da/d12/structdiscord__create__guild__template.html">discord_create_guild_template</a> params = {</div>
+<div class="line">        .<a id="a17" name="a17"></a><a class="code hl_variable" href="../../da/d12/structdiscord__create__guild__template.html#a819dd769f582160f53d2e181a4f35fa6">name</a> = <span class="stringliteral">&quot;New server template!&quot;</span>,</div>
 <div class="line">        .description = <span class="stringliteral">&quot;This is a new server template created with Concord!&quot;</span></div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <a id="a15" name="a15"></a><a class="code hl_function" href="../../d0/d17/group__DiscordAPIGuildTemplate.html#gad91f8fbd73471b92610811122836b3f7">discord_create_guild_template</a>(client, msg-&gt;<a id="a16" name="a16"></a><a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#a1ccbd1ffb859a81a4841b07ffbf6e009">guild_id</a>, &amp;params, &amp;ret);</div>
+<div class="line">    <a id="a18" name="a18"></a><a class="code hl_function" href="../../d0/d17/group__DiscordAPIGuildTemplate.html#gad91f8fbd73471b92610811122836b3f7">discord_create_guild_template</a>(client, msg-&gt;<a id="a19" name="a19"></a><a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#a1ccbd1ffb859a81a4841b07ffbf6e009">guild_id</a>, &amp;params, &amp;ret);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span></div>
@@ -193,14 +193,14 @@ $(document).ready(function(){initNavTree('dc/dfb/guild-template_8c-example.html'
 <div class="line">    <a class="code hl_typedef" href="../../da/d86/group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a> *channel_id = malloc(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="../../da/d86/group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a>));</div>
 <div class="line">    *channel_id = msg-&gt;<a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#ae8ca075067f08c4f1b793de670817d48">channel_id</a>;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span>discord_ret_guild_template ret = {</div>
-<div class="line">        .done = &amp;done,</div>
-<div class="line">        .fail = &amp;fail,</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="../../d7/d4a/structdiscord__ret__guild__template.html">discord_ret_guild_template</a> ret = {</div>
+<div class="line">        .<a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#a3ab1ae586ebc93fa75d881739520583f">done</a> = &amp;<a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#a3ab1ae586ebc93fa75d881739520583f">done</a>,</div>
+<div class="line">        .fail = &amp;<a class="code hl_variable" href="../../d7/d4a/structdiscord__ret__guild__template.html#aa690d25a45b4392eeb7ff57e671e245b">fail</a>,</div>
 <div class="line">        .data = channel_id,</div>
 <div class="line">        .cleanup = &amp;free,</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <a id="a17" name="a17"></a><a class="code hl_function" href="../../d0/d17/group__DiscordAPIGuildTemplate.html#gabbb9be84146a082a1b7b70f0427f6095">discord_sync_guild_template</a>(client, msg-&gt;<a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#a1ccbd1ffb859a81a4841b07ffbf6e009">guild_id</a>, msg-&gt;<a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#aa48b4b9a69db9fae0bb8be3f139317ae">content</a>, &amp;ret);</div>
+<div class="line">    <a id="a20" name="a20"></a><a class="code hl_function" href="../../d0/d17/group__DiscordAPIGuildTemplate.html#gabbb9be84146a082a1b7b70f0427f6095">discord_sync_guild_template</a>(client, msg-&gt;<a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#a1ccbd1ffb859a81a4841b07ffbf6e009">guild_id</a>, msg-&gt;<a class="code hl_variable" href="../../d6/d66/structdiscord__message.html#aa48b4b9a69db9fae0bb8be3f139317ae">content</a>, &amp;ret);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span></div>
@@ -212,23 +212,23 @@ $(document).ready(function(){initNavTree('dc/dfb/guild-template_8c-example.html'
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">        config_file = <span class="stringliteral">&quot;../config.json&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">    <a id="a18" name="a18"></a><a class="code hl_function" href="../../dc/dcf/concord-once_8h.html#a9a5555031ccfdb102424695dfaca0727">ccord_global_init</a>();</div>
-<div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="../../d5/daf/structdiscord.html">discord</a> *client = <a id="a19" name="a19"></a><a class="code hl_function" href="../../d2/de5/group__Discord.html#ga75bbe1d3eb9e6d03953b6313e5543afb">discord_config_init</a>(config_file);</div>
+<div class="line">    <a id="a21" name="a21"></a><a class="code hl_function" href="../../dc/dcf/concord-once_8h.html#a9a5555031ccfdb102424695dfaca0727">ccord_global_init</a>();</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="../../d5/daf/structdiscord.html">discord</a> *client = <a id="a22" name="a22"></a><a class="code hl_function" href="../../d2/de5/group__Discord.html#ga75bbe1d3eb9e6d03953b6313e5543afb">discord_config_init</a>(config_file);</div>
 <div class="line">    assert(NULL != client &amp;&amp; <span class="stringliteral">&quot;Couldn&#39;t initialize client&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    <a id="a20" name="a20"></a><a class="code hl_function" href="../../d4/d48/group__DiscordEvent.html#ga0887300c5c057ed2444ceec56a4a0fa9">discord_set_on_ready</a>(client, &amp;on_ready);</div>
-<div class="line">    <a id="a21" name="a21"></a><a class="code hl_function" href="../../d4/d48/group__DiscordEvent.html#ga13d9f16d62fea7cebdb6c24d57f685a1">discord_set_prefix</a>(client, <span class="stringliteral">&quot;guild-template.&quot;</span>);</div>
-<div class="line">    <a id="a22" name="a22"></a><a class="code hl_function" href="../../d4/d48/group__DiscordEvent.html#ga6298fda7dd0a6e17e06866fb11c12f5f">discord_set_on_command</a>(client, <span class="stringliteral">&quot;get&quot;</span>, on_get_guild_template);</div>
+<div class="line">    <a id="a23" name="a23"></a><a class="code hl_function" href="../../d4/d48/group__DiscordEvent.html#ga0887300c5c057ed2444ceec56a4a0fa9">discord_set_on_ready</a>(client, &amp;on_ready);</div>
+<div class="line">    <a id="a24" name="a24"></a><a class="code hl_function" href="../../d4/d48/group__DiscordEvent.html#ga13d9f16d62fea7cebdb6c24d57f685a1">discord_set_prefix</a>(client, <span class="stringliteral">&quot;guild-template.&quot;</span>);</div>
+<div class="line">    <a id="a25" name="a25"></a><a class="code hl_function" href="../../d4/d48/group__DiscordEvent.html#ga6298fda7dd0a6e17e06866fb11c12f5f">discord_set_on_command</a>(client, <span class="stringliteral">&quot;get&quot;</span>, on_get_guild_template);</div>
 <div class="line">    <a class="code hl_function" href="../../d4/d48/group__DiscordEvent.html#ga6298fda7dd0a6e17e06866fb11c12f5f">discord_set_on_command</a>(client, <span class="stringliteral">&quot;create&quot;</span>, on_create_guild_template);</div>
 <div class="line">    <a class="code hl_function" href="../../d4/d48/group__DiscordEvent.html#ga6298fda7dd0a6e17e06866fb11c12f5f">discord_set_on_command</a>(client, <span class="stringliteral">&quot;sync&quot;</span>, on_sync_guild_template);</div>
 <div class="line"> </div>
 <div class="line">    print_usage();</div>
 <div class="line">    fgetc(stdin); <span class="comment">// wait for input</span></div>
 <div class="line"> </div>
-<div class="line">    <a id="a23" name="a23"></a><a class="code hl_function" href="../../d2/de5/group__Discord.html#ga10b7d422776acf4fb67877f8f1d28af4">discord_run</a>(client);</div>
+<div class="line">    <a id="a26" name="a26"></a><a class="code hl_function" href="../../d2/de5/group__Discord.html#ga10b7d422776acf4fb67877f8f1d28af4">discord_run</a>(client);</div>
 <div class="line"> </div>
-<div class="line">    <a id="a24" name="a24"></a><a class="code hl_function" href="../../d2/de5/group__Discord.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a>(client);</div>
-<div class="line">    <a id="a25" name="a25"></a><a class="code hl_function" href="../../dc/dcf/concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a>();</div>
+<div class="line">    <a id="a27" name="a27"></a><a class="code hl_function" href="../../d2/de5/group__Discord.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a>(client);</div>
+<div class="line">    <a id="a28" name="a28"></a><a class="code hl_function" href="../../dc/dcf/concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="aconcord-once_8h_html_a9a5555031ccfdb102424695dfaca0727"><div class="ttname"><a href="../../dc/dcf/concord-once_8h.html#a9a5555031ccfdb102424695dfaca0727">ccord_global_init</a></div><div class="ttdeci">CCORDcode ccord_global_init()</div><div class="ttdoc">Initialize global shared-resources not API-specific.</div></div>
 <div class="ttc" id="aconcord-once_8h_html_ab214960b95e1af11bbfc98f1b310598a"><div class="ttname"><a href="../../dc/dcf/concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a></div><div class="ttdeci">void ccord_global_cleanup()</div><div class="ttdoc">Cleanup global shared-resources.</div></div>
@@ -256,6 +256,9 @@ $(document).ready(function(){initNavTree('dc/dfb/guild-template_8c-example.html'
 <div class="ttc" id="astructdiscord__message_html_a1ccbd1ffb859a81a4841b07ffbf6e009"><div class="ttname"><a href="../../d6/d66/structdiscord__message.html#a1ccbd1ffb859a81a4841b07ffbf6e009">discord_message::guild_id</a></div><div class="ttdeci">u64snowflake guild_id</div><div class="ttdef"><b>Definition:</b> channel.h:192</div></div>
 <div class="ttc" id="astructdiscord__message_html_aa48b4b9a69db9fae0bb8be3f139317ae"><div class="ttname"><a href="../../d6/d66/structdiscord__message.html#aa48b4b9a69db9fae0bb8be3f139317ae">discord_message::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> channel.h:198</div></div>
 <div class="ttc" id="astructdiscord__message_html_ae8ca075067f08c4f1b793de670817d48"><div class="ttname"><a href="../../d6/d66/structdiscord__message.html#ae8ca075067f08c4f1b793de670817d48">discord_message::channel_id</a></div><div class="ttdeci">u64snowflake channel_id</div><div class="ttdef"><b>Definition:</b> channel.h:190</div></div>
+<div class="ttc" id="astructdiscord__ret__guild__template_html"><div class="ttname"><a href="../../d7/d4a/structdiscord__ret__guild__template.html">discord_ret_guild_template</a></div><div class="ttdoc">Request's return context.</div><div class="ttdef"><b>Definition:</b> discord-templates.h:87</div></div>
+<div class="ttc" id="astructdiscord__ret__guild__template_html_a3ab1ae586ebc93fa75d881739520583f"><div class="ttname"><a href="../../d7/d4a/structdiscord__ret__guild__template.html#a3ab1ae586ebc93fa75d881739520583f">discord_ret_guild_template::done</a></div><div class="ttdeci">void(* done)(struct discord *client, void *data, const struct discord_guild_template *ret)</div><div class="ttdef"><b>Definition:</b> discord-templates.h:87</div></div>
+<div class="ttc" id="astructdiscord__ret__guild__template_html_aa690d25a45b4392eeb7ff57e671e245b"><div class="ttname"><a href="../../d7/d4a/structdiscord__ret__guild__template.html#aa690d25a45b4392eeb7ff57e671e245b">discord_ret_guild_template::fail</a></div><div class="ttdeci">void(* fail)(struct discord *client, CCORDcode code, void *data)</div><div class="ttdef"><b>Definition:</b> discord-templates.h:87</div></div>
 <div class="ttc" id="astructdiscord__user_html"><div class="ttname"><a href="../../db/de3/structdiscord__user.html">discord_user</a></div><div class="ttdef"><b>Definition:</b> user.h:65</div></div>
 <div class="ttc" id="astructdiscord__user_html_a5490343b03395b90c31987fae992b0c7"><div class="ttname"><a href="../../db/de3/structdiscord__user.html#a5490343b03395b90c31987fae992b0c7">discord_user::bot</a></div><div class="ttdeci">bool bot</div><div class="ttdef"><b>Definition:</b> user.h:75</div></div>
 <div class="ttc" id="astructdiscord_html"><div class="ttname"><a href="../../d5/daf/structdiscord.html">discord</a></div><div class="ttdoc">The Discord client handler.</div><div class="ttdef"><b>Definition:</b> discord-internal.h:683</div></div>

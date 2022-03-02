@@ -1,5 +1,21 @@
 var group__DiscordAPIWebhook =
 [
+    [ "discord_ret_webhook", "d9/dd5/structdiscord__ret__webhook.html", [
+      [ "cleanup", "d9/dd5/structdiscord__ret__webhook.html#a030b553bf4817a8ac1a0e443a7276fc5", null ],
+      [ "data", "d9/dd5/structdiscord__ret__webhook.html#aa27653d68a90d788d976fe777529ff9a", null ],
+      [ "done", "d9/dd5/structdiscord__ret__webhook.html#ae0822eb062ba0823b4b5be05e4d6266d", null ],
+      [ "fail", "d9/dd5/structdiscord__ret__webhook.html#a731b872d01f622f41d61b7776af6001a", null ],
+      [ "high_p", "d9/dd5/structdiscord__ret__webhook.html#a3a13b575ccd1cb9088138d15adafe1f6", null ],
+      [ "sync", "d9/dd5/structdiscord__ret__webhook.html#ab3f5d51d7b09163adca988373419da19", null ]
+    ] ],
+    [ "discord_ret_webhooks", "d1/db0/structdiscord__ret__webhooks.html", [
+      [ "cleanup", "d1/db0/structdiscord__ret__webhooks.html#a613e64105280b81d86f85af4faacae08", null ],
+      [ "data", "d1/db0/structdiscord__ret__webhooks.html#ad4b50dc41ed46c1f334993bcb1499330", null ],
+      [ "done", "d1/db0/structdiscord__ret__webhooks.html#a2e2d5f240f6db132c04cd80898182d5f", null ],
+      [ "fail", "d1/db0/structdiscord__ret__webhooks.html#ac1df11df0e9c39923b3075efb2af7ec5", null ],
+      [ "high_p", "d1/db0/structdiscord__ret__webhooks.html#a44ec04e7eaa685cd97152e2f8ee6353e", null ],
+      [ "sync", "d1/db0/structdiscord__ret__webhooks.html#a3b2d802dbe3d72ea15e986030e75f577", null ]
+    ] ],
     [ "discord_create_webhook", "d9/d55/group__DiscordAPIWebhook.html#ga2cea37fb28d0c46556766af127898f5e", null ],
     [ "discord_delete_webhook", "d9/d55/group__DiscordAPIWebhook.html#gab5930eaece340bac8e32f1110d6e7717", null ],
     [ "discord_delete_webhook_message", "d9/d55/group__DiscordAPIWebhook.html#ga8e639f3f8e9154ddc55154d2df81d466", null ],

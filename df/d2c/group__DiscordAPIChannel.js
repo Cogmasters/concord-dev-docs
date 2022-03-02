@@ -1,5 +1,61 @@
 var group__DiscordAPIChannel =
 [
+    [ "discord_ret_channel", "de/dee/structdiscord__ret__channel.html", [
+      [ "cleanup", "de/dee/structdiscord__ret__channel.html#af59464d59e422a22c8a0f177aad27c4f", null ],
+      [ "data", "de/dee/structdiscord__ret__channel.html#a0d6b4df0e2dc6950ed4a6cc3f1922bcb", null ],
+      [ "done", "de/dee/structdiscord__ret__channel.html#a604a7e05765a1bf26d7bead8e879ec75", null ],
+      [ "fail", "de/dee/structdiscord__ret__channel.html#aafe9b9266c8402c6e90ef6e1c5fb9212", null ],
+      [ "high_p", "de/dee/structdiscord__ret__channel.html#a3cc138aef968a67cb9a6a599c7793a1c", null ],
+      [ "sync", "de/dee/structdiscord__ret__channel.html#a8575438e97778845a0f83a64eaa7e2d4", null ]
+    ] ],
+    [ "discord_ret_channels", "d9/d93/structdiscord__ret__channels.html", [
+      [ "cleanup", "d9/d93/structdiscord__ret__channels.html#a6fca776fda942f1028ee0dadafaa5968", null ],
+      [ "data", "d9/d93/structdiscord__ret__channels.html#a90d11415d5cc99f3874cdace64958ff2", null ],
+      [ "done", "d9/d93/structdiscord__ret__channels.html#a92ba3da0566bce486becb4df0be17e50", null ],
+      [ "fail", "d9/d93/structdiscord__ret__channels.html#ae61cb5b081efab5bb27f3730ffb6bbba", null ],
+      [ "high_p", "d9/d93/structdiscord__ret__channels.html#a5ab3eec0805cf96ec0597c7089aa057a", null ],
+      [ "sync", "d9/d93/structdiscord__ret__channels.html#a9e31a34df35861d9aa8244b486ae0bf9", null ]
+    ] ],
+    [ "discord_ret_message", "d4/dc8/structdiscord__ret__message.html", [
+      [ "cleanup", "d4/dc8/structdiscord__ret__message.html#a5f8ed56b6aef74f049e25278b36f33f2", null ],
+      [ "data", "d4/dc8/structdiscord__ret__message.html#a90fecbb2ea418d182a7b20fc70bc66f9", null ],
+      [ "done", "d4/dc8/structdiscord__ret__message.html#a772f4457c3aeedb776a8862ef56f92d6", null ],
+      [ "fail", "d4/dc8/structdiscord__ret__message.html#afb32889da1318e7959ef6266c2fa4bb8", null ],
+      [ "high_p", "d4/dc8/structdiscord__ret__message.html#af033729f9d5a3a791f5df6492244c603", null ],
+      [ "sync", "d4/dc8/structdiscord__ret__message.html#a52496aa78c91175a8e838e57be6601e4", null ]
+    ] ],
+    [ "discord_ret_messages", "d1/d06/structdiscord__ret__messages.html", [
+      [ "cleanup", "d1/d06/structdiscord__ret__messages.html#ad43f67a41fe642f7de909f7e63b78396", null ],
+      [ "data", "d1/d06/structdiscord__ret__messages.html#ad1f26dd4dc74808c7f704da636adb012", null ],
+      [ "done", "d1/d06/structdiscord__ret__messages.html#ad5bb1eedf8ed41ecae493dec128386f4", null ],
+      [ "fail", "d1/d06/structdiscord__ret__messages.html#a5a15ac51cff10a10d474d9e2b52465e7", null ],
+      [ "high_p", "d1/d06/structdiscord__ret__messages.html#a25e787f81153e513162d62c64bbc749c", null ],
+      [ "sync", "d1/d06/structdiscord__ret__messages.html#a2c297661a5f90367e8882603514d39b1", null ]
+    ] ],
+    [ "discord_ret_followed_channel", "d6/db1/structdiscord__ret__followed__channel.html", [
+      [ "cleanup", "d6/db1/structdiscord__ret__followed__channel.html#ad835cb8db60345f81d59832e83eb48a8", null ],
+      [ "data", "d6/db1/structdiscord__ret__followed__channel.html#a29a64879a2b9d7a51bc505a03bf38055", null ],
+      [ "done", "d6/db1/structdiscord__ret__followed__channel.html#a8dfd337b8e79dbf0a88c3692000a24ad", null ],
+      [ "fail", "d6/db1/structdiscord__ret__followed__channel.html#a0a212e770067e1065eaff948fcce7ab3", null ],
+      [ "high_p", "d6/db1/structdiscord__ret__followed__channel.html#acdc65f4ae24cb1a91a40392524bec4fc", null ],
+      [ "sync", "d6/db1/structdiscord__ret__followed__channel.html#a9a177c8879b343bbfcc1c6fc01bd14b3", null ]
+    ] ],
+    [ "discord_ret_thread_members", "d6/dd0/structdiscord__ret__thread__members.html", [
+      [ "cleanup", "d6/dd0/structdiscord__ret__thread__members.html#af860a2d53d725f3cf1df90ecc81b9a10", null ],
+      [ "data", "d6/dd0/structdiscord__ret__thread__members.html#ad456613a24b0303b6dd99322db2b02a5", null ],
+      [ "done", "d6/dd0/structdiscord__ret__thread__members.html#ad56680eaa7cc0b956637a96d77682566", null ],
+      [ "fail", "d6/dd0/structdiscord__ret__thread__members.html#ac80250deb882a4b45724b8c52cd5dce2", null ],
+      [ "high_p", "d6/dd0/structdiscord__ret__thread__members.html#a4c74a0a6a38b267a8d043aeecb4e1c90", null ],
+      [ "sync", "d6/dd0/structdiscord__ret__thread__members.html#a1296973a510e62e5f9aef97e054eaf02", null ]
+    ] ],
+    [ "discord_ret_thread_response_body", "d1/dd9/structdiscord__ret__thread__response__body.html", [
+      [ "cleanup", "d1/dd9/structdiscord__ret__thread__response__body.html#a7dba0ff308d22f0f168be944511fe3ba", null ],
+      [ "data", "d1/dd9/structdiscord__ret__thread__response__body.html#a0c90e8a0a7e23897c6c4034972634eef", null ],
+      [ "done", "d1/dd9/structdiscord__ret__thread__response__body.html#ab8ec774f9692c466bb798662acc88d11", null ],
+      [ "fail", "d1/dd9/structdiscord__ret__thread__response__body.html#ac5d1998d39bbd8388580ecd8602e110e", null ],
+      [ "high_p", "d1/dd9/structdiscord__ret__thread__response__body.html#a3eeb7d9244cdbf8fb7a31082030ef046", null ],
+      [ "sync", "d1/dd9/structdiscord__ret__thread__response__body.html#ab5c9b8ea021eb515854ebe0e3c9594cb", null ]
+    ] ],
     [ "discord_add_thread_member", "df/d2c/group__DiscordAPIChannel.html#ga06ca972fd29c7ebc1d9048c817fe4744", null ],
     [ "discord_bulk_delete_messages", "df/d2c/group__DiscordAPIChannel.html#ga9ec96c0449a0aaad4d1c575f883f59e2", null ],
     [ "discord_create_channel_invite", "df/d2c/group__DiscordAPIChannel.html#gaea2527f8833466e97bb51f03d3a5b9c2", null ],

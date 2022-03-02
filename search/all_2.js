@@ -15,7 +15,6 @@ var searchData=
   ['bucket_12',['bucket',['../d8/d61/structdiscord__context.html#a78e6d79264c72dfabd7151c8834dbb25',1,'discord_context']]],
   ['buckets_13',['buckets',['../d1/d0a/structdiscord__adapter.html#a20ef4471bba9e6c4a2e064aa8e498747',1,'discord_adapter']]],
   ['buf_14',['buf',['../d8/d61/structdiscord__context.html#a7065c633fca31ba5097384b48da6fb54',1,'discord_context']]],
-  ['building_20your_20first_20bot_15',['Building your first bot',['../d3/dfc/md_docs_BUILDING_A_BOT.html',1,'']]],
-  ['busyq_16',['busyq',['../db/da2/structdiscord__bucket.html#a2512916a1855f4b3e3810803d41fbec9',1,'discord_bucket']]],
-  ['buttons_17',['buttons',['../dc/d66/structdiscord__activity.html#ae0e7479c1dc08ab8a67a45ab6390ca5e',1,'discord_activity']]]
+  ['busyq_15',['busyq',['../db/da2/structdiscord__bucket.html#a2512916a1855f4b3e3810803d41fbec9',1,'discord_bucket']]],
+  ['buttons_16',['buttons',['../dc/d66/structdiscord__activity.html#ae0e7479c1dc08ab8a67a45ab6390ca5e',1,'discord_activity']]]
 ];

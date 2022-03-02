@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['gateway_20api_0',['Gateway API',['../d4/d2b/group__DiscordAPIGateway.html',1,'']]],
+  ['gateway_0',['Gateway',['../d4/d2b/group__DiscordAPIGateway.html',1,'']]],
   ['gateway_2eh_1',['gateway.h',['../dd/d7f/include_2gateway_8h.html',1,'']]],
   ['general_20lengths_2',['General lengths',['../df/dcb/group__DiscordConstantsGeneral.html',1,'']]],
   ['gnrc_3',['gnrc',['../d6/dc3/structdiscord__request.html#ace6fe1351bd2316314fd25b410a203ed',1,'discord_request']]],
-  ['guild_4',['guild',['../d5/da6/structdiscord__invite.html#a9537f5abdd59ec1e7130e7531a548a91',1,'discord_invite']]],
-  ['guild_20api_5',['Guild API',['../d3/d9f/group__DiscordAPIGuild.html',1,'']]],
-  ['guild_20template_20api_6',['Guild Template API',['../d0/d17/group__DiscordAPIGuildTemplate.html',1,'']]],
+  ['guild_4',['Guild',['../d3/d9f/group__DiscordAPIGuild.html',1,'']]],
+  ['guild_5',['guild',['../d5/da6/structdiscord__invite.html#a9537f5abdd59ec1e7130e7531a548a91',1,'discord_invite']]],
+  ['guild_20template_6',['Guild Template',['../d0/d17/group__DiscordAPIGuildTemplate.html',1,'']]],
   ['guild_2eh_7',['guild.h',['../dd/d16/include_2guild_8h.html',1,'']]],
   ['guild_5fid_8',['guild_id',['../d6/d66/structdiscord__message.html#a1ccbd1ffb859a81a4841b07ffbf6e009',1,'discord_message::guild_id()'],['../d4/d29/structdiscord__message__reference.html#a0eea4c8221aee3b58f67663335d9d074',1,'discord_message_reference::guild_id()'],['../d5/d32/structdiscord__channel__mention.html#a3832d08fa4ac98b427986084587e0010',1,'discord_channel_mention::guild_id()'],['../d6/dc9/structdiscord__voice__state__status.html#af01fa7b89de0a9676f59e2d7a070a2c1',1,'discord_voice_state_status::guild_id()'],['../de/de8/structdiscord__guild__scheduled__event.html#a7fd99257d35f4990c28087734cde2d2c',1,'discord_guild_scheduled_event::guild_id()'],['../d0/d2b/structdiscord__interaction.html#a052f432e7fe7511f8cdea5f01556f0e6',1,'discord_interaction::guild_id()'],['../d5/d3f/structdiscord__stage__instance.html#a445f548880a625ae92c18926c4c3758e',1,'discord_stage_instance::guild_id()'],['../dc/dda/structdiscord__sticker.html#adb0abf9f363677d5576b0a0f63954358',1,'discord_sticker::guild_id()'],['../d3/dbb/structdiscord__voice__state.html#ae2957dbad86a3db12db2600050d6b9c9',1,'discord_voice_state::guild_id()'],['../db/d35/structdiscord__webhook.html#a86dedc0d885474373eaa558290493132',1,'discord_webhook::guild_id()'],['../dc/d40/structdiscord__channel.html#a87b4fb122ecb7bdf7109ba64a9811164',1,'discord_channel::guild_id()'],['../dc/dd9/structdiscord__application.html#aed8d2cf98a09c5464bec6070488c9566',1,'discord_application::guild_id()'],['../dd/d59/structdiscord__application__command.html#ab6d1f27109d7506376b1f0d26c2496c6',1,'discord_application_command::guild_id()'],['../d4/d21/structdiscord__guild__application__command__permission.html#a5b968304a31cfe705bb2bdb57bb3fb73',1,'discord_guild_application_command_permission::guild_id()']]],
   ['guild_5flocale_9',['guild_locale',['../d0/d2b/structdiscord__interaction.html#a9e9cd523322eddfe92d26bb4b55533b6',1,'discord_interaction']]],
