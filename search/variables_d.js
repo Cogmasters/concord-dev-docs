@@ -9,6 +9,5 @@ var searchData=
   ['nonce_6',['nonce',['../d6/d66/structdiscord__message.html#a9ce7b073536c5dda9c6f2d5cbed165f6',1,'discord_message']]],
   ['now_7',['now',['../db/d5b/structdiscord__gateway.html#a4f318b0eb4f8a151fa23236df46ae2cf',1,'discord_gateway']]],
   ['nsfw_8',['nsfw',['../dc/d40/structdiscord__channel.html#ab5467297c0038a929463958d3fb38d21',1,'discord_channel::nsfw()'],['../db/d6e/structdiscord__modify__channel.html#a8a0e53baf88b4f3c5c6a52ecc85e55cf',1,'discord_modify_channel::nsfw()'],['../db/dce/structdiscord__create__guild__channel.html#ad470af4899eaf962735c498c2a89ad58',1,'discord_create_guild_channel::nsfw()']]],
-  ['nsfw_5flevel_9',['nsfw_level',['../d6/d50/structdiscord__guild.html#ac53af2bb23f6e12769b583dbbe4987e7',1,'discord_guild']]],
-  ['ntoks_10',['ntoks',['../d0/dda/struct__jsmnroot.html#a5291f7f714dd167e42c3b3aa8c149241',1,'_jsmnroot']]]
+  ['nsfw_5flevel_9',['nsfw_level',['../d6/d50/structdiscord__guild.html#ac53af2bb23f6e12769b583dbbe4987e7',1,'discord_guild']]]
 ];
