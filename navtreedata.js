@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Concord", "index.html", [
     [ "Discord API Roadmap", "d5/d74/md_docs_DISCORD_ROADMAP.html", [
-      [ "Concord 1.0.0", "index.html#autotoc_md0", null ],
+      [ "Concord", "index.html#autotoc_md0", null ],
       [ "About", "index.html#autotoc_md1", [
         [ "Minimal example", "index.html#autotoc_md2", null ]
       ] ],
@@ -98,6 +98,11 @@ var NAVTREE =
         [ "Voice Connections", "d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md59", null ]
       ] ]
     ] ],
+    [ "Compiling on Windows (Detailed instructions)", "db/dbe/md_docs_WINDOWS.html", [
+      [ "Cygwin and Dependencies", "db/dbe/md_docs_WINDOWS.html#autotoc_md61", null ],
+      [ "Microsoft Visual C/C++", "db/dbe/md_docs_WINDOWS.html#autotoc_md62", null ],
+      [ "Other compilers", "db/dbe/md_docs_WINDOWS.html#autotoc_md63", null ]
+    ] ],
     [ "Todo List", "dd/da0/todo.html", null ],
     [ "Deprecated List", "da/d58/deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
@@ -127,14 +132,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/d6a/group__DiscordAPIEmoji.html#ga76928cd828be926da6fc33d4133f2b3c",
-"d4/d28/structdiscord__audit__log__change.html#afdfd5f5c309346531fcf8aeca95d8801",
-"d5/de1/structdiscord__guild__member.html",
-"d7/db9/structdiscord__create__guild.html",
-"da/dc5/websockets_8h.html#a684b8995274735a5e21602b065a4aa0e",
-"dc/d40/structdiscord__channel.html#ac635e942878b9424da89185bedc9d273",
-"de/d25/structdiscord__create__channel__invite.html#a1a79df0f92bd2e5d9b4f8da91b6d046c",
-"functions_e.html"
+"d1/dd0/voice__connections_8h.html#a141794a0c70ac7b43ee4f6aca4fb8b56a90c99d631803590b48d48b3fe4326fff",
+"d3/dbb/structdiscord__voice__state.html#a6f7f3aaccd5b7f5171ba3fb98c6f30be",
+"d5/d74/md_docs_DISCORD_ROADMAP.html#autotoc_md55",
+"d6/db1/structdiscord__ret__followed__channel.html",
+"d9/d83/docs_2api_2guild_8h.html#a742601ce2eabffef6addf1067b6b5c98aa0c137bd9342f43bce0f599e20c9ccbc",
+"db/d5c/interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a9bcbfe69a431084ab2a611464cc47fc3",
+"dc/da2/structdiscord__stickers.html",
+"de/dd0/structdiscord__get__channel__messages.html#a380bc90b635641d41556c1c5a9d5e7f3",
+"functions_vars_l.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
