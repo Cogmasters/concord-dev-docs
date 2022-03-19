@@ -31,6 +31,7 @@ var NAVTREEINDEX7 =
 "dc/dcf/concord-once_8h.html":[6,0,2,3],
 "dc/dcf/concord-once_8h.html#a9a5555031ccfdb102424695dfaca0727":[6,0,2,3,1],
 "dc/dcf/concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a":[6,0,2,3,0],
+"dc/dcf/concord-once_8h.html#adbc75aba745f0dc53f950961859e038f":[6,0,2,3,2],
 "dc/dcf/concord-once_8h_source.html":[6,0,2,3],
 "dc/dd8/structdiscord__ret__guild__member.html":[4,2,5,4],
 "dc/dd8/structdiscord__ret__guild__member.html#a69e2bd19e9fe9d0401e72ace11122fc9":[4,2,5,4,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "de/d46/structdiscord__invite__metadata.html#ac1c6dbab5e88af497cf5b33e7b751201":[5,0,127,1],
 "de/d46/structdiscord__invite__metadata.html#ade17f60f50e7e707f794cb1f7ac27427":[5,0,127,3],
 "de/d78/structdiscord__create__guild__sticker.html":[5,0,57],
-"de/d78/structdiscord__create__guild__sticker.html#a0f3b6b9835c5c86b6dfd27eaf972a04a":[5,0,57,0],
-"de/d78/structdiscord__create__guild__sticker.html#a7edf5e0645047d3a793660168cf257d8":[5,0,57,3]
+"de/d78/structdiscord__create__guild__sticker.html#a0f3b6b9835c5c86b6dfd27eaf972a04a":[5,0,57,0]
 };

@@ -119,6 +119,7 @@ var NAVTREE =
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
@@ -139,7 +140,7 @@ var NAVTREEINDEX =
 "d9/d03/structdiscord__interaction__callback__data.html#ae2fc6faffe057299d37a50abe8184549",
 "db/d35/structdiscord__webhook.html#ad182fc083d8e1d5eabd9ea3ee5fdd59b",
 "dc/d82/structdiscord__presence__update.html",
-"de/d78/structdiscord__create__guild__sticker.html#a953bd44ae9266d79cdfd5bcf9c8f515e",
+"de/d78/structdiscord__create__guild__sticker.html#a7edf5e0645047d3a793660168cf257d8",
 "functions_vars.html"
 ];
 

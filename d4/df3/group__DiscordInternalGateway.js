@@ -1,6 +1,6 @@
 var group__DiscordInternalGateway =
 [
-    [ "DiscordInternalGatewaySessionStatus", "d3/df4/group__DiscordInternalGatewaySessionStatus.html", "d3/df4/group__DiscordInternalGatewaySessionStatus" ],
+    [ "Client's session status", "d3/df4/group__DiscordInternalGatewaySessionStatus.html", "d3/df4/group__DiscordInternalGatewaySessionStatus" ],
     [ "Gateway intents", "dd/de5/group__DiscordInternalGatewayIntents.html", null ],
     [ "discord_gateway_cmd_cbs", "d3/d05/structdiscord__gateway__cmd__cbs.html", null ],
     [ "discord_gateway_cbs", "d0/d7c/structdiscord__gateway__cbs.html", [
