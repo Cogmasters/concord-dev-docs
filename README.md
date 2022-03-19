@@ -8,12 +8,13 @@ tar -xvf doxygen-1.9.3.linux.bin.tar.gz
 cp doxygen-1.9.3/bin/doxygen .
 ```
 
-## Cloning Concord-Dev
+## Get latest concord-dev
 ```sh
-git clone --branch dev https://github.com/Cogmasters/concord
+git submodule update --init --recursive
+git submodule update --remote
 ```
 
-## Prepare concord files for documentation
+## Prepare concord-dev files for documentation
 ```sh
 make -C concord docs
 ```
