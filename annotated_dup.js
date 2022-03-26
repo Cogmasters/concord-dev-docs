@@ -231,6 +231,8 @@ var annotated_dup =
     [ "discord_thread_members", "structdiscord__thread__members.html", null ],
     [ "discord_thread_metadata", "structdiscord__thread__metadata.html", "structdiscord__thread__metadata" ],
     [ "discord_thread_response_body", "structdiscord__thread__response__body.html", "structdiscord__thread__response__body" ],
+    [ "discord_timer", "structdiscord__timer.html", "structdiscord__timer" ],
+    [ "discord_timers", "structdiscord__timers.html", null ],
     [ "discord_user", "structdiscord__user.html", "structdiscord__user" ],
     [ "discord_users", "structdiscord__users.html", null ],
     [ "discord_voice_region", "structdiscord__voice__region.html", "structdiscord__voice__region" ],

@@ -122,18 +122,18 @@
 <text text-anchor="middle" x="425.5" y="-131" font-family="Helvetica,sans-Serif" font-size="10.00">on_cycle</text>
 <text text-anchor="middle" x="425.5" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00">on_idle</text>
 </g>
-<!-- Node23 -->
+<!-- Node24 -->
 <g id="node7" class="node">
-<title>Node23</title>
+<title>Node24</title>
 <g id="a_node7"><a xlink:href="structdiscord__gateway__cbs.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="631,-0.5 631,-19.5 752,-19.5 752,-0.5 631,-0.5"/>
 <text text-anchor="middle" x="691.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">discord_gateway_cbs</text>
 </a>
 </g>
 </g>
-<!-- Node18&#45;&gt;Node23 -->
+<!-- Node18&#45;&gt;Node24 -->
 <g id="edge9" class="edge">
-<title>Node18&#45;&gt;Node23</title>
+<title>Node18&#45;&gt;Node24</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M434.47,-70.31C441.73,-55.81 453.93,-36.61 471,-27 497.44,-12.12 575.49,-9.15 630.98,-9.05"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="431.28,-68.88 430.24,-79.42 437.63,-71.83 431.28,-68.88"/>
 <text text-anchor="start" x="471" y="-173" font-family="Helvetica,sans-Serif" font-size="10.00"> on_application_command</text>
@@ -151,9 +151,9 @@
 <text text-anchor="middle" x="535.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00">on_guild_create</text>
 <text text-anchor="middle" x="535.5" y="-30" font-family="Helvetica,sans-Serif" font-size="10.00">...</text>
 </g>
-<!-- Node23&#45;&gt;Node1 -->
+<!-- Node24&#45;&gt;Node1 -->
 <g id="edge8" class="edge">
-<title>Node23&#45;&gt;Node1</title>
+<title>Node24&#45;&gt;Node1</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M620.51,-7.45C613.58,-7.27 606.65,-7.11 600,-7 542.67,-6.05 527.4,3.33 471,-7 397.51,-20.46 316.32,-58.52 280.82,-76.45"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="620.54,-10.95 630.63,-7.74 620.73,-3.95 620.54,-10.95"/>
 <text text-anchor="middle" x="425.5" y="-30" font-family="Helvetica,sans-Serif" font-size="10.00"> cbs</text>
