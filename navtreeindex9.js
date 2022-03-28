@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structdiscord__welcome__screen.html#a03758fcb61911afb9fe53106b8513bcc":[6,0,242,1],
 "structdiscord__welcome__screen__channel.html":[6,0,243],
 "structdiscord__welcome__screen__channel.html#a12c3d8c9fdc5656ef402334d8bd05b89":[6,0,243,1],
 "structdiscord__welcome__screen__channel.html#a2e46ac4bea86b32d4897ebfa80480d1a":[6,0,243,0],
