@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cap_0',['cap',['../structdiscord__gateway.html#ad88c952a09c79514d9bf5920c3f05bf6',1,'discord_gateway']]],
-  ['cb_1',['cb',['../structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810',1,'discord::cb()'],['../structdiscord__timer.html#a205071c9a510b044b7e80a0dc33667ec',1,'discord_timer::cb()']]],
+  ['cb_1',['cb',['../structdiscord__gateway.html#abfed206a63d5ae495354e907f6854d07',1,'discord_gateway::cb()'],['../structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810',1,'discord::cb()'],['../structdiscord__timer.html#a205071c9a510b044b7e80a0dc33667ec',1,'discord_timer::cb()']]],
   ['cbs_2',['cbs',['../structdiscord__gateway.html#a37d8eda465d7fe829272bafde7efd847',1,'discord_gateway']]],
   ['ccord_5fhas_5fsigint_3',['ccord_has_sigint',['../concord-once_8h.html#adbc75aba745f0dc53f950961859e038f',1,'concord-once.h']]],
   ['changes_4',['changes',['../structdiscord__audit__log__entry.html#aa239b88e558070827490ff864dcde170',1,'discord_audit_log_entry']]],

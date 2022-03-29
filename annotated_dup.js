@@ -89,7 +89,6 @@ var annotated_dup =
     [ "discord_followed_channel", "structdiscord__followed__channel.html", "structdiscord__followed__channel" ],
     [ "discord_gateway", "structdiscord__gateway.html", "structdiscord__gateway" ],
     [ "discord_gateway_cbs", "structdiscord__gateway__cbs.html", "structdiscord__gateway__cbs" ],
-    [ "discord_gateway_cmd_cbs", "structdiscord__gateway__cmd__cbs.html", null ],
     [ "discord_generic", "structdiscord__generic.html", "structdiscord__generic" ],
     [ "discord_get_channel_messages", "structdiscord__get__channel__messages.html", "structdiscord__get__channel__messages" ],
     [ "discord_get_current_user_guilds", "structdiscord__get__current__user__guilds.html", "structdiscord__get__current__user__guilds" ],

@@ -165,23 +165,42 @@ FreeBSD</h4>
 OS X</h4>
 <div class="fragment"><div class="line">$ brew install curl (Homebrew)</div>
 <div class="line">$ port install curl (MacPorts)</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md11"></a>
-A note about SIGINT handling</h4>
-<p >By default, Concord will not handle SIGINT (i.e. Control-C). You can enable the handler for this by adding <code>-DSIGINTCATCH</code> to the <code>CFLAGS</code> variable in the Makefile.</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
 Setting up your environment</h3>
-<h4><a class="anchor" id="autotoc_md13"></a>
+<h4><a class="anchor" id="autotoc_md12"></a>
 Clone Concord into your workspace</h4>
 <div class="fragment"><div class="line">$ git clone https://github.com/cogmasters/concord.git &amp;&amp; cd concord</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md14"></a>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md13"></a>
 Compile Concord</h4>
 <div class="fragment"><div class="line">$ make</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md15"></a>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md14"></a>
 Special notes for non-Linux systems</h4>
-<p >You might run into trouble with the compiler and linker not finding your Curl headers. You can do something like this: </p><div class="fragment"><div class="line">$ CFLAGS=-I&lt;some_path&gt; LDFLAGS=-L&lt;some_path&gt; make</div>
+<p >You might run into trouble with the compiler and linker not finding your Libcurl headers. You can do something like this: </p><div class="fragment"><div class="line">$ CFLAGS=-I&lt;some_path&gt; LDFLAGS=-L&lt;some_path&gt; make</div>
 </div><!-- fragment --><p> For instance, on a FreeBSD system: </p><div class="fragment"><div class="line">$ CFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib make</div>
-</div><!-- fragment --><p >On OS X using MacPorts: </p><div class="fragment"><div class="line">$ CFLAGS=-I/opt/local/include LDFLAGS=-L/opt/local/lib make</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md16"></a>
+</div><!-- fragment --><p> On OS X using MacPorts: </p><div class="fragment"><div class="line">$ CFLAGS=-I/opt/local/include LDFLAGS=-L/opt/local/lib make</div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md15"></a>
+Special compilation flags</h4>
+<p >The following outlines flags that can be attached to the Makefile if you wish to override the default compilation behavior with additional functionalities.</p>
+<div class="fragment"><div class="line">$ CFLAGS=&quot;-DCCORD_SIGINTCATCH -DCCORD_VOICE&quot; make</div>
+</div><!-- fragment --><ul>
+<li><code>-DCCORD_SIGINTCATCH</code><ul>
+<li>By default Concord will not shutdown gracefully when a SIGINT is received (i.e. <code>Ctrl</code>+<code>c</code>), enable this flag if you wish it to be handled for you.</li>
+</ul>
+</li>
+<li><code>-DCCORD_VOICE</code><ul>
+<li>Enable experimental Voice Connection handling.</li>
+</ul>
+</li>
+<li><code>-DCCORD_DEBUG_WEBSOCKETS</code><ul>
+<li>Enable verbose debugging for WebSockets communication.</li>
+</ul>
+</li>
+<li><code>-DCCORD_DEBUG_ADAPTER</code><ul>
+<li>Enable verbose debugging-mode for REST communication.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md16"></a>
 Configuring Concord</h3>
 <p >The following outlines the default fields of <code>config.json</code> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;logging&quot;: { // logging directives</div>
@@ -223,8 +242,8 @@ Terminate Copycat-Bot</h4>
 Installing Concord</h2>
 <p >*(note &ndash; <code>#</code> means that you should be running as root)*</p>
 <div class="fragment"><div class="line"># make install</div>
-</div><!-- fragment --><p >Included headers must be <code>concord/</code> prefixed: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;concord/discord.h&gt;</span></div>
 </div><!-- fragment --><p >This will install the headers and libary files into $PREFIX. You can override this as such: </p><div class="fragment"><div class="line"># PREFIX=/opt/concord make install</div>
+</div><!-- fragment --><p >Note that included headers must be <code>concord/</code> prefixed: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;concord/discord.h&gt;</span></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md21"></a>
 Standalone executable</h3>
 <h4><a class="anchor" id="autotoc_md22"></a>

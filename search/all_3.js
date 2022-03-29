@@ -2,7 +2,7 @@ var searchData=
 [
   ['callback_20types_0',['Callback types',['../group__DiscordEventCallbackTypes.html',1,'']]],
   ['cap_1',['cap',['../structdiscord__gateway.html#ad88c952a09c79514d9bf5920c3f05bf6',1,'discord_gateway']]],
-  ['cb_2',['cb',['../structdiscord__timer.html#a205071c9a510b044b7e80a0dc33667ec',1,'discord_timer::cb()'],['../structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810',1,'discord::cb()']]],
+  ['cb_2',['cb',['../structdiscord__timer.html#a205071c9a510b044b7e80a0dc33667ec',1,'discord_timer::cb()'],['../structdiscord__gateway.html#abfed206a63d5ae495354e907f6854d07',1,'discord_gateway::cb()'],['../structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810',1,'discord::cb()']]],
   ['cbs_3',['cbs',['../structdiscord__gateway.html#a37d8eda465d7fe829272bafde7efd847',1,'discord_gateway']]],
   ['ccord_5fbad_5fjson_4',['CCORD_BAD_JSON',['../group__ConcordError.html#ga80f3eaee3c522218fa1f2915ef61d6ca',1,'error.h']]],
   ['ccord_5fbad_5fparameter_5',['CCORD_BAD_PARAMETER',['../group__ConcordError.html#ga267a3333a5850c98e3a0b29c47607761',1,'error.h']]],
@@ -36,7 +36,7 @@ var searchData=
   ['client_27s_20session_20status_33',['Client&apos;s session status',['../group__DiscordInternalGatewaySessionStatus.html',1,'']]],
   ['cmds_34',['cmds',['../structdiscord__gateway.html#a39b8f8d0a69176b7c6816186f353c369',1,'discord_gateway']]],
   ['code_35',['code',['../structws__info.html#a23ce15bf0a94fc0d3aeee025abed5dfe',1,'ws_info::code()'],['../structdiscord__guild__template.html#ab6a27fdfb28f97baa5c3c339ded79f48',1,'discord_guild_template::code()'],['../structdiscord__invite.html#a935de1f04625fa8c0afccee06ea1a468',1,'discord_invite::code()']]],
-  ['color_36',['color',['../structdiscord__create__guild__role.html#a880f1170dbaf87df813ff1bd84b63188',1,'discord_create_guild_role::color()'],['../structdiscord__embed.html#a4b85f46dd7b4969cb57cf6d1788cf27f',1,'discord_embed::color()'],['../structdiscord__modify__guild__role.html#a4788c38709fb5517d93f5c34693e904b',1,'discord_modify_guild_role::color()'],['../structdiscord__role.html#aafd3dfbe3bfb0c1093cf6defe232ddcb',1,'discord_role::color()']]],
+  ['color_36',['color',['../structdiscord__embed.html#a4b85f46dd7b4969cb57cf6d1788cf27f',1,'discord_embed::color()'],['../structdiscord__create__guild__role.html#a880f1170dbaf87df813ff1bd84b63188',1,'discord_create_guild_role::color()'],['../structdiscord__modify__guild__role.html#a4788c38709fb5517d93f5c34693e904b',1,'discord_modify_guild_role::color()'],['../structdiscord__role.html#aafd3dfbe3bfb0c1093cf6defe232ddcb',1,'discord_role::color()']]],
   ['communication_5fdisabled_5funtil_37',['communication_disabled_until',['../structdiscord__guild__member.html#ac4eaf2ad700c9aae6432051bec8cee96',1,'discord_guild_member::communication_disabled_until()'],['../structdiscord__modify__guild__member.html#a0143859365ae6a0a824049151130c6ef',1,'discord_modify_guild_member::communication_disabled_until()']]],
   ['compiling_20on_20windows_20_28detailed_20instructions_29_38',['Compiling on Windows (Detailed instructions)',['../md_docs_WINDOWS.html',1,'']]],
   ['component_5ftype_39',['component_type',['../structdiscord__interaction__data.html#a791d29c96e3d8f672e5044685e0eb1b1',1,'discord_interaction_data']]],

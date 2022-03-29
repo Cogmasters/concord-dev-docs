@@ -15,7 +15,7 @@ var group__DiscordInternal =
       [ "self", "structdiscord.html#a00c5289d2e99e09a2f69fb78589a1ace", null ],
       [ "cb", "structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810", null ],
       [ "next", "structdiscord.html#a6eb2ea44ec9bf21857e1055e8baaae59", null ],
-      [ "wakeup_timer", "structdiscord.html#a8b03f600d16941cbab47a18c17cd4f33", null ],
+      [ "wakeup_timer", "structdiscord.html#a7b9594326011c673f91ac264fc5b77bd", null ],
       [ "on_idle", "structdiscord.html#a8b6ddc9583333027193256369e5600e5", null ],
       [ "on_cycle", "structdiscord.html#aec30edafaaff8f151616190450101eab", null ],
       [ "data", "structdiscord.html#ad36541f87b8997a57c0467d29627e8d1", null ]

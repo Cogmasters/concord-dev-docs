@@ -36,13 +36,13 @@ var NAVTREE =
           [ "Void Linux", "index.html#autotoc_md7", null ],
           [ "Alpine", "index.html#autotoc_md8", null ],
           [ "FreeBSD", "index.html#autotoc_md9", null ],
-          [ "OS X", "index.html#autotoc_md10", null ],
-          [ "A note about SIGINT handling", "index.html#autotoc_md11", null ]
+          [ "OS X", "index.html#autotoc_md10", null ]
         ] ],
-        [ "Setting up your environment", "index.html#autotoc_md12", [
-          [ "Clone Concord into your workspace", "index.html#autotoc_md13", null ],
-          [ "Compile Concord", "index.html#autotoc_md14", null ],
-          [ "Special notes for non-Linux systems", "index.html#autotoc_md15", null ]
+        [ "Setting up your environment", "index.html#autotoc_md11", [
+          [ "Clone Concord into your workspace", "index.html#autotoc_md12", null ],
+          [ "Compile Concord", "index.html#autotoc_md13", null ],
+          [ "Special notes for non-Linux systems", "index.html#autotoc_md14", null ],
+          [ "Special compilation flags", "index.html#autotoc_md15", null ]
         ] ],
         [ "Configuring Concord", "index.html#autotoc_md16", null ],
         [ "Test Copycat-Bot", "index.html#autotoc_md17", [
@@ -140,10 +140,10 @@ var NAVTREEINDEX =
 "structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810",
 "structdiscord__component.html#afb1967e57163487f17e4223976f19eaa",
 "structdiscord__execute__webhook.html#a76b5f2ef3f98a989dd5d117ffe4b6edd",
-"structdiscord__guild__template.html#aa8f6527d720c901fd05552de0aff8432",
-"structdiscord__modify__guild__scheduled__event.html#a668673de7e1a15913795376b2082bde1",
-"structdiscord__ret__message.html#afb32889da1318e7959ef6266c2fa4bb8",
-"structdiscord__welcome__screen.html#a03758fcb61911afb9fe53106b8513bcc"
+"structdiscord__guild__template.html#a7a548896c45ec302dd0219ba17f9f840",
+"structdiscord__modify__guild__scheduled__event.html#a5b5074a1799285974a76ef3d60a2c31e",
+"structdiscord__ret__message.html#af033729f9d5a3a791f5df6492244c603",
+"structdiscord__welcome__screen.html#a01a098c7a8e159379706baa8bff639fa"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
