@@ -10,7 +10,8 @@ var discord_8h =
       [ "DISCORD_TIMER_MICROSECONDS", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faed94cce3c4ed6783143b1b1f0193e200", null ],
       [ "DISCORD_TIMER_DELETE", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fadf15de56f1516ef493eada83b77ecb87", null ],
       [ "DISCORD_TIMER_DELETE_AUTO", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fa7ca0d000fbd3e69349aff6cd95b29e28", null ],
-      [ "DISCORD_TIMER_CANCELED", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faa917b8794f8f5251f044f0af4d6b280e", null ]
+      [ "DISCORD_TIMER_CANCELED", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faa917b8794f8f5251f044f0af4d6b280e", null ],
+      [ "DISCORD_TIMER_DONT_UPDATE", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6facb3e2a143f67a6e63742566588793af1", null ]
     ] ],
     [ "discord_return_error", "group__ConcordError.html#gac88742928a867d61346e9f2e3e5d778d", null ],
     [ "discord_strerror", "group__ConcordError.html#gada62832835a3d70782b791e0cb607cd2", null ],

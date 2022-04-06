@@ -15,7 +15,8 @@ var group__DiscordTimer =
       [ "DISCORD_TIMER_MICROSECONDS", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faed94cce3c4ed6783143b1b1f0193e200", null ],
       [ "DISCORD_TIMER_DELETE", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fadf15de56f1516ef493eada83b77ecb87", null ],
       [ "DISCORD_TIMER_DELETE_AUTO", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fa7ca0d000fbd3e69349aff6cd95b29e28", null ],
-      [ "DISCORD_TIMER_CANCELED", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faa917b8794f8f5251f044f0af4d6b280e", null ]
+      [ "DISCORD_TIMER_CANCELED", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faa917b8794f8f5251f044f0af4d6b280e", null ],
+      [ "DISCORD_TIMER_DONT_UPDATE", "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6facb3e2a143f67a6e63742566588793af1", null ]
     ] ],
     [ "discord_timer_ctl", "group__DiscordTimer.html#ga230faf2b14190f3c6ddecbcf9ed1ae6d", null ],
     [ "discord_timer", "group__DiscordTimer.html#ga85b715c14360d0436da5c8bd95ae5e4f", null ]

@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__DiscordAPIChannel.html#ga1b99dd9fbb55d9a23d077e1e383c4046":[5,2,1,18],
 "group__DiscordAPIChannel.html#ga20401e84d4ac2c3bebebea580d5c0190":[5,2,1,19],
 "group__DiscordAPIChannel.html#ga34925c6a4cdb299c65d9d1adb9460f32":[5,2,1,20],
 "group__DiscordAPIChannel.html#ga35aacccb9aa1f4ee6a8ad5655cb8f642":[5,2,1,38],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__DiscordEventCallbackTypes.html#ga7b8cac3c85413d32592fa127ac850647":[5,3,0,0,13],
 "group__DiscordEventCallbackTypes.html#ga82dafc0a8a26d937ea17e9f6ad686dbe":[5,3,0,0,12],
 "group__DiscordEventCallbackTypes.html#ga89d4b507ec7897b243cdbf819518418b":[5,3,0,0,3],
-"group__DiscordEventCallbackTypes.html#ga9b41cdd3e0f87d2bcd7b8426724045e0":[5,3,0,0,2],
-"group__DiscordEventCallbackTypes.html#ga9d8deebb49ce5bfe29bd3b01fcf0c025":[5,3,0,0,1]
+"group__DiscordEventCallbackTypes.html#ga9b41cdd3e0f87d2bcd7b8426724045e0":[5,3,0,0,2]
 };

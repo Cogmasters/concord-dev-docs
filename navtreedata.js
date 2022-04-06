@@ -113,6 +113,7 @@ var NAVTREE =
       [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
@@ -135,15 +136,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__DiscordAPIChannel.html#ga20401e84d4ac2c3bebebea580d5c0190",
-"group__DiscordEventCallbackTypes.html#gaad755d8a4839e8d62219ae7e8b04e3af",
-"structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810",
-"structdiscord__component.html#afb1967e57163487f17e4223976f19eaa",
-"structdiscord__execute__webhook.html#a76b5f2ef3f98a989dd5d117ffe4b6edd",
-"structdiscord__guild__template.html#a7a548896c45ec302dd0219ba17f9f840",
-"structdiscord__modify__guild__scheduled__event.html#a5b5074a1799285974a76ef3d60a2c31e",
-"structdiscord__ret__message.html#af033729f9d5a3a791f5df6492244c603",
-"structdiscord__welcome__screen.html#a01a098c7a8e159379706baa8bff639fa"
+"group__DiscordAPIChannel.html#ga1b99dd9fbb55d9a23d077e1e383c4046",
+"group__DiscordEventCallbackTypes.html#ga9d8deebb49ce5bfe29bd3b01fcf0c025",
+"structdiscord.html",
+"structdiscord__component.html#ae390990e32d4a5eb585047eab61583fa",
+"structdiscord__execute__webhook.html#a2e5f31abf6277921123840e886df1ceb",
+"structdiscord__guild__template.html#a65727d3d846ba8b80bbd5a02c2126ea7",
+"structdiscord__modify__guild__scheduled__event.html#a28a1f0b636c3bf1e84032ac79bb3943b",
+"structdiscord__ret__message.html#a90fecbb2ea418d182a7b20fc70bc66f9",
+"structdiscord__welcome__screen.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -86,7 +86,7 @@
 <g id="node5" class="node">
 <title>Node23</title>
 <g id="a_node5"><a xlink:href="structdiscord__timers.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="#bfbfbf" points="210,-169.5 210,-188.5 299,-188.5 299,-169.5 210,-169.5"/>
+<polygon fill="none" stroke="orangered" points="210,-169.5 210,-188.5 299,-188.5 299,-169.5 210,-169.5"/>
 <text text-anchor="middle" x="254.5" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">discord_timers</text>
 </a>
 </g>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"structdiscord__guild__template.html#a65727d3d846ba8b80bbd5a02c2126ea7":[6,0,112,10],
 "structdiscord__guild__template.html#a7a548896c45ec302dd0219ba17f9f840":[6,0,112,3],
 "structdiscord__guild__template.html#aa8f6527d720c901fd05552de0aff8432":[6,0,112,5],
 "structdiscord__guild__template.html#ab6a27fdfb28f97baa5c3c339ded79f48":[6,0,112,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "structdiscord__modify__guild__role__positions.html":[6,0,150],
 "structdiscord__modify__guild__scheduled__event.html":[6,0,151],
 "structdiscord__modify__guild__scheduled__event.html#a06278b5b9077cbbb28b333b6887e1061":[6,0,151,8],
-"structdiscord__modify__guild__scheduled__event.html#a0a46b11e19cc22dbe8a5c65f8a49bb24":[6,0,151,5],
-"structdiscord__modify__guild__scheduled__event.html#a28a1f0b636c3bf1e84032ac79bb3943b":[6,0,151,7]
+"structdiscord__modify__guild__scheduled__event.html#a0a46b11e19cc22dbe8a5c65f8a49bb24":[6,0,151,5]
 };

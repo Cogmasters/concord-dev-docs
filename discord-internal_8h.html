@@ -110,12 +110,11 @@ $(document).ready(function(){initNavTree('discord-internal_8h.html',''); initRes
 <code>#include &quot;io_poller.h&quot;</code><br />
 <code>#include &quot;uthash.h&quot;</code><br />
 <code>#include &quot;queue.h&quot;</code><br />
-<code>#include &quot;heap-inl.h&quot;</code><br />
 <code>#include &quot;priority_queue.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for discord-internal.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="discord-internal_8h__incl.svg" width="1640" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="discord-internal_8h__incl.svg" width="1528" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -280,6 +279,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4eebc4192161c78f1f61b7b7130cf472"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalTimer.html#ga4eebc4192161c78f1f61b7b7130cf472">_discord_timer_ctl</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, struct <a class="el" href="structdiscord__timers.html">discord_timers</a> *timers, struct <a class="el" href="structdiscord__timer.html">discord_timer</a> *timer)</td></tr>
 <tr class="memdesc:ga4eebc4192161c78f1f61b7b7130cf472"><td class="mdescLeft">&#160;</td><td class="mdescRight">modifies or creates a timer  <a href="group__DiscordInternalTimer.html#ga4eebc4192161c78f1f61b7b7130cf472">More...</a><br /></td></tr>
 <tr class="separator:ga4eebc4192161c78f1f61b7b7130cf472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ecbde4db2fcabff2f4f08fbad449393"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalTimer.html#ga4ecbde4db2fcabff2f4f08fbad449393">discord_internal_timer_ctl</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, struct <a class="el" href="structdiscord__timer.html">discord_timer</a> *timer)</td></tr>
+<tr class="memdesc:ga4ecbde4db2fcabff2f4f08fbad449393"><td class="mdescLeft">&#160;</td><td class="mdescRight">modifies or creates a timer  <a href="group__DiscordInternalTimer.html#ga4ecbde4db2fcabff2f4f08fbad449393">More...</a><br /></td></tr>
+<tr class="separator:ga4ecbde4db2fcabff2f4f08fbad449393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1ca208a9cf4d3a7a4bff903cb357842"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalTimer.html#gaa1ca208a9cf4d3a7a4bff903cb357842">discord_internal_timer</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, <a class="el" href="group__DiscordTimer.html#ga8b23c7c024f54ddfd5e333bfd9387dd5">discord_ev_timer</a> cb, void *data, int64_t delay)</td></tr>
+<tr class="memdesc:gaa1ca208a9cf4d3a7a4bff903cb357842"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a one shot timer that automatically deletes itself upon completion  <a href="group__DiscordInternalTimer.html#gaa1ca208a9cf4d3a7a4bff903cb357842">More...</a><br /></td></tr>
+<tr class="separator:gaa1ca208a9cf4d3a7a4bff903cb357842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Internal functions and datatypes. </p>

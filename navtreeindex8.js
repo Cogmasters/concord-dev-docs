@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structdiscord__ret__message.html#a90fecbb2ea418d182a7b20fc70bc66f9":[5,2,1,5,2],
 "structdiscord__ret__message.html#af033729f9d5a3a791f5df6492244c603":[5,2,1,5,4],
 "structdiscord__ret__message.html#afb32889da1318e7959ef6266c2fa4bb8":[5,2,1,5,1],
 "structdiscord__ret__messages.html":[5,2,1,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structdiscord__webhook.html#abe9b39b4617a2363018632e1f9a488a9":[6,0,239,1],
 "structdiscord__webhook.html#ad182fc083d8e1d5eabd9ea3ee5fdd59b":[6,0,239,5],
 "structdiscord__webhook.html#adf324efc32012c6816056015de671032":[6,0,239,6],
-"structdiscord__webhooks.html":[6,0,240],
-"structdiscord__welcome__screen.html":[6,0,241]
+"structdiscord__webhooks.html":[6,0,240]
 };

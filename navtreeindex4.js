@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"structdiscord__component.html#ae390990e32d4a5eb585047eab61583fa":[6,0,39,8],
+"structdiscord__component.html#ae5d76aee147629ddcc557223b1e99f3c":[6,0,39,9],
+"structdiscord__component.html#aef289819cd584601e589b35c25b2fe62":[6,0,39,2],
 "structdiscord__component.html#afb1967e57163487f17e4223976f19eaa":[6,0,39,6],
 "structdiscord__component.html#afce2b727ea5e5fee984ceca35cd70f71":[6,0,39,12],
 "structdiscord__components.html":[6,0,40],
@@ -15,14 +18,12 @@ var NAVTREEINDEX4 =
 "structdiscord__connection.html#afa33036f1458ec5fa89c967483c559b9":[6,0,41,7],
 "structdiscord__connections.html":[6,0,42],
 "structdiscord__context.html":[5,0,0,4],
-"structdiscord__context.html#a17f23fac4a28480f464f7b857a58c81b":[5,0,0,4,10],
 "structdiscord__context.html#a40f83d5e94f5961411c368c7d9592ff8":[5,0,0,4,6],
 "structdiscord__context.html#a5253717956ff5b1773e26791d9369937":[5,0,0,4,8],
 "structdiscord__context.html#a53f3cd2d41497e3bebe39cb627ea777f":[5,0,0,4,3],
-"structdiscord__context.html#a6526455ab617eb16b0da37f0cfe4871f":[5,0,0,4,11],
 "structdiscord__context.html#a7065c633fca31ba5097384b48da6fb54":[5,0,0,4,2],
 "structdiscord__context.html#a78e6d79264c72dfabd7151c8834dbb25":[5,0,0,4,1],
-"structdiscord__context.html#ab51ae05deb02a235ec771c3c86716291":[5,0,0,4,12],
+"structdiscord__context.html#ab51ae05deb02a235ec771c3c86716291":[5,0,0,4,10],
 "structdiscord__context.html#ac5c78dbeace47f85d5b056cca5c8ed82":[5,0,0,4,9],
 "structdiscord__context.html#ac9bbd52c4f221b7835587b4349d76ba4":[5,0,0,4,5],
 "structdiscord__context.html#ac9d425f5044de57d8ed79646f4877560":[5,0,0,4,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "structdiscord__execute__webhook.html":[6,0,84],
 "structdiscord__execute__webhook.html#a029ea3eb0547db517f902491c810bfba":[6,0,84,7],
 "structdiscord__execute__webhook.html#a16155467f98e5306d5d2d12faf23134e":[6,0,84,1],
-"structdiscord__execute__webhook.html#a226ddbae582f844faa18786dd073cc5a":[6,0,84,2],
-"structdiscord__execute__webhook.html#a2e5f31abf6277921123840e886df1ceb":[6,0,84,8]
+"structdiscord__execute__webhook.html#a226ddbae582f844faa18786dd073cc5a":[6,0,84,2]
 };

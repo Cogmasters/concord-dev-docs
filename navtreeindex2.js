@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__DiscordEventCallbackTypes.html#ga9d8deebb49ce5bfe29bd3b01fcf0c025":[5,3,0,0,1],
 "group__DiscordEventCallbackTypes.html#gaad755d8a4839e8d62219ae7e8b04e3af":[5,3,0,0,17],
 "group__DiscordEventCallbackTypes.html#gab84a67bc3b48e8bef77f0a9ad1349407":[5,3,0,0,6],
 "group__DiscordEventCallbackTypes.html#gac8ed0dfaff14985cb6d3112e3e36e5e4":[5,3,0,0,14],
@@ -46,8 +47,10 @@ var NAVTREEINDEX2 =
 "group__DiscordInternalGatewaySessionStatus.html#ga6c8b4794db8c4342c739cf8d26f0a443":[5,0,1,0,1],
 "group__DiscordInternalGatewaySessionStatus.html#gac420091888fcf49cc95dd5f3bbcd18ed":[5,0,1,0,2],
 "group__DiscordInternalTimer.html":[5,0,2],
+"group__DiscordInternalTimer.html#ga4ecbde4db2fcabff2f4f08fbad449393":[5,0,2,5],
 "group__DiscordInternalTimer.html#ga4eebc4192161c78f1f61b7b7130cf472":[5,0,2,4],
 "group__DiscordInternalTimer.html#ga883b03199ab5d2b4ede1cafab23e71fc":[5,0,2,3],
+"group__DiscordInternalTimer.html#gaa1ca208a9cf4d3a7a4bff903cb357842":[5,0,2,6],
 "group__DiscordInternalTimer.html#gac6c4cd848c1604641d3e81044b5595e0":[5,0,2,1],
 "group__DiscordInternalTimer.html#gaecdf1274fa5bffadff6070a008fa5a8a":[5,0,2,2],
 "group__DiscordPermissions.html":[5,1,4],
@@ -100,6 +103,7 @@ var NAVTREEINDEX2 =
 "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fa3338dc618299088b59238e69e6a1bfe0":[5,3,1,2,0],
 "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fa7ca0d000fbd3e69349aff6cd95b29e28":[5,3,1,2,3],
 "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faa917b8794f8f5251f044f0af4d6b280e":[5,3,1,2,4],
+"group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6facb3e2a143f67a6e63742566588793af1":[5,3,1,2,5],
 "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fadf15de56f1516ef493eada83b77ecb87":[5,3,1,2,2],
 "group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faed94cce3c4ed6783143b1b1f0193e200":[5,3,1,2,1],
 "group__DiscordVoiceSpeakingFlags.html":[5,1,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "sticker_8h.html#add8dff7e42b02922f4fd9d302252b80b":[7,0,1,0,15,7],
 "sticker_8h.html#add8dff7e42b02922f4fd9d302252b80ba76761f68dda727d9efc5f49f4eaed48a":[7,0,1,0,15,7,0],
 "sticker_8h.html#add8dff7e42b02922f4fd9d302252b80ba8bc4d76d9d6c5213d1e50dba71345120":[7,0,1,0,15,7,1],
-"sticker_8h_source.html":[7,0,1,0,15],
-"structdiscord.html":[5,0,5],
-"structdiscord.html":[5,3,2],
-"structdiscord.html#a00c5289d2e99e09a2f69fb78589a1ace":[5,3,2,6],
-"structdiscord.html#a00c5289d2e99e09a2f69fb78589a1ace":[5,0,5,6]
+"sticker_8h_source.html":[7,0,1,0,15]
 };
