@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"structdiscord__component.html#ab4c4e6fc04489f9073625a255f07f353":[6,0,39,3],
 "structdiscord__component.html#ae390990e32d4a5eb585047eab61583fa":[6,0,39,8],
 "structdiscord__component.html#ae5d76aee147629ddcc557223b1e99f3c":[6,0,39,9],
 "structdiscord__component.html#aef289819cd584601e589b35c25b2fe62":[6,0,39,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "structdiscord__event.html#aebb526b01abd7f961480ecf24b76ae6e":[5,0,1,4,0],
 "structdiscord__execute__webhook.html":[6,0,84],
 "structdiscord__execute__webhook.html#a029ea3eb0547db517f902491c810bfba":[6,0,84,7],
-"structdiscord__execute__webhook.html#a16155467f98e5306d5d2d12faf23134e":[6,0,84,1],
-"structdiscord__execute__webhook.html#a226ddbae582f844faa18786dd073cc5a":[6,0,84,2]
+"structdiscord__execute__webhook.html#a16155467f98e5306d5d2d12faf23134e":[6,0,84,1]
 };
