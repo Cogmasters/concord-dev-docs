@@ -1,5 +1,13 @@
 var NAVTREEINDEX9 =
 {
+"structdiscord__webhook.html#a3a6829a895d3b750cd72ae0d70a4d6c2":[6,0,239,7],
+"structdiscord__webhook.html#a41178ee2b7b7c37718edd5a143ac3443":[6,0,239,3],
+"structdiscord__webhook.html#a86dedc0d885474373eaa558290493132":[6,0,239,2],
+"structdiscord__webhook.html#aa39152bf24ef12cccc8b855fb1e990f1":[6,0,239,8],
+"structdiscord__webhook.html#ab9d57ea7a60904f72bffb19a3badc583":[6,0,239,0],
+"structdiscord__webhook.html#abe9b39b4617a2363018632e1f9a488a9":[6,0,239,1],
+"structdiscord__webhook.html#ad182fc083d8e1d5eabd9ea3ee5fdd59b":[6,0,239,5],
+"structdiscord__webhook.html#adf324efc32012c6816056015de671032":[6,0,239,6],
 "structdiscord__webhooks.html":[6,0,240],
 "structdiscord__welcome__screen.html":[6,0,241],
 "structdiscord__welcome__screen.html#a01a098c7a8e159379706baa8bff639fa":[6,0,241,0],

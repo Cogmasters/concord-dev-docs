@@ -1,5 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"structdiscord__component.html#a27d831f2e753f4c085d57e64caa0077a":[6,0,39,13],
+"structdiscord__component.html#a35503ea32c59eaad2cf0e389e0564dc8":[6,0,39,0],
+"structdiscord__component.html#a583903a61ea85201f16c84834af843f9":[6,0,39,10],
+"structdiscord__component.html#a5f93f78acc31c98453d0b2d266fbbc30":[6,0,39,7],
+"structdiscord__component.html#a6623fd5c27ecd1f6550415599f44c10e":[6,0,39,5],
+"structdiscord__component.html#a7977bfd67a3df9e947450668e10dec7b":[6,0,39,14],
+"structdiscord__component.html#a7e78cfc0d7bcb493cd6dbb0684d61886":[6,0,39,4],
+"structdiscord__component.html#ab28a3af8ee42311d1ac1f75da1d45c36":[6,0,39,1],
 "structdiscord__component.html#ab4c4e6fc04489f9073625a255f07f353":[6,0,39,3],
 "structdiscord__component.html#ae390990e32d4a5eb585047eab61583fa":[6,0,39,8],
 "structdiscord__component.html#ae5d76aee147629ddcc557223b1e99f3c":[6,0,39,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX4 =
 "structdiscord__emoji.html#aed92c5342557bbbba16b4acca19ae7bd":[6,0,81,7],
 "structdiscord__emoji.html#af1cc053f3d90ba95d9a115555a56e926":[6,0,81,6],
 "structdiscord__emojis.html":[6,0,82],
-"structdiscord__event.html":[5,0,1,4],
-"structdiscord__event.html#a0d1ab9548c3a6a63537b5c5b25b667d8":[5,0,1,4,1],
-"structdiscord__event.html#a208d18f517ecb3e498b87ac35dc0a10b":[5,0,1,4,3],
-"structdiscord__event.html#a348778e4e78a675568e53eb3d9a03389":[5,0,1,4,2],
-"structdiscord__event.html#a723b95f443c6b80511a3ef85f343b15d":[5,0,1,4,4],
-"structdiscord__event.html#aebb526b01abd7f961480ecf24b76ae6e":[5,0,1,4,0],
-"structdiscord__execute__webhook.html":[6,0,84],
-"structdiscord__execute__webhook.html#a029ea3eb0547db517f902491c810bfba":[6,0,84,7],
-"structdiscord__execute__webhook.html#a16155467f98e5306d5d2d12faf23134e":[6,0,84,1]
+"structdiscord__event.html":[5,0,1,4]
 };

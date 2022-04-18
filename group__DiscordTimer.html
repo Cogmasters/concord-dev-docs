@@ -127,7 +127,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fa7ca0d000fbd3e69349aff6cd95b29e28">DISCORD_TIMER_DELETE_AUTO</a> = 1 &lt;&lt; 2
 , <br />
 &#160;&#160;<a class="el" href="group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6faa917b8794f8f5251f044f0af4d6b280e">DISCORD_TIMER_CANCELED</a> = 1 &lt;&lt; 3
-, <a class="el" href="group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6facb3e2a143f67a6e63742566588793af1">DISCORD_TIMER_DONT_UPDATE</a> = 1 &lt;&lt; 4
+, <a class="el" href="group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fafee62f1c8a0dc5ebd3bc775890d350d4">DISCORD_TIMER_GET</a> = 1 &lt;&lt; 5
+, <a class="el" href="group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fa3d9222cf6537cf7984b6c0df22eaa340">DISCORD_TIMER_INTERVAL_FIXED</a> = 1 &lt;&lt; 6
 <br />
  }</td></tr>
 <tr class="memdesc:ga6e91b61d2abe8974ade81aa42b225a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">flags used to change behaviour of timer  <a href="group__DiscordTimer.html#ga6e91b61d2abe8974ade81aa42b225a6f">More...</a><br /></td></tr>
@@ -141,6 +142,27 @@ Functions</h2></td></tr>
 <tr class="memitem:ga85b715c14360d0436da5c8bd95ae5e4f"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordTimer.html#ga85b715c14360d0436da5c8bd95ae5e4f">discord_timer</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, <a class="el" href="group__DiscordTimer.html#ga8b23c7c024f54ddfd5e333bfd9387dd5">discord_ev_timer</a> cb, void *data, int64_t delay)</td></tr>
 <tr class="memdesc:ga85b715c14360d0436da5c8bd95ae5e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a one shot timer that automatically deletes itself upon completion  <a href="group__DiscordTimer.html#ga85b715c14360d0436da5c8bd95ae5e4f">More...</a><br /></td></tr>
 <tr class="separator:ga85b715c14360d0436da5c8bd95ae5e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbe05490558b071d3491994f491d6155"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordTimer.html#gadbe05490558b071d3491994f491d6155">discord_timer_interval</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, <a class="el" href="group__DiscordTimer.html#ga8b23c7c024f54ddfd5e333bfd9387dd5">discord_ev_timer</a> cb, void *data, int64_t delay, int64_t interval, int64_t repeat)</td></tr>
+<tr class="memdesc:gadbe05490558b071d3491994f491d6155"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a repeating timer that automatically deletes itself upon completion  <a href="group__DiscordTimer.html#gadbe05490558b071d3491994f491d6155">More...</a><br /></td></tr>
+<tr class="separator:gadbe05490558b071d3491994f491d6155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9670267c1520768658351d73110d12e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordTimer.html#ga9670267c1520768658351d73110d12e2">discord_timer_get</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, unsigned id, struct <a class="el" href="structdiscord__timer.html">discord_timer</a> *timer)</td></tr>
+<tr class="memdesc:ga9670267c1520768658351d73110d12e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the data associated with the timer  <a href="group__DiscordTimer.html#ga9670267c1520768658351d73110d12e2">More...</a><br /></td></tr>
+<tr class="separator:ga9670267c1520768658351d73110d12e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31e4b6fdffe218a59768f18a149617a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordTimer.html#ga31e4b6fdffe218a59768f18a149617a7">discord_timer_start</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, unsigned id)</td></tr>
+<tr class="memdesc:ga31e4b6fdffe218a59768f18a149617a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts a timer  <a href="group__DiscordTimer.html#ga31e4b6fdffe218a59768f18a149617a7">More...</a><br /></td></tr>
+<tr class="separator:ga31e4b6fdffe218a59768f18a149617a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bc2f8b274d62a173b051987b88dc890"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordTimer.html#ga9bc2f8b274d62a173b051987b88dc890">discord_timer_stop</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, unsigned id)</td></tr>
+<tr class="memdesc:ga9bc2f8b274d62a173b051987b88dc890"><td class="mdescLeft">&#160;</td><td class="mdescRight">stops a timer  <a href="group__DiscordTimer.html#ga9bc2f8b274d62a173b051987b88dc890">More...</a><br /></td></tr>
+<tr class="separator:ga9bc2f8b274d62a173b051987b88dc890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29eb5a7785b557aabba9ed7506282307"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordTimer.html#ga29eb5a7785b557aabba9ed7506282307">discord_timer_cancel</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, unsigned id)</td></tr>
+<tr class="memdesc:ga29eb5a7785b557aabba9ed7506282307"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancels a timer, this will delete the timer if DISCORD_TIMER_DELETE_AUTO is enabled  <a href="group__DiscordTimer.html#ga29eb5a7785b557aabba9ed7506282307">More...</a><br /></td></tr>
+<tr class="separator:ga29eb5a7785b557aabba9ed7506282307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5e1ce15292d4eb17fb49ae64bf76d5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordTimer.html#gab5e1ce15292d4eb17fb49ae64bf76d5f">discord_timer_delete</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, unsigned id)</td></tr>
+<tr class="memdesc:gab5e1ce15292d4eb17fb49ae64bf76d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes a timer  <a href="group__DiscordTimer.html#gab5e1ce15292d4eb17fb49ae64bf76d5f">More...</a><br /></td></tr>
+<tr class="separator:gab5e1ce15292d4eb17fb49ae64bf76d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab547a5a050e37b514b7a05bddc49e246"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordTimer.html#gab547a5a050e37b514b7a05bddc49e246">discord_timer_cancel_and_delete</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, unsigned id)</td></tr>
+<tr class="memdesc:gab547a5a050e37b514b7a05bddc49e246"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancels, and deletes a timer  <a href="group__DiscordTimer.html#gab547a5a050e37b514b7a05bddc49e246">More...</a><br /></td></tr>
+<tr class="separator:gab547a5a050e37b514b7a05bddc49e246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Schedule callbacks to be called in the future. </p>
@@ -169,7 +191,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga6e91b61d2abe8974ade81aa42b225a6faa917b8794f8f5251f044f0af4d6b280e" name="gga6e91b61d2abe8974ade81aa42b225a6faa917b8794f8f5251f044f0af4d6b280e"></a>DISCORD_TIMER_CANCELED&#160;</td><td class="fielddoc"><p >timer has been canceled. user should cleanup only </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga6e91b61d2abe8974ade81aa42b225a6facb3e2a143f67a6e63742566588793af1" name="gga6e91b61d2abe8974ade81aa42b225a6facb3e2a143f67a6e63742566588793af1"></a>DISCORD_TIMER_DONT_UPDATE&#160;</td><td class="fielddoc"><p >used in the timer callback to skip update phase </p>
+<tr><td class="fieldname"><a id="gga6e91b61d2abe8974ade81aa42b225a6fafee62f1c8a0dc5ebd3bc775890d350d4" name="gga6e91b61d2abe8974ade81aa42b225a6fafee62f1c8a0dc5ebd3bc775890d350d4"></a>DISCORD_TIMER_GET&#160;</td><td class="fielddoc"><p >used in discord_timer_ctl to get the timer's data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6e91b61d2abe8974ade81aa42b225a6fa3d9222cf6537cf7984b6c0df22eaa340" name="gga6e91b61d2abe8974ade81aa42b225a6fa3d9222cf6537cf7984b6c0df22eaa340"></a>DISCORD_TIMER_INTERVAL_FIXED&#160;</td><td class="fielddoc"><p >timer should run using a fixed interval based on start time </p>
 </td></tr>
 </table>
 
@@ -211,8 +235,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the id of the timer </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="timers_8c-example.html#a12">timers.c</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -265,8 +287,311 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the id of the timer </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="timers_8c-example.html#a11">timers.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="timers_8c-example.html#a12">timers.c</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="gadbe05490558b071d3491994f491d6155" name="gadbe05490558b071d3491994f491d6155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadbe05490558b071d3491994f491d6155">&#9670;&nbsp;</a></span>discord_timer_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned discord_timer_interval </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__DiscordTimer.html#ga8b23c7c024f54ddfd5e333bfd9387dd5">discord_ev_timer</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>delay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>repeat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a repeating timer that automatically deletes itself upon completion </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">cb</td><td>the callback that should be called when timer triggers </td></tr>
+    <tr><td class="paramname">data</td><td>user data </td></tr>
+    <tr><td class="paramname">delay</td><td>delay before timer should start in milliseconds </td></tr>
+    <tr><td class="paramname">interval</td><td>interval between runs. (-1 == disable repeat) </td></tr>
+    <tr><td class="paramname">repeat</td><td>repetitions (-1 == infinity) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the id of the timer </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="timers_8c-example.html#a13">timers.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9670267c1520768658351d73110d12e2" name="ga9670267c1520768658351d73110d12e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9670267c1520768658351d73110d12e2">&#9670;&nbsp;</a></span>discord_timer_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool discord_timer_get </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structdiscord__timer.html">discord_timer</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the data associated with the timer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">id</td><td>id of the timer </td></tr>
+    <tr><td class="paramname">timer</td><td>where to copy the timer data to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+</div>
+</div>
+<a id="ga31e4b6fdffe218a59768f18a149617a7" name="ga31e4b6fdffe218a59768f18a149617a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31e4b6fdffe218a59768f18a149617a7">&#9670;&nbsp;</a></span>discord_timer_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool discord_timer_start </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>starts a timer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">id</td><td>id of the timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+</div>
+</div>
+<a id="ga9bc2f8b274d62a173b051987b88dc890" name="ga9bc2f8b274d62a173b051987b88dc890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9bc2f8b274d62a173b051987b88dc890">&#9670;&nbsp;</a></span>discord_timer_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool discord_timer_stop </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stops a timer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">id</td><td>id of the timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+</div>
+</div>
+<a id="ga29eb5a7785b557aabba9ed7506282307" name="ga29eb5a7785b557aabba9ed7506282307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29eb5a7785b557aabba9ed7506282307">&#9670;&nbsp;</a></span>discord_timer_cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool discord_timer_cancel </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cancels a timer, this will delete the timer if DISCORD_TIMER_DELETE_AUTO is enabled </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">id</td><td>id of the timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+</div>
+</div>
+<a id="gab5e1ce15292d4eb17fb49ae64bf76d5f" name="gab5e1ce15292d4eb17fb49ae64bf76d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5e1ce15292d4eb17fb49ae64bf76d5f">&#9670;&nbsp;</a></span>discord_timer_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool discord_timer_delete </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>deletes a timer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">id</td><td>id of the timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+</div>
+</div>
+<a id="gab547a5a050e37b514b7a05bddc49e246" name="gab547a5a050e37b514b7a05bddc49e246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab547a5a050e37b514b7a05bddc49e246">&#9670;&nbsp;</a></span>discord_timer_cancel_and_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool discord_timer_cancel_and_delete </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cancels, and deletes a timer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">id</td><td>id of the timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
 
 </div>
 </div>

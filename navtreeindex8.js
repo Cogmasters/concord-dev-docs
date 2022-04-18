@@ -1,5 +1,13 @@
 var NAVTREEINDEX8 =
 {
+"structdiscord__ret__invites.html#a31bd31a085bed267ea030d00b4c01135":[5,2,7,1,2],
+"structdiscord__ret__invites.html#a6952c2a89744f4f7ecb65640600c86ce":[5,2,7,1,1],
+"structdiscord__ret__invites.html#a94ddff82bddb7ec8e27fc942f9650789":[5,2,7,1,0],
+"structdiscord__ret__invites.html#ab52b6e05ad11c67b6eb64f56d09f3e7e":[5,2,7,1,3],
+"structdiscord__ret__invites.html#ae64934683249d74e4115ba12784a2fe7":[5,2,7,1,5],
+"structdiscord__ret__message.html":[5,2,1,5],
+"structdiscord__ret__message.html#a52496aa78c91175a8e838e57be6601e4":[5,2,1,5,5],
+"structdiscord__ret__message.html#a5f8ed56b6aef74f049e25278b36f33f2":[5,2,1,5,3],
 "structdiscord__ret__message.html#a772f4457c3aeedb776a8862ef56f92d6":[5,2,1,5,0],
 "structdiscord__ret__message.html#a90fecbb2ea418d182a7b20fc70bc66f9":[5,2,1,5,2],
 "structdiscord__ret__message.html#af033729f9d5a3a791f5df6492244c603":[5,2,1,5,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX8 =
 "structdiscord__voice__states.html":[6,0,238],
 "structdiscord__webhook.html":[6,0,239],
 "structdiscord__webhook.html#a1271fe941b4dd55efcbc224955f2ccab":[6,0,239,4],
-"structdiscord__webhook.html#a232b3bd47b4251e301f1437f1a6643c8":[6,0,239,9],
-"structdiscord__webhook.html#a3a6829a895d3b750cd72ae0d70a4d6c2":[6,0,239,7],
-"structdiscord__webhook.html#a41178ee2b7b7c37718edd5a143ac3443":[6,0,239,3],
-"structdiscord__webhook.html#a86dedc0d885474373eaa558290493132":[6,0,239,2],
-"structdiscord__webhook.html#aa39152bf24ef12cccc8b855fb1e990f1":[6,0,239,8],
-"structdiscord__webhook.html#ab9d57ea7a60904f72bffb19a3badc583":[6,0,239,0],
-"structdiscord__webhook.html#abe9b39b4617a2363018632e1f9a488a9":[6,0,239,1],
-"structdiscord__webhook.html#ad182fc083d8e1d5eabd9ea3ee5fdd59b":[6,0,239,5],
-"structdiscord__webhook.html#adf324efc32012c6816056015de671032":[6,0,239,6]
+"structdiscord__webhook.html#a232b3bd47b4251e301f1437f1a6643c8":[6,0,239,9]
 };

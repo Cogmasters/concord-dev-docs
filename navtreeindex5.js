@@ -1,5 +1,13 @@
 var NAVTREEINDEX5 =
 {
+"structdiscord__event.html#a0d1ab9548c3a6a63537b5c5b25b667d8":[5,0,1,4,1],
+"structdiscord__event.html#a208d18f517ecb3e498b87ac35dc0a10b":[5,0,1,4,3],
+"structdiscord__event.html#a348778e4e78a675568e53eb3d9a03389":[5,0,1,4,2],
+"structdiscord__event.html#a723b95f443c6b80511a3ef85f343b15d":[5,0,1,4,4],
+"structdiscord__event.html#aebb526b01abd7f961480ecf24b76ae6e":[5,0,1,4,0],
+"structdiscord__execute__webhook.html":[6,0,84],
+"structdiscord__execute__webhook.html#a029ea3eb0547db517f902491c810bfba":[6,0,84,7],
+"structdiscord__execute__webhook.html#a16155467f98e5306d5d2d12faf23134e":[6,0,84,1],
 "structdiscord__execute__webhook.html#a226ddbae582f844faa18786dd073cc5a":[6,0,84,2],
 "structdiscord__execute__webhook.html#a2e5f31abf6277921123840e886df1ceb":[6,0,84,8],
 "structdiscord__execute__webhook.html#a76b5f2ef3f98a989dd5d117ffe4b6edd":[6,0,84,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX5 =
 "structdiscord__guild__scheduled__event.html#ad8cb685bfab332a7f8496ca01a602e49":[6,0,108,7],
 "structdiscord__guild__scheduled__event__entity__metadata.html":[6,0,109],
 "structdiscord__guild__scheduled__event__entity__metadata.html#ade2bbbedd38ed133b52a0b2a5c7e8f26":[6,0,109,0],
-"structdiscord__guild__scheduled__event__user.html":[6,0,110],
-"structdiscord__guild__scheduled__event__user.html#a15ac6bb3c64cea85b7c66aa1092a374d":[6,0,110,1],
-"structdiscord__guild__scheduled__event__user.html#a4c109c9fe338396dc7a81234369814f2":[6,0,110,0],
-"structdiscord__guild__scheduled__event__user.html#a71a1a3c5ef9c8695de1fe1abc53dd4a5":[6,0,110,2],
-"structdiscord__guild__scheduled__events.html":[6,0,111],
-"structdiscord__guild__template.html":[6,0,112],
-"structdiscord__guild__template.html#a0751ff652affe9e33081a61cd2a4da34":[6,0,112,4],
-"structdiscord__guild__template.html#a130adfc2aefd6bed903ccde59b4b06e4":[6,0,112,9],
-"structdiscord__guild__template.html#a1e52a7f5bd5876bd0c248c2254fd49fc":[6,0,112,7]
+"structdiscord__guild__scheduled__event__user.html":[6,0,110]
 };

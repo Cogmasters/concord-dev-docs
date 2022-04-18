@@ -1,5 +1,13 @@
 var NAVTREEINDEX6 =
 {
+"structdiscord__guild__scheduled__event__user.html#a15ac6bb3c64cea85b7c66aa1092a374d":[6,0,110,1],
+"structdiscord__guild__scheduled__event__user.html#a4c109c9fe338396dc7a81234369814f2":[6,0,110,0],
+"structdiscord__guild__scheduled__event__user.html#a71a1a3c5ef9c8695de1fe1abc53dd4a5":[6,0,110,2],
+"structdiscord__guild__scheduled__events.html":[6,0,111],
+"structdiscord__guild__template.html":[6,0,112],
+"structdiscord__guild__template.html#a0751ff652affe9e33081a61cd2a4da34":[6,0,112,4],
+"structdiscord__guild__template.html#a130adfc2aefd6bed903ccde59b4b06e4":[6,0,112,9],
+"structdiscord__guild__template.html#a1e52a7f5bd5876bd0c248c2254fd49fc":[6,0,112,7],
 "structdiscord__guild__template.html#a5572bcdb23efd4883d629ae99122ea29":[6,0,112,8],
 "structdiscord__guild__template.html#a65727d3d846ba8b80bbd5a02c2126ea7":[6,0,112,10],
 "structdiscord__guild__template.html#a7a548896c45ec302dd0219ba17f9f840":[6,0,112,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX6 =
 "structdiscord__modify__guild__role.html#a1b335526be5bde9274f24c2a91c89cf4":[6,0,148,0],
 "structdiscord__modify__guild__role.html#a4788c38709fb5517d93f5c34693e904b":[6,0,148,2],
 "structdiscord__modify__guild__role.html#a71672967416182e0d5a1f54c5169ac25":[6,0,148,3],
-"structdiscord__modify__guild__role.html#ab0226d4adf5c845c92ad9b7604e5c8ca":[6,0,148,5],
-"structdiscord__modify__guild__role.html#ad09c2aed8ea384cd0e0a1dfef38fd30b":[6,0,148,6],
-"structdiscord__modify__guild__role.html#af1099bd6f2fc8c274b654eb0c9c2536a":[6,0,148,1],
-"structdiscord__modify__guild__role__position.html":[6,0,149],
-"structdiscord__modify__guild__role__position.html#a00d6dd2a700606ee2685dd4371408b37":[6,0,149,1],
-"structdiscord__modify__guild__role__position.html#a7afd1cddfddf6eeface29e97ab1f91f6":[6,0,149,0],
-"structdiscord__modify__guild__role__positions.html":[6,0,150],
-"structdiscord__modify__guild__scheduled__event.html":[6,0,151],
-"structdiscord__modify__guild__scheduled__event.html#a06278b5b9077cbbb28b333b6887e1061":[6,0,151,8]
+"structdiscord__modify__guild__role.html#ab0226d4adf5c845c92ad9b7604e5c8ca":[6,0,148,5]
 };

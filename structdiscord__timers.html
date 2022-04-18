@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('structdiscord__timers.html',''); initR
 <div class="dynheader">
 Collaboration diagram for discord_timers:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structdiscord__timers__coll__graph.svg" width="204" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structdiscord__timers__coll__graph.svg" width="130" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -104,9 +104,16 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a9546789b04e1dd1db54619fc35e2dfa3"><td class="memItemLeft" align="right" valign="top"><a id="a9546789b04e1dd1db54619fc35e2dfa3" name="a9546789b04e1dd1db54619fc35e2dfa3"></a>
 priority_queue *&#160;</td><td class="memItemRight" valign="bottom"><b>q</b></td></tr>
 <tr class="separator:a9546789b04e1dd1db54619fc35e2dfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03e6af75ffd56e660e0df85d522178ec"><td class="memItemLeft" align="right" valign="top"><a id="a03e6af75ffd56e660e0df85d522178ec" name="a03e6af75ffd56e660e0df85d522178ec"></a>
-struct <a class="el" href="structdiscord__timer.html">discord_timer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>currently_being_run</b></td></tr>
-<tr class="separator:a03e6af75ffd56e660e0df85d522178ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824be091616c9ea8b8a37a8b6743adce"><td class="memItemLeft" ><a id="a824be091616c9ea8b8a37a8b6743adce" name="a824be091616c9ea8b8a37a8b6743adce"></a>
+struct {</td></tr>
+<tr class="memitem:a6321628dcd00b01c1aa053766983c60c"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <a class="el" href="structdiscord__timer.html">discord_timer</a> *&#160;&#160;&#160;<b>timer</b></td></tr>
+<tr class="separator:a6321628dcd00b01c1aa053766983c60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79da08907ef0d404c8b2186337ca23a7"><td class="memItemLeft" >
+&#160;&#160;&#160;bool&#160;&#160;&#160;<b>skip_update_phase</b></td></tr>
+<tr class="separator:a79da08907ef0d404c8b2186337ca23a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824be091616c9ea8b8a37a8b6743adce"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>active</b></td></tr>
+<tr class="separator:a824be091616c9ea8b8a37a8b6743adce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/<a class="el" href="discord-internal_8h_source.html">discord-internal.h</a></li>

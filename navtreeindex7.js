@@ -1,5 +1,13 @@
 var NAVTREEINDEX7 =
 {
+"structdiscord__modify__guild__role.html#ad09c2aed8ea384cd0e0a1dfef38fd30b":[6,0,148,6],
+"structdiscord__modify__guild__role.html#af1099bd6f2fc8c274b654eb0c9c2536a":[6,0,148,1],
+"structdiscord__modify__guild__role__position.html":[6,0,149],
+"structdiscord__modify__guild__role__position.html#a00d6dd2a700606ee2685dd4371408b37":[6,0,149,1],
+"structdiscord__modify__guild__role__position.html#a7afd1cddfddf6eeface29e97ab1f91f6":[6,0,149,0],
+"structdiscord__modify__guild__role__positions.html":[6,0,150],
+"structdiscord__modify__guild__scheduled__event.html":[6,0,151],
+"structdiscord__modify__guild__scheduled__event.html#a06278b5b9077cbbb28b333b6887e1061":[6,0,151,8],
 "structdiscord__modify__guild__scheduled__event.html#a0a46b11e19cc22dbe8a5c65f8a49bb24":[6,0,151,5],
 "structdiscord__modify__guild__scheduled__event.html#a28a1f0b636c3bf1e84032ac79bb3943b":[6,0,151,7],
 "structdiscord__modify__guild__scheduled__event.html#a5b5074a1799285974a76ef3d60a2c31e":[6,0,151,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "structdiscord__ret__invite.html#ae03f1d176fad0aec5522da19ee6d9109":[5,2,7,0,1],
 "structdiscord__ret__invite.html#aee552d4712d381a4c77c138284d204e1":[5,2,7,0,5],
 "structdiscord__ret__invites.html":[5,2,7,1],
-"structdiscord__ret__invites.html#a2a2923c2a4c0d1cbb0993ddcfcc56510":[5,2,7,1,4],
-"structdiscord__ret__invites.html#a31bd31a085bed267ea030d00b4c01135":[5,2,7,1,2],
-"structdiscord__ret__invites.html#a6952c2a89744f4f7ecb65640600c86ce":[5,2,7,1,1],
-"structdiscord__ret__invites.html#a94ddff82bddb7ec8e27fc942f9650789":[5,2,7,1,0],
-"structdiscord__ret__invites.html#ab52b6e05ad11c67b6eb64f56d09f3e7e":[5,2,7,1,3],
-"structdiscord__ret__invites.html#ae64934683249d74e4115ba12784a2fe7":[5,2,7,1,5],
-"structdiscord__ret__message.html":[5,2,1,5],
-"structdiscord__ret__message.html#a52496aa78c91175a8e838e57be6601e4":[5,2,1,5,5],
-"structdiscord__ret__message.html#a5f8ed56b6aef74f049e25278b36f33f2":[5,2,1,5,3]
+"structdiscord__ret__invites.html#a2a2923c2a4c0d1cbb0993ddcfcc56510":[5,2,7,1,4]
 };
