@@ -126,6 +126,12 @@ Macros</h2></td></tr>
 <tr class="separator:ga00c6ee3ff0da117a32837d8e2e5eb90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga705fdccbf1e575d3311f2d971af77b62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ConcordError.html#ga705fdccbf1e575d3311f2d971af77b62">CCORD_GLOBAL_INIT</a>&#160;&#160;&#160;-8</td></tr>
 <tr class="separator:ga705fdccbf1e575d3311f2d971af77b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb0f283a9d2715ad5816dff63fceb64b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ConcordError.html#gadb0f283a9d2715ad5816dff63fceb64b">CCORD_OWNERSHIP</a>&#160;&#160;&#160;-9</td></tr>
+<tr class="separator:gadb0f283a9d2715ad5816dff63fceb64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3eb4fc7d157920ec30601c078b38755"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ConcordError.html#gae3eb4fc7d157920ec30601c078b38755">CCORD_UNAVAILABLE</a>&#160;&#160;&#160;-10</td></tr>
+<tr class="separator:gae3eb4fc7d157920ec30601c078b38755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1035fd7db58d16cf1464ed32d30f141a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ConcordError.html#ga1035fd7db58d16cf1464ed32d30f141a">CCORD_FULL_WORKER</a>&#160;&#160;&#160;-11</td></tr>
+<tr class="separator:ga1035fd7db58d16cf1464ed32d30f141a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -215,8 +221,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >request was a success </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="fetch-messages_8c-example.html#a5">fetch-messages.c</a>, <a class="el" href="manual-dm_8c-example.html#a13">manual-dm.c</a>, and <a class="el" href="slash-commands2_8c-example.html#a25">slash-commands2.c</a>.</dd>
+<p >action was a success </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="fetch-messages_8c-example.html#a5">fetch-messages.c</a>, <a class="el" href="manual-dm_8c-example.html#a14">manual-dm.c</a>, and <a class="el" href="slash-commands2_8c-example.html#a28">slash-commands2.c</a>.</dd>
 </dl>
 
 </div>
@@ -341,6 +347,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gadb0f283a9d2715ad5816dff63fceb64b" name="gadb0f283a9d2715ad5816dff63fceb64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb0f283a9d2715ad5816dff63fceb64b">&#9670;&nbsp;</a></span>CCORD_OWNERSHIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CCORD_OWNERSHIP&#160;&#160;&#160;-9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >couldn't perform action because of resource's ownership issues </p>
+
+</div>
+</div>
+<a id="gae3eb4fc7d157920ec30601c078b38755" name="gae3eb4fc7d157920ec30601c078b38755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3eb4fc7d157920ec30601c078b38755">&#9670;&nbsp;</a></span>CCORD_UNAVAILABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CCORD_UNAVAILABLE&#160;&#160;&#160;-10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >couldn't perform action because resource is unavailable </p>
+
+</div>
+</div>
+<a id="ga1035fd7db58d16cf1464ed32d30f141a" name="ga1035fd7db58d16cf1464ed32d30f141a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1035fd7db58d16cf1464ed32d30f141a">&#9670;&nbsp;</a></span>CCORD_FULL_WORKER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CCORD_FULL_WORKER&#160;&#160;&#160;-11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >couldn't enqueue worker thread (queue is full) </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga4ca5a90a1068552190074f603f68b587" name="ga4ca5a90a1068552190074f603f68b587"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4ca5a90a1068552190074f603f68b587">&#9670;&nbsp;</a></span>CCORDcode</h2>
@@ -440,7 +491,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>unused parameter </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>a string containing the code meaning </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#a19">audit-log.c</a>, <a class="el" href="channel_8c-example.html#a24">channel.c</a>, <a class="el" href="emoji_8c-example.html#a13">emoji.c</a>, <a class="el" href="guild-template_8c-example.html#a8">guild-template.c</a>, <a class="el" href="guild_8c-example.html#a19">guild.c</a>, <a class="el" href="reaction_8c-example.html#a12">reaction.c</a>, and <a class="el" href="slash-commands2_8c-example.html#a6">slash-commands2.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#a28">audit-log.c</a>, <a class="el" href="channel_8c-example.html#a27">channel.c</a>, <a class="el" href="emoji_8c-example.html#a17">emoji.c</a>, <a class="el" href="guild-template_8c-example.html#a12">guild-template.c</a>, <a class="el" href="guild_8c-example.html#a27">guild.c</a>, <a class="el" href="reaction_8c-example.html#a15">reaction.c</a>, and <a class="el" href="slash-commands2_8c-example.html#a8">slash-commands2.c</a>.</dd>
 </dl>
 
 </div>
