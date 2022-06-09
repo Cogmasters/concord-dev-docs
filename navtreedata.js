@@ -112,8 +112,8 @@ var NAVTREE =
       [ "Microsoft Visual C/C++", "md_docs_WINDOWS.html#autotoc_md69", null ],
       [ "Other compilers", "md_docs_WINDOWS.html#autotoc_md70", null ]
     ] ],
-    [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
+    [ "Todo List", "todo.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],

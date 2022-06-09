@@ -1,7 +1,7 @@
 var group__Discord =
 [
-    [ "Events", "group__DiscordEvent.html", "group__DiscordEvent" ],
     [ "Timer", "group__DiscordTimer.html", "group__DiscordTimer" ],
+    [ "Events", "group__DiscordEvent.html", "group__DiscordEvent" ],
     [ "discord", "structdiscord.html", [
       [ "conf", "structdiscord.html#ac2ac71153e3681e24b87a205ad2df97f", null ],
       [ "is_original", "structdiscord.html#aafa9ca0a9e439963893d2774870403a4", null ],
