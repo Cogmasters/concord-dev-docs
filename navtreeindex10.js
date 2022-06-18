@@ -1,5 +1,18 @@
 var NAVTREEINDEX10 =
 {
+"structdiscord__team__member.html#a02771808da437a2de98e6610f68beff4":[6,0,259,1],
+"structdiscord__team__member.html#a03513c546df058ff3aa357220dff3a6a":[6,0,259,0],
+"structdiscord__team__member.html#a98a4af765381e1d04095ac529133ffee":[6,0,259,3],
+"structdiscord__team__member.html#aff08516c47dc9d921dbc7c3a09ef60d6":[6,0,259,2],
+"structdiscord__team__members.html":[6,0,260],
+"structdiscord__thread__list__sync.html":[6,0,261],
+"structdiscord__thread__list__sync.html#a15032a2245922725278357a8322d8e2a":[6,0,261,1],
+"structdiscord__thread__list__sync.html#a156be3fc1ae545f361ffc775bcf8c959":[6,0,261,0],
+"structdiscord__thread__list__sync.html#a87e8a89c459b43ccebac4d07f04c57ff":[6,0,261,3],
+"structdiscord__thread__list__sync.html#a9d20702ecf2516b363412cee0e78f722":[6,0,261,2],
+"structdiscord__thread__member.html":[6,0,262],
+"structdiscord__thread__member.html#a13615b7fa950c73cd8237de50062fe45":[6,0,262,4],
+"structdiscord__thread__member.html#a488f2ec6a99b6dbb07c7dd37cd68e1a7":[6,0,262,3],
 "structdiscord__thread__member.html#a548ce85474bf51eaadd70ea326b58fe6":[6,0,262,2],
 "structdiscord__thread__member.html#aa035d136bfcaf71ba70e06059de1d042":[6,0,262,1],
 "structdiscord__thread__member.html#aa1b2409dd66eda9fbd864ac602b8e570":[6,0,262,0],

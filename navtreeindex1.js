@@ -1,5 +1,13 @@
 var NAVTREEINDEX1 =
 {
+"globals_a.html":[7,1,0,1],
+"globals_c.html":[7,1,0,2],
+"globals_d.html":[7,1,0,3],
+"globals_defs.html":[7,1,6],
+"globals_enum.html":[7,1,4],
+"globals_eval.html":[7,1,5],
+"globals_func.html":[7,1,1],
+"globals_func.html":[7,1,1,0],
 "globals_func_c.html":[7,1,1,1],
 "globals_func_d.html":[7,1,1,2],
 "globals_func_w.html":[7,1,1,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX1 =
 "group__DiscordAPIWebhook.html#ga6423cbf3797741bcaf5ced860dcc3339":[5,3,10,11],
 "group__DiscordAPIWebhook.html#ga801ac7196b41e05494024cf6235593cf":[5,3,10,13],
 "group__DiscordAPIWebhook.html#ga8e639f3f8e9154ddc55154d2df81d466":[5,3,10,14],
-"group__DiscordAPIWebhook.html#gaaee6a957a85598dd1ce41323b2347db3":[5,3,10,7],
-"group__DiscordAPIWebhook.html#gab5930eaece340bac8e32f1110d6e7717":[5,3,10,9],
-"group__DiscordAPIWebhook.html#gabefa02a637cb7dd04ce239b72531f70b":[5,3,10,8],
-"group__DiscordAPIWebhook.html#gacf05e949cf4015e4ff2e528040f78dd0":[5,3,10,3],
-"group__DiscordAPIWebhook.html#gadc3a59a88be8e5edffa09b57c1584d83":[5,3,10,10],
-"group__DiscordAPIWebhook.html#gae2fa77b428f26e99c1656dee58fded2c":[5,3,10,4],
-"group__DiscordAPIWebhook.html#gafd892b808c7d2bc6f6db5bdbb9d32cb7":[5,3,10,5],
-"group__DiscordActivityFlags.html":[5,2,3],
-"group__DiscordApplicationFlags.html":[5,6]
+"group__DiscordAPIWebhook.html#gaaee6a957a85598dd1ce41323b2347db3":[5,3,10,7]
 };

@@ -2,7 +2,7 @@ var group__DiscordEventCallbackTypes =
 [
     [ "discord_ev_idle", "group__DiscordEventCallbackTypes.html#ga18532f61da11c561bd286b0ecabab97e", null ],
     [ "discord_ev_ready", "group__DiscordEventCallbackTypes.html#ga9cfcc55127b0ba291e8569a08a05b97e", null ],
-    [ "discord_ev_application_command", "group__DiscordEventCallbackTypes.html#ga7fe83f3af07a4722add8e55c15fc7687", null ],
+    [ "discord_ev_resumed", "group__DiscordEventCallbackTypes.html#ga6eec8056ba84e032979dde8f3cccf7fe", null ],
     [ "discord_ev_channel", "group__DiscordEventCallbackTypes.html#gab2de227d0e0e8e265af672ae9e6fd0b2", null ],
     [ "discord_ev_thread_list_sync", "group__DiscordEventCallbackTypes.html#ga9210bc6af114f2834e06d4d168472c20", null ],
     [ "discord_ev_thread_member", "group__DiscordEventCallbackTypes.html#gacda9a5a0a1fca52377c7ddbbc2bc9dc0", null ],
