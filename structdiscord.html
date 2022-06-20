@@ -135,16 +135,16 @@ struct {</td></tr>
 <tr class="memitem:ac6bc034780945e0672abd81756a3308a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>timers</b></td></tr>
 <tr class="separator:ac6bc034780945e0672abd81756a3308a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9594326011c673f91ac264fc5b77bd"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:afec95c029d7da02511bd65623cbd5f44"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__DiscordEventsCallbacks.html#ga18532f61da11c561bd286b0ecabab97e">discord_ev_idle</a>&#160;&#160;&#160;<a class="el" href="structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810">cb</a></td></tr>
-<tr class="separator:afec95c029d7da02511bd65623cbd5f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7915a25bb3daa4a4f12a4db5598bf3"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structdiscord.html#a29432c15f5a0740c8c77ef2092c556fc">cb</a> )(struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
+<tr class="separator:aaf7915a25bb3daa4a4f12a4db5598bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae57dd0f6c2fa2a336b3cd5f5887f0924"><td class="memItemLeft" >&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="structdiscord.html#a168c138bf57beb4e5a824dbe805519ca">id</a></td></tr>
 <tr class="separator:ae57dd0f6c2fa2a336b3cd5f5887f0924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9594326011c673f91ac264fc5b77bd"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord.html#a7b9594326011c673f91ac264fc5b77bd">wakeup_timer</a></td></tr>
 <tr class="separator:a7b9594326011c673f91ac264fc5b77bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6ddc9583333027193256369e5600e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DiscordEventsCallbacks.html#ga18532f61da11c561bd286b0ecabab97e">discord_ev_idle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord.html#a8b6ddc9583333027193256369e5600e5">on_idle</a></td></tr>
-<tr class="separator:a8b6ddc9583333027193256369e5600e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec30edafaaff8f151616190450101eab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DiscordEventsCallbacks.html#ga18532f61da11c561bd286b0ecabab97e">discord_ev_idle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord.html#aec30edafaaff8f151616190450101eab">on_cycle</a></td></tr>
-<tr class="separator:aec30edafaaff8f151616190450101eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab13fc6d07553bc32de73ce7d815c939"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord.html#aab13fc6d07553bc32de73ce7d815c939">on_idle</a> )(struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
+<tr class="separator:aab13fc6d07553bc32de73ce7d815c939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406aba6ab4d76e2963a7abc338fd9501"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord.html#a406aba6ab4d76e2963a7abc338fd9501">on_cycle</a> )(struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
+<tr class="separator:a406aba6ab4d76e2963a7abc338fd9501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad36541f87b8997a57c0467d29627e8d1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord.html#ad36541f87b8997a57c0467d29627e8d1">data</a></td></tr>
 <tr class="separator:ad36541f87b8997a57c0467d29627e8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df318980dab3301c117d4a4650af00e"><td class="memItemLeft" >struct {</td></tr>
@@ -234,7 +234,7 @@ struct {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >the user's message commands </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__DiscordEvents.html#ga6298fda7dd0a6e17e06866fb11c12f5f" title="Set command/callback pair.">discord_set_on_command()</a> </dd></dl>
+<p >the user's message commands </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__DiscordEvents.html#gac0392213dc717362e121c5ad63a30682" title="Set command/callback pair.">discord_set_on_command()</a> </dd></dl>
 
 </div>
 </div>
@@ -298,14 +298,14 @@ struct {</td></tr>
 
 </div>
 </div>
-<a id="a56b0ad42a1f11f53cb9eedbe8ab89810" name="a56b0ad42a1f11f53cb9eedbe8ab89810"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56b0ad42a1f11f53cb9eedbe8ab89810">&#9670;&nbsp;</a></span>cb</h2>
+<a id="a29432c15f5a0740c8c77ef2092c556fc" name="a29432c15f5a0740c8c77ef2092c556fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29432c15f5a0740c8c77ef2092c556fc">&#9670;&nbsp;</a></span>cb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DiscordEventsCallbacks.html#ga18532f61da11c561bd286b0ecabab97e">discord_ev_idle</a> discord::cb</td>
+          <td class="memname">void(* discord::cb) (struct <a class="el" href="structdiscord.html">discord</a> *client)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -343,14 +343,14 @@ struct {</td></tr>
 
 </div>
 </div>
-<a id="a8b6ddc9583333027193256369e5600e5" name="a8b6ddc9583333027193256369e5600e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b6ddc9583333027193256369e5600e5">&#9670;&nbsp;</a></span>on_idle</h2>
+<a id="aab13fc6d07553bc32de73ce7d815c939" name="aab13fc6d07553bc32de73ce7d815c939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab13fc6d07553bc32de73ce7d815c939">&#9670;&nbsp;</a></span>on_idle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DiscordEventsCallbacks.html#ga18532f61da11c561bd286b0ecabab97e">discord_ev_idle</a> discord::on_idle</td>
+          <td class="memname">void(* discord::on_idle) (struct <a class="el" href="structdiscord.html">discord</a> *client)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -358,14 +358,14 @@ struct {</td></tr>
 
 </div>
 </div>
-<a id="aec30edafaaff8f151616190450101eab" name="aec30edafaaff8f151616190450101eab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec30edafaaff8f151616190450101eab">&#9670;&nbsp;</a></span>on_cycle</h2>
+<a id="a406aba6ab4d76e2963a7abc338fd9501" name="a406aba6ab4d76e2963a7abc338fd9501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406aba6ab4d76e2963a7abc338fd9501">&#9670;&nbsp;</a></span>on_cycle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__DiscordEventsCallbacks.html#ga18532f61da11c561bd286b0ecabab97e">discord_ev_idle</a> discord::on_cycle</td>
+          <td class="memname">void(* discord::on_cycle) (struct <a class="el" href="structdiscord.html">discord</a> *client)</td>
         </tr>
       </table>
 </div><div class="memdoc">

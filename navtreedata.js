@@ -141,17 +141,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"functions_vars_g.html",
-"group__DiscordAPIWebhook.html#gadc3a59a88be8e5edffa09b57c1584d83",
-"group__DiscordPermissions.html#ga33249e7837ce2dff639e1d4f61fa2172",
-"structdiscord__activity.html#a1c4de6e43d6d294504e1ea5625b64541",
-"structdiscord__component.html#aef289819cd584601e589b35c25b2fe62",
-"structdiscord__followed__channel.html#a07034ee040cff82b5962928406f0efe1",
-"structdiscord__guild__stickers__update.html",
-"structdiscord__modify__channel.html#a3399937082110c0b384530b78c9b81c9",
-"structdiscord__ret__application__commands.html#aa35aabdca3a505f714964e95f68cbc0c",
-"structdiscord__ret__webhooks.html#ab8ec1f1fb3af703468a8fc7be3f76421",
-"voice__connections_8h.html#a141794a0c70ac7b43ee4f6aca4fb8b56a90c99d631803590b48d48b3fe4326fff"
+"group__DiscordAPIChannel.html",
+"group__DiscordEvents.html#ga7b24c1f52a9376986f6e3cd98d1e582e",
+"index.html#autotoc_md36",
+"structdiscord__attachment.html#a43df4bd77de38da3cf20638aa77ed4d4",
+"structdiscord__create__guild__scheduled__event.html#abbde0fabda845c8718544545b0a7bdab",
+"structdiscord__guild.html#a31942f131e8007185879c3008bbd6274",
+"structdiscord__invite.html#a6ad8e0f79789530211f395a539d6baf0",
+"structdiscord__optional__audit__entry__info.html",
+"structdiscord__ret__guild__members.html#a6994ac1960df7d55950f5f59268903ee",
+"structdiscord__thread__member.html#a548ce85474bf51eaadd70ea326b58fe6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

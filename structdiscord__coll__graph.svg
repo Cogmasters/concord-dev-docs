@@ -17,15 +17,6 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node1 -->
-<g id="edge10" class="edge">
-<title>Node1&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M370.11,-100.77C371.12,-105.5 375.42,-109 383,-109 395.44,-109 399.04,-99.57 393.79,-90.76"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="373.58,-101.26 372.21,-90.76 366.73,-99.82 373.58,-101.26"/>
-<text text-anchor="middle" x="383" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00"> cb</text>
-<text text-anchor="middle" x="383" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00">on_cycle</text>
-<text text-anchor="middle" x="383" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">on_idle</text>
-</g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>

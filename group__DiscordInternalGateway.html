@@ -128,8 +128,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga3e14383e89f8790ccd05c8e926b394e4"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalGateway.html#ga3e14383e89f8790ccd05c8e926b394e4">discord_ev</a>) (struct <a class="el" href="structdiscord.html">discord</a> *client, void *event)</td></tr>
-<tr class="separator:ga3e14383e89f8790ccd05c8e926b394e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae38e6a4c2e9bbb2ac711ecdcea8995a6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalGateway.html#gae38e6a4c2e9bbb2ac711ecdcea8995a6">discord_ev_event</a>) (struct <a class="el" href="structdiscord.html">discord</a> *client, const void *event)</td></tr>
+<tr class="separator:gae38e6a4c2e9bbb2ac711ecdcea8995a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2953803314aee1dbfc9c4d65140a6ae2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalGateway.html#ga2953803314aee1dbfc9c4d65140a6ae2">discord_ev_message</a>) (struct <a class="el" href="structdiscord.html">discord</a> *client, const struct <a class="el" href="structdiscord__message.html">discord_message</a> *event)</td></tr>
+<tr class="separator:ga2953803314aee1dbfc9c4d65140a6ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -179,18 +181,33 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Wrapper to the Discord Gateway API. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga3e14383e89f8790ccd05c8e926b394e4" name="ga3e14383e89f8790ccd05c8e926b394e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3e14383e89f8790ccd05c8e926b394e4">&#9670;&nbsp;</a></span>discord_ev</h2>
+<a id="gae38e6a4c2e9bbb2ac711ecdcea8995a6" name="gae38e6a4c2e9bbb2ac711ecdcea8995a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae38e6a4c2e9bbb2ac711ecdcea8995a6">&#9670;&nbsp;</a></span>discord_ev_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* discord_ev) (struct <a class="el" href="structdiscord.html">discord</a> *client, void *event)</td>
+          <td class="memname">typedef void(* discord_ev_event) (struct <a class="el" href="structdiscord.html">discord</a> *client, const void *event)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Generic event callback </p>
+<p >A generic event callback for casting </p>
+
+</div>
+</div>
+<a id="ga2953803314aee1dbfc9c4d65140a6ae2" name="ga2953803314aee1dbfc9c4d65140a6ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2953803314aee1dbfc9c4d65140a6ae2">&#9670;&nbsp;</a></span>discord_ev_message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* discord_ev_message) (struct <a class="el" href="structdiscord.html">discord</a> *client, const struct <a class="el" href="structdiscord__message.html">discord_message</a> *event)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >An event callback for DISCORD_EV_MESSAGE_CREATE </p>
 
 </div>
 </div>

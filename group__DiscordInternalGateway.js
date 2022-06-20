@@ -46,10 +46,11 @@ var group__DiscordInternalGateway =
       [ "id", "structdiscord__gateway.html#add6cd3f50c50094ad169844597e123ab", null ],
       [ "session", "structdiscord__gateway.html#a5c5b90fc646ef6c047bf09ed99dedab5", null ],
       [ "payload", "structdiscord__gateway.html#a27bc7f5da52b61b8285c19cc54333a32", null ],
-      [ "cbs", "structdiscord__gateway.html#a3b4de3401302e0bc6eb35f09000f0c08", null ],
+      [ "cbs", "structdiscord__gateway.html#a31cbc22da156579192fe3ea102ff300c", null ],
       [ "scheduler", "structdiscord__gateway.html#a38fe47e02a4b9b8bd50390e708bfcabd", null ]
     ] ],
-    [ "discord_ev", "group__DiscordInternalGateway.html#ga3e14383e89f8790ccd05c8e926b394e4", null ],
+    [ "discord_ev_event", "group__DiscordInternalGateway.html#gae38e6a4c2e9bbb2ac711ecdcea8995a6", null ],
+    [ "discord_ev_message", "group__DiscordInternalGateway.html#ga2953803314aee1dbfc9c4d65140a6ae2", null ],
     [ "discord_gateway_init", "group__DiscordInternalGateway.html#ga81bf0b6f95c142a58c834051d9c5f5ce", null ],
     [ "discord_gateway_cleanup", "group__DiscordInternalGateway.html#gab66259b9988312a38de984c9c54e49f0", null ],
     [ "discord_gateway_start", "group__DiscordInternalGateway.html#ga511de59de4ece10cc7ff0e06c21b8345", null ],

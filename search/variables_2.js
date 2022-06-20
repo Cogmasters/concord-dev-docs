@@ -1,8 +1,8 @@
 var searchData=
 [
   ['capacity_0',['capacity',['../structdiscord__refcounter.html#aa528a37fff706b9aa8d4a93079e342f9',1,'discord_refcounter::capacity()'],['../structdiscord__message__commands.html#af1eec8ad8d4e27661d5c3a07e2f63eea',1,'discord_message_commands::capacity()'],['../structdiscord__ratelimiter.html#a9627e4df091f75a792d2bbef5b791d91',1,'discord_ratelimiter::capacity()']]],
-  ['cb_1',['cb',['../structdiscord__timer.html#a205071c9a510b044b7e80a0dc33667ec',1,'discord_timer::cb()'],['../structdiscord.html#a56b0ad42a1f11f53cb9eedbe8ab89810',1,'discord::cb()']]],
-  ['cbs_2',['cbs',['../structdiscord__gateway.html#a3b4de3401302e0bc6eb35f09000f0c08',1,'discord_gateway']]],
+  ['cb_1',['cb',['../structdiscord__timer.html#a205071c9a510b044b7e80a0dc33667ec',1,'discord_timer::cb()'],['../structdiscord.html#a29432c15f5a0740c8c77ef2092c556fc',1,'discord::cb()']]],
+  ['cbs_2',['cbs',['../structdiscord__gateway.html#a31cbc22da156579192fe3ea102ff300c',1,'discord_gateway']]],
   ['ccord_5fhas_5fsigint_3',['ccord_has_sigint',['../concord-once_8h.html#adbc75aba745f0dc53f950961859e038f',1,'concord-once.h']]],
   ['changes_4',['changes',['../structdiscord__audit__log__entry.html#aa239b88e558070827490ff864dcde170',1,'discord_audit_log_entry']]],
   ['channel_5',['channel',['../structdiscord__invite.html#aa2377631804b4cd4514a1c7c5f3fc3fd',1,'discord_invite']]],

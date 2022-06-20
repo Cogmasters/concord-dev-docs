@@ -1,4 +1,0 @@
-<map id="Events callbacks" name="Events callbacks">
-<area shape="rect" id="node1" href="$group__DiscordEvents.html" title="Events sent over the Gateway socket to the client." alt="" coords="5,5,72,31"/>
-<area shape="rect" id="node2" title="Callback types for Discord events." alt="" coords="120,5,251,31"/>
-</map>

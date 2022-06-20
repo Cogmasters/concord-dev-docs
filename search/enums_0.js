@@ -12,7 +12,7 @@ var searchData=
   ['discord_5fcomponent_5ftypes_9',['discord_component_types',['../message__components_8h.html#ad6539677dbe0f162ab7f448aedc4552c',1,'message_components.h']]],
   ['discord_5fevent_5fscheduler_10',['discord_event_scheduler',['../group__DiscordEvents.html#gad871630e69eb4355566dc8c1031bae76',1,'discord-events.h']]],
   ['discord_5fexplicit_5fcontent_5ffilter_5flevel_11',['discord_explicit_content_filter_level',['../docs_2api_2guild_8h.html#a742601ce2eabffef6addf1067b6b5c98',1,'guild.h']]],
-  ['discord_5fgateway_5fevents_12',['discord_gateway_events',['../docs_2api_2gateway_8h.html#a90ebb76de1682ce02a67a08b0510145b',1,'gateway.h']]],
+  ['discord_5fgateway_5fevents_12',['discord_gateway_events',['../group__DiscordEvents.html#ga90ebb76de1682ce02a67a08b0510145b',1,'discord-events.h']]],
   ['discord_5fguild_5fscheduled_5fevent_5fprivacy_5flevel_13',['discord_guild_scheduled_event_privacy_level',['../guild__scheduled__event_8h.html#abbea8f61e598def049fba16dc206f31c',1,'guild_scheduled_event.h']]],
   ['discord_5finteraction_5fcallback_5ftypes_14',['discord_interaction_callback_types',['../interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83',1,'interactions.h']]],
   ['discord_5fmessage_5fnotification_5flevel_15',['discord_message_notification_level',['../docs_2api_2guild_8h.html#a15dc2920f81f51a64983274a3a0dfffe',1,'guild.h']]],
