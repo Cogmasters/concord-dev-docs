@@ -41,6 +41,7 @@ var searchData=
   ['routes_38',['routes',['../structdiscord__ratelimiter.html#ada41649708f3b4969e744c576e41a0dd',1,'discord_ratelimiter']]],
   ['rpc_5forigins_39',['rpc_origins',['../structdiscord__application.html#aae003110a0a838cb4989ef19a09b3c5f',1,'discord_application']]],
   ['rtc_5fregion_40',['rtc_region',['../structdiscord__channel.html#ab5ae5d7ef4e34e5fc4fc7439f13ff2ec',1,'discord_channel::rtc_region()'],['../structdiscord__modify__channel.html#a9586072e40d76986841b805c96bee025',1,'discord_modify_channel::rtc_region()']]],
-  ['rules_5fchannel_5fid_41',['rules_channel_id',['../structdiscord__guild.html#a166ab48b76c04f8ceda6d701f50ae51c',1,'discord_guild::rules_channel_id()'],['../structdiscord__modify__guild.html#adab114c434a29df3663327926d266203',1,'discord_modify_guild::rules_channel_id()']]],
-  ['rwlock_42',['rwlock',['../structdiscord__gateway.html#a86a693dff385bbf55e34f7c254463fd7',1,'discord_gateway']]]
+  ['rule_5ftrigger_5ftype_41',['rule_trigger_type',['../structdiscord__auto__moderation__action__execution.html#a344400d67e1ff973f536e94e8c9016b7',1,'discord_auto_moderation_action_execution']]],
+  ['rules_5fchannel_5fid_42',['rules_channel_id',['../structdiscord__guild.html#a166ab48b76c04f8ceda6d701f50ae51c',1,'discord_guild::rules_channel_id()'],['../structdiscord__modify__guild.html#adab114c434a29df3663327926d266203',1,'discord_modify_guild::rules_channel_id()']]],
+  ['rwlock_43',['rwlock',['../structdiscord__gateway.html#a86a693dff385bbf55e34f7c254463fd7',1,'discord_gateway']]]
 ];

@@ -21,5 +21,5 @@
 <area shape="rect" id="node20" href="$include_2gateway_8h.html" title="Gateway public functions and datatypes." alt="" coords="2007,80,2095,107"/>
 <area shape="rect" id="node21" href="$application__command_8h.html" title="Application Command public functions and datatypes." alt="" coords="2119,80,2298,107"/>
 <area shape="rect" id="node22" href="$interaction_8h.html" title="Interaciton public functions and datatypes." alt="" coords="2322,80,2426,107"/>
-<area shape="rect" id="node23" href="$discord-events_8h.html" title="Listen and react to Discord events." alt="" coords="2450,80,2581,107"/>
+<area shape="rect" id="node23" href="$discord-events_8h.html" title="Listen, react and trigger Discord Gateway events." alt="" coords="2450,80,2581,107"/>
 </map>

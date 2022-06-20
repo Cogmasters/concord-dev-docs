@@ -3,6 +3,7 @@ var dir_bff1a75f97c7ace650ee0c8d57d0aaa5 =
     [ "application.h", "application_8h.html", "application_8h" ],
     [ "application_commands.h", "application__commands_8h.html", "application__commands_8h" ],
     [ "audit_log.h", "docs_2api_2audit__log_8h.html", "docs_2api_2audit__log_8h" ],
+    [ "auto_moderation.h", "auto__moderation_8h.html", "auto__moderation_8h" ],
     [ "channel.h", "docs_2api_2channel_8h.html", "docs_2api_2channel_8h" ],
     [ "custom.h", "custom_8h.html", "custom_8h" ],
     [ "emoji.h", "docs_2api_2emoji_8h.html", "docs_2api_2emoji_8h" ],

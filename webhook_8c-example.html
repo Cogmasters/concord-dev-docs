@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('webhook_8c-example.html',''); initResi
 <div class="line">    fgetc(stdin); <span class="comment">// wait for input</span></div>
 <div class="line"> </div>
 <div class="line">    <a id="a0" name="a0"></a><a class="code hl_function" href="concord-once_8h.html#a9a5555031ccfdb102424695dfaca0727">ccord_global_init</a>();</div>
-<div class="line">    <span class="keyword">struct </span><a id="_a1" name="_a1"></a><a class="code hl_struct" href="structdiscord.html">discord</a> *client = <a id="a2" name="a2"></a><a class="code hl_function" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d">discord_init</a>(NULL);</div>
+<div class="line">    <span class="keyword">struct </span><a id="_a1" name="_a1"></a><a class="code hl_struct" href="structdiscord.html">discord</a> *client = <a id="a2" name="a2"></a><a class="code hl_function" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d">discord_init</a>(NULL);</div>
 <div class="line">    assert(NULL != client &amp;&amp; <span class="stringliteral">&quot;Couldn&#39;t initialize client&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Get Webhook */</span></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('webhook_8c-example.html',''); initResi
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    free(webhook_token);</div>
-<div class="line">    <a id="a12" name="a12"></a><a class="code hl_function" href="group__Discord.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a>(client);</div>
+<div class="line">    <a id="a12" name="a12"></a><a class="code hl_function" href="group__DiscordClient.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a>(client);</div>
 <div class="line">    <a id="a13" name="a13"></a><a class="code hl_function" href="concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
@@ -165,8 +165,8 @@ $(document).ready(function(){initNavTree('webhook_8c-example.html',''); initResi
 <div class="ttc" id="agroup__ConcordTypes_html_ga1f90b9a153d0298db01a3bf1eb334471"><div class="ttname"><a href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a></div><div class="ttdeci">uint64_t u64snowflake</div><div class="ttdoc">Snowflake datatype.</div><div class="ttdef"><b>Definition:</b> types.h:25</div></div>
 <div class="ttc" id="agroup__DiscordAPIWebhook_html_ga30e9845d20ebcfd01bf81e0610fb1322"><div class="ttname"><a href="group__DiscordAPIWebhook.html#ga30e9845d20ebcfd01bf81e0610fb1322">discord_get_webhook_with_token</a></div><div class="ttdeci">CCORDcode discord_get_webhook_with_token(struct discord *client, u64snowflake webhook_id, const char webhook_token[], struct discord_ret_webhook *ret)</div></div>
 <div class="ttc" id="agroup__DiscordAPIWebhook_html_ga6423cbf3797741bcaf5ced860dcc3339"><div class="ttname"><a href="group__DiscordAPIWebhook.html#ga6423cbf3797741bcaf5ced860dcc3339">discord_execute_webhook</a></div><div class="ttdeci">CCORDcode discord_execute_webhook(struct discord *client, u64snowflake webhook_id, const char webhook_token[], struct discord_execute_webhook *params, struct discord_ret *ret)</div></div>
-<div class="ttc" id="agroup__Discord_html_ga009d0e352a30c00f8b4765712fcfa5a9"><div class="ttname"><a href="group__Discord.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a></div><div class="ttdeci">void discord_cleanup(struct discord *client)</div><div class="ttdoc">Free a Discord Client handle.</div></div>
-<div class="ttc" id="agroup__Discord_html_gacd52a9fc58a1fcb9b4719a5cedd70f5d"><div class="ttname"><a href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d">discord_init</a></div><div class="ttdeci">struct discord * discord_init(const char token[])</div><div class="ttdoc">Create a Discord Client handle by its token.</div></div>
+<div class="ttc" id="agroup__DiscordClient_html_ga009d0e352a30c00f8b4765712fcfa5a9"><div class="ttname"><a href="group__DiscordClient.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a></div><div class="ttdeci">void discord_cleanup(struct discord *client)</div><div class="ttdoc">Free a Discord Client handle.</div></div>
+<div class="ttc" id="agroup__DiscordClient_html_gacd52a9fc58a1fcb9b4719a5cedd70f5d"><div class="ttname"><a href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d">discord_init</a></div><div class="ttdeci">struct discord * discord_init(const char token[])</div><div class="ttdoc">Create a Discord Client handle by its token.</div></div>
 <div class="ttc" id="astructdiscord__execute__webhook_html"><div class="ttname"><a href="structdiscord__execute__webhook.html">discord_execute_webhook</a></div><div class="ttdef"><b>Definition:</b> webhook.h:138</div></div>
 <div class="ttc" id="astructdiscord__execute__webhook_html_a226ddbae582f844faa18786dd073cc5a"><div class="ttname"><a href="structdiscord__execute__webhook.html#a226ddbae582f844faa18786dd073cc5a">discord_execute_webhook::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> webhook.h:149</div></div>
 <div class="ttc" id="astructdiscord__ret__webhook_html"><div class="ttname"><a href="structdiscord__ret__webhook.html">discord_ret_webhook</a></div><div class="ttdoc">Request's return context.</div><div class="ttdef"><b>Definition:</b> discord-response.h:126</div></div>

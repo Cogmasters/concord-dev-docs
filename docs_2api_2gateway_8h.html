@@ -154,6 +154,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__ready.html">discord_ready</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__auto__moderation__action__execution.html">discord_auto_moderation_action_execution</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__thread__list__sync.html">discord_thread_list_sync</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__thread__members__update.html">discord_thread_members_update</a></td></tr>
@@ -224,9 +226,9 @@ Macros</h2></td></tr>
 <tr class="memitem:gaafd36167b2b407adb85cb55a2d25205b"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_GUILD_BANS</b>&#160;&#160;&#160;1 &lt;&lt; 2</td></tr>
 <tr class="separator:gaafd36167b2b407adb85cb55a2d25205b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadbb257e470691db7c41584c97bdda6bc"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_GUILD_EMOJIS</b>&#160;&#160;&#160;1 &lt;&lt; 3</td></tr>
-<tr class="separator:gadbb257e470691db7c41584c97bdda6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga217375b0063769c238889ac27be0118e"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_GUILD_EMOJIS_AND_STICKERS</b>&#160;&#160;&#160;1 &lt;&lt; 3</td></tr>
+<tr class="separator:ga217375b0063769c238889ac27be0118e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa194274209b7999a4c77d1f28e1e5967"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_GUILD_INTEGRATIONS</b>&#160;&#160;&#160;1 &lt;&lt; 4</td></tr>
 <tr class="separator:gaa194274209b7999a4c77d1f28e1e5967"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +262,18 @@ Macros</h2></td></tr>
 <tr class="memitem:gae0b02bd33967eafd1b56d1623068f846"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_DIRECT_MESSAGE_TYPING</b>&#160;&#160;&#160;1 &lt;&lt; 14</td></tr>
 <tr class="separator:gae0b02bd33967eafd1b56d1623068f846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06c22696ba8f99e7ed1c6d4f88de2e5f"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_MESSAGE_CONTENT</b>&#160;&#160;&#160;1 &lt;&lt; 15</td></tr>
+<tr class="separator:ga06c22696ba8f99e7ed1c6d4f88de2e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ea7abc25df479000e7d7b00a54db7e6"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_GUILD_SCHEDULED_EVENTS</b>&#160;&#160;&#160;1 &lt;&lt; 16</td></tr>
+<tr class="separator:ga8ea7abc25df479000e7d7b00a54db7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02f805d452f09449f9a89e112caa0b41"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_AUTO_MODERATION_CONFIGURATION</b>&#160;&#160;&#160;1 &lt;&lt; 20</td></tr>
+<tr class="separator:ga02f805d452f09449f9a89e112caa0b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3bfbdfbf815e7eda6bae22821afa4b80"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_AUTO_MODERATION_EXECUTION</b>&#160;&#160;&#160;1 &lt;&lt; 21</td></tr>
+<tr class="separator:ga3bfbdfbf815e7eda6bae22821afa4b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf272b8a2bf2dd750ecfe3c6900eb3878"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_ACTIVITY_INSTANCE</b>&#160;&#160;&#160;1 &lt;&lt; 0</td></tr>
 <tr class="separator:gaf272b8a2bf2dd750ecfe3c6900eb3878"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,82 +353,83 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a086cfb51d525fc1bf2ac93eb4ed085fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90ebb76de1682ce02a67a08b0510145b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="docs_2api_2gateway_8h.html#a90ebb76de1682ce02a67a08b0510145b">discord_gateway_events</a> { <br />
-&#160;&#160;<b>DISCORD_EV_READY</b> = 0
+&#160;&#160;<b>DISCORD_EV_NONE</b> = 0
+, <b>DISCORD_EV_READY</b>
 , <b>DISCORD_EV_RESUMED</b>
 , <b>DISCORD_EV_RECONNECT</b>
-, <b>DISCORD_EV_INVALID_SESSION</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_APPLICATION_COMMAND_PERMISSIONS_UPDATE</b>
+&#160;&#160;<b>DISCORD_EV_INVALID_SESSION</b>
+, <b>DISCORD_EV_APPLICATION_COMMAND_PERMISSIONS_UPDATE</b>
 , <b>DISCORD_EV_AUTO_MODERATION_RULE_CREATE</b>
 , <b>DISCORD_EV_AUTO_MODERATION_RULE_UPDATE</b>
-, <b>DISCORD_EV_AUTO_MODERATION_RULE_DELETE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_AUTO_MODERATION_ACTION_EXECUTION</b>
+&#160;&#160;<b>DISCORD_EV_AUTO_MODERATION_RULE_DELETE</b>
+, <b>DISCORD_EV_AUTO_MODERATION_ACTION_EXECUTION</b>
 , <b>DISCORD_EV_CHANNEL_CREATE</b>
 , <b>DISCORD_EV_CHANNEL_UPDATE</b>
-, <b>DISCORD_EV_CHANNEL_DELETE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_CHANNEL_PINS_UPDATE</b>
+&#160;&#160;<b>DISCORD_EV_CHANNEL_DELETE</b>
+, <b>DISCORD_EV_CHANNEL_PINS_UPDATE</b>
 , <b>DISCORD_EV_THREAD_CREATE</b>
 , <b>DISCORD_EV_THREAD_UPDATE</b>
-, <b>DISCORD_EV_THREAD_DELETE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_THREAD_LIST_SYNC</b>
+&#160;&#160;<b>DISCORD_EV_THREAD_DELETE</b>
+, <b>DISCORD_EV_THREAD_LIST_SYNC</b>
 , <b>DISCORD_EV_THREAD_MEMBER_UPDATE</b>
 , <b>DISCORD_EV_THREAD_MEMBERS_UPDATE</b>
-, <b>DISCORD_EV_GUILD_CREATE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_GUILD_UPDATE</b>
+&#160;&#160;<b>DISCORD_EV_GUILD_CREATE</b>
+, <b>DISCORD_EV_GUILD_UPDATE</b>
 , <b>DISCORD_EV_GUILD_DELETE</b>
 , <b>DISCORD_EV_GUILD_BAN_ADD</b>
-, <b>DISCORD_EV_GUILD_BAN_REMOVE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_GUILD_EMOJIS_UPDATE</b>
+&#160;&#160;<b>DISCORD_EV_GUILD_BAN_REMOVE</b>
+, <b>DISCORD_EV_GUILD_EMOJIS_UPDATE</b>
 , <b>DISCORD_EV_GUILD_STICKERS_UPDATE</b>
 , <b>DISCORD_EV_GUILD_INTEGRATIONS_UPDATE</b>
-, <b>DISCORD_EV_GUILD_MEMBER_ADD</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_GUILD_MEMBER_REMOVE</b>
+&#160;&#160;<b>DISCORD_EV_GUILD_MEMBER_ADD</b>
+, <b>DISCORD_EV_GUILD_MEMBER_REMOVE</b>
 , <b>DISCORD_EV_GUILD_MEMBER_UPDATE</b>
 , <b>DISCORD_EV_GUILD_MEMBERS_CHUNK</b>
-, <b>DISCORD_EV_GUILD_ROLE_CREATE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_GUILD_ROLE_UPDATE</b>
+&#160;&#160;<b>DISCORD_EV_GUILD_ROLE_CREATE</b>
+, <b>DISCORD_EV_GUILD_ROLE_UPDATE</b>
 , <b>DISCORD_EV_GUILD_ROLE_DELETE</b>
 , <b>DISCORD_EV_GUILD_SCHEDULED_EVENT_CREATE</b>
-, <b>DISCORD_EV_GUILD_SCHEDULED_EVENT_UPDATE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_GUILD_SCHEDULED_EVENT_DELETE</b>
+&#160;&#160;<b>DISCORD_EV_GUILD_SCHEDULED_EVENT_UPDATE</b>
+, <b>DISCORD_EV_GUILD_SCHEDULED_EVENT_DELETE</b>
 , <b>DISCORD_EV_GUILD_SCHEDULED_EVENT_USER_ADD</b>
 , <b>DISCORD_EV_GUILD_SCHEDULED_EVENT_USER_REMOVE</b>
-, <b>DISCORD_EV_INTEGRATION_CREATE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_INTEGRATION_UPDATE</b>
+&#160;&#160;<b>DISCORD_EV_INTEGRATION_CREATE</b>
+, <b>DISCORD_EV_INTEGRATION_UPDATE</b>
 , <b>DISCORD_EV_INTEGRATION_DELETE</b>
 , <b>DISCORD_EV_INTERACTION_CREATE</b>
-, <b>DISCORD_EV_INVITE_CREATE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_INVITE_DELETE</b>
+&#160;&#160;<b>DISCORD_EV_INVITE_CREATE</b>
+, <b>DISCORD_EV_INVITE_DELETE</b>
 , <b>DISCORD_EV_MESSAGE_CREATE</b>
 , <b>DISCORD_EV_MESSAGE_UPDATE</b>
-, <b>DISCORD_EV_MESSAGE_DELETE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_MESSAGE_DELETE_BULK</b>
+&#160;&#160;<b>DISCORD_EV_MESSAGE_DELETE</b>
+, <b>DISCORD_EV_MESSAGE_DELETE_BULK</b>
 , <b>DISCORD_EV_MESSAGE_REACTION_ADD</b>
 , <b>DISCORD_EV_MESSAGE_REACTION_REMOVE</b>
-, <b>DISCORD_EV_MESSAGE_REACTION_REMOVE_ALL</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_MESSAGE_REACTION_REMOVE_EMOJI</b>
+&#160;&#160;<b>DISCORD_EV_MESSAGE_REACTION_REMOVE_ALL</b>
+, <b>DISCORD_EV_MESSAGE_REACTION_REMOVE_EMOJI</b>
 , <b>DISCORD_EV_PRESENCE_UPDATE</b>
 , <b>DISCORD_EV_STAGE_INSTANCE_CREATE</b>
-, <b>DISCORD_EV_STAGE_INSTANCE_DELETE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_STAGE_INSTANCE_UPDATE</b>
+&#160;&#160;<b>DISCORD_EV_STAGE_INSTANCE_DELETE</b>
+, <b>DISCORD_EV_STAGE_INSTANCE_UPDATE</b>
 , <b>DISCORD_EV_TYPING_START</b>
 , <b>DISCORD_EV_USER_UPDATE</b>
-, <b>DISCORD_EV_VOICE_STATE_UPDATE</b>
 , <br />
-&#160;&#160;<b>DISCORD_EV_VOICE_SERVER_UPDATE</b>
+&#160;&#160;<b>DISCORD_EV_VOICE_STATE_UPDATE</b>
+, <b>DISCORD_EV_VOICE_SERVER_UPDATE</b>
 , <b>DISCORD_EV_WEBHOOKS_UPDATE</b>
 , <a class="el" href="docs_2api_2gateway_8h.html#a90ebb76de1682ce02a67a08b0510145ba1966631be40759f1164d26238cc8bcb3">DISCORD_EV_MAX</a>
 <br />
@@ -470,6 +485,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_ready_init</b
 <tr class="memitem:a4edaba42b591a468cfbf7d647a864b48"><td class="memItemLeft" align="right" valign="top"><a id="a4edaba42b591a468cfbf7d647a864b48" name="a4edaba42b591a468cfbf7d647a864b48"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_ready_cleanup</b> (struct <a class="el" href="structdiscord__ready.html">discord_ready</a> *self)</td></tr>
 <tr class="separator:a4edaba42b591a468cfbf7d647a864b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ff005e6562d2f45b6f23323cf59092"><td class="memItemLeft" align="right" valign="top"><a id="aa8ff005e6562d2f45b6f23323cf59092" name="aa8ff005e6562d2f45b6f23323cf59092"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_auto_moderation_action_execution_init</b> (struct <a class="el" href="structdiscord__auto__moderation__action__execution.html">discord_auto_moderation_action_execution</a> *self)</td></tr>
+<tr class="separator:aa8ff005e6562d2f45b6f23323cf59092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce6caad5f61d07df3731afe8b7687d2"><td class="memItemLeft" align="right" valign="top"><a id="a4ce6caad5f61d07df3731afe8b7687d2" name="a4ce6caad5f61d07df3731afe8b7687d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_auto_moderation_action_execution_cleanup</b> (struct <a class="el" href="structdiscord__auto__moderation__action__execution.html">discord_auto_moderation_action_execution</a> *self)</td></tr>
+<tr class="separator:a4ce6caad5f61d07df3731afe8b7687d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00e8a97c15e6b2146318980cca97bd0"><td class="memItemLeft" align="right" valign="top"><a id="aa00e8a97c15e6b2146318980cca97bd0" name="aa00e8a97c15e6b2146318980cca97bd0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_thread_list_sync_init</b> (struct <a class="el" href="structdiscord__thread__list__sync.html">discord_thread_list_sync</a> *self)</td></tr>
 <tr class="separator:aa00e8a97c15e6b2146318980cca97bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -656,6 +677,12 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_ready_from_js
 <tr class="memitem:a6b9666bd32ad9e328be2e504451b5451"><td class="memItemLeft" align="right" valign="top"><a id="a6b9666bd32ad9e328be2e504451b5451" name="a6b9666bd32ad9e328be2e504451b5451"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_ready_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__ready.html">discord_ready</a> *self)</td></tr>
 <tr class="separator:a6b9666bd32ad9e328be2e504451b5451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0070ac2889c2eaa6f226f949ad3fb8"><td class="memItemLeft" align="right" valign="top"><a id="a7e0070ac2889c2eaa6f226f949ad3fb8" name="a7e0070ac2889c2eaa6f226f949ad3fb8"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_auto_moderation_action_execution_from_jsmnf</b> (jsmnf_pair *root, const char *js, struct <a class="el" href="structdiscord__auto__moderation__action__execution.html">discord_auto_moderation_action_execution</a> *self)</td></tr>
+<tr class="separator:a7e0070ac2889c2eaa6f226f949ad3fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b80b42f989ac9664c9eaf1105703289"><td class="memItemLeft" align="right" valign="top"><a id="a6b80b42f989ac9664c9eaf1105703289" name="a6b80b42f989ac9664c9eaf1105703289"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_auto_moderation_action_execution_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__auto__moderation__action__execution.html">discord_auto_moderation_action_execution</a> *self)</td></tr>
+<tr class="separator:a6b80b42f989ac9664c9eaf1105703289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56a287e60d77cb559e57dc694ca9ef71"><td class="memItemLeft" align="right" valign="top"><a id="a56a287e60d77cb559e57dc694ca9ef71" name="a56a287e60d77cb559e57dc694ca9ef71"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_thread_list_sync_from_jsmnf</b> (jsmnf_pair *root, const char *js, struct <a class="el" href="structdiscord__thread__list__sync.html">discord_thread_list_sync</a> *self)</td></tr>
 <tr class="separator:a56a287e60d77cb559e57dc694ca9ef71"><td class="memSeparator" colspan="2">&#160;</td></tr>

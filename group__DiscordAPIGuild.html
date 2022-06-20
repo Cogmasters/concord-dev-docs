@@ -280,7 +280,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Guild Create</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild.html">discord_guild</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -328,7 +328,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>If with_counts is set to true, this endpoint will also return approximate_member_count and approximate_presence_count for the guild</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to retrieve </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild.html">discord_guild</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -375,7 +375,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>If the user is not in the guild, then the guild must be lurkable</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild to get preview from </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild__preview.html">discord_guild_preview</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -430,7 +430,7 @@ Functions</h2></td></tr>
 Fires a <code>Guild Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to modify </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild.html">discord_guild</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -478,7 +478,7 @@ Fires a <code>Guild Update</code> event</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Guild Delete</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>id of guild to delete </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
   </table>
@@ -524,7 +524,7 @@ Fires a <code>Guild Update</code> event</dd></dl>
 <p>Fetch channels from given guild. Does not include threads. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>id of guild to fetch channels from </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__channels.html">discord_channels</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -583,7 +583,7 @@ If setting permission overwrites, only permissions your bot has in the guild can
 Fires a <code>Channel Create</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>id of the guild to create a channel at </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__channel.html">discord_channel</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -639,7 +639,7 @@ Fires a <code>Channel Create</code> event</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Requires MANAGE_CHANNELS permission</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to change the positions of the channels in </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -692,7 +692,7 @@ Fires a <code>Channel Create</code> event</dd></dl>
 <p>Get guild member of a guild from given user id. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild the member belongs to </td></tr>
     <tr><td class="paramname">user_id</td><td>unique user id of member </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild__member.html">discord_guild_member</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -747,7 +747,7 @@ Fires a <code>Channel Create</code> event</dd></dl>
 <p>Get guild members of a guild. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild the members belongs to </td></tr>
     <tr><td class="paramname">request</td><td>parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild__members.html">discord_guild_members</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -802,7 +802,7 @@ Fires a <code>Channel Create</code> event</dd></dl>
 <p>Get guild members whose username or nickname starts with a provided string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild the members belongs to </td></tr>
     <tr><td class="paramname">request</td><td>parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild__members.html">discord_guild_members</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -866,7 +866,7 @@ Fires a <code>Guild Member Add</code> event </dd>
 The bot must be a member of the guild with CREATE_INSTANT_INVITE permission</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild to add the member to </td></tr>
     <tr><td class="paramname">user_id</td><td>the user to be added </td></tr>
     <tr><td class="paramname">request</td><td>parameters </td></tr>
@@ -928,7 +928,7 @@ The bot must be a member of the guild with CREATE_INSTANT_INVITE permission</dd>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__DiscordAPIGatewayHelper.html#ga7cf273f478427bc2d2acd64cc6d48c66" title="Disconnect a member from voice channel.">discord_disconnect_guild_member()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild the member belongs to </td></tr>
     <tr><td class="paramname">user_id</td><td>the user id of member </td></tr>
     <tr><td class="paramname">request</td><td>parameters </td></tr>
@@ -983,7 +983,7 @@ The bot must be a member of the guild with CREATE_INSTANT_INVITE permission</dd>
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Guild Member Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild where the member exists </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild__member.html">discord_guild_member</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -1038,7 +1038,7 @@ The bot must be a member of the guild with CREATE_INSTANT_INVITE permission</dd>
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Guild Member Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild the member belongs to </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__guild__member.html">discord_guild_member</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -1098,7 +1098,7 @@ The bot must be a member of the guild with CREATE_INSTANT_INVITE permission</dd>
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Guild Member Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild where the member exists </td></tr>
     <tr><td class="paramname">user_id</td><td>the unique id of the user </td></tr>
     <tr><td class="paramname">role_id</td><td>the unique id of the role to be added </td></tr>
@@ -1163,7 +1163,7 @@ The bot must be a member of the guild with CREATE_INSTANT_INVITE permission</dd>
 Fires a <code>Guild Member Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild where the member exists </td></tr>
     <tr><td class="paramname">user_id</td><td>the unique id of the user </td></tr>
     <tr><td class="paramname">role_id</td><td>the unique id of the role to be removed </td></tr>
@@ -1222,7 +1222,7 @@ Fires a <code>Guild Member Update</code> event</dd></dl>
 Fires a <code>Guild Member Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the guild to remove the member from </td></tr>
     <tr><td class="paramname">user_id</td><td>the user to be removed </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1270,7 +1270,7 @@ Fires a <code>Guild Member Update</code> event</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Requires the BAN_MEMBERS permission</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the guild to get the list from </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__bans.html">discord_bans</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -1323,7 +1323,7 @@ Fires a <code>Guild Member Update</code> event</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Requires the BAN_MEMBERS permission</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the guild to return the ban from </td></tr>
     <tr><td class="paramname">user_id</td><td>the user that is banned </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__ban.html">discord_ban</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -1385,7 +1385,7 @@ Fires a <code>Guild Member Update</code> event</dd></dl>
 Fires a <code>Guild Ban Add</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild the user belongs to </td></tr>
     <tr><td class="paramname">user_id</td><td>the user to be banned </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
@@ -1444,7 +1444,7 @@ Fires a <code>Guild Ban Add</code> event</dd></dl>
 Fires a <code>Guild Ban Remove</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild the user belonged to </td></tr>
     <tr><td class="paramname">user_id</td><td>the user to have its ban revoked </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1493,7 +1493,7 @@ Fires a <code>Guild Ban Remove</code> event</dd></dl>
 <p>Get guild roles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild to get roles from </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__roles.html">discord_roles</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -1550,7 +1550,7 @@ Fires a <code>Guild Ban Remove</code> event</dd></dl>
 Fires a <code>Guild Role Create</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>guild to add a role to </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__role.html">discord_role</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -1610,7 +1610,7 @@ Requires the KICK_MEMBERS permission </dd>
 Fires multiple <code>Guild Member Remove</code> events</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to start the prune </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
   </table>
@@ -1657,7 +1657,7 @@ Fires multiple <code>Guild Member Remove</code> events</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>requires the MANAGE_GUILD permission </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to get invites from </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__invites.html">discord_invites</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -1712,7 +1712,7 @@ Fires multiple <code>Guild Member Remove</code> events</dd></dl>
 Fires a <code>Guild Integrations Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to delete the integrations from </td></tr>
     <tr><td class="paramname">integration_id</td><td>the id of the integration to delete </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1760,7 +1760,7 @@ Fires a <code>Guild Integrations Update</code> event</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Requires the MANAGE_GUILD permission</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to get vanity url from </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__invite.html">discord_invite</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -1806,7 +1806,7 @@ Fires a <code>Guild Integrations Update</code> event</dd></dl>
 <p>Get the Welcome Screen for the guild. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to get welcome screen of </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__welcome__screen.html">discord_welcome_screen</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -1861,7 +1861,7 @@ Fires a <code>Guild Integrations Update</code> event</dd></dl>
 Fires multiple <code>Guild Role Update</code> events</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild to get welcome screen of </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__roles.html">discord_roles</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -1923,7 +1923,7 @@ Fires multiple <code>Guild Role Update</code> events</dd></dl>
 Fires a <code>Guild Role Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild that the role belongs to </td></tr>
     <tr><td class="paramname">role_id</td><td>the unique id of the role to modify </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
@@ -1980,7 +1980,7 @@ Fires a <code>Guild Role Update</code> event</dd></dl>
 Fires a <code>Guild Role Delete</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">guild_id</td><td>the unique id of the guild that the role belongs to </td></tr>
     <tr><td class="paramname">role_id</td><td>the unique id of the role to delete </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>

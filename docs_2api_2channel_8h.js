@@ -62,7 +62,9 @@ var docs_2api_2channel_8h =
       [ "DISCORD_CHANNEL_GUILD_NEWS_THREAD", "docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea18fd19a920d0d4da67c1c514ee5cec50", null ],
       [ "DISCORD_CHANNEL_GUILD_PUBLIC_THREAD", "docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fead17ab895e52d4bff206d30047b5f1dcb", null ],
       [ "DISCORD_CHANNEL_GUILD_PRIVATE_THREAD", "docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea0226d4c910a2df5130af32890843ad55", null ],
-      [ "DISCORD_CHANNEL_GUILD_STAGE_VOICE", "docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea2683d254ac8e952800d5c621e151db79", null ]
+      [ "DISCORD_CHANNEL_GUILD_STAGE_VOICE", "docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea2683d254ac8e952800d5c621e151db79", null ],
+      [ "DISCORD_CHANNEL_GUILD_DIRECTORY", "docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea3c98945b6bfacba113a80372552d2e33", null ],
+      [ "DISCORD_CHANNEL_GUILD_FORUM", "docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea17fab716444735e95787796bb9099824", null ]
     ] ],
     [ "discord_video_quality_modes", "docs_2api_2channel_8h.html#a998f1864bc9a0b922f6fef690255695f", [
       [ "DISCORD_VIDEO_QUALITY_AUTO", "docs_2api_2channel_8h.html#a998f1864bc9a0b922f6fef690255695faa94022876bdc00f8181e4fa1ca0a1a8f", null ],

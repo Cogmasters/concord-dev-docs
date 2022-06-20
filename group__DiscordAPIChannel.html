@@ -295,7 +295,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>If the channel is a thread, a thread member object is included in the returned result</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to be retrieved </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__channel.html">discord_channel</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -347,7 +347,7 @@ Functions</h2></td></tr>
 <p>Update a channel's settings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to be modified </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__channel.html">discord_channel</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -401,7 +401,7 @@ Deleting a category does not delete its child channels; they will have their par
 Fires a <code>Channel Delete</code> event (or <code>Thread Delete</code> if the channel was a thread)</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to be deleted </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__channel.html">discord_channel</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -460,7 +460,7 @@ If the current user is missing the READ_MESSAGE_HISTORY permission in the channe
 The before, after, and around keys are mutually exclusive, only one may be passed at a time</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to get messages from </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__messages.html">discord_messages</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -516,7 +516,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>If operating on a guild channel, this endpoint requires the 'READ_MESSAGE_HISTORY' permission to be present on the current user </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel where the message resides </td></tr>
     <tr><td class="paramname">message_id</td><td>the message itself </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__message.html">discord_message</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -570,7 +570,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Message Create</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to send the message at </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__message.html">discord_message</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -626,7 +626,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>This endpoint requires the 'SEND_MESSAGES' permission, if the current user sent the message, or additionally the 'MANAGE_MESSAGES' permission, for all other messages, to be present for the current user</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the news channel that will crosspost </td></tr>
     <tr><td class="paramname">message_id</td><td>the message that will crospost </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__message.html">discord_message</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -691,7 +691,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Create a reaction for the message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">message_id</td><td>the message to receive a reaction </td></tr>
     <tr><td class="paramname">emoji_id</td><td>the emoji id (leave as 0 if not a custom emoji) </td></tr>
@@ -760,7 +760,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Delete a reaction the current user has made for the message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">message_id</td><td>the message to have a reaction deleted </td></tr>
     <tr><td class="paramname">emoji_id</td><td>the emoji id (leave as 0 if not a custom emoji) </td></tr>
@@ -835,7 +835,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Deletes another user's reaction. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">message_id</td><td>the message to have a reaction deleted </td></tr>
     <tr><td class="paramname">user_id</td><td>the user the reaction belongs to </td></tr>
@@ -911,7 +911,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Get a list of users that reacted with given emoji. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">message_id</td><td>the message reacted to </td></tr>
     <tr><td class="paramname">emoji_id</td><td>the emoji id (leave as 0 if not a custom emoji) </td></tr>
@@ -969,7 +969,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Deletes all reactions from message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">message_id</td><td>the message that will be purged of reactions </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1036,7 +1036,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Deletes all the reactions for a given emoji on message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">message_id</td><td>the message that will be purged of reactions from particular emoji </td></tr>
     <tr><td class="paramname">emoji_id</td><td>the emoji id (leave as 0 if not a custom emoji) </td></tr>
@@ -1099,7 +1099,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Edit a previously sent message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">message_id</td><td>the message that will be purged of reactions from particular emoji </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
@@ -1153,7 +1153,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Delete a message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">message_id</td><td>the message that will be purged of reactions from particular emoji </td></tr>
   </table>
@@ -1204,7 +1204,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Delete multiple messages in a single request. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">messages</td><td>the null-terminated list of messages to be deleted </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1263,7 +1263,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Edit the channel permission overwrites for a user or role in a channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">overwrite_id</td><td></td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
@@ -1311,7 +1311,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Get invites (with invite metadata) for the channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__invites.html">discord_invites</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -1365,7 +1365,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Create a new invite for the channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel that the message belongs to </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__invite.html">discord_invite</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -1420,7 +1420,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Delete a channel permission overwrite for a user or role in a channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to the permission deleted </td></tr>
     <tr><td class="paramname">overwrite_id</td><td>the id of the overwritten permission </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1467,7 +1467,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Post a typing indicator for the specified channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to post the typing indicator to </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
   </table>
@@ -1520,7 +1520,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>Requires MANAGE_WEBHOOKS permission in the target channel MANAGE_WEBHOOKS permission in the target channel</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to be followed </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__followed__channel.html">discord_followed_channel</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -1566,7 +1566,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Get all pinned messages in the channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel where the get pinned messages from </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__messages.html">discord_messages</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -1620,7 +1620,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Pin a message to a channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>channel to pin the message on </td></tr>
     <tr><td class="paramname">message_id</td><td>message to be pinned </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1675,7 +1675,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Unpin a message from a channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>channel for the message to be unpinned </td></tr>
     <tr><td class="paramname">message_id</td><td>message to be unpinned </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1736,7 +1736,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Adds a recipient to a Group DM using their access token. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>group to add the user in </td></tr>
     <tr><td class="paramname">user_id</td><td>user to be added </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
@@ -1790,7 +1790,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <p>Removes a recipient from a Group DM. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>channel for the user to be removed from </td></tr>
     <tr><td class="paramname">user_id</td><td>user to be removed </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -1850,7 +1850,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Thread Create</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>channel to start a thread on </td></tr>
     <tr><td class="paramname">message_id</td><td>message to start a thread from </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
@@ -1907,7 +1907,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Thread Create</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>channel to start a thread on </td></tr>
     <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__channel.html">discord_channel</a> will be sent over to its assigned <code>done</code> callback </td></tr>
@@ -1957,7 +1957,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Thread Members Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the thread to be joined </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
   </table>
@@ -2010,7 +2010,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Thread Members Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the thread to be joined </td></tr>
     <tr><td class="paramname">user_id</td><td>user to be added to thread </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -2058,7 +2058,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 <dl class="section note"><dt>Note</dt><dd>Fires a <code>Thread Members Update</code> event</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the thread to be removed from </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
   </table>
@@ -2113,7 +2113,7 @@ The before, after, and around keys are mutually exclusive, only one may be passe
 Requires <code>MANAGE_THREADS</code> permission</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the thread to be removed from </td></tr>
     <tr><td class="paramname">user_id</td><td>user to be removed </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
@@ -2163,7 +2163,7 @@ Requires <code>MANAGE_THREADS</code> permission</dd></dl>
 Requires <code>MANAGE_THREADS</code> permission</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the thread to be joined </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__thread__members.html">discord_thread_members</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -2208,10 +2208,10 @@ Requires <code>MANAGE_THREADS</code> permission</dd></dl>
 
 <p>Get all active threads in a given channel. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>replace with <a href="https://discord.com/developers/docs/resources/guild#list-active-threads">https://discord.com/developers/docs/resources/guild#list-active-threads</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Discord will deprecate this in V10 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Discord will deprecate this in V10 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to be searched for threads </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful a <a class="el" href="structdiscord__thread__response__body.html">discord_thread_response_body</a> will be sent over to its assigned <code>done</code> callback </td></tr>
   </table>
@@ -2269,7 +2269,7 @@ Requires <code>MANAGE_THREADS</code> permission</dd></dl>
 <p>Get public archived threads in a given channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to be searched for threads </td></tr>
     <tr><td class="paramname">before</td><td>return threads before this timestamp </td></tr>
     <tr><td class="paramname">limit</td><td>maximum number of threads to return </td></tr>
@@ -2329,7 +2329,7 @@ Requires <code>MANAGE_THREADS</code> permission</dd></dl>
 <p>Get private archived threads in a given channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to be searched for threads </td></tr>
     <tr><td class="paramname">before</td><td>return threads before this timestamp </td></tr>
     <tr><td class="paramname">limit</td><td>maximum number of threads to return </td></tr>
@@ -2389,7 +2389,7 @@ Requires <code>MANAGE_THREADS</code> permission</dd></dl>
 <p>Get private archived threads that current user has joined. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__Discord.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
+    <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">channel_id</td><td>the channel to be searched for threads </td></tr>
     <tr><td class="paramname">before</td><td>return threads before this timestamp </td></tr>
     <tr><td class="paramname">limit</td><td>maximum number of threads to return </td></tr>

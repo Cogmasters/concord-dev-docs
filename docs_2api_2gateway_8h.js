@@ -18,6 +18,7 @@ var docs_2api_2gateway_8h =
     [ "discord_request_guild_members", "structdiscord__request__guild__members.html", "structdiscord__request__guild__members" ],
     [ "discord_update_voice_state", "structdiscord__update__voice__state.html", "structdiscord__update__voice__state" ],
     [ "discord_ready", "structdiscord__ready.html", "structdiscord__ready" ],
+    [ "discord_auto_moderation_action_execution", "structdiscord__auto__moderation__action__execution.html", "structdiscord__auto__moderation__action__execution" ],
     [ "discord_thread_list_sync", "structdiscord__thread__list__sync.html", "structdiscord__thread__list__sync" ],
     [ "discord_thread_members_update", "structdiscord__thread__members__update.html", "structdiscord__thread__members__update" ],
     [ "discord_channel_pins_update", "structdiscord__channel__pins__update.html", "structdiscord__channel__pins__update" ],
@@ -48,6 +49,7 @@ var docs_2api_2gateway_8h =
     [ "discord_webhooks_update", "structdiscord__webhooks__update.html", "structdiscord__webhooks__update" ],
     [ "discord_session_start_limit", "structdiscord__session__start__limit.html", "structdiscord__session__start__limit" ],
     [ "discord_gateway_events", "docs_2api_2gateway_8h.html#a90ebb76de1682ce02a67a08b0510145b", [
+      [ "DISCORD_EV_NONE", "docs_2api_2gateway_8h.html#a90ebb76de1682ce02a67a08b0510145ba2d788670438aee140db1660d0fa520a9", null ],
       [ "DISCORD_EV_READY", "docs_2api_2gateway_8h.html#a90ebb76de1682ce02a67a08b0510145baf5b5589e87812c3b59fb9fd04ed49104", null ],
       [ "DISCORD_EV_RESUMED", "docs_2api_2gateway_8h.html#a90ebb76de1682ce02a67a08b0510145ba156123e22a5bef324bb5a193c89bf253", null ],
       [ "DISCORD_EV_RECONNECT", "docs_2api_2gateway_8h.html#a90ebb76de1682ce02a67a08b0510145ba0e25d8ec688833088a06d34435513b8a", null ],
