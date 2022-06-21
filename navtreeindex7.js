@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"structdiscord__invite.html#a5b88980d5abb29e8125038563c31698c":[6,0,149,7],
+"structdiscord__invite.html#a614d20629b65d1ce8ab9ac6b1dcf6e90":[6,0,149,11],
 "structdiscord__invite.html#a6ad8e0f79789530211f395a539d6baf0":[6,0,149,9],
 "structdiscord__invite.html#a70479ff0707f57229e5f23b374264e68":[6,0,149,6],
 "structdiscord__invite.html#a935de1f04625fa8c0afccee06ea1a468":[6,0,149,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "structdiscord__modify__webhook.html#a10c3687ed614394612472f2f24047297":[6,0,191,0],
 "structdiscord__modify__webhook.html#a5c43cc737fec731797eb72ae4f42fe88":[6,0,191,2],
 "structdiscord__modify__webhook.html#a96135d4ee89fe3eb6082391b955b25ec":[6,0,191,1],
-"structdiscord__modify__webhook__with__token.html":[6,0,192],
-"structdiscord__modify__webhook__with__token.html#a9c4f846c57ebfdcb714b9bb1bb0ca34d":[6,0,192,0],
-"structdiscord__modify__webhook__with__token.html#a9d664acd782c1668120bf91714d1ac8a":[6,0,192,1]
+"structdiscord__modify__webhook__with__token.html":[6,0,192]
 };

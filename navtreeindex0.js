@@ -44,6 +44,7 @@ var NAVTREEINDEX0 =
 "ban_8c-example.html":[8,12],
 "channel_8c-example.html":[8,4],
 "classes.html":[6,1],
+"cog-utils_8h_source.html":[7,0,0,0],
 "components_8c-example.html":[8,14],
 "concord-once_8h.html":[7,0,2,3],
 "concord-once_8h.html#a9a5555031ccfdb102424695dfaca0727":[7,0,2,3,0],
@@ -150,8 +151,8 @@ var NAVTREEINDEX0 =
 "docs_2api_2webhook_8h_source.html":[7,0,1,0,21],
 "embed_8c-example.html":[8,5],
 "emoji_8c-example.html":[8,10],
-"error_8h.html":[7,0,0,0],
-"error_8h_source.html":[7,0,0,0],
+"error_8h.html":[7,0,0,1],
+"error_8h_source.html":[7,0,0,1],
 "examples.html":[8],
 "fetch-messages_8c-example.html":[8,6],
 "files.html":[7,0],
@@ -178,8 +179,8 @@ var NAVTREEINDEX0 =
 "functions_t.html":[6,2,0,19],
 "functions_u.html":[6,2,0,20],
 "functions_v.html":[6,2,0,21],
-"functions_vars.html":[6,2,1],
 "functions_vars.html":[6,2,1,0],
+"functions_vars.html":[6,2,1],
 "functions_vars_b.html":[6,2,1,1],
 "functions_vars_c.html":[6,2,1,2],
 "functions_vars_d.html":[6,2,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__ConcordTypes.html#ga8df876efcd9f4b764d1f4daa740fdecd":[5,1,3],
 "group__ConcordTypes.html#gade688cc0675303c10115a392c09d3b8a":[5,1,6],
 "group__DiscordAPI.html":[5,4],
-"group__DiscordAPIAuditLog.html":[5,4,1],
-"group__DiscordAPIAuditLog.html#ga50f19c451c3158041ab8781f6f8e9613":[5,4,1,1]
+"group__DiscordAPIAuditLog.html":[5,4,1]
 };

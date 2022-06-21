@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"structdiscord__create__guild__scheduled__event.html#a7efb3f11e0d6916a1c9d7e6f864d4ad3":[6,0,67,4],
+"structdiscord__create__guild__scheduled__event.html#a809ffa99b5ded96c0338a9d281dcfb35":[6,0,67,5],
 "structdiscord__create__guild__scheduled__event.html#abbde0fabda845c8718544545b0a7bdab":[6,0,67,2],
 "structdiscord__create__guild__scheduled__event.html#adc01a8ae6daf7ffdcac87e7fb6f3cc09":[6,0,67,7],
 "structdiscord__create__guild__scheduled__event.html#ae4938dfb942c54551e774c5b1f98ba99":[6,0,67,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "structdiscord__guild.html#a1fefc102463e7230718e60cbdbe8e85a":[6,0,112,18],
 "structdiscord__guild.html#a206e938ca74fc8b283b8e10bf8a1c57b":[6,0,112,1],
 "structdiscord__guild.html#a26c52e53020c8ad2cb1790a3ae14e759":[6,0,112,3],
-"structdiscord__guild.html#a293f465bb825c6fbac4f64e7c27f5949":[6,0,112,22],
-"structdiscord__guild.html#a29665f8892f36a10edf67b25ff77150c":[6,0,112,37],
-"structdiscord__guild.html#a2a75b90a8066254424ada136573666c0":[6,0,112,9]
+"structdiscord__guild.html#a293f465bb825c6fbac4f64e7c27f5949":[6,0,112,22]
 };

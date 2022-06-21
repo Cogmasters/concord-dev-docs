@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"structdiscord__modify__webhook__with__token.html#a9c4f846c57ebfdcb714b9bb1bb0ca34d":[6,0,192,0],
+"structdiscord__modify__webhook__with__token.html#a9d664acd782c1668120bf91714d1ac8a":[6,0,192,1],
 "structdiscord__optional__audit__entry__info.html":[6,0,193],
 "structdiscord__optional__audit__entry__info.html#a177ac7d9ddd6b51eb80b6a8c85f2adbb":[6,0,193,5],
 "structdiscord__optional__audit__entry__info.html#a3c7f76ede6d60c4d935b12381196709e":[6,0,193,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "structdiscord__ret__guild__member.html#abedb56577b88c394b43b5be0cf52a8f0":[5,4,5,4,4],
 "structdiscord__ret__guild__member.html#ace12f6e20412da9a333fa64b9be4a6b4":[5,4,5,4,6],
 "structdiscord__ret__guild__members.html":[5,4,5,5],
-"structdiscord__ret__guild__members.html#a03aa133014516ff2a1c8ce09a1347169":[5,4,5,5,1],
-"structdiscord__ret__guild__members.html#a15194a621381d00b1f3434373ea453a2":[5,4,5,5,5],
-"structdiscord__ret__guild__members.html#a445ed5753e14236239d2f1b1e4616e81":[5,4,5,5,3]
+"structdiscord__ret__guild__members.html#a03aa133014516ff2a1c8ce09a1347169":[5,4,5,5,1]
 };
