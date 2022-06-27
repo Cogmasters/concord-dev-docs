@@ -194,11 +194,13 @@ $(document).ready(function(){initNavTree('manual-dm_8c-example.html',''); initRe
 <div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="structdiscord.html">discord</a> *client = <a id="a22" name="a22"></a><a class="code hl_function" href="group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb">discord_config_init</a>(config_file);</div>
 <div class="line">    assert(NULL != client &amp;&amp; <span class="stringliteral">&quot;Couldn&#39;t initialize client&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    <a id="a23" name="a23"></a><a class="code hl_function" href="group__DiscordEvents.html#gaddabbe9b0e4ffd41e25a3870bb6c1676">discord_set_on_ready</a>(client, &amp;on_ready);</div>
-<div class="line">    <a id="a24" name="a24"></a><a class="code hl_function" href="group__DiscordEvents.html#ga4681ad4a8b3ec7c1c777a62b201aec8f">discord_set_on_message_create</a>(client, &amp;on_dm_receive);</div>
+<div class="line">    <a id="a23" name="a23"></a><a class="code hl_function" href="group__DiscordEvents.html#ga329b97b24bf9a0f4a6a4477ee91c804a">discord_add_intents</a>(client, DISCORD_GATEWAY_MESSAGE_CONTENT);</div>
+<div class="line"> </div>
+<div class="line">    <a id="a24" name="a24"></a><a class="code hl_function" href="group__DiscordEvents.html#gaddabbe9b0e4ffd41e25a3870bb6c1676">discord_set_on_ready</a>(client, &amp;on_ready);</div>
+<div class="line">    <a id="a25" name="a25"></a><a class="code hl_function" href="group__DiscordEvents.html#ga4681ad4a8b3ec7c1c777a62b201aec8f">discord_set_on_message_create</a>(client, &amp;on_dm_receive);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Keep just DISCORD_GATEWAY_DIRECT_MESSAGES */</span></div>
-<div class="line">    <a id="a25" name="a25"></a><a class="code hl_function" href="group__DiscordEvents.html#ga445a7a14313f80146c8c4daa146dffa1">discord_remove_intents</a>(client, DISCORD_GATEWAY_GUILD_MESSAGES);</div>
+<div class="line">    <a id="a26" name="a26"></a><a class="code hl_function" href="group__DiscordEvents.html#ga445a7a14313f80146c8c4daa146dffa1">discord_remove_intents</a>(client, DISCORD_GATEWAY_GUILD_MESSAGES);</div>
 <div class="line"> </div>
 <div class="line">    print_usage();</div>
 <div class="line">    fgetc(stdin); <span class="comment">// wait for input</span></div>
@@ -206,10 +208,10 @@ $(document).ready(function(){initNavTree('manual-dm_8c-example.html',''); initRe
 <div class="line">    pthread_t tid;</div>
 <div class="line">    pthread_create(&amp;tid, NULL, &amp;read_input, client);</div>
 <div class="line"> </div>
-<div class="line">    <a id="a26" name="a26"></a><a class="code hl_function" href="group__DiscordClient.html#ga10b7d422776acf4fb67877f8f1d28af4">discord_run</a>(client);</div>
+<div class="line">    <a id="a27" name="a27"></a><a class="code hl_function" href="group__DiscordClient.html#ga10b7d422776acf4fb67877f8f1d28af4">discord_run</a>(client);</div>
 <div class="line"> </div>
-<div class="line">    <a id="a27" name="a27"></a><a class="code hl_function" href="group__DiscordClient.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a>(client);</div>
-<div class="line">    <a id="a28" name="a28"></a><a class="code hl_function" href="concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a>();</div>
+<div class="line">    <a id="a28" name="a28"></a><a class="code hl_function" href="group__DiscordClient.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a>(client);</div>
+<div class="line">    <a id="a29" name="a29"></a><a class="code hl_function" href="concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="aconcord-once_8h_html_a9a5555031ccfdb102424695dfaca0727"><div class="ttname"><a href="concord-once_8h.html#a9a5555031ccfdb102424695dfaca0727">ccord_global_init</a></div><div class="ttdeci">CCORDcode ccord_global_init()</div><div class="ttdoc">Initialize global shared-resources not API-specific.</div></div>
 <div class="ttc" id="aconcord-once_8h_html_ab214960b95e1af11bbfc98f1b310598a"><div class="ttname"><a href="concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a">ccord_global_cleanup</a></div><div class="ttdeci">void ccord_global_cleanup()</div><div class="ttdoc">Cleanup global shared-resources.</div></div>
@@ -222,6 +224,7 @@ $(document).ready(function(){initNavTree('manual-dm_8c-example.html',''); initRe
 <div class="ttc" id="agroup__DiscordClient_html_ga009d0e352a30c00f8b4765712fcfa5a9"><div class="ttname"><a href="group__DiscordClient.html#ga009d0e352a30c00f8b4765712fcfa5a9">discord_cleanup</a></div><div class="ttdeci">void discord_cleanup(struct discord *client)</div><div class="ttdoc">Free a Discord Client handle.</div></div>
 <div class="ttc" id="agroup__DiscordClient_html_ga10b7d422776acf4fb67877f8f1d28af4"><div class="ttname"><a href="group__DiscordClient.html#ga10b7d422776acf4fb67877f8f1d28af4">discord_run</a></div><div class="ttdeci">CCORDcode discord_run(struct discord *client)</div><div class="ttdoc">Start a connection to the Discord Gateway.</div></div>
 <div class="ttc" id="agroup__DiscordClient_html_ga75bbe1d3eb9e6d03953b6313e5543afb"><div class="ttname"><a href="group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb">discord_config_init</a></div><div class="ttdeci">struct discord * discord_config_init(const char config_file[])</div><div class="ttdoc">Create a Discord Client handle by a config.json file.</div></div>
+<div class="ttc" id="agroup__DiscordEvents_html_ga329b97b24bf9a0f4a6a4477ee91c804a"><div class="ttname"><a href="group__DiscordEvents.html#ga329b97b24bf9a0f4a6a4477ee91c804a">discord_add_intents</a></div><div class="ttdeci">void discord_add_intents(struct discord *client, uint64_t code)</div><div class="ttdoc">Subscribe to Discord Events.</div></div>
 <div class="ttc" id="agroup__DiscordEvents_html_ga445a7a14313f80146c8c4daa146dffa1"><div class="ttname"><a href="group__DiscordEvents.html#ga445a7a14313f80146c8c4daa146dffa1">discord_remove_intents</a></div><div class="ttdeci">void discord_remove_intents(struct discord *client, uint64_t code)</div><div class="ttdoc">Unsubscribe from Discord Events.</div></div>
 <div class="ttc" id="agroup__DiscordEvents_html_ga4681ad4a8b3ec7c1c777a62b201aec8f"><div class="ttname"><a href="group__DiscordEvents.html#ga4681ad4a8b3ec7c1c777a62b201aec8f">discord_set_on_message_create</a></div><div class="ttdeci">void discord_set_on_message_create(struct discord *client, void(*callback)(struct discord *client, const struct discord_message *event))</div><div class="ttdoc">Triggers when a message is created.</div></div>
 <div class="ttc" id="agroup__DiscordEvents_html_gaddabbe9b0e4ffd41e25a3870bb6c1676"><div class="ttname"><a href="group__DiscordEvents.html#gaddabbe9b0e4ffd41e25a3870bb6c1676">discord_set_on_ready</a></div><div class="ttdeci">void discord_set_on_ready(struct discord *client, void(*callback)(struct discord *client, const struct discord_ready *event))</div><div class="ttdoc">Triggers when the client session is ready.</div></div>

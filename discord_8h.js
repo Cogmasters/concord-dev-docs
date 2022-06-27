@@ -1,5 +1,6 @@
 var discord_8h =
 [
+    [ "DISCORD_VERSION", "discord_8h.html#a20e199389d0d2cd062fb8ed9ba87d258", null ],
     [ "CCORD_DISCORD_JSON_CODE", "group__ConcordError.html#ga108e5c7e599dcf335f0d883f5c051a4e", null ],
     [ "CCORD_DISCORD_BAD_AUTH", "group__ConcordError.html#ga9355844f4e91b5a12e1bc25540cac2e4", null ],
     [ "CCORD_DISCORD_RATELIMIT", "group__ConcordError.html#ga17b4baf3b66ea2862c4981e4f3fc1639", null ],

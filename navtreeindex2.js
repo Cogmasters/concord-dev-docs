@@ -1,5 +1,12 @@
 var NAVTREEINDEX2 =
 {
+"group__DiscordEvents.html#ga5b0d4854e7df278d723741d26a537438":[5,2,1,37],
+"group__DiscordEvents.html#ga6bcef3a29e7450e57c049dabc8072190":[5,2,1,53],
+"group__DiscordEvents.html#ga6bdf65c62373cc394bb55191b2d45520":[5,2,1,51],
+"group__DiscordEvents.html#ga6faaffc5f834f2558236bfc966950f57":[5,2,1,49],
+"group__DiscordEvents.html#ga6fc7bbb154035fb3675d0a19e56a4059":[5,2,1,15],
+"group__DiscordEvents.html#ga73c342d77c8eef686840c50d438225a7":[5,2,1,40],
+"group__DiscordEvents.html#ga73d665baa6f30ab0e3b6fceac7deadbc":[5,2,1,33],
 "group__DiscordEvents.html#ga77ca093688478a73073a7cb0ffca8bf9":[5,2,1,31],
 "group__DiscordEvents.html#ga7b24c1f52a9376986f6e3cd98d1e582e":[5,2,1,72],
 "group__DiscordEvents.html#ga7b7c9c05b4b20a02b86d00615f6b31b9":[5,2,1,66],
@@ -195,6 +202,7 @@ var NAVTREEINDEX2 =
 "group__DiscordVoiceSpeakingFlags.html#ga18a3b5be0979b1ac54dd0c4dc2a2d2b6":[5,3,6,2],
 "group__DiscordVoiceSpeakingFlags.html#ga4ecc1a7bd7edeb9fd463a33db483dbb3":[5,3,6,0],
 "group__DiscordVoiceSpeakingFlags.html#gad4b69ab68988c7c90ae44ae8a22d7765":[5,3,6,1],
+"group__Log__C__Datatypes.html":[5,6],
 "guild-template_8c-example.html":[8,13],
 "guild_8c-example.html":[8,11],
 "guild__scheduled__event_8h.html":[7,0,1,0,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX2 =
 "index.html#autotoc_md23":[0,6,0],
 "index.html#autotoc_md24":[0,6,1],
 "index.html#autotoc_md25":[0,7],
-"index.html#autotoc_md26":[0,7,0],
-"index.html#autotoc_md27":[0,7,1],
-"index.html#autotoc_md28":[0,7,1,0],
-"index.html#autotoc_md29":[0,7,1,1],
-"index.html#autotoc_md3":[0,0,0,0],
-"index.html#autotoc_md30":[0,7,1,2],
-"index.html#autotoc_md32":[0,8],
-"index.html#autotoc_md33":[0,8,0],
-"index.html#autotoc_md34":[0,8,1]
+"index.html#autotoc_md26":[0,7,0]
 };

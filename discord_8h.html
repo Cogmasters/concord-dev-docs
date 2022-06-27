@@ -137,11 +137,14 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a20e199389d0d2cd062fb8ed9ba87d258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discord_8h.html#a20e199389d0d2cd062fb8ed9ba87d258">DISCORD_VERSION</a>&#160;&#160;&#160;&quot;10&quot;</td></tr>
+<tr class="memdesc:a20e199389d0d2cd062fb8ed9ba87d258"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Discord API version to use.  <a href="discord_8h.html#a20e199389d0d2cd062fb8ed9ba87d258">More...</a><br /></td></tr>
+<tr class="separator:a20e199389d0d2cd062fb8ed9ba87d258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a273fbb535b3d35f36c0f8ae9d57365a9"><td class="memItemLeft" align="right" valign="top"><a id="a273fbb535b3d35f36c0f8ae9d57365a9" name="a273fbb535b3d35f36c0f8ae9d57365a9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_API_BASE_URL</b>&#160;&#160;&#160;&quot;https://discord.com/api/v9&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_API_BASE_URL</b>&#160;&#160;&#160;&quot;https://discord.com/api/v&quot; DISCORD_VERSION</td></tr>
 <tr class="separator:a273fbb535b3d35f36c0f8ae9d57365a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0b7cd0af2a896c3546ee54502717e0"><td class="memItemLeft" align="right" valign="top"><a id="aaa0b7cd0af2a896c3546ee54502717e0" name="aaa0b7cd0af2a896c3546ee54502717e0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_URL_SUFFIX</b>&#160;&#160;&#160;&quot;?v=9&amp;encoding=json&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_GATEWAY_URL_SUFFIX</b>&#160;&#160;&#160;&quot;?v=&quot; DISCORD_VERSION &quot;&amp;encoding=json&quot;</td></tr>
 <tr class="separator:aaa0b7cd0af2a896c3546ee54502717e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf09d89d32a9a1a2cf8628c017d1a444a"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_MAX_NAME_LEN</b>&#160;&#160;&#160;4 * 100 + 1</td></tr>
@@ -282,7 +285,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__discord_claim</b> (
 <tr class="memitem:gab751b38fe43b55b59592560798b01c07"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#gab751b38fe43b55b59592560798b01c07">discord_timestamp_us</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
 <tr class="memdesc:gab751b38fe43b55b59592560798b01c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current timestamp (in microseconds)  <a href="group__DiscordClient.html#gab751b38fe43b55b59592560798b01c07">More...</a><br /></td></tr>
 <tr class="separator:gab751b38fe43b55b59592560798b01c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ecca42ef5a99f9bfba9940b926068b3"><td class="memItemLeft" align="right" valign="top">struct logconf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#ga5ecca42ef5a99f9bfba9940b926068b3">discord_get_logconf</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
+<tr class="memitem:ga5ecca42ef5a99f9bfba9940b926068b3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structlogconf.html">logconf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#ga5ecca42ef5a99f9bfba9940b926068b3">discord_get_logconf</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
 <tr class="memdesc:ga5ecca42ef5a99f9bfba9940b926068b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve client's logging module for configuration purposes.  <a href="group__DiscordClient.html#ga5ecca42ef5a99f9bfba9940b926068b3">More...</a><br /></td></tr>
 <tr class="separator:ga5ecca42ef5a99f9bfba9940b926068b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab53f8fde50dc0fa5311a9ffc9751b655"><td class="memItemLeft" align="right" valign="top">struct io_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#gab53f8fde50dc0fa5311a9ffc9751b655">discord_get_io_poller</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
@@ -320,7 +323,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__discord_claim</b> (
 <div class="textblock"><p >Public functions and datatypes. </p>
 <dl class="section author"><dt>Author</dt><dd>Cogmasters</dd></dl>
 <p>These symbols are organized in a intuitive fashion to be easily matched to the official Discord API docs </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/intro">https://discord.com/developers/docs/intro</a> </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a20e199389d0d2cd062fb8ed9ba87d258" name="a20e199389d0d2cd062fb8ed9ba87d258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e199389d0d2cd062fb8ed9ba87d258">&#9670;&nbsp;</a></span>DISCORD_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DISCORD_VERSION&#160;&#160;&#160;&quot;10&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Discord API version to use. </p>
+<dl class="section warning"><dt>Warning</dt><dd>only change this if you know what you are doing! </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

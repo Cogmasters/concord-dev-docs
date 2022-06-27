@@ -148,8 +148,8 @@ Slash Commands (new method)</h4>
 <div class="ttc" id="agroup__DiscordEvents_html_gaddabbe9b0e4ffd41e25a3870bb6c1676"><div class="ttname"><a href="group__DiscordEvents.html#gaddabbe9b0e4ffd41e25a3870bb6c1676">discord_set_on_ready</a></div><div class="ttdeci">void discord_set_on_ready(struct discord *client, void(*callback)(struct discord *client, const struct discord_ready *event))</div><div class="ttdoc">Triggers when the client session is ready.</div></div>
 <div class="ttc" id="ainteractions_8h_html_af7a2bdc22799b9d1ac556a6ba7206c83a3409efaf45118256f4a33d4b15d76240"><div class="ttname"><a href="interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a3409efaf45118256f4a33d4b15d76240">DISCORD_INTERACTION_CHANNEL_MESSAGE_WITH_SOURCE</a></div><div class="ttdeci">@ DISCORD_INTERACTION_CHANNEL_MESSAGE_WITH_SOURCE</div><div class="ttdef"><b>Definition:</b> interactions.h:33</div></div>
 <div class="ttc" id="astructdiscord__application_html_a6eb2278fffac7a78310c0cae49dc5c97"><div class="ttname"><a href="structdiscord__application.html#a6eb2278fffac7a78310c0cae49dc5c97">discord_application::id</a></div><div class="ttdeci">u64snowflake id</div><div class="ttdef"><b>Definition:</b> application.h:37</div></div>
-<div class="ttc" id="astructdiscord__create__guild__application__command_html"><div class="ttname"><a href="structdiscord__create__guild__application__command.html">discord_create_guild_application_command</a></div><div class="ttdef"><b>Definition:</b> application_commands.h:217</div></div>
-<div class="ttc" id="astructdiscord__create__guild__application__command_html_a27fb5e8a69d4d72f7c6853e06f881a9f"><div class="ttname"><a href="structdiscord__create__guild__application__command.html#a27fb5e8a69d4d72f7c6853e06f881a9f">discord_create_guild_application_command::name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> application_commands.h:219</div></div>
+<div class="ttc" id="astructdiscord__create__guild__application__command_html"><div class="ttname"><a href="structdiscord__create__guild__application__command.html">discord_create_guild_application_command</a></div><div class="ttdef"><b>Definition:</b> application_commands.h:242</div></div>
+<div class="ttc" id="astructdiscord__create__guild__application__command_html_a27fb5e8a69d4d72f7c6853e06f881a9f"><div class="ttname"><a href="structdiscord__create__guild__application__command.html#a27fb5e8a69d4d72f7c6853e06f881a9f">discord_create_guild_application_command::name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> application_commands.h:244</div></div>
 <div class="ttc" id="astructdiscord__interaction__callback__data_html"><div class="ttname"><a href="structdiscord__interaction__callback__data.html">discord_interaction_callback_data</a></div><div class="ttdef"><b>Definition:</b> interactions.h:133</div></div>
 <div class="ttc" id="astructdiscord__interaction__response_html"><div class="ttname"><a href="structdiscord__interaction__response.html">discord_interaction_response</a></div><div class="ttdef"><b>Definition:</b> interactions.h:125</div></div>
 <div class="ttc" id="astructdiscord__interaction__response_html_a5f8a72eedbc0d2e5d99d7f31f99dae6e"><div class="ttname"><a href="structdiscord__interaction__response.html#a5f8a72eedbc0d2e5d99d7f31f99dae6e">discord_interaction_response::type</a></div><div class="ttdeci">enum discord_interaction_callback_types type</div><div class="ttdef"><b>Definition:</b> interactions.h:127</div></div>
@@ -179,7 +179,7 @@ Message Commands (old method)</h4>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>) {</div>
 <div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="structdiscord.html">discord</a> *client = <a class="code hl_function" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d">discord_init</a>(BOT_TOKEN);</div>
-<div class="line">    discord_add_intent(client, 1 &lt;&lt; 15); <span class="comment">// required for message contents</span></div>
+<div class="line">    discord_add_intent(client, DISCORD_GATEWAY_MESSAGE_CONTENT);</div>
 <div class="line">    <a class="code hl_function" href="group__DiscordEvents.html#gaddabbe9b0e4ffd41e25a3870bb6c1676">discord_set_on_ready</a>(client, &amp;on_ready);</div>
 <div class="line">    <a class="code hl_function" href="group__DiscordEvents.html#ga4681ad4a8b3ec7c1c777a62b201aec8f">discord_set_on_message_create</a>(client, &amp;on_message);</div>
 <div class="line">    <a class="code hl_function" href="group__DiscordClient.html#ga10b7d422776acf4fb67877f8f1d28af4">discord_run</a>(client);</div>
@@ -254,7 +254,8 @@ Special notes for non-Linux systems</h3>
 </div><!-- fragment --><p> On Windows with Cygwin, you might need to pass both arguments to use POSIX threading: </p><div class="fragment"><div class="line">$ CFLAGS=&quot;-pthread -lpthread&quot; make</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md18"></a>
 Configuring Concord</h2>
-<p >The following outlines the default fields of <code>config.json</code> </p><div class="fragment"><div class="line">{</div>
+<p ><a href="https://cogmasters.github.io/concord/group__Discord.html#ga75bbe1d3eb9e6d03953b6313e5543afb">discord_config_init()</a> is the initialization method that allows configuring your bot without recompiling.</p>
+<p >The following outlines <code>config.json</code> fields: </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;logging&quot;: { // logging directives</div>
 <div class="line">    &quot;level&quot;: &quot;trace&quot;,        // trace, debug, info, warn, error, fatal</div>
 <div class="line">    &quot;filename&quot;: &quot;bot.log&quot;,   // the log output file</div>
@@ -273,9 +274,13 @@ Configuring Concord</h2>
 <div class="line">      &quot;enable&quot;: false,                 // enable default command prefix</div>
 <div class="line">      &quot;prefix&quot;: &quot;YOUR-COMMANDS-PREFIX&quot; // replace with your prefix</div>
 <div class="line">    }</div>
-<div class="line">  }</div>
+<div class="line">  },</div>
+<div class="line">  ... // here you can add your custom fields *</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md19"></a>
+</div><!-- fragment --><ul>
+<li><em>Your custom field contents can be fetched with <a href="https://cogmasters.github.io/concord/group__Discord.html#gac4486003ffab83de397c0bebb74b3307">discord_config_get_field()</a></em></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Test Copycat-Bot</h2>
 <ol type="1">
 <li>Get your bot token and add it to <code>config.json</code>, by assigning it to discord's "token" field. There are well written instructions from <a href="https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&amp;-getting-a-token">discord-irc</a> explaining how to get your bot token and adding it to a server.</li>

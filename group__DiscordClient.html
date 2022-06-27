@@ -179,7 +179,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__discord_claim</b> (
 <tr class="memitem:gab751b38fe43b55b59592560798b01c07"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#gab751b38fe43b55b59592560798b01c07">discord_timestamp_us</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
 <tr class="memdesc:gab751b38fe43b55b59592560798b01c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current timestamp (in microseconds)  <a href="group__DiscordClient.html#gab751b38fe43b55b59592560798b01c07">More...</a><br /></td></tr>
 <tr class="separator:gab751b38fe43b55b59592560798b01c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ecca42ef5a99f9bfba9940b926068b3"><td class="memItemLeft" align="right" valign="top">struct logconf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#ga5ecca42ef5a99f9bfba9940b926068b3">discord_get_logconf</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
+<tr class="memitem:ga5ecca42ef5a99f9bfba9940b926068b3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structlogconf.html">logconf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#ga5ecca42ef5a99f9bfba9940b926068b3">discord_get_logconf</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
 <tr class="memdesc:ga5ecca42ef5a99f9bfba9940b926068b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve client's logging module for configuration purposes.  <a href="group__DiscordClient.html#ga5ecca42ef5a99f9bfba9940b926068b3">More...</a><br /></td></tr>
 <tr class="separator:ga5ecca42ef5a99f9bfba9940b926068b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab53f8fde50dc0fa5311a9ffc9751b655"><td class="memItemLeft" align="right" valign="top">struct io_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#gab53f8fde50dc0fa5311a9ffc9751b655">discord_get_io_poller</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
@@ -360,8 +360,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__discord_claim</b> (
 </div><div class="memdoc">
 
 <p>Get the contents from the config file field. </p>
-<dl class="section note"><dt>Note</dt><dd>only works if your bot has been initialized with <a class="el" href="group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb" title="Create a Discord Client handle by a config.json file.">discord_config_init()</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
+<dl class="section note"><dt>Note</dt><dd>your bot <b>MUST</b> have been initialized with <a class="el" href="group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb" title="Create a Discord Client handle by a config.json file.">discord_config_init()</a></dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// Assume the following custom config.json field to be extracted</span></div>
+<div class="line"><span class="comment">// &quot;field&quot;: { &quot;foo&quot;: &quot;a string&quot;, &quot;bar&quot;: 1234 }</span></div>
+<div class="line"> </div>
+<div class="line">...</div>
+<div class="line">struct <a class="code hl_struct" href="structccord__szbuf__readonly.html">ccord_szbuf_readonly</a> value;</div>
+<div class="line"><span class="keywordtype">char</span> foo[128];</div>
+<div class="line"><span class="keywordtype">long</span> bar;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// field.foo</span></div>
+<div class="line">value = <a class="code hl_function" href="group__DiscordClient.html#gac4486003ffab83de397c0bebb74b3307">discord_config_get_field</a>(client, (<span class="keywordtype">char</span> *[2]){ <span class="stringliteral">&quot;field&quot;</span>, <span class="stringliteral">&quot;foo&quot;</span> }, 2);</div>
+<div class="line">snprintf(foo, <span class="keyword">sizeof</span>(foo), <span class="stringliteral">&quot;%.*s&quot;</span>, (<span class="keywordtype">int</span>)value.<a class="code hl_variable" href="structccord__szbuf__readonly.html#a5435058482481e98187540c2a4a317b0">size</a>, value.<a class="code hl_variable" href="structccord__szbuf__readonly.html#ad62474a4a590866e356b8de80ee8b74a">start</a>);</div>
+<div class="line"><span class="comment">// field.bar</span></div>
+<div class="line">value = <a class="code hl_function" href="group__DiscordClient.html#gac4486003ffab83de397c0bebb74b3307">discord_config_get_field</a>(client, (<span class="keywordtype">char</span> *[2]){ <span class="stringliteral">&quot;field&quot;</span>, <span class="stringliteral">&quot;bar&quot;</span> }, 2);</div>
+<div class="line">bar = strtol(value.<a class="code hl_variable" href="structccord__szbuf__readonly.html#ad62474a4a590866e356b8de80ee8b74a">start</a>, NULL, 10);</div>
+<div class="line"> </div>
+<div class="line">printf(<span class="stringliteral">&quot;%s %ld&quot;</span>, foo, bar); <span class="comment">// &quot;a string&quot; 1234</span></div>
+<div class="ttc" id="agroup__DiscordClient_html_gac4486003ffab83de397c0bebb74b3307"><div class="ttname"><a href="group__DiscordClient.html#gac4486003ffab83de397c0bebb74b3307">discord_config_get_field</a></div><div class="ttdeci">struct ccord_szbuf_readonly discord_config_get_field(struct discord *client, char *const path[], unsigned depth)</div><div class="ttdoc">Get the contents from the config file field.</div></div>
+<div class="ttc" id="astructccord__szbuf__readonly_html"><div class="ttname"><a href="structccord__szbuf__readonly.html">ccord_szbuf_readonly</a></div><div class="ttdoc">Read-only generic sized buffer.</div><div class="ttdef"><b>Definition:</b> types.h:55</div></div>
+<div class="ttc" id="astructccord__szbuf__readonly_html_a5435058482481e98187540c2a4a317b0"><div class="ttname"><a href="structccord__szbuf__readonly.html#a5435058482481e98187540c2a4a317b0">ccord_szbuf_readonly::size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition:</b> types.h:59</div></div>
+<div class="ttc" id="astructccord__szbuf__readonly_html_ad62474a4a590866e356b8de80ee8b74a"><div class="ttname"><a href="structccord__szbuf__readonly.html#ad62474a4a590866e356b8de80ee8b74a">ccord_szbuf_readonly::start</a></div><div class="ttdeci">const char * start</div><div class="ttdef"><b>Definition:</b> types.h:57</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb" title="Create a Discord Client handle by a config.json file.">discord_config_init()</a> </td></tr>
     <tr><td class="paramname">path</td><td>the JSON key path </td></tr>
@@ -423,7 +443,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__discord_claim</b> (
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#a48">audit-log.c</a>, <a class="el" href="ban_8c-example.html#a23">ban.c</a>, <a class="el" href="channel_8c-example.html#a61">channel.c</a>, <a class="el" href="components_8c-example.html#a40">components.c</a>, <a class="el" href="embed_8c-example.html#a39">embed.c</a>, <a class="el" href="emoji_8c-example.html#a37">emoji.c</a>, <a class="el" href="fetch-messages_8c-example.html#a42">fetch-messages.c</a>, <a class="el" href="guild-template_8c-example.html#a30">guild-template.c</a>, <a class="el" href="guild_8c-example.html#a59">guild.c</a>, <a class="el" href="invite_8c-example.html#a29">invite.c</a>, <a class="el" href="manual-dm_8c-example.html#a27">manual-dm.c</a>, <a class="el" href="pin_8c-example.html#a32">pin.c</a>, <a class="el" href="reaction_8c-example.html#a39">reaction.c</a>, <a class="el" href="slash-commands_8c-example.html#a42">slash-commands.c</a>, <a class="el" href="slash-commands2_8c-example.html#a55">slash-commands2.c</a>, <a class="el" href="timers_8c-example.html#a15">timers.c</a>, and <a class="el" href="webhook_8c-example.html#a12">webhook.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#a48">audit-log.c</a>, <a class="el" href="ban_8c-example.html#a23">ban.c</a>, <a class="el" href="channel_8c-example.html#a61">channel.c</a>, <a class="el" href="components_8c-example.html#a40">components.c</a>, <a class="el" href="embed_8c-example.html#a39">embed.c</a>, <a class="el" href="emoji_8c-example.html#a37">emoji.c</a>, <a class="el" href="fetch-messages_8c-example.html#a42">fetch-messages.c</a>, <a class="el" href="guild-template_8c-example.html#a30">guild-template.c</a>, <a class="el" href="guild_8c-example.html#a59">guild.c</a>, <a class="el" href="invite_8c-example.html#a29">invite.c</a>, <a class="el" href="manual-dm_8c-example.html#a28">manual-dm.c</a>, <a class="el" href="pin_8c-example.html#a32">pin.c</a>, <a class="el" href="reaction_8c-example.html#a39">reaction.c</a>, <a class="el" href="slash-commands_8c-example.html#a42">slash-commands.c</a>, <a class="el" href="slash-commands2_8c-example.html#a55">slash-commands2.c</a>, <a class="el" href="timers_8c-example.html#a15">timers.c</a>, and <a class="el" href="webhook_8c-example.html#a12">webhook.c</a>.</dd>
 </dl>
 
 </div>
@@ -479,7 +499,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__discord_claim</b> (
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga4ca5a90a1068552190074f603f68b587">CCORDcode</a> for how the operation went, <a class="el" href="group__ConcordError.html#ga0b2454f88baeff7a3d492bb59227ab0f">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#a47">audit-log.c</a>, <a class="el" href="ban_8c-example.html#a22">ban.c</a>, <a class="el" href="channel_8c-example.html#a60">channel.c</a>, <a class="el" href="components_8c-example.html#a39">components.c</a>, <a class="el" href="embed_8c-example.html#a38">embed.c</a>, <a class="el" href="emoji_8c-example.html#a36">emoji.c</a>, <a class="el" href="guild-template_8c-example.html#a29">guild-template.c</a>, <a class="el" href="guild_8c-example.html#a58">guild.c</a>, <a class="el" href="invite_8c-example.html#a28">invite.c</a>, <a class="el" href="manual-dm_8c-example.html#a26">manual-dm.c</a>, <a class="el" href="pin_8c-example.html#a31">pin.c</a>, <a class="el" href="reaction_8c-example.html#a38">reaction.c</a>, <a class="el" href="slash-commands_8c-example.html#a41">slash-commands.c</a>, <a class="el" href="slash-commands2_8c-example.html#a54">slash-commands2.c</a>, and <a class="el" href="timers_8c-example.html#a14">timers.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#a47">audit-log.c</a>, <a class="el" href="ban_8c-example.html#a22">ban.c</a>, <a class="el" href="channel_8c-example.html#a60">channel.c</a>, <a class="el" href="components_8c-example.html#a39">components.c</a>, <a class="el" href="embed_8c-example.html#a38">embed.c</a>, <a class="el" href="emoji_8c-example.html#a36">emoji.c</a>, <a class="el" href="guild-template_8c-example.html#a29">guild-template.c</a>, <a class="el" href="guild_8c-example.html#a58">guild.c</a>, <a class="el" href="invite_8c-example.html#a28">invite.c</a>, <a class="el" href="manual-dm_8c-example.html#a27">manual-dm.c</a>, <a class="el" href="pin_8c-example.html#a31">pin.c</a>, <a class="el" href="reaction_8c-example.html#a38">reaction.c</a>, <a class="el" href="slash-commands_8c-example.html#a41">slash-commands.c</a>, <a class="el" href="slash-commands2_8c-example.html#a54">slash-commands2.c</a>, and <a class="el" href="timers_8c-example.html#a14">timers.c</a>.</dd>
 </dl>
 
 </div>
@@ -707,7 +727,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__discord_claim</b> (
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct logconf * discord_get_logconf </td>
+          <td class="memname">struct <a class="el" href="structlogconf.html">logconf</a> * discord_get_logconf </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
           <td class="paramname"><em>client</em></td><td>)</td>

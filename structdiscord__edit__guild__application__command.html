@@ -107,6 +107,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:add263592ede9c752472b5baa4971a407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f6168da08c461b11bb3b2f12ee735b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdiscord__application__command__options.html">discord_application_command_options</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__edit__guild__application__command.html#a91f6168da08c461b11bb3b2f12ee735b">options</a></td></tr>
 <tr class="separator:a91f6168da08c461b11bb3b2f12ee735b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc4dd8d7eb42e312435fda32f0b89e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ConcordTypes.html#ga78ce04e3844e38ab698736df12c0350f">u64bitmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__edit__guild__application__command.html#afbc4dd8d7eb42e312435fda32f0b89e7">default_member_permissions</a></td></tr>
+<tr class="separator:afbc4dd8d7eb42e312435fda32f0b89e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab83696dffd2c12e1463efc68ddb5503"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__edit__guild__application__command.html#aab83696dffd2c12e1463efc68ddb5503">default_permission</a></td></tr>
 <tr class="separator:aab83696dffd2c12e1463efc68ddb5503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -161,6 +163,21 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="afbc4dd8d7eb42e312435fda32f0b89e7" name="afbc4dd8d7eb42e312435fda32f0b89e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc4dd8d7eb42e312435fda32f0b89e7">&#9670;&nbsp;</a></span>default_member_permissions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ConcordTypes.html#ga78ce04e3844e38ab698736df12c0350f">u64bitmask</a> discord_edit_guild_application_command::default_member_permissions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Set of <a class="el" href="group__DiscordPermissions.html">Discord permissions</a> represented as a bit set </p>
+
+</div>
+</div>
 <a id="aab83696dffd2c12e1463efc68ddb5503" name="aab83696dffd2c12e1463efc68ddb5503"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab83696dffd2c12e1463efc68ddb5503">&#9670;&nbsp;</a></span>default_permission</h2>
 
@@ -172,7 +189,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >whether the command is enabled by default when the app is added to a guild </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>use <code>default_member_permissions</code> instead </dd></dl>
 
 </div>
 </div>
