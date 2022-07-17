@@ -124,9 +124,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__guild__preview.html">discord_guild_preview</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__guild__widget__setting.html">discord_guild_widget_setting</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__guild__widget__settings.html">discord_guild_widget_settings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__get__guild__widget.html">discord_get_guild_widget</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__guild__widget.html">discord_guild_widget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__guild__member.html">discord_guild_member</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +149,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__welcome__screen__channel.html">discord_welcome_screen_channel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__welcome__screen__channels.html">discord_welcome_screen_channels</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__prune__count.html">discord_prune_count</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord__create__guild.html">discord_create_guild</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,6 +278,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_preview
 <tr class="memitem:af47f03e07bb798f20c852bbee0f5e501"><td class="memItemLeft" align="right" valign="top"><a id="af47f03e07bb798f20c852bbee0f5e501" name="af47f03e07bb798f20c852bbee0f5e501"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_preview_cleanup</b> (struct <a class="el" href="structdiscord__guild__preview.html">discord_guild_preview</a> *self)</td></tr>
 <tr class="separator:af47f03e07bb798f20c852bbee0f5e501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca67c5ac7e14eb2e72232fefc3f3092"><td class="memItemLeft" align="right" valign="top"><a id="afca67c5ac7e14eb2e72232fefc3f3092" name="afca67c5ac7e14eb2e72232fefc3f3092"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_settings_init</b> (struct <a class="el" href="structdiscord__guild__widget__settings.html">discord_guild_widget_settings</a> *self)</td></tr>
+<tr class="separator:afca67c5ac7e14eb2e72232fefc3f3092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bfb64ab611326a18fc2a0e742cc97a"><td class="memItemLeft" align="right" valign="top"><a id="ad4bfb64ab611326a18fc2a0e742cc97a" name="ad4bfb64ab611326a18fc2a0e742cc97a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_settings_cleanup</b> (struct <a class="el" href="structdiscord__guild__widget__settings.html">discord_guild_widget_settings</a> *self)</td></tr>
+<tr class="separator:ad4bfb64ab611326a18fc2a0e742cc97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f18b51ebc5f6fe92f75a815e250b1a"><td class="memItemLeft" align="right" valign="top"><a id="ad1f18b51ebc5f6fe92f75a815e250b1a" name="ad1f18b51ebc5f6fe92f75a815e250b1a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_init</b> (struct <a class="el" href="structdiscord__guild__widget.html">discord_guild_widget</a> *self)</td></tr>
+<tr class="separator:ad1f18b51ebc5f6fe92f75a815e250b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6372f2c8a53783f779e80040adc2eac2"><td class="memItemLeft" align="right" valign="top"><a id="a6372f2c8a53783f779e80040adc2eac2" name="a6372f2c8a53783f779e80040adc2eac2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_cleanup</b> (struct <a class="el" href="structdiscord__guild__widget.html">discord_guild_widget</a> *self)</td></tr>
+<tr class="separator:a6372f2c8a53783f779e80040adc2eac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ecdf666c6c3ee17851381be08a0e3b"><td class="memItemLeft" align="right" valign="top"><a id="aa0ecdf666c6c3ee17851381be08a0e3b" name="aa0ecdf666c6c3ee17851381be08a0e3b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_member_init</b> (struct <a class="el" href="structdiscord__guild__member.html">discord_guild_member</a> *self)</td></tr>
 <tr class="separator:aa0ecdf666c6c3ee17851381be08a0e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,6 +305,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integration_i
 <tr class="memitem:a7cadb8b3329f54cea4ab32b1326ca44c"><td class="memItemLeft" align="right" valign="top"><a id="a7cadb8b3329f54cea4ab32b1326ca44c" name="a7cadb8b3329f54cea4ab32b1326ca44c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integration_cleanup</b> (struct <a class="el" href="structdiscord__integration.html">discord_integration</a> *self)</td></tr>
 <tr class="separator:a7cadb8b3329f54cea4ab32b1326ca44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1c2bbc2e1422d25272287c3f24fe96"><td class="memItemLeft" align="right" valign="top"><a id="acd1c2bbc2e1422d25272287c3f24fe96" name="acd1c2bbc2e1422d25272287c3f24fe96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integrations_cleanup</b> (struct <a class="el" href="structdiscord__integrations.html">discord_integrations</a> *self)</td></tr>
+<tr class="separator:acd1c2bbc2e1422d25272287c3f24fe96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5de05b063a538d3b29a3aa46cf1527c7"><td class="memItemLeft" align="right" valign="top"><a id="a5de05b063a538d3b29a3aa46cf1527c7" name="a5de05b063a538d3b29a3aa46cf1527c7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_ban_init</b> (struct <a class="el" href="structdiscord__ban.html">discord_ban</a> *self)</td></tr>
 <tr class="separator:a5de05b063a538d3b29a3aa46cf1527c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,6 +323,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_welcome_scree
 <tr class="memitem:a833ccdfd27f7290ac966f6cd1e64a5d0"><td class="memItemLeft" align="right" valign="top"><a id="a833ccdfd27f7290ac966f6cd1e64a5d0" name="a833ccdfd27f7290ac966f6cd1e64a5d0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_welcome_screen_cleanup</b> (struct <a class="el" href="structdiscord__welcome__screen.html">discord_welcome_screen</a> *self)</td></tr>
 <tr class="separator:a833ccdfd27f7290ac966f6cd1e64a5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7cd287bbea255528ce2b474f991c3e"><td class="memItemLeft" align="right" valign="top"><a id="a4a7cd287bbea255528ce2b474f991c3e" name="a4a7cd287bbea255528ce2b474f991c3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_prune_count_init</b> (struct <a class="el" href="structdiscord__prune__count.html">discord_prune_count</a> *self)</td></tr>
+<tr class="separator:a4a7cd287bbea255528ce2b474f991c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050a6572c39f965d8d832d74c357038e"><td class="memItemLeft" align="right" valign="top"><a id="a050a6572c39f965d8d832d74c357038e" name="a050a6572c39f965d8d832d74c357038e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_prune_count_cleanup</b> (struct <a class="el" href="structdiscord__prune__count.html">discord_prune_count</a> *self)</td></tr>
+<tr class="separator:a050a6572c39f965d8d832d74c357038e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f10cde9a85da3e0a7493b2bd5246638"><td class="memItemLeft" align="right" valign="top"><a id="a9f10cde9a85da3e0a7493b2bd5246638" name="a9f10cde9a85da3e0a7493b2bd5246638"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>discord_create_guild_init</b> (struct <a class="el" href="structdiscord__create__guild.html">discord_create_guild</a> *self)</td></tr>
 <tr class="separator:a9f10cde9a85da3e0a7493b2bd5246638"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,6 +443,18 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_preview
 <tr class="memitem:ae6a9734203a0618c6c473f778c7062e5"><td class="memItemLeft" align="right" valign="top"><a id="ae6a9734203a0618c6c473f778c7062e5" name="ae6a9734203a0618c6c473f778c7062e5"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_preview_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__guild__preview.html">discord_guild_preview</a> *self)</td></tr>
 <tr class="separator:ae6a9734203a0618c6c473f778c7062e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff92fa6ad793a275c840676e22932065"><td class="memItemLeft" align="right" valign="top"><a id="aff92fa6ad793a275c840676e22932065" name="aff92fa6ad793a275c840676e22932065"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_settings_from_jsmnf</b> (<a class="el" href="structjsmnf__pair.html">jsmnf_pair</a> *root, const char *js, struct <a class="el" href="structdiscord__guild__widget__settings.html">discord_guild_widget_settings</a> *self)</td></tr>
+<tr class="separator:aff92fa6ad793a275c840676e22932065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f8583f164d81f8f9e76b7183a489d1"><td class="memItemLeft" align="right" valign="top"><a id="a46f8583f164d81f8f9e76b7183a489d1" name="a46f8583f164d81f8f9e76b7183a489d1"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_settings_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__guild__widget__settings.html">discord_guild_widget_settings</a> *self)</td></tr>
+<tr class="separator:a46f8583f164d81f8f9e76b7183a489d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119ceccfb3ea9752609c15841d2ae4ee"><td class="memItemLeft" align="right" valign="top"><a id="a119ceccfb3ea9752609c15841d2ae4ee" name="a119ceccfb3ea9752609c15841d2ae4ee"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_from_jsmnf</b> (<a class="el" href="structjsmnf__pair.html">jsmnf_pair</a> *root, const char *js, struct <a class="el" href="structdiscord__guild__widget.html">discord_guild_widget</a> *self)</td></tr>
+<tr class="separator:a119ceccfb3ea9752609c15841d2ae4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e55cdbc97fa6887e52359731afffce8"><td class="memItemLeft" align="right" valign="top"><a id="a8e55cdbc97fa6887e52359731afffce8" name="a8e55cdbc97fa6887e52359731afffce8"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__guild__widget.html">discord_guild_widget</a> *self)</td></tr>
+<tr class="separator:a8e55cdbc97fa6887e52359731afffce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6306f4eebe759ea063e9209cecafa5e7"><td class="memItemLeft" align="right" valign="top"><a id="a6306f4eebe759ea063e9209cecafa5e7" name="a6306f4eebe759ea063e9209cecafa5e7"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_member_from_jsmnf</b> (<a class="el" href="structjsmnf__pair.html">jsmnf_pair</a> *root, const char *js, struct <a class="el" href="structdiscord__guild__member.html">discord_guild_member</a> *self)</td></tr>
 <tr class="separator:a6306f4eebe759ea063e9209cecafa5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -438,6 +473,12 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integration_f
 <tr class="memitem:ab981befef98cc7efcea4bb6e31bc3d1e"><td class="memItemLeft" align="right" valign="top"><a id="ab981befef98cc7efcea4bb6e31bc3d1e" name="ab981befef98cc7efcea4bb6e31bc3d1e"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integration_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__integration.html">discord_integration</a> *self)</td></tr>
 <tr class="separator:ab981befef98cc7efcea4bb6e31bc3d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49db6c19d63b70a3174f811d018bb14a"><td class="memItemLeft" align="right" valign="top"><a id="a49db6c19d63b70a3174f811d018bb14a" name="a49db6c19d63b70a3174f811d018bb14a"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integrations_from_jsmnf</b> (<a class="el" href="structjsmnf__pair.html">jsmnf_pair</a> *root, const char *js, struct <a class="el" href="structdiscord__integrations.html">discord_integrations</a> *self)</td></tr>
+<tr class="separator:a49db6c19d63b70a3174f811d018bb14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466df2a347287a3cf8313ac0883bbfea"><td class="memItemLeft" align="right" valign="top"><a id="a466df2a347287a3cf8313ac0883bbfea" name="a466df2a347287a3cf8313ac0883bbfea"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integrations_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__integrations.html">discord_integrations</a> *self)</td></tr>
+<tr class="separator:a466df2a347287a3cf8313ac0883bbfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a00ec95023734829a4d25dba90c7af9"><td class="memItemLeft" align="right" valign="top"><a id="a9a00ec95023734829a4d25dba90c7af9" name="a9a00ec95023734829a4d25dba90c7af9"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_ban_from_jsmnf</b> (<a class="el" href="structjsmnf__pair.html">jsmnf_pair</a> *root, const char *js, struct <a class="el" href="structdiscord__ban.html">discord_ban</a> *self)</td></tr>
 <tr class="separator:a9a00ec95023734829a4d25dba90c7af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,6 +497,12 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_welcome_scree
 <tr class="memitem:a1b33cf0a885f2ba98689c7aaa1b4bdde"><td class="memItemLeft" align="right" valign="top"><a id="a1b33cf0a885f2ba98689c7aaa1b4bdde" name="a1b33cf0a885f2ba98689c7aaa1b4bdde"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_welcome_screen_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__welcome__screen.html">discord_welcome_screen</a> *self)</td></tr>
 <tr class="separator:a1b33cf0a885f2ba98689c7aaa1b4bdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b6dc59672a8afa709d4ed68fd5b0ed"><td class="memItemLeft" align="right" valign="top"><a id="a47b6dc59672a8afa709d4ed68fd5b0ed" name="a47b6dc59672a8afa709d4ed68fd5b0ed"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_prune_count_from_jsmnf</b> (<a class="el" href="structjsmnf__pair.html">jsmnf_pair</a> *root, const char *js, struct <a class="el" href="structdiscord__prune__count.html">discord_prune_count</a> *self)</td></tr>
+<tr class="separator:a47b6dc59672a8afa709d4ed68fd5b0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b059f41ea07c2b9974b5da29a32d9e0"><td class="memItemLeft" align="right" valign="top"><a id="a8b059f41ea07c2b9974b5da29a32d9e0" name="a8b059f41ea07c2b9974b5da29a32d9e0"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_prune_count_from_json</b> (const char buf[], size_t size, struct <a class="el" href="structdiscord__prune__count.html">discord_prune_count</a> *self)</td></tr>
+<tr class="separator:a8b059f41ea07c2b9974b5da29a32d9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2a0a419d8348c959cdb93f8aa1dff1"><td class="memItemLeft" align="right" valign="top"><a id="a9a2a0a419d8348c959cdb93f8aa1dff1" name="a9a2a0a419d8348c959cdb93f8aa1dff1"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><b>discord_create_guild_from_jsmnf</b> (<a class="el" href="structjsmnf__pair.html">jsmnf_pair</a> *root, const char *js, struct <a class="el" href="structdiscord__create__guild.html">discord_create_guild</a> *self)</td></tr>
 <tr class="separator:a9a2a0a419d8348c959cdb93f8aa1dff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -576,6 +623,18 @@ jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_pr
 <tr class="memitem:a673c36a81c2a79df550fb6246c8b16ec"><td class="memItemLeft" align="right" valign="top"><a id="a673c36a81c2a79df550fb6246c8b16ec" name="a673c36a81c2a79df550fb6246c8b16ec"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_preview_to_json</b> (char buf[], size_t size, const struct <a class="el" href="structdiscord__guild__preview.html">discord_guild_preview</a> *self)</td></tr>
 <tr class="separator:a673c36a81c2a79df550fb6246c8b16ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae41045760c4c9d016e33fa817e453f8"><td class="memItemLeft" align="right" valign="top"><a id="aae41045760c4c9d016e33fa817e453f8" name="aae41045760c4c9d016e33fa817e453f8"></a>
+jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_settings_to_jsonb</b> (<a class="el" href="structjsonb.html">jsonb</a> *b, char buf[], size_t size, const struct <a class="el" href="structdiscord__guild__widget__settings.html">discord_guild_widget_settings</a> *self)</td></tr>
+<tr class="separator:aae41045760c4c9d016e33fa817e453f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb8e93f087e81be483961f4d280e531"><td class="memItemLeft" align="right" valign="top"><a id="a3fb8e93f087e81be483961f4d280e531" name="a3fb8e93f087e81be483961f4d280e531"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_settings_to_json</b> (char buf[], size_t size, const struct <a class="el" href="structdiscord__guild__widget__settings.html">discord_guild_widget_settings</a> *self)</td></tr>
+<tr class="separator:a3fb8e93f087e81be483961f4d280e531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f6d6a18492286201e1ce10053f41f9"><td class="memItemLeft" align="right" valign="top"><a id="af4f6d6a18492286201e1ce10053f41f9" name="af4f6d6a18492286201e1ce10053f41f9"></a>
+jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_to_jsonb</b> (<a class="el" href="structjsonb.html">jsonb</a> *b, char buf[], size_t size, const struct <a class="el" href="structdiscord__guild__widget.html">discord_guild_widget</a> *self)</td></tr>
+<tr class="separator:af4f6d6a18492286201e1ce10053f41f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105da411660e2cf9e33e60678227de9b"><td class="memItemLeft" align="right" valign="top"><a id="a105da411660e2cf9e33e60678227de9b" name="a105da411660e2cf9e33e60678227de9b"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_widget_to_json</b> (char buf[], size_t size, const struct <a class="el" href="structdiscord__guild__widget.html">discord_guild_widget</a> *self)</td></tr>
+<tr class="separator:a105da411660e2cf9e33e60678227de9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de06897b0467e44708fe75112014ced"><td class="memItemLeft" align="right" valign="top"><a id="a0de06897b0467e44708fe75112014ced" name="a0de06897b0467e44708fe75112014ced"></a>
 jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_guild_member_to_jsonb</b> (<a class="el" href="structjsonb.html">jsonb</a> *b, char buf[], size_t size, const struct <a class="el" href="structdiscord__guild__member.html">discord_guild_member</a> *self)</td></tr>
 <tr class="separator:a0de06897b0467e44708fe75112014ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -594,6 +653,12 @@ jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integrat
 <tr class="memitem:a5e747d111b72ba595ddf04b65715ac71"><td class="memItemLeft" align="right" valign="top"><a id="a5e747d111b72ba595ddf04b65715ac71" name="a5e747d111b72ba595ddf04b65715ac71"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integration_to_json</b> (char buf[], size_t size, const struct <a class="el" href="structdiscord__integration.html">discord_integration</a> *self)</td></tr>
 <tr class="separator:a5e747d111b72ba595ddf04b65715ac71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f9e0027ad0e5b76d6471451abb1f57"><td class="memItemLeft" align="right" valign="top"><a id="a17f9e0027ad0e5b76d6471451abb1f57" name="a17f9e0027ad0e5b76d6471451abb1f57"></a>
+jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integrations_to_jsonb</b> (<a class="el" href="structjsonb.html">jsonb</a> *b, char buf[], size_t size, const struct <a class="el" href="structdiscord__integrations.html">discord_integrations</a> *self)</td></tr>
+<tr class="separator:a17f9e0027ad0e5b76d6471451abb1f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af313616b32a2be0b38df70452b765acc"><td class="memItemLeft" align="right" valign="top"><a id="af313616b32a2be0b38df70452b765acc" name="af313616b32a2be0b38df70452b765acc"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_integrations_to_json</b> (char buf[], size_t size, const struct <a class="el" href="structdiscord__integrations.html">discord_integrations</a> *self)</td></tr>
+<tr class="separator:af313616b32a2be0b38df70452b765acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0b0e97087f4ee78e1e0114deb3e8ae"><td class="memItemLeft" align="right" valign="top"><a id="aaa0b0e97087f4ee78e1e0114deb3e8ae" name="aaa0b0e97087f4ee78e1e0114deb3e8ae"></a>
 jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_ban_to_jsonb</b> (<a class="el" href="structjsonb.html">jsonb</a> *b, char buf[], size_t size, const struct <a class="el" href="structdiscord__ban.html">discord_ban</a> *self)</td></tr>
 <tr class="separator:aaa0b0e97087f4ee78e1e0114deb3e8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -612,6 +677,12 @@ jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_welcome_
 <tr class="memitem:a3272a76735eac77aae4586559bbc3d25"><td class="memItemLeft" align="right" valign="top"><a id="a3272a76735eac77aae4586559bbc3d25" name="a3272a76735eac77aae4586559bbc3d25"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_welcome_screen_to_json</b> (char buf[], size_t size, const struct <a class="el" href="structdiscord__welcome__screen.html">discord_welcome_screen</a> *self)</td></tr>
 <tr class="separator:a3272a76735eac77aae4586559bbc3d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc38a88ecb1334d9b1aae6c429719e9"><td class="memItemLeft" align="right" valign="top"><a id="abfc38a88ecb1334d9b1aae6c429719e9" name="abfc38a88ecb1334d9b1aae6c429719e9"></a>
+jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_prune_count_to_jsonb</b> (<a class="el" href="structjsonb.html">jsonb</a> *b, char buf[], size_t size, const struct <a class="el" href="structdiscord__prune__count.html">discord_prune_count</a> *self)</td></tr>
+<tr class="separator:abfc38a88ecb1334d9b1aae6c429719e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84cc58d7da50c2838c3abfc5baf85da7"><td class="memItemLeft" align="right" valign="top"><a id="a84cc58d7da50c2838c3abfc5baf85da7" name="a84cc58d7da50c2838c3abfc5baf85da7"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>discord_prune_count_to_json</b> (char buf[], size_t size, const struct <a class="el" href="structdiscord__prune__count.html">discord_prune_count</a> *self)</td></tr>
+<tr class="separator:a84cc58d7da50c2838c3abfc5baf85da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93be6ec31a60c1ee1653fa90b8c6eb58"><td class="memItemLeft" align="right" valign="top"><a id="a93be6ec31a60c1ee1653fa90b8c6eb58" name="a93be6ec31a60c1ee1653fa90b8c6eb58"></a>
 jsonbcode&#160;</td><td class="memItemRight" valign="bottom"><b>discord_create_guild_to_jsonb</b> (<a class="el" href="structjsonb.html">jsonb</a> *b, char buf[], size_t size, const struct <a class="el" href="structdiscord__create__guild.html">discord_create_guild</a> *self)</td></tr>
 <tr class="separator:a93be6ec31a60c1ee1653fa90b8c6eb58"><td class="memSeparator" colspan="2">&#160;</td></tr>

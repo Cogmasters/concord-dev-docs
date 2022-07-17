@@ -1,5 +1,14 @@
 var NAVTREEINDEX2 =
 {
+"group__DiscordEvents.html#ga432115b6cb511508bf2e00f34e133be5":[5,2,1,39],
+"group__DiscordEvents.html#ga445a7a14313f80146c8c4daa146dffa1":[5,2,1,6],
+"group__DiscordEvents.html#ga4681ad4a8b3ec7c1c777a62b201aec8f":[5,2,1,56],
+"group__DiscordEvents.html#ga47040e42775d5d9a926dcfadf9fb2f28":[5,2,1,10],
+"group__DiscordEvents.html#ga4a26b83db53073772a7246243331be73":[5,2,1,19],
+"group__DiscordEvents.html#ga4d71cd8a0ab6d05974ba1a1e8afd4dfe":[5,2,1,20],
+"group__DiscordEvents.html#ga4ef9d561687b2f8d2fd5e2e93b397a38":[5,2,1,7],
+"group__DiscordEvents.html#ga524b4d504a44d00bad8bf826b8e5ec03":[5,2,1,43],
+"group__DiscordEvents.html#ga583523b335140dc654681ac7e11c7d55":[5,2,1,17],
 "group__DiscordEvents.html#ga5b0d4854e7df278d723741d26a537438":[5,2,1,37],
 "group__DiscordEvents.html#ga6bcef3a29e7450e57c049dabc8072190":[5,2,1,53],
 "group__DiscordEvents.html#ga6bdf65c62373cc394bb55191b2d45520":[5,2,1,51],
@@ -240,14 +249,5 @@ var NAVTREEINDEX2 =
 "index.html#autotoc_md15":[0,3,0],
 "index.html#autotoc_md16":[0,3,1],
 "index.html#autotoc_md17":[0,3,2],
-"index.html#autotoc_md18":[0,4],
-"index.html#autotoc_md19":[0,5],
-"index.html#autotoc_md2":[0,0,0],
-"index.html#autotoc_md20":[0,5,0],
-"index.html#autotoc_md21":[0,5,1],
-"index.html#autotoc_md22":[0,6],
-"index.html#autotoc_md23":[0,6,0],
-"index.html#autotoc_md24":[0,6,1],
-"index.html#autotoc_md25":[0,7],
-"index.html#autotoc_md26":[0,7,0]
+"index.html#autotoc_md18":[0,4]
 };

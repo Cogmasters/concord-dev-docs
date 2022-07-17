@@ -29,7 +29,7 @@ var searchData=
   ['premium_5ftier_26',['premium_tier',['../structdiscord__guild.html#a426ca9e4feb900e30652fc73daf0bd2d',1,'discord_guild']]],
   ['premium_5ftype_27',['premium_type',['../structdiscord__user.html#a3f7ffb6c3addc691f6653dbf8a52a6a8',1,'discord_user']]],
   ['presence_28',['presence',['../structdiscord__identify.html#afb3727dba6564c5f1903da26250cf801',1,'discord_identify']]],
-  ['presence_5fcount_29',['presence_count',['../structdiscord__get__guild__widget.html#a6027b8cfd62787361743397a699ec593',1,'discord_get_guild_widget']]],
+  ['presence_5fcount_29',['presence_count',['../structdiscord__guild__widget.html#afae49c15b79cf4b3858759457425d977',1,'discord_guild_widget']]],
   ['presences_30',['presences',['../structdiscord__guild.html#a3ba36c85fb64a63eec587ef3b6db7d9b',1,'discord_guild::presences()'],['../structdiscord__guild__members__chunk.html#af92b8b90614f4d78a13000eb6b9c0cd6',1,'discord_guild_members_chunk::presences()'],['../structdiscord__request__guild__members.html#aeef2e9e4bc659e24cbcdb7312331d411',1,'discord_request_guild_members::presences()']]],
   ['presets_31',['presets',['../structdiscord__auto__moderation__trigger__metadata.html#a50cefdef6d17ff8916957a74e84043bd',1,'discord_auto_moderation_trigger_metadata']]],
   ['primary_5fsku_5fid_32',['primary_sku_id',['../structdiscord__application.html#a1d0afcf10eaee45b2f9bc58c70531dd3',1,'discord_application']]],

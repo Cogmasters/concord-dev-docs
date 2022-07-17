@@ -1,5 +1,14 @@
 var NAVTREEINDEX4 =
 {
+"structdiscord__application__command.html#a67570a00e66b50ce7fffeba12ab2ba02":[6,0,17,5],
+"structdiscord__application__command.html#a7d1f0983feda34352e99d73396ef99f0":[6,0,17,8],
+"structdiscord__application__command.html#a95fbe5d4e470524f58998cb951892236":[6,0,17,0],
+"structdiscord__application__command.html#a9e3bd59f3d5125d4d515363b7a07e489":[6,0,17,4],
+"structdiscord__application__command.html#ab6d1f27109d7506376b1f0d26c2496c6":[6,0,17,3],
+"structdiscord__application__command.html#ad3058021b63cb6170091cd82471dbe6c":[6,0,17,2],
+"structdiscord__application__command.html#afb6538b1dab513effaf26bf9af8d70e1":[6,0,17,1],
+"structdiscord__application__command__interaction__data__option.html":[6,0,18],
+"structdiscord__application__command__interaction__data__option.html#a11094bb3ab34d431a61dc6fa3191c671":[6,0,18,0],
 "structdiscord__application__command__interaction__data__option.html#a3e97d4e2b08de6ec5f810681b6b00d80":[6,0,18,2],
 "structdiscord__application__command__interaction__data__option.html#a5476045bc456908fabb13b0f30ac1317":[6,0,18,3],
 "structdiscord__application__command__interaction__data__option.html#a5f6ff8e868bc7ce6d01ef119c597a7f4":[6,0,18,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX4 =
 "structdiscord__create__guild.html":[6,0,62],
 "structdiscord__create__guild.html#a0191ba14920014120cdbceb5306236f5":[6,0,62,7],
 "structdiscord__create__guild.html#a3fde026636c393fb398edbd22adeaad5":[6,0,62,2],
-"structdiscord__create__guild.html#a625fd199104fe476cbb64508359ff50e":[6,0,62,3],
-"structdiscord__create__guild.html#a6a1adc9308eddd0eeb96f4f077c34973":[6,0,62,4],
-"structdiscord__create__guild.html#a7ea8595c23b6ed281039c56ccba6fc11":[6,0,62,6],
-"structdiscord__create__guild.html#a895e3160d5a7107c025db56da2c4d95c":[6,0,62,8],
-"structdiscord__create__guild.html#a8cffa1e41a3db9cd6fb35f98b31eaf04":[6,0,62,11],
-"structdiscord__create__guild.html#aa5714ce3fc68328c5a75fca5b6e59471":[6,0,62,1],
-"structdiscord__create__guild.html#ad7cd7ea1908ca91e1658a0f02eca2e1f":[6,0,62,0],
-"structdiscord__create__guild.html#adaa1898be40ccd3a3cb977d886303d25":[6,0,62,9],
-"structdiscord__create__guild.html#ade0015d40216d02099cfd8922bc46ef3":[6,0,62,5],
-"structdiscord__create__guild.html#aefcaacbf5339e1bb740afef6cca387fe":[6,0,62,10]
+"structdiscord__create__guild.html#a625fd199104fe476cbb64508359ff50e":[6,0,62,3]
 };

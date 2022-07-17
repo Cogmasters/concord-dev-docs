@@ -1,5 +1,14 @@
 var NAVTREEINDEX5 =
 {
+"structdiscord__create__guild.html#a6a1adc9308eddd0eeb96f4f077c34973":[6,0,62,4],
+"structdiscord__create__guild.html#a7ea8595c23b6ed281039c56ccba6fc11":[6,0,62,6],
+"structdiscord__create__guild.html#a895e3160d5a7107c025db56da2c4d95c":[6,0,62,8],
+"structdiscord__create__guild.html#a8cffa1e41a3db9cd6fb35f98b31eaf04":[6,0,62,11],
+"structdiscord__create__guild.html#aa5714ce3fc68328c5a75fca5b6e59471":[6,0,62,1],
+"structdiscord__create__guild.html#ad7cd7ea1908ca91e1658a0f02eca2e1f":[6,0,62,0],
+"structdiscord__create__guild.html#adaa1898be40ccd3a3cb977d886303d25":[6,0,62,9],
+"structdiscord__create__guild.html#ade0015d40216d02099cfd8922bc46ef3":[6,0,62,5],
+"structdiscord__create__guild.html#aefcaacbf5339e1bb740afef6cca387fe":[6,0,62,10],
 "structdiscord__create__guild__application__command.html":[6,0,63],
 "structdiscord__create__guild__application__command.html#a05c3161070a1e132363b7d19482db5ad":[6,0,63,1],
 "structdiscord__create__guild__application__command.html#a27fb5e8a69d4d72f7c6853e06f881a9f":[6,0,63,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX5 =
 "structdiscord__get__channel__messages.html#a781bec936efe52a1b1375f8c058823e4":[6,0,102,0],
 "structdiscord__get__channel__messages.html#ae5194f84020400dd58d7cc11ff518131":[6,0,102,1],
 "structdiscord__get__channel__messages.html#af16f49a3d94e52f15c4c7189347d15c9":[6,0,102,3],
-"structdiscord__get__current__user__guilds.html":[6,0,103],
-"structdiscord__get__current__user__guilds.html#a24b50fcca2525236255825d039ea978f":[6,0,103,0],
-"structdiscord__get__current__user__guilds.html#ad3fea1b0f873c26d9d0bec863baf276c":[6,0,103,2],
-"structdiscord__get__current__user__guilds.html#afa408b738f857ceb7840ec1944993adc":[6,0,103,1],
-"structdiscord__get__guild__audit__log.html":[6,0,104],
-"structdiscord__get__guild__audit__log.html#a663cc8621610ae05573dfe659dbfd34d":[6,0,104,2],
-"structdiscord__get__guild__audit__log.html#a8c30ec4add96cbafebd8bdfc2bcb6a4c":[6,0,104,1],
-"structdiscord__get__guild__audit__log.html#ac45b4666ce7636b5edc3620f54165bd7":[6,0,104,3],
-"structdiscord__get__guild__audit__log.html#ade6609431a7f82ff96f6b4c64a06a2cc":[6,0,104,0],
-"structdiscord__get__guild__prune__count.html":[6,0,105]
+"structdiscord__get__current__user__guilds.html":[6,0,103]
 };

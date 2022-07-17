@@ -1,5 +1,14 @@
 var NAVTREEINDEX7 =
 {
+"structdiscord__integration__application.html#a0aeccc16f6bc9e109d3d8f92247aa003":[6,0,144,5],
+"structdiscord__integration__application.html#a6a78b215a0a2a04d2ddbaf479b151d4a":[6,0,144,3],
+"structdiscord__integration__application.html#a70d9efeedfbc74c06db114fd0de113e6":[6,0,144,0],
+"structdiscord__integration__application.html#a72d1386f268cde534a767e16e5e4cfe6":[6,0,144,1],
+"structdiscord__integration__application.html#abfcd33706222a55b4600970e392488c5":[6,0,144,4],
+"structdiscord__integration__application.html#ac1cc31fa1e4868402bab4367a50533b6":[6,0,144,2],
+"structdiscord__integration__delete.html":[6,0,145],
+"structdiscord__integration__delete.html#a1ac9485a0684b8b9c21634ed086021ba":[6,0,145,0],
+"structdiscord__integration__delete.html#aa361489d286a2da9a58abf2165732479":[6,0,145,2],
 "structdiscord__integration__delete.html#ac2398244188b065b9e374fbaa49c060d":[6,0,145,1],
 "structdiscord__integrations.html":[6,0,146],
 "structdiscord__interaction.html":[6,0,147],
@@ -240,14 +249,5 @@ var NAVTREEINDEX7 =
 "structdiscord__modify__guild__channel__position.html#a78853484e9d5f05bf7f1395a0643d6d5":[6,0,180,2],
 "structdiscord__modify__guild__channel__positions.html":[6,0,181],
 "structdiscord__modify__guild__emoji.html":[6,0,182],
-"structdiscord__modify__guild__emoji.html#a89ef6c3c4bd0e896f8063991e19cf406":[6,0,182,2],
-"structdiscord__modify__guild__emoji.html#afbe4721befb1666ff9608526f69136b1":[6,0,182,1],
-"structdiscord__modify__guild__emoji.html#aff921422df52081b56420de86690ec31":[6,0,182,0],
-"structdiscord__modify__guild__member.html":[6,0,183],
-"structdiscord__modify__guild__member.html#a0143859365ae6a0a824049151130c6ef":[6,0,183,5],
-"structdiscord__modify__guild__member.html#a4b9033e3aff320a47d940b5d7ca7fd6f":[6,0,183,4],
-"structdiscord__modify__guild__member.html#a674e119cd430ae2fadd2834f72186ee7":[6,0,183,0],
-"structdiscord__modify__guild__member.html#aa25e7094222b2a899e4905966d9932eb":[6,0,183,3],
-"structdiscord__modify__guild__member.html#ac52e78f15b6fd0c01da7c564b02415e2":[6,0,183,1],
-"structdiscord__modify__guild__member.html#ad99af8d4e3f940b2ff0a8b1a10407d34":[6,0,183,2]
+"structdiscord__modify__guild__emoji.html#a89ef6c3c4bd0e896f8063991e19cf406":[6,0,182,2]
 };
