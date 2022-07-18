@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="auto__moderation_8h.html" target="_top" xlink:title="Generated code.">
+<g id="a_node5"><a xlink:href="docs_2api_2auto__moderation_8h.html" target="_top" xlink:title="Generated code.">
 <polygon fill="none" stroke="black" points="405.5,-6 405.5,-25 557.5,-25 557.5,-6 405.5,-6"/>
 <text text-anchor="middle" x="481.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">docs/api/auto_moderation.h</text>
 </a>
@@ -156,7 +156,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="guild__scheduled__event_8h.html" target="_top" xlink:title="Generated code.">
+<g id="a_node11"><a xlink:href="docs_2api_2guild__scheduled__event_8h.html" target="_top" xlink:title="Generated code.">
 <polygon fill="none" stroke="black" points="1179,-0.5 1179,-30.5 1318,-30.5 1318,-0.5 1179,-0.5"/>
 <text text-anchor="start" x="1187" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">docs/api/guild_scheduled</text>
 <text text-anchor="middle" x="1248.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_event.h</text>

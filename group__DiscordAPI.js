@@ -2,10 +2,12 @@ var group__DiscordAPI =
 [
     [ "Interactions", "group__DiscordAPIInteractions.html", "group__DiscordAPIInteractions" ],
     [ "Audit Log", "group__DiscordAPIAuditLog.html", "group__DiscordAPIAuditLog" ],
+    [ "Auto Moderation", "group__DiscordAPIAutoModeration.html", "group__DiscordAPIAutoModeration" ],
     [ "Channel", "group__DiscordAPIChannel.html", "group__DiscordAPIChannel" ],
     [ "Emoji", "group__DiscordAPIEmoji.html", "group__DiscordAPIEmoji" ],
     [ "Gateway", "group__DiscordAPIGateway.html", "group__DiscordAPIGateway" ],
     [ "Guild", "group__DiscordAPIGuild.html", "group__DiscordAPIGuild" ],
+    [ "Guild Scheduled Event", "group__DiscordAPIGuildScheduledEvent.html", "group__DiscordAPIGuildScheduledEvent" ],
     [ "Guild Template", "group__DiscordAPIGuildTemplate.html", "group__DiscordAPIGuildTemplate" ],
     [ "Invite", "group__DiscordAPIInvite.html", "group__DiscordAPIInvite" ],
     [ "User", "group__DiscordAPIUser.html", "group__DiscordAPIUser" ],
