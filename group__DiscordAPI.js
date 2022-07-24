@@ -10,6 +10,7 @@ var group__DiscordAPI =
     [ "Guild Scheduled Event", "group__DiscordAPIGuildScheduledEvent.html", "group__DiscordAPIGuildScheduledEvent" ],
     [ "Guild Template", "group__DiscordAPIGuildTemplate.html", "group__DiscordAPIGuildTemplate" ],
     [ "Invite", "group__DiscordAPIInvite.html", "group__DiscordAPIInvite" ],
+    [ "Gateway", "group__DiscordAPIOAuth2.html", "group__DiscordAPIOAuth2" ],
     [ "User", "group__DiscordAPIUser.html", "group__DiscordAPIUser" ],
     [ "Voice", "group__DiscordAPIVoice.html", "group__DiscordAPIVoice" ],
     [ "Webhook", "group__DiscordAPIWebhook.html", "group__DiscordAPIWebhook" ]

@@ -1,5 +1,10 @@
 var NAVTREEINDEX2 =
 {
+"group__DiscordCommands.html#gad633301a38218a7f70c29ea6af5eb993":[5,2,0,0],
+"group__DiscordCommands.html#gaed8749c82a27a024a0deae053aac67c8":[5,2,0,3],
+"group__DiscordCommands.html#gaf38ef8861fa17efd95a5b374da6ef67f":[5,2,0,2],
+"group__DiscordConstants.html":[5,3],
+"group__DiscordConstantsEmbed.html":[5,3,1],
 "group__DiscordConstantsGeneral.html":[5,3,0],
 "group__DiscordConstantsWebhook.html":[5,3,2],
 "group__DiscordEvents.html":[5,2,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX2 =
 "include_2guild_8h.html":[7,0,2,13],
 "include_2guild_8h_source.html":[7,0,2,13],
 "include_2guild__scheduled__event_8h.html":[7,0,2,14],
-"include_2guild__scheduled__event_8h_source.html":[7,0,2,14],
-"include_2guild__template_8h.html":[7,0,2,15],
-"include_2guild__template_8h_source.html":[7,0,2,15],
-"include_2invite_8h.html":[7,0,2,17],
-"include_2invite_8h_source.html":[7,0,2,17],
-"include_2user_8h.html":[7,0,2,19]
+"include_2guild__scheduled__event_8h_source.html":[7,0,2,14]
 };

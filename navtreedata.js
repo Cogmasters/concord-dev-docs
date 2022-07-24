@@ -101,16 +101,17 @@ var NAVTREE =
       ] ],
       [ "Topics", "md_docs_DISCORD_ROADMAP.html#autotoc_md61", [
         [ "Gateway", "md_docs_DISCORD_ROADMAP.html#autotoc_md62", null ],
-        [ "Opcodes and Status Codes", "md_docs_DISCORD_ROADMAP.html#autotoc_md63", null ],
-        [ "Permissions", "md_docs_DISCORD_ROADMAP.html#autotoc_md64", null ],
-        [ "RateLimits", "md_docs_DISCORD_ROADMAP.html#autotoc_md65", null ],
-        [ "Voice Connections", "md_docs_DISCORD_ROADMAP.html#autotoc_md66", null ]
+        [ "OAuth2", "md_docs_DISCORD_ROADMAP.html#autotoc_md63", null ],
+        [ "Opcodes and Status Codes", "md_docs_DISCORD_ROADMAP.html#autotoc_md64", null ],
+        [ "Permissions", "md_docs_DISCORD_ROADMAP.html#autotoc_md65", null ],
+        [ "RateLimits", "md_docs_DISCORD_ROADMAP.html#autotoc_md66", null ],
+        [ "Voice Connections", "md_docs_DISCORD_ROADMAP.html#autotoc_md67", null ]
       ] ]
     ] ],
     [ "Compiling on Windows (Detailed instructions)", "md_docs_WINDOWS.html", [
-      [ "Cygwin and Dependencies", "md_docs_WINDOWS.html#autotoc_md68", null ],
-      [ "Microsoft Visual C/C++", "md_docs_WINDOWS.html#autotoc_md69", null ],
-      [ "Other compilers", "md_docs_WINDOWS.html#autotoc_md70", null ]
+      [ "Cygwin and Dependencies", "md_docs_WINDOWS.html#autotoc_md69", null ],
+      [ "Microsoft Visual C/C++", "md_docs_WINDOWS.html#autotoc_md70", null ],
+      [ "Other compilers", "md_docs_WINDOWS.html#autotoc_md71", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -142,17 +143,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__ConcordError.html#gaa7b553c5e26c59b50b1c941fb60ec1b3",
-"group__DiscordConstantsGeneral.html",
-"include_2user_8h_source.html",
-"structdiscord__application.html#a87a2c23954fb5ac9cf178e071fd984b7",
-"structdiscord__create__followup__message.html#a86d78b21403370421784d4d6832a2da7",
-"structdiscord__gateway__session.html",
-"structdiscord__install__params.html#a46669f6674d12f486f5b919fd8b130e2",
-"structdiscord__modify__guild.html#a38b6122ec64628a5bfefe2ca1c92d7f2",
-"structdiscord__ret__ban.html#a4416c5a381a8093a664c6cb0d085368f",
-"structdiscord__ret__thread__response__body.html#a059ceefa7822a98d25764078ca903b72",
-"structdiscord__welcome__screen.html"
+"group__ConcordError.html#ga80f3eaee3c522218fa1f2915ef61d6ca",
+"group__DiscordCommands.html#gad633301a38218a7f70c29ea6af5eb993",
+"include_2guild__template_8h.html",
+"structdiscord__allowed__mention.html#affcb92f89bd2e801c0a15ab75ce8689c",
+"structdiscord__create__channel__invite.html#a7de3ed7bd6ffc5632649cb1e7ee52081",
+"structdiscord__gateway__payload.html",
+"structdiscord__identify.html",
+"structdiscord__modify__current__user.html#a1dad023eec0b9dec97af89ce56ca8900",
+"structdiscord__ret__audit__log.html#a88dca29888943d5de72901b1c84eff81",
+"structdiscord__ret__response.html#a7469095be1da4c75aa02dad083b49cf5",
+"structdiscord__voice__state.html#a08a8581d553f6679ee4cbb18d6bea2e5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

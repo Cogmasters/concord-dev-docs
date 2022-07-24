@@ -18,6 +18,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "guild_template.h", "include_2guild__template_8h.html", "include_2guild__template_8h" ],
     [ "interaction.h", "interaction_8h.html", "interaction_8h" ],
     [ "invite.h", "include_2invite_8h.html", "include_2invite_8h" ],
+    [ "oauth2.h", "include_2oauth2_8h.html", "include_2oauth2_8h" ],
     [ "osname.h", "osname_8h_source.html", null ],
     [ "user.h", "include_2user_8h.html", "include_2user_8h" ],
     [ "voice.h", "include_2voice_8h.html", "include_2voice_8h" ],

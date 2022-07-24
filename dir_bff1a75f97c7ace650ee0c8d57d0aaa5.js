@@ -14,6 +14,7 @@ var dir_bff1a75f97c7ace650ee0c8d57d0aaa5 =
     [ "interactions.h", "interactions_8h.html", "interactions_8h" ],
     [ "invite.h", "docs_2api_2invite_8h.html", "docs_2api_2invite_8h" ],
     [ "message_components.h", "message__components_8h.html", "message__components_8h" ],
+    [ "oauth2.h", "docs_2api_2oauth2_8h.html", "docs_2api_2oauth2_8h" ],
     [ "permissions.h", "permissions_8h.html", "permissions_8h" ],
     [ "stage_instance.h", "stage__instance_8h.html", "stage__instance_8h" ],
     [ "sticker.h", "sticker_8h.html", "sticker_8h" ],
