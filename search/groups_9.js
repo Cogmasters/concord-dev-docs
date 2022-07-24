@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['primitives_0',['Primitives',['../group__ConcordTypes.html',1,'']]]
+  ['oauth2_0',['OAuth2',['../group__DiscordAPIOAuth2.html',1,'']]]
 ];
