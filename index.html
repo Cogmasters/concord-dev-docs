@@ -118,19 +118,15 @@ Slash Commands (new method)</h4>
 <div class="line">    <span class="keywordflow">if</span> (event-&gt;<a class="code hl_variable" href="structdiscord__interaction.html#aad9b8b77631a49efb85e7d9b3776fa72">type</a> != DISCORD_INTERACTION_APPLICATION_COMMAND)</div>
 <div class="line">        <span class="keywordflow">return</span>; <span class="comment">/* return if interaction isn&#39;t a slash command */</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <span class="keyword">event</span>-&gt;data-&gt;options-&gt;size; ++i) {</div>
-<div class="line">        <span class="keywordtype">char</span> *command_name = <span class="keyword">event</span>-&gt;data-&gt;options-&gt;array[i].name;</div>
-<div class="line"> </div>
-<div class="line">        <span class="keywordflow">if</span> (strcmp(command_name, <span class="stringliteral">&quot;ping&quot;</span>) == 0) {</div>
-<div class="line">              <span class="keyword">struct </span><a class="code hl_struct" href="structdiscord__interaction__response.html">discord_interaction_response</a> params = {</div>
-<div class="line">                    .<a class="code hl_variable" href="structdiscord__interaction__response.html#a5f8a72eedbc0d2e5d99d7f31f99dae6e">type</a> = <a class="code hl_enumvalue" href="interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a3409efaf45118256f4a33d4b15d76240">DISCORD_INTERACTION_CHANNEL_MESSAGE_WITH_SOURCE</a>,</div>
-<div class="line">                    .data = &amp;(<span class="keyword">struct </span><a class="code hl_struct" href="structdiscord__interaction__callback__data.html">discord_interaction_callback_data</a>){</div>
-<div class="line">                          .content = <span class="stringliteral">&quot;pong&quot;</span></div>
-<div class="line">                    }</div>
-<div class="line">              };</div>
-<div class="line">              <a class="code hl_function" href="group__DiscordAPIInteractionsReact.html#ga4e69da7bd7fd2472e7cbe60b0ce292ad">discord_create_interaction_response</a>(client, event-&gt;<a class="code hl_variable" href="structdiscord__interaction.html#a3a97e61aa2066f54c57f68175c9434f3">id</a>,</div>
-<div class="line">                                                  event-&gt;<a class="code hl_variable" href="structdiscord__interaction.html#ac1e97e032eec047868dce94121a7d234">token</a>, &amp;params, NULL);</div>
-<div class="line">        }</div>
+<div class="line">    <span class="keywordflow">if</span> (strcmp(event-&gt;<a class="code hl_variable" href="structdiscord__interaction.html#aa51ca032313f3d65f2c6d641e569b0db">data</a>-&gt;<a class="code hl_variable" href="structdiscord__interaction__data.html#a306f118a55417b9029d1ef70e4366f5b">name</a>, <span class="stringliteral">&quot;ping&quot;</span>) == 0) {</div>
+<div class="line">          <span class="keyword">struct </span><a class="code hl_struct" href="structdiscord__interaction__response.html">discord_interaction_response</a> params = {</div>
+<div class="line">                .<a class="code hl_variable" href="structdiscord__interaction__response.html#a5f8a72eedbc0d2e5d99d7f31f99dae6e">type</a> = <a class="code hl_enumvalue" href="interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a3409efaf45118256f4a33d4b15d76240">DISCORD_INTERACTION_CHANNEL_MESSAGE_WITH_SOURCE</a>,</div>
+<div class="line">                .data = &amp;(<span class="keyword">struct </span><a class="code hl_struct" href="structdiscord__interaction__callback__data.html">discord_interaction_callback_data</a>){</div>
+<div class="line">                      .content = <span class="stringliteral">&quot;pong&quot;</span></div>
+<div class="line">                }</div>
+<div class="line">          };</div>
+<div class="line">          <a class="code hl_function" href="group__DiscordAPIInteractionsReact.html#ga4e69da7bd7fd2472e7cbe60b0ce292ad">discord_create_interaction_response</a>(client, event-&gt;<a class="code hl_variable" href="structdiscord__interaction.html#a3a97e61aa2066f54c57f68175c9434f3">id</a>,</div>
+<div class="line">                                              event-&gt;<a class="code hl_variable" href="structdiscord__interaction.html#ac1e97e032eec047868dce94121a7d234">token</a>, &amp;params, NULL);</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -151,10 +147,12 @@ Slash Commands (new method)</h4>
 <div class="ttc" id="astructdiscord__create__guild__application__command_html"><div class="ttname"><a href="structdiscord__create__guild__application__command.html">discord_create_guild_application_command</a></div><div class="ttdef"><b>Definition:</b> application_commands.h:242</div></div>
 <div class="ttc" id="astructdiscord__create__guild__application__command_html_a27fb5e8a69d4d72f7c6853e06f881a9f"><div class="ttname"><a href="structdiscord__create__guild__application__command.html#a27fb5e8a69d4d72f7c6853e06f881a9f">discord_create_guild_application_command::name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> application_commands.h:244</div></div>
 <div class="ttc" id="astructdiscord__interaction__callback__data_html"><div class="ttname"><a href="structdiscord__interaction__callback__data.html">discord_interaction_callback_data</a></div><div class="ttdef"><b>Definition:</b> interactions.h:133</div></div>
+<div class="ttc" id="astructdiscord__interaction__data_html_a306f118a55417b9029d1ef70e4366f5b"><div class="ttname"><a href="structdiscord__interaction__data.html#a306f118a55417b9029d1ef70e4366f5b">discord_interaction_data::name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> interactions.h:80</div></div>
 <div class="ttc" id="astructdiscord__interaction__response_html"><div class="ttname"><a href="structdiscord__interaction__response.html">discord_interaction_response</a></div><div class="ttdef"><b>Definition:</b> interactions.h:125</div></div>
 <div class="ttc" id="astructdiscord__interaction__response_html_a5f8a72eedbc0d2e5d99d7f31f99dae6e"><div class="ttname"><a href="structdiscord__interaction__response.html#a5f8a72eedbc0d2e5d99d7f31f99dae6e">discord_interaction_response::type</a></div><div class="ttdeci">enum discord_interaction_callback_types type</div><div class="ttdef"><b>Definition:</b> interactions.h:127</div></div>
 <div class="ttc" id="astructdiscord__interaction_html"><div class="ttname"><a href="structdiscord__interaction.html">discord_interaction</a></div><div class="ttdef"><b>Definition:</b> interactions.h:48</div></div>
 <div class="ttc" id="astructdiscord__interaction_html_a3a97e61aa2066f54c57f68175c9434f3"><div class="ttname"><a href="structdiscord__interaction.html#a3a97e61aa2066f54c57f68175c9434f3">discord_interaction::id</a></div><div class="ttdeci">u64snowflake id</div><div class="ttdef"><b>Definition:</b> interactions.h:50</div></div>
+<div class="ttc" id="astructdiscord__interaction_html_aa51ca032313f3d65f2c6d641e569b0db"><div class="ttname"><a href="structdiscord__interaction.html#aa51ca032313f3d65f2c6d641e569b0db">discord_interaction::data</a></div><div class="ttdeci">struct discord_interaction_data * data</div><div class="ttdef"><b>Definition:</b> interactions.h:56</div></div>
 <div class="ttc" id="astructdiscord__interaction_html_aad9b8b77631a49efb85e7d9b3776fa72"><div class="ttname"><a href="structdiscord__interaction.html#aad9b8b77631a49efb85e7d9b3776fa72">discord_interaction::type</a></div><div class="ttdeci">enum discord_interaction_types type</div><div class="ttdef"><b>Definition:</b> interactions.h:54</div></div>
 <div class="ttc" id="astructdiscord__interaction_html_ac1e97e032eec047868dce94121a7d234"><div class="ttname"><a href="structdiscord__interaction.html#ac1e97e032eec047868dce94121a7d234">discord_interaction::token</a></div><div class="ttdeci">char * token</div><div class="ttdef"><b>Definition:</b> interactions.h:66</div></div>
 <div class="ttc" id="astructdiscord__ready_html"><div class="ttname"><a href="structdiscord__ready.html">discord_ready</a></div><div class="ttdef"><b>Definition:</b> gateway.h:332</div></div>
