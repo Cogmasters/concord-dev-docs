@@ -310,7 +310,7 @@ var searchData=
   ['discord_5ftimer_5fstop_307',['discord_timer_stop',['../group__DiscordTimer.html#ga9bc2f8b274d62a173b051987b88dc890',1,'discord.h']]],
   ['discord_5ftimers_5fcleanup_308',['discord_timers_cleanup',['../group__DiscordInternalTimer.html#ga6bf3ef6a2ccc045f060ca2e9d342403a',1,'discord-internal.h']]],
   ['discord_5ftimers_5fget_5fnext_5ftrigger_309',['discord_timers_get_next_trigger',['../group__DiscordInternalTimer.html#ga238902133893ba4c7e7f52680c242ec7',1,'discord-internal.h']]],
-  ['discord_5ftimers_5finit_310',['discord_timers_init',['../group__DiscordInternalTimer.html#gae0fbfdd1cf1370ccff07b8c6bad9baa9',1,'discord-internal.h']]],
+  ['discord_5ftimers_5finit_310',['discord_timers_init',['../group__DiscordInternalTimer.html#ga4bada3f1f856829605c2021e7d3ca27c',1,'discord-internal.h']]],
   ['discord_5ftimers_5frun_311',['discord_timers_run',['../group__DiscordInternalTimer.html#ga883b03199ab5d2b4ede1cafab23e71fc',1,'discord-internal.h']]],
   ['discord_5ftimestamp_312',['discord_timestamp',['../group__DiscordClient.html#ga15a8fe1a6d3f30c18c6985b3afae11f5',1,'discord.h']]],
   ['discord_5ftimestamp_5fus_313',['discord_timestamp_us',['../group__DiscordClient.html#gab751b38fe43b55b59592560798b01c07',1,'discord.h']]],

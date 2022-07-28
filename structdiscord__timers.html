@@ -104,8 +104,17 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a9546789b04e1dd1db54619fc35e2dfa3"><td class="memItemLeft" align="right" valign="top"><a id="a9546789b04e1dd1db54619fc35e2dfa3" name="a9546789b04e1dd1db54619fc35e2dfa3"></a>
 priority_queue *&#160;</td><td class="memItemRight" valign="bottom"><b>q</b></td></tr>
 <tr class="separator:a9546789b04e1dd1db54619fc35e2dfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21bccad00b126ede4d94eda6966a6201"><td class="memItemLeft" align="right" valign="top"><a id="a21bccad00b126ede4d94eda6966a6201" name="a21bccad00b126ede4d94eda6966a6201"></a>
+struct io_poller *&#160;</td><td class="memItemRight" valign="bottom"><b>io</b></td></tr>
+<tr class="separator:a21bccad00b126ede4d94eda6966a6201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa77f4bf0e05d1ec3f3d04eadf473ba8b"><td class="memItemLeft" ><a id="aa77f4bf0e05d1ec3f3d04eadf473ba8b" name="aa77f4bf0e05d1ec3f3d04eadf473ba8b"></a>
 struct {</td></tr>
+<tr class="memitem:a82235ce8ae2faac0423c92a29761ca7d"><td class="memItemLeft" >
+&#160;&#160;&#160;bool&#160;&#160;&#160;<b>is_active</b></td></tr>
+<tr class="separator:a82235ce8ae2faac0423c92a29761ca7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397340795c1e6c9a972f2f89c3b46289"><td class="memItemLeft" >
+&#160;&#160;&#160;pthread_t&#160;&#160;&#160;<b>thread</b></td></tr>
+<tr class="separator:a397340795c1e6c9a972f2f89c3b46289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11938039eb89c8954bb9534fb7d40d42"><td class="memItemLeft" >
 &#160;&#160;&#160;struct <a class="el" href="structdiscord__timer.html">discord_timer</a> *&#160;&#160;&#160;<b>timer</b></td></tr>
 <tr class="separator:a11938039eb89c8954bb9534fb7d40d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +123,12 @@ struct {</td></tr>
 <tr class="separator:a7b5212997f070caae5df2e197c315e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa77f4bf0e05d1ec3f3d04eadf473ba8b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>active</b></td></tr>
 <tr class="separator:aa77f4bf0e05d1ec3f3d04eadf473ba8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bae230b22aa978a5e109fadad1b1e06"><td class="memItemLeft" align="right" valign="top"><a id="a2bae230b22aa978a5e109fadad1b1e06" name="a2bae230b22aa978a5e109fadad1b1e06"></a>
+pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><b>lock</b></td></tr>
+<tr class="separator:a2bae230b22aa978a5e109fadad1b1e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf926edb5929771c31ef5b516e0cde6b"><td class="memItemLeft" align="right" valign="top"><a id="abf926edb5929771c31ef5b516e0cde6b" name="abf926edb5929771c31ef5b516e0cde6b"></a>
+pthread_cond_t&#160;</td><td class="memItemRight" valign="bottom"><b>cond</b></td></tr>
+<tr class="separator:abf926edb5929771c31ef5b516e0cde6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/<a class="el" href="discord-internal_8h_source.html">discord-internal.h</a></li>

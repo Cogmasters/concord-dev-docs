@@ -14,7 +14,7 @@ var discord_internal_8h =
     [ "DISCORD_SESSION_SHUTDOWN", "group__DiscordInternalGatewaySessionStatus.html#gac420091888fcf49cc95dd5f3bbcd18ed", null ],
     [ "discord_ev_event", "group__DiscordInternalGateway.html#gae38e6a4c2e9bbb2ac711ecdcea8995a6", null ],
     [ "discord_ev_message", "group__DiscordInternalGateway.html#ga2953803314aee1dbfc9c4d65140a6ae2", null ],
-    [ "discord_timers_init", "group__DiscordInternalTimer.html#gae0fbfdd1cf1370ccff07b8c6bad9baa9", null ],
+    [ "discord_timers_init", "group__DiscordInternalTimer.html#ga4bada3f1f856829605c2021e7d3ca27c", null ],
     [ "discord_timers_cleanup", "group__DiscordInternalTimer.html#ga6bf3ef6a2ccc045f060ca2e9d342403a", null ],
     [ "discord_timers_get_next_trigger", "group__DiscordInternalTimer.html#ga238902133893ba4c7e7f52680c242ec7", null ],
     [ "discord_timers_run", "group__DiscordInternalTimer.html#ga883b03199ab5d2b4ede1cafab23e71fc", null ],
