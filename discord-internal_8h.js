@@ -1,5 +1,8 @@
 var discord_internal_8h =
 [
+    [ "JSONB_HEADER", "discord-internal_8h.html#a3cbcbd7c48827141af941f316122fad4", null ],
+    [ "JSMN_STRICT", "discord-internal_8h.html#ae9493ed0020a5a9595eb8d0b6870f947", null ],
+    [ "JSMN_HEADER", "discord-internal_8h.html#aeef9c3539ffb9ed912a2976b67b43d68", null ],
     [ "NOT_EMPTY_STR", "discord-internal_8h.html#aa6b4b8efb1b2769e6868edcf22b2d818", null ],
     [ "CONTAINEROF", "discord-internal_8h.html#a3487a7238142eb3990c8afeece102d7f", null ],
     [ "CLIENT", "group__DiscordInternal.html#ga6b7716aa8750442be45120d1467c8926", null ],

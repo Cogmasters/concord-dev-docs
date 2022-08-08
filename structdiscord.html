@@ -124,15 +124,12 @@ Data Fields</h2></td></tr>
 <tr class="separator:ac439ecded3eac536b5de5dc24355a1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00c5289d2e99e09a2f69fb78589a1ace"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdiscord__user.html">discord_user</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord.html#a00c5289d2e99e09a2f69fb78589a1ace">self</a></td></tr>
 <tr class="separator:a00c5289d2e99e09a2f69fb78589a1ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6bc034780945e0672abd81756a3308a"><td class="memItemLeft" ><a id="ac6bc034780945e0672abd81756a3308a" name="ac6bc034780945e0672abd81756a3308a"></a>
-struct {</td></tr>
-<tr class="memitem:a205f2cd341f3c2d2d2b78b5d75f84e7d"><td class="memItemLeft" >
-&#160;&#160;&#160;struct <a class="el" href="structdiscord__timers.html">discord_timers</a>&#160;&#160;&#160;<b>internal</b></td></tr>
+<tr class="memitem:ac6bc034780945e0672abd81756a3308a"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a205f2cd341f3c2d2d2b78b5d75f84e7d"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structdiscord__timers.html">discord_timers</a>&#160;&#160;&#160;<a class="el" href="structdiscord.html#ab587bcec8b91c77ba72a919ba01b15a2">internal</a></td></tr>
 <tr class="separator:a205f2cd341f3c2d2d2b78b5d75f84e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5a96ffd16b94bc4fcfdf67c29840099"><td class="memItemLeft" >
-&#160;&#160;&#160;struct <a class="el" href="structdiscord__timers.html">discord_timers</a>&#160;&#160;&#160;<b>user</b></td></tr>
+<tr class="memitem:aa5a96ffd16b94bc4fcfdf67c29840099"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structdiscord__timers.html">discord_timers</a>&#160;&#160;&#160;<a class="el" href="structdiscord.html#aece276e567f9230f448c8efea165b5f5">user</a></td></tr>
 <tr class="separator:aa5a96ffd16b94bc4fcfdf67c29840099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6bc034780945e0672abd81756a3308a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>timers</b></td></tr>
+<tr class="memitem:ac6bc034780945e0672abd81756a3308a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdiscord.html#ac6bc034780945e0672abd81756a3308a">timers</a></td></tr>
 <tr class="separator:ac6bc034780945e0672abd81756a3308a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9594326011c673f91ac264fc5b77bd"><td class="memItemLeft" >struct {</td></tr>
 <tr class="memitem:aaf7915a25bb3daa4a4f12a4db5598bf3"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structdiscord.html#a29432c15f5a0740c8c77ef2092c556fc">cb</a> )(struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
@@ -160,7 +157,7 @@ struct {</td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The Discord client handler. </p>
 <p >Used to access/perform public functions from <a class="el" href="discord_8h.html" title="Public functions and datatypes.">discord.h</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a>, <a class="el" href="group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb" title="Create a Discord Client handle by a config.json file.">discord_config_init()</a>, <a class="el" href="group__DiscordClient.html#ga009d0e352a30c00f8b4765712fcfa5a9" title="Free a Discord Client handle.">discord_cleanup()</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#_a0">audit-log.c</a>, <a class="el" href="ban_8c-example.html#_a0">ban.c</a>, <a class="el" href="channel_8c-example.html#_a0">channel.c</a>, <a class="el" href="components_8c-example.html#_a0">components.c</a>, <a class="el" href="embed_8c-example.html#_a0">embed.c</a>, <a class="el" href="emoji_8c-example.html#_a0">emoji.c</a>, <a class="el" href="fetch-messages_8c-example.html#_a0">fetch-messages.c</a>, <a class="el" href="guild-template_8c-example.html#_a0">guild-template.c</a>, <a class="el" href="guild_8c-example.html#_a0">guild.c</a>, <a class="el" href="invite_8c-example.html#_a0">invite.c</a>, <a class="el" href="manual-dm_8c-example.html#_a0">manual-dm.c</a>, <a class="el" href="pin_8c-example.html#_a0">pin.c</a>, <a class="el" href="reaction_8c-example.html#_a0">reaction.c</a>, <a class="el" href="slash-commands_8c-example.html#_a0">slash-commands.c</a>, <a class="el" href="slash-commands2_8c-example.html#_a0">slash-commands2.c</a>, <a class="el" href="timers_8c-example.html#_a6">timers.c</a>, and <a class="el" href="webhook_8c-example.html#_a1">webhook.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#_a0">audit-log.c</a>, <a class="el" href="ban_8c-example.html#_a0">ban.c</a>, <a class="el" href="channel_8c-example.html#_a0">channel.c</a>, <a class="el" href="components_8c-example.html#_a0">components.c</a>, <a class="el" href="embed_8c-example.html#_a0">embed.c</a>, <a class="el" href="emoji_8c-example.html#_a0">emoji.c</a>, <a class="el" href="fetch-messages_8c-example.html#_a0">fetch-messages.c</a>, <a class="el" href="guild-template_8c-example.html#_a0">guild-template.c</a>, <a class="el" href="guild_8c-example.html#_a0">guild.c</a>, <a class="el" href="invite_8c-example.html#_a0">invite.c</a>, <a class="el" href="manual-dm_8c-example.html#_a0">manual-dm.c</a>, <a class="el" href="pin_8c-example.html#_a0">pin.c</a>, <a class="el" href="reaction_8c-example.html#_a0">reaction.c</a>, <a class="el" href="slash-commands_8c-example.html#_a0">slash-commands.c</a>, <a class="el" href="slash-commands2_8c-example.html#_a1">slash-commands2.c</a>, <a class="el" href="timers_8c-example.html#_a6">timers.c</a>, and <a class="el" href="webhook_8c-example.html#_a1">webhook.c</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="ac2ac71153e3681e24b87a205ad2df97f" name="ac2ac71153e3681e24b87a205ad2df97f"></a>
@@ -295,6 +292,48 @@ struct {</td></tr>
       </table>
 </div><div class="memdoc">
 <p >the client's user structure </p>
+
+</div>
+</div>
+<a id="ab587bcec8b91c77ba72a919ba01b15a2" name="ab587bcec8b91c77ba72a919ba01b15a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab587bcec8b91c77ba72a919ba01b15a2">&#9670;&nbsp;</a></span>internal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structdiscord__timers.html">discord_timers</a> discord::internal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aece276e567f9230f448c8efea165b5f5" name="aece276e567f9230f448c8efea165b5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece276e567f9230f448c8efea165b5f5">&#9670;&nbsp;</a></span>user</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structdiscord__timers.html">discord_timers</a> discord::user</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6bc034780945e0672abd81756a3308a" name="ac6bc034780945e0672abd81756a3308a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6bc034780945e0672abd81756a3308a">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  discord::timers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -13,6 +13,9 @@ var group__DiscordClient =
       [ "rest", "structdiscord.html#a56552add29eecbcff98279d9256a5586", null ],
       [ "gw", "structdiscord.html#ac439ecded3eac536b5de5dc24355a1d5", null ],
       [ "self", "structdiscord.html#a00c5289d2e99e09a2f69fb78589a1ace", null ],
+      [ "internal", "structdiscord.html#ab587bcec8b91c77ba72a919ba01b15a2", null ],
+      [ "user", "structdiscord.html#aece276e567f9230f448c8efea165b5f5", null ],
+      [ "timers", "structdiscord.html#ac6bc034780945e0672abd81756a3308a", null ],
       [ "cb", "structdiscord.html#a29432c15f5a0740c8c77ef2092c556fc", null ],
       [ "id", "structdiscord.html#a168c138bf57beb4e5a824dbe805519ca", null ],
       [ "wakeup_timer", "structdiscord.html#a7b9594326011c673f91ac264fc5b77bd", null ],
@@ -25,6 +28,7 @@ var group__DiscordClient =
       [ "workers", "structdiscord.html#a7df318980dab3301c117d4a4650af00e", null ]
     ] ],
     [ "discord_claim", "group__DiscordClient.html#gad1073edb612b01eb8a277d2acf4183a0", null ],
+    [ "__discord_claim", "group__DiscordClient.html#gaff572a95f2f1b2c03c0796111d579086", null ],
     [ "discord_unclaim", "group__DiscordClient.html#ga1f34f5e41cb03767910e9ba3f90207d4", null ],
     [ "discord_init", "group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d", null ],
     [ "discord_config_init", "group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb", null ],

@@ -99,16 +99,16 @@ $(document).ready(function(){initNavTree('discord-internal_8h.html',''); initRes
 <p>Internal functions and datatypes.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;pthread.h&gt;</code><br />
-<code>#include &quot;json-build.h&quot;</code><br />
-<code>#include &quot;jsmn.h&quot;</code><br />
-<code>#include &quot;jsmn-find.h&quot;</code><br />
-<code>#include &quot;logconf.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="json-build_8h_source.html">json-build.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jsmn_8h_source.html">jsmn.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jsmn-find_8h_source.html">jsmn-find.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="logconf_8h_source.html">logconf.h</a>&quot;</code><br />
 <code>#include &quot;user-agent.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="websockets_8h_source.html">websockets.h</a>&quot;</code><br />
-<code>#include &quot;cog-utils.h&quot;</code><br />
-<code>#include &quot;io_poller.h&quot;</code><br />
-<code>#include &quot;queue.h&quot;</code><br />
-<code>#include &quot;priority_queue.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cog-utils_8h_source.html">cog-utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="io__poller_8h_source.html">io_poller.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="queue_8h_source.html">queue.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for discord-internal.h:</div>
 <div class="dyncontent">
@@ -167,39 +167,33 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3cbcbd7c48827141af941f316122fad4"><td class="memItemLeft" align="right" valign="top"><a id="a3cbcbd7c48827141af941f316122fad4" name="a3cbcbd7c48827141af941f316122fad4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>JSONB_HEADER</b></td></tr>
+<tr class="memitem:a3cbcbd7c48827141af941f316122fad4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discord-internal_8h.html#a3cbcbd7c48827141af941f316122fad4">JSONB_HEADER</a></td></tr>
 <tr class="separator:a3cbcbd7c48827141af941f316122fad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9493ed0020a5a9595eb8d0b6870f947"><td class="memItemLeft" align="right" valign="top"><a id="ae9493ed0020a5a9595eb8d0b6870f947" name="ae9493ed0020a5a9595eb8d0b6870f947"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>JSMN_STRICT</b></td></tr>
+<tr class="memitem:ae9493ed0020a5a9595eb8d0b6870f947"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discord-internal_8h.html#ae9493ed0020a5a9595eb8d0b6870f947">JSMN_STRICT</a></td></tr>
 <tr class="separator:ae9493ed0020a5a9595eb8d0b6870f947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef9c3539ffb9ed912a2976b67b43d68"><td class="memItemLeft" align="right" valign="top"><a id="aeef9c3539ffb9ed912a2976b67b43d68" name="aeef9c3539ffb9ed912a2976b67b43d68"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>JSMN_HEADER</b></td></tr>
+<tr class="memitem:aeef9c3539ffb9ed912a2976b67b43d68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discord-internal_8h.html#aeef9c3539ffb9ed912a2976b67b43d68">JSMN_HEADER</a></td></tr>
 <tr class="separator:aeef9c3539ffb9ed912a2976b67b43d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b4b8efb1b2769e6868edcf22b2d818"><td class="memItemLeft" align="right" valign="top"><a id="aa6b4b8efb1b2769e6868edcf22b2d818" name="aa6b4b8efb1b2769e6868edcf22b2d818"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>NOT_EMPTY_STR</b>(str)&#160;&#160;&#160;((str) &amp;&amp; *(str))</td></tr>
-<tr class="memdesc:aa6b4b8efb1b2769e6868edcf22b2d818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return 1 if string isn't considered empty. <br /></td></tr>
+<tr class="memitem:aa6b4b8efb1b2769e6868edcf22b2d818"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discord-internal_8h.html#aa6b4b8efb1b2769e6868edcf22b2d818">NOT_EMPTY_STR</a>(str)&#160;&#160;&#160;((str) &amp;&amp; *(str))</td></tr>
+<tr class="memdesc:aa6b4b8efb1b2769e6868edcf22b2d818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return 1 if string isn't considered empty.  <a href="discord-internal_8h.html#aa6b4b8efb1b2769e6868edcf22b2d818">More...</a><br /></td></tr>
 <tr class="separator:aa6b4b8efb1b2769e6868edcf22b2d818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3487a7238142eb3990c8afeece102d7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discord-internal_8h.html#a3487a7238142eb3990c8afeece102d7f">CONTAINEROF</a>(ptr,  type,  path)&#160;&#160;&#160;    ((type *)((char *)(ptr)-offsetof(type, path)))</td></tr>
 <tr class="memdesc:a3487a7238142eb3990c8afeece102d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get container <code>type</code> from a field <code>ptr</code>  <a href="discord-internal_8h.html#a3487a7238142eb3990c8afeece102d7f">More...</a><br /></td></tr>
 <tr class="separator:a3487a7238142eb3990c8afeece102d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b7716aa8750442be45120d1467c8926"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CLIENT</b>(ptr,  path)&#160;&#160;&#160;<a class="el" href="discord-internal_8h.html#a3487a7238142eb3990c8afeece102d7f">CONTAINEROF</a>(ptr, struct <a class="el" href="structdiscord.html">discord</a>, path)</td></tr>
-<tr class="memdesc:ga6b7716aa8750442be45120d1467c8926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client from its nested field. <br /></td></tr>
+<tr class="memitem:ga6b7716aa8750442be45120d1467c8926"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternal.html#ga6b7716aa8750442be45120d1467c8926">CLIENT</a>(ptr,  path)&#160;&#160;&#160;<a class="el" href="discord-internal_8h.html#a3487a7238142eb3990c8afeece102d7f">CONTAINEROF</a>(ptr, struct <a class="el" href="structdiscord.html">discord</a>, path)</td></tr>
+<tr class="memdesc:ga6b7716aa8750442be45120d1467c8926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client from its nested field.  <a href="group__DiscordInternal.html#ga6b7716aa8750442be45120d1467c8926">More...</a><br /></td></tr>
 <tr class="separator:ga6b7716aa8750442be45120d1467c8926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad26258eaeb38eaff2fc8367705ff357b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternal.html#gad26258eaeb38eaff2fc8367705ff357b">CCORD_EXPECT</a>(client,  expect,  code,  reason)</td></tr>
 <tr class="memdesc:gad26258eaeb38eaff2fc8367705ff357b"><td class="mdescLeft">&#160;</td><td class="mdescRight">log and return <code>code</code> if <code>expect</code> condition is false  <a href="group__DiscordInternal.html#gad26258eaeb38eaff2fc8367705ff357b">More...</a><br /></td></tr>
 <tr class="separator:gad26258eaeb38eaff2fc8367705ff357b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga69f4288287a2a9df3630d10e3e208f09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternal.html#ga69f4288287a2a9df3630d10e3e208f09">ASSERT_NOT_OOB</a>(nbytes,  destsz)&#160;&#160;&#160;    ASSERT_S((size_t)nbytes &lt; (size_t)destsz, &quot;Out of bounds write attempt&quot;);</td></tr>
+<tr class="memitem:ga69f4288287a2a9df3630d10e3e208f09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternal.html#ga69f4288287a2a9df3630d10e3e208f09">ASSERT_NOT_OOB</a>(nbytes,  destsz)&#160;&#160;&#160;    <a class="el" href="logconf_8h.html#ac19efa0f65c104796b5d41170cee731c">ASSERT_S</a>((size_t)nbytes &lt; (size_t)destsz, &quot;Out of bounds write attempt&quot;);</td></tr>
 <tr class="memdesc:ga69f4288287a2a9df3630d10e3e208f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for checking OOB-write attempts.  <a href="group__DiscordInternal.html#ga69f4288287a2a9df3630d10e3e208f09">More...</a><br /></td></tr>
 <tr class="separator:ga69f4288287a2a9df3630d10e3e208f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f54459e4a3ef7fae49a92fd6dee7103"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternal.html#ga6f54459e4a3ef7fae49a92fd6dee7103">DISCORD_ENDPT_LEN</a>&#160;&#160;&#160;512</td></tr>
 <tr class="separator:ga6f54459e4a3ef7fae49a92fd6dee7103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga576294a6f05bf60dbf54a275d3c61f8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternal.html#ga576294a6f05bf60dbf54a275d3c61f8b">DISCORD_ROUTE_LEN</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:ga576294a6f05bf60dbf54a275d3c61f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6cde5ab5d14c9fedd812a8ed78107427"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DISCORD_BUCKET_TIMEOUT</b>&#160;&#160;&#160;(void *)(0xf)</td></tr>
-<tr class="memdesc:ga6cde5ab5d14c9fedd812a8ed78107427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value assigned to <a class="el" href="structdiscord__bucket.html">discord_bucket</a> <code>busy_req</code> field in case it's being timed-out. <br /></td></tr>
+<tr class="memitem:ga6cde5ab5d14c9fedd812a8ed78107427"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalRESTRequestRatelimit.html#ga6cde5ab5d14c9fedd812a8ed78107427">DISCORD_BUCKET_TIMEOUT</a>&#160;&#160;&#160;(void *)(0xf)</td></tr>
+<tr class="memdesc:ga6cde5ab5d14c9fedd812a8ed78107427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value assigned to <a class="el" href="structdiscord__bucket.html">discord_bucket</a> <code>busy_req</code> field in case it's being timed-out.  <a href="group__DiscordInternalRESTRequestRatelimit.html#ga6cde5ab5d14c9fedd812a8ed78107427">More...</a><br /></td></tr>
 <tr class="separator:ga6cde5ab5d14c9fedd812a8ed78107427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga69b30d5de53f322a574d6fe5c0e4b956"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalRESTRequest.html#ga69b30d5de53f322a574d6fe5c0e4b956">DISCORD_ATTRIBUTES_FIELDS</a></td></tr>
 <tr class="memdesc:ga69b30d5de53f322a574d6fe5c0e4b956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro containing <a class="el" href="structdiscord__attributes.html">discord_attributes</a> fields.  <a href="group__DiscordInternalRESTRequest.html#ga69b30d5de53f322a574d6fe5c0e4b956">More...</a><br /></td></tr>
@@ -383,13 +377,75 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga2c55b1208a9d93c6c4070135f6cc97f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a mandatory prefix before commands.  <a href="group__DiscordInternalMessageCommands.html#ga2c55b1208a9d93c6c4070135f6cc97f1">More...</a><br /></td></tr>
 <tr class="separator:ga2c55b1208a9d93c6c4070135f6cc97f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad86c94465427900898327ed368c6877f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordInternalMessageCommands.html#gad86c94465427900898327ed368c6877f">discord_message_commands_try_perform</a> (struct <a class="el" href="structdiscord__message__commands.html">discord_message_commands</a> *cmds, struct <a class="el" href="structdiscord__gateway__payload.html">discord_gateway_payload</a> *payload)</td></tr>
-<tr class="memdesc:gad86c94465427900898327ed368c6877f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the current DISCORD_EV_MESSAGE_CREATE payload and attempt to perform its matching callback.  <a href="group__DiscordInternalMessageCommands.html#gad86c94465427900898327ed368c6877f">More...</a><br /></td></tr>
+<tr class="memdesc:gad86c94465427900898327ed368c6877f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the current <a class="el" href="group__DiscordEvents.html#gga90ebb76de1682ce02a67a08b0510145ba983941db157b3b88a3972d39d03c9a91">DISCORD_EV_MESSAGE_CREATE</a> payload and attempt to perform its matching callback.  <a href="group__DiscordInternalMessageCommands.html#gad86c94465427900898327ed368c6877f">More...</a><br /></td></tr>
 <tr class="separator:gad86c94465427900898327ed368c6877f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Internal functions and datatypes. </p>
 <dl class="section author"><dt>Author</dt><dd>Cogmasters </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3cbcbd7c48827141af941f316122fad4" name="a3cbcbd7c48827141af941f316122fad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cbcbd7c48827141af941f316122fad4">&#9670;&nbsp;</a></span>JSONB_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JSONB_HEADER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9493ed0020a5a9595eb8d0b6870f947" name="ae9493ed0020a5a9595eb8d0b6870f947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9493ed0020a5a9595eb8d0b6870f947">&#9670;&nbsp;</a></span>JSMN_STRICT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JSMN_STRICT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeef9c3539ffb9ed912a2976b67b43d68" name="aeef9c3539ffb9ed912a2976b67b43d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef9c3539ffb9ed912a2976b67b43d68">&#9670;&nbsp;</a></span>JSMN_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JSMN_HEADER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6b4b8efb1b2769e6868edcf22b2d818" name="aa6b4b8efb1b2769e6868edcf22b2d818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b4b8efb1b2769e6868edcf22b2d818">&#9670;&nbsp;</a></span>NOT_EMPTY_STR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NOT_EMPTY_STR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">str</td><td>)</td>
+          <td>&#160;&#160;&#160;((str) &amp;&amp; *(str))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return 1 if string isn't considered empty. </p>
+
+</div>
+</div>
 <a id="a3487a7238142eb3990c8afeece102d7f" name="a3487a7238142eb3990c8afeece102d7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3487a7238142eb3990c8afeece102d7f">&#9670;&nbsp;</a></span>CONTAINEROF</h2>
 

@@ -19,7 +19,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "interaction.h", "interaction_8h.html", "interaction_8h" ],
     [ "invite.h", "include_2invite_8h.html", "include_2invite_8h" ],
     [ "oauth2.h", "include_2oauth2_8h.html", "include_2oauth2_8h" ],
-    [ "osname.h", "osname_8h_source.html", null ],
+    [ "osname.h", "osname_8h.html", "osname_8h" ],
     [ "user.h", "include_2user_8h.html", "include_2user_8h" ],
     [ "voice.h", "include_2voice_8h.html", "include_2voice_8h" ],
     [ "webhook.h", "include_2webhook_8h.html", "include_2webhook_8h" ]

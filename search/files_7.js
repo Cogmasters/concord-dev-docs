@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['oauth2_2eh_0',['oauth2.h',['../docs_2api_2oauth2_8h.html',1,'(Global Namespace)'],['../include_2oauth2_8h.html',1,'(Global Namespace)']]]
+  ['log_2eh_0',['log.h',['../log_8h.html',1,'']]],
+  ['logconf_2eh_1',['logconf.h',['../logconf_8h.html',1,'']]]
 ];

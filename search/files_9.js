@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['stage_5finstance_2eh_0',['stage_instance.h',['../stage__instance_8h.html',1,'']]],
-  ['sticker_2eh_1',['sticker.h',['../sticker_8h.html',1,'']]]
+  ['oauth2_2eh_0',['oauth2.h',['../docs_2api_2oauth2_8h.html',1,'(Global Namespace)'],['../include_2oauth2_8h.html',1,'(Global Namespace)']]],
+  ['osname_2eh_1',['osname.h',['../osname_8h.html',1,'']]]
 ];

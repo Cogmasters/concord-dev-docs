@@ -22,7 +22,7 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="structdiscord__auto__moderation__trigger__metadata.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="orangered" points="0,-89 0,-119 140,-119 140,-89 0,-89"/>
+<polygon fill="none" stroke="red" points="0,-89 0,-119 140,-119 140,-89 0,-89"/>
 <text text-anchor="start" x="8" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00">discord_auto_moderation</text>
 <text text-anchor="middle" x="70" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00">_trigger_metadata</text>
 </a>
@@ -39,7 +39,7 @@
 <g id="node3" class="node">
 <title>Node5</title>
 <g id="a_node3"><a xlink:href="structdiscord__auto__moderation__actions.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="orangered" points="0,-40 0,-70 140,-70 140,-40 0,-40"/>
+<polygon fill="none" stroke="red" points="0,-40 0,-70 140,-70 140,-40 0,-40"/>
 <text text-anchor="start" x="8" y="-58" font-family="Helvetica,sans-Serif" font-size="10.00">discord_auto_moderation</text>
 <text text-anchor="middle" x="70" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00">_actions</text>
 </a>

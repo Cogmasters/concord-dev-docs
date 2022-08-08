@@ -92,23 +92,24 @@ $(document).ready(function(){initNavTree('structcws__callbacks.html',''); initRe
   <div class="headertitle"><div class="title">cws_callbacks Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="curl-websocket_8h_source.html">curl-websocket.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a3dc1fb1b61dcd17345d047a74bc307a1"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a3dc1fb1b61dcd17345d047a74bc307a1">on_connect</a> )(void *data, CURL *easy, const char *websocket_protocols)</td></tr>
+<tr class="memitem:a3dc1fb1b61dcd17345d047a74bc307a1"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a3dc1fb1b61dcd17345d047a74bc307a1">on_connect</a> )(void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const char *websocket_protocols)</td></tr>
 <tr class="separator:a3dc1fb1b61dcd17345d047a74bc307a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b995487afcee64ad1f55b54c8df0606"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a5b995487afcee64ad1f55b54c8df0606">on_text</a> )(void *data, CURL *easy, const char *text, size_t len)</td></tr>
+<tr class="memitem:a5b995487afcee64ad1f55b54c8df0606"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a5b995487afcee64ad1f55b54c8df0606">on_text</a> )(void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const char *text, size_t len)</td></tr>
 <tr class="separator:a5b995487afcee64ad1f55b54c8df0606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d9f0da8cf098451bc2ab9b5d9d9f6c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a94d9f0da8cf098451bc2ab9b5d9d9f6c">on_binary</a> )(void *data, CURL *easy, const void *mem, size_t len)</td></tr>
+<tr class="memitem:a94d9f0da8cf098451bc2ab9b5d9d9f6c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a94d9f0da8cf098451bc2ab9b5d9d9f6c">on_binary</a> )(void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const void *mem, size_t len)</td></tr>
 <tr class="separator:a94d9f0da8cf098451bc2ab9b5d9d9f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c213cb14d42b698adc10dbecdf17525"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a1c213cb14d42b698adc10dbecdf17525">on_ping</a> )(void *data, CURL *easy, const char *reason, size_t len)</td></tr>
+<tr class="memitem:a1c213cb14d42b698adc10dbecdf17525"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a1c213cb14d42b698adc10dbecdf17525">on_ping</a> )(void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const char *reason, size_t len)</td></tr>
 <tr class="separator:a1c213cb14d42b698adc10dbecdf17525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac25eec5e54e9f473271d87d88159665f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#ac25eec5e54e9f473271d87d88159665f">on_pong</a> )(void *data, CURL *easy, const char *reason, size_t len)</td></tr>
+<tr class="memitem:ac25eec5e54e9f473271d87d88159665f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#ac25eec5e54e9f473271d87d88159665f">on_pong</a> )(void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const char *reason, size_t len)</td></tr>
 <tr class="separator:ac25eec5e54e9f473271d87d88159665f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08b670bdf3f4db157890d401f4042ad0"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a08b670bdf3f4db157890d401f4042ad0">on_close</a> )(void *data, CURL *easy, enum cws_close_reason reason, const char *reason_text, size_t reason_text_len)</td></tr>
+<tr class="memitem:a08b670bdf3f4db157890d401f4042ad0"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a08b670bdf3f4db157890d401f4042ad0">on_close</a> )(void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, enum <a class="el" href="curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62">cws_close_reason</a> reason, const char *reason_text, size_t reason_text_len)</td></tr>
 <tr class="separator:a08b670bdf3f4db157890d401f4042ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7562c71835a760ceea57650734b5fed9"><td class="memItemLeft" align="right" valign="top"><a id="a7562c71835a760ceea57650734b5fed9" name="a7562c71835a760ceea57650734b5fed9"></a>
-const void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="memitem:a7562c71835a760ceea57650734b5fed9"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a></td></tr>
 <tr class="separator:a7562c71835a760ceea57650734b5fed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
@@ -119,7 +120,7 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cws_callbacks::on_connect) (void *data, CURL *easy, const char *websocket_protocols)</td>
+          <td class="memname">void(* cws_callbacks::on_connect) (void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const char *websocket_protocols)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -135,12 +136,12 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cws_callbacks::on_text) (void *data, CURL *easy, const char *text, size_t len)</td>
+          <td class="memname">void(* cws_callbacks::on_text) (void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const char *text, size_t len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p >reports UTF-8 text messages.</p>
-<dl class="section note"><dt>Note</dt><dd>it's guaranteed to be NULL (\0) terminated, but the UTF-8 is not validated. If it's invalid, consider closing the connection with #CWS_CLOSE_REASON_INCONSISTENT_DATA. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>it's guaranteed to be NULL (\0) terminated, but the UTF-8 is not validated. If it's invalid, consider closing the connection with <a class="el" href="curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62a52aa4827b6c4c4b63977388582d8cf11">CWS_CLOSE_REASON_INCONSISTENT_DATA</a>. </dd></dl>
 
 </div>
 </div>
@@ -151,7 +152,7 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cws_callbacks::on_binary) (void *data, CURL *easy, const void *mem, size_t len)</td>
+          <td class="memname">void(* cws_callbacks::on_binary) (void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const void *mem, size_t len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -166,12 +167,12 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cws_callbacks::on_ping) (void *data, CURL *easy, const char *reason, size_t len)</td>
+          <td class="memname">void(* cws_callbacks::on_ping) (void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const char *reason, size_t len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p >reports PING.</p>
-<dl class="section note"><dt>Note</dt><dd>if provided you should reply with cws_pong(). If not provided, pong is sent with the same message payload. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if provided you should reply with <a class="el" href="curl-websocket_8h.html#ab2abf04543f41a01d72631dd0aaf82dd">cws_pong()</a>. If not provided, pong is sent with the same message payload. </dd></dl>
 
 </div>
 </div>
@@ -182,7 +183,7 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cws_callbacks::on_pong) (void *data, CURL *easy, const char *reason, size_t len)</td>
+          <td class="memname">void(* cws_callbacks::on_pong) (void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, const char *reason, size_t len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -197,12 +198,26 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cws_callbacks::on_close) (void *data, CURL *easy, enum cws_close_reason reason, const char *reason_text, size_t reason_text_len)</td>
+          <td class="memname">void(* cws_callbacks::on_close) (void *<a class="el" href="structcws__callbacks.html#a7562c71835a760ceea57650734b5fed9">data</a>, CURL *easy, enum <a class="el" href="curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62">cws_close_reason</a> reason, const char *reason_text, size_t reason_text_len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p >reports server closed the connection with the given reason.</p>
-<p >Clients should not transmit any more data after the server is closed, just call cws_free(). </p>
+<p >Clients should not transmit any more data after the server is closed, just call <a class="el" href="curl-websocket_8h.html#a52cf92a8c7e09678c543ade42b844007">cws_free()</a>. </p>
+
+</div>
+</div>
+<a id="a7562c71835a760ceea57650734b5fed9" name="a7562c71835a760ceea57650734b5fed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7562c71835a760ceea57650734b5fed9">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* cws_callbacks::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
