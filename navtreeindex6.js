@@ -1,5 +1,10 @@
 var NAVTREEINDEX6 =
 {
+"group__DiscordAPIChannelMessageFlags.html#gad202992b9ced98a3843d262c0db4fd0a":[5,4,3,2,2],
+"group__DiscordAPIChannelMessageFlags.html#gad3823b2056ce6038c1b6add7a805ba20":[5,4,3,2,7],
+"group__DiscordAPIEmoji.html":[5,4,4],
+"group__DiscordAPIEmoji.html#ga398e2164fb7163fc5f9528e6b1003b10":[5,4,4,2],
+"group__DiscordAPIEmoji.html#ga76928cd828be926da6fc33d4133f2b3c":[5,4,4,4],
 "group__DiscordAPIEmoji.html#gaa33db5769454a1fe3953ad48361aef87":[5,4,4,3],
 "group__DiscordAPIEmoji.html#gac962f5a651d23f3d9d096048f4013d98":[5,4,4,5],
 "group__DiscordAPIEmoji.html#gad1654af139b57975028bfb3bb270e2b2":[5,4,4,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX6 =
 "group__DiscordEvents.html#ga7f495f6a5188518adfa761616ccfd880":[5,2,1,12],
 "group__DiscordEvents.html#ga863c695c73cb5efe372a0a1b6af56097":[5,2,1,0],
 "group__DiscordEvents.html#ga86821fb4d91b0160e1054e8a841d2bf8":[5,2,1,9],
-"group__DiscordEvents.html#ga87f3001e926f17133134b46078329560":[5,2,1,45],
-"group__DiscordEvents.html#ga90ad69d00fa297cf708222beca47c2ea":[5,2,1,44],
-"group__DiscordEvents.html#ga90ebb76de1682ce02a67a08b0510145b":[5,2,1,2],
-"group__DiscordEvents.html#ga9122d2487fe9fae1502b5de7967d37c1":[5,2,1,36],
-"group__DiscordEvents.html#ga95b7cb742247cf71189d8a1de5613971":[5,2,1,32],
-"group__DiscordEvents.html#ga974e52aff3cf522293acf523d3ae8a5c":[5,2,1,34]
+"group__DiscordEvents.html#ga87f3001e926f17133134b46078329560":[5,2,1,45]
 };

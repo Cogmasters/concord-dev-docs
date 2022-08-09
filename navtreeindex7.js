@@ -1,5 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"group__DiscordEvents.html#ga90ad69d00fa297cf708222beca47c2ea":[5,2,1,44],
+"group__DiscordEvents.html#ga90ebb76de1682ce02a67a08b0510145b":[5,2,1,2],
+"group__DiscordEvents.html#ga9122d2487fe9fae1502b5de7967d37c1":[5,2,1,36],
+"group__DiscordEvents.html#ga95b7cb742247cf71189d8a1de5613971":[5,2,1,32],
+"group__DiscordEvents.html#ga974e52aff3cf522293acf523d3ae8a5c":[5,2,1,34],
 "group__DiscordEvents.html#ga97544cb6a179e6becf743b7bce11412a":[5,2,1,38],
 "group__DiscordEvents.html#ga9f7c6331ffdc4a21c7fffd13fa2974d9":[5,2,1,24],
 "group__DiscordEvents.html#gaa09779bf93a0adc55bd9a7070b796518":[5,2,1,30],
@@ -244,10 +249,5 @@ var NAVTREEINDEX7 =
 "group__DiscordTimer.html#ga31e4b6fdffe218a59768f18a149617a7":[5,2,2,7],
 "group__DiscordTimer.html#ga6e91b61d2abe8974ade81aa42b225a6f":[5,2,2,2],
 "group__DiscordTimer.html#ga85b715c14360d0436da5c8bd95ae5e4f":[5,2,2,4],
-"group__DiscordTimer.html#ga8b23c7c024f54ddfd5e333bfd9387dd5":[5,2,2,1],
-"group__DiscordTimer.html#ga9670267c1520768658351d73110d12e2":[5,2,2,6],
-"group__DiscordTimer.html#ga9bc2f8b274d62a173b051987b88dc890":[5,2,2,8],
-"group__DiscordTimer.html#gab547a5a050e37b514b7a05bddc49e246":[5,2,2,11],
-"group__DiscordTimer.html#gab5e1ce15292d4eb17fb49ae64bf76d5f":[5,2,2,10],
-"group__DiscordTimer.html#gadbe05490558b071d3491994f491d6155":[5,2,2,5]
+"group__DiscordTimer.html#ga8b23c7c024f54ddfd5e333bfd9387dd5":[5,2,2,1]
 };

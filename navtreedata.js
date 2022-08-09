@@ -148,19 +148,20 @@ var NAVTREEINDEX =
 "docs_2api_2gateway_8h.html#a75039c2759e395656a0de3ce57e81003",
 "docs_2api_2guild_8h.html#ab903fbf1d80910d1a43e32ee8afb91e2",
 "docs_2api_2webhook_8h.html#a7e19bbaed850bb60fca9e1cb55d56aba",
-"group__DiscordAPIEmoji.html#gaa33db5769454a1fe3953ad48361aef87",
-"group__DiscordEvents.html#ga97544cb6a179e6becf743b7bce11412a",
-"group__DiscordTimer.html#gga6e91b61d2abe8974ade81aa42b225a6fa3338dc618299088b59238e69e6a1bfe0",
-"log_8h.html#a04af09851c431d178f16b24fa1aac1e9",
-"stage__instance_8h.html#ae9493ed0020a5a9595eb8d0b6870f947",
-"structdiscord__audit__log.html#aa7ceadd5cae58dc0ebb17514de0a847e",
-"structdiscord__create__guild__from__guild__template.html#a192db2f8c5f070e7d25685c19363d6c9",
-"structdiscord__get__reactions.html#a9ce9ee4e42c8113c4dcc8fce78fd8722",
-"structdiscord__integrations.html#af380614ebec3a6e2cba3c6830a522a26",
-"structdiscord__modify__guild__member.html#a4b9033e3aff320a47d940b5d7ca7fd6f",
-"structdiscord__ret__ban.html#a3a810faf43a9bdda1a37ff72ba78e008",
-"structdiscord__ret__thread__members.html#a8e55408f999b3d42356d898887440aaa",
-"structdiscord__voice__server__update.html#acd02010c3a95ce657a2e101d91e7532b"
+"group__DiscordAPIChannelMessageFlags.html#gad202992b9ced98a3843d262c0db4fd0a",
+"group__DiscordEvents.html#ga90ad69d00fa297cf708222beca47c2ea",
+"group__DiscordTimer.html#ga9670267c1520768658351d73110d12e2",
+"json-build_8h.html#af25f6b2ec28c3b90b3905a12d61b83b0",
+"stage__instance_8h.html#a1f49145258318aaa86efc57935f0de2cabd899a12704b6a7ffa3646fff599aa73",
+"structdiscord__attachment.html#abc4c8cfae775278db3bcf3c7f7586df7",
+"structdiscord__create__guild__channel.html",
+"structdiscord__get__guild__prune__count.html#a83fe016996b5a54cf2d6d3f6ef22790a",
+"structdiscord__integration__account.html",
+"structdiscord__modify__guild.html#af5893bfba3cf11e082438be5cd8c62f9",
+"structdiscord__ret__auto__moderation__rule.html#a0507f798bc3daff840a7730014c910ab",
+"structdiscord__ret__role.html#a741a90e1dd68cfbb729ee8fcfd7ac0d0",
+"structdiscord__user.html#ae4783d84636c88062d54659ac99f6c5d",
+"websockets_8h.html#a92591a76da29adffd6f3a95bb12db08da94283316304aae0b5712a9a59186d75c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
