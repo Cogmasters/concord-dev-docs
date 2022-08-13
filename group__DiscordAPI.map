@@ -1,5 +1,5 @@
 <map id="API" name="API">
-<area shape="rect" id="node1" title="The Discord public API supported by Concord." alt="" coords="5,327,48,352"/>
+<area shape="rect" id="node1" title="The Discord public API supported by Concord." alt="" coords="5,376,48,401"/>
 <area shape="rect" id="node2" href="$group__DiscordAPIAuditLog.html" title="Audit Log&#39;s public API supported by Concord." alt="" coords="139,5,221,31"/>
 <area shape="rect" id="node3" href="$group__DiscordAPIAutoModeration.html" title="Auto Moderation public API supported by Concord." alt="" coords="115,55,245,80"/>
 <area shape="rect" id="node4" href="$group__DiscordAPIChannel.html" title="Channel&#39;s public API supported by Concord." alt="" coords="143,104,217,129"/>
@@ -11,7 +11,9 @@
 <area shape="rect" id="node10" href="$group__DiscordAPIInteractions.html" title="Interactions public API supported by Concord." alt="" coords="131,400,229,425"/>
 <area shape="rect" id="node11" href="$group__DiscordAPIInvite.html" title="Invite&#39;s public API supported by Concord." alt="" coords="151,449,209,475"/>
 <area shape="rect" id="node12" href="$group__DiscordAPIOAuth2.html" title="OAuth2&#39;s public API supported by Concord." alt="" coords="145,499,215,524"/>
-<area shape="rect" id="node13" href="$group__DiscordAPIUser.html" title="User&#39;s public API supported by Concord." alt="" coords="154,548,206,573"/>
-<area shape="rect" id="node14" href="$group__DiscordAPIVoice.html" title="Voice&#39;s public API supported by Concord." alt="" coords="151,597,209,623"/>
-<area shape="rect" id="node15" href="$group__DiscordAPIWebhook.html" title="Webhook&#39;s public API supported by Concord." alt="" coords="139,647,221,672"/>
+<area shape="rect" id="node13" href="$group__DiscordAPIStageInstance.html" title="Stage Instance&#39;s public API supported by Concord." alt="" coords="121,548,239,573"/>
+<area shape="rect" id="node14" href="$group__DiscordAPISticker.html" title="Sticker&#39;s public API supported by Concord." alt="" coords="147,597,213,623"/>
+<area shape="rect" id="node15" href="$group__DiscordAPIUser.html" title="User&#39;s public API supported by Concord." alt="" coords="154,647,206,672"/>
+<area shape="rect" id="node16" href="$group__DiscordAPIVoice.html" title="Voice&#39;s public API supported by Concord." alt="" coords="151,696,209,721"/>
+<area shape="rect" id="node17" href="$group__DiscordAPIWebhook.html" title="Webhook&#39;s public API supported by Concord." alt="" coords="139,745,221,771"/>
 </map>

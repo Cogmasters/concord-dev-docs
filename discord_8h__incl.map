@@ -1,5 +1,5 @@
 <map id="include/discord.h" name="include/discord.h">
-<area shape="rect" id="node1" title="Public functions and datatypes." alt="" coords="1348,5,1480,32"/>
+<area shape="rect" id="node1" title="Public functions and datatypes." alt="" coords="1447,5,1579,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,92,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="294,155,377,181"/>
 <area shape="rect" id="node4" href="$error_8h.html" title=" " alt="" coords="167,80,231,107"/>
@@ -16,12 +16,14 @@
 <area shape="rect" id="node15" href="$include_2guild_8h.html" title="Guild public functions and datatypes." alt="" coords="1526,80,1593,107"/>
 <area shape="rect" id="node16" href="$include_2guild__scheduled__event_8h.html" title="Guild Scheduled Event public functions and datatypes." alt="" coords="1617,80,1800,107"/>
 <area shape="rect" id="node17" href="$include_2guild__template_8h.html" title="Guild Template public functions and datatypes." alt="" coords="1824,80,1956,107"/>
-<area shape="rect" id="node18" href="$include_2user_8h.html" title="User public functions and datatypes." alt="" coords="1981,80,2042,107"/>
-<area shape="rect" id="node19" href="$include_2voice_8h.html" title="Voice public functions and datatypes." alt="" coords="2066,80,2135,107"/>
-<area shape="rect" id="node20" href="$include_2webhook_8h.html" title="Webhook public functions and datatypes." alt="" coords="2159,80,2253,107"/>
-<area shape="rect" id="node21" href="$include_2gateway_8h.html" title="Gateway public functions and datatypes." alt="" coords="2277,80,2365,107"/>
-<area shape="rect" id="node22" href="$include_2oauth2_8h.html" title="OAuth2 public functions and datatypes." alt="" coords="2389,80,2468,107"/>
-<area shape="rect" id="node23" href="$application__command_8h.html" title="Application Command public functions and datatypes." alt="" coords="2493,80,2671,107"/>
-<area shape="rect" id="node24" href="$interaction_8h.html" title="Interaciton public functions and datatypes." alt="" coords="2695,80,2799,107"/>
-<area shape="rect" id="node25" href="$discord-events_8h.html" title="Listen, react and trigger Discord Gateway events." alt="" coords="2823,80,2954,107"/>
+<area shape="rect" id="node18" href="$include_2stage__instance_8h.html" title="Stage Instance public functions and datatypes." alt="" coords="1980,80,2112,107"/>
+<area shape="rect" id="node19" href="$include_2sticker_8h.html" title="Sticker public functions and datatypes." alt="" coords="2136,80,2212,107"/>
+<area shape="rect" id="node20" href="$include_2user_8h.html" title="User public functions and datatypes." alt="" coords="2237,80,2298,107"/>
+<area shape="rect" id="node21" href="$include_2voice_8h.html" title="Voice public functions and datatypes." alt="" coords="2322,80,2391,107"/>
+<area shape="rect" id="node22" href="$include_2webhook_8h.html" title="Webhook public functions and datatypes." alt="" coords="2415,80,2509,107"/>
+<area shape="rect" id="node23" href="$include_2gateway_8h.html" title="Gateway public functions and datatypes." alt="" coords="2533,80,2621,107"/>
+<area shape="rect" id="node24" href="$include_2oauth2_8h.html" title="OAuth2 public functions and datatypes." alt="" coords="2645,80,2724,107"/>
+<area shape="rect" id="node25" href="$application__command_8h.html" title="Application Command public functions and datatypes." alt="" coords="2749,80,2927,107"/>
+<area shape="rect" id="node26" href="$interaction_8h.html" title="Interaciton public functions and datatypes." alt="" coords="2951,80,3055,107"/>
+<area shape="rect" id="node27" href="$discord-events_8h.html" title="Listen, react and trigger Discord Gateway events." alt="" coords="3079,80,3210,107"/>
 </map>

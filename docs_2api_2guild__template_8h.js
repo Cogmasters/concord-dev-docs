@@ -1,6 +1,7 @@
 var docs_2api_2guild__template_8h =
 [
     [ "discord_guild_template", "structdiscord__guild__template.html", "structdiscord__guild__template" ],
+    [ "discord_guild_templates", "structdiscord__guild__templates.html", "structdiscord__guild__templates" ],
     [ "discord_create_guild_from_guild_template", "structdiscord__create__guild__from__guild__template.html", "structdiscord__create__guild__from__guild__template" ],
     [ "discord_create_guild_template", "structdiscord__create__guild__template.html", "structdiscord__create__guild__template" ],
     [ "discord_modify_guild_template", "structdiscord__modify__guild__template.html", "structdiscord__modify__guild__template" ],
@@ -9,6 +10,7 @@ var docs_2api_2guild__template_8h =
     [ "JSONB_HEADER", "docs_2api_2guild__template_8h.html#a3cbcbd7c48827141af941f316122fad4", null ],
     [ "discord_guild_template_init", "docs_2api_2guild__template_8h.html#aef5fd071cde79344a6ac86735e3716a2", null ],
     [ "discord_guild_template_cleanup", "docs_2api_2guild__template_8h.html#af193f606602a6cedd38cbeed75e8556d", null ],
+    [ "discord_guild_templates_cleanup", "docs_2api_2guild__template_8h.html#a118c43150fb794cc7f17912796b48f5b", null ],
     [ "discord_create_guild_from_guild_template_init", "docs_2api_2guild__template_8h.html#af41a5c95aec7497fe53aba49872f1251", null ],
     [ "discord_create_guild_from_guild_template_cleanup", "docs_2api_2guild__template_8h.html#ac61709cfa66405391c33c9cb5942431b", null ],
     [ "discord_create_guild_template_init", "docs_2api_2guild__template_8h.html#afe6680510a6f6171f02408872ab7f45d", null ],
@@ -17,6 +19,8 @@ var docs_2api_2guild__template_8h =
     [ "discord_modify_guild_template_cleanup", "docs_2api_2guild__template_8h.html#a55aac28f340ffe1c9b3ff522206c445b", null ],
     [ "discord_guild_template_from_jsmnf", "docs_2api_2guild__template_8h.html#aa8e5fccf22d9aba65427b1e344088132", null ],
     [ "discord_guild_template_from_json", "docs_2api_2guild__template_8h.html#a14c57882edee7cc9d0a571d0d97b973b", null ],
+    [ "discord_guild_templates_from_jsmnf", "docs_2api_2guild__template_8h.html#ae81393546b504762116a8cdb204f3fa7", null ],
+    [ "discord_guild_templates_from_json", "docs_2api_2guild__template_8h.html#ac87c2d53e64d065142c919427978075b", null ],
     [ "discord_create_guild_from_guild_template_from_jsmnf", "docs_2api_2guild__template_8h.html#a78de2e2ac2c0c6b1631f2b4eaec32b78", null ],
     [ "discord_create_guild_from_guild_template_from_json", "docs_2api_2guild__template_8h.html#a97f5f5edc6d3f5e8c26d9e7b8fca1067", null ],
     [ "discord_create_guild_template_from_jsmnf", "docs_2api_2guild__template_8h.html#a061aca7516620b0f716563a781acf097", null ],
@@ -25,6 +29,8 @@ var docs_2api_2guild__template_8h =
     [ "discord_modify_guild_template_from_json", "docs_2api_2guild__template_8h.html#aa18264e6fa9763fc1d808ff9cf682b27", null ],
     [ "discord_guild_template_to_jsonb", "docs_2api_2guild__template_8h.html#a28d17bba571c964537a41262061f4529", null ],
     [ "discord_guild_template_to_json", "docs_2api_2guild__template_8h.html#ad7c84399ee0322e4605e53701d088595", null ],
+    [ "discord_guild_templates_to_jsonb", "docs_2api_2guild__template_8h.html#a71a0979e384f796435ca0386632a46e8", null ],
+    [ "discord_guild_templates_to_json", "docs_2api_2guild__template_8h.html#ab046f4f3f9a608b0f67cbb447e8313ca", null ],
     [ "discord_create_guild_from_guild_template_to_jsonb", "docs_2api_2guild__template_8h.html#ac1038025de27911f3044ced075851c82", null ],
     [ "discord_create_guild_from_guild_template_to_json", "docs_2api_2guild__template_8h.html#a8975fb826089f35c401e685814255ae8", null ],
     [ "discord_create_guild_template_to_jsonb", "docs_2api_2guild__template_8h.html#a3b0b681cdfa3cc044852c829054c8bf9", null ],

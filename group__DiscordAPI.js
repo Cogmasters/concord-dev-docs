@@ -11,6 +11,8 @@ var group__DiscordAPI =
     [ "Guild Template", "group__DiscordAPIGuildTemplate.html", "group__DiscordAPIGuildTemplate" ],
     [ "Invite", "group__DiscordAPIInvite.html", "group__DiscordAPIInvite" ],
     [ "OAuth2", "group__DiscordAPIOAuth2.html", "group__DiscordAPIOAuth2" ],
+    [ "Stage Instance", "group__DiscordAPIStageInstance.html", "group__DiscordAPIStageInstance" ],
+    [ "Sticker", "group__DiscordAPISticker.html", "group__DiscordAPISticker" ],
     [ "User", "group__DiscordAPIUser.html", "group__DiscordAPIUser" ],
     [ "Voice", "group__DiscordAPIVoice.html", "group__DiscordAPIVoice" ],
     [ "Webhook", "group__DiscordAPIWebhook.html", "group__DiscordAPIWebhook" ]
