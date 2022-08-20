@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cws_5fclose_5freason_0',['cws_close_reason',['../curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62',1,'curl-websocket.h']]]
+  ['anomap_5foperation_0',['anomap_operation',['../anomap_8h.html#a21313e5e249d4fc6bd6fefa914a4b38b',1,'anomap.h']]]
 ];
