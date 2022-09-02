@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structdiscord__application__command.html#a7d1f0983feda34352e99d73396ef99f0":[6,0,17,8],
-"structdiscord__application__command.html#a95fbe5d4e470524f58998cb951892236":[6,0,17,0],
 "structdiscord__application__command.html#a9e3bd59f3d5125d4d515363b7a07e489":[6,0,17,4],
 "structdiscord__application__command.html#ab6d1f27109d7506376b1f0d26c2496c6":[6,0,17,3],
 "structdiscord__application__command.html#ad3058021b63cb6170091cd82471dbe6c":[6,0,17,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "structdiscord__create__auto__moderation__rule.html#afa5722dc7697fa41fca739dfa94327bf":[6,0,58,5],
 "structdiscord__create__auto__moderation__rule.html#afb6b092b0d880bc891e11fba03595b33":[6,0,58,2],
 "structdiscord__create__channel__invite.html":[6,0,59],
-"structdiscord__create__channel__invite.html#a061bc8c048bd06e8ee3745a3694eff86":[6,0,59,5]
+"structdiscord__create__channel__invite.html#a061bc8c048bd06e8ee3745a3694eff86":[6,0,59,5],
+"structdiscord__create__channel__invite.html#a1a79df0f92bd2e5d9b4f8da91b6d046c":[6,0,59,0],
+"structdiscord__create__channel__invite.html#a458065dfc3f54cc1abfe553a8d0cb4a1":[6,0,59,2]
 };

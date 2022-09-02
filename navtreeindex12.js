@@ -1,7 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"structdiscord__create__channel__invite.html#a1a79df0f92bd2e5d9b4f8da91b6d046c":[6,0,59,0],
-"structdiscord__create__channel__invite.html#a458065dfc3f54cc1abfe553a8d0cb4a1":[6,0,59,2],
 "structdiscord__create__channel__invite.html#a7de3ed7bd6ffc5632649cb1e7ee52081":[6,0,59,1],
 "structdiscord__create__channel__invite.html#a99f5c4e90faf7dce4d554f4bbc8d2740":[6,0,59,3],
 "structdiscord__create__channel__invite.html#ad3468cea77edb5e5e82bd0f337073596":[6,0,59,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX12 =
 "structdiscord__gateway.html#a27bc7f5da52b61b8285c19cc54333a32":[5,5,2,4,14],
 "structdiscord__gateway.html#a31cbc22da156579192fe3ea102ff300c":[5,5,2,4,15],
 "structdiscord__gateway.html#a38fe47e02a4b9b8bd50390e708bfcabd":[5,5,2,4,16],
-"structdiscord__gateway.html#a4c281b0af2bd6a0672d543d6deacae6f":[5,5,2,4,8]
+"structdiscord__gateway.html#a4c281b0af2bd6a0672d543d6deacae6f":[5,5,2,4,8],
+"structdiscord__gateway.html#a4f318b0eb4f8a151fa23236df46ae2cf":[5,5,2,4,4],
+"structdiscord__gateway.html#a5c5b90fc646ef6c047bf09ed99dedab5":[5,5,2,4,13]
 };

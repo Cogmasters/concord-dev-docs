@@ -1,7 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"group__DiscordActivityFlags.html#ga98d8e4fb9c697a8f01e87c101eb27017":[5,3,4,5],
-"group__DiscordActivityFlags.html#gae23e959741703490a43b88e088deaafb":[5,3,4,6],
 "group__DiscordActivityFlags.html#gaf272b8a2bf2dd750ecfe3c6900eb3878":[5,3,4,0],
 "group__DiscordActivityFlags.html#gafdd8abd1c782e6b2f73af1708ea1193e":[5,3,4,2],
 "group__DiscordApplicationFlags.html":[5,3,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX7 =
 "group__DiscordInternalMessageCommands.html":[5,5,4],
 "group__DiscordInternalMessageCommands.html#ga2c55b1208a9d93c6c4070135f6cc97f1":[5,5,4,5],
 "group__DiscordInternalMessageCommands.html#ga56bc56797cae0982471101532bf1e5cd":[5,5,4,4],
-"group__DiscordInternalMessageCommands.html#ga913baf962d6d1be5fb5379bfecb7c700":[5,5,4,1]
+"group__DiscordInternalMessageCommands.html#ga913baf962d6d1be5fb5379bfecb7c700":[5,5,4,1],
+"group__DiscordInternalMessageCommands.html#gabefae32a533a7c1f2fd51b000ae060a5":[5,5,4,3],
+"group__DiscordInternalMessageCommands.html#gad86c94465427900898327ed368c6877f":[5,5,4,6]
 };

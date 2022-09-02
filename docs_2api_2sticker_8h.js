@@ -45,8 +45,6 @@ var docs_2api_2sticker_8h =
     [ "discord_stickers_to_json", "docs_2api_2sticker_8h.html#ab23c9ac7ea598d22f760146ee0a6fbff", null ],
     [ "discord_sticker_packs_to_jsonb", "docs_2api_2sticker_8h.html#ad8580716ac775bc1e9b73256b8d870f7", null ],
     [ "discord_sticker_packs_to_json", "docs_2api_2sticker_8h.html#a83d41a2fa41d0ccaac9ef48db0764f28", null ],
-    [ "discord_list_nitro_sticker_packs_to_jsonb", "docs_2api_2sticker_8h.html#a3d5310b6cf492fe165d6e06e37f8e2a6", null ],
-    [ "discord_list_nitro_sticker_packs_to_json", "docs_2api_2sticker_8h.html#abe31b402be41adbb0b8fbec28c97879b", null ],
     [ "discord_modify_guild_sticker_to_jsonb", "docs_2api_2sticker_8h.html#a02f3d0a0a024affb096ef726c4744310", null ],
     [ "discord_modify_guild_sticker_to_json", "docs_2api_2sticker_8h.html#a8d7a0286414cbc0dfc1cd38937bf4e34", null ]
 ];

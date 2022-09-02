@@ -1,7 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"group__DiscordInternalMessageCommands.html#gabefae32a533a7c1f2fd51b000ae060a5":[5,5,4,3],
-"group__DiscordInternalMessageCommands.html#gad86c94465427900898327ed368c6877f":[5,5,4,6],
 "group__DiscordInternalMessageCommands.html#gaf8e3eb1ed19c4d408e3ebfdc9bcfa675":[5,5,4,2],
 "group__DiscordInternalREST.html":[5,5,1],
 "group__DiscordInternalREST.html#ga865f5ad7e4f12751d5211db212a0b3e0":[5,5,1,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX8 =
 "io__poller_8h.html#a02569cba26bf03484eaba59e211eeb64ac074f2882745b1b6ae9b4d7dc04cf2c5":[7,0,0,7,3,1],
 "io__poller_8h.html#a052a10a4115ce0f335ca400737f7c61d":[7,0,0,7,8],
 "io__poller_8h.html#a117e9efae16cbdd98494e857a54add48":[7,0,0,7,5],
-"io__poller_8h.html#a15ff204e6fd8d66b92840d69d1a5a511":[7,0,0,7,10]
+"io__poller_8h.html#a15ff204e6fd8d66b92840d69d1a5a511":[7,0,0,7,10],
+"io__poller_8h.html#a2584757ebd812b6aed4b6b883755bd0a":[7,0,0,7,9],
+"io__poller_8h.html#a28bd9603e1a3ce84e1aea2f9fcb0221e":[7,0,0,7,13]
 };

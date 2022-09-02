@@ -1,7 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"structdiscord__gateway.html#a4f318b0eb4f8a151fa23236df46ae2cf":[5,5,2,4,4],
-"structdiscord__gateway.html#a5c5b90fc646ef6c047bf09ed99dedab5":[5,5,2,4,13],
 "structdiscord__gateway.html#a7498626264e15e0965ab77d66c700137":[5,5,2,4,3],
 "structdiscord__gateway.html#a86a693dff385bbf55e34f7c254463fd7":[5,5,2,4,10],
 "structdiscord__gateway.html#a8e220d0205d4f7e8c8dab44f73b2725c":[5,5,2,4,0],
@@ -26,16 +24,17 @@ var NAVTREEINDEX13 =
 "structdiscord__gateway__payload.html#afe57074bd85f472e2be00ed7a373c6e6":[5,5,2,3,5],
 "structdiscord__gateway__session.html":[5,5,2,2],
 "structdiscord__gateway__session.html#a14da04574bb2bc124bfa980bff58e168":[5,5,2,2,3],
-"structdiscord__gateway__session.html#a19a0053826875a0c3ccd96d1bb6b632b":[5,5,2,2,4],
-"structdiscord__gateway__session.html#a1d6164fd9ee758db4f0d5edb9ed09ac8":[5,5,2,2,10],
-"structdiscord__gateway__session.html#a67d3e736be03f6e31b07e898d5f52cb6":[5,5,2,2,9],
+"structdiscord__gateway__session.html#a19a0053826875a0c3ccd96d1bb6b632b":[5,5,2,2,5],
+"structdiscord__gateway__session.html#a1d6164fd9ee758db4f0d5edb9ed09ac8":[5,5,2,2,11],
+"structdiscord__gateway__session.html#a461a93b785c51878170b68842fab2e30":[5,5,2,2,4],
+"structdiscord__gateway__session.html#a67d3e736be03f6e31b07e898d5f52cb6":[5,5,2,2,10],
 "structdiscord__gateway__session.html#a6a18a65f0eb234d3b24c92f11f2fdb4c":[5,5,2,2,2],
 "structdiscord__gateway__session.html#a6cf65d6d57f075a6aaf7528404bd994a":[5,5,2,2,1],
-"structdiscord__gateway__session.html#a6dc6a434884d0771c96fcb4324e24586":[5,5,2,2,6],
-"structdiscord__gateway__session.html#a8e031760d0c75a0e5fa5a1e3e438a1fc":[5,5,2,2,11],
-"structdiscord__gateway__session.html#aa06f4961d792d433daa8c10727e3878a":[5,5,2,2,7],
-"structdiscord__gateway__session.html#acc7912cd0ff11fa487cfa92ebd4dca5c":[5,5,2,2,5],
-"structdiscord__gateway__session.html#acded8d964351ce3b8f838109749f311d":[5,5,2,2,8],
+"structdiscord__gateway__session.html#a6dc6a434884d0771c96fcb4324e24586":[5,5,2,2,7],
+"structdiscord__gateway__session.html#a8e031760d0c75a0e5fa5a1e3e438a1fc":[5,5,2,2,12],
+"structdiscord__gateway__session.html#aa06f4961d792d433daa8c10727e3878a":[5,5,2,2,8],
+"structdiscord__gateway__session.html#acc7912cd0ff11fa487cfa92ebd4dca5c":[5,5,2,2,6],
+"structdiscord__gateway__session.html#acded8d964351ce3b8f838109749f311d":[5,5,2,2,9],
 "structdiscord__gateway__session.html#ad9f0b3eb611b6e6c4bab071cb228da2a":[5,5,2,2,0],
 "structdiscord__get__channel__messages.html":[6,0,104],
 "structdiscord__get__channel__messages.html#a380bc90b635641d41556c1c5a9d5e7f3":[6,0,104,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "structdiscord__guild__template.html":[6,0,139],
 "structdiscord__guild__template.html#a0751ff652affe9e33081a61cd2a4da34":[6,0,139,4],
 "structdiscord__guild__template.html#a130adfc2aefd6bed903ccde59b4b06e4":[6,0,139,9],
-"structdiscord__guild__template.html#a1e52a7f5bd5876bd0c248c2254fd49fc":[6,0,139,7]
+"structdiscord__guild__template.html#a1e52a7f5bd5876bd0c248c2254fd49fc":[6,0,139,7],
+"structdiscord__guild__template.html#a5572bcdb23efd4883d629ae99122ea29":[6,0,139,8]
 };
