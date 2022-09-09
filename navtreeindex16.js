@@ -1,5 +1,15 @@
 var NAVTREEINDEX16 =
 {
+"structdiscord__resume.html#abb63552908f4072b6e9641cfad87d666":[6,0,220,2],
+"structdiscord__resume.html#af8faec1c084f4c67e0950f21ebd20bec":[6,0,220,0],
+"structdiscord__ret.html":[6,0,221],
+"structdiscord__ret.html#a12f013191f32561ccc1c0027a414bccd":[6,0,221,1],
+"structdiscord__ret.html#a20df532b4a94f18a8c983b83b980299e":[6,0,221,6],
+"structdiscord__ret.html#a3d056872a740c8aa8bcbf65f04c0b379":[6,0,221,5],
+"structdiscord__ret.html#a47ea21a8fb5bf15edca3b64322f001b3":[6,0,221,3],
+"structdiscord__ret.html#a91a0f5ae39a63e3e4fde9c07d472c408":[6,0,221,2],
+"structdiscord__ret.html#a9e74b641a2f1097fbe7e1ad03f5a87f5":[6,0,221,4],
+"structdiscord__ret.html#afec8325b52fd121c7b711551182456c3":[6,0,221,0],
 "structdiscord__ret__application.html":[5,4,10,0],
 "structdiscord__ret__application.html#a2ca865d40139cec4173a5f9e35c86fcb":[5,4,10,0,3],
 "structdiscord__ret__application.html#a38858d3652cdcf89c08b837db8ee5c53":[5,4,10,0,5],
@@ -112,8 +122,8 @@ var NAVTREEINDEX16 =
 "structdiscord__ret__connections.html#aac744f0492cbc077f4bcd444739c6910":[5,4,13,3,5],
 "structdiscord__ret__connections.html#ad7ffed94023a0b99c29b8fffd97542e1":[5,4,13,3,1],
 "structdiscord__ret__connections.html#ad83afcca5187a6a22bc61c72c75eb3b0":[5,4,13,3,6],
-"structdiscord__ret__default__fields.html":[6,0,235],
-"structdiscord__ret__default__fields.html#ae7bb0db9ba25769eb48138e41fe36558":[6,0,235,0],
+"structdiscord__ret__default__fields.html":[6,0,236],
+"structdiscord__ret__default__fields.html#ae7bb0db9ba25769eb48138e41fe36558":[6,0,236,0],
 "structdiscord__ret__dispatch.html":[5,5,1,0,1],
 "structdiscord__ret__dispatch.html#a01afc4ad6b452e64e7da7fc0c8c1f463":[5,5,1,0,1,0],
 "structdiscord__ret__dispatch.html#a58843a09180be915830f9a752cf2fb20":[5,5,1,0,1,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX16 =
 "structdiscord__ret__guild__widget__settings.html#a6df8100b70b29c9ff5a044cab83d5e36":[5,4,6,7,4],
 "structdiscord__ret__guild__widget__settings.html#aa1d27d3d75bb58b017311b59784c857a":[5,4,6,7,0],
 "structdiscord__ret__guild__widget__settings.html#ada142a1ff4c2cbf30a56d69d3e92897d":[5,4,6,7,1],
-"structdiscord__ret__guild__widget__settings.html#ae150a518964c6306f6fcdff0699f3030":[5,4,6,7,3],
-"structdiscord__ret__guild__widget__settings.html#aeddbf9652bf560d688a2dd2a21bedcad":[5,4,6,7,2],
-"structdiscord__ret__guilds.html":[5,4,6,2],
-"structdiscord__ret__guilds.html#a29fe3ae05f194c9e185f66f81255f548":[5,4,6,2,0],
-"structdiscord__ret__guilds.html#a3ccee2ae28c2af09b8a99be0f1649d9e":[5,4,6,2,3],
-"structdiscord__ret__guilds.html#a78b8237767ce8677a2a028c335921b18":[5,4,6,2,1],
-"structdiscord__ret__guilds.html#a9496715d093386c12310e608d3a776c4":[5,4,6,2,6],
-"structdiscord__ret__guilds.html#ac111949f56be833f3c4d015c81dcb90a":[5,4,6,2,4],
-"structdiscord__ret__guilds.html#ad25b6ba1cf725d1d291f34798ce67be6":[5,4,6,2,2],
-"structdiscord__ret__guilds.html#af6b824a2b2d6a1bc7f5c0ef674bbd975":[5,4,6,2,5],
-"structdiscord__ret__integrations.html":[5,4,6,13]
+"structdiscord__ret__guild__widget__settings.html#ae150a518964c6306f6fcdff0699f3030":[5,4,6,7,3]
 };

@@ -27,7 +27,7 @@ var group__DiscordClient =
       [ "cond", "structdiscord.html#ab3466a18d217a70bf790e2316be77f22", null ],
       [ "workers", "structdiscord.html#a7df318980dab3301c117d4a4650af00e", null ]
     ] ],
-    [ "discord_claim", "group__DiscordClient.html#gad1073edb612b01eb8a277d2acf4183a0", null ],
+    [ "discord_claim", "group__DiscordClient.html#gaa1716c3144212db97c8330987edd94b7", null ],
     [ "__discord_claim", "group__DiscordClient.html#gaff572a95f2f1b2c03c0796111d579086", null ],
     [ "discord_unclaim", "group__DiscordClient.html#ga1f34f5e41cb03767910e9ba3f90207d4", null ],
     [ "discord_init", "group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d", null ],

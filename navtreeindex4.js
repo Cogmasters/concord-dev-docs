@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"docs_2api_2guild_8h.html#aa044366e747671d75ed75016495b977b":[7,0,1,0,8,168],
+"docs_2api_2guild_8h.html#aa0ecdf666c6c3ee17851381be08a0e3b":[7,0,1,0,8,63],
+"docs_2api_2guild_8h.html#aa4cb188268ea6fd0ed9598f963df00f5":[7,0,1,0,8,156],
+"docs_2api_2guild_8h.html#aa6117d0c0b0d2eb6d39f427f0ee16a0e":[7,0,1,0,8,161],
+"docs_2api_2guild_8h.html#aa6acceedbf804967b714618896ab7219":[7,0,1,0,8,203],
 "docs_2api_2guild_8h.html#aa8ec214eb9a5dc5e36c415ba92c6e9b4":[7,0,1,0,8,167],
 "docs_2api_2guild_8h.html#aa9341a592ca816dc0b8efc0fdae32150":[7,0,1,0,8,51],
 "docs_2api_2guild_8h.html#aa9341a592ca816dc0b8efc0fdae32150a0e274d05bb780528e1483116a98ca14c":[7,0,1,0,8,51,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "docs_2api_2sticker_8h.html#af474876161dce8b943aced9afca2cf9d":[7,0,1,0,17,26],
 "docs_2api_2sticker_8h.html#af9c87895c42aa06ff565e9b0c863993f":[7,0,1,0,17,23],
 "docs_2api_2sticker_8h.html#afe80d5049e065da6f0a12f1b3251e433":[7,0,1,0,17,19],
-"docs_2api_2sticker_8h_source.html":[7,0,1,0,17],
-"docs_2api_2user_8h.html":[7,0,1,0,19],
-"docs_2api_2user_8h.html#a074b98ec18903df6d06bb675bcb2acbc":[7,0,1,0,19,57],
-"docs_2api_2user_8h.html#a0ed0f609bd8811416f621248434c1bac":[7,0,1,0,19,45],
-"docs_2api_2user_8h.html#a0f8f36a362b29fb55f6df2151949bf7b":[7,0,1,0,19,53],
-"docs_2api_2user_8h.html#a211438d2da07621e1e23f48869c94d8d":[7,0,1,0,19,59]
+"docs_2api_2sticker_8h_source.html":[7,0,1,0,17]
 };

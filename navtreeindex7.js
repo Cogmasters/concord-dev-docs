@@ -1,5 +1,11 @@
 var NAVTREEINDEX7 =
 {
+"group__DiscordActivityFlags.html#ga0cf6817c8289315721b740bf5531f0c0":[5,3,4,8],
+"group__DiscordActivityFlags.html#ga3b0f867ca1b5baf6aa8dd66cc501de45":[5,3,4,1],
+"group__DiscordActivityFlags.html#ga4886c3bbe33df7750951efa3d41442e4":[5,3,4,3],
+"group__DiscordActivityFlags.html#ga56497e4dab46b41cf08861ed328bed9b":[5,3,4,4],
+"group__DiscordActivityFlags.html#ga98d8e4fb9c697a8f01e87c101eb27017":[5,3,4,5],
+"group__DiscordActivityFlags.html#gae23e959741703490a43b88e088deaafb":[5,3,4,6],
 "group__DiscordActivityFlags.html#gaf272b8a2bf2dd750ecfe3c6900eb3878":[5,3,4,0],
 "group__DiscordActivityFlags.html#gafdd8abd1c782e6b2f73af1708ea1193e":[5,3,4,2],
 "group__DiscordApplicationFlags.html":[5,3,3],
@@ -24,12 +30,12 @@ var NAVTREEINDEX7 =
 "group__DiscordClient.html#ga74e4cd8487be005d63e8b62eba477ca4":[5,2,17],
 "group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb":[5,2,8],
 "group__DiscordClient.html#ga8a6d0002445738ace70f5eb2b22ca471":[5,2,18],
+"group__DiscordClient.html#gaa1716c3144212db97c8330987edd94b7":[5,2,4],
 "group__DiscordClient.html#gab4be84906e3794c24a69b781b2271656":[5,2,16],
 "group__DiscordClient.html#gab53f8fde50dc0fa5311a9ffc9751b655":[5,2,22],
 "group__DiscordClient.html#gab751b38fe43b55b59592560798b01c07":[5,2,20],
 "group__DiscordClient.html#gac4486003ffab83de397c0bebb74b3307":[5,2,9],
 "group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d":[5,2,7],
-"group__DiscordClient.html#gad1073edb612b01eb8a277d2acf4183a0":[5,2,4],
 "group__DiscordClient.html#gaff572a95f2f1b2c03c0796111d579086":[5,2,5],
 "group__DiscordCommands.html":[5,2,0],
 "group__DiscordCommands.html#gacb174879d5c775b529d1cae1088db98f":[5,2,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX7 =
 "group__DiscordInternalGatewaySessionStatus.html":[5,5,2,0],
 "group__DiscordInternalGatewaySessionStatus.html#ga1b3d45be4b922910c16c347266268709":[5,5,2,0,0],
 "group__DiscordInternalGatewaySessionStatus.html#ga6c8b4794db8c4342c739cf8d26f0a443":[5,5,2,0,1],
-"group__DiscordInternalGatewaySessionStatus.html#gac420091888fcf49cc95dd5f3bbcd18ed":[5,5,2,0,2],
-"group__DiscordInternalMessageCommands.html":[5,5,4],
-"group__DiscordInternalMessageCommands.html#ga2c55b1208a9d93c6c4070135f6cc97f1":[5,5,4,5],
-"group__DiscordInternalMessageCommands.html#ga56bc56797cae0982471101532bf1e5cd":[5,5,4,4],
-"group__DiscordInternalMessageCommands.html#ga913baf962d6d1be5fb5379bfecb7c700":[5,5,4,1],
-"group__DiscordInternalMessageCommands.html#gabefae32a533a7c1f2fd51b000ae060a5":[5,5,4,3],
-"group__DiscordInternalMessageCommands.html#gad86c94465427900898327ed368c6877f":[5,5,4,6]
+"group__DiscordInternalGatewaySessionStatus.html#gac420091888fcf49cc95dd5f3bbcd18ed":[5,5,2,0,2]
 };

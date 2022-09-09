@@ -1,5 +1,11 @@
 var NAVTREEINDEX6 =
 {
+"group__ConcordError.html#ga4ca5a90a1068552190074f603f68b587":[5,0,16],
+"group__ConcordError.html#ga4f5d0733373b4e252a94665294c316bf":[5,0,15],
+"group__ConcordError.html#ga593a9fcdc49e58c0dcd1b29bb8458008":[5,0,6],
+"group__ConcordError.html#ga5e097b1aeeb3bff6adf8ed069430801f":[5,0,2],
+"group__ConcordError.html#ga705fdccbf1e575d3311f2d971af77b62":[5,0,8],
+"group__ConcordError.html#ga80f3eaee3c522218fa1f2915ef61d6ca":[5,0,5],
 "group__ConcordError.html#ga9355844f4e91b5a12e1bc25540cac2e4":[5,0,13],
 "group__ConcordError.html#gaa7b553c5e26c59b50b1c941fb60ec1b3":[5,0,3],
 "group__ConcordError.html#gac88742928a867d61346e9f2e3e5d778d":[5,0,17],
@@ -243,11 +249,5 @@ var NAVTREEINDEX6 =
 "group__DiscordAPIWebhook.html#gae2fa77b428f26e99c1656dee58fded2c":[5,4,15,4],
 "group__DiscordAPIWebhook.html#gafd892b808c7d2bc6f6db5bdbb9d32cb7":[5,4,15,5],
 "group__DiscordActivityFlags.html":[5,3,4],
-"group__DiscordActivityFlags.html#ga0cd047ebfa92440343f7d75f8fa405b5":[5,3,4,7],
-"group__DiscordActivityFlags.html#ga0cf6817c8289315721b740bf5531f0c0":[5,3,4,8],
-"group__DiscordActivityFlags.html#ga3b0f867ca1b5baf6aa8dd66cc501de45":[5,3,4,1],
-"group__DiscordActivityFlags.html#ga4886c3bbe33df7750951efa3d41442e4":[5,3,4,3],
-"group__DiscordActivityFlags.html#ga56497e4dab46b41cf08861ed328bed9b":[5,3,4,4],
-"group__DiscordActivityFlags.html#ga98d8e4fb9c697a8f01e87c101eb27017":[5,3,4,5],
-"group__DiscordActivityFlags.html#gae23e959741703490a43b88e088deaafb":[5,3,4,6]
+"group__DiscordActivityFlags.html#ga0cd047ebfa92440343f7d75f8fa405b5":[5,3,4,7]
 };
