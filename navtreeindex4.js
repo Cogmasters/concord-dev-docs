@@ -1,5 +1,16 @@
 var NAVTREEINDEX4 =
 {
+"docs_2api_2guild_8h.html#a90c902ee3a992078404ef88764039519":[7,0,1,0,8,77],
+"docs_2api_2guild_8h.html#a93be6ec31a60c1ee1653fa90b8c6eb58":[7,0,1,0,8,194],
+"docs_2api_2guild_8h.html#a94804d85f2723735e71d92b7f8220c23":[7,0,1,0,8,105],
+"docs_2api_2guild_8h.html#a95f066ead8f15401a4eb0e271f27a8d1":[7,0,1,0,8,227],
+"docs_2api_2guild_8h.html#a9778497216f34bd48a71b300d8cf8c7c":[7,0,1,0,8,84],
+"docs_2api_2guild_8h.html#a9986f2120421d43edddb1064429fb334":[7,0,1,0,8,149],
+"docs_2api_2guild_8h.html#a9a00ec95023734829a4d25dba90c7af9":[7,0,1,0,8,126],
+"docs_2api_2guild_8h.html#a9a2a0a419d8348c959cdb93f8aa1dff1":[7,0,1,0,8,134],
+"docs_2api_2guild_8h.html#a9bc2381ac1008a193b04daae63f4f7c3":[7,0,1,0,8,101],
+"docs_2api_2guild_8h.html#a9f10cde9a85da3e0a7493b2bd5246638":[7,0,1,0,8,76],
+"docs_2api_2guild_8h.html#a9f8bc0e35c129580df620e0e297f201d":[7,0,1,0,8,98],
 "docs_2api_2guild_8h.html#aa044366e747671d75ed75016495b977b":[7,0,1,0,8,168],
 "docs_2api_2guild_8h.html#aa0ecdf666c6c3ee17851381be08a0e3b":[7,0,1,0,8,63],
 "docs_2api_2guild_8h.html#aa4cb188268ea6fd0ed9598f963df00f5":[7,0,1,0,8,156],
@@ -238,16 +249,5 @@ var NAVTREEINDEX4 =
 "docs_2api_2sticker_8h.html#ab23c9ac7ea598d22f760146ee0a6fbff":[7,0,1,0,17,35],
 "docs_2api_2sticker_8h.html#abe0ac48b224d1e3f0ad1cb9a803f3ce1":[7,0,1,0,17,14],
 "docs_2api_2sticker_8h.html#ad8580716ac775bc1e9b73256b8d870f7":[7,0,1,0,17,36],
-"docs_2api_2sticker_8h.html#ad88b1873eeea72d8cceae45782b0150a":[7,0,1,0,17,31],
-"docs_2api_2sticker_8h.html#add8dff7e42b02922f4fd9d302252b80b":[7,0,1,0,17,12],
-"docs_2api_2sticker_8h.html#add8dff7e42b02922f4fd9d302252b80ba76761f68dda727d9efc5f49f4eaed48a":[7,0,1,0,17,12,0],
-"docs_2api_2sticker_8h.html#add8dff7e42b02922f4fd9d302252b80ba8bc4d76d9d6c5213d1e50dba71345120":[7,0,1,0,17,12,1],
-"docs_2api_2sticker_8h.html#ae18d160a99630cf291ae22b4aab66616":[7,0,1,0,17,32],
-"docs_2api_2sticker_8h.html#ae6d4bd569cf64c084a23b6a8b926cefa":[7,0,1,0,17,27],
-"docs_2api_2sticker_8h.html#ae9493ed0020a5a9595eb8d0b6870f947":[7,0,1,0,17,9],
-"docs_2api_2sticker_8h.html#aeef9c3539ffb9ed912a2976b67b43d68":[7,0,1,0,17,10],
-"docs_2api_2sticker_8h.html#af474876161dce8b943aced9afca2cf9d":[7,0,1,0,17,26],
-"docs_2api_2sticker_8h.html#af9c87895c42aa06ff565e9b0c863993f":[7,0,1,0,17,23],
-"docs_2api_2sticker_8h.html#afe80d5049e065da6f0a12f1b3251e433":[7,0,1,0,17,19],
-"docs_2api_2sticker_8h_source.html":[7,0,1,0,17]
+"docs_2api_2sticker_8h.html#ad88b1873eeea72d8cceae45782b0150a":[7,0,1,0,17,31]
 };

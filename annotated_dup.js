@@ -50,6 +50,7 @@ var annotated_dup =
     [ "discord_bucket", "structdiscord__bucket.html", "structdiscord__bucket" ],
     [ "discord_bulk_delete_messages", "structdiscord__bulk__delete__messages.html", "structdiscord__bulk__delete__messages" ],
     [ "discord_bulk_overwrite_guild_application_commands", "structdiscord__bulk__overwrite__guild__application__commands.html", "structdiscord__bulk__overwrite__guild__application__commands" ],
+    [ "discord_cache", "structdiscord__cache.html", "structdiscord__cache" ],
     [ "discord_channel", "structdiscord__channel.html", "structdiscord__channel" ],
     [ "discord_channel_mention", "structdiscord__channel__mention.html", "structdiscord__channel__mention" ],
     [ "discord_channel_pins_update", "structdiscord__channel__pins__update.html", "structdiscord__channel__pins__update" ],
