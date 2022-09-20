@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83":[7,0,1,0,11,13],
+"interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a06581bb7b0f28c2c35632cff918c691a":[7,0,1,0,11,13,5],
 "interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a3409efaf45118256f4a33d4b15d76240":[7,0,1,0,11,13,1],
 "interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a3ac4809e726a2ac2da81e6cdf56987f8":[7,0,1,0,11,13,2],
 "interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a9b2296dd06716eb23773585d584994f3":[7,0,1,0,11,13,4],
@@ -57,8 +59,8 @@ var NAVTREEINDEX9 =
 "jsmn-find_8h.html#abf2aa4562a56e675bff66900325d36aa":[7,0,0,8,11],
 "jsmn-find_8h.html#ac42bff445ea19cc95eaa480b2ab959a4":[7,0,0,8,14],
 "jsmn-find_8h.html#ac7864949a44d45dfa2110ef607d79761":[7,0,0,8,24],
-"jsmn-find_8h.html#ad011c46f6d4f5c781b9881aa8f5098e9":[7,0,0,8,17],
 "jsmn-find_8h.html#ad011c46f6d4f5c781b9881aa8f5098e9":[7,0,0,8,19],
+"jsmn-find_8h.html#ad011c46f6d4f5c781b9881aa8f5098e9":[7,0,0,8,17],
 "jsmn-find_8h.html#ad64f3d8fd1fd709b51ceb8337a7a7990":[7,0,0,8,35],
 "jsmn-find_8h.html#ade9b4c83f6a567ce38bc33c40fc5fa33":[7,0,0,8,36],
 "jsmn-find_8h.html#adf74c8e733c0058ce20888a619c6ab69":[7,0,0,8,21],
@@ -155,10 +157,10 @@ var NAVTREEINDEX9 =
 "log_8h.html#gaea98dd9af6733b8d171b2039d23161a6a6e98ff471e3ce6c4ef2d75c37ee51837":[5,6,6,2],
 "log_8h.html#gaea98dd9af6733b8d171b2039d23161a6ab9f002c6ffbfd511da8090213227454e":[7,0,0,11,16,1],
 "log_8h.html#gaea98dd9af6733b8d171b2039d23161a6ab9f002c6ffbfd511da8090213227454e":[5,6,6,1],
-"log_8h.html#gaea98dd9af6733b8d171b2039d23161a6ac630750884d91cb9767ef2200bbb048b":[7,0,0,11,16,5],
 "log_8h.html#gaea98dd9af6733b8d171b2039d23161a6ac630750884d91cb9767ef2200bbb048b":[5,6,6,5],
-"log_8h.html#gaea98dd9af6733b8d171b2039d23161a6ac8041ffa22bc823d4726701cdb13fc13":[7,0,0,11,16,3],
+"log_8h.html#gaea98dd9af6733b8d171b2039d23161a6ac630750884d91cb9767ef2200bbb048b":[7,0,0,11,16,5],
 "log_8h.html#gaea98dd9af6733b8d171b2039d23161a6ac8041ffa22bc823d4726701cdb13fc13":[5,6,6,3],
+"log_8h.html#gaea98dd9af6733b8d171b2039d23161a6ac8041ffa22bc823d4726701cdb13fc13":[7,0,0,11,16,3],
 "log_8h_source.html":[7,0,0,11],
 "logconf_8h.html":[7,0,0,12],
 "logconf_8h.html#a042aa75ade32832822047c31f3c82784":[7,0,0,12,25],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "md_docs_DISCORD_ROADMAP.html#autotoc_md64":[1,3,2],
 "md_docs_DISCORD_ROADMAP.html#autotoc_md65":[1,3,3],
 "md_docs_DISCORD_ROADMAP.html#autotoc_md66":[1,3,4],
-"md_docs_DISCORD_ROADMAP.html#autotoc_md67":[1,3,5],
-"md_docs_WINDOWS.html":[2],
-"md_docs_WINDOWS.html#autotoc_md69":[2,0]
+"md_docs_DISCORD_ROADMAP.html#autotoc_md67":[1,3,5]
 };

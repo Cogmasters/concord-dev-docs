@@ -15,7 +15,7 @@ var include_2channel_8h =
     [ "discord_delete_all_reactions_for_emoji", "group__DiscordAPIChannel.html#gaf27cd582cb3355b24176c18246d2e29f", null ],
     [ "discord_edit_message", "group__DiscordAPIChannel.html#gaa2c099e14bba123d56b6df1f3101d7dc", null ],
     [ "discord_delete_message", "group__DiscordAPIChannel.html#ga39b2f17ee2b7cd29d9150b9b4245dc5e", null ],
-    [ "discord_bulk_delete_messages", "group__DiscordAPIChannel.html#ga9ec96c0449a0aaad4d1c575f883f59e2", null ],
+    [ "discord_bulk_delete_messages", "group__DiscordAPIChannel.html#ga9eaf456638cf87345768c7701c095ed5", null ],
     [ "discord_edit_channel_permissions", "group__DiscordAPIChannel.html#ga826575e0a1ed6d5076ff9c2084000957", null ],
     [ "discord_get_channel_invites", "group__DiscordAPIChannel.html#gab0c42151d97e148d8222ed3bf89f5935", null ],
     [ "discord_create_channel_invite", "group__DiscordAPIChannel.html#gaea2527f8833466e97bb51f03d3a5b9c2", null ],

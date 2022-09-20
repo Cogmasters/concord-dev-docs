@@ -19,10 +19,6 @@ var discord_8h =
     [ "DISCORD_EMBED_FOOTER_TEXT_LEN", "group__DiscordConstantsEmbed.html#gade5ea7c9bb5f925192846eb297e9a6bc", null ],
     [ "DISCORD_EMBED_AUTHOR_NAME_LEN", "group__DiscordConstantsEmbed.html#ga134d07b9384d6f5a78e01f08d00869c8", null ],
     [ "DISCORD_WEBHOOK_NAME_LEN", "group__DiscordConstantsWebhook.html#ga94aa4b277a2aa6215e69f3c7a73b1cc9", null ],
-    [ "CCORD_DISCORD_JSON_CODE", "group__ConcordError.html#ga108e5c7e599dcf335f0d883f5c051a4e", null ],
-    [ "CCORD_DISCORD_BAD_AUTH", "group__ConcordError.html#ga9355844f4e91b5a12e1bc25540cac2e4", null ],
-    [ "CCORD_DISCORD_RATELIMIT", "group__ConcordError.html#ga17b4baf3b66ea2862c4981e4f3fc1639", null ],
-    [ "CCORD_DISCORD_CONNECTION", "group__ConcordError.html#ga4f5d0733373b4e252a94665294c316bf", null ],
     [ "discord_claim", "group__DiscordClient.html#gaa1716c3144212db97c8330987edd94b7", null ],
     [ "discord_ev_timer", "group__DiscordTimer.html#ga8b23c7c024f54ddfd5e333bfd9387dd5", null ],
     [ "discord_timer_flags", "group__DiscordTimer.html#ga6e91b61d2abe8974ade81aa42b225a6f", [

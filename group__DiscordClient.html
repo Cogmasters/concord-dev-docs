@@ -154,7 +154,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga164add107d145df966be36cef1b9b4a9"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structdiscord__user.html">discord_user</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#ga164add107d145df966be36cef1b9b4a9">discord_get_self</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
 <tr class="memdesc:ga164add107d145df966be36cef1b9b4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the client's cached user.  <a href="group__DiscordClient.html#ga164add107d145df966be36cef1b9b4a9">More...</a><br /></td></tr>
 <tr class="separator:ga164add107d145df966be36cef1b9b4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga10b7d422776acf4fb67877f8f1d28af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ConcordError.html#ga4ca5a90a1068552190074f603f68b587">CCORDcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#ga10b7d422776acf4fb67877f8f1d28af4">discord_run</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
+<tr class="memitem:ga10b7d422776acf4fb67877f8f1d28af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#ga10b7d422776acf4fb67877f8f1d28af4">discord_run</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
 <tr class="memdesc:ga10b7d422776acf4fb67877f8f1d28af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a connection to the Discord Gateway.  <a href="group__DiscordClient.html#ga10b7d422776acf4fb67877f8f1d28af4">More...</a><br /></td></tr>
 <tr class="separator:ga10b7d422776acf4fb67877f8f1d28af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e522caa529dd26e03d75a6482e7aaa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordClient.html#ga3e522caa529dd26e03d75a6482e7aaa1">discord_shutdown</a> (struct <a class="el" href="structdiscord.html">discord</a> *client)</td></tr>
@@ -509,7 +509,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__ConcordError.html#ga4ca5a90a1068552190074f603f68b587">CCORDcode</a> discord_run </td>
+          <td class="memname"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a> discord_run </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
           <td class="paramname"><em>client</em></td><td>)</td>
@@ -525,7 +525,12 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga4ca5a90a1068552190074f603f68b587">CCORDcode</a> for how the operation went, <a class="el" href="group__ConcordError.html#ga0b2454f88baeff7a3d492bb59227ab0f">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
+<li><code>0</code> means nothing out of the ordinary</li>
+<li><code>greater than zero</code> means a change of state</li>
+<li><code>lesser than zero</code> means an error has occurred </li>
+</ul>
+</dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audit-log_8c-example.html#a51">audit-log.c</a>, <a class="el" href="ban_8c-example.html#a36">ban.c</a>, <a class="el" href="channel_8c-example.html#a62">channel.c</a>, <a class="el" href="components_8c-example.html#a46">components.c</a>, <a class="el" href="embed_8c-example.html#a43">embed.c</a>, <a class="el" href="emoji_8c-example.html#a38">emoji.c</a>, <a class="el" href="guild-template_8c-example.html#a31">guild-template.c</a>, <a class="el" href="guild_8c-example.html#a62">guild.c</a>, <a class="el" href="invite_8c-example.html#a29">invite.c</a>, <a class="el" href="manual-dm_8c-example.html#a32">manual-dm.c</a>, <a class="el" href="pin_8c-example.html#a32">pin.c</a>, <a class="el" href="reaction_8c-example.html#a39">reaction.c</a>, <a class="el" href="slash-commands_8c-example.html#a47">slash-commands.c</a>, <a class="el" href="slash-commands2_8c-example.html#a59">slash-commands2.c</a>, and <a class="el" href="timers_8c-example.html#a16">timers.c</a>.</dd>
 </dl>
 

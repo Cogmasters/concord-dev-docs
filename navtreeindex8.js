@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"group__DiscordInternalGatewayIntents.html#ga8ea7abc25df479000e7d7b00a54db7e6":[5,5,2,1,16],
+"group__DiscordInternalGatewayIntents.html#gaa194274209b7999a4c77d1f28e1e5967":[5,5,2,1,4],
 "group__DiscordInternalGatewayIntents.html#gaa4c737695a5a507b0a5d2aa0c3dcdc70":[5,5,2,1,7],
 "group__DiscordInternalGatewayIntents.html#gaafd36167b2b407adb85cb55a2d25205b":[5,5,2,1,2],
 "group__DiscordInternalGatewayIntents.html#gabaf1dce5bf603280c4d5eacfd4d28125":[5,5,2,1,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "interactions_8h.html#ad78c33dde0b9510d217925a97472350e":[7,0,1,0,11,23],
 "interactions_8h.html#ae9493ed0020a5a9595eb8d0b6870f947":[7,0,1,0,11,9],
 "interactions_8h.html#aeef9c3539ffb9ed912a2976b67b43d68":[7,0,1,0,11,10],
-"interactions_8h.html#af0c59ef36433be74012eff3626fb7a20":[7,0,1,0,11,26],
-"interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83":[7,0,1,0,11,13],
-"interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a06581bb7b0f28c2c35632cff918c691a":[7,0,1,0,11,13,5]
+"interactions_8h.html#af0c59ef36433be74012eff3626fb7a20":[7,0,1,0,11,26]
 };

@@ -149,19 +149,19 @@ var NAVTREEINDEX =
 "docs_2api_2guild_8h.html#a90c902ee3a992078404ef88764039519",
 "docs_2api_2sticker_8h.html#add8dff7e42b02922f4fd9d302252b80b",
 "globals_v.html",
-"group__DiscordAPIWebhook.html#ga801ac7196b41e05494024cf6235593cf",
-"group__DiscordInternalGatewayIntents.html#gaa4c737695a5a507b0a5d2aa0c3dcdc70",
-"interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83a3409efaf45118256f4a33d4b15d76240",
-"md_docs_WINDOWS.html#autotoc_md70",
-"structdiscord__application.html#a514b86af56b576f8cec4c73ab1d22eeb",
-"structdiscord__component.html#afce2b727ea5e5fee984ceca35cd70f71",
-"structdiscord__emoji.html#af1cc053f3d90ba95d9a115555a56e926",
-"structdiscord__guild__scheduled__event.html#ad7ec492fbaa393fef478d0a8aad768fa",
-"structdiscord__message__interaction.html#a84255cc3ea673c0caa1eb76680a4ed64",
-"structdiscord__requestor.html#aeafdbd969b074a0a2fc7861adc3f6a45",
-"structdiscord__ret__guild__templates.html#a86562d15e68fd671f2faec1cf2041597",
-"structdiscord__start__thread__with__message.html#a2bd0a63c2818aea8c2110eb244739bff",
-"structlogconf.html#a516b5bf4d2be62361a26ae4865679339"
+"group__DiscordAPIWebhook.html#ga30e9845d20ebcfd01bf81e0610fb1322",
+"group__DiscordInternalGatewayIntents.html#ga8ea7abc25df479000e7d7b00a54db7e6",
+"interactions_8h.html#af7a2bdc22799b9d1ac556a6ba7206c83",
+"md_docs_WINDOWS.html",
+"structdiscord__application.html#a1d0afcf10eaee45b2f9bc58c70531dd3",
+"structdiscord__component.html#aef289819cd584601e589b35c25b2fe62",
+"structdiscord__emoji.html#ad8658066357ed9c6c3664ea7e1a2c9c5",
+"structdiscord__guild__scheduled__event.html#ad22e55923dfd121a8206cb45cf7a8c2f",
+"structdiscord__message__interaction.html#a07230f5d6703f06644bf5a9303f31ed9",
+"structdiscord__requestor.html#ad4ede57068e886e0a1f04e6466f4319a",
+"structdiscord__ret__guild__templates.html#a67a1db38343e6c27e39cbbbee9421430",
+"structdiscord__stage__instances.html#acf86c0a6e9a93677d1700ae3642d1ffe",
+"structlogconf.html#a27538e01299c256eb795326cc396c365"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

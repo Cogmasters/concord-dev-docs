@@ -89,7 +89,7 @@ var searchData=
   ['discord_5fbucket_5finsert_86',['discord_bucket_insert',['../group__DiscordInternalRESTRequestRatelimit.html#ga814fc88f988d5cc9dfbe499d197dced9',1,'discord-internal.h']]],
   ['discord_5fbucket_5frequest_5fselector_87',['discord_bucket_request_selector',['../group__DiscordInternalRESTRequestRatelimit.html#gaa49ee6592960a1966ccf310befa25eb0',1,'discord-internal.h']]],
   ['discord_5fbucket_5frequest_5funselect_88',['discord_bucket_request_unselect',['../group__DiscordInternalRESTRequestRatelimit.html#ga4aa6a408e0eef73f3b3f951d31e3d274',1,'discord-internal.h']]],
-  ['discord_5fbulk_5fdelete_5fmessages_89',['discord_bulk_delete_messages',['../group__DiscordAPIChannel.html#ga9ec96c0449a0aaad4d1c575f883f59e2',1,'channel.h']]],
+  ['discord_5fbulk_5fdelete_5fmessages_89',['discord_bulk_delete_messages',['../group__DiscordAPIChannel.html#ga9eaf456638cf87345768c7701c095ed5',1,'channel.h']]],
   ['discord_5fbulk_5fdelete_5fmessages_5fcleanup_90',['discord_bulk_delete_messages_cleanup',['../docs_2api_2channel_8h.html#afa5d4317564b7cb39ada8a2de42829d0',1,'channel.h']]],
   ['discord_5fbulk_5fdelete_5fmessages_5ffrom_5fjsmnf_91',['discord_bulk_delete_messages_from_jsmnf',['../docs_2api_2channel_8h.html#af81df757c66948b9ebd3e931e26897dc',1,'channel.h']]],
   ['discord_5fbulk_5fdelete_5fmessages_5ffrom_5fjson_92',['discord_bulk_delete_messages_from_json',['../docs_2api_2channel_8h.html#aee59faf29e670c39066b5a19d216e238',1,'channel.h']]],
