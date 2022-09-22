@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"structdiscord__message__delete__bulk.html#a856a515fddde04ea4133a17a1b7cb970":[6,0,173,0],
+"structdiscord__message__interaction.html":[6,0,174],
 "structdiscord__message__interaction.html#a07230f5d6703f06644bf5a9303f31ed9":[6,0,174,0],
 "structdiscord__message__interaction.html#a0e72ac995e4ac862d8e5adef03fd4910":[6,0,174,2],
 "structdiscord__message__interaction.html#a84255cc3ea673c0caa1eb76680a4ed64":[6,0,174,1],
@@ -193,10 +195,10 @@ var NAVTREEINDEX15 =
 "structdiscord__prune__count.html#a4b40b45e20dc0d36f4adf7c62319717b":[6,0,209,0],
 "structdiscord__ratelimiter.html":[5,5,1,0,0,0],
 "structdiscord__ratelimiter.html#a0f2c5f14dc620e6fe2650f7b7b41ad53":[5,5,1,0,0,0,4],
+"structdiscord__ratelimiter.html#a446a24c48f3d443d2a6431ef1ee05b20":[5,5,1,0,0,0,6],
 "structdiscord__ratelimiter.html#a543175e6442081a833ebdb2045d2db49":[5,5,1,0,0,0,1],
 "structdiscord__ratelimiter.html#a621319557605c11bc7c79f99db464497":[5,5,1,0,0,0,7],
 "structdiscord__ratelimiter.html#a851e023093acc161d03b26f1c1d56727":[5,5,1,0,0,0,5],
-"structdiscord__ratelimiter.html#a9399a67fbe2100d153ac0d79e8972df7":[5,5,1,0,0,0,6],
 "structdiscord__ratelimiter.html#a9627e4df091f75a792d2bbef5b791d91":[5,5,1,0,0,0,2],
 "structdiscord__ratelimiter.html#aa41e1147f4fa523744c639363fc82a49":[5,5,1,0,0,0,0],
 "structdiscord__ratelimiter.html#ada41649708f3b4969e744c576e41a0dd":[5,5,1,0,0,0,3],
@@ -224,12 +226,11 @@ var NAVTREEINDEX15 =
 "structdiscord__request.html#a17b87e65a2a2ab8c8c88ce7b8230e8e2":[5,5,1,0,4,0],
 "structdiscord__request.html#a1f2cdbfe773ff7c378a0f647ec59c764":[5,5,1,0,4,4],
 "structdiscord__request.html#a23ff7b77bceecdf17b422c808fbfdb20":[5,5,1,0,4,2],
-"structdiscord__request.html#a256e09b791b90669041f617439ec79e0":[5,5,1,0,4,13],
-"structdiscord__request.html#a9d8db1a4f5f850b00a22eae786d28ddb":[5,5,1,0,4,12],
+"structdiscord__request.html#a256e09b791b90669041f617439ec79e0":[5,5,1,0,4,12],
+"structdiscord__request.html#a9d8db1a4f5f850b00a22eae786d28ddb":[5,5,1,0,4,11],
 "structdiscord__request.html#a9f520f489e4996116c22569618fe78b2":[5,5,1,0,4,5],
 "structdiscord__request.html#aa08f6806647a9906226c247a5e79e78c":[5,5,1,0,4,6],
-"structdiscord__request.html#aa26956d1dbfedbadd91ace4edcb4f76e":[5,5,1,0,4,10],
-"structdiscord__request.html#aa455cda252215cbfcad4e1261e0a8005":[5,5,1,0,4,11],
+"structdiscord__request.html#aa455cda252215cbfcad4e1261e0a8005":[5,5,1,0,4,10],
 "structdiscord__request.html#ab54b99fa5005580bd7b876291b8b280e":[5,5,1,0,4,7],
 "structdiscord__request.html#ab6762b7187f58f7591e4a36f9da8e13a":[5,5,1,0,4,3],
 "structdiscord__request.html#adac9ad4793c3a54c40c8978c72ae3191":[5,5,1,0,4,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "structdiscord__requestor.html#a78d0cc7bbf8ae2441a6305d64ff53bfc":[5,5,1,0,5,9],
 "structdiscord__requestor.html#ab987eb73ac725664ebb74461ae80b56e":[5,5,1,0,5,8],
 "structdiscord__requestor.html#ab99acbf1e4d00b6bfd6ded70c6a7a92d":[5,5,1,0,5,7],
-"structdiscord__requestor.html#ac87dd85e5b4d7ee49d940ab1aeb18f60":[5,5,1,0,5,4],
-"structdiscord__requestor.html#ac9465b7ca0f1f3a65bc8bb3e8160b078":[5,5,1,0,5,1]
+"structdiscord__requestor.html#ac87dd85e5b4d7ee49d940ab1aeb18f60":[5,5,1,0,5,4]
 };

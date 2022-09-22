@@ -10,7 +10,6 @@ var structdiscord__request =
     [ "key", "structdiscord__request.html#ab54b99fa5005580bd7b876291b8b280e", null ],
     [ "conn", "structdiscord__request.html#ae531c4a10ac70cae3ce093012f06bc7e", null ],
     [ "code", "structdiscord__request.html#addca26013b49921db7ebb2dde9046771", null ],
-    [ "wait_ms", "structdiscord__request.html#aa26956d1dbfedbadd91ace4edcb4f76e", null ],
     [ "retry_attempt", "structdiscord__request.html#aa455cda252215cbfcad4e1261e0a8005", null ],
     [ "cond", "structdiscord__request.html#a9d8db1a4f5f850b00a22eae786d28ddb", null ],
     [ "entry", "structdiscord__request.html#a256e09b791b90669041f617439ec79e0", null ]

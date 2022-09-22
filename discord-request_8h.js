@@ -6,6 +6,7 @@ var discord_request_8h =
     [ "DISCORD_ATTR_INIT", "discord-request_8h.html#aaebf290db02074487d40973bfc2dff7c", null ],
     [ "DISCORD_ATTR_LIST_INIT", "discord-request_8h.html#abe4d5f28e2fe461435003976cde42f79", null ],
     [ "DISCORD_ATTR_BLANK_INIT", "discord-request_8h.html#a9eb1ad2723069663d9c07b6d177a1369", null ],
+    [ "DISCORD_ATTACHMENTS_IDS_INIT", "discord-request_8h.html#a3c99411b7fbcc157317973d234117540", null ],
     [ "cast_done_typed", "discord-request_8h.html#aa8c80343ae4d706e145ea5fca8cd5b5a", null ],
     [ "cast_init", "discord-request_8h.html#a98302af62c528a87515ba01bbd587134", null ],
     [ "cast_cleanup", "discord-request_8h.html#ad0d6e6b891be9f0e6ca67ceac78e493b", null ],

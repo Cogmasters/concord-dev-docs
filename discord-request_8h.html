@@ -120,6 +120,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a9eb1ad2723069663d9c07b6d177a1369"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discord-request_8h.html#a9eb1ad2723069663d9c07b6d177a1369">DISCORD_ATTR_BLANK_INIT</a>(attr,  ret)&#160;&#160;&#160;    if (ret) <a class="el" href="discord-request_8h.html#a289fbce9d5b1b9a8c7f980e59c5749d9">_RET_COPY_TYPELESS</a>(attr.dispatch, *ret)</td></tr>
 <tr class="memdesc:a9eb1ad2723069663d9c07b6d177a1369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for setting attributes for attruests that doensn't expect a response object.  <a href="discord-request_8h.html#a9eb1ad2723069663d9c07b6d177a1369">More...</a><br /></td></tr>
 <tr class="separator:a9eb1ad2723069663d9c07b6d177a1369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c99411b7fbcc157317973d234117540"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discord-request_8h.html#a3c99411b7fbcc157317973d234117540">DISCORD_ATTACHMENTS_IDS_INIT</a>(attchs)</td></tr>
+<tr class="memdesc:a3c99411b7fbcc157317973d234117540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for initializing attachments ids.  <a href="discord-request_8h.html#a3c99411b7fbcc157317973d234117540">More...</a><br /></td></tr>
+<tr class="separator:a3c99411b7fbcc157317973d234117540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -342,6 +345,38 @@ Typedefs</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">attr</td><td>attributes handler to be initialized </td></tr>
     <tr><td class="paramname">ret</td><td>dispatch attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c99411b7fbcc157317973d234117540" name="a3c99411b7fbcc157317973d234117540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c99411b7fbcc157317973d234117540">&#9670;&nbsp;</a></span>DISCORD_ATTACHMENTS_IDS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DISCORD_ATTACHMENTS_IDS_INIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">attchs</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                      \</div>
+<div class="line">        for (<span class="keywordtype">int</span> i = 0; i &lt; attchs-&gt;size; ++i) {                              \</div>
+<div class="line">            attchs-&gt;array[i].id = (<a class="code hl_typedef" href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a>)i;                            \</div>
+<div class="line">        }                                                                     \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="agroup__ConcordTypes_html_ga1f90b9a153d0298db01a3bf1eb334471"><div class="ttname"><a href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a></div><div class="ttdeci">uint64_t u64snowflake</div><div class="ttdoc">Snowflake datatype.</div><div class="ttdef"><b>Definition:</b> types.h:28</div></div>
+</div><!-- fragment -->
+<p>Helper for initializing attachments ids. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attchs</td><td>a <a class="el" href="structdiscord__attachments.html">discord_attachments</a> to have its IDs initialized </td></tr>
   </table>
   </dd>
 </dl>

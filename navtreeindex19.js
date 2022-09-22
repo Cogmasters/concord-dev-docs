@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structlogconf.html#a10edd8bd604fd022cae4692f76c16482":[6,0,331,5],
 "structlogconf.html#a27538e01299c256eb795326cc396c365":[6,0,331,13],
 "structlogconf.html#a31dec4ae80bf0ccafba145bed6d96e68":[6,0,331,6],
 "structlogconf.html#a516b5bf4d2be62361a26ae4865679339":[6,0,331,9],

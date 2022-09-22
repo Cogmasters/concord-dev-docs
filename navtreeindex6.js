@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"globals_u.html":[7,1,0,17],
 "globals_v.html":[7,1,0,18],
 "globals_vars.html":[7,1,2],
 "globals_w.html":[7,1,0,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "group__DiscordAPIVoice.html":[5,4,14],
 "group__DiscordAPIVoice.html#gaeddfdeafb3c003d60ffadad342a99af5":[5,4,14,1],
 "group__DiscordAPIWebhook.html":[5,4,15],
-"group__DiscordAPIWebhook.html#ga0b072fa4ace62c319bc9ed2a82984698":[5,4,15,12],
-"group__DiscordAPIWebhook.html#ga2cea37fb28d0c46556766af127898f5e":[5,4,15,2]
+"group__DiscordAPIWebhook.html#ga0b072fa4ace62c319bc9ed2a82984698":[5,4,15,12]
 };

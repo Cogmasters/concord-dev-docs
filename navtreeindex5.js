@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"docs_2api_2sticker_8h.html#ad88b1873eeea72d8cceae45782b0150a":[7,0,1,0,17,31],
 "docs_2api_2sticker_8h.html#add8dff7e42b02922f4fd9d302252b80b":[7,0,1,0,17,12],
 "docs_2api_2sticker_8h.html#add8dff7e42b02922f4fd9d302252b80ba76761f68dda727d9efc5f49f4eaed48a":[7,0,1,0,17,12,0],
 "docs_2api_2sticker_8h.html#add8dff7e42b02922f4fd9d302252b80ba8bc4d76d9d6c5213d1e50dba71345120":[7,0,1,0,17,12,1],
@@ -135,8 +136,8 @@ var NAVTREEINDEX5 =
 "examples.html":[8],
 "fetch-messages_8c-example.html":[8,6],
 "files.html":[7,0],
-"functions.html":[6,2,0,0],
 "functions.html":[6,2,0],
+"functions.html":[6,2,0,0],
 "functions_b.html":[6,2,0,1],
 "functions_c.html":[6,2,0,2],
 "functions_d.html":[6,2,0,3],
@@ -183,14 +184,14 @@ var NAVTREEINDEX5 =
 "functions_vars_v.html":[6,2,1,21],
 "functions_vars_w.html":[6,2,1,22],
 "functions_w.html":[6,2,0,22],
-"globals.html":[7,1,0],
 "globals.html":[7,1,0,0],
+"globals.html":[7,1,0],
 "globals_a.html":[7,1,0,1],
 "globals_b.html":[7,1,0,2],
 "globals_c.html":[7,1,0,3],
 "globals_d.html":[7,1,0,4],
-"globals_defs.html":[7,1,6],
 "globals_defs.html":[7,1,6,0],
+"globals_defs.html":[7,1,6],
 "globals_defs_a.html":[7,1,6,1],
 "globals_defs_b.html":[7,1,6,2],
 "globals_defs_c.html":[7,1,6,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "globals_r.html":[7,1,0,14],
 "globals_s.html":[7,1,0,15],
 "globals_t.html":[7,1,0,16],
-"globals_type.html":[7,1,3],
-"globals_u.html":[7,1,0,17]
+"globals_type.html":[7,1,3]
 };

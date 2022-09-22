@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"group__DiscordInternalGatewayIntents.html#ga8e2dfc85b2c23357b01e3af35b3ccba6":[5,5,2,1,0],
 "group__DiscordInternalGatewayIntents.html#ga8ea7abc25df479000e7d7b00a54db7e6":[5,5,2,1,16],
 "group__DiscordInternalGatewayIntents.html#gaa194274209b7999a4c77d1f28e1e5967":[5,5,2,1,4],
 "group__DiscordInternalGatewayIntents.html#gaa4c737695a5a507b0a5d2aa0c3dcdc70":[5,5,2,1,7],
@@ -36,16 +37,17 @@ var NAVTREEINDEX8 =
 "group__DiscordInternalRESTRequest.html#gad5627fc5a615a736e54e20e56e2ea233":[5,5,1,0,13],
 "group__DiscordInternalRESTRequest.html#gae8899578830f516661d06747eb882d37":[5,5,1,0,7],
 "group__DiscordInternalRESTRequestRatelimit.html":[5,5,1,0,0],
+"group__DiscordInternalRESTRequestRatelimit.html#ga0d2e8b02373e260dab9f7f9152403b3b":[5,5,1,0,0,7],
 "group__DiscordInternalRESTRequestRatelimit.html#ga242842023d4d62e819a8edab0bc886ad":[5,5,1,0,0,3],
 "group__DiscordInternalRESTRequestRatelimit.html#ga49206c6242957f9a269e606bab8e9550":[5,5,1,0,0,6],
 "group__DiscordInternalRESTRequestRatelimit.html#ga49ec800dbd53a216de0a860a2d9238d7":[5,5,1,0,0,5],
-"group__DiscordInternalRESTRequestRatelimit.html#ga4aa6a408e0eef73f3b3f951d31e3d274":[5,5,1,0,0,11],
+"group__DiscordInternalRESTRequestRatelimit.html#ga4aa6a408e0eef73f3b3f951d31e3d274":[5,5,1,0,0,12],
 "group__DiscordInternalRESTRequestRatelimit.html#ga6cde5ab5d14c9fedd812a8ed78107427":[5,5,1,0,0,2],
-"group__DiscordInternalRESTRequestRatelimit.html#ga7022e3f4a4db02d65e557b02a22db7e3":[5,5,1,0,0,7],
-"group__DiscordInternalRESTRequestRatelimit.html#ga814fc88f988d5cc9dfbe499d197dced9":[5,5,1,0,0,9],
+"group__DiscordInternalRESTRequestRatelimit.html#ga814fc88f988d5cc9dfbe499d197dced9":[5,5,1,0,0,10],
 "group__DiscordInternalRESTRequestRatelimit.html#ga89ceb5153dd3e0f0323254c0213aa91f":[5,5,1,0,0,4],
-"group__DiscordInternalRESTRequestRatelimit.html#ga9fcc1bd39a13ad90a2942f93dbc87a09":[5,5,1,0,0,8],
-"group__DiscordInternalRESTRequestRatelimit.html#gaa49ee6592960a1966ccf310befa25eb0":[5,5,1,0,0,10],
+"group__DiscordInternalRESTRequestRatelimit.html#ga941bd68b7c9611c576f22ffc0a80e2be":[5,5,1,0,0,8],
+"group__DiscordInternalRESTRequestRatelimit.html#ga9fcc1bd39a13ad90a2942f93dbc87a09":[5,5,1,0,0,9],
+"group__DiscordInternalRESTRequestRatelimit.html#gaa49ee6592960a1966ccf310befa25eb0":[5,5,1,0,0,11],
 "group__DiscordInternalRefcount.html":[5,5,3],
 "group__DiscordInternalRefcount.html#ga12915beddf469dd7e04608eaf7c4a679":[5,5,3,6],
 "group__DiscordInternalRefcount.html#ga3e4ce2823166287b4d486355fc06b431":[5,5,3,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "interactions_8h.html#acedb17c68eab684a8d0f908bd4af4c3eac7850aeefc741aec30068fedcd3b3dd0":[7,0,1,0,11,12,4],
 "interactions_8h.html#ad65166fb3b70f9f48eee2c41e2dd5507":[7,0,1,0,11,37],
 "interactions_8h.html#ad78c33dde0b9510d217925a97472350e":[7,0,1,0,11,23],
-"interactions_8h.html#ae9493ed0020a5a9595eb8d0b6870f947":[7,0,1,0,11,9],
-"interactions_8h.html#aeef9c3539ffb9ed912a2976b67b43d68":[7,0,1,0,11,10],
-"interactions_8h.html#af0c59ef36433be74012eff3626fb7a20":[7,0,1,0,11,26]
+"interactions_8h.html#ae9493ed0020a5a9595eb8d0b6870f947":[7,0,1,0,11,9]
 };

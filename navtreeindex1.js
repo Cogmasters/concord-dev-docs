@@ -62,14 +62,15 @@ var NAVTREEINDEX1 =
 "discord-internal_8h_source.html":[7,0,2,7],
 "discord-request_8h.html":[7,0,2,8],
 "discord-request_8h.html#a289fbce9d5b1b9a8c7f980e59c5749d9":[7,0,2,8,2],
-"discord-request_8h.html#a32d0b0a2a5579d93f67f0f883fec5184":[7,0,2,8,9],
-"discord-request_8h.html#a98302af62c528a87515ba01bbd587134":[7,0,2,8,7],
+"discord-request_8h.html#a32d0b0a2a5579d93f67f0f883fec5184":[7,0,2,8,10],
+"discord-request_8h.html#a3c99411b7fbcc157317973d234117540":[7,0,2,8,6],
+"discord-request_8h.html#a98302af62c528a87515ba01bbd587134":[7,0,2,8,8],
 "discord-request_8h.html#a9eb1ad2723069663d9c07b6d177a1369":[7,0,2,8,5],
-"discord-request_8h.html#aa8c80343ae4d706e145ea5fca8cd5b5a":[7,0,2,8,6],
+"discord-request_8h.html#aa8c80343ae4d706e145ea5fca8cd5b5a":[7,0,2,8,7],
 "discord-request_8h.html#aa98c09aa294015bf5ac2e108cd13f12b":[7,0,2,8,1],
 "discord-request_8h.html#aaebf290db02074487d40973bfc2dff7c":[7,0,2,8,3],
 "discord-request_8h.html#abe4d5f28e2fe461435003976cde42f79":[7,0,2,8,4],
-"discord-request_8h.html#ad0d6e6b891be9f0e6ca67ceac78e493b":[7,0,2,8,8],
+"discord-request_8h.html#ad0d6e6b891be9f0e6ca67ceac78e493b":[7,0,2,8,9],
 "discord-request_8h_source.html":[7,0,2,8],
 "discord-response_8h.html":[7,0,2,9],
 "discord-response_8h.html#a4763b511d7f8bdca0aa292c1d2ca95f6":[7,0,2,9,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "docs_2api_2channel_8h.html#a50d23cb977394cf5c52b3c2086cbd247":[7,0,1,0,4,225],
 "docs_2api_2channel_8h.html#a51c09de48ddfbdae02b815bfdc811168":[7,0,1,0,4,81],
 "docs_2api_2channel_8h.html#a526c5f9b5f3bca965fe2cd047c9b663d":[7,0,1,0,4,154],
-"docs_2api_2channel_8h.html#a53b0de2df83ecf71e0106ac9ad089d15":[7,0,1,0,4,209],
-"docs_2api_2channel_8h.html#a5999060470b99a5701df195853cb7ce7":[7,0,1,0,4,153]
+"docs_2api_2channel_8h.html#a53b0de2df83ecf71e0106ac9ad089d15":[7,0,1,0,4,209]
 };

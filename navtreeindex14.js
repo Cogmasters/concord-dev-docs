@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"structdiscord__guild__scheduled__event.html#aabf81df0629eb9222e22db83ab4c68d6":[6,0,133,15],
+"structdiscord__guild__scheduled__event.html#ab9458e4c098349028327820fa78d5369":[6,0,133,4],
 "structdiscord__guild__scheduled__event.html#ad22e55923dfd121a8206cb45cf7a8c2f":[6,0,133,0],
 "structdiscord__guild__scheduled__event.html#ad79104b089e67d58971cb09e0d199d41":[6,0,133,14],
 "structdiscord__guild__scheduled__event.html#ad7ec492fbaa393fef478d0a8aad768fa":[6,0,133,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "structdiscord__message__delete.html#acd3bbc8bafd49ac3034b120beead2854":[6,0,172,2],
 "structdiscord__message__delete__bulk.html":[6,0,173],
 "structdiscord__message__delete__bulk.html#a57b5da4d831faee924c0c8cda11cade0":[6,0,173,1],
-"structdiscord__message__delete__bulk.html#a5bb2dc9762f2acb934071cddb0274f3c":[6,0,173,2],
-"structdiscord__message__delete__bulk.html#a856a515fddde04ea4133a17a1b7cb970":[6,0,173,0],
-"structdiscord__message__interaction.html":[6,0,174]
+"structdiscord__message__delete__bulk.html#a5bb2dc9762f2acb934071cddb0274f3c":[6,0,173,2]
 };

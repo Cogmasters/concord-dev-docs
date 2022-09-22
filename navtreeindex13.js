@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"structdiscord__emoji.html#a7d50b95159ac0cfcf44fc33b4f139584":[6,0,98,1],
+"structdiscord__emoji.html#aba042a755ea1b4f4b83c88d360dde1c2":[6,0,98,5],
 "structdiscord__emoji.html#ad8658066357ed9c6c3664ea7e1a2c9c5":[6,0,98,4],
 "structdiscord__emoji.html#aed92c5342557bbbba16b4acca19ae7bd":[6,0,98,7],
 "structdiscord__emoji.html#af1cc053f3d90ba95d9a115555a56e926":[6,0,98,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "structdiscord__guild__scheduled__event.html#a54f6420228e7e0b0bd7835358cf75858":[6,0,133,6],
 "structdiscord__guild__scheduled__event.html#a7fd99257d35f4990c28087734cde2d2c":[6,0,133,1],
 "structdiscord__guild__scheduled__event.html#a8592ff64a9fe422196d5c2fed9abe93c":[6,0,133,13],
-"structdiscord__guild__scheduled__event.html#aa3e02a5de87dc55520aeaf0bde5f00f2":[6,0,133,3],
-"structdiscord__guild__scheduled__event.html#aabf81df0629eb9222e22db83ab4c68d6":[6,0,133,15],
-"structdiscord__guild__scheduled__event.html#ab9458e4c098349028327820fa78d5369":[6,0,133,4]
+"structdiscord__guild__scheduled__event.html#aa3e02a5de87dc55520aeaf0bde5f00f2":[6,0,133,3]
 };
