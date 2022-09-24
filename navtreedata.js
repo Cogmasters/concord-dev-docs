@@ -46,72 +46,73 @@ var NAVTREE =
       [ "Setting up your environment", "index.html#autotoc_md14", [
         [ "Clone Concord into your workspace", "index.html#autotoc_md15", null ],
         [ "Compile Concord", "index.html#autotoc_md16", null ],
-        [ "Special notes for non-Linux systems", "index.html#autotoc_md17", null ]
+        [ "Special notes for non-Linux systems", "index.html#autotoc_md17", null ],
+        [ "Special note about linking Concord against another library", "index.html#autotoc_md18", null ]
       ] ],
-      [ "Configuring Concord", "index.html#autotoc_md18", null ],
-      [ "Test Copycat-Bot", "index.html#autotoc_md19", [
-        [ "Get Copycat-Bot Response", "index.html#autotoc_md20", null ],
-        [ "Terminate Copycat-Bot", "index.html#autotoc_md21", null ]
+      [ "Configuring Concord", "index.html#autotoc_md19", null ],
+      [ "Test Copycat-Bot", "index.html#autotoc_md20", [
+        [ "Get Copycat-Bot Response", "index.html#autotoc_md21", null ],
+        [ "Terminate Copycat-Bot", "index.html#autotoc_md22", null ]
       ] ],
-      [ "Configure your build", "index.html#autotoc_md22", [
-        [ "Special compilation flags", "index.html#autotoc_md23", null ],
-        [ "Special targets", "index.html#autotoc_md24", null ]
+      [ "Configure your build", "index.html#autotoc_md23", [
+        [ "Special compilation flags", "index.html#autotoc_md24", null ],
+        [ "Special targets", "index.html#autotoc_md25", null ]
       ] ],
-      [ "Installing Concord", "index.html#autotoc_md25", [
-        [ "Included dependencies", "index.html#autotoc_md26", null ],
-        [ "Standalone executable", "index.html#autotoc_md27", [
-          [ "GCC", "index.html#autotoc_md28", null ],
-          [ "Clang", "index.html#autotoc_md29", null ],
-          [ "UNIX C compilers", "index.html#autotoc_md30", null ]
+      [ "Installing Concord", "index.html#autotoc_md26", [
+        [ "Included dependencies", "index.html#autotoc_md27", null ],
+        [ "Standalone executable", "index.html#autotoc_md28", [
+          [ "GCC", "index.html#autotoc_md29", null ],
+          [ "Clang", "index.html#autotoc_md30", null ],
+          [ "UNIX C compilers", "index.html#autotoc_md31", null ]
         ] ]
       ] ],
-      [ "Recommended debuggers", "index.html#autotoc_md32", [
-        [ "Valgrind", "index.html#autotoc_md33", null ],
-        [ "GDB", "index.html#autotoc_md34", null ]
+      [ "Recommended debuggers", "index.html#autotoc_md33", [
+        [ "Valgrind", "index.html#autotoc_md34", null ],
+        [ "GDB", "index.html#autotoc_md35", null ]
       ] ],
-      [ "Support", "index.html#autotoc_md35", null ],
-      [ "Contributing", "index.html#autotoc_md36", null ],
-      [ "Getting Started", "index.html#autotoc_md37", null ],
-      [ "Useful links", "index.html#autotoc_md38", null ]
+      [ "Support", "index.html#autotoc_md36", null ],
+      [ "Contributing", "index.html#autotoc_md37", null ],
+      [ "Getting Started", "index.html#autotoc_md38", null ],
+      [ "Useful links", "index.html#autotoc_md39", null ]
     ] ],
     [ "Discord API Roadmap", "md_docs_DISCORD_ROADMAP.html", [
-      [ "Reference", "md_docs_DISCORD_ROADMAP.html#autotoc_md40", [
-        [ "Authentication", "md_docs_DISCORD_ROADMAP.html#autotoc_md41", null ]
+      [ "Reference", "md_docs_DISCORD_ROADMAP.html#autotoc_md41", [
+        [ "Authentication", "md_docs_DISCORD_ROADMAP.html#autotoc_md42", null ]
       ] ],
-      [ "Interactions", "md_docs_DISCORD_ROADMAP.html#autotoc_md42", [
-        [ "Application Commands", "md_docs_DISCORD_ROADMAP.html#autotoc_md43", null ],
-        [ "Message Components", "md_docs_DISCORD_ROADMAP.html#autotoc_md44", null ],
-        [ "Receiving and Responding", "md_docs_DISCORD_ROADMAP.html#autotoc_md45", null ]
+      [ "Interactions", "md_docs_DISCORD_ROADMAP.html#autotoc_md43", [
+        [ "Application Commands", "md_docs_DISCORD_ROADMAP.html#autotoc_md44", null ],
+        [ "Message Components", "md_docs_DISCORD_ROADMAP.html#autotoc_md45", null ],
+        [ "Receiving and Responding", "md_docs_DISCORD_ROADMAP.html#autotoc_md46", null ]
       ] ],
-      [ "Resources", "md_docs_DISCORD_ROADMAP.html#autotoc_md46", [
-        [ "Application", "md_docs_DISCORD_ROADMAP.html#autotoc_md47", null ],
-        [ "Audit Log", "md_docs_DISCORD_ROADMAP.html#autotoc_md48", null ],
-        [ "Auto Moderation", "md_docs_DISCORD_ROADMAP.html#autotoc_md49", null ],
-        [ "Channels", "md_docs_DISCORD_ROADMAP.html#autotoc_md50", null ],
-        [ "Emoji", "md_docs_DISCORD_ROADMAP.html#autotoc_md51", null ],
-        [ "Guild", "md_docs_DISCORD_ROADMAP.html#autotoc_md52", null ],
-        [ "Guild Scheduled Event", "md_docs_DISCORD_ROADMAP.html#autotoc_md53", null ],
-        [ "Guild Template", "md_docs_DISCORD_ROADMAP.html#autotoc_md54", null ],
-        [ "Invite", "md_docs_DISCORD_ROADMAP.html#autotoc_md55", null ],
-        [ "Stage Instance", "md_docs_DISCORD_ROADMAP.html#autotoc_md56", null ],
-        [ "Sticker", "md_docs_DISCORD_ROADMAP.html#autotoc_md57", null ],
-        [ "User", "md_docs_DISCORD_ROADMAP.html#autotoc_md58", null ],
-        [ "Voice Resouce", "md_docs_DISCORD_ROADMAP.html#autotoc_md59", null ],
-        [ "Webhook", "md_docs_DISCORD_ROADMAP.html#autotoc_md60", null ]
+      [ "Resources", "md_docs_DISCORD_ROADMAP.html#autotoc_md47", [
+        [ "Application", "md_docs_DISCORD_ROADMAP.html#autotoc_md48", null ],
+        [ "Audit Log", "md_docs_DISCORD_ROADMAP.html#autotoc_md49", null ],
+        [ "Auto Moderation", "md_docs_DISCORD_ROADMAP.html#autotoc_md50", null ],
+        [ "Channels", "md_docs_DISCORD_ROADMAP.html#autotoc_md51", null ],
+        [ "Emoji", "md_docs_DISCORD_ROADMAP.html#autotoc_md52", null ],
+        [ "Guild", "md_docs_DISCORD_ROADMAP.html#autotoc_md53", null ],
+        [ "Guild Scheduled Event", "md_docs_DISCORD_ROADMAP.html#autotoc_md54", null ],
+        [ "Guild Template", "md_docs_DISCORD_ROADMAP.html#autotoc_md55", null ],
+        [ "Invite", "md_docs_DISCORD_ROADMAP.html#autotoc_md56", null ],
+        [ "Stage Instance", "md_docs_DISCORD_ROADMAP.html#autotoc_md57", null ],
+        [ "Sticker", "md_docs_DISCORD_ROADMAP.html#autotoc_md58", null ],
+        [ "User", "md_docs_DISCORD_ROADMAP.html#autotoc_md59", null ],
+        [ "Voice Resouce", "md_docs_DISCORD_ROADMAP.html#autotoc_md60", null ],
+        [ "Webhook", "md_docs_DISCORD_ROADMAP.html#autotoc_md61", null ]
       ] ],
-      [ "Topics", "md_docs_DISCORD_ROADMAP.html#autotoc_md61", [
-        [ "Gateway", "md_docs_DISCORD_ROADMAP.html#autotoc_md62", null ],
-        [ "OAuth2", "md_docs_DISCORD_ROADMAP.html#autotoc_md63", null ],
-        [ "Opcodes and Status Codes", "md_docs_DISCORD_ROADMAP.html#autotoc_md64", null ],
-        [ "Permissions", "md_docs_DISCORD_ROADMAP.html#autotoc_md65", null ],
-        [ "RateLimits", "md_docs_DISCORD_ROADMAP.html#autotoc_md66", null ],
-        [ "Voice Connections", "md_docs_DISCORD_ROADMAP.html#autotoc_md67", null ]
+      [ "Topics", "md_docs_DISCORD_ROADMAP.html#autotoc_md62", [
+        [ "Gateway", "md_docs_DISCORD_ROADMAP.html#autotoc_md63", null ],
+        [ "OAuth2", "md_docs_DISCORD_ROADMAP.html#autotoc_md64", null ],
+        [ "Opcodes and Status Codes", "md_docs_DISCORD_ROADMAP.html#autotoc_md65", null ],
+        [ "Permissions", "md_docs_DISCORD_ROADMAP.html#autotoc_md66", null ],
+        [ "RateLimits", "md_docs_DISCORD_ROADMAP.html#autotoc_md67", null ],
+        [ "Voice Connections", "md_docs_DISCORD_ROADMAP.html#autotoc_md68", null ]
       ] ]
     ] ],
     [ "Compiling on Windows (Detailed instructions)", "md_docs_WINDOWS.html", [
-      [ "Cygwin and Dependencies", "md_docs_WINDOWS.html#autotoc_md69", null ],
-      [ "Microsoft Visual C/C++", "md_docs_WINDOWS.html#autotoc_md70", null ],
-      [ "Other compilers", "md_docs_WINDOWS.html#autotoc_md71", null ]
+      [ "Cygwin and Dependencies", "md_docs_WINDOWS.html#autotoc_md70", null ],
+      [ "Microsoft Visual C/C++", "md_docs_WINDOWS.html#autotoc_md71", null ],
+      [ "Other compilers", "md_docs_WINDOWS.html#autotoc_md72", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -151,17 +152,17 @@ var NAVTREEINDEX =
 "globals_u.html",
 "group__DiscordAPIWebhook.html#ga2cea37fb28d0c46556766af127898f5e",
 "group__DiscordInternalGatewayIntents.html#ga8e2dfc85b2c23357b01e3af35b3ccba6",
-"interactions_8h.html#aeef9c3539ffb9ed912a2976b67b43d68",
+"interactions_8h.html#ae9493ed0020a5a9595eb8d0b6870f947",
 "md_docs_DISCORD_ROADMAP.html#autotoc_md66",
-"structdiscord__allowed__mention.html#affcb92f89bd2e801c0a15ab75ce8689c",
-"structdiscord__component.html#ae390990e32d4a5eb585047eab61583fa",
-"structdiscord__emoji.html#a7d50b95159ac0cfcf44fc33b4f139584",
-"structdiscord__guild__scheduled__event.html#aabf81df0629eb9222e22db83ab4c68d6",
-"structdiscord__message__delete__bulk.html#a856a515fddde04ea4133a17a1b7cb970",
-"structdiscord__requestor.html#ac9465b7ca0f1f3a65bc8bb3e8160b078",
-"structdiscord__ret__guild__templates.html",
-"structdiscord__stage__instances.html#a0d76b26957340af496b669e9b941704a",
-"structlogconf.html#a10edd8bd604fd022cae4692f76c16482"
+"structdiscord__allowed__mention.html#af8e61efdf0faa6aad66a26b991fa525c",
+"structdiscord__component.html#ab4c4e6fc04489f9073625a255f07f353",
+"structdiscord__emoji.html#a4b236c483b8de6d2a8caf0250fc82460",
+"structdiscord__guild__scheduled__event.html#aa3e02a5de87dc55520aeaf0bde5f00f2",
+"structdiscord__message__delete__bulk.html#a5bb2dc9762f2acb934071cddb0274f3c",
+"structdiscord__requestor.html#ac87dd85e5b4d7ee49d940ab1aeb18f60",
+"structdiscord__ret__guild__template.html#af4fd7fec55e9153bea397f321ca328f9",
+"structdiscord__stage__instances.html",
+"structlogconf.html#a1009f99f2030567ad46d42fb4b108def"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

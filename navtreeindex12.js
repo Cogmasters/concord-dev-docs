@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structdiscord__component.html#ab4c4e6fc04489f9073625a255f07f353":[6,0,56,3],
 "structdiscord__component.html#ae390990e32d4a5eb585047eab61583fa":[6,0,56,8],
 "structdiscord__component.html#ae5d76aee147629ddcc557223b1e99f3c":[6,0,56,9],
 "structdiscord__component.html#aef289819cd584601e589b35c25b2fe62":[6,0,56,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structdiscord__embeds.html#aaf308d9dbe770dbd8a266d58c0bb7ce1":[6,0,97,1],
 "structdiscord__emoji.html":[6,0,98],
 "structdiscord__emoji.html#a2f8f871daa760513aca81c79f0c9ad82":[6,0,98,3],
-"structdiscord__emoji.html#a47452713ccbe347169104df774da0189":[6,0,98,0],
-"structdiscord__emoji.html#a4b236c483b8de6d2a8caf0250fc82460":[6,0,98,2]
+"structdiscord__emoji.html#a47452713ccbe347169104df774da0189":[6,0,98,0]
 };
