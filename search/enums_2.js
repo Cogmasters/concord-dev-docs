@@ -9,7 +9,7 @@ var searchData=
   ['discord_5fauto_5fmoderation_5fevent_5ftypes_6',['discord_auto_moderation_event_types',['../docs_2api_2auto__moderation_8h.html#a69a5a6b440d3d718859d0e7283d9561c',1,'auto_moderation.h']]],
   ['discord_5fauto_5fmoderation_5fkeyword_5fpreset_5ftypes_7',['discord_auto_moderation_keyword_preset_types',['../docs_2api_2auto__moderation_8h.html#a3d22112e4e97aad2a7d52fd2e55018b2',1,'auto_moderation.h']]],
   ['discord_5fauto_5fmoderation_5ftrigger_5ftypes_8',['discord_auto_moderation_trigger_types',['../docs_2api_2auto__moderation_8h.html#a842432935eae5837880691a9a3ebafd3',1,'auto_moderation.h']]],
-  ['discord_5fcache_5foptions_9',['discord_cache_options',['../discord-cache_8h.html#a81215ef7fe2b84a1082f6639d6761ac7',1,'discord-cache.h']]],
+  ['discord_5fcache_5foptions_9',['discord_cache_options',['../group__DiscordClientCache.html#ga81215ef7fe2b84a1082f6639d6761ac7',1,'discord-cache.h']]],
   ['discord_5fchannel_5ftypes_10',['discord_channel_types',['../docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fe',1,'channel.h']]],
   ['discord_5fcomponent_5fstyles_11',['discord_component_styles',['../message__components_8h.html#a6a1ed7aae34243c82aaad9498e8fc7a6',1,'message_components.h']]],
   ['discord_5fcomponent_5ftypes_12',['discord_component_types',['../message__components_8h.html#ad6539677dbe0f162ab7f448aedc4552c',1,'message_components.h']]],

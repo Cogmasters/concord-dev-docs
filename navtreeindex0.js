@@ -127,7 +127,8 @@ var NAVTREEINDEX0 =
 "application__commands_8h.html#afb5aa222bfa77df6cc888e054fb99eb7":[7,0,1,0,1,35],
 "application__commands_8h_source.html":[7,0,1,0,1],
 "audit-log_8c-example.html":[8,3],
-"ban_8c-example.html":[8,12],
+"ban_8c-example.html":[8,13],
+"cache_8c-example.html":[8,10],
 "carray_8h.html":[7,0,0,1],
 "carray_8h.html#a0aadddb046dc393671f9294b299380e9":[7,0,0,1,12],
 "carray_8h.html#a2341fe39bd0e7a4d3b8d42c8aa908d98":[7,0,0,1,5],
@@ -227,7 +228,7 @@ var NAVTREEINDEX0 =
 "cog-utils_8h.html#ad4869046b6a42de035536815405b6c0d":[7,0,0,4,11],
 "cog-utils_8h.html#af1a706a4b2f65bce37faee65a483d84f":[7,0,0,4,10],
 "cog-utils_8h_source.html":[7,0,0,4],
-"components_8c-example.html":[8,14],
+"components_8c-example.html":[8,15],
 "concord-once_8h.html":[7,0,2,4],
 "concord-once_8h.html#a9a5555031ccfdb102424695dfaca0727":[7,0,2,4,0],
 "concord-once_8h.html#ab214960b95e1af11bbfc98f1b310598a":[7,0,2,4,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62a1a55c12ab8de46b6f8d84eb22d587920":[7,0,0,5,1,1],
 "curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62a2b073b2f10975581e6ca630321882ce1":[7,0,0,5,1,7],
 "curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62a32cc5aeb82de0300ca6a13946eda6632":[7,0,0,5,1,8],
-"curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62a4e48d72d33ff8cd429fd2db062bbfb69":[7,0,0,5,1,10],
-"curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62a52aa4827b6c4c4b63977388582d8cf11":[7,0,0,5,1,6]
+"curl-websocket_8h.html#afe3e1281030a7c2325aed846cc845b62a4e48d72d33ff8cd429fd2db062bbfb69":[7,0,0,5,1,10]
 };

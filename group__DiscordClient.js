@@ -1,5 +1,6 @@
 var group__DiscordClient =
 [
+    [ "Caching", "group__DiscordClientCache.html", "group__DiscordClientCache" ],
     [ "Commands", "group__DiscordCommands.html", "group__DiscordCommands" ],
     [ "Events", "group__DiscordEvents.html", "group__DiscordEvents" ],
     [ "Timer", "group__DiscordTimer.html", "group__DiscordTimer" ],

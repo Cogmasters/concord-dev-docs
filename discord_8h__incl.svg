@@ -395,7 +395,7 @@
 <!-- Node30 -->
 <g id="node27" class="node">
 <title>Node30</title>
-<g id="a_node27"><a xlink:href="discord-cache_8h.html" target="_top" xlink:title=" ">
+<g id="a_node27"><a xlink:href="discord-cache_8h.html" target="_top" xlink:title="Caching of Discord resources.">
 <polygon fill="none" stroke="black" points="2306,-56.5 2306,-75.5 2399,-75.5 2399,-56.5 2306,-56.5"/>
 <text text-anchor="middle" x="2352.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">discord&#45;cache.h</text>
 </a>

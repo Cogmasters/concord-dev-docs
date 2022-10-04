@@ -1,5 +1,6 @@
 var structdiscord__modify__guild__role =
 [
+    [ "reason", "structdiscord__modify__guild__role.html#a2effbf5521b53bf310648e7fb5e886a7", null ],
     [ "name", "structdiscord__modify__guild__role.html#a1b335526be5bde9274f24c2a91c89cf4", null ],
     [ "permissions", "structdiscord__modify__guild__role.html#ac84422502d1f74aa07e2841ac0177f25", null ],
     [ "color", "structdiscord__modify__guild__role.html#a4788c38709fb5517d93f5c34693e904b", null ],

@@ -158,7 +158,7 @@ Slash Commands (new method)</h4>
 <div class="ttc" id="astructdiscord__interaction_html_ac1e97e032eec047868dce94121a7d234"><div class="ttname"><a href="structdiscord__interaction.html#ac1e97e032eec047868dce94121a7d234">discord_interaction::token</a></div><div class="ttdeci">char * token</div><div class="ttdef"><b>Definition:</b> interactions.h:66</div></div>
 <div class="ttc" id="astructdiscord__ready_html"><div class="ttname"><a href="structdiscord__ready.html">discord_ready</a></div><div class="ttdef"><b>Definition:</b> gateway.h:332</div></div>
 <div class="ttc" id="astructdiscord__ready_html_a50ac4274a6b0d46abaa1af5cc10b4397"><div class="ttname"><a href="structdiscord__ready.html#a50ac4274a6b0d46abaa1af5cc10b4397">discord_ready::application</a></div><div class="ttdeci">struct discord_application * application</div><div class="ttdef"><b>Definition:</b> gateway.h:345</div></div>
-<div class="ttc" id="astructdiscord_html"><div class="ttname"><a href="structdiscord.html">discord</a></div><div class="ttdoc">The Discord client handler.</div><div class="ttdef"><b>Definition:</b> discord-internal.h:1177</div></div>
+<div class="ttc" id="astructdiscord_html"><div class="ttname"><a href="structdiscord.html">discord</a></div><div class="ttdoc">The Discord client handler.</div><div class="ttdef"><b>Definition:</b> discord-internal.h:1180</div></div>
 </div><!-- fragment --><h4><a class="anchor" id="autotoc_md4"></a>
 Message Commands (old method)</h4>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
@@ -188,8 +188,8 @@ Message Commands (old method)</h4>
 <div class="ttc" id="agroup__DiscordEvents_html_ga4681ad4a8b3ec7c1c777a62b201aec8f"><div class="ttname"><a href="group__DiscordEvents.html#ga4681ad4a8b3ec7c1c777a62b201aec8f">discord_set_on_message_create</a></div><div class="ttdeci">void discord_set_on_message_create(struct discord *client, void(*callback)(struct discord *client, const struct discord_message *event))</div><div class="ttdoc">Triggers when a message is created.</div></div>
 <div class="ttc" id="agroup__DiscordInternalGatewayIntents_html_ga06c22696ba8f99e7ed1c6d4f88de2e5f"><div class="ttname"><a href="group__DiscordInternalGatewayIntents.html#ga06c22696ba8f99e7ed1c6d4f88de2e5f">DISCORD_GATEWAY_MESSAGE_CONTENT</a></div><div class="ttdeci">#define DISCORD_GATEWAY_MESSAGE_CONTENT</div><div class="ttdef"><b>Definition:</b> gateway.h:41</div></div>
 <div class="ttc" id="alog_8h_html_aa1cfe5444875c8eca0ea6f6993977d6d"><div class="ttname"><a href="log_8h.html#aa1cfe5444875c8eca0ea6f6993977d6d">log_info</a></div><div class="ttdeci">#define log_info(...)</div><div class="ttdef"><b>Definition:</b> log.h:52</div></div>
-<div class="ttc" id="astructdiscord__create__message_html"><div class="ttname"><a href="structdiscord__create__message.html">discord_create_message</a></div><div class="ttdef"><b>Definition:</b> channel.h:665</div></div>
-<div class="ttc" id="astructdiscord__create__message_html_a8adf7603f7845f86b4d22dec96d8bc88"><div class="ttname"><a href="structdiscord__create__message.html#a8adf7603f7845f86b4d22dec96d8bc88">discord_create_message::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> channel.h:667</div></div>
+<div class="ttc" id="astructdiscord__create__message_html"><div class="ttname"><a href="structdiscord__create__message.html">discord_create_message</a></div><div class="ttdef"><b>Definition:</b> channel.h:671</div></div>
+<div class="ttc" id="astructdiscord__create__message_html_a8adf7603f7845f86b4d22dec96d8bc88"><div class="ttname"><a href="structdiscord__create__message.html#a8adf7603f7845f86b4d22dec96d8bc88">discord_create_message::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> channel.h:673</div></div>
 <div class="ttc" id="astructdiscord__message_html"><div class="ttname"><a href="structdiscord__message.html">discord_message</a></div><div class="ttdef"><b>Definition:</b> channel.h:191</div></div>
 <div class="ttc" id="astructdiscord__message_html_aa48b4b9a69db9fae0bb8be3f139317ae"><div class="ttname"><a href="structdiscord__message.html#aa48b4b9a69db9fae0bb8be3f139317ae">discord_message::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> channel.h:203</div></div>
 <div class="ttc" id="astructdiscord__message_html_ae8ca075067f08c4f1b793de670817d48"><div class="ttname"><a href="structdiscord__message.html#ae8ca075067f08c4f1b793de670817d48">discord_message::channel_id</a></div><div class="ttdeci">u64snowflake channel_id</div><div class="ttdef"><b>Definition:</b> channel.h:195</div></div>
@@ -360,10 +360,12 @@ Included dependencies</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://github.com/c-ware/carray">carray</a>*   </td><td class="markdownTableBodyNone">Macro-based implementation of type-safe arrays    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://github.com/c-ware/chash">chash</a>*   </td><td class="markdownTableBodyNone">Macro-based implementation of type-safe hashtables    </td></tr>
+<td class="markdownTableBodyNone"><a href="https://github.com/Anotra/anomap">anomap</a>*   </td><td class="markdownTableBodyNone">Sorted key/value storage for C99    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://github.com/lcsmuller/json-build">json-build</a>   </td><td class="markdownTableBodyNone">Tiny, zero-allocation JSON serializer    </td></tr>
+<td class="markdownTableBodyNone"><a href="https://github.com/c-ware/chash">chash</a>*   </td><td class="markdownTableBodyNone">Macro-based implementation of type-safe hashtables    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://github.com/lcsmuller/json-build">json-build</a>   </td><td class="markdownTableBodyNone">Tiny, zero-allocation JSON serializer    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://github.com/lcsmuller/jsmn-find">jsmn-find</a>   </td><td class="markdownTableBodyNone">Tiny, zero-allocation JSON tokenizer   </td></tr>
 </table>
 <ul>

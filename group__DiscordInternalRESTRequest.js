@@ -19,12 +19,14 @@ var group__DiscordInternalRESTRequest =
     [ "discord_attributes", "structdiscord__attributes.html", [
       [ "dispatch", "structdiscord__attributes.html#a68eeb104b9e785bf33e36eba74b6586c", null ],
       [ "response", "structdiscord__attributes.html#a3e02a47fbd80f09c48b2ecc974035a7d", null ],
-      [ "attachments", "structdiscord__attributes.html#ada67d5728c3a1aaf005dde63e9aa0e21", null ]
+      [ "attachments", "structdiscord__attributes.html#ada67d5728c3a1aaf005dde63e9aa0e21", null ],
+      [ "reason", "structdiscord__attributes.html#aeb127114eb185bc3935351f779d98b76", null ]
     ] ],
     [ "discord_request", "structdiscord__request.html", [
       [ "dispatch", "structdiscord__request.html#a17b87e65a2a2ab8c8c88ce7b8230e8e2", null ],
       [ "response", "structdiscord__request.html#adac9ad4793c3a54c40c8978c72ae3191", null ],
       [ "attachments", "structdiscord__request.html#a23ff7b77bceecdf17b422c808fbfdb20", null ],
+      [ "reason", "structdiscord__request.html#a00203fee36834e976c258976fc26b2ff", null ],
       [ "b", "structdiscord__request.html#ab6762b7187f58f7591e4a36f9da8e13a", null ],
       [ "body", "structdiscord__request.html#a1f2cdbfe773ff7c378a0f647ec59c764", null ],
       [ "method", "structdiscord__request.html#a9f520f489e4996116c22569618fe78b2", null ],

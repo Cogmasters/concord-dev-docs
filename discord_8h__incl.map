@@ -25,6 +25,6 @@
 <area shape="rect" id="node24" href="$include_2oauth2_8h.html" title="OAuth2 public functions and datatypes." alt="" coords="2645,80,2724,107"/>
 <area shape="rect" id="node25" href="$application__command_8h.html" title="Application Command public functions and datatypes." alt="" coords="2749,80,2927,107"/>
 <area shape="rect" id="node26" href="$interaction_8h.html" title="Interaciton public functions and datatypes." alt="" coords="2951,80,3055,107"/>
-<area shape="rect" id="node27" href="$discord-cache_8h.html" title=" " alt="" coords="3080,80,3204,107"/>
+<area shape="rect" id="node27" href="$discord-cache_8h.html" title="Caching of Discord resources." alt="" coords="3080,80,3204,107"/>
 <area shape="rect" id="node28" href="$discord-events_8h.html" title="Listen, react and trigger Discord Gateway events." alt="" coords="3229,80,3359,107"/>
 </map>

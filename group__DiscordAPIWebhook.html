@@ -133,8 +133,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaaee6a957a85598dd1ce41323b2347db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabefa02a637cb7dd04ce239b72531f70b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordAPIWebhook.html#gabefa02a637cb7dd04ce239b72531f70b">discord_modify_webhook_with_token</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, <a class="el" href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a> webhook_id, const char webhook_token[], struct <a class="el" href="structdiscord__modify__webhook__with__token.html">discord_modify_webhook_with_token</a> *params, struct <a class="el" href="structdiscord__ret__webhook.html">discord_ret_webhook</a> *ret)</td></tr>
 <tr class="separator:gabefa02a637cb7dd04ce239b72531f70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5930eaece340bac8e32f1110d6e7717"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordAPIWebhook.html#gab5930eaece340bac8e32f1110d6e7717">discord_delete_webhook</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, <a class="el" href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a> webhook_id, struct <a class="el" href="structdiscord__ret.html">discord_ret</a> *ret)</td></tr>
-<tr class="separator:gab5930eaece340bac8e32f1110d6e7717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf07c388d69e82d798519a3c724a091fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordAPIWebhook.html#gaf07c388d69e82d798519a3c724a091fd">discord_delete_webhook</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, <a class="el" href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a> webhook_id, struct <a class="el" href="structdiscord__delete__webhook.html">discord_delete_webhook</a> *params, struct <a class="el" href="structdiscord__ret.html">discord_ret</a> *ret)</td></tr>
+<tr class="separator:gaf07c388d69e82d798519a3c724a091fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc3a59a88be8e5edffa09b57c1584d83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordAPIWebhook.html#gadc3a59a88be8e5edffa09b57c1584d83">discord_delete_webhook_with_token</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, <a class="el" href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a> webhook_id, const char webhook_token[], struct <a class="el" href="structdiscord__ret.html">discord_ret</a> *ret)</td></tr>
 <tr class="separator:gadc3a59a88be8e5edffa09b57c1584d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6423cbf3797741bcaf5ced860dcc3339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DiscordAPIWebhook.html#ga6423cbf3797741bcaf5ced860dcc3339">discord_execute_webhook</a> (struct <a class="el" href="structdiscord.html">discord</a> *client, <a class="el" href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a> webhook_id, const char webhook_token[], struct <a class="el" href="structdiscord__execute__webhook.html">discord_execute_webhook</a> *params, struct <a class="el" href="structdiscord__ret.html">discord_ret</a> *ret)</td></tr>
@@ -202,12 +202,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__webhook.html">discord_ret_webhook</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -254,12 +249,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__webhooks.html">discord_ret_webhooks</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -306,12 +296,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__webhooks.html">discord_ret_webhooks</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -357,12 +342,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__webhook.html">discord_ret_webhook</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -413,12 +393,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__webhook.html">discord_ret_webhook</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="webhook_8c-example.html#a6">webhook.c</a>.</dd>
 </dl>
 
@@ -474,12 +449,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__webhook.html">discord_ret_webhook</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -537,23 +507,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__webhook.html">discord_ret_webhook</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
-<a id="gab5930eaece340bac8e32f1110d6e7717" name="gab5930eaece340bac8e32f1110d6e7717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5930eaece340bac8e32f1110d6e7717">&#9670;&nbsp;</a></span>discord_delete_webhook()</h2>
+<a id="gaf07c388d69e82d798519a3c724a091fd" name="gaf07c388d69e82d798519a3c724a091fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf07c388d69e82d798519a3c724a091fd">&#9670;&nbsp;</a></span>discord_delete_webhook()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a> discord_delete_webhook </td>
+          <td class="memname"><a class="el" href="group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31">CCORDcode</a> <a class="el" href="structdiscord__delete__webhook.html">discord_delete_webhook</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structdiscord.html">discord</a> *&#160;</td>
           <td class="paramname"><em>client</em>, </td>
@@ -563,6 +528,12 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="group__ConcordTypes.html#ga1f90b9a153d0298db01a3bf1eb334471">u64snowflake</a>&#160;</td>
           <td class="paramname"><em>webhook_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structdiscord__delete__webhook.html">discord_delete_webhook</a> *&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -581,17 +552,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">webhook_id</td><td>the webhook itself </td></tr>
+    <tr><td class="paramname">params</td><td>request parameters </td></tr>
     <tr><td class="paramname">ret</td><td>return context of the request. if successful the assigned <code>done</code> will be triggered </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret.html">discord_ret</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -632,7 +599,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Same <a class="el" href="group__DiscordAPIWebhook.html#gab5930eaece340bac8e32f1110d6e7717">discord_delete_webhook()</a>, except this call does not require authentication </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Same <a class="el" href="group__DiscordAPIWebhook.html#gaf07c388d69e82d798519a3c724a091fd">discord_delete_webhook()</a>, except this call does not require authentication </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>the client created with <a class="el" href="group__DiscordClient.html#gacd52a9fc58a1fcb9b4719a5cedd70f5d" title="Create a Discord Client handle by its token.">discord_init()</a> </td></tr>
     <tr><td class="paramname">webhook_id</td><td>the webhook itself </td></tr>
@@ -642,12 +609,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret.html">discord_ret</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -705,12 +667,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret.html">discord_ret</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="webhook_8c-example.html#a11">webhook.c</a>.</dd>
 </dl>
 
@@ -772,12 +729,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__message.html">discord_ret_message</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -844,12 +796,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret__message.html">discord_ret_message</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
@@ -909,12 +856,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdiscord__ret.html">discord_ret</a> for more options </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went:<ul>
-<li><code>0</code> means nothing out of the ordinary</li>
-<li><code>greater than zero</code> means a change of state</li>
-<li><code>lesser than zero</code> means an error has occurred </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__ConcordError.html#ga78a20c062e3ec52d6b521fd92ae88259">CCORDcode</a> value for how the operation went, <a class="el" href="group__ConcordError.html#gga73d04d4ecf8e63dd1ee4ded3045d1d31a492639788613dde14cac8694a9c3e2a9">CCORD_OK</a> means nothing out of the ordinary </dd></dl>
 
 </div>
 </div>
