@@ -99,9 +99,11 @@ About</h2>
 <p >Concord is an asynchronous C99 Discord API library with minimal external dependencies, and a low-level translation of the Discord official documentation to C code.</p>
 <h3><a class="anchor" id="autotoc_md2"></a>
 Examples</h3>
-<p >*The following are minimalistic examples, refer to <a href="examples/"><code>examples/</code></a> for a better overview.*</p>
+<p ><em>The following are minimalistic examples, refer to <a href="examples/"><code>examples/</code></a> for a better overview.*</em></p>
+<p ><em></em></p>
 <h4><a class="anchor" id="autotoc_md3"></a>
 Slash Commands (new method)</h4>
+<p ><em> *Note: you need to replace <code>GUILD_ID</code> with an actual guild ID, or this example won't compile!</em> You can use a macro to do this: <code>#define GUILD_ID 1234567898765431</code></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;concord/discord.h&gt;</span></div>
 <div class="line"> </div>
@@ -261,7 +263,7 @@ Special note about linking Concord against another library</h3>
 <p >In some cases, you might want to link Concord into a shared object, or link it as a shared object into another shared object. In that case, you will need to compile Concord with <code>CFLAGS="-fpic" make</code>.</p>
 <h2><a class="anchor" id="autotoc_md19"></a>
 Configuring Concord</h2>
-<p ><a href="https://cogmasters.github.io/concord/group__Discord.html#ga75bbe1d3eb9e6d03953b6313e5543afb">discord_config_init()</a> is the initialization method that allows configuring your bot without recompiling.</p>
+<p ><a href="https://cogmasters.github.io/concord/group__DiscordClient.html#ga75bbe1d3eb9e6d03953b6313e5543afb">discord_config_init()</a> is the initialization method that allows configuring your bot without recompiling.</p>
 <p >The following outlines <code>config.json</code> fields: </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;logging&quot;: { // logging directives</div>
 <div class="line">    &quot;level&quot;: &quot;trace&quot;,        // trace, debug, info, warn, error, fatal</div>
@@ -285,7 +287,7 @@ Configuring Concord</h2>
 <div class="line">  ... // here you can add your custom fields *</div>
 <div class="line">}</div>
 </div><!-- fragment --><ul>
-<li><em>Your custom field contents can be fetched with <a href="https://cogmasters.github.io/concord/group__Discord.html#gac4486003ffab83de397c0bebb74b3307">discord_config_get_field()</a></em></li>
+<li><em>Your custom field contents can be fetched with <a href="https://cogmasters.github.io/concord/group__DiscordClient.html#gac4486003ffab83de397c0bebb74b3307">discord_config_get_field()</a></em></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md20"></a>
 Test Copycat-Bot</h2>
