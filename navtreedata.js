@@ -109,11 +109,6 @@ var NAVTREE =
         [ "Voice Connections", "md_docs_DISCORD_ROADMAP.html#autotoc_md68", null ]
       ] ]
     ] ],
-    [ "Compiling on Windows (Detailed instructions)", "md_docs_WINDOWS.html", [
-      [ "Cygwin and Dependencies", "md_docs_WINDOWS.html#autotoc_md70", null ],
-      [ "Microsoft Visual C/C++", "md_docs_WINDOWS.html#autotoc_md71", null ],
-      [ "Other compilers", "md_docs_WINDOWS.html#autotoc_md72", null ]
-    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
@@ -154,15 +149,15 @@ var NAVTREEINDEX =
 "group__DiscordInternalGatewayIntents.html#gaa194274209b7999a4c77d1f28e1e5967",
 "interactions_8h.html#af0c59ef36433be74012eff3626fb7a20",
 "md_docs_DISCORD_ROADMAP.html#autotoc_md68",
-"structdiscord__allowed__mention.html#af8e61efdf0faa6aad66a26b991fa525c",
-"structdiscord__component.html#a7e78cfc0d7bcb493cd6dbb0684d61886",
-"structdiscord__embed__author.html#a7a212bf3dcda2ee5010c6f0f5c3ec783",
-"structdiscord__guild__members__chunk.html#a2f963805664d62656a9df966821b165d",
-"structdiscord__message.html#a4b0d5394a88b3896ef4c0d6d71def3ba",
-"structdiscord__ratelimiter.html#a621319557605c11bc7c79f99db464497",
-"structdiscord__ret__guild__application__command__permissions.html#a79cbcd23715477a6cdf11023fc99c855",
-"structdiscord__ret__webhooks.html",
-"structdiscord__welcome__screen.html"
+"structdiscord__application.html#a4be996f9a748d15e0d42e466420ef68d",
+"structdiscord__component.html#ae5d76aee147629ddcc557223b1e99f3c",
+"structdiscord__embed__field.html#a5a31af47e8a0e72fef25ca42bd6d8514",
+"structdiscord__guild__members__chunk.html#ad195180793103ea11acd1915f4091033",
+"structdiscord__message.html#a69d5c1cd30980d580937f87330427698",
+"structdiscord__ratelimiter.html#ada41649708f3b4969e744c576e41a0dd",
+"structdiscord__ret__guild__member.html",
+"structdiscord__ret__webhooks.html#aad5a926e1ca01f150ae28bc15f1ee20c",
+"structdiscord__welcome__screen__channel.html#a12c3d8c9fdc5656ef402334d8bd05b89"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
