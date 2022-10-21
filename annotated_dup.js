@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "anomap_item_changed", "structanomap__item__changed.html", "structanomap__item__changed" ],
     [ "bitmasks", "structbitmasks.html", "structbitmasks" ],
     [ "ccord_szbuf", "structccord__szbuf.html", "structccord__szbuf" ],
     [ "ccord_szbuf_readonly", "structccord__szbuf__readonly.html", "structccord__szbuf__readonly" ],

@@ -1,5 +1,15 @@
 var NAVTREEINDEX17 =
 {
+"structdiscord__ret__guild.html#ababdb888bf47bec575585d6b0a573ba8":[4,4,6,1,4],
+"structdiscord__ret__guild.html#ad75b20a398d6b7817b18b2a7457234c9":[4,4,6,1,0],
+"structdiscord__ret__guild__application__command__permissions.html":[4,4,0,0,4],
+"structdiscord__ret__guild__application__command__permissions.html#a0e6555d93c599a285c0641c84a19b219":[4,4,0,0,4,5],
+"structdiscord__ret__guild__application__command__permissions.html#a56d3e4492e44a8a23eb0a981098fe8a8":[4,4,0,0,4,1],
+"structdiscord__ret__guild__application__command__permissions.html#a5e55e4e941b38cab6ee06cd2a8396c98":[4,4,0,0,4,2],
+"structdiscord__ret__guild__application__command__permissions.html#a79cbcd23715477a6cdf11023fc99c855":[4,4,0,0,4,3],
+"structdiscord__ret__guild__application__command__permissions.html#ab1a1aa422bea2468257efa33931d60d5":[4,4,0,0,4,6],
+"structdiscord__ret__guild__application__command__permissions.html#ab3889b1bc542cc7971bd6de243e979e6":[4,4,0,0,4,4],
+"structdiscord__ret__guild__application__command__permissions.html#ada0de1e64f7a35b634052c72b23b82f7":[4,4,0,0,4,0],
 "structdiscord__ret__guild__member.html":[4,4,6,4],
 "structdiscord__ret__guild__member.html#a0b30eb2b05318cfd1c7eecd76815207d":[4,4,6,4,1],
 "structdiscord__ret__guild__member.html#a24b387d0fbb201e71e9451ba8a9a7df8":[4,4,6,4,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX17 =
 "structdiscord__ret__voice__regions.html#ace817699a42d1202b5cc7a94d8d4baa3":[4,4,14,0,1],
 "structdiscord__ret__voice__regions.html#adba2182b0dbaeaabdfe47b3f727bb539":[4,4,14,0,0],
 "structdiscord__ret__webhook.html":[4,4,15,0],
-"structdiscord__ret__webhook.html#a1aefa9473deb7214e2ecfeed8e5f55e5":[4,4,15,0,3],
-"structdiscord__ret__webhook.html#a1b5746a50bda9f97bca971cb4b481641":[4,4,15,0,5],
-"structdiscord__ret__webhook.html#a44809cd5a887ac5548edccac06346239":[4,4,15,0,2],
-"structdiscord__ret__webhook.html#a4f41c58e765b5f1cb56970e05f46fc20":[4,4,15,0,1],
-"structdiscord__ret__webhook.html#aa27653d68a90d788d976fe777529ff9a":[4,4,15,0,0],
-"structdiscord__ret__webhook.html#ab3f5d51d7b09163adca988373419da19":[4,4,15,0,6],
-"structdiscord__ret__webhook.html#abe87240245cebc249f5d13b30374e83d":[4,4,15,0,4],
-"structdiscord__ret__webhooks.html":[4,4,15,1],
-"structdiscord__ret__webhooks.html#a3b2d802dbe3d72ea15e986030e75f577":[4,4,15,1,6],
-"structdiscord__ret__webhooks.html#a62c4cd07431fe69b7905c92bbf073d46":[4,4,15,1,2],
-"structdiscord__ret__webhooks.html#a78f26af9ffcb1470d9c93bcaca3babf1":[4,4,15,1,3]
+"structdiscord__ret__webhook.html#a1aefa9473deb7214e2ecfeed8e5f55e5":[4,4,15,0,3]
 };
