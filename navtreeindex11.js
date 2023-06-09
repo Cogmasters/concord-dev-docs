@@ -1,5 +1,9 @@
 var NAVTREEINDEX11 =
 {
+"structdiscord__add__guild__member.html#a2f19514484d20a15b196dab485fba7cb":[5,0,16,1],
+"structdiscord__add__guild__member.html#a2fe66a05ee7505abbe6fb7190aa9fa66":[5,0,16,0],
+"structdiscord__add__guild__member.html#a90d2eb9c0b3112b554475f1de91e967e":[5,0,16,3],
+"structdiscord__add__guild__member.html#a9d3bd2106cc59d899338ea6877e78074":[5,0,16,4],
 "structdiscord__add__guild__member.html#ab6d2275178923e9eb74091eb0d092595":[5,0,16,2],
 "structdiscord__add__guild__member__role.html":[5,0,17],
 "structdiscord__add__guild__member__role.html#ac2058211da9dc65b8cd8be5e7712f8aa":[5,0,17,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX11 =
 "structdiscord__channels.html#ae534fde6cb8abdfda98260468ab062ab":[5,0,56,0],
 "structdiscord__client__status.html":[5,0,57],
 "structdiscord__client__status.html#a03e57d1684af99cae274c476af967d8e":[5,0,57,1],
-"structdiscord__client__status.html#a38a17faef4111b15c1397f4d01b3d6ee":[5,0,57,0],
-"structdiscord__client__status.html#a4db38f09fd94f0bcf7598c4afb63af2a":[5,0,57,2],
-"structdiscord__component.html":[5,0,58],
-"structdiscord__component.html#a0a41a275645eada59c0da37a2dd49900":[5,0,58,15],
-"structdiscord__component.html#a18fe35431db32acbcf540bcdf4e7a4b9":[5,0,58,11]
+"structdiscord__client__status.html#a38a17faef4111b15c1397f4d01b3d6ee":[5,0,57,0]
 };
