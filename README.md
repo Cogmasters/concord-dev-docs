@@ -3,7 +3,7 @@
 ## Installing Dependencies
 ### Doxygen 1.9.3
 ```sh
-wget https://www.doxygen.nl/files/doxygen-1.9.3.linux.bin.tar.gz
+wget https://sourceforge.net/projects/doxygen/files/rel-1.9.3/doxygen-1.9.3.linux.bin.tar.gz
 tar -xvf doxygen-1.9.3.linux.bin.tar.gz
 cp doxygen-1.9.3/bin/doxygen .
 ```
