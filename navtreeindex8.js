@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"group__DiscordInternalGatewayIntents.html#gaa4c737695a5a507b0a5d2aa0c3dcdc70":[4,5,2,1,7],
 "group__DiscordInternalGatewayIntents.html#gaafd36167b2b407adb85cb55a2d25205b":[4,5,2,1,2],
 "group__DiscordInternalGatewayIntents.html#gabaf1dce5bf603280c4d5eacfd4d28125":[4,5,2,1,13],
 "group__DiscordInternalGatewayIntents.html#gac5a37f82666b739ce2aa47c7f89adc3c":[4,5,2,1,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "interactions_8h.html#ad65166fb3b70f9f48eee2c41e2dd5507":[6,0,1,0,11,37],
 "interactions_8h.html#ad78c33dde0b9510d217925a97472350e":[6,0,1,0,11,23],
 "interactions_8h.html#ae9493ed0020a5a9595eb8d0b6870f947":[6,0,1,0,11,9],
-"interactions_8h.html#aeef9c3539ffb9ed912a2976b67b43d68":[6,0,1,0,11,10],
-"interactions_8h.html#af0c59ef36433be74012eff3626fb7a20":[6,0,1,0,11,26]
+"interactions_8h.html#aeef9c3539ffb9ed912a2976b67b43d68":[6,0,1,0,11,10]
 };

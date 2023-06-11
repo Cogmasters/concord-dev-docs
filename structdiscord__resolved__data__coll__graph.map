@@ -1,9 +1,0 @@
-<map id="discord_resolved_data" name="discord_resolved_data">
-<area shape="rect" id="node1" title=" " alt="" coords="317,132,485,159"/>
-<area shape="rect" id="node2" href="$structdiscord__users.html" title=" " alt="" coords="39,5,149,32"/>
-<area shape="rect" id="node3" href="$structdiscord__guild__members.html" title=" " alt="" coords="5,56,183,83"/>
-<area shape="rect" id="node4" href="$structdiscord__roles.html" title=" " alt="" coords="40,107,148,133"/>
-<area shape="rect" id="node5" href="$structdiscord__channels.html" title=" " alt="" coords="27,157,161,184"/>
-<area shape="rect" id="node6" href="$structdiscord__messages.html" title=" " alt="" coords="23,208,165,235"/>
-<area shape="rect" id="node7" href="$structdiscord__attachments.html" title=" " alt="" coords="15,259,173,285"/>
-</map>
