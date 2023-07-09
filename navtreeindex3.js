@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"docs_2api_2gateway_8h.html#a57b2cc945f65ab56a972c4bbb3f5d328":[6,0,1,0,7,112],
+"docs_2api_2gateway_8h.html#a585d4679e60b9829910ccd286ca56874":[6,0,1,0,7,220],
 "docs_2api_2gateway_8h.html#a59760242ea6eb76e7490faa1c5ba835e":[6,0,1,0,7,119],
 "docs_2api_2gateway_8h.html#a5c980d5a549b4c772a543cf24289c61d":[6,0,1,0,7,123],
 "docs_2api_2gateway_8h.html#a5e8ecdc11ecea585e6875dd1ecef9fae":[6,0,1,0,7,177],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "docs_2api_2guild_8h.html#a9778497216f34bd48a71b300d8cf8c7c":[6,0,1,0,8,90],
 "docs_2api_2guild_8h.html#a9986f2120421d43edddb1064429fb334":[6,0,1,0,8,155],
 "docs_2api_2guild_8h.html#a9a00ec95023734829a4d25dba90c7af9":[6,0,1,0,8,132],
-"docs_2api_2guild_8h.html#a9a2a0a419d8348c959cdb93f8aa1dff1":[6,0,1,0,8,140],
-"docs_2api_2guild_8h.html#a9bc2381ac1008a193b04daae63f4f7c3":[6,0,1,0,8,107],
-"docs_2api_2guild_8h.html#a9f10cde9a85da3e0a7493b2bd5246638":[6,0,1,0,8,82]
+"docs_2api_2guild_8h.html#a9a2a0a419d8348c959cdb93f8aa1dff1":[6,0,1,0,8,140]
 };

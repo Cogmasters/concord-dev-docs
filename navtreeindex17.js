@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"structdiscord__ret__guild.html#a25da81752364037827e93aba5f495584":[4,4,6,1,5],
+"structdiscord__ret__guild.html#a2cf0a6dbde36183248826eb3a913d653":[4,4,6,1,2],
 "structdiscord__ret__guild.html#a6637f66eb608872948558608385005d2":[4,4,6,1,1],
 "structdiscord__ret__guild.html#a9040afd4ee08847922bc8c27a6237b9d":[4,4,6,1,6],
 "structdiscord__ret__guild.html#ab8dd4054b38a6ee1714bd8362b8d0a31":[4,4,6,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "structdiscord__ret__voice__regions.html#a07c9ab7ec3d78420efafad894e30ef14":[4,4,14,0,5],
 "structdiscord__ret__voice__regions.html#a37e8d3b215a33748e608a13351d56c67":[4,4,14,0,6],
 "structdiscord__ret__voice__regions.html#a3fa56a677430f3bd642c6b5d9f100e33":[4,4,14,0,2],
-"structdiscord__ret__voice__regions.html#a82138b417ac2435d6f394281cdec8fc2":[4,4,14,0,4],
-"structdiscord__ret__voice__regions.html#a96633fb35927ca28bce50577721a06d8":[4,4,14,0,3],
-"structdiscord__ret__voice__regions.html#ace817699a42d1202b5cc7a94d8d4baa3":[4,4,14,0,1]
+"structdiscord__ret__voice__regions.html#a82138b417ac2435d6f394281cdec8fc2":[4,4,14,0,4]
 };

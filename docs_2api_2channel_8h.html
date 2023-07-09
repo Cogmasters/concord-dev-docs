@@ -249,16 +249,18 @@ Enumerations</h2></td></tr>
 , <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea94cd3f5686fc33ae53bc92bb580f8bc1">DISCORD_CHANNEL_GROUP_DM</a> = 3
 , <br />
 &#160;&#160;<a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea5ef54112a43394cee93ce7e4b0597cbb">DISCORD_CHANNEL_GUILD_CATEGORY</a> = 4
-, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12feaefe01be06f1150e963f0b51dc2324fcd">DISCORD_CHANNEL_GUILD_NEWS</a> = 5
+, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12feadf4b824ac744ff39bcb6e74b7fe6102b">DISCORD_CHANNEL_GUILD_ANNOUNCEMENT</a> = 5
+, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12feaefe01be06f1150e963f0b51dc2324fcd">DISCORD_CHANNEL_GUILD_NEWS</a> = DISCORD_CHANNEL_GUILD_ANNOUNCEMENT
 , <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea3b82da359e955620ec09e26291b3cd2d">DISCORD_CHANNEL_GUILD_STORE</a> = 6
-, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea18fd19a920d0d4da67c1c514ee5cec50">DISCORD_CHANNEL_GUILD_NEWS_THREAD</a> = 10
 , <br />
-&#160;&#160;<a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fead17ab895e52d4bff206d30047b5f1dcb">DISCORD_CHANNEL_GUILD_PUBLIC_THREAD</a> = 11
+&#160;&#160;<a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12feaab48200c31f94974e3013ab72dfcc273">DISCORD_CHANNEL_ANNOUNCEMENT_THREAD</a> = 10
+, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea18fd19a920d0d4da67c1c514ee5cec50">DISCORD_CHANNEL_GUILD_NEWS_THREAD</a> = DISCORD_CHANNEL_ANNOUNCEMENT_THREAD
+, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fead17ab895e52d4bff206d30047b5f1dcb">DISCORD_CHANNEL_GUILD_PUBLIC_THREAD</a> = 11
 , <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea0226d4c910a2df5130af32890843ad55">DISCORD_CHANNEL_GUILD_PRIVATE_THREAD</a> = 12
-, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea2683d254ac8e952800d5c621e151db79">DISCORD_CHANNEL_GUILD_STAGE_VOICE</a> = 13
-, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea3c98945b6bfacba113a80372552d2e33">DISCORD_CHANNEL_GUILD_DIRECTORY</a> = 14
 , <br />
-&#160;&#160;<a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea17fab716444735e95787796bb9099824">DISCORD_CHANNEL_GUILD_FORUM</a> = 15
+&#160;&#160;<a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea2683d254ac8e952800d5c621e151db79">DISCORD_CHANNEL_GUILD_STAGE_VOICE</a> = 13
+, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea3c98945b6bfacba113a80372552d2e33">DISCORD_CHANNEL_GUILD_DIRECTORY</a> = 14
+, <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea17fab716444735e95787796bb9099824">DISCORD_CHANNEL_GUILD_FORUM</a> = 15
 <br />
  }</td></tr>
 <tr class="separator:a8da5a4e81d57a68dc380394ef40a12fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -725,11 +727,15 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12fea5ef54112a43394cee93ce7e4b0597cbb" name="a8da5a4e81d57a68dc380394ef40a12fea5ef54112a43394cee93ce7e4b0597cbb"></a>DISCORD_CHANNEL_GUILD_CATEGORY&#160;</td><td class="fielddoc"><p >an organization category that contains up to 50 channels </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12feaefe01be06f1150e963f0b51dc2324fcd" name="a8da5a4e81d57a68dc380394ef40a12feaefe01be06f1150e963f0b51dc2324fcd"></a>DISCORD_CHANNEL_GUILD_NEWS&#160;</td><td class="fielddoc"><p >a channel that users can follow and crosspost into their own server </p>
+<tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12feadf4b824ac744ff39bcb6e74b7fe6102b" name="a8da5a4e81d57a68dc380394ef40a12feadf4b824ac744ff39bcb6e74b7fe6102b"></a>DISCORD_CHANNEL_GUILD_ANNOUNCEMENT&#160;</td><td class="fielddoc"><p >a channel that users can follow and crosspost into their own server </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12feaefe01be06f1150e963f0b51dc2324fcd" name="a8da5a4e81d57a68dc380394ef40a12feaefe01be06f1150e963f0b51dc2324fcd"></a>DISCORD_CHANNEL_GUILD_NEWS&#160;</td><td class="fielddoc"><p >alias to <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12feadf4b824ac744ff39bcb6e74b7fe6102b">DISCORD_CHANNEL_GUILD_ANNOUNCEMENT</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12fea3b82da359e955620ec09e26291b3cd2d" name="a8da5a4e81d57a68dc380394ef40a12fea3b82da359e955620ec09e26291b3cd2d"></a>DISCORD_CHANNEL_GUILD_STORE&#160;</td><td class="fielddoc"><p >a channel in which game developers can seel their game on Discord </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12fea18fd19a920d0d4da67c1c514ee5cec50" name="a8da5a4e81d57a68dc380394ef40a12fea18fd19a920d0d4da67c1c514ee5cec50"></a>DISCORD_CHANNEL_GUILD_NEWS_THREAD&#160;</td><td class="fielddoc"><p >a temporary sub-channel within a <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12feaefe01be06f1150e963f0b51dc2324fcd">DISCORD_CHANNEL_GUILD_NEWS</a> channel </p>
+<tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12feaab48200c31f94974e3013ab72dfcc273" name="a8da5a4e81d57a68dc380394ef40a12feaab48200c31f94974e3013ab72dfcc273"></a>DISCORD_CHANNEL_ANNOUNCEMENT_THREAD&#160;</td><td class="fielddoc"><p >a temporary sub-channel within a <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12feaefe01be06f1150e963f0b51dc2324fcd">DISCORD_CHANNEL_GUILD_NEWS</a> channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12fea18fd19a920d0d4da67c1c514ee5cec50" name="a8da5a4e81d57a68dc380394ef40a12fea18fd19a920d0d4da67c1c514ee5cec50"></a>DISCORD_CHANNEL_GUILD_NEWS_THREAD&#160;</td><td class="fielddoc"><p >alias to <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12feaab48200c31f94974e3013ab72dfcc273">DISCORD_CHANNEL_ANNOUNCEMENT_THREAD</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8da5a4e81d57a68dc380394ef40a12fead17ab895e52d4bff206d30047b5f1dcb" name="a8da5a4e81d57a68dc380394ef40a12fead17ab895e52d4bff206d30047b5f1dcb"></a>DISCORD_CHANNEL_GUILD_PUBLIC_THREAD&#160;</td><td class="fielddoc"><p >a temporary sub-channel within a <a class="el" href="docs_2api_2channel_8h.html#a8da5a4e81d57a68dc380394ef40a12fea5617b22701a4d93550f62c4c9dc224b5">DISCORD_CHANNEL_GUILD_TEXT</a> channel </p>
 </td></tr>

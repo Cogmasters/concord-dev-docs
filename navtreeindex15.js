@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"structdiscord__list__nitro__sticker__packs.html":[5,0,180],
+"structdiscord__list__nitro__sticker__packs.html#aca070856d565146d5aa86fe04bbb07f7":[5,0,180,0],
 "structdiscord__message.html":[5,0,181],
 "structdiscord__message.html#a0645ff8640244f0ca44c87d8ef3464b3":[5,0,181,14],
 "structdiscord__message.html#a078cfa611e1f7aaa852f85c654504e72":[5,0,181,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "structdiscord__presence__update.html#a447ba55bec939932aeb705cc8a1f7b95":[5,0,220,3],
 "structdiscord__presence__update.html#a5a5bd23b685efb9ba965ee8cbbe88a23":[5,0,220,6],
 "structdiscord__presence__update.html#a787f764b0c07fa2566938fec727765b1":[5,0,220,2],
-"structdiscord__presence__update.html#a7a9515890ba265318e4a87293dfe1289":[5,0,220,1],
-"structdiscord__presence__update.html#a8e4f7396e59fe5ff315db47060c1a8ae":[5,0,220,5],
-"structdiscord__presence__update.html#ab004017130719879ea4ac7022af7f211":[5,0,220,0]
+"structdiscord__presence__update.html#a7a9515890ba265318e4a87293dfe1289":[5,0,220,1]
 };

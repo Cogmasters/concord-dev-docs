@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"structdiscord__client__status.html":[5,0,57],
+"structdiscord__client__status.html#a03e57d1684af99cae274c476af967d8e":[5,0,57,1],
 "structdiscord__client__status.html#a38a17faef4111b15c1397f4d01b3d6ee":[5,0,57,0],
 "structdiscord__client__status.html#a4db38f09fd94f0bcf7598c4afb63af2a":[5,0,57,2],
 "structdiscord__component.html":[5,0,58],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "structdiscord__embed.html#a0abc90561f47fbb15b195ef45a5c6573":[5,0,100,6],
 "structdiscord__embed.html#a1ed7b7843d77aca64e5e14abb52abc7f":[5,0,100,0],
 "structdiscord__embed.html#a4b85f46dd7b4969cb57cf6d1788cf27f":[5,0,100,5],
-"structdiscord__embed.html#a62c99e0af5b44418b6b4117dc166c10e":[5,0,100,4],
-"structdiscord__embed.html#a716918f55c55b5099295b0bde59cddc5":[5,0,100,7],
-"structdiscord__embed.html#a835dd79806720eb1f371d3c3f84a64cd":[5,0,100,10]
+"structdiscord__embed.html#a62c99e0af5b44418b6b4117dc166c10e":[5,0,100,4]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"structdiscord__webhook.html#aa39152bf24ef12cccc8b855fb1e990f1":[5,0,331,8],
+"structdiscord__webhook.html#ab9d57ea7a60904f72bffb19a3badc583":[5,0,331,0],
 "structdiscord__webhook.html#abe9b39b4617a2363018632e1f9a488a9":[5,0,331,1],
 "structdiscord__webhook.html#ad182fc083d8e1d5eabd9ea3ee5fdd59b":[5,0,331,5],
 "structdiscord__webhook.html#adf324efc32012c6816056015de671032":[5,0,331,6],
