@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"structdiscord__presence__update.html#a5a5bd23b685efb9ba965ee8cbbe88a23":[5,0,220,6],
+"structdiscord__presence__update.html#a787f764b0c07fa2566938fec727765b1":[5,0,220,2],
+"structdiscord__presence__update.html#a7a9515890ba265318e4a87293dfe1289":[5,0,220,1],
 "structdiscord__presence__update.html#a8e4f7396e59fe5ff315db47060c1a8ae":[5,0,220,5],
 "structdiscord__presence__update.html#ab004017130719879ea4ac7022af7f211":[5,0,220,0],
 "structdiscord__presence__updates.html":[5,0,221],
@@ -246,8 +249,5 @@ var NAVTREEINDEX16 =
 "structdiscord__ret__followed__channel.html#a29a64879a2b9d7a51bc505a03bf38055":[4,4,3,7,0],
 "structdiscord__ret__followed__channel.html#a6f7a27137d692da627d35d2f11fd891d":[4,4,3,7,2],
 "structdiscord__ret__followed__channel.html#a9a177c8879b343bbfcc1c6fc01bd14b3":[4,4,3,7,6],
-"structdiscord__ret__followed__channel.html#abb5700796874884f316f7ffa33b059c6":[4,4,3,7,3],
-"structdiscord__ret__followed__channel.html#ae53f74c925b720dd09780c23cb041d62":[4,4,3,7,4],
-"structdiscord__ret__followed__channel.html#afc95aecead8f6d3c91eb7921eb58f80d":[4,4,3,7,5],
-"structdiscord__ret__guild.html":[4,4,6,1]
+"structdiscord__ret__followed__channel.html#abb5700796874884f316f7ffa33b059c6":[4,4,3,7,3]
 };

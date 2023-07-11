@@ -1,5 +1,8 @@
 var NAVTREEINDEX15 =
 {
+"structdiscord__list__guild__members.html#a387414b414b67ff82b9f8d461390b626":[5,0,178,1],
+"structdiscord__list__guild__scheduled__events.html":[5,0,179],
+"structdiscord__list__guild__scheduled__events.html#a89494d9726fc6677a5b46b5522a3c8fd":[5,0,179,0],
 "structdiscord__list__nitro__sticker__packs.html":[5,0,180],
 "structdiscord__list__nitro__sticker__packs.html#aca070856d565146d5aa86fe04bbb07f7":[5,0,180,0],
 "structdiscord__message.html":[5,0,181],
@@ -246,8 +249,5 @@ var NAVTREEINDEX15 =
 "structdiscord__pin__message.html#aec211b425add107ce08cc115be707467":[5,0,219,0],
 "structdiscord__presence__update.html":[5,0,220],
 "structdiscord__presence__update.html#a312462d3eb85ed62fc21253e64ef7560":[5,0,220,4],
-"structdiscord__presence__update.html#a447ba55bec939932aeb705cc8a1f7b95":[5,0,220,3],
-"structdiscord__presence__update.html#a5a5bd23b685efb9ba965ee8cbbe88a23":[5,0,220,6],
-"structdiscord__presence__update.html#a787f764b0c07fa2566938fec727765b1":[5,0,220,2],
-"structdiscord__presence__update.html#a7a9515890ba265318e4a87293dfe1289":[5,0,220,1]
+"structdiscord__presence__update.html#a447ba55bec939932aeb705cc8a1f7b95":[5,0,220,3]
 };

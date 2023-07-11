@@ -1,5 +1,8 @@
 var NAVTREEINDEX13 =
 {
+"structdiscord__embed.html#a1ed7b7843d77aca64e5e14abb52abc7f":[5,0,100,0],
+"structdiscord__embed.html#a4b85f46dd7b4969cb57cf6d1788cf27f":[5,0,100,5],
+"structdiscord__embed.html#a62c99e0af5b44418b6b4117dc166c10e":[5,0,100,4],
 "structdiscord__embed.html#a716918f55c55b5099295b0bde59cddc5":[5,0,100,7],
 "structdiscord__embed.html#a835dd79806720eb1f371d3c3f84a64cd":[5,0,100,10],
 "structdiscord__embed.html#a96c5fba1d04a04a393d72e8e09865ad7":[5,0,100,12],
@@ -246,8 +249,5 @@ var NAVTREEINDEX13 =
 "structdiscord__guild__member__remove.html#af5775a176ddc4c92f5d61495b5e0d001":[5,0,137,1],
 "structdiscord__guild__member__update.html":[5,0,138],
 "structdiscord__guild__member__update.html#a06289fa543369c3e95d0b687c613db65":[5,0,138,5],
-"structdiscord__guild__member__update.html#a2a593e99e3c4bef821c7466b2d1ec9ae":[5,0,138,10],
-"structdiscord__guild__member__update.html#a322f90c777d3ac87d5c0cc4a61f0d585":[5,0,138,7],
-"structdiscord__guild__member__update.html#a3c0a9cb62ba3ab496b24e230f20f4a0e":[5,0,138,1],
-"structdiscord__guild__member__update.html#a598a4eeb76be59c7c957de36533e75ed":[5,0,138,4]
+"structdiscord__guild__member__update.html#a2a593e99e3c4bef821c7466b2d1ec9ae":[5,0,138,10]
 };
