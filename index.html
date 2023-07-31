@@ -358,6 +358,13 @@ Installing Concord</h2>
 <div class="fragment"><div class="line"># make install</div>
 </div><!-- fragment --><p >This will install the headers and library files into $PREFIX. You can override this as such: </p><div class="fragment"><div class="line"># PREFIX=/opt/concord make install</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md28"></a>
+Cross-compiling Concord</h3>
+<p >Edit <code>gencodecs/Makefile</code> and replace <code>HOSTCC</code> with your host compiler, and override <code>CC</code> with your cross-compiler. Alternatively, try commands like this: </p><div class="fragment"><div class="line">cd gencodecs</div>
+<div class="line">make CC=s390x-linux-gnu-gcc HOSTCC=x86_64-linux-gnu-gcc</div>
+<div class="line">cd ..</div>
+<div class="line">make</div>
+<div class="line">make install PREFIX=/mnt/s390x-linux-rootfs/usr/local</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md29"></a>
 Included dependencies</h3>
 <p >The following are <code>stable</code> and well documented dependencies that are packaged with Concord and can be included to your projects:</p>
 <table class="markdownTable">
@@ -383,17 +390,17 @@ Included dependencies</h3>
 </ul>
 <p >Note that included headers must be <code>concord/</code> prefixed: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;concord/discord.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;concord/log.h&gt;</span></div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md29"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md30"></a>
 Standalone executable</h3>
-<h4><a class="anchor" id="autotoc_md30"></a>
+<h4><a class="anchor" id="autotoc_md31"></a>
 GCC</h4>
 <div class="fragment"><div class="line">$ gcc myBot.c -o myBot -pthread -ldiscord -lcurl</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md31"></a>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md32"></a>
 Clang</h4>
 <div class="fragment"><div class="line">$ clang myBot.c -o myBot -pthread -ldiscord -lcurl</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md32"></a>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md33"></a>
 UNIX C compilers</h4>
-<p ><a class="anchor" id="autotoc_md33"></a> </p><h5>This includes the following compilers:</h5>
+<p ><a class="anchor" id="autotoc_md34"></a> </p><h5>This includes the following compilers:</h5>
 <ul>
 <li>IBM XL C/C++ (AIX, z/OS, IBM i)</li>
 <li>Sun/Oracle Studio (Solaris)</li>
@@ -404,34 +411,34 @@ UNIX C compilers</h4>
 <div class="fragment"><div class="line">$ cc myBot.c -o myBot -ldiscord -lcurl -lpthread</div>
 </div><!-- fragment --><p >Note: some systems such as <b>Cygwin</b> require you to do this: </p><div class="fragment"><div class="line">$ gcc myBot.c -o myBot -pthread -lpthread -ldiscord -lcurl</div>
 </div><!-- fragment --><p> (this links against libpthread.a in <code>/usr/lib</code>)</p>
-<h2><a class="anchor" id="autotoc_md34"></a>
+<h2><a class="anchor" id="autotoc_md35"></a>
 Recommended debuggers</h2>
 <p >First, make sure your executable is compiled with the <code>-g</code> flag to ensure human-readable debugger messages.</p>
-<h3><a class="anchor" id="autotoc_md35"></a>
+<h3><a class="anchor" id="autotoc_md36"></a>
 Valgrind</h3>
 <p >Using valgrind to check for memory leaks:</p>
 <div class="fragment"><div class="line">valgrind --leak-check=full ./myBot</div>
 </div><!-- fragment --><p> For a more comprehensive guide check <a href="https://valgrind.org/docs/manual/quick-start.html">Valgrind's Quick Start</a>.</p>
-<h3><a class="anchor" id="autotoc_md36"></a>
+<h3><a class="anchor" id="autotoc_md37"></a>
 GDB</h3>
 <p >Using GDB to check for runtime errors, such as segmentation faults:</p>
 <div class="fragment"><div class="line">$ gdb ./myBot</div>
 </div><!-- fragment --><p> And then execute your bot from the gdb environment: </p><div class="fragment"><div class="line">(gdb) run</div>
 </div><!-- fragment --><p> If the program has crashed, get a backtrace of the function calls leading to it: </p><div class="fragment"><div class="line">(gdb) bt</div>
 </div><!-- fragment --><p >For a more comprehensive guide check <a href="https://beej.us/guide/bggdb/">Beej's Quick Guide to GDB</a></p>
-<h2><a class="anchor" id="autotoc_md37"></a>
+<h2><a class="anchor" id="autotoc_md38"></a>
 Support</h2>
 <p >Problems? Check out our <a href="https://discord.gg/Y7Xa6MA82v">Discord Server</a></p>
-<h2><a class="anchor" id="autotoc_md38"></a>
+<h2><a class="anchor" id="autotoc_md39"></a>
 Contributing</h2>
 <p >All kinds of contributions are welcome, all we ask is to abide to our guidelines! If you want to help but is unsure where to get started then our <a class="el" href="md_docs_DISCORD_ROADMAP.html">Discord API Roadmap</a> is a good starting point. Check our links for more helpful information.</p>
-<h2><a class="anchor" id="autotoc_md39"></a>
+<h2><a class="anchor" id="autotoc_md40"></a>
 Getting Started</h2>
 <ul>
 <li><a href="https://cogmasters.github.io/concord/">Documentation</a></li>
 <li><a class="el" href="md_docs_DISCORD_ROADMAP.html">Discord API Roadmap</a></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md40"></a>
+<h2><a class="anchor" id="autotoc_md41"></a>
 Useful links</h2>
 <ul>
 <li><a href="https://gist.github.com/lcsmuller/d6aee306bac229a7873f5c243bf7858b">Migrating from V1</a></li>

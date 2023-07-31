@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structdiscord__channel__pins__update.html#a956401fd26e3c595a152aa029ee61682":[5,0,55,1],
 "structdiscord__channels.html":[5,0,56],
 "structdiscord__channels.html#a4efd8630e3757a6a90a9a90e1e489e10":[5,0,56,1],
 "structdiscord__channels.html#ae534fde6cb8abdfda98260468ab062ab":[5,0,56,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structdiscord__edit__webhook__message.html#aa81f74d2cd5b598af6bca2745526ce97":[5,0,99,5],
 "structdiscord__edit__webhook__message.html#ad424a7e5789780bb7fd3df6202c63d5b":[5,0,99,4],
 "structdiscord__embed.html":[5,0,100],
-"structdiscord__embed.html#a0696fb57ceb0158278cb38b693347fb7":[5,0,100,2],
-"structdiscord__embed.html#a0abc90561f47fbb15b195ef45a5c6573":[5,0,100,6]
+"structdiscord__embed.html#a0696fb57ceb0158278cb38b693347fb7":[5,0,100,2]
 };
