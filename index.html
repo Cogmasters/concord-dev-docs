@@ -359,12 +359,8 @@ Installing Concord</h2>
 </div><!-- fragment --><p >This will install the headers and library files into $PREFIX. You can override this as such: </p><div class="fragment"><div class="line"># PREFIX=/opt/concord make install</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md28"></a>
 Cross-compiling Concord</h3>
-<p >Edit <code>gencodecs/Makefile</code> and replace <code>HOSTCC</code> with your host compiler, and override <code>CC</code> with your cross-compiler. Alternatively, try commands like this: </p><div class="fragment"><div class="line">cd gencodecs</div>
-<div class="line">make CC=s390x-linux-gnu-gcc HOSTCC=x86_64-linux-gnu-gcc</div>
-<div class="line">cd ..</div>
-<div class="line">make</div>
-<div class="line">make install PREFIX=/mnt/s390x-linux-rootfs/usr/local</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md29"></a>
+<p >To cross-compile Concord, see the manual here.</p>
+<h3><a class="anchor" id="autotoc_md29"></a>
 Included dependencies</h3>
 <p >The following are <code>stable</code> and well documented dependencies that are packaged with Concord and can be included to your projects:</p>
 <table class="markdownTable">
