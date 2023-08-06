@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"structdiscord__ret__followed__channel.html#a6f7a27137d692da627d35d2f11fd891d":[4,4,3,7,2],
+"structdiscord__ret__followed__channel.html#a9a177c8879b343bbfcc1c6fc01bd14b3":[4,4,3,7,6],
 "structdiscord__ret__followed__channel.html#abb5700796874884f316f7ffa33b059c6":[4,4,3,7,3],
 "structdiscord__ret__followed__channel.html#ae53f74c925b720dd09780c23cb041d62":[4,4,3,7,4],
 "structdiscord__ret__followed__channel.html#afc95aecead8f6d3c91eb7921eb58f80d":[4,4,3,7,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "structdiscord__ret__users.html#a36acc44e6ddd8ecf95a18a23c0e5afa0":[4,4,13,2,6],
 "structdiscord__ret__users.html#a45fc8421cde27be5d1c4196c9496fcad":[4,4,13,2,2],
 "structdiscord__ret__users.html#a9cd67a296e2a14285d39729d33940d27":[4,4,13,2,0],
-"structdiscord__ret__users.html#ab298af87a6d301b6d80549f6720b4f73":[4,4,13,2,1],
-"structdiscord__ret__users.html#acf46d4a3cbb81215a2314400f3e452c6":[4,4,13,2,3],
-"structdiscord__ret__voice__regions.html":[4,4,14,0]
+"structdiscord__ret__users.html#ab298af87a6d301b6d80549f6720b4f73":[4,4,13,2,1]
 };

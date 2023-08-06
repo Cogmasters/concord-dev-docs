@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"group__DiscordAPIWebhook.html#ga801ac7196b41e05494024cf6235593cf":[4,4,15,13],
+"group__DiscordAPIWebhook.html#ga8e639f3f8e9154ddc55154d2df81d466":[4,4,15,14],
 "group__DiscordAPIWebhook.html#gaaee6a957a85598dd1ce41323b2347db3":[4,4,15,7],
 "group__DiscordAPIWebhook.html#gabefa02a637cb7dd04ce239b72531f70b":[4,4,15,8],
 "group__DiscordAPIWebhook.html#gacf05e949cf4015e4ff2e528040f78dd0":[4,4,15,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "group__DiscordInternalGatewayIntents.html#ga02f805d452f09449f9a89e112caa0b41":[4,5,2,1,17],
 "group__DiscordInternalGatewayIntents.html#ga06c22696ba8f99e7ed1c6d4f88de2e5f":[4,5,2,1,15],
 "group__DiscordInternalGatewayIntents.html#ga217375b0063769c238889ac27be0118e":[4,5,2,1,3],
-"group__DiscordInternalGatewayIntents.html#ga323cdc4826558ea3f38af91916981ce6":[4,5,2,1,5],
-"group__DiscordInternalGatewayIntents.html#ga3bfbdfbf815e7eda6bae22821afa4b80":[4,5,2,1,18],
-"group__DiscordInternalGatewayIntents.html#ga692da49e659d77b7b9b0b87927df20c8":[4,5,2,1,1]
+"group__DiscordInternalGatewayIntents.html#ga323cdc4826558ea3f38af91916981ce6":[4,5,2,1,5]
 };

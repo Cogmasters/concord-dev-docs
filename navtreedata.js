@@ -147,19 +147,19 @@ var NAVTREEINDEX =
 "docs_2api_2guild_8h.html#a9986f2120421d43edddb1064429fb334",
 "docs_2api_2sticker_8h.html#ae9493ed0020a5a9595eb8d0b6870f947",
 "group__ConcordError.html#ga73d04d4ecf8e63dd1ee4ded3045d1d31",
-"group__DiscordAPIWebhook.html#gaaee6a957a85598dd1ce41323b2347db3",
-"group__DiscordInternalGatewayIntents.html#ga783e6ee22410b0b48ec64e18b7128f56",
-"interactions_8h.html#acedb17c68eab684a8d0f908bd4af4c3eaa47817a0acf35b30b3c3657b7c2d0075",
-"md_docs_DISCORD_ROADMAP.html#autotoc_md64",
-"structdiscord__activity__secrets.html#a08fd39c5592dc9d6c4b6ec3064ce75e0",
-"structdiscord__channel__pins__update.html#a956401fd26e3c595a152aa029ee61682",
-"structdiscord__embed.html#a0abc90561f47fbb15b195ef45a5c6573",
-"structdiscord__guild__member__update.html#a2a593e99e3c4bef821c7466b2d1ec9ae",
-"structdiscord__list__guild__members.html#a29e926a5da495e761bb4323a291b9081",
-"structdiscord__presence__update.html#a447ba55bec939932aeb705cc8a1f7b95",
-"structdiscord__ret__followed__channel.html#abb5700796874884f316f7ffa33b059c6",
-"structdiscord__ret__voice__regions.html#a07c9ab7ec3d78420efafad894e30ef14",
-"structdiscord__webhook.html#a232b3bd47b4251e301f1437f1a6643c8"
+"group__DiscordAPIWebhook.html#ga801ac7196b41e05494024cf6235593cf",
+"group__DiscordInternalGatewayIntents.html#ga3bfbdfbf815e7eda6bae22821afa4b80",
+"interactions_8h.html#acedb17c68eab684a8d0f908bd4af4c3ea2628808d3fdb6a32b6ea2b24182c6203",
+"md_docs_DISCORD_ROADMAP.html#autotoc_md62",
+"structdiscord__activity__party.html#a7b5fde43e57661fd925cbacf80b8825e",
+"structdiscord__channel__pins__update.html#a6ebdccac517cc8ed17a86f7b71600a0e",
+"structdiscord__embed.html",
+"structdiscord__guild__member__update.html",
+"structdiscord__list__active__threads.html#a808745fbdfe8d563a03a2b090e503fed",
+"structdiscord__presence__update.html",
+"structdiscord__ret__followed__channel.html#a6f7a27137d692da627d35d2f11fd891d",
+"structdiscord__ret__users.html#acf46d4a3cbb81215a2314400f3e452c6",
+"structdiscord__webhook.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

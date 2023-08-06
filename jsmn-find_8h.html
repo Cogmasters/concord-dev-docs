@@ -579,14 +579,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                      \</div>
-<div class="line">        const <span class="keywordtype">unsigned</span> new_size = *prev_size * 2;                             \</div>
+<div class="line">        const <span class="keywordtype">unsigned</span> new_size = *(prev_size) * 2;                            \</div>
 <div class="line">        void *tmp = realloc((ptr), new_size * <span class="keyword">sizeof</span> *(ptr));                 \</div>
 <div class="line">        if (!tmp) <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="jsmn_8h.html#afbbe22e63007677ec9e7837b5c1b80eaafa350a2c19cc5fddbfb7c90309d3fe41">JSMN_ERROR_NOMEM</a>;                                    \</div>
-<div class="line">                                                                              \</div>
-<div class="line">        *prev_size = new_size;                                                \</div>
-<div class="line">        memset((ptr) + *(prev_size), 0,                                       \</div>
+<div class="line">        memset((tmp) + *(prev_size), 0,                                       \</div>
 <div class="line">               (new_size - *(prev_size)) * <span class="keyword">sizeof</span> *(ptr));                    \</div>
 <div class="line">        (ptr) = tmp;                                                          \</div>
+<div class="line">        *(prev_size) = new_size;                                              \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="ajsmn_8h_html_afbbe22e63007677ec9e7837b5c1b80eaafa350a2c19cc5fddbfb7c90309d3fe41"><div class="ttname"><a href="jsmn_8h.html#afbbe22e63007677ec9e7837b5c1b80eaafa350a2c19cc5fddbfb7c90309d3fe41">JSMN_ERROR_NOMEM</a></div><div class="ttdeci">@ JSMN_ERROR_NOMEM</div><div class="ttdef"><b>Definition:</b> jsmn.h:56</div></div>
 </div><!-- fragment -->

@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"structdiscord__channel__pins__update.html#a6ebdccac517cc8ed17a86f7b71600a0e":[5,0,55,2],
+"structdiscord__channel__pins__update.html#a6fdf3fbe4451e1857dab7f918410ed6b":[5,0,55,0],
 "structdiscord__channel__pins__update.html#a956401fd26e3c595a152aa029ee61682":[5,0,55,1],
 "structdiscord__channels.html":[5,0,56],
 "structdiscord__channels.html#a4efd8630e3757a6a90a9a90e1e489e10":[5,0,56,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "structdiscord__edit__webhook__message.html#a9e1ecbe043e2b32d614717f4ca2a82cd":[5,0,99,0],
 "structdiscord__edit__webhook__message.html#a9e2bda39bd9416f33e972a9cc6c57031":[5,0,99,3],
 "structdiscord__edit__webhook__message.html#aa81f74d2cd5b598af6bca2745526ce97":[5,0,99,5],
-"structdiscord__edit__webhook__message.html#ad424a7e5789780bb7fd3df6202c63d5b":[5,0,99,4],
-"structdiscord__embed.html":[5,0,100],
-"structdiscord__embed.html#a0696fb57ceb0158278cb38b693347fb7":[5,0,100,2]
+"structdiscord__edit__webhook__message.html#ad424a7e5789780bb7fd3df6202c63d5b":[5,0,99,4]
 };

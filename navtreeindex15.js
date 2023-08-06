@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"structdiscord__list__active__threads.html#a808745fbdfe8d563a03a2b090e503fed":[5,0,177,0],
+"structdiscord__list__guild__members.html":[5,0,178],
 "structdiscord__list__guild__members.html#a29e926a5da495e761bb4323a291b9081":[5,0,178,0],
 "structdiscord__list__guild__members.html#a387414b414b67ff82b9f8d461390b626":[5,0,178,1],
 "structdiscord__list__guild__scheduled__events.html":[5,0,179],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "structdiscord__overwrites.html#ac3815bc8b76dd26999ddfe2a4f57b948":[5,0,218,0],
 "structdiscord__overwrites.html#aefa916e29f4851689d240f358460b2f0":[5,0,218,1],
 "structdiscord__pin__message.html":[5,0,219],
-"structdiscord__pin__message.html#aec211b425add107ce08cc115be707467":[5,0,219,0],
-"structdiscord__presence__update.html":[5,0,220],
-"structdiscord__presence__update.html#a312462d3eb85ed62fc21253e64ef7560":[5,0,220,4]
+"structdiscord__pin__message.html#aec211b425add107ce08cc115be707467":[5,0,219,0]
 };
